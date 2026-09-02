@@ -38,3 +38,9 @@ jobs:
           git add matches.json standings.json news.json results_archive.json
           git diff --staged --quiet || git commit -m "تحديث تلقائي لنتائج المباريات والترتيب والأخبار"
           git push
+
+      - name: نشر الموقع على Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: npx --yes netlify-cli deploy --prod --dir=.

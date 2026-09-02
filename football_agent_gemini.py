@@ -85,6 +85,7 @@ def format_fixture_summary(fixture: dict) -> dict:
     league = fixture["league"]["name"]
 
     return {
+        "league_id": fixture["league"]["id"],
         "home_team": teams["home"]["name"],
         "away_team": teams["away"]["name"],
         "home_logo": teams["home"]["logo"],
@@ -95,6 +96,28 @@ def format_fixture_summary(fixture: dict) -> dict:
         "league": league,
         "date": fixture["fixture"]["date"],
     }
+
+
+def fallback_article_text(match_summary: dict) -> str:
+    """
+    نص بديل بسيط بدون ذكاء اصطناعي - يُستخدم لو Gemini فشل (تجاوز الحصة
+    المجانية مثلاً) أو للمباريات خارج الدوريات المستهدفة، عشان المباراة
+    تظهر بالموقع دايماً حتى لو بدون مقال مولّد بالذكاء الاصطناعي.
+    """
+    home, away = match_summary["home_team"], match_summary["away_team"]
+    home_score, away_score = match_summary["home_score"], match_summary["away_score"]
+
+    if home_score is None or away_score is None:
+        return f"مباراة {home} و{away} ضمن {match_summary['league']}."
+
+    if home_score > away_score:
+        result = f"فوز {home} على {away}"
+    elif away_score > home_score:
+        result = f"فوز {away} على {home}"
+    else:
+        result = f"تعادل {home} و{away}"
+
+    return f"{result} بنتيجة {home_score}-{away_score} ضمن {match_summary['league']}."
 
 
 def generate_article(match_summary: dict) -> str:
@@ -110,8 +133,12 @@ def generate_article(match_summary: dict) -> str:
 
 اكتب الخبر مباشرة بدون مقدمات أو عناوين."""
 
-    response = model.generate_content(prompt)
-    return response.text.strip()
+    try:
+        response = model.generate_content(prompt)
+        return response.text.strip()
+    except Exception as e:
+        print(f"تعذّر توليد المقال عبر Gemini ({e}) - استخدام نص بديل تلقائي.")
+        return fallback_article_text(match_summary)
 
 
 def build_match_payload(match_summary: dict, article_text: str) -> dict:
@@ -155,7 +182,14 @@ def run_matches_pipeline(league_id: int = None):
             continue
 
         print(f"معالجة: {summary['home_team']} vs {summary['away_team']}")
-        article = generate_article(summary)
+
+        # نستخدم Gemini بس للدوريات المستهدفة عشان نحافظ على الحصة المجانية
+        # (باقي دوريات العالم تاخذ نص بديل تلقائي بدون استدعاء Gemini)
+        if summary["league_id"] in TARGET_LEAGUES:
+            article = generate_article(summary)
+        else:
+            article = fallback_article_text(summary)
+
         results.append(build_match_payload(summary, article))
 
     return results
@@ -316,7 +350,12 @@ def generate_news(matches: list, standings: dict) -> list:
   {{"tag": "التصنيف", "title": "نص العنوان"}}
 ]"""
 
-    response = model.generate_content(prompt)
+    try:
+        response = model.generate_content(prompt)
+    except Exception as e:
+        print(f"تعذّر توليد الأخبار عبر Gemini ({e}) - بدون أخبار بهالتشغيلة.")
+        return []
+
     raw = response.text.strip()
 
     # تنظيف احتمال وجود ```json فواصل من الرد

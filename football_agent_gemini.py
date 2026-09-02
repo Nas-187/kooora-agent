@@ -144,8 +144,10 @@ if __name__ == "__main__":
     #   140 = الدوري الإسباني
     articles = run_pipeline(league_id=None)
 
-    # حفظ النتائج بملف JSON (بدل النشر المباشر، للمراجعة أول)
-    with open("matches_ready_to_publish.json", "w", encoding="utf-8") as f:
+    # حفظ النتائج بملف matches.json بنفس مجلد المستودع
+    # (نفس المجلد اللي فيه index.html) عشان الموقع يقدر يقرأه مباشرة
+    output_path = "matches.json"
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(articles, f, ensure_ascii=False, indent=2)
 
-    print(f"\nتم تجهيز {len(articles)} خبر، محفوظين في matches_ready_to_publish.json")
+    print(f"\nتم تجهيز {len(articles)} خبر، محفوظين في {output_path}")

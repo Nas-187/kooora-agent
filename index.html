@@ -502,7 +502,10 @@ fetch('standings.json?t=' + Date.now())
 
 fetch('news.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(data => data.length ? renderNews(data) : renderNews(sampleNews))
+  .then(data => {
+    const combined = [...(data.saudi || []), ...(data.europe || [])];
+    renderNews(combined.length ? combined : sampleNews);
+  })
   .catch(() => renderNews(sampleNews));
 </script>
 

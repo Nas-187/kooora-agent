@@ -17,6 +17,15 @@ jobs:
       - name: تنزيل نسخة من المستودع
         uses: actions/checkout@v4
 
+      - name: تجهيز Node.js (مع تخزين مؤقت لـ netlify-cli)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: تثبيت netlify-cli من package-lock.json
+        run: npm ci
+
       - name: تجهيز بايثون
         uses: actions/setup-python@v5
         with:
@@ -43,4 +52,4 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: npx --yes netlify-cli deploy --prod --dir=.
+        run: npx netlify-cli deploy --prod --dir=.

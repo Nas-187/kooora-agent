@@ -14,7 +14,6 @@
 import requests
 import json
 import os
-import re
 from datetime import datetime
 import google.generativeai as genai
 
@@ -152,6 +151,7 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
 
     return {
         "title": title,
+        "league_id": match_summary["league_id"],
         "home_team": match_summary["home_team"],
         "away_team": match_summary["away_team"],
         "home_logo": match_summary["home_logo"],
@@ -314,61 +314,50 @@ def run_standings_pipeline():
 
 
 # ============================================================
-# 3) الأخبار (مولّدة من نفس بيانات اليوم)
+# 3) الأخبار (مبنية على بيانات حقيقية فقط - بدون توليد حر بالذكاء
+#    الاصطناعي، عشان نضمن دقتها 100%)
 # ============================================================
 
-def generate_news(matches: list, standings: dict) -> list:
+def _match_result_headline(m: dict) -> str:
+    """عنوان خبر واقعي 100% من نتيجة مباراة فعلية."""
+    home, away = m["home_team"], m["away_team"]
+    hs, as_ = m["home_score"], m["away_score"]
+
+    if hs is None or as_ is None:
+        return f"{home} يواجه {away} ضمن {m['league']}"
+    if hs > as_:
+        return f"{home} يفوز على {away} {hs}-{as_} ضمن {m['league']}"
+    if as_ > hs:
+        return f"{away} يفوز على {home} {as_}-{hs} ضمن {m['league']}"
+    return f"تعادل {home} و{away} {hs}-{as_} ضمن {m['league']}"
+
+
+def build_news_items(matches: list, standings: dict) -> dict:
     """
-    يستخدم Gemini يولّد 3 عناوين أخبار قصيرة مبنية على أبرز نتائج
-    وترتيب اليوم، بصيغة JSON جاهزة للموقع: [{tag, title}, ...]
+    يبني عناصر إخبارية من بيانات المباريات والترتيب الحقيقية فقط
+    (بدون أي توليد حر بالذكاء الاصطناعي قد يختلق تفاصيل غير صحيحة)،
+    مقسّمة لقسمين: دوري روشن السعودي، والدوريات الأوروبية.
     """
-    if not matches and not standings:
-        return []
+    saudi_items, europe_items = [], []
 
-    matches_brief = "\n".join(
-        f"- {m['home_team']} {m['home_score']}-{m['away_score']} {m['away_team']} ({m['league']})"
-        for m in matches[:8]
-    ) or "لا توجد مباريات اليوم."
+    for league_id, info in standings.items():
+        league_id = int(league_id)
+        if not info["standings"]:
+            continue
+        leader = info["standings"][0]
+        item = {
+            "tag": info["name"],
+            "title": f"{leader['team']} يتصدر ترتيب {info['name']} برصيد {leader['points']} نقطة",
+        }
+        (saudi_items if league_id == STANDINGS_LEAGUE_ID else europe_items).append(item)
 
-    standings_brief = ""
-    saudi_table = standings.get(str(STANDINGS_LEAGUE_ID), {}).get("standings", [])
-    if saudi_table:
-        leader = saudi_table[0]
-        standings_brief = f"\nصدارة ترتيب دوري روشن السعودي حالياً: {leader['team']} برصيد {leader['points']} نقطة."
+    for m in matches:
+        if m.get("league_id") not in TARGET_LEAGUES:
+            continue
+        item = {"tag": m["league"], "title": _match_result_headline(m)}
+        (saudi_items if m["league_id"] == STANDINGS_LEAGUE_ID else europe_items).append(item)
 
-    prompt = f"""أنت محرر أخبار رياضية. بناءً على بيانات اليوم التالية، اكتب 3 عناوين
-أخبار رياضية قصيرة وجذابة بالعربية (كل عنوان تحت 12 كلمة)، كل واحد له تصنيف قصير (وسم).
-
-نتائج اليوم:
-{matches_brief}
-{standings_brief}
-
-أرجع النتيجة بصيغة JSON فقط بدون أي نص إضافي، بالضبط بهذا الشكل:
-[
-  {{"tag": "التصنيف", "title": "نص العنوان"}},
-  {{"tag": "التصنيف", "title": "نص العنوان"}},
-  {{"tag": "التصنيف", "title": "نص العنوان"}}
-]"""
-
-    try:
-        response = model.generate_content(prompt)
-    except Exception as e:
-        print(f"تعذّر توليد الأخبار عبر Gemini ({e}) - بدون أخبار بهالتشغيلة.")
-        return []
-
-    raw = response.text.strip()
-
-    # تنظيف احتمال وجود ```json فواصل من الرد
-    raw = re.sub(r"^```json\s*|\s*```$", "", raw.strip(), flags=re.MULTILINE)
-
-    try:
-        news = json.loads(raw)
-        if isinstance(news, list):
-            return news
-    except json.JSONDecodeError:
-        print("تعذّر تحليل رد الأخبار كـ JSON، بيتم تجاهله.")
-
-    return []
+    return {"saudi": saudi_items, "europe": europe_items}
 
 
 # ============================================================
@@ -378,7 +367,7 @@ def generate_news(matches: list, standings: dict) -> list:
 if __name__ == "__main__":
     matches = run_matches_pipeline(league_id=None)
     standings = run_standings_pipeline()
-    news = generate_news(matches, standings)
+    news = build_news_items(matches, standings)
 
     with open("matches.json", "w", encoding="utf-8") as f:
         json.dump(matches, f, ensure_ascii=False, indent=2)
@@ -390,4 +379,5 @@ if __name__ == "__main__":
         json.dump(news, f, ensure_ascii=False, indent=2)
 
     total_teams = sum(len(l["standings"]) for l in standings.values())
-    print(f"\nتم حفظ: {len(matches)} مباراة، ترتيب {len(standings)} دوريات ({total_teams} فريق إجمالاً)، {len(news)} خبر.")
+    total_news = len(news["saudi"]) + len(news["europe"])
+    print(f"\nتم حفظ: {len(matches)} مباراة، ترتيب {len(standings)} دوريات ({total_teams} فريق إجمالاً)، {total_news} خبر.")

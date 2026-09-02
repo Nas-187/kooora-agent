@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الترتيب | كورة ايجنت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch:#0F3D2E;
+    --pitch-dark:#0A2B20;
+    --cream:#F6F3EC;
+    --gold:#C9973F;
+    --ink:#1A1F1C;
+    --ink-soft:#565f59;
+    --line-red:#C0392B;
+    --card:#FFFFFF;
+    --line:#E4DFD2;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; }
+  h1,h2,h3,.num,.brand{ font-family:'Cairo', sans-serif; }
+
+  header{
+    background:var(--pitch);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,0.04) 0, transparent 45%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 68px);
+    color:var(--cream); padding:22px 6vw 30px;
+  }
+  .topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; }
+  .brand{ font-size:26px; font-weight:900; color:var(--cream); display:flex; align-items:center; gap:10px; }
+  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
+  nav{ display:flex; gap:28px; font-size:15px; font-weight:700; }
+  nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
+  nav a.active{ color:var(--gold); }
+  .hero-line{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  .hero-line h1{ font-size:clamp(28px, 4vw, 40px); font-weight:800; }
+
+  main{ max-width:760px; margin:0 auto; padding:36px 6vw 60px; }
+
+  .league-tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+  .league-tab{
+    font-size:13px; font-weight:700; padding:9px 16px; border-radius:20px;
+    border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
+    cursor:pointer; transition:.15s;
+  }
+  .league-tab:hover{ border-color:var(--gold); }
+  .league-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
+
+  .table-card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:8px 24px; box-shadow:0 1px 2px rgba(26,31,28,0.04);
+  }
+  .standings-table{ width:100%; border-collapse:collapse; font-size:14.5px; }
+  .standings-table th{
+    text-align:right; font-weight:700; color:var(--ink-soft); font-size:12px;
+    padding:16px 6px 12px; border-bottom:2px solid var(--pitch);
+  }
+  .standings-table th.center, .standings-table td.center{ text-align:center; }
+  .standings-table td{ padding:14px 6px; border-bottom:1px solid var(--line); font-weight:600; }
+  .standings-table tr:last-child td{ border-bottom:none; }
+  .standings-table td.rank{ color:var(--gold); font-weight:800; width:28px; font-family:'Cairo'; }
+  .standings-table td.pts{ font-weight:900; text-align:center; font-family:'Cairo'; color:var(--pitch); }
+  .standings-table .team-cell{ display:flex; align-items:center; gap:10px; }
+  .team-crest{ width:26px; height:26px; border-radius:50%; overflow:hidden; flex-shrink:0; background:var(--pitch); }
+  .team-crest img{ width:100%; height:100%; object-fit:contain; padding:2px; }
+
+  .empty-state{
+    padding:34px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
+    background:var(--card); border:1px dashed var(--line); border-radius:10px;
+  }
+
+  footer{
+    background:var(--pitch-dark); color:rgba(246,243,236,0.55);
+    text-align:center; padding:26px; font-size:13px; margin-top:40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span> كورة ايجنت</div>
+    <nav>
+      <a href="index.html">مباريات اليوم</a>
+      <a href="news.html">الأخبار</a>
+      <a href="standings.html" class="active">الترتيب</a>
+      <a href="#">الدوريات</a>
+    </nav>
+  </div>
+  <div class="hero-line"><h1>جدول الترتيب</h1></div>
+</header>
+
+<main>
+  <div class="league-tabs" id="league-tabs"></div>
+  <div class="table-card">
+    <table class="standings-table">
+      <thead>
+        <tr>
+          <th></th><th>الفريق</th><th class="center">لعب</th><th class="center">نقاط</th>
+        </tr>
+      </thead>
+      <tbody id="standings-body"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer>&copy; كورة ايجنت 2026</footer>
+
+<script>
+function initials(name){
+  return name.trim().split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();
+}
+function crest(name, logoUrl){
+  if(logoUrl){
+    return `<img src="${logoUrl}" alt="${name}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'), {textContent:'${initials(name)}'}))">`;
+  }
+  return `<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:#fff;font-size:10px;font-weight:800">${initials(name)}</span>`;
+}
+
+function renderStandings(standings){
+  const tbody = document.getElementById('standings-body');
+  if(!standings || standings.length === 0){
+    tbody.innerHTML = '<tr><td colspan="4"><div class="empty-state">جدول الترتيب غير متاح حالياً</div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = standings.map(s => `
+    <tr>
+      <td class="rank">${s.rank}</td>
+      <td>
+        <div class="team-cell">
+          <span class="team-crest">${crest(s.team, s.logo)}</span>
+          <span>${s.team}</span>
+        </div>
+      </td>
+      <td class="center">${s.played}</td>
+      <td class="pts">${s.points}</td>
+    </tr>`).join('');
+}
+
+let standingsByLeague = {};
+let activeLeagueId = null;
+
+function renderLeagueTabs(){
+  const wrap = document.getElementById('league-tabs');
+  const ids = Object.keys(standingsByLeague);
+  wrap.innerHTML = ids.map(id => `
+    <button type="button" class="league-tab ${id === activeLeagueId ? 'active' : ''}" data-league="${id}">
+      ${standingsByLeague[id].name}
+    </button>`).join('');
+
+  wrap.querySelectorAll('.league-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeLeagueId = btn.dataset.league;
+      renderLeagueTabs();
+      renderStandings(standingsByLeague[activeLeagueId].standings);
+    });
+  });
+}
+
+function renderStandingsData(data){
+  standingsByLeague = data || {};
+  const ids = Object.keys(standingsByLeague);
+  if(ids.length === 0){
+    document.getElementById('standings-body').innerHTML = '<tr><td colspan="4"><div class="empty-state">جدول الترتيب غير متاح حالياً</div></td></tr>';
+    return;
+  }
+  activeLeagueId = ids.includes('307') ? '307' : ids[0];
+  renderLeagueTabs();
+  renderStandings(standingsByLeague[activeLeagueId].standings);
+}
+
+fetch('standings.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => renderStandingsData(data))
+  .catch(() => renderStandingsData({}));
+</script>
+
+</body>
+</html>

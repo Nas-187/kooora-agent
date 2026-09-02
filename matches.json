@@ -1,7 +1,6 @@
 [
   {
     "title": "LDU de Quito 0 - 0 Mushuc Runa SC",
-    "league_id": 242,
     "home_team": "LDU de Quito",
     "away_team": "Mushuc Runa SC",
     "home_logo": "https://media.api-sports.io/football/teams/1158.png",
@@ -14,7 +13,6 @@
   },
   {
     "title": "Atletico-MG 2 - 1 Cruzeiro",
-    "league_id": 73,
     "home_team": "Atletico-MG",
     "away_team": "Cruzeiro",
     "home_logo": "https://media.api-sports.io/football/teams/1062.png",
@@ -27,7 +25,6 @@
   },
   {
     "title": "Fortaleza FC 1 - 2 Once Caldas",
-    "league_id": 239,
     "home_team": "Fortaleza FC",
     "away_team": "Once Caldas",
     "home_logo": "https://media.api-sports.io/football/teams/1147.png",
@@ -40,7 +37,6 @@
   },
   {
     "title": "Metalist 1925 U19 2 - 1 Shakhtar Donetsk U19",
-    "league_id": 1065,
     "home_team": "Metalist 1925 U19",
     "away_team": "Shakhtar Donetsk U19",
     "home_logo": "https://media.api-sports.io/football/teams/23078.png",
@@ -53,7 +49,6 @@
   },
   {
     "title": "Karpaty Lviv U19 4 - 2 Livyi Bereh U19",
-    "league_id": 1065,
     "home_team": "Karpaty Lviv U19",
     "away_team": "Livyi Bereh U19",
     "home_logo": "https://media.api-sports.io/football/teams/24177.png",
@@ -66,7 +61,6 @@
   },
   {
     "title": "Gintra-Universitetas W 3 - 5 Sturm Graz W",
-    "league_id": 1191,
     "home_team": "Gintra-Universitetas W",
     "away_team": "Sturm Graz W",
     "home_logo": "https://media.api-sports.io/football/teams/10891.png",
@@ -79,7 +73,6 @@
   },
   {
     "title": "Sagamihara 0 - 3 Jubilo Iwata",
-    "league_id": 101,
     "home_team": "Sagamihara",
     "away_team": "Jubilo Iwata",
     "home_logo": "https://media.api-sports.io/football/teams/4324.png",
@@ -92,7 +85,6 @@
   },
   {
     "title": "Vanraure Hachinohe 0 - 2 Tochigi City",
-    "league_id": 101,
     "home_team": "Vanraure Hachinohe",
     "away_team": "Tochigi City",
     "home_logo": "https://media.api-sports.io/football/teams/4326.png",
@@ -105,7 +97,6 @@
   },
   {
     "title": "George Telegraph 0 - 6 Calcutta Customs",
-    "league_id": 1020,
     "home_team": "George Telegraph",
     "away_team": "Calcutta Customs",
     "home_logo": "https://media.api-sports.io/football/teams/21604.png",
@@ -118,7 +109,6 @@
   },
   {
     "title": "United Kolkata 0 - 3 East Bengal",
-    "league_id": 1020,
     "home_team": "United Kolkata",
     "away_team": "East Bengal",
     "home_logo": "https://media.api-sports.io/football/teams/26118.png",
@@ -131,7 +121,6 @@
   },
   {
     "title": "Marconi Stallions 1 - 3 NWS Spirit",
-    "league_id": 192,
     "home_team": "Marconi Stallions",
     "away_team": "NWS Spirit",
     "home_logo": "https://media.api-sports.io/football/teams/3768.png",
@@ -144,7 +133,6 @@
   },
   {
     "title": "Sutherland Sharks 1 - 1 Manly United",
-    "league_id": 192,
     "home_team": "Sutherland Sharks",
     "away_team": "Manly United",
     "home_logo": "https://media.api-sports.io/football/teams/3771.png",
@@ -157,7 +145,6 @@
   },
   {
     "title": "Changnyeong W 0 - 1 Boeun Sangmu W",
-    "league_id": 660,
     "home_team": "Changnyeong W",
     "away_team": "Boeun Sangmu W",
     "home_logo": "https://media.api-sports.io/football/teams/14373.png",
@@ -170,7 +157,6 @@
   },
   {
     "title": "Hwacheon KSPO W 2 - 0 Suwon FMC W",
-    "league_id": 660,
     "home_team": "Hwacheon KSPO W",
     "away_team": "Suwon FMC W",
     "home_logo": "https://media.api-sports.io/football/teams/14376.png",
@@ -183,7 +169,6 @@
   },
   {
     "title": "Gumi Sportstoto W 0 - 1 Gyeongju W",
-    "league_id": 660,
     "home_team": "Gumi Sportstoto W",
     "away_team": "Gyeongju W",
     "home_logo": "https://media.api-sports.io/football/teams/14374.png",
@@ -196,7 +181,6 @@
   },
   {
     "title": "Seoul W 1 - 0 Incheon Red Angels W",
-    "league_id": 660,
     "home_team": "Seoul W",
     "away_team": "Incheon Red Angels W",
     "home_logo": "https://media.api-sports.io/football/teams/14378.png",
@@ -209,7 +193,6 @@
   },
   {
     "title": "Avispa Fukuoka 2 - 3 Urawa",
-    "league_id": 98,
     "home_team": "Avispa Fukuoka",
     "away_team": "Urawa",
     "home_logo": "https://media.api-sports.io/football/teams/316.png",
@@ -222,7 +205,6 @@
   },
   {
     "title": "Cerezo Osaka 2 - 0 Kashiwa Reysol",
-    "league_id": 98,
     "home_team": "Cerezo Osaka",
     "away_team": "Kashiwa Reysol",
     "home_logo": "https://media.api-sports.io/football/teams/291.png",
@@ -235,7 +217,6 @@
   },
   {
     "title": "JEF United Chiba 1 - 2 Fagiano Okayama",
-    "league_id": 98,
     "home_team": "JEF United Chiba",
     "away_team": "Fagiano Okayama",
     "home_logo": "https://media.api-sports.io/football/teams/301.png",
@@ -248,7 +229,6 @@
   },
   {
     "title": "Machida Zelvia 2 - 1 Kawasaki Frontale",
-    "league_id": 98,
     "home_team": "Machida Zelvia",
     "away_team": "Kawasaki Frontale",
     "home_logo": "https://media.api-sports.io/football/teams/303.png",
@@ -261,7 +241,6 @@
   },
   {
     "title": "Mito Hollyhock 4 - 2 Kashima",
-    "league_id": 98,
     "home_team": "Mito Hollyhock",
     "away_team": "Kashima",
     "home_logo": "https://media.api-sports.io/football/teams/305.png",
@@ -274,7 +253,6 @@
   },
   {
     "title": "Sanfrecce Hiroshima 3 - 0 Nagoya Grampus",
-    "league_id": 98,
     "home_team": "Sanfrecce Hiroshima",
     "away_team": "Nagoya Grampus",
     "home_logo": "https://media.api-sports.io/football/teams/282.png",
@@ -287,7 +265,6 @@
   },
   {
     "title": "Shimizu S-pulse 1 - 1 FC Tokyo",
-    "league_id": 98,
     "home_team": "Shimizu S-pulse",
     "away_team": "FC Tokyo",
     "home_logo": "https://media.api-sports.io/football/teams/283.png",
@@ -300,7 +277,6 @@
   },
   {
     "title": "Tokyo Verdy 0 - 2 Vissel Kobe",
-    "league_id": 98,
     "home_team": "Tokyo Verdy",
     "away_team": "Vissel Kobe",
     "home_logo": "https://media.api-sports.io/football/teams/306.png",
@@ -313,7 +289,6 @@
   },
   {
     "title": "V-varen Nagasaki 2 - 2 Gamba Osaka",
-    "league_id": 98,
     "home_team": "V-varen Nagasaki",
     "away_team": "Gamba Osaka",
     "home_logo": "https://media.api-sports.io/football/teams/285.png",
@@ -326,7 +301,6 @@
   },
   {
     "title": "Yokohama F. Marinos 1 - 1 Kyoto Sanga",
-    "league_id": 98,
     "home_team": "Yokohama F. Marinos",
     "away_team": "Kyoto Sanga",
     "home_logo": "https://media.api-sports.io/football/teams/296.png",
@@ -339,7 +313,6 @@
   },
   {
     "title": "INAC Kobe Leonessa W 2 - 2 Parceiro Nagano W",
-    "league_id": 854,
     "home_team": "INAC Kobe Leonessa W",
     "away_team": "Parceiro Nagano W",
     "home_logo": "https://media.api-sports.io/football/teams/16947.png",
@@ -352,7 +325,6 @@
   },
   {
     "title": "Ehime FC 1 - 0 Blaublitz Akita",
-    "league_id": 101,
     "home_team": "Ehime FC",
     "away_team": "Blaublitz Akita",
     "home_logo": "https://media.api-sports.io/football/teams/318.png",
@@ -365,7 +337,6 @@
   },
   {
     "title": "Gainare Tottori 3 - 1 Omiya Ardija",
-    "league_id": 101,
     "home_team": "Gainare Tottori",
     "away_team": "Omiya Ardija",
     "home_logo": "https://media.api-sports.io/football/teams/4319.png",
@@ -378,7 +349,6 @@
   },
   {
     "title": "FC Gifu 0 - 0 Tokushima Vortis",
-    "league_id": 101,
     "home_team": "FC Gifu",
     "away_team": "Tokushima Vortis",
     "home_logo": "https://media.api-sports.io/football/teams/297.png",
@@ -391,7 +361,6 @@
   },
   {
     "title": "Kitakyushu 1 - 0 Iwaki",
-    "league_id": 101,
     "home_team": "Kitakyushu",
     "away_team": "Iwaki",
     "home_logo": "https://media.api-sports.io/football/teams/805.png",
@@ -404,7 +373,6 @@
   },
   {
     "title": "Kagoshima United 0 - 1 Consadole Sapporo",
-    "league_id": 101,
     "home_team": "Kagoshima United",
     "away_team": "Consadole Sapporo",
     "home_logo": "https://media.api-sports.io/football/teams/2236.png",
@@ -417,7 +385,6 @@
   },
   {
     "title": "Kanazawa 2 - 1 Imabari",
-    "league_id": 101,
     "home_team": "Kanazawa",
     "away_team": "Imabari",
     "home_logo": "https://media.api-sports.io/football/teams/300.png",
@@ -430,7 +397,6 @@
   },
   {
     "title": "Roasso Kumamoto 2 - 0 Oita Trinita",
-    "league_id": 101,
     "home_team": "Roasso Kumamoto",
     "away_team": "Oita Trinita",
     "home_logo": "https://media.api-sports.io/football/teams/314.png",
@@ -443,7 +409,6 @@
   },
   {
     "title": "Thespakusatsu Gunma 1 - 2 Albirex Niigata",
-    "league_id": 101,
     "home_team": "Thespakusatsu Gunma",
     "away_team": "Albirex Niigata",
     "home_logo": "https://media.api-sports.io/football/teams/756.png",
@@ -456,7 +421,6 @@
   },
   {
     "title": "Nara Club 1 - 2 Sagan Tosu",
-    "league_id": 101,
     "home_team": "Nara Club",
     "away_team": "Sagan Tosu",
     "home_logo": "https://media.api-sports.io/football/teams/7135.png",
@@ -469,7 +433,6 @@
   },
   {
     "title": "Osaka 3 - 0 Ventforet Kofu",
-    "league_id": 101,
     "home_team": "Osaka",
     "away_team": "Ventforet Kofu",
     "home_logo": "https://media.api-sports.io/football/teams/7138.png",
@@ -482,7 +445,6 @@
   },
   {
     "title": "Renofa Yamaguchi 0 - 2 Fujieda MYFC",
-    "league_id": 101,
     "home_team": "Renofa Yamaguchi",
     "away_team": "Fujieda MYFC",
     "home_logo": "https://media.api-sports.io/football/teams/309.png",
@@ -495,7 +457,6 @@
   },
   {
     "title": "FC Ryukyu 2 - 3 Yokohama FC",
-    "league_id": 101,
     "home_team": "FC Ryukyu",
     "away_team": "Yokohama FC",
     "home_logo": "https://media.api-sports.io/football/teams/2235.png",
@@ -508,7 +469,6 @@
   },
   {
     "title": "Tegevajaro Miyazaki 1 - 2 Kataller Toyama",
-    "league_id": 101,
     "home_team": "Tegevajaro Miyazaki",
     "away_team": "Kataller Toyama",
     "home_logo": "https://media.api-sports.io/football/teams/10409.png",
@@ -521,7 +481,6 @@
   },
   {
     "title": "Veres Rivne U19 3 - 1 Oleksandria U19",
-    "league_id": 1065,
     "home_team": "Veres Rivne U19",
     "away_team": "Oleksandria U19",
     "home_logo": "https://media.api-sports.io/football/teams/23082.png",
@@ -534,7 +493,6 @@
   },
   {
     "title": "Zhytomyr U19 2 - 1 Lviv U19",
-    "league_id": 1065,
     "home_team": "Zhytomyr U19",
     "away_team": "Lviv U19",
     "home_logo": "https://media.api-sports.io/football/teams/23084.png",
@@ -547,7 +505,6 @@
   },
   {
     "title": "Sabah FA 2 - 2 Selangor",
-    "league_id": 500,
     "home_team": "Sabah FA",
     "away_team": "Selangor",
     "home_logo": "https://media.api-sports.io/football/teams/2505.png",
@@ -560,7 +517,6 @@
   },
   {
     "title": "Yunnan Yukun 1 - 0 Chongqing Tongliang Long",
-    "league_id": 171,
     "home_team": "Yunnan Yukun",
     "away_team": "Chongqing Tongliang Long",
     "home_logo": "https://media.api-sports.io/football/teams/21265.png",
@@ -573,7 +529,6 @@
   },
   {
     "title": "Lernayin Artsakh 5 - 0 Banants II",
-    "league_id": 343,
     "home_team": "Lernayin Artsakh",
     "away_team": "Banants II",
     "home_logo": "https://media.api-sports.io/football/teams/6281.png",
@@ -586,7 +541,6 @@
   },
   {
     "title": "Pyunik II 1 - 0 Sardarapat 2",
-    "league_id": 343,
     "home_team": "Pyunik II",
     "away_team": "Sardarapat 2",
     "home_logo": "https://media.api-sports.io/football/teams/3696.png",
@@ -599,7 +553,6 @@
   },
   {
     "title": "Melaka 0 - 1 Penang",
-    "league_id": 500,
     "home_team": "Melaka",
     "away_team": "Penang",
     "home_logo": "https://media.api-sports.io/football/teams/21038.png",
@@ -612,7 +565,6 @@
   },
   {
     "title": "Luzino 2 - 3 Wisla Plock",
-    "league_id": 108,
     "home_team": "Luzino",
     "away_team": "Wisla Plock",
     "home_logo": "https://media.api-sports.io/football/teams/19693.png",
@@ -625,7 +577,6 @@
   },
   {
     "title": "Olimpik-Mobiuz 2 - 3 Metalourg",
-    "league_id": 1075,
     "home_team": "Olimpik-Mobiuz",
     "away_team": "Metalourg",
     "home_logo": "https://media.api-sports.io/football/teams/23309.png",
@@ -638,7 +589,6 @@
   },
   {
     "title": "Scotland Mabvuku 0 - 0 Platinum",
-    "league_id": 401,
     "home_team": "Scotland Mabvuku",
     "away_team": "Platinum",
     "home_logo": "https://media.api-sports.io/football/teams/25735.png",
@@ -651,7 +601,6 @@
   },
   {
     "title": "Cape Town City 1 - 1 Leicesterfield",
-    "league_id": 289,
     "home_team": "Cape Town City",
     "away_team": "Leicesterfield",
     "home_logo": "https://media.api-sports.io/football/teams/2697.png",
@@ -664,7 +613,6 @@
   },
   {
     "title": "Sassuolo 1 - 1 Frosinone",
-    "league_id": 137,
     "home_team": "Sassuolo",
     "away_team": "Frosinone",
     "home_logo": "https://media.api-sports.io/football/teams/488.png",
@@ -677,7 +625,6 @@
   },
   {
     "title": "Minerul Lupeni 0 - 3 Uta Arad",
-    "league_id": 285,
     "home_team": "Minerul Lupeni",
     "away_team": "Uta Arad",
     "home_logo": "https://media.api-sports.io/football/teams/24371.png",
@@ -690,7 +637,6 @@
   },
   {
     "title": "Blacks Power 1 - 0 Police",
-    "league_id": 585,
     "home_team": "Blacks Power",
     "away_team": "Police",
     "home_logo": "https://media.api-sports.io/football/teams/20297.png",
@@ -703,7 +649,6 @@
   },
   {
     "title": "Ntugasaze 1 - 3 Maroons",
-    "league_id": 585,
     "home_team": "Ntugasaze",
     "away_team": "Maroons",
     "home_logo": "https://media.api-sports.io/football/teams/28318.png",
@@ -716,7 +661,6 @@
   },
   {
     "title": "Kedah 2 - 2 Imigresen",
-    "league_id": 500,
     "home_team": "Kedah",
     "away_team": "Imigresen",
     "home_logo": "https://media.api-sports.io/football/teams/2527.png",
@@ -729,7 +673,6 @@
   },
   {
     "title": "Kelantan City 2 - 0 Negeri Sembilan",
-    "league_id": 500,
     "home_team": "Kelantan City",
     "away_team": "Negeri Sembilan",
     "home_logo": "https://media.api-sports.io/football/teams/28339.png",
@@ -742,7 +685,6 @@
   },
   {
     "title": "FC Orenburg 1 - 1 Rubin",
-    "league_id": 237,
     "home_team": "FC Orenburg",
     "away_team": "Rubin",
     "home_logo": "https://media.api-sports.io/football/teams/1080.png",
@@ -755,7 +697,6 @@
   },
   {
     "title": "Vukovar 2 - 6 Dinamo Zagreb U21",
-    "league_id": 211,
     "home_team": "Vukovar",
     "away_team": "Dinamo Zagreb U21",
     "home_logo": "https://media.api-sports.io/football/teams/5730.png",
@@ -768,7 +709,6 @@
   },
   {
     "title": "FCM Ungheni 9 - 0 Olimp Comrat",
-    "league_id": 674,
     "home_team": "FCM Ungheni",
     "away_team": "Olimp Comrat",
     "home_logo": "https://media.api-sports.io/football/teams/14894.png",
@@ -781,7 +721,6 @@
   },
   {
     "title": "FC National Ialoveni 1 - 2 Congaz",
-    "league_id": 674,
     "home_team": "FC National Ialoveni",
     "away_team": "Congaz",
     "home_logo": "https://media.api-sports.io/football/teams/26757.png",
@@ -793,21 +732,19 @@
     "content": "فوز Congaz على FC National Ialoveni بنتيجة 1-2 ضمن Cupa."
   },
   {
-    "title": "FC Stăuceni 1 - 1 FC Chișinău",
-    "league_id": 674,
+    "title": "FC Stăuceni 4 - 5 FC Chișinău",
     "home_team": "FC Stăuceni",
     "away_team": "FC Chișinău",
     "home_logo": "https://media.api-sports.io/football/teams/17625.png",
     "away_logo": "https://media.api-sports.io/football/teams/22186.png",
-    "home_score": 1,
-    "away_score": 1,
+    "home_score": 4,
+    "away_score": 5,
     "status": "Match Finished",
     "league": "Cupa",
-    "content": "تعادل FC Stăuceni وFC Chișinău بنتيجة 1-1 ضمن Cupa."
+    "content": "فوز FC Chișinău على FC Stăuceni بنتيجة 4-5 ضمن Cupa."
   },
   {
     "title": "Iskra 4 - 1 Țarigrad",
-    "league_id": 674,
     "home_team": "Iskra",
     "away_team": "Țarigrad",
     "home_logo": "https://media.api-sports.io/football/teams/5372.png",
@@ -820,7 +757,6 @@
   },
   {
     "title": "FC Botosani 0 - 1 Corvinul Hunedoara",
-    "league_id": 285,
     "home_team": "FC Botosani",
     "away_team": "Corvinul Hunedoara",
     "home_logo": "https://media.api-sports.io/football/teams/2581.png",
@@ -833,7 +769,6 @@
   },
   {
     "title": "Chernomorets 1919 Burgas 1 - 0 Ludogorets II",
-    "league_id": 173,
     "home_team": "Chernomorets 1919 Burgas",
     "away_team": "Ludogorets II",
     "home_logo": "https://media.api-sports.io/football/teams/8530.png",
@@ -846,7 +781,6 @@
   },
   {
     "title": "Marek 1 - 0 Nesebar",
-    "league_id": 173,
     "home_team": "Marek",
     "away_team": "Nesebar",
     "home_logo": "https://media.api-sports.io/football/teams/8543.png",
@@ -859,7 +793,6 @@
   },
   {
     "title": "Rilski Sportist 2 - 1 Sportist Svoge",
-    "league_id": 173,
     "home_team": "Rilski Sportist",
     "away_team": "Sportist Svoge",
     "home_logo": "https://media.api-sports.io/football/teams/8547.png",
@@ -872,7 +805,6 @@
   },
   {
     "title": "Vanspor FK 0 - 2 Batman Petrolspor",
-    "league_id": 204,
     "home_team": "Vanspor FK",
     "away_team": "Batman Petrolspor",
     "home_logo": "https://media.api-sports.io/football/teams/6342.png",
@@ -885,7 +817,6 @@
   },
   {
     "title": "Dynamo Kyiv U19 1 - 1 LNZ Cherkasy U19",
-    "league_id": 1065,
     "home_team": "Dynamo Kyiv U19",
     "away_team": "LNZ Cherkasy U19",
     "home_logo": "https://media.api-sports.io/football/teams/7898.png",
@@ -898,7 +829,6 @@
   },
   {
     "title": "El Gouna FC 0 - 1 El Mokawloon",
-    "league_id": 233,
     "home_team": "El Gouna FC",
     "away_team": "El Mokawloon",
     "home_logo": "https://media.api-sports.io/football/teams/1574.png",
@@ -911,7 +841,6 @@
   },
   {
     "title": "Beskid 1 - 3 Śląsk Wrocław II",
-    "league_id": 108,
     "home_team": "Beskid",
     "away_team": "Śląsk Wrocław II",
     "home_logo": "https://media.api-sports.io/football/teams/26386.png",
@@ -924,7 +853,6 @@
   },
   {
     "title": "Górnik Zabrze II 3 - 4 Olimpia Grudziądz",
-    "league_id": 108,
     "home_team": "Górnik Zabrze II",
     "away_team": "Olimpia Grudziądz",
     "home_logo": "https://media.api-sports.io/football/teams/12776.png",
@@ -937,7 +865,6 @@
   },
   {
     "title": "Górnik Polkowice 0 - 1 Polonia Warszawa",
-    "league_id": 108,
     "home_team": "Górnik Polkowice",
     "away_team": "Polonia Warszawa",
     "home_logo": "https://media.api-sports.io/football/teams/9132.png",
@@ -950,7 +877,6 @@
   },
   {
     "title": "Nestos Chrisoupolis 0 - 2 AEK Athens FC",
-    "league_id": 199,
     "home_team": "Nestos Chrisoupolis",
     "away_team": "AEK Athens FC",
     "home_logo": "https://media.api-sports.io/football/teams/12367.png",
@@ -963,7 +889,6 @@
   },
   {
     "title": "Blansko 1 - 1 Polanka nad Odrou",
-    "league_id": 349,
     "home_team": "Blansko",
     "away_team": "Polanka nad Odrou",
     "home_logo": "https://media.api-sports.io/football/teams/7276.png",
@@ -976,7 +901,6 @@
   },
   {
     "title": "Hodonín 2 - 0 Sigma Olomouc II",
-    "league_id": 349,
     "home_team": "Hodonín",
     "away_team": "Sigma Olomouc II",
     "home_logo": "https://media.api-sports.io/football/teams/7297.png",
@@ -989,7 +913,6 @@
   },
   {
     "title": "Karviná II 0 - 3 Frýdek-Místek",
-    "league_id": 349,
     "home_team": "Karviná II",
     "away_team": "Frýdek-Místek",
     "home_logo": "https://media.api-sports.io/football/teams/15134.png",
@@ -1002,7 +925,6 @@
   },
   {
     "title": "Slovácko II 3 - 1 Vrchovina",
-    "league_id": 349,
     "home_team": "Slovácko II",
     "away_team": "Vrchovina",
     "home_logo": "https://media.api-sports.io/football/teams/8623.png",
@@ -1015,7 +937,6 @@
   },
   {
     "title": "Vítkovice 3 - 1 Uničov",
-    "league_id": 349,
     "home_team": "Vítkovice",
     "away_team": "Uničov",
     "home_logo": "https://media.api-sports.io/football/teams/3732.png",
@@ -1028,7 +949,6 @@
   },
   {
     "title": "Zbrojovka Brno II 5 - 0 Vsetín",
-    "league_id": 349,
     "home_team": "Zbrojovka Brno II",
     "away_team": "Vsetín",
     "home_logo": "https://media.api-sports.io/football/teams/8633.png",
@@ -1041,7 +961,6 @@
   },
   {
     "title": "Samtredia 2 - 0 FC Iberia 1999",
-    "league_id": 672,
     "home_team": "Samtredia",
     "away_team": "FC Iberia 1999",
     "home_logo": "https://media.api-sports.io/football/teams/581.png",
@@ -1054,7 +973,6 @@
   },
   {
     "title": "Príbelce 1 - 3 Pohronie",
-    "league_id": 680,
     "home_team": "Príbelce",
     "away_team": "Pohronie",
     "home_logo": "https://media.api-sports.io/football/teams/15030.png",
@@ -1067,7 +985,6 @@
   },
   {
     "title": "Agram W 0 - 1 Minsk W",
-    "league_id": 1191,
     "home_team": "Agram W",
     "away_team": "Minsk W",
     "home_logo": "https://media.api-sports.io/football/teams/26233.png",
@@ -1080,7 +997,6 @@
   },
   {
     "title": "Piešťany 1 - 1 Beluša",
-    "league_id": 680,
     "home_team": "Piešťany",
     "away_team": "Beluša",
     "home_logo": "https://media.api-sports.io/football/teams/15023.png",
@@ -1093,7 +1009,6 @@
   },
   {
     "title": "Boleráz 3 - 1 Šoporňa",
-    "league_id": 680,
     "home_team": "Boleráz",
     "away_team": "Šoporňa",
     "home_logo": "https://media.api-sports.io/football/teams/14948.png",
@@ -1106,7 +1021,6 @@
   },
   {
     "title": "Brezno 0 - 4 Lokomotíva Zvolen",
-    "league_id": 680,
     "home_team": "Brezno",
     "away_team": "Lokomotíva Zvolen",
     "home_logo": "https://media.api-sports.io/football/teams/14949.png",
@@ -1119,7 +1033,6 @@
   },
   {
     "title": "Fiľakovo 0 - 2 Dukla Banská Bystrica",
-    "league_id": 680,
     "home_team": "Fiľakovo",
     "away_team": "Dukla Banská Bystrica",
     "home_logo": "https://media.api-sports.io/football/teams/14081.png",
@@ -1131,21 +1044,7 @@
     "content": "فوز Dukla Banská Bystrica على Fiľakovo بنتيجة 0-2 ضمن Cup."
   },
   {
-    "title": "Nové Zámky 4 - 3 Petržalka",
-    "league_id": 680,
-    "home_team": "Nové Zámky",
-    "away_team": "Petržalka",
-    "home_logo": "https://media.api-sports.io/football/teams/14061.png",
-    "away_logo": "https://media.api-sports.io/football/teams/10538.png",
-    "home_score": 4,
-    "away_score": 3,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "فوز Nové Zámky على Petržalka بنتيجة 4-3 ضمن Cup."
-  },
-  {
     "title": "Harichovce 0 - 7 FK Košice",
-    "league_id": 680,
     "home_team": "Harichovce",
     "away_team": "FK Košice",
     "home_logo": "https://media.api-sports.io/football/teams/14974.png",
@@ -1158,7 +1057,6 @@
   },
   {
     "title": "Kysucké Nové Mesto 1 - 3 Čadca",
-    "league_id": 680,
     "home_team": "Kysucké Nové Mesto",
     "away_team": "Čadca",
     "home_logo": "https://media.api-sports.io/football/teams/14999.png",
@@ -1171,7 +1069,6 @@
   },
   {
     "title": "Tatran Krásno 0 - 2 AS Trencin",
-    "league_id": 680,
     "home_team": "Tatran Krásno",
     "away_team": "AS Trencin",
     "home_logo": "https://media.api-sports.io/football/teams/14091.png",
@@ -1184,7 +1081,6 @@
   },
   {
     "title": "Lokomotíva Košice 3 - 0 Slávia TU Košice",
-    "league_id": 680,
     "home_team": "Lokomotíva Košice",
     "away_team": "Slávia TU Košice",
     "home_logo": "https://media.api-sports.io/football/teams/10549.png",
@@ -1197,7 +1093,6 @@
   },
   {
     "title": "Fomat Martin 1 - 4 Skalica",
-    "league_id": 680,
     "home_team": "Fomat Martin",
     "away_team": "Skalica",
     "home_logo": "https://media.api-sports.io/football/teams/14082.png",
@@ -1210,7 +1105,6 @@
   },
   {
     "title": "Oravské Veselé 2 - 3 Považská Bystrica",
-    "league_id": 680,
     "home_team": "Oravské Veselé",
     "away_team": "Považská Bystrica",
     "home_logo": "https://media.api-sports.io/football/teams/14089.png",
@@ -1223,7 +1117,6 @@
   },
   {
     "title": "Púchov 1 - 3 Spartak Trnava",
-    "league_id": 680,
     "home_team": "Púchov",
     "away_team": "Spartak Trnava",
     "home_logo": "https://media.api-sports.io/football/teams/10540.png",
@@ -1235,34 +1128,7 @@
     "content": "فوز Spartak Trnava على Púchov بنتيجة 1-3 ضمن Cup."
   },
   {
-    "title": "Kostolné Kračany 2 - 1 Slovan Duslo Šaľa",
-    "league_id": 680,
-    "home_team": "Kostolné Kračany",
-    "away_team": "Slovan Duslo Šaľa",
-    "home_logo": "https://media.api-sports.io/football/teams/14994.png",
-    "away_logo": "https://media.api-sports.io/football/teams/14063.png",
-    "home_score": 2,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "فوز Kostolné Kračany على Slovan Duslo Šaľa بنتيجة 2-1 ضمن Cup."
-  },
-  {
-    "title": "MSK Tesla Stropkov 1 - 2 Humenné",
-    "league_id": 680,
-    "home_team": "MSK Tesla Stropkov",
-    "away_team": "Humenné",
-    "home_logo": "https://media.api-sports.io/football/teams/14069.png",
-    "away_logo": "https://media.api-sports.io/football/teams/14068.png",
-    "home_score": 1,
-    "away_score": 2,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "فوز Humenné على MSK Tesla Stropkov بنتيجة 1-2 ضمن Cup."
-  },
-  {
     "title": "Svätý Jur 2 - 1 Dunajská Lužná",
-    "league_id": 680,
     "home_team": "Svätý Jur",
     "away_team": "Dunajská Lužná",
     "home_logo": "https://media.api-sports.io/football/teams/15063.png",
@@ -1275,7 +1141,6 @@
   },
   {
     "title": "Nõmme United 3 - 2 Vaprus",
-    "league_id": 657,
     "home_team": "Nõmme United",
     "away_team": "Vaprus",
     "home_logo": "https://media.api-sports.io/football/teams/10059.png",
@@ -1288,7 +1153,6 @@
   },
   {
     "title": "Malavan 0 - 1 Nassaji Mazandaran",
-    "league_id": 290,
     "home_team": "Malavan",
     "away_team": "Nassaji Mazandaran",
     "home_logo": "https://media.api-sports.io/football/teams/2717.png",
@@ -1301,7 +1165,6 @@
   },
   {
     "title": "ZOB Ahan 1 - 0 Paykan",
-    "league_id": 290,
     "home_team": "ZOB Ahan",
     "away_team": "Paykan",
     "home_logo": "https://media.api-sports.io/football/teams/2738.png",
@@ -1314,7 +1177,6 @@
   },
   {
     "title": "Pobeda Valandovo 1 - 10 Struga",
-    "league_id": 756,
     "home_team": "Pobeda Valandovo",
     "away_team": "Struga",
     "home_logo": "https://media.api-sports.io/football/teams/4355.png",
@@ -1327,7 +1189,6 @@
   },
   {
     "title": "Studenicani 1 - 6 Pelister",
-    "league_id": 756,
     "home_team": "Studenicani",
     "away_team": "Pelister",
     "home_logo": "https://media.api-sports.io/football/teams/28310.png",
@@ -1339,34 +1200,7 @@
     "content": "فوز Pelister على Studenicani بنتيجة 1-6 ضمن Cup."
   },
   {
-    "title": "Velazerimi 77 0 - 8 Makedonija GjP",
-    "league_id": 756,
-    "home_team": "Velazerimi 77",
-    "away_team": "Makedonija GjP",
-    "home_logo": "https://media.api-sports.io/football/teams/4350.png",
-    "away_logo": "https://media.api-sports.io/football/teams/4196.png",
-    "home_score": 0,
-    "away_score": 8,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "فوز Makedonija GjP على Velazerimi 77 بنتيجة 0-8 ضمن Cup."
-  },
-  {
-    "title": "Venec Negotino 0 - 8 Akademija Pandev",
-    "league_id": 756,
-    "home_team": "Venec Negotino",
-    "away_team": "Akademija Pandev",
-    "home_logo": "https://media.api-sports.io/football/teams/28314.png",
-    "away_logo": "https://media.api-sports.io/football/teams/4194.png",
-    "home_score": 0,
-    "away_score": 8,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "فوز Akademija Pandev على Venec Negotino بنتيجة 0-8 ضمن Cup."
-  },
-  {
     "title": "Marko 2 - 2 Kifisia",
-    "league_id": 199,
     "home_team": "Marko",
     "away_team": "Kifisia",
     "home_logo": "https://media.api-sports.io/football/teams/12403.png",
@@ -1379,7 +1213,6 @@
   },
   {
     "title": "Partizán Bardejov 1 - 2 Vranov nad Topľou",
-    "league_id": 680,
     "home_team": "Partizán Bardejov",
     "away_team": "Vranov nad Topľou",
     "home_logo": "https://media.api-sports.io/football/teams/10537.png",
@@ -1391,796 +1224,207 @@
     "content": "فوز Vranov nad Topľou على Partizán Bardejov بنتيجة 1-2 ضمن Cup."
   },
   {
-    "title": "Komárov 1 - 0 Doubravka",
-    "league_id": 350,
-    "home_team": "Komárov",
-    "away_team": "Doubravka",
-    "home_logo": "https://media.api-sports.io/football/teams/7310.png",
-    "away_logo": "https://media.api-sports.io/football/teams/7285.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "4. liga - Divizie A",
-    "content": "فوز Komárov على Doubravka بنتيجة 1-0 ضمن 4. liga - Divizie A."
-  },
-  {
-    "title": "Benešov 1 - 1 Sparta Praha II",
-    "league_id": 348,
-    "home_team": "Benešov",
-    "away_team": "Sparta Praha II",
-    "home_logo": "https://media.api-sports.io/football/teams/7273.png",
-    "away_logo": "https://media.api-sports.io/football/teams/8619.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "3. liga - CFL A",
-    "content": "تعادل Benešov وSparta Praha II بنتيجة 1-1 ضمن 3. liga - CFL A."
-  },
-  {
-    "title": "Povltava FA 3 - 5 Jiskra Domažlice",
-    "league_id": 348,
-    "home_team": "Povltava FA",
-    "away_team": "Jiskra Domažlice",
-    "home_logo": "https://media.api-sports.io/football/teams/14005.png",
-    "away_logo": "https://media.api-sports.io/football/teams/7304.png",
-    "home_score": 3,
-    "away_score": 5,
-    "status": "Match Finished",
-    "league": "3. liga - CFL A",
-    "content": "فوز Jiskra Domažlice على Povltava FA بنتيجة 3-5 ضمن 3. liga - CFL A."
-  },
-  {
-    "title": "Zlín II 1 - 1 Uherský Brod",
-    "league_id": 349,
-    "home_team": "Zlín II",
-    "away_team": "Uherský Brod",
-    "home_logo": "https://media.api-sports.io/football/teams/8625.png",
-    "away_logo": "https://media.api-sports.io/football/teams/8624.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "3. liga - MSFL",
-    "content": "تعادل Zlín II وUherský Brod بنتيجة 1-1 ضمن 3. liga - MSFL."
-  },
-  {
-    "title": "Croatia Zmijavci 1 - 0 Bsk Bijelo Brdo",
-    "league_id": 211,
-    "home_team": "Croatia Zmijavci",
-    "away_team": "Bsk Bijelo Brdo",
-    "home_logo": "https://media.api-sports.io/football/teams/6254.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1487.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "First NL",
-    "content": "فوز Croatia Zmijavci على Bsk Bijelo Brdo بنتيجة 1-0 ضمن First NL."
-  },
-  {
-    "title": "Dugopolje 2 - 2 Karlovac 1919",
-    "league_id": 211,
-    "home_team": "Dugopolje",
-    "away_team": "Karlovac 1919",
-    "home_logo": "https://media.api-sports.io/football/teams/1471.png",
-    "away_logo": "https://media.api-sports.io/football/teams/15295.png",
-    "home_score": 2,
-    "away_score": 2,
-    "status": "Match Finished",
-    "league": "First NL",
-    "content": "تعادل Dugopolje وKarlovac 1919 بنتيجة 2-2 ضمن First NL."
-  },
-  {
-    "title": "Jadran LP 1 - 1 Dubrava Zagreb",
-    "league_id": 211,
-    "home_team": "Jadran LP",
-    "away_team": "Dubrava Zagreb",
-    "home_logo": "https://media.api-sports.io/football/teams/5708.png",
-    "away_logo": "https://media.api-sports.io/football/teams/6255.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "First NL",
-    "content": "تعادل Jadran LP وDubrava Zagreb بنتيجة 1-1 ضمن First NL."
-  },
-  {
-    "title": "Mladost Ždralovi 1 - 0 Sesvete",
-    "league_id": 211,
-    "home_team": "Mladost Ždralovi",
-    "away_team": "Sesvete",
-    "home_logo": "https://media.api-sports.io/football/teams/8593.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1479.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "First NL",
-    "content": "فوز Mladost Ždralovi على Sesvete بنتيجة 1-0 ضمن First NL."
-  },
-  {
-    "title": "Segesta Sisak 0 - 0 Kustosija",
-    "league_id": 211,
-    "home_team": "Segesta Sisak",
-    "away_team": "Kustosija",
-    "home_logo": "https://media.api-sports.io/football/teams/5722.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1481.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "First NL",
-    "content": "تعادل Segesta Sisak وKustosija بنتيجة 0-0 ضمن First NL."
-  },
-  {
-    "title": "Górnik Łęczna 3 - 3 Stal Mielec",
-    "league_id": 108,
-    "home_team": "Górnik Łęczna",
-    "away_team": "Stal Mielec",
-    "home_logo": "https://media.api-sports.io/football/teams/6941.png",
-    "away_logo": "https://media.api-sports.io/football/teams/3493.png",
-    "home_score": 3,
-    "away_score": 3,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "تعادل Górnik Łęczna وStal Mielec بنتيجة 3-3 ضمن Cup."
-  },
-  {
-    "title": "Slovan Liberec W 1 - 1 SFK 2000 W",
-    "league_id": 1191,
-    "home_team": "Slovan Liberec W",
-    "away_team": "SFK 2000 W",
-    "home_logo": "https://media.api-sports.io/football/teams/14846.png",
-    "away_logo": "https://media.api-sports.io/football/teams/10902.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "UEFA Europa Cup - Women",
-    "content": "تعادل Slovan Liberec W وSFK 2000 W بنتيجة 1-1 ضمن UEFA Europa Cup - Women."
-  },
-  {
-    "title": "Kolos Kovalivka W 1 - 3 Torreense W",
-    "league_id": 1191,
-    "home_team": "Kolos Kovalivka W",
-    "away_team": "Torreense W",
-    "home_logo": "https://media.api-sports.io/football/teams/24210.png",
-    "away_logo": "https://media.api-sports.io/football/teams/20512.png",
-    "home_score": 1,
-    "away_score": 3,
-    "status": "Match Finished",
-    "league": "UEFA Europa Cup - Women",
-    "content": "فوز Torreense W على Kolos Kovalivka W بنتيجة 1-3 ضمن UEFA Europa Cup - Women."
-  },
-  {
-    "title": "Kheybar Khorramabad 2 - 0 Foolad FC",
-    "league_id": 290,
-    "home_team": "Kheybar Khorramabad",
-    "away_team": "Foolad FC",
-    "home_logo": "https://media.api-sports.io/football/teams/2716.png",
-    "away_logo": "https://media.api-sports.io/football/teams/2734.png",
-    "home_score": 2,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "Persian Gulf Pro League",
-    "content": "فوز Kheybar Khorramabad على Foolad FC بنتيجة 2-0 ضمن Persian Gulf Pro League."
-  },
-  {
-    "title": "Gloria Bistriţa 0 - 2 Csikszereda",
-    "league_id": 285,
-    "home_team": "Gloria Bistriţa",
-    "away_team": "Csikszereda",
-    "home_logo": "https://media.api-sports.io/football/teams/22824.png",
-    "away_logo": "https://media.api-sports.io/football/teams/6230.png",
-    "home_score": 0,
-    "away_score": 2,
-    "status": "Match Finished",
-    "league": "Cupa României",
-    "content": "فوز Csikszereda على Gloria Bistriţa بنتيجة 0-2 ضمن Cupa României."
-  },
-  {
-    "title": "Kraft 2 - 1 Jaro 2",
-    "league_id": 249,
-    "home_team": "Kraft",
-    "away_team": "Jaro 2",
-    "home_logo": "https://media.api-sports.io/football/teams/9213.png",
-    "away_logo": "https://media.api-sports.io/football/teams/27701.png",
-    "home_score": 2,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Kakkonen - Lohko C",
-    "content": "فوز Kraft على Jaro 2 بنتيجة 2-1 ضمن Kakkonen - Lohko C."
-  },
-  {
-    "title": "ML Vitebsk 1 - 1 Belshina",
-    "league_id": 116,
-    "home_team": "ML Vitebsk",
-    "away_team": "Belshina",
-    "home_logo": "https://media.api-sports.io/football/teams/7808.png",
-    "away_logo": "https://media.api-sports.io/football/teams/3384.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Premier League",
-    "content": "تعادل ML Vitebsk وBelshina بنتيجة 1-1 ضمن Premier League."
-  },
-  {
-    "title": "Zenit 3 - 0 Dinamo Makhachkala",
-    "league_id": 237,
-    "home_team": "Zenit",
-    "away_team": "Dinamo Makhachkala",
-    "home_logo": "https://media.api-sports.io/football/teams/596.png",
-    "away_logo": "https://media.api-sports.io/football/teams/6813.png",
-    "home_score": 3,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "Cup",
-    "content": "فوز Zenit على Dinamo Makhachkala بنتيجة 3-0 ضمن Cup."
-  },
-  {
-    "title": "Opatija 1 - 0 Hrvace",
-    "league_id": 211,
-    "home_team": "Opatija",
-    "away_team": "Hrvace",
-    "home_logo": "https://media.api-sports.io/football/teams/6246.png",
-    "away_logo": "https://media.api-sports.io/football/teams/6241.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "First NL",
-    "content": "فوز Opatija على Hrvace بنتيجة 1-0 ضمن First NL."
-  },
-  {
-    "title": "EPS 0 - 1 Honka",
-    "league_id": 248,
-    "home_team": "EPS",
-    "away_team": "Honka",
-    "home_logo": "https://media.api-sports.io/football/teams/9182.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1169.png",
-    "home_score": 0,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Kakkonen - Lohko B",
-    "content": "فوز Honka على EPS بنتيجة 0-1 ضمن Kakkonen - Lohko B."
-  },
-  {
-    "title": "HJS Akatemia 1 - 5 Ilves II",
-    "league_id": 248,
-    "home_team": "HJS Akatemia",
-    "away_team": "Ilves II",
-    "home_logo": "https://media.api-sports.io/football/teams/9209.png",
-    "away_logo": "https://media.api-sports.io/football/teams/9185.png",
-    "home_score": 1,
-    "away_score": 5,
-    "status": "Match Finished",
-    "league": "Kakkonen - Lohko B",
-    "content": "فوز Ilves II على HJS Akatemia بنتيجة 1-5 ضمن Kakkonen - Lohko B."
-  },
-  {
-    "title": "VPS II 6 - 4 GBK",
-    "league_id": 249,
-    "home_team": "VPS II",
-    "away_team": "GBK",
-    "home_logo": "https://media.api-sports.io/football/teams/9200.png",
-    "away_logo": "https://media.api-sports.io/football/teams/9191.png",
-    "home_score": 6,
-    "away_score": 4,
-    "status": "Match Finished",
-    "league": "Kakkonen - Lohko C",
-    "content": "فوز VPS II على GBK بنتيجة 6-4 ضمن Kakkonen - Lohko C."
-  },
-  {
-    "title": "Hajer 1 - 1 Al Anwar",
-    "league_id": 308,
-    "home_team": "Hajer",
-    "away_team": "Al Anwar",
-    "home_logo": "https://media.api-sports.io/football/teams/2948.png",
-    "away_logo": "https://media.api-sports.io/football/teams/10503.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Division 1",
-    "content": "تعادل Hajer وAl Anwar بنتيجة 1-1 ضمن Division 1."
-  },
-  {
-    "title": "Flora Tallinn 3 - 2 Tammeka",
-    "league_id": 329,
+    "title": "Flora Tallinn 2 - 1 Tammeka",
     "home_team": "Flora Tallinn",
     "away_team": "Tammeka",
     "home_logo": "https://media.api-sports.io/football/teams/687.png",
     "away_logo": "https://media.api-sports.io/football/teams/3530.png",
-    "home_score": 3,
-    "away_score": 2,
-    "status": "Match Finished",
+    "home_score": 2,
+    "away_score": 1,
+    "status": "Halftime",
     "league": "Meistriliiga",
-    "content": "فوز Flora Tallinn على Tammeka بنتيجة 3-2 ضمن Meistriliiga."
+    "content": "فوز Flora Tallinn على Tammeka بنتيجة 2-1 ضمن Meistriliiga."
   },
   {
-    "title": "Zbrojovka Brno 1 - 0 Hradec Králové",
-    "league_id": 345,
-    "home_team": "Zbrojovka Brno",
-    "away_team": "Hradec Králové",
-    "home_logo": "https://media.api-sports.io/football/teams/3733.png",
-    "away_logo": "https://media.api-sports.io/football/teams/3723.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "Czech Liga",
-    "content": "فوز Zbrojovka Brno على Hradec Králové بنتيجة 1-0 ضمن Czech Liga."
-  },
-  {
-    "title": "Yantra 2019 2 - 0 Pirin Blagoevgrad",
-    "league_id": 173,
+    "title": "Yantra 2019 0 - 0 Pirin Blagoevgrad",
     "home_team": "Yantra 2019",
     "away_team": "Pirin Blagoevgrad",
     "home_logo": "https://media.api-sports.io/football/teams/8528.png",
     "away_logo": "https://media.api-sports.io/football/teams/1428.png",
-    "home_score": 2,
+    "home_score": 0,
     "away_score": 0,
-    "status": "Match Finished",
+    "status": "Halftime",
     "league": "Second League",
-    "content": "فوز Yantra 2019 على Pirin Blagoevgrad بنتيجة 2-0 ضمن Second League."
+    "content": "تعادل Yantra 2019 وPirin Blagoevgrad بنتيجة 0-0 ضمن Second League."
   },
   {
-    "title": "Líšeň II 2 - 0 Havířov",
-    "league_id": 349,
+    "title": "Líšeň II 1 - 0 Havířov",
     "home_team": "Líšeň II",
     "away_team": "Havířov",
     "home_logo": "https://media.api-sports.io/football/teams/21650.png",
     "away_logo": "https://media.api-sports.io/football/teams/7293.png",
-    "home_score": 2,
-    "away_score": 0,
-    "status": "Match Finished",
-    "league": "3. liga - MSFL",
-    "content": "فوز Líšeň II على Havířov بنتيجة 2-0 ضمن 3. liga - MSFL."
-  },
-  {
-    "title": "Velež 1 - 1 Radnik Bijeljina",
-    "league_id": 315,
-    "home_team": "Velež",
-    "away_team": "Radnik Bijeljina",
-    "home_logo": "https://media.api-sports.io/football/teams/3381.png",
-    "away_logo": "https://media.api-sports.io/football/teams/3359.png",
     "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Premijer Liga",
-    "content": "تعادل Velež وRadnik Bijeljina بنتيجة 1-1 ضمن Premijer Liga."
+    "away_score": 0,
+    "status": "Halftime",
+    "league": "3. liga - MSFL",
+    "content": "فوز Líšeň II على Havířov بنتيجة 1-0 ضمن 3. liga - MSFL."
   },
   {
-    "title": "HSC Hannover 0 - 3 Phönix Lübeck",
-    "league_id": 84,
-    "home_team": "HSC Hannover",
-    "away_team": "Phönix Lübeck",
-    "home_logo": "https://media.api-sports.io/football/teams/9339.png",
-    "away_logo": "https://media.api-sports.io/football/teams/12831.png",
-    "home_score": 0,
-    "away_score": 3,
-    "status": "Match Finished",
-    "league": "Regionalliga - Nord",
-    "content": "فوز Phönix Lübeck على HSC Hannover بنتيجة 0-3 ضمن Regionalliga - Nord."
-  },
-  {
-    "title": "Slovan Nitra-Chrenová 0 - 8 Slovan Bratislava",
-    "league_id": 680,
+    "title": "Slovan Nitra-Chrenová 0 - 6 Slovan Bratislava",
     "home_team": "Slovan Nitra-Chrenová",
     "away_team": "Slovan Bratislava",
     "home_logo": "https://media.api-sports.io/football/teams/19390.png",
     "away_logo": "https://media.api-sports.io/football/teams/656.png",
     "home_score": 0,
-    "away_score": 8,
-    "status": "Match Finished",
+    "away_score": 6,
+    "status": "Halftime",
     "league": "Cup",
-    "content": "فوز Slovan Bratislava على Slovan Nitra-Chrenová بنتيجة 0-8 ضمن Cup."
+    "content": "فوز Slovan Bratislava على Slovan Nitra-Chrenová بنتيجة 0-6 ضمن Cup."
   },
   {
-    "title": "Malkiya 0 - 1 Al Najma",
-    "league_id": 417,
+    "title": "Lechia Zielona Góra 0 - 2 Ruch Chorzów",
+    "home_team": "Lechia Zielona Góra",
+    "away_team": "Ruch Chorzów",
+    "home_logo": "https://media.api-sports.io/football/teams/14143.png",
+    "away_logo": "https://media.api-sports.io/football/teams/6953.png",
+    "home_score": 0,
+    "away_score": 2,
+    "status": "Halftime",
+    "league": "Cup",
+    "content": "فوز Ruch Chorzów على Lechia Zielona Góra بنتيجة 0-2 ضمن Cup."
+  },
+  {
+    "title": "Malkiya 0 - 0 Al Najma",
     "home_team": "Malkiya",
     "away_team": "Al Najma",
     "home_logo": "https://media.api-sports.io/football/teams/5486.png",
     "away_logo": "https://media.api-sports.io/football/teams/5479.png",
     "home_score": 0,
-    "away_score": 1,
-    "status": "Match Finished",
+    "away_score": 0,
+    "status": "Halftime",
     "league": "Premier League",
-    "content": "فوز Al Najma على Malkiya بنتيجة 0-1 ضمن Premier League."
+    "content": "تعادل Malkiya وAl Najma بنتيجة 0-0 ضمن Premier League."
   },
   {
-    "title": "Brøndby W 4 - 1 Spartak Subotica W",
-    "league_id": 1191,
+    "title": "Brøndby W 2 - 0 Spartak Subotica W",
     "home_team": "Brøndby W",
     "away_team": "Spartak Subotica W",
     "home_logo": "https://media.api-sports.io/football/teams/10883.png",
     "away_logo": "https://media.api-sports.io/football/teams/10903.png",
-    "home_score": 4,
-    "away_score": 1,
-    "status": "Match Finished",
+    "home_score": 2,
+    "away_score": 0,
+    "status": "Halftime",
     "league": "UEFA Europa Cup - Women",
-    "content": "فوز Brøndby W على Spartak Subotica W بنتيجة 4-1 ضمن UEFA Europa Cup - Women."
+    "content": "فوز Brøndby W على Spartak Subotica W بنتيجة 2-0 ضمن UEFA Europa Cup - Women."
   },
   {
-    "title": "Csikszereda MC W 0 - 1 Breidablik W",
-    "league_id": 1191,
+    "title": "Csikszereda MC W 0 - 0 Breidablik W",
     "home_team": "Csikszereda MC W",
     "away_team": "Breidablik W",
     "home_logo": "https://media.api-sports.io/football/teams/19903.png",
     "away_logo": "https://media.api-sports.io/football/teams/10914.png",
     "home_score": 0,
-    "away_score": 1,
-    "status": "Match Finished",
+    "away_score": 0,
+    "status": "Halftime",
     "league": "UEFA Europa Cup - Women",
-    "content": "فوز Breidablik W على Csikszereda MC W بنتيجة 0-1 ضمن UEFA Europa Cup - Women."
+    "content": "تعادل Csikszereda MC W وBreidablik W بنتيجة 0-0 ضمن UEFA Europa Cup - Women."
   },
   {
-    "title": "Fortuna Hjørring W 1 - 1 Hajduk Split W",
-    "league_id": 1191,
+    "title": "Fortuna Hjørring W 0 - 0 Hajduk Split W",
     "home_team": "Fortuna Hjørring W",
     "away_team": "Hajduk Split W",
     "home_logo": "https://media.api-sports.io/football/teams/10890.png",
     "away_logo": "https://media.api-sports.io/football/teams/27869.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "Halftime",
     "league": "UEFA Europa Cup - Women",
-    "content": "تعادل Fortuna Hjørring W وHajduk Split W بنتيجة 1-1 ضمن UEFA Europa Cup - Women."
+    "content": "تعادل Fortuna Hjørring W وHajduk Split W بنتيجة 0-0 ضمن UEFA Europa Cup - Women."
   },
   {
     "title": "FH W 0 - 1 Apollon Limassol W",
-    "league_id": 1191,
     "home_team": "FH W",
     "away_team": "Apollon Limassol W",
     "home_logo": "https://media.api-sports.io/football/teams/14848.png",
     "away_logo": "https://media.api-sports.io/football/teams/10911.png",
     "home_score": 0,
     "away_score": 1,
-    "status": "Match Finished",
+    "status": "Halftime",
     "league": "UEFA Europa Cup - Women",
     "content": "فوز Apollon Limassol W على FH W بنتيجة 0-1 ضمن UEFA Europa Cup - Women."
   },
   {
-    "title": "Rosenborg W 3 - 0 SeaSters Odesa W",
-    "league_id": 1191,
+    "title": "Rosenborg W 0 - 0 SeaSters Odesa W",
     "home_team": "Rosenborg W",
     "away_team": "SeaSters Odesa W",
     "home_logo": "https://media.api-sports.io/football/teams/15956.png",
     "away_logo": "https://media.api-sports.io/football/teams/27875.png",
-    "home_score": 3,
+    "home_score": 0,
     "away_score": 0,
-    "status": "Match Finished",
+    "status": "Halftime",
     "league": "UEFA Europa Cup - Women",
-    "content": "فوز Rosenborg W على SeaSters Odesa W بنتيجة 3-0 ضمن UEFA Europa Cup - Women."
+    "content": "تعادل Rosenborg W وSeaSters Odesa W بنتيجة 0-0 ضمن UEFA Europa Cup - Women."
   },
   {
-    "title": "Gubbio 5 - 0 Vis Pesaro",
-    "league_id": 891,
+    "title": "Gubbio 2 - 0 Vis Pesaro",
     "home_team": "Gubbio",
     "away_team": "Vis Pesaro",
     "home_logo": "https://media.api-sports.io/football/teams/866.png",
     "away_logo": "https://media.api-sports.io/football/teams/1708.png",
-    "home_score": 5,
+    "home_score": 2,
     "away_score": 0,
-    "status": "Match Finished",
+    "status": "Halftime",
     "league": "Coppa Italia Serie C",
-    "content": "فوز Gubbio على Vis Pesaro بنتيجة 5-0 ضمن Coppa Italia Serie C."
+    "content": "فوز Gubbio على Vis Pesaro بنتيجة 2-0 ضمن Coppa Italia Serie C."
   },
   {
-    "title": "Union Brescia 5 - 2 Giana Erminio",
-    "league_id": 891,
-    "home_team": "Union Brescia",
-    "away_team": "Giana Erminio",
-    "home_logo": "https://media.api-sports.io/football/teams/26356.png",
-    "away_logo": "https://media.api-sports.io/football/teams/865.png",
-    "home_score": 5,
-    "away_score": 2,
-    "status": "Match Finished",
-    "league": "Coppa Italia Serie C",
-    "content": "فوز Union Brescia على Giana Erminio بنتيجة 5-2 ضمن Coppa Italia Serie C."
+    "title": "Udinese 1 - 1 Venezia",
+    "home_team": "Udinese",
+    "away_team": "Venezia",
+    "home_logo": "https://media.api-sports.io/football/teams/494.png",
+    "away_logo": "https://media.api-sports.io/football/teams/517.png",
+    "home_score": 1,
+    "away_score": 1,
+    "status": "Halftime",
+    "league": "Coppa Italia",
+    "content": "تعادل Udinese وVenezia بنتيجة 1-1 ضمن Coppa Italia."
   },
   {
-    "title": "Brodd 1 - 3 Viking",
-    "league_id": 105,
+    "title": "Brodd 1 - 0 Viking",
     "home_team": "Brodd",
     "away_team": "Viking",
     "home_logo": "https://media.api-sports.io/football/teams/6971.png",
     "away_logo": "https://media.api-sports.io/football/teams/759.png",
     "home_score": 1,
-    "away_score": 3,
-    "status": "Match Finished",
+    "away_score": 0,
+    "status": "Halftime",
     "league": "NM Cupen",
-    "content": "فوز Viking على Brodd بنتيجة 1-3 ضمن NM Cupen."
+    "content": "فوز Brodd على Viking بنتيجة 1-0 ضمن NM Cupen."
   },
   {
-    "title": "Aurskog Finstadbru 0 - 3 Lillestrom",
-    "league_id": 105,
-    "home_team": "Aurskog Finstadbru",
-    "away_team": "Lillestrom",
-    "home_logo": "https://media.api-sports.io/football/teams/28265.png",
-    "away_logo": "https://media.api-sports.io/football/teams/321.png",
-    "home_score": 0,
-    "away_score": 3,
-    "status": "Match Finished",
-    "league": "NM Cupen",
-    "content": "فوز Lillestrom على Aurskog Finstadbru بنتيجة 0-3 ضمن NM Cupen."
-  },
-  {
-    "title": "Poprad 0 - 2 Ružomberok",
-    "league_id": 680,
+    "title": "Poprad 0 - 1 Ružomberok",
     "home_team": "Poprad",
     "away_team": "Ružomberok",
     "home_logo": "https://media.api-sports.io/football/teams/10539.png",
     "away_logo": "https://media.api-sports.io/football/teams/3549.png",
     "home_score": 0,
-    "away_score": 2,
-    "status": "Match Finished",
+    "away_score": 1,
+    "status": "Halftime",
     "league": "Cup",
-    "content": "فوز Ružomberok على Poprad بنتيجة 0-2 ضمن Cup."
+    "content": "فوز Ružomberok على Poprad بنتيجة 0-1 ضمن Cup."
   },
   {
-    "title": "Sporting Lieşti 1 - 4 Dinamo Bucuresti",
-    "league_id": 285,
+    "title": "Sporting Lieşti 0 - 3 Dinamo Bucuresti",
     "home_team": "Sporting Lieşti",
     "away_team": "Dinamo Bucuresti",
     "home_logo": "https://media.api-sports.io/football/teams/6899.png",
     "away_logo": "https://media.api-sports.io/football/teams/635.png",
-    "home_score": 1,
-    "away_score": 4,
-    "status": "Match Finished",
+    "home_score": 0,
+    "away_score": 3,
+    "status": "Halftime",
     "league": "Cupa României",
-    "content": "فوز Dinamo Bucuresti على Sporting Lieşti بنتيجة 1-4 ضمن Cupa României."
+    "content": "فوز Dinamo Bucuresti على Sporting Lieşti بنتيجة 0-3 ضمن Cupa României."
   },
   {
-    "title": "P-Iirot 2 - 1 ÅIFK",
-    "league_id": 248,
-    "home_team": "P-Iirot",
-    "away_team": "ÅIFK",
-    "home_logo": "https://media.api-sports.io/football/teams/9188.png",
-    "away_logo": "https://media.api-sports.io/football/teams/13494.png",
-    "home_score": 2,
-    "away_score": 1,
-    "status": "Match Finished",
-    "league": "Kakkonen - Lohko B",
-    "content": "فوز P-Iirot على ÅIFK بنتيجة 2-1 ضمن Kakkonen - Lohko B."
-  },
-  {
-    "title": "JBK 1 - 1 Huima / Urho",
-    "league_id": 249,
+    "title": "JBK 0 - 0 Huima / Urho",
     "home_team": "JBK",
     "away_team": "Huima / Urho",
     "home_logo": "https://media.api-sports.io/football/teams/9192.png",
     "away_logo": "https://media.api-sports.io/football/teams/22980.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Match Finished",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "Halftime",
     "league": "Kakkonen - Lohko C",
-    "content": "تعادل JBK وHuima / Urho بنتيجة 1-1 ضمن Kakkonen - Lohko C."
-  },
-  {
-    "title": "Olympic 0 - 3 IFK Goteborg",
-    "league_id": 115,
-    "home_team": "Olympic",
-    "away_team": "IFK Goteborg",
-    "home_logo": "https://media.api-sports.io/football/teams/12601.png",
-    "away_logo": "https://media.api-sports.io/football/teams/366.png",
-    "home_score": 0,
-    "away_score": 3,
-    "status": "Halftime",
-    "league": "Svenska Cupen",
-    "content": "فوز IFK Goteborg على Olympic بنتيجة 0-3 ضمن Svenska Cupen."
-  },
-  {
-    "title": "Slavia Sofia 0 - 0 Levski Sofia",
-    "league_id": 172,
-    "home_team": "Slavia Sofia",
-    "away_team": "Levski Sofia",
-    "home_logo": "https://media.api-sports.io/football/teams/854.png",
-    "away_logo": "https://media.api-sports.io/football/teams/646.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "First League",
-    "content": "تعادل Slavia Sofia وLevski Sofia بنتيجة 0-0 ضمن First League."
-  },
-  {
-    "title": "Hapoel Beer Sheva 1 - 0 Hapoel Haifa",
-    "league_id": 383,
-    "home_team": "Hapoel Beer Sheva",
-    "away_team": "Hapoel Haifa",
-    "home_logo": "https://media.api-sports.io/football/teams/563.png",
-    "away_logo": "https://media.api-sports.io/football/teams/2253.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Ligat Ha'al",
-    "content": "فوز Hapoel Beer Sheva على Hapoel Haifa بنتيجة 1-0 ضمن Ligat Ha'al."
-  },
-  {
-    "title": "Fatih Karagümrük 0 - 0 Kayserispor",
-    "league_id": 204,
-    "home_team": "Fatih Karagümrük",
-    "away_team": "Kayserispor",
-    "home_logo": "https://media.api-sports.io/football/teams/3589.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1001.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "1. Lig",
-    "content": "تعادل Fatih Karagümrük وKayserispor بنتيجة 0-0 ضمن 1. Lig."
-  },
-  {
-    "title": "Sivasspor 0 - 2 Mardin 1969",
-    "league_id": 204,
-    "home_team": "Sivasspor",
-    "away_team": "Mardin 1969",
-    "home_logo": "https://media.api-sports.io/football/teams/1002.png",
-    "away_logo": "https://media.api-sports.io/football/teams/6533.png",
-    "home_score": 0,
-    "away_score": 2,
-    "status": "Halftime",
-    "league": "1. Lig",
-    "content": "فوز Mardin 1969 على Sivasspor بنتيجة 0-2 ضمن 1. Lig."
-  },
-  {
-    "title": "Hallescher FC 1 - 0 Tasmania Berlin",
-    "league_id": 85,
-    "home_team": "Hallescher FC",
-    "away_team": "Tasmania Berlin",
-    "home_logo": "https://media.api-sports.io/football/teams/1316.png",
-    "away_logo": "https://media.api-sports.io/football/teams/12874.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Regionalliga - Nordost",
-    "content": "فوز Hallescher FC على Tasmania Berlin بنتيجة 1-0 ضمن Regionalliga - Nordost."
-  },
-  {
-    "title": "FC Carl Zeiss Jena 1 - 0 Altglienicke",
-    "league_id": 85,
-    "home_team": "FC Carl Zeiss Jena",
-    "away_team": "Altglienicke",
-    "home_logo": "https://media.api-sports.io/football/teams/1325.png",
-    "away_logo": "https://media.api-sports.io/football/teams/9349.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Regionalliga - Nordost",
-    "content": "فوز FC Carl Zeiss Jena على Altglienicke بنتيجة 1-0 ضمن Regionalliga - Nordost."
-  },
-  {
-    "title": "SG Wattenscheid 09 2 - 0 SV Rodinghausen",
-    "league_id": 87,
-    "home_team": "SG Wattenscheid 09",
-    "away_team": "SV Rodinghausen",
-    "home_logo": "https://media.api-sports.io/football/teams/1629.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1650.png",
-    "home_score": 2,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Regionalliga - West",
-    "content": "فوز SG Wattenscheid 09 على SV Rodinghausen بنتيجة 2-0 ضمن Regionalliga - West."
-  },
-  {
-    "title": "Abu Qair Semad 0 - 0 Al Ittihad",
-    "league_id": 233,
-    "home_team": "Abu Qair Semad",
-    "away_team": "Al Ittihad",
-    "home_logo": "https://media.api-sports.io/football/teams/15731.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1572.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Premier League",
-    "content": "تعادل Abu Qair Semad وAl Ittihad بنتيجة 0-0 ضمن Premier League."
-  },
-  {
-    "title": "Ceramica Cleopatra 1 - 0 Future FC",
-    "league_id": 233,
-    "home_team": "Ceramica Cleopatra",
-    "away_team": "Future FC",
-    "home_logo": "https://media.api-sports.io/football/teams/14651.png",
-    "away_logo": "https://media.api-sports.io/football/teams/16431.png",
-    "home_score": 1,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Premier League",
-    "content": "فوز Ceramica Cleopatra على Future FC بنتيجة 1-0 ضمن Premier League."
-  },
-  {
-    "title": "Miedz Legnica 0 - 1 Chrobry Głogów",
-    "league_id": 108,
-    "home_team": "Miedz Legnica",
-    "away_team": "Chrobry Głogów",
-    "home_logo": "https://media.api-sports.io/football/teams/335.png",
-    "away_logo": "https://media.api-sports.io/football/teams/3483.png",
-    "home_score": 0,
-    "away_score": 1,
-    "status": "Halftime",
-    "league": "Cup",
-    "content": "فوز Chrobry Głogów على Miedz Legnica بنتيجة 0-1 ضمن Cup."
-  },
-  {
-    "title": "Sokół Ostróda 1 - 1 Sokół Kleczew",
-    "league_id": 108,
-    "home_team": "Sokół Ostróda",
-    "away_team": "Sokół Kleczew",
-    "home_logo": "https://media.api-sports.io/football/teams/12857.png",
-    "away_logo": "https://media.api-sports.io/football/teams/16255.png",
-    "home_score": 1,
-    "away_score": 1,
-    "status": "Halftime",
-    "league": "Cup",
-    "content": "تعادل Sokół Ostróda وSokół Kleczew بنتيجة 1-1 ضمن Cup."
-  },
-  {
-    "title": "Real Sociedad W 0 - 0 Chelsea W",
-    "league_id": 525,
-    "home_team": "Real Sociedad W",
-    "away_team": "Chelsea W",
-    "home_logo": "https://media.api-sports.io/football/teams/1912.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1853.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "UEFA Champions League Women",
-    "content": "تعادل Real Sociedad W وChelsea W بنتيجة 0-0 ضمن UEFA Champions League Women."
-  },
-  {
-    "title": "Køge W 0 - 0 PSV/Eindhoven W",
-    "league_id": 525,
-    "home_team": "Køge W",
-    "away_team": "PSV/Eindhoven W",
-    "home_logo": "https://media.api-sports.io/football/teams/13982.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1895.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "UEFA Champions League Women",
-    "content": "تعادل Køge W وPSV/Eindhoven W بنتيجة 0-0 ضمن UEFA Champions League Women."
-  },
-  {
-    "title": "Feyenoord W 3 - 1 Anderlecht W",
-    "league_id": 1191,
-    "home_team": "Feyenoord W",
-    "away_team": "Anderlecht W",
-    "home_logo": "https://media.api-sports.io/football/teams/16853.png",
-    "away_logo": "https://media.api-sports.io/football/teams/1792.png",
-    "home_score": 3,
-    "away_score": 1,
-    "status": "Halftime",
-    "league": "UEFA Europa Cup - Women",
-    "content": "فوز Feyenoord W على Anderlecht W بنتيجة 3-1 ضمن UEFA Europa Cup - Women."
-  },
-  {
-    "title": "Larisa 0 - 1 Olympiakos Piraeus",
-    "league_id": 199,
-    "home_team": "Larisa",
-    "away_team": "Olympiakos Piraeus",
-    "home_logo": "https://media.api-sports.io/football/teams/953.png",
-    "away_logo": "https://media.api-sports.io/football/teams/553.png",
-    "home_score": 0,
-    "away_score": 1,
-    "status": "Halftime",
-    "league": "Cup",
-    "content": "فوز Olympiakos Piraeus على Larisa بنتيجة 0-1 ضمن Cup."
-  },
-  {
-    "title": "Panserraikos 0 - 0 Atromitos",
-    "league_id": 199,
-    "home_team": "Panserraikos",
-    "away_team": "Atromitos",
-    "home_logo": "https://media.api-sports.io/football/teams/2099.png",
-    "away_logo": "https://media.api-sports.io/football/teams/12260.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
-    "league": "Cup",
-    "content": "تعادل Panserraikos وAtromitos بنتيجة 0-0 ضمن Cup."
-  },
-  {
-    "title": "Resovia Rzeszów 0 - 1 Arka Gdynia",
-    "league_id": 108,
-    "home_team": "Resovia Rzeszów",
-    "away_team": "Arka Gdynia",
-    "home_logo": "https://media.api-sports.io/football/teams/6951.png",
-    "away_logo": "https://media.api-sports.io/football/teams/344.png",
-    "home_score": 0,
-    "away_score": 1,
-    "status": "Halftime",
-    "league": "Cup",
-    "content": "فوز Arka Gdynia على Resovia Rzeszów بنتيجة 0-1 ضمن Cup."
+    "content": "تعادل JBK وHuima / Urho بنتيجة 0-0 ضمن Kakkonen - Lohko C."
   }
 ]

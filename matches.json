@@ -9,7 +9,7 @@
     "away_score": 0,
     "status": "Match Finished",
     "league": "Liga Pro",
-    "content": "خيّم التعادل السلبي من دون أهداف على المواجهة التي جمعت بين فريقي \"إل دي يو كيتو\" وضيفه \"موشوك رونا\" ضمن منافسات بطولة الدوري الإكوادوري الممتاز (Liga Pro). وشهدت المباراة محاولات هجومية متكررة من أصحاب الأرض لفك شفرة الدفاع، إلا أن تماسك الضيوف حال دون هز الشباك طوال شوطي اللقاء. وبهذه النتيجة، اكتفى الفريقان بتقاسم نقاط المباراة، ليضيف كل منهما نقطة واحدة إلى رصيده في جدول ترتيب البطولة."
+    "content": "تعادل LDU de Quito وMushuc Runa SC بنتيجة 0-0 ضمن Liga Pro."
   },
   {
     "title": "Atletico-MG 2 - 1 Cruzeiro",
@@ -21,7 +21,7 @@
     "away_score": 1,
     "status": "Match Finished",
     "league": "Copa Do Brasil",
-    "content": "نجح فريق أتلتيكو مينيرو في تحقيق فوز ثمين على ضيفه كروزيرو بنتيجة (2-1)، في اللقاء الذي جمع بينهما ضمن منافسات بطولة كأس البرازيل. وشهدت المباراة حماساً كبيراً وسيطرة ميدانية لأصحاب الأرض أثمرت عن تسجيل هدفين حسما بهما تفوقهم. ورغم محاولات كروزيرو المستمرة للعودة في النتيجة وتقليص الفارق، إلا أن دفاع أتلتيكو مينيرو نجح في حماية مرماه حتى أطلق الحكم صافرة النهاية. وبهذا الفوز المستحق، يعزز أتلتيكو مينيرو حظوظه في التأهل للدور المقبل، بينما يتطلع كروزيرو للتعويض في المباريات القادمة."
+    "content": "فوز Atletico-MG على Cruzeiro بنتيجة 2-1 ضمن Copa Do Brasil."
   },
   {
     "title": "Fortaleza FC 1 - 2 Once Caldas",
@@ -33,6 +33,18 @@
     "away_score": 2,
     "status": "Match Finished",
     "league": "Primera A",
-    "content": "نجح فريق أونس كالداس في تحقيق فوز ثمين خارج أرضه على حساب مستضيفه فورتاليزا بنتيجة (2-1)، ضمن منافسات الدوري الكولومبي الممتاز (Primera A). وتمكن الضيوف من حسم اللقاء لصالحهم بعد أداء قوي، ليقتنصوا ثلاث نقاط ثمينة من قلب ملعب منافسهم. في المقابل، فشل فورتاليزا في استغلال عاملي الأرض والجمهور لتفادي الهزيمة، ليتعرض لتعثر جديد أرضه وبين جماهيره."
+    "content": "فوز Once Caldas على Fortaleza FC بنتيجة 1-2 ضمن Primera A."
+  },
+  {
+    "title": "Marconi Stallions 0 - 1 NWS Spirit",
+    "home_team": "Marconi Stallions",
+    "away_team": "NWS Spirit",
+    "home_logo": "https://media.api-sports.io/football/teams/3768.png",
+    "away_logo": "https://media.api-sports.io/football/teams/16775.png",
+    "home_score": 0,
+    "away_score": 1,
+    "status": "Halftime",
+    "league": "New South Wales NPL",
+    "content": "فوز NWS Spirit على Marconi Stallions بنتيجة 0-1 ضمن New South Wales NPL."
   }
 ]

@@ -2,8 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>كورة ايجنت | نتائج وأخبار كرة القدم</title>
+<meta name="description" content="نتائج وأخبار دوري روشن السعودي والدوريات الأوروبية الخمس الكبرى لحظة بلحظة، مع جدول الترتيب وصفحات الأندية.">
+<meta property="og:title" content="كورة ايجنت | نتائج وأخبار كرة القدم">
+<meta property="og:description" content="نتائج وأخبار دوري روشن السعودي والدوريات الأوروبية الخمس الكبرى لحظة بلحظة.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://charming-kringle-f53407.netlify.app/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -17,6 +25,13 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+  }
+  :root[data-theme="dark"]{
+    --cream:#121712;
+    --card:#1c241d;
+    --ink:#EFEFEA;
+    --ink-soft:#9AA39A;
+    --line:#2b352c;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{
@@ -46,9 +61,15 @@
     display:flex; align-items:center; gap:10px;
   }
   .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
-  nav{ display:flex; gap:28px; font-size:15px; font-weight:700; }
+  nav{ display:flex; align-items:center; gap:28px; font-size:15px; font-weight:700; flex-wrap:wrap; }
   nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
   nav a.active{ color:var(--gold); }
+  .theme-toggle{
+    width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.06); color:var(--cream); cursor:pointer; font-size:15px;
+    display:flex; align-items:center; justify-content:center; transition:.15s;
+  }
+  .theme-toggle:hover{ border-color:var(--gold); }
 
   .hero-line{
     display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
@@ -307,6 +328,9 @@
       <a href="news.html">الأخبار</a>
       <a href="standings.html">الترتيب</a>
       <a href="clubs.html">الأندية</a>
+      <a href="leagues.html">الدوريات</a>
+      <a href="future.html">قريباً</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع الليلي">🌙</button>
     </nav>
   </div>
   <div class="hero-line">
@@ -365,6 +389,18 @@
 </footer>
 
 <script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  try{ localStorage.setItem('theme', t); }catch(e){}
+  document.getElementById('theme-toggle').textContent = t === 'dark' ? '☀️' : '🌙';
+}
+document.getElementById('theme-toggle').textContent =
+  document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme') || 'light';
+  applyTheme(cur === 'dark' ? 'light' : 'dark');
+});
+
 /* ============================================================
    بيانات تجريبية — بنفس الشكل اللي يطلعه football_agent_gemini.py
    لاحقاً: استبدل هذا المصفوفة بقراءة فعلية من matches_ready_to_publish.json

@@ -4,7 +4,7 @@
 النسخة المجانية بالكامل: API-Football + Google Gemini
 
 المتطلبات:
-    pip install requests google-generativeai
+    pip install requests google-genai
 
 المفاتيح (كمتغيرات بيئة أو GitHub Secrets):
     API_FOOTBALL_KEY -> مفتاح من https://www.api-football.com/
@@ -15,7 +15,7 @@ import requests
 import json
 import os
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 
 # ============ الإعدادات ============
 API_FOOTBALL_KEY = os.environ.get("API_FOOTBALL_KEY")
@@ -48,8 +48,8 @@ if not API_FOOTBALL_KEY or not GEMINI_API_KEY:
         "  export GEMINI_API_KEY=مفتاحك\n"
     )
 
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-3.6-flash")
+GEMINI_MODEL = "gemini-3.6-flash"
+gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 # ============================================================
@@ -134,7 +134,7 @@ def generate_article(match_summary: dict) -> str:
 اكتب الخبر مباشرة بدون مقدمات أو عناوين."""
 
     try:
-        response = model.generate_content(prompt)
+        response = gemini_client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
         return response.text.strip()
     except Exception as e:
         print(f"تعذّر توليد المقال عبر Gemini ({e}) - استخدام نص بديل تلقائي.")

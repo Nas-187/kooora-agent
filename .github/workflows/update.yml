@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: تثبيت المكتبات المطلوبة
-        run: pip install requests google-generativeai
+        run: pip install requests google-genai
 
       - name: تشغيل سكربت جلب المباريات
         env:

@@ -58,6 +58,10 @@
     text-align:right; font-weight:700; color:var(--ink-soft); font-size:12px;
     padding:16px 6px 12px; border-bottom:2px solid var(--pitch);
   }
+  .standings-table th.sortable{ cursor:pointer; user-select:none; transition:color .15s; }
+  .standings-table th.sortable:hover{ color:var(--pitch); }
+  .standings-table th.sortable.active{ color:var(--pitch); }
+  .standings-table th .sort-arrow{ font-size:10px; margin-right:3px; opacity:.6; }
   .standings-table th.center, .standings-table td.center{ text-align:center; }
   .standings-table td{ padding:14px 6px; border-bottom:1px solid var(--line); font-weight:600; }
   .standings-table tr:last-child td{ border-bottom:none; }
@@ -99,7 +103,10 @@
     <table class="standings-table">
       <thead>
         <tr>
-          <th></th><th>الفريق</th><th class="center">لعب</th><th class="center">نقاط</th>
+          <th></th>
+          <th class="sortable" data-sort="team">الفريق <span class="sort-arrow"></span></th>
+          <th class="sortable center" data-sort="played">لعب <span class="sort-arrow"></span></th>
+          <th class="sortable center active" data-sort="points">نقاط <span class="sort-arrow">▼</span></th>
         </tr>
       </thead>
       <tbody id="standings-body"></tbody>
@@ -120,13 +127,25 @@ function crest(name, logoUrl){
   return `<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:#fff;font-size:10px;font-weight:800">${initials(name)}</span>`;
 }
 
+let currentStandings = [];
+let sortField = 'points';
+let sortDir = -1; // -1 تنازلي، 1 تصاعدي
+
 function renderStandings(standings){
+  currentStandings = standings || [];
   const tbody = document.getElementById('standings-body');
-  if(!standings || standings.length === 0){
+  if(currentStandings.length === 0){
     tbody.innerHTML = '<tr><td colspan="4"><div class="empty-state">جدول الترتيب غير متاح حالياً</div></td></tr>';
     return;
   }
-  tbody.innerHTML = standings.map(s => `
+
+  const sorted = [...currentStandings].sort((a, b) => {
+    const av = a[sortField], bv = b[sortField];
+    if(typeof av === 'string') return sortDir * av.localeCompare(bv);
+    return sortDir * (av - bv);
+  });
+
+  tbody.innerHTML = sorted.map(s => `
     <tr>
       <td class="rank">${s.rank}</td>
       <td>
@@ -139,6 +158,25 @@ function renderStandings(standings){
       <td class="pts">${s.points}</td>
     </tr>`).join('');
 }
+
+document.querySelectorAll('.standings-table th.sortable').forEach(th => {
+  th.addEventListener('click', () => {
+    const field = th.dataset.sort;
+    if(sortField === field){
+      sortDir *= -1;
+    }else{
+      sortField = field;
+      sortDir = field === 'team' ? 1 : -1;
+    }
+    document.querySelectorAll('.standings-table th.sortable').forEach(t => {
+      t.classList.remove('active');
+      t.querySelector('.sort-arrow').textContent = '';
+    });
+    th.classList.add('active');
+    th.querySelector('.sort-arrow').textContent = sortDir === 1 ? '▲' : '▼';
+    renderStandings(currentStandings);
+  });
+});
 
 let standingsByLeague = {};
 let activeLeagueId = null;

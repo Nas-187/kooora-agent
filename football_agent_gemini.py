@@ -278,6 +278,72 @@ def update_results_archive(league_ids) -> list:
     return archive
 
 
+SQUADS_FILE = "squads.json"
+
+
+def load_squads() -> dict:
+    """يقرأ تشكيلات الأندية المخزّنة محلياً (لو موجودة)."""
+    if os.path.exists(SQUADS_FILE):
+        with open(SQUADS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_squads(squads: dict):
+    with open(SQUADS_FILE, "w", encoding="utf-8") as f:
+        json.dump(squads, f, ensure_ascii=False, indent=2)
+
+
+def fetch_team_squad(team_id: int):
+    """يجيب تشكيلة نادي واحد (لاعبين حقيقيين: اسم، صورة، مركز، رقم)."""
+    url = "https://v3.football.api-sports.io/players/squads"
+    headers = {
+        "x-rapidapi-key": API_FOOTBALL_KEY,
+        "x-rapidapi-host": API_FOOTBALL_HOST,
+    }
+    response = requests.get(url, headers=headers, params={"team": team_id}, timeout=30)
+    response.raise_for_status()
+    data = response.json().get("response", [])
+    if not data:
+        return []
+
+    return [
+        {
+            "id": p["id"],
+            "name": p["name"],
+            "age": p["age"],
+            "number": p["number"],
+            "position": p["position"],
+            "photo": p["photo"],
+        }
+        for p in data[0].get("players", [])
+    ]
+
+
+def update_squads_cache(archive: list) -> dict:
+    """
+    يجيب تشكيلة أي نادي ظهر بالأرشيف وما عندنا تشكيلته مخزّنة بعد.
+    نخزّن كل تشكيلة مرة وحدة بس (ما تتغير كل يوم) عشان نوفر حصة الـ API -
+    فقط الأندية الجديدة تُضاف تدريجياً كل ما تلعب مباراتها الأولى بأرشيفنا.
+    """
+    squads = load_squads()
+    team_ids = {m["home_id"] for m in archive} | {m["away_id"] for m in archive}
+    new_ids = [tid for tid in team_ids if str(tid) not in squads]
+
+    for team_id in new_ids:
+        print(f"جاري جلب تشكيلة النادي رقم {team_id}...")
+        try:
+            squads[str(team_id)] = fetch_team_squad(team_id)
+        except Exception as e:
+            print(f"تعذّر جلب تشكيلة النادي {team_id} ({e}).")
+
+    if new_ids:
+        save_squads(squads)
+        print(f"أُضيفت تشكيلات {len(new_ids)} نادي جديد (الإجمالي: {len(squads)}).")
+
+    return squads
+
+
 def calculate_standings_from_results(league_matches: list):
     """يحسب جدول الترتيب من مباريات دوري واحد مأخوذة من الأرشيف المحلي."""
     teams = {}
@@ -317,6 +383,7 @@ def calculate_standings_from_results(league_matches: list):
 def run_standings_pipeline():
     print("جاري تحديث أرشيف نتائج الدوريات المحلي...")
     archive = update_results_archive(set(TARGET_LEAGUES.keys()))
+    update_squads_cache(archive)
 
     all_standings = {}
     for league_id, league_name in TARGET_LEAGUES.items():

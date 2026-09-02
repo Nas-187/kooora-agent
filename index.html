@@ -24,6 +24,7 @@
     color:var(--ink);
     font-family:'Tajawal', sans-serif;
     line-height:1.5;
+    overflow-x:hidden;
   }
   h1,h2,h3,.num,.brand{ font-family:'Cairo', sans-serif; }
 
@@ -142,6 +143,34 @@
     color:rgba(246,243,236,0.7); margin-top:12px; max-width:640px;
     border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;
   }
+
+  /* ===== Hero slider ===== */
+  .hero-slider{ position:relative; margin-bottom:22px; }
+  .hero-slider .hero-story{ margin-bottom:0; }
+  .hero-slider-track{ position:relative; min-height:280px; }
+  .hero-slider-track .hero-story{
+    position:absolute; inset:0; opacity:0; pointer-events:none;
+    transition:opacity .5s ease;
+  }
+  .hero-slider-track .hero-story.active{ position:relative; opacity:1; pointer-events:auto; }
+  .hero-nav-btn{
+    position:absolute; top:50%; transform:translateY(-50%); z-index:2;
+    width:36px; height:36px; border-radius:50%; border:none; cursor:pointer;
+    background:rgba(0,0,0,0.35); color:#fff; font-size:16px; display:flex;
+    align-items:center; justify-content:center; transition:.15s;
+  }
+  .hero-nav-btn:hover{ background:rgba(0,0,0,0.55); }
+  .hero-nav-btn.prev{ right:14px; }
+  .hero-nav-btn.next{ left:14px; }
+  .hero-dots{
+    position:absolute; bottom:14px; left:50%; transform:translateX(-50%); z-index:2;
+    display:flex; gap:7px;
+  }
+  .hero-dot{
+    width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,0.35);
+    border:none; cursor:pointer; padding:0; transition:.15s;
+  }
+  .hero-dot.active{ background:var(--gold); width:22px; border-radius:5px; }
 
   /* ===== Match Card (story grid) ===== */
   .story-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
@@ -402,9 +431,10 @@ function scoreBlockHtml(m){
   return `<div class="num">${m.home_score} - ${m.away_score}</div><div class="status">${statusLabelFor(m)}</div>`;
 }
 
-/* أهم مباراة تُعرض بالبطاقة الكبيرة: مباشرة الآن أولاً، وإلا منتهية بدوري
-   من دورياتنا المتابعة، وإلا أي منتهية، وإلا القادمة الأقرب موعداً */
-function pickHeroMatch(matches){
+/* أهم المباريات تُعرض بسلايدر البطاقة الكبيرة: مباشرة الآن أولاً، وإلا
+   منتهية بدوري من دورياتنا المتابعة، وإلا أي منتهية، وإلا القادمة الأقرب
+   موعداً. نأخذ أفضل 5 كحد أقصى للسلايدر */
+function pickHeroSlides(matches, n = 5){
   const score = m => {
     const inTarget = MATCH_TARGET_LEAGUES[m.league_id] !== undefined;
     if(isLiveStatus(m.status)) return inTarget ? 0 : 1;
@@ -415,12 +445,10 @@ function pickHeroMatch(matches){
     const s = score(a) - score(b);
     if(s !== 0) return s;
     return new Date(a.date) - new Date(b.date);
-  })[0];
+  }).slice(0, n);
 }
 
-function renderHeroStory(m){
-  const slot = document.getElementById('hero-story-slot');
-  if(!m){ slot.innerHTML = ''; return; }
+function heroStoryHtml(m, active){
   const isLive = isLiveStatus(m.status);
   const scheduled = isScheduled(m.status);
 
@@ -428,8 +456,8 @@ function renderHeroStory(m){
     ? `<div class="hero-score">${formatKickoff(m.date)}</div>`
     : `<div class="hero-score">${m.home_score} <span class="vs">-</span> ${m.away_score}</div>`;
 
-  slot.innerHTML = `
-    <div class="hero-story">
+  return `
+    <div class="hero-story ${active ? 'active' : ''}">
       <div class="hero-crests">
         ${m.home_logo ? `<img src="${m.home_logo}">` : ''}
         ${m.away_logo ? `<img src="${m.away_logo}">` : ''}
@@ -443,6 +471,49 @@ function renderHeroStory(m){
       <div class="hero-title">${m.home_team} ${isLive || scheduled ? 'يواجه' : 'أمام'} ${m.away_team}</div>
       ${m.content ? `<div class="article-preview">${m.content}</div>` : ''}
     </div>`;
+}
+
+let heroSlideIndex = 0;
+let heroAutoplayTimer = null;
+
+function goToHeroSlide(idx, slides){
+  const n = slides.length;
+  heroSlideIndex = (idx + n) % n;
+  document.querySelectorAll('.hero-story').forEach((el, i) => el.classList.toggle('active', i === heroSlideIndex));
+  document.querySelectorAll('.hero-dot').forEach((el, i) => el.classList.toggle('active', i === heroSlideIndex));
+}
+
+function renderHeroStory(matches){
+  const slot = document.getElementById('hero-story-slot');
+  clearInterval(heroAutoplayTimer);
+
+  if(!matches || matches.length === 0){ slot.innerHTML = ''; return []; }
+
+  const slides = pickHeroSlides(matches);
+  heroSlideIndex = 0;
+
+  const singleSlide = slides.length === 1;
+  slot.innerHTML = `
+    <div class="hero-slider">
+      <div class="hero-slider-track">
+        ${slides.map((m, i) => heroStoryHtml(m, i === 0)).join('')}
+      </div>
+      ${!singleSlide ? `
+        <button type="button" class="hero-nav-btn prev" aria-label="السابق">‹</button>
+        <button type="button" class="hero-nav-btn next" aria-label="التالي">›</button>
+        <div class="hero-dots">
+          ${slides.map((_, i) => `<button type="button" class="hero-dot ${i === 0 ? 'active' : ''}"></button>`).join('')}
+        </div>` : ''}
+    </div>`;
+
+  if(!singleSlide){
+    slot.querySelector('.prev').addEventListener('click', () => goToHeroSlide(heroSlideIndex - 1, slides));
+    slot.querySelector('.next').addEventListener('click', () => goToHeroSlide(heroSlideIndex + 1, slides));
+    slot.querySelectorAll('.hero-dot').forEach((dot, i) => dot.addEventListener('click', () => goToHeroSlide(i, slides)));
+    heroAutoplayTimer = setInterval(() => goToHeroSlide(heroSlideIndex + 1, slides), 6000);
+  }
+
+  return slides;
 }
 
 let allTodayMatches = [];
@@ -500,10 +571,9 @@ function renderMatches(matches){
     return;
   }
 
-  const hero = pickHeroMatch(matches);
-  renderHeroStory(hero);
+  const heroSlides = renderHeroStory(matches);
 
-  list.innerHTML = matches.filter(m => m !== hero).map(m => {
+  list.innerHTML = matches.filter(m => !heroSlides.includes(m)).map(m => {
     const isLive = isLiveStatus(m.status);
     return `
     <div class="match-card ${isLive ? 'live' : ''}">

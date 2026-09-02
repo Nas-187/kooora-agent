@@ -73,6 +73,26 @@
   .result-card.loss{ border-right:4px solid var(--line-red); }
   .result-card.draw{ border-right:4px solid var(--gold); }
 
+  .squad-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(130px, 1fr)); gap:14px; margin-bottom:36px; }
+  .player-card{
+    background:linear-gradient(160deg, var(--pitch) 0%, var(--pitch-dark) 100%);
+    border-radius:14px; overflow:hidden; position:relative; text-align:center;
+    box-shadow:0 4px 10px rgba(26,31,28,0.1); transition:transform .15s, box-shadow .15s;
+  }
+  .player-card:hover{ transform:translateY(-4px) scale(1.02); box-shadow:0 12px 22px rgba(26,31,28,0.18); }
+  .player-card .number{
+    position:absolute; top:8px; right:10px; font-family:'Cairo'; font-weight:900;
+    font-size:20px; color:var(--gold); opacity:.9;
+  }
+  .player-card .photo-wrap{ height:110px; display:flex; align-items:flex-end; justify-content:center; overflow:hidden; }
+  .player-card .photo-wrap img{ height:120px; object-fit:cover; object-position:top; filter:drop-shadow(0 4px 6px rgba(0,0,0,.3)); }
+  .player-card .info{ background:var(--cream); padding:10px 6px 12px; }
+  .player-card .p-name{ font-size:12.5px; font-weight:800; color:var(--ink); line-height:1.3; min-height:32px; }
+  .player-card .p-position{
+    display:inline-block; margin-top:6px; font-size:9.5px; font-weight:800; color:var(--pitch);
+    background:rgba(15,61,46,0.1); padding:3px 10px; border-radius:100px;
+  }
+
   .empty-state{
     padding:34px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
@@ -107,6 +127,11 @@
 
 <main>
   <div class="stats-row" id="stats-row"></div>
+
+  <div class="section-head">
+    <h2>التشكيلة</h2>
+  </div>
+  <div class="squad-grid" id="squad-grid"></div>
 
   <div class="section-head">
     <h2>آخر النتائج</h2>
@@ -183,6 +208,38 @@ fetch('results_archive.json?t=' + Date.now())
   })
   .catch(() => {
     document.getElementById('club-name').textContent = 'تعذّر تحميل البيانات';
+  });
+
+const POSITION_AR = {
+  'Goalkeeper': 'حارس مرمى',
+  'Defender': 'مدافع',
+  'Midfielder': 'وسط',
+  'Attacker': 'مهاجم',
+};
+
+fetch('squads.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(squads => {
+    const players = squads[String(clubId)] || [];
+    const grid = document.getElementById('squad-grid');
+
+    if(players.length === 0){
+      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1">التشكيلة غير متاحة حالياً</div>';
+      return;
+    }
+
+    grid.innerHTML = players.map(p => `
+      <div class="player-card">
+        <div class="number">${p.number ?? ''}</div>
+        <div class="photo-wrap"><img src="${p.photo}" alt="${p.name}" loading="lazy"></div>
+        <div class="info">
+          <div class="p-name">${p.name}</div>
+          <span class="p-position">${POSITION_AR[p.position] || p.position || ''}</span>
+        </div>
+      </div>`).join('');
+  })
+  .catch(() => {
+    document.getElementById('squad-grid').innerHTML = '<div class="empty-state" style="grid-column:1/-1">تعذّر تحميل التشكيلة</div>';
   });
 </script>
 

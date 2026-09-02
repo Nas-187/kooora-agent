@@ -145,6 +145,32 @@ def run_matches_pipeline(league_id: int = None):
 # 2) جدول الترتيب
 # ============================================================
 
+def resolve_saudi_league_id() -> int | None:
+    """
+    يبحث عن دوري روشن السعودي بالاسم مباشرة من API-Football
+    بدل الاعتماد على رقم ثابت قد يكون غير دقيق.
+    """
+    url = "https://v3.football.api-sports.io/leagues"
+    headers = {
+        "x-rapidapi-key": API_FOOTBALL_KEY,
+        "x-rapidapi-host": API_FOOTBALL_HOST,
+    }
+    params = {"country": "Saudi-Arabia"}
+
+    response = requests.get(url, headers=headers, params=params, timeout=30)
+    response.raise_for_status()
+    leagues = response.json().get("response", [])
+
+    for entry in leagues:
+        name = entry["league"]["name"]
+        if entry["league"]["type"] == "League" and "Pro League" in name:
+            print(f"لقيت الدوري: {name} (id={entry['league']['id']})")
+            return entry["league"]["id"]
+
+    print("ما لقيت دوري روشن السعودي بالبحث التلقائي.")
+    return None
+
+
 def get_standings(league_id: int):
     """يجيب جدول ترتيب دوري معين من API-Football"""
     url = "https://v3.football.api-sports.io/standings"
@@ -178,7 +204,8 @@ def get_standings(league_id: int):
     return standings
 
 
-def run_standings_pipeline(league_id: int):
+def run_standings_pipeline():
+    league_id = resolve_saudi_league_id() or STANDINGS_LEAGUE_ID
     print(f"جاري جلب جدول الترتيب (دوري رقم {league_id})...")
     standings = get_standings(league_id)
     print(f"تم جلب ترتيب {len(standings)} فريق." if standings else "ما قدر يجيب جدول الترتيب.")
@@ -243,7 +270,7 @@ def generate_news(matches: list, standings: list) -> list:
 
 if __name__ == "__main__":
     matches = run_matches_pipeline(league_id=None)
-    standings = run_standings_pipeline(STANDINGS_LEAGUE_ID)
+    standings = run_standings_pipeline()
     news = generate_news(matches, standings)
 
     with open("matches.json", "w", encoding="utf-8") as f:

@@ -145,10 +145,10 @@ def run_matches_pipeline(league_id: int = None):
 # 2) جدول الترتيب
 # ============================================================
 
-def resolve_saudi_league_id() -> int | None:
+def resolve_saudi_league_id_and_season():
     """
-    يبحث عن دوري روشن السعودي بالاسم مباشرة من API-Football
-    بدل الاعتماد على رقم ثابت قد يكون غير دقيق.
+    يبحث عن دوري روشن السعودي بالاسم، ويجيب رقمه + رقم الموسم الحالي
+    الصحيح (current:true) مباشرة من نفس بيانات الدوري - بدل تخمين السنة.
     """
     url = "https://v3.football.api-sports.io/leagues"
     headers = {
@@ -164,21 +164,27 @@ def resolve_saudi_league_id() -> int | None:
     for entry in leagues:
         name = entry["league"]["name"]
         if entry["league"]["type"] == "League" and "Pro League" in name:
-            print(f"لقيت الدوري: {name} (id={entry['league']['id']})")
-            return entry["league"]["id"]
+            league_id = entry["league"]["id"]
+            season_year = datetime.now().year
+            for season in entry.get("seasons", []):
+                if season.get("current"):
+                    season_year = season["year"]
+                    break
+            print(f"لقيت الدوري: {name} (id={league_id}, season={season_year})")
+            return league_id, season_year
 
     print("ما لقيت دوري روشن السعودي بالبحث التلقائي.")
-    return None
+    return None, None
 
 
-def get_standings(league_id: int):
+def get_standings(league_id: int, season_year: int):
     """يجيب جدول ترتيب دوري معين من API-Football"""
     url = "https://v3.football.api-sports.io/standings"
     headers = {
         "x-rapidapi-key": API_FOOTBALL_KEY,
         "x-rapidapi-host": API_FOOTBALL_HOST,
     }
-    params = {"league": league_id, "season": datetime.now().year}
+    params = {"league": league_id, "season": season_year}
 
     response = requests.get(url, headers=headers, params=params, timeout=30)
     response.raise_for_status()
@@ -205,9 +211,12 @@ def get_standings(league_id: int):
 
 
 def run_standings_pipeline():
-    league_id = resolve_saudi_league_id() or STANDINGS_LEAGUE_ID
-    print(f"جاري جلب جدول الترتيب (دوري رقم {league_id})...")
-    standings = get_standings(league_id)
+    league_id, season_year = resolve_saudi_league_id_and_season()
+    if not league_id:
+        league_id, season_year = STANDINGS_LEAGUE_ID, datetime.now().year
+
+    print(f"جاري جلب جدول الترتيب (دوري رقم {league_id}، موسم {season_year})...")
+    standings = get_standings(league_id, season_year)
     print(f"تم جلب ترتيب {len(standings)} فريق." if standings else "ما قدر يجيب جدول الترتيب.")
     return standings
 

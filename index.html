@@ -61,6 +61,25 @@
     border:1px solid rgba(201,151,63,0.5); padding:4px 12px; border-radius:100px;
   }
 
+  /* ===== Ticker ===== */
+  .ticker-wrap{
+    background:var(--pitch-dark); border-top:1px solid rgba(255,255,255,0.08);
+    margin:22px -6vw 0; padding:0 6vw;
+  }
+  .ticker{
+    display:flex; gap:0; overflow-x:auto; scrollbar-width:none;
+  }
+  .ticker::-webkit-scrollbar{ display:none; }
+  .ticker-item{
+    flex-shrink:0; display:flex; align-items:center; gap:9px;
+    padding:13px 20px; border-left:1px solid rgba(255,255,255,0.08);
+    font-size:12.5px; font-weight:700; color:rgba(246,243,236,0.85); white-space:nowrap;
+  }
+  .ticker-item .t-crest{ width:18px; height:18px; border-radius:50%; overflow:hidden; flex-shrink:0; background:rgba(255,255,255,0.1); }
+  .ticker-item .t-crest img{ width:100%; height:100%; object-fit:contain; }
+  .ticker-item .t-score{ color:var(--gold); font-family:'Cairo'; font-weight:900; }
+  .ticker-item.live .t-score{ color:#e8664f; }
+
   /* ===== Layout ===== */
   main{
     max-width:1180px; margin:0 auto; padding:0 6vw 60px;
@@ -79,31 +98,86 @@
     padding:5px 12px; border-radius:100px;
   }
 
-  /* ===== Match Card ===== */
+  /* ===== Hero story (featured match) ===== */
+  .hero-story{
+    position:relative; border-radius:16px; overflow:hidden; min-height:280px;
+    background:linear-gradient(135deg, var(--pitch) 0%, var(--pitch-dark) 100%);
+    display:flex; flex-direction:column; justify-content:flex-end;
+    padding:28px 30px; margin-bottom:22px; isolation:isolate;
+  }
+  .hero-story::before{
+    content:''; position:absolute; inset:0; z-index:-1;
+    background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 70px);
+  }
+  .hero-story::after{
+    content:''; position:absolute; inset:0; z-index:-1;
+    background:linear-gradient(0deg, rgba(10,20,15,0.92) 5%, rgba(10,20,15,0.25) 60%, transparent 100%);
+  }
+  .hero-crests{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:-2;
+    display:flex; align-items:center; gap:6vw; opacity:0.16; filter:grayscale(1) brightness(3);
+  }
+  .hero-crests img{ width:min(22vw,220px); height:min(22vw,220px); object-fit:contain; }
+  .hero-meta{
+    display:flex; align-items:center; gap:10px; margin-bottom:12px;
+  }
+  .hero-tag{
+    font-size:11.5px; font-weight:800; color:var(--pitch-dark); background:var(--gold);
+    padding:5px 13px; border-radius:100px; letter-spacing:.3px;
+  }
+  .hero-live{
+    font-size:11.5px; font-weight:800; color:#fff; background:var(--line-red);
+    padding:5px 13px; border-radius:100px; display:flex; align-items:center; gap:5px;
+  }
+  .hero-score{
+    color:var(--cream); font-family:'Cairo'; font-weight:900;
+    font-size:clamp(30px,4.4vw,46px); letter-spacing:1px; margin-bottom:6px;
+  }
+  .hero-score .vs{ font-size:.5em; color:var(--gold); font-weight:700; margin:0 10px; }
+  .hero-title{
+    color:var(--cream); font-size:clamp(18px,2.3vw,26px); font-weight:800; line-height:1.4;
+    max-width:640px;
+  }
+  .hero-story .article-preview{
+    color:rgba(246,243,236,0.7); margin-top:12px; max-width:640px;
+    border-top:1px solid rgba(255,255,255,0.12); padding-top:12px;
+  }
+
+  /* ===== Match Card (story grid) ===== */
+  .story-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:640px){ .story-grid{ grid-template-columns:1fr; } }
+
   .match-card{
-    background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:18px 20px; margin-bottom:14px;
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:20px; margin-bottom:0;
     display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap:14px;
     position:relative; overflow:hidden;
+    box-shadow:0 1px 2px rgba(26,31,28,0.04);
+    transition:box-shadow .15s, transform .15s;
   }
+  .match-card:hover{ box-shadow:0 10px 24px rgba(26,31,28,0.1); transform:translateY(-2px); }
   .match-card::before{
     content:''; position:absolute; top:0; right:0; bottom:0; width:4px; background:var(--pitch);
   }
   .match-card.live::before{ background:var(--line-red); }
-  .team{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:15px; }
+  .match-card .league-tag{
+    grid-column:1/-1; font-size:10.5px; font-weight:800; color:var(--gold);
+    text-transform:uppercase; letter-spacing:.4px; margin-bottom:-4px;
+  }
+  .team{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:14.5px; }
   .team.away{ flex-direction:row-reverse; text-align:left; justify-content:flex-start; }
   .crest{
-    width:34px; height:34px; border-radius:50%;
+    width:36px; height:36px; border-radius:50%;
     background:var(--pitch); color:var(--cream);
     display:flex; align-items:center; justify-content:center;
     font-family:'Cairo'; font-weight:800; font-size:13px; flex-shrink:0;
-    overflow:hidden;
+    overflow:hidden; box-shadow:0 0 0 3px var(--cream), 0 0 0 4px var(--line);
   }
   .crest img{ width:100%; height:100%; object-fit:contain; padding:3px; }
-  .score-block{ text-align:center; min-width:110px; }
-  .score-block .num{ font-size:30px; font-weight:900; letter-spacing:2px; }
+  .score-block{ text-align:center; min-width:96px; }
+  .score-block .num{ font-family:'Cairo'; font-size:26px; font-weight:900; letter-spacing:2px; }
   .score-block .status{
-    font-size:11px; font-weight:700; color:var(--ink-soft); margin-top:2px;
+    font-size:10.5px; font-weight:700; color:var(--ink-soft); margin-top:2px;
   }
   .match-card.live .status{ color:var(--line-red); }
   .status .live-dot{
@@ -113,8 +187,9 @@
   @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.3;} }
 
   .article-preview{
-    grid-column:1/-1; margin-top:12px; padding-top:12px; border-top:1px dashed var(--line);
-    font-size:14px; color:var(--ink-soft); line-height:1.7;
+    grid-column:1/-1; margin-top:10px; padding-top:12px; border-top:1px dashed var(--line);
+    font-size:13.5px; color:var(--ink-soft); line-height:1.7;
+    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
   }
 
   /* ===== Sidebar ===== */
@@ -178,14 +253,18 @@
   </div>
 </header>
 
+<div class="ticker-wrap"><div class="ticker" id="ticker"></div></div>
+
 <main>
   <div>
-    <section id="matches-section">
+    <section id="matches-section" style="margin-top:30px">
+      <div id="hero-story-slot"></div>
+
       <div class="section-head">
         <h2>مباريات اليوم</h2>
         <span class="league-badge" id="match-count">0 مباراة</span>
       </div>
-      <div id="matches-list"></div>
+      <div id="matches-list" class="story-grid"></div>
     </section>
   </div>
 
@@ -268,34 +347,82 @@ function crest(name, logoUrl){
   return initials(name);
 }
 
+function statusLabelFor(m){
+  const isLive = m.status === 'In Play' || m.status === 'Halftime';
+  return isLive
+    ? '<span class="live-dot"></span> مباشر الآن'
+    : (m.status === 'Match Finished' ? 'انتهت المباراة' : m.status);
+}
+
+function renderHeroStory(m){
+  const slot = document.getElementById('hero-story-slot');
+  if(!m){ slot.innerHTML = ''; return; }
+  const isLive = m.status === 'In Play' || m.status === 'Halftime';
+
+  slot.innerHTML = `
+    <div class="hero-story">
+      <div class="hero-crests">
+        ${m.home_logo ? `<img src="${m.home_logo}">` : ''}
+        ${m.away_logo ? `<img src="${m.away_logo}">` : ''}
+      </div>
+      <div class="hero-meta">
+        <span class="hero-tag">${m.league}</span>
+        ${isLive ? '<span class="hero-live"><span class="live-dot"></span> مباشر</span>' : ''}
+      </div>
+      <div class="hero-score">${m.home_score} <span class="vs">-</span> ${m.away_score}</div>
+      <div class="hero-title">${m.home_team} ${isLive ? 'يواجه' : 'أمام'} ${m.away_team}</div>
+      <div class="article-preview">${m.content}</div>
+    </div>`;
+}
+
 function renderMatches(matches){
   const list = document.getElementById('matches-list');
   const count = document.getElementById('match-count');
   count.textContent = matches.length + ' مباراة';
 
   if(matches.length === 0){
+    renderHeroStory(null);
     list.innerHTML = '<div class="empty-state">ما فيه مباريات مجهزة حالياً — شغّل السكربت وحدّث الصفحة</div>';
     return;
   }
 
-  list.innerHTML = matches.map(m => {
+  renderHeroStory(matches[0]);
+
+  list.innerHTML = matches.slice(1).map(m => {
     const isLive = m.status === 'In Play' || m.status === 'Halftime';
-    const statusLabel = isLive ? '<span class="live-dot"></span> مباشر الآن' : (m.status === 'Match Finished' ? 'انتهت المباراة' : m.status);
     return `
     <div class="match-card ${isLive ? 'live' : ''}">
+      <div class="league-tag">${m.league}</div>
       <div class="team home">
         <div class="crest">${crest(m.home_team, m.home_logo)}</div>
         <span>${m.home_team}</span>
       </div>
       <div class="score-block">
         <div class="num">${m.home_score} - ${m.away_score}</div>
-        <div class="status">${statusLabel}</div>
+        <div class="status">${statusLabelFor(m)}</div>
       </div>
       <div class="team away">
         <div class="crest">${crest(m.away_team, m.away_logo)}</div>
         <span>${m.away_team}</span>
       </div>
       <div class="article-preview">${m.content}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderTicker(matches){
+  const el = document.getElementById('ticker');
+  if(!matches || matches.length === 0){ el.innerHTML = ''; return; }
+
+  el.innerHTML = matches.map(m => {
+    const isLive = m.status === 'In Play' || m.status === 'Halftime';
+    return `
+    <div class="ticker-item ${isLive ? 'live' : ''}">
+      <span class="t-crest">${m.home_logo ? `<img src="${m.home_logo}">` : ''}</span>
+      <span>${m.home_team}</span>
+      <span class="t-score">${m.home_score}-${m.away_score}</span>
+      <span>${m.away_team}</span>
+      <span class="t-crest">${m.away_logo ? `<img src="${m.away_logo}">` : ''}</span>
     </div>`;
   }).join('');
 }
@@ -365,8 +492,8 @@ renderDate();
 // نعرض بيانات تجريبية بدله بدل ما تطلع الصفحة فاضية
 fetch('matches.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(data => renderMatches(data))
-  .catch(() => renderMatches(sampleMatches));
+  .then(data => { renderMatches(data); renderTicker(data); })
+  .catch(() => { renderMatches(sampleMatches); renderTicker(sampleMatches); });
 
 fetch('standings.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })

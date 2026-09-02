@@ -36,15 +36,39 @@
     "content": "فوز Once Caldas على Fortaleza FC بنتيجة 1-2 ضمن Primera A."
   },
   {
-    "title": "Marconi Stallions 0 - 1 NWS Spirit",
-    "home_team": "Marconi Stallions",
-    "away_team": "NWS Spirit",
-    "home_logo": "https://media.api-sports.io/football/teams/3768.png",
-    "away_logo": "https://media.api-sports.io/football/teams/16775.png",
-    "home_score": 0,
+    "title": "Metalist 1925 U19 1 - 1 Shakhtar Donetsk U19",
+    "home_team": "Metalist 1925 U19",
+    "away_team": "Shakhtar Donetsk U19",
+    "home_logo": "https://media.api-sports.io/football/teams/23078.png",
+    "away_logo": "https://media.api-sports.io/football/teams/7929.png",
+    "home_score": 1,
     "away_score": 1,
     "status": "Halftime",
-    "league": "New South Wales NPL",
-    "content": "فوز NWS Spirit على Marconi Stallions بنتيجة 0-1 ضمن New South Wales NPL."
+    "league": "U19 League",
+    "content": "تعادل Metalist 1925 U19 وShakhtar Donetsk U19 بنتيجة 1-1 ضمن U19 League."
+  },
+  {
+    "title": "Karpaty Lviv U19 4 - 2 Livyi Bereh U19",
+    "home_team": "Karpaty Lviv U19",
+    "away_team": "Livyi Bereh U19",
+    "home_logo": "https://media.api-sports.io/football/teams/24177.png",
+    "away_logo": "https://media.api-sports.io/football/teams/25118.png",
+    "home_score": 4,
+    "away_score": 2,
+    "status": "Match Finished",
+    "league": "U19 League",
+    "content": "فوز Karpaty Lviv U19 على Livyi Bereh U19 بنتيجة 4-2 ضمن U19 League."
+  },
+  {
+    "title": "Gintra-Universitetas W 3 - 5 Sturm Graz W",
+    "home_team": "Gintra-Universitetas W",
+    "away_team": "Sturm Graz W",
+    "home_logo": "https://media.api-sports.io/football/teams/10891.png",
+    "away_logo": "https://media.api-sports.io/football/teams/10232.png",
+    "home_score": 3,
+    "away_score": 5,
+    "status": "Match Finished",
+    "league": "UEFA Europa Cup - Women",
+    "content": "فوز Sturm Graz W على Gintra-Universitetas W بنتيجة 3-5 ضمن UEFA Europa Cup - Women."
   }
 ]

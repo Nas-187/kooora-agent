@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>النادي | كورة ايجنت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch:#0F3D2E;
+    --pitch-dark:#0A2B20;
+    --cream:#F6F3EC;
+    --gold:#C9973F;
+    --ink:#1A1F1C;
+    --ink-soft:#565f59;
+    --line-red:#C0392B;
+    --card:#FFFFFF;
+    --line:#E4DFD2;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; }
+  h1,h2,h3,.num,.brand{ font-family:'Cairo', sans-serif; }
+
+  header{
+    background:var(--pitch);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,0.04) 0, transparent 45%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 68px);
+    color:var(--cream); padding:22px 6vw 30px;
+  }
+  .topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; }
+  .brand{ font-size:26px; font-weight:900; color:var(--cream); display:flex; align-items:center; gap:10px; }
+  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
+  nav{ display:flex; gap:28px; font-size:15px; font-weight:700; }
+  nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
+  nav a.active{ color:var(--gold); }
+
+  .club-header{ display:flex; align-items:center; gap:18px; }
+  .club-header .crest{ width:64px; height:64px; border-radius:50%; overflow:hidden; background:rgba(255,255,255,0.08); flex-shrink:0; }
+  .club-header .crest img{ width:100%; height:100%; object-fit:contain; padding:6px; }
+  .club-header h1{ font-size:clamp(24px, 3.4vw, 34px); font-weight:800; color:var(--cream); }
+  .club-header .league-name{ font-size:13px; font-weight:700; color:var(--gold); margin-top:4px; }
+
+  main{ max-width:820px; margin:0 auto; padding:36px 6vw 60px; }
+
+  .stats-row{ display:flex; gap:12px; margin-bottom:28px; flex-wrap:wrap; }
+  .stat-card{
+    flex:1; min-width:100px; background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:16px; text-align:center;
+  }
+  .stat-card .value{ font-family:'Cairo'; font-size:26px; font-weight:900; color:var(--pitch); }
+  .stat-card .label{ font-size:11.5px; font-weight:700; color:var(--ink-soft); margin-top:4px; }
+
+  .section-head{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:18px; padding-bottom:10px; border-bottom:2px solid var(--pitch);
+  }
+  .section-head h2{ font-size:20px; font-weight:800; }
+
+  .result-card{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:16px 18px; margin-bottom:12px; display:grid;
+    grid-template-columns:1fr auto 1fr; align-items:center; gap:12px;
+  }
+  .result-team{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:14px; }
+  .result-team.away{ flex-direction:row-reverse; text-align:left; }
+  .result-crest{ width:30px; height:30px; border-radius:50%; overflow:hidden; background:var(--pitch); flex-shrink:0; }
+  .result-crest img{ width:100%; height:100%; object-fit:contain; padding:3px; }
+  .result-score{ font-family:'Cairo'; font-size:22px; font-weight:900; text-align:center; min-width:70px; }
+  .result-meta{ grid-column:1/-1; font-size:11px; color:var(--ink-soft); font-weight:700; text-align:center; margin-top:6px; }
+  .result-card.win{ border-right:4px solid var(--pitch); }
+  .result-card.loss{ border-right:4px solid var(--line-red); }
+  .result-card.draw{ border-right:4px solid var(--gold); }
+
+  .empty-state{
+    padding:34px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
+    background:var(--card); border:1px dashed var(--line); border-radius:10px;
+  }
+
+  footer{
+    background:var(--pitch-dark); color:rgba(246,243,236,0.55);
+    text-align:center; padding:26px; font-size:13px; margin-top:40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span> كورة ايجنت</div>
+    <nav>
+      <a href="index.html">مباريات اليوم</a>
+      <a href="news.html">الأخبار</a>
+      <a href="standings.html">الترتيب</a>
+      <a href="clubs.html" class="active">الأندية</a>
+    </nav>
+  </div>
+  <div class="club-header" id="club-header">
+    <div class="crest" id="club-crest"></div>
+    <div>
+      <h1 id="club-name">جاري التحميل...</h1>
+      <div class="league-name" id="club-league"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="stats-row" id="stats-row"></div>
+
+  <div class="section-head">
+    <h2>آخر النتائج</h2>
+  </div>
+  <div id="results-list"></div>
+</main>
+
+<footer>&copy; كورة ايجنت 2026</footer>
+
+<script>
+const params = new URLSearchParams(location.search);
+const clubId = Number(params.get('id'));
+
+function resultClass(m){
+  const isHome = m.home_id === clubId;
+  const us = isHome ? m.home_goals : m.away_goals;
+  const them = isHome ? m.away_goals : m.home_goals;
+  if(us > them) return 'win';
+  if(us < them) return 'loss';
+  return 'draw';
+}
+
+fetch('results_archive.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(archive => {
+    const matches = archive.filter(m => m.home_id === clubId || m.away_id === clubId)
+                            .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    if(matches.length === 0){
+      document.getElementById('club-name').textContent = 'النادي غير موجود بالأرشيف';
+      document.getElementById('results-list').innerHTML = '<div class="empty-state">ما فيه بيانات مؤرشفة لهذا النادي بعد</div>';
+      return;
+    }
+
+    const first = matches[0];
+    const isHome = first.home_id === clubId;
+    const name = isHome ? first.home : first.away;
+    const logo = isHome ? first.home_logo : first.away_logo;
+
+    document.getElementById('club-name').textContent = name;
+    document.getElementById('club-league').textContent = first.league_name || '';
+    document.getElementById('club-crest').innerHTML = logo ? `<img src="${logo}" alt="${name}">` : '';
+    document.title = name + ' | كورة ايجنت';
+
+    let wins = 0, draws = 0, losses = 0, gf = 0, ga = 0;
+    matches.forEach(m => {
+      const h = m.home_id === clubId;
+      const us = h ? m.home_goals : m.away_goals;
+      const them = h ? m.away_goals : m.home_goals;
+      gf += us; ga += them;
+      if(us > them) wins++; else if(us < them) losses++; else draws++;
+    });
+
+    document.getElementById('stats-row').innerHTML = `
+      <div class="stat-card"><div class="value">${matches.length}</div><div class="label">لعب</div></div>
+      <div class="stat-card"><div class="value">${wins}</div><div class="label">فوز</div></div>
+      <div class="stat-card"><div class="value">${draws}</div><div class="label">تعادل</div></div>
+      <div class="stat-card"><div class="value">${losses}</div><div class="label">خسارة</div></div>
+      <div class="stat-card"><div class="value">${gf}-${ga}</div><div class="label">الأهداف له/عليه</div></div>`;
+
+    document.getElementById('results-list').innerHTML = matches.map(m => `
+      <div class="result-card ${resultClass(m)}">
+        <div class="result-team home">
+          <span class="result-crest">${m.home_logo ? `<img src="${m.home_logo}">` : ''}</span>
+          <span>${m.home}</span>
+        </div>
+        <div class="result-score">${m.home_goals} - ${m.away_goals}</div>
+        <div class="result-team away">
+          <span class="result-crest">${m.away_logo ? `<img src="${m.away_logo}">` : ''}</span>
+          <span>${m.away}</span>
+        </div>
+        <div class="result-meta">${m.date} · ${m.league_name || ''}</div>
+      </div>`).join('');
+  })
+  .catch(() => {
+    document.getElementById('club-name').textContent = 'تعذّر تحميل البيانات';
+  });
+</script>
+
+</body>
+</html>

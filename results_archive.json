@@ -2,11 +2,14 @@
   {
     "fixture_id": 1603007,
     "league_id": 307,
+    "league_name": "دوري روشن السعودي",
     "date": "2026-09-01",
     "home_id": 2932,
     "home": "Al-Hilal Saudi FC",
+    "home_logo": "https://media.api-sports.io/football/teams/2932.png",
     "away_id": 2929,
     "away": "Al-Ahli Jeddah",
+    "away_logo": "https://media.api-sports.io/football/teams/2929.png",
     "home_goals": 3,
     "away_goals": 0
   }

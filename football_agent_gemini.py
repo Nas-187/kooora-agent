@@ -257,11 +257,14 @@ def update_results_archive(league_ids) -> list:
         archive.append({
             "fixture_id": fixture_id,
             "league_id": league_id,
+            "league_name": TARGET_LEAGUES.get(league_id, fx["league"]["name"]),
             "date": fx["fixture"]["date"][:10],
             "home_id": fx["teams"]["home"]["id"],
             "home": fx["teams"]["home"]["name"],
+            "home_logo": fx["teams"]["home"]["logo"],
             "away_id": fx["teams"]["away"]["id"],
             "away": fx["teams"]["away"]["name"],
+            "away_logo": fx["teams"]["away"]["logo"],
             "home_goals": home_goals,
             "away_goals": away_goals,
         })

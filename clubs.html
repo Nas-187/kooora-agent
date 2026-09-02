@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الأندية | كورة ايجنت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch:#0F3D2E;
+    --pitch-dark:#0A2B20;
+    --cream:#F6F3EC;
+    --gold:#C9973F;
+    --ink:#1A1F1C;
+    --ink-soft:#565f59;
+    --line-red:#C0392B;
+    --card:#FFFFFF;
+    --line:#E4DFD2;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; }
+  h1,h2,h3,.num,.brand{ font-family:'Cairo', sans-serif; }
+
+  header{
+    background:var(--pitch);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,0.04) 0, transparent 45%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 68px);
+    color:var(--cream); padding:22px 6vw 30px;
+  }
+  .topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; }
+  .brand{ font-size:26px; font-weight:900; color:var(--cream); display:flex; align-items:center; gap:10px; }
+  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
+  nav{ display:flex; gap:28px; font-size:15px; font-weight:700; }
+  nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
+  nav a.active{ color:var(--gold); }
+  .hero-line{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  .hero-line h1{ font-size:clamp(28px, 4vw, 40px); font-weight:800; }
+
+  main{ max-width:1000px; margin:0 auto; padding:36px 6vw 60px; }
+
+  .league-tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
+  .league-tab{
+    font-size:13px; font-weight:700; padding:9px 16px; border-radius:20px;
+    border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
+    cursor:pointer; transition:.15s;
+  }
+  .league-tab:hover{ border-color:var(--gold); }
+  .league-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
+
+  .club-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(120px, 1fr)); gap:14px; }
+  .club-card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px 10px; display:flex; flex-direction:column; align-items:center; gap:10px;
+    text-decoration:none; color:inherit; transition:.15s;
+  }
+  .club-card:hover{ border-color:var(--gold); transform:translateY(-2px); box-shadow:0 8px 18px rgba(26,31,28,0.08); }
+  .club-crest{ width:56px; height:56px; border-radius:50%; overflow:hidden; background:var(--pitch); flex-shrink:0; }
+  .club-crest img{ width:100%; height:100%; object-fit:contain; padding:6px; }
+  .club-name{ font-size:12.5px; font-weight:700; text-align:center; line-height:1.4; }
+
+  .empty-state{
+    padding:34px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
+    background:var(--card); border:1px dashed var(--line); border-radius:10px;
+  }
+
+  footer{
+    background:var(--pitch-dark); color:rgba(246,243,236,0.55);
+    text-align:center; padding:26px; font-size:13px; margin-top:40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span> كورة ايجنت</div>
+    <nav>
+      <a href="index.html">مباريات اليوم</a>
+      <a href="news.html">الأخبار</a>
+      <a href="standings.html">الترتيب</a>
+      <a href="clubs.html" class="active">الأندية</a>
+    </nav>
+  </div>
+  <div class="hero-line"><h1>الأندية</h1></div>
+</header>
+
+<main>
+  <div class="league-tabs" id="league-tabs"></div>
+  <div class="club-grid" id="club-grid"></div>
+</main>
+
+<footer>&copy; كورة ايجنت 2026</footer>
+
+<script>
+const TARGET_LEAGUES = {
+  307: "دوري روشن السعودي",
+  39: "الدوري الإنجليزي",
+  140: "الدوري الإسباني",
+  135: "الدوري الإيطالي",
+  78: "الدوري الألماني",
+  61: "الدوري الفرنسي",
+};
+
+let clubsByLeague = {};
+let activeLeague = 'all';
+
+function buildClubIndex(archive){
+  const byLeague = {};
+  for(const m of archive){
+    const lid = m.league_id;
+    if(!byLeague[lid]) byLeague[lid] = {};
+    byLeague[lid][m.home_id] = { id: m.home_id, name: m.home, logo: m.home_logo };
+    byLeague[lid][m.away_id] = { id: m.away_id, name: m.away, logo: m.away_logo };
+  }
+  return byLeague;
+}
+
+function renderLeagueTabs(){
+  const wrap = document.getElementById('league-tabs');
+  const ids = Object.keys(clubsByLeague).map(Number);
+
+  let html = `<button type="button" class="league-tab ${activeLeague === 'all' ? 'active' : ''}" data-league="all">كل الأندية</button>`;
+  html += Object.keys(TARGET_LEAGUES).map(idStr => {
+    const id = Number(idStr);
+    if(!ids.includes(id)) return '';
+    return `<button type="button" class="league-tab ${activeLeague === id ? 'active' : ''}" data-league="${id}">${TARGET_LEAGUES[id]}</button>`;
+  }).join('');
+
+  wrap.innerHTML = html;
+  wrap.querySelectorAll('.league-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeLeague = btn.dataset.league === 'all' ? 'all' : Number(btn.dataset.league);
+      renderLeagueTabs();
+      renderClubs();
+    });
+  });
+}
+
+function renderClubs(){
+  const grid = document.getElementById('club-grid');
+
+  let clubs = [];
+  if(activeLeague === 'all'){
+    const merged = {};
+    Object.values(clubsByLeague).forEach(leagueClubs => Object.assign(merged, leagueClubs));
+    clubs = Object.values(merged);
+  }else{
+    clubs = Object.values(clubsByLeague[activeLeague] || {});
+  }
+  clubs.sort((a, b) => a.name.localeCompare(b.name));
+
+  if(clubs.length === 0){
+    grid.innerHTML = '<div class="empty-state">ما فيه أندية مؤرشفة بهالقسم حالياً — راجع لاحقاً بعد ما تُلعب مباريات أكثر</div>';
+    return;
+  }
+
+  grid.innerHTML = clubs.map(c => `
+    <a class="club-card" href="club.html?id=${c.id}">
+      <div class="club-crest">${c.logo ? `<img src="${c.logo}" alt="${c.name}">` : ''}</div>
+      <span class="club-name">${c.name}</span>
+    </a>`).join('');
+}
+
+fetch('results_archive.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => {
+    clubsByLeague = buildClubIndex(data);
+    renderLeagueTabs();
+    renderClubs();
+  })
+  .catch(() => {
+    document.getElementById('club-grid').innerHTML = '<div class="empty-state">تعذّر تحميل بيانات الأندية</div>';
+  });
+</script>
+
+</body>
+</html>

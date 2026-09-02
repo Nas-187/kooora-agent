@@ -297,8 +297,20 @@ function renderDate(){
 }
 
 renderDate();
-renderMatches(sampleMatches);
-renderNews(sampleNews);
+renderNews(sampleNews); // الأخبار لسا تجريبية، بنطورها لاحقاً
+
+// نجيب المباريات الحقيقية من matches.json (نفس المجلد)
+// لو ما لقى الملف (أول مرة قبل ما يشتغل GitHub Actions)، يعرض بيانات تجريبية بدلها
+fetch('matches.json?t=' + Date.now())
+  .then(res => {
+    if(!res.ok) throw new Error('ملف البيانات غير موجود بعد');
+    return res.json();
+  })
+  .then(data => renderMatches(data))
+  .catch(() => {
+    console.log('عرض بيانات تجريبية مؤقتاً — matches.json لسا ما اتحدث');
+    renderMatches(sampleMatches);
+  });
 </script>
 
 </body>

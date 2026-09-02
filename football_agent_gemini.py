@@ -183,6 +183,11 @@ def run_matches_pipeline(league_id: int = None):
     for fixture in fixtures:
         summary = format_fixture_summary(fixture)
 
+        # نعرض بس مباريات الدوريات الستة المتابعة - غير كذا الصفحة تطول
+        # بمئات المباريات من دوريات كل العالم بلا فايدة
+        if summary["league_id"] not in TARGET_LEAGUES:
+            continue
+
         # نتجاهل بس الحالات الملغاة/المؤجلة - نعرض المنتهية والجارية
         # والمجدولة لاحقاً اليوم (عشان صفحة "مباريات اليوم" تكون كاملة)
         if summary["status"] not in ("Match Finished", "Halftime", "In Play", "Not Started"):
@@ -193,12 +198,9 @@ def run_matches_pipeline(league_id: int = None):
         if summary["status"] == "Not Started":
             # ما بدأت بعد - ما فيه نتيجة نبني منها مقال، نكتفي بموعدها
             article = ""
-        elif summary["league_id"] in TARGET_LEAGUES:
-            # نستخدم Gemini بس للدوريات المستهدفة عشان نحافظ على الحصة المجانية
-            # (باقي دوريات العالم تاخذ نص بديل تلقائي بدون استدعاء Gemini)
-            article = generate_article(summary)
         else:
-            article = fallback_article_text(summary)
+            # كلهم الآن ضمن الدوريات المستهدفة، فنستخدم Gemini للجميع
+            article = generate_article(summary)
 
         results.append(build_match_payload(summary, article))
 

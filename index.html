@@ -187,7 +187,7 @@
       <div class="sidebar-card">
         <table class="standings-table">
           <thead><tr><th></th><th>الفريق</th><th>لعب</th><th>نقاط</th></tr></thead>
-          <tbody>
+          <tbody id="standings-body">
             <tr><td class="rank">1</td><td>الهلال</td><td>4</td><td class="pts">12</td></tr>
             <tr><td class="rank">2</td><td>النصر</td><td>4</td><td class="pts">12</td></tr>
             <tr><td class="rank">3</td><td>الدرعية</td><td>4</td><td class="pts">7</td></tr>
@@ -207,7 +207,7 @@
 </main>
 
 <footer>
-  موقع تجريبي مولّد آلياً بواسطة إيجنت <strong>الملعب</strong> — بيانات المباريات من API-Football، والصياغة بمساعدة الذكاء الاصطناعي
+  &copy; الملعب 2026
 </footer>
 
 <script>
@@ -296,21 +296,39 @@ function renderDate(){
     d.toLocaleDateString('ar-SA', { weekday:'long', day:'numeric', month:'long' });
 }
 
-renderDate();
-renderNews(sampleNews); // الأخبار لسا تجريبية، بنطورها لاحقاً
+function renderStandings(standings){
+  const tbody = document.getElementById('standings-body');
+  if(!standings || standings.length === 0){
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:16px; color:var(--ink-soft);">جدول الترتيب غير متاح حالياً</td></tr>';
+    return;
+  }
+  tbody.innerHTML = standings.slice(0, 8).map(s => `
+    <tr>
+      <td class="rank">${s.rank}</td>
+      <td>${s.team}</td>
+      <td>${s.played}</td>
+      <td class="pts">${s.points}</td>
+    </tr>`).join('');
+}
 
-// نجيب المباريات الحقيقية من matches.json (نفس المجلد)
-// لو ما لقى الملف (أول مرة قبل ما يشتغل GitHub Actions)، يعرض بيانات تجريبية بدلها
+renderDate();
+
+// نجيب المباريات، الترتيب، والأخبار الحقيقية — ولو أي ملف ما لقيناه (أول تشغيل)
+// نعرض بيانات تجريبية بدله بدل ما تطلع الصفحة فاضية
 fetch('matches.json?t=' + Date.now())
-  .then(res => {
-    if(!res.ok) throw new Error('ملف البيانات غير موجود بعد');
-    return res.json();
-  })
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
   .then(data => renderMatches(data))
-  .catch(() => {
-    console.log('عرض بيانات تجريبية مؤقتاً — matches.json لسا ما اتحدث');
-    renderMatches(sampleMatches);
-  });
+  .catch(() => renderMatches(sampleMatches));
+
+fetch('standings.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => renderStandings(data))
+  .catch(() => {}); // الجدول الثابت بالـ HTML يبقى كما هو لو ما لقينا الملف
+
+fetch('news.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => data.length ? renderNews(data) : renderNews(sampleNews))
+  .catch(() => renderNews(sampleNews));
 </script>
 
 </body>

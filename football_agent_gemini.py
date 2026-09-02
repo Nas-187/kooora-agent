@@ -85,6 +85,7 @@ def format_fixture_summary(fixture: dict) -> dict:
 
     return {
         "league_id": fixture["league"]["id"],
+        "league_logo": fixture["league"]["logo"],
         "home_team": teams["home"]["name"],
         "away_team": teams["away"]["name"],
         "home_logo": teams["home"]["logo"],
@@ -146,12 +147,16 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
     (home_team, away_team, home_logo, away_logo, home_score, away_score,
     status, league, content)
     """
-    title = f"{match_summary['home_team']} {match_summary['home_score']} - " \
-            f"{match_summary['away_score']} {match_summary['away_team']}"
+    if match_summary["home_score"] is None or match_summary["away_score"] is None:
+        title = f"{match_summary['home_team']} ضد {match_summary['away_team']}"
+    else:
+        title = f"{match_summary['home_team']} {match_summary['home_score']} - " \
+                f"{match_summary['away_score']} {match_summary['away_team']}"
 
     return {
         "title": title,
         "league_id": match_summary["league_id"],
+        "league_logo": match_summary["league_logo"],
         "home_team": match_summary["home_team"],
         "away_team": match_summary["away_team"],
         "home_logo": match_summary["home_logo"],
@@ -160,6 +165,7 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
         "away_score": match_summary["away_score"],
         "status": match_summary["status"],
         "league": match_summary["league"],
+        "date": match_summary["date"],
         "content": article_text,
     }
 
@@ -177,15 +183,19 @@ def run_matches_pipeline(league_id: int = None):
     for fixture in fixtures:
         summary = format_fixture_summary(fixture)
 
-        # تجاهل المباريات اللي ما بدأت بعد
-        if summary["status"] not in ("Match Finished", "Halftime", "In Play"):
+        # نتجاهل بس الحالات الملغاة/المؤجلة - نعرض المنتهية والجارية
+        # والمجدولة لاحقاً اليوم (عشان صفحة "مباريات اليوم" تكون كاملة)
+        if summary["status"] not in ("Match Finished", "Halftime", "In Play", "Not Started"):
             continue
 
-        print(f"معالجة: {summary['home_team']} vs {summary['away_team']}")
+        print(f"معالجة: {summary['home_team']} vs {summary['away_team']} ({summary['status']})")
 
-        # نستخدم Gemini بس للدوريات المستهدفة عشان نحافظ على الحصة المجانية
-        # (باقي دوريات العالم تاخذ نص بديل تلقائي بدون استدعاء Gemini)
-        if summary["league_id"] in TARGET_LEAGUES:
+        if summary["status"] == "Not Started":
+            # ما بدأت بعد - ما فيه نتيجة نبني منها مقال، نكتفي بموعدها
+            article = ""
+        elif summary["league_id"] in TARGET_LEAGUES:
+            # نستخدم Gemini بس للدوريات المستهدفة عشان نحافظ على الحصة المجانية
+            # (باقي دوريات العالم تاخذ نص بديل تلقائي بدون استدعاء Gemini)
             article = generate_article(summary)
         else:
             article = fallback_article_text(summary)

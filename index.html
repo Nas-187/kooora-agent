@@ -214,6 +214,28 @@
   .league-tab:hover{ border-color:var(--gold); }
   .league-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
 
+  /* ===== Match league tabs (مباريات اليوم) ===== */
+  .match-league-tabs{
+    display:flex; gap:10px; overflow-x:auto; padding-bottom:4px; margin-bottom:24px;
+    scrollbar-width:none;
+  }
+  .match-league-tabs::-webkit-scrollbar{ display:none; }
+  .match-league-tab{
+    flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:7px;
+    padding:14px 18px; min-width:90px; border-radius:14px;
+    border:1px solid var(--line); background:var(--card); cursor:pointer; transition:.15s;
+  }
+  .match-league-tab:hover{ border-color:var(--gold); transform:translateY(-1px); }
+  .match-league-tab.active{ background:var(--pitch); border-color:var(--pitch); }
+  .match-league-tab .m-logo{ width:32px; height:32px; object-fit:contain; }
+  .match-league-tab .m-name{ font-size:10.5px; font-weight:700; color:var(--ink-soft); text-align:center; line-height:1.3; }
+  .match-league-tab .m-count{ font-size:11px; font-weight:800; color:var(--pitch); }
+  .match-league-tab.active .m-name{ color:rgba(246,243,236,0.8); }
+  .match-league-tab.active .m-count{ color:var(--gold); }
+
+  .kickoff-time{ font-family:'Cairo'; font-size:19px; font-weight:900; color:var(--pitch); }
+  .kickoff-label{ font-size:10.5px; font-weight:700; color:var(--ink-soft); margin-top:2px; }
+
   .standings-table{ width:100%; border-collapse:collapse; font-size:13.5px; }
   .standings-table th{
     text-align:right; font-weight:700; color:var(--ink-soft); font-size:11px;
@@ -258,6 +280,8 @@
 <main>
   <div>
     <section id="matches-section" style="margin-top:30px">
+      <div class="match-league-tabs" id="match-league-tabs"></div>
+
       <div id="hero-story-slot"></div>
 
       <div class="section-head">
@@ -347,17 +371,62 @@ function crest(name, logoUrl){
   return initials(name);
 }
 
+const MATCH_TARGET_LEAGUES = {
+  307: "دوري روشن السعودي",
+  39: "الدوري الإنجليزي",
+  140: "الدوري الإسباني",
+  135: "الدوري الإيطالي",
+  78: "الدوري الألماني",
+  61: "الدوري الفرنسي",
+};
+
+function isLiveStatus(status){ return status === 'In Play' || status === 'Halftime'; }
+function isScheduled(status){ return status === 'Not Started'; }
+
+function formatKickoff(iso){
+  const d = new Date(iso);
+  return d.toLocaleTimeString('ar', { hour:'2-digit', minute:'2-digit' });
+}
+
 function statusLabelFor(m){
-  const isLive = m.status === 'In Play' || m.status === 'Halftime';
-  return isLive
-    ? '<span class="live-dot"></span> مباشر الآن'
-    : (m.status === 'Match Finished' ? 'انتهت المباراة' : m.status);
+  if(isLiveStatus(m.status)) return '<span class="live-dot"></span> مباشر الآن';
+  if(isScheduled(m.status)) return 'لم تبدأ بعد';
+  if(m.status === 'Match Finished') return 'انتهت المباراة';
+  return m.status;
+}
+
+function scoreBlockHtml(m){
+  if(isScheduled(m.status)){
+    return `<div class="kickoff-time">${formatKickoff(m.date)}</div><div class="kickoff-label">${statusLabelFor(m)}</div>`;
+  }
+  return `<div class="num">${m.home_score} - ${m.away_score}</div><div class="status">${statusLabelFor(m)}</div>`;
+}
+
+/* أهم مباراة تُعرض بالبطاقة الكبيرة: مباشرة الآن أولاً، وإلا منتهية بدوري
+   من دورياتنا المتابعة، وإلا أي منتهية، وإلا القادمة الأقرب موعداً */
+function pickHeroMatch(matches){
+  const score = m => {
+    const inTarget = MATCH_TARGET_LEAGUES[m.league_id] !== undefined;
+    if(isLiveStatus(m.status)) return inTarget ? 0 : 1;
+    if(m.status === 'Match Finished') return inTarget ? 2 : 3;
+    return inTarget ? 4 : 5;
+  };
+  return [...matches].sort((a, b) => {
+    const s = score(a) - score(b);
+    if(s !== 0) return s;
+    return new Date(a.date) - new Date(b.date);
+  })[0];
 }
 
 function renderHeroStory(m){
   const slot = document.getElementById('hero-story-slot');
   if(!m){ slot.innerHTML = ''; return; }
-  const isLive = m.status === 'In Play' || m.status === 'Halftime';
+  const isLive = isLiveStatus(m.status);
+  const scheduled = isScheduled(m.status);
+
+  const centerHtml = scheduled
+    ? `<div class="hero-score">${formatKickoff(m.date)}</div>`
+    : `<div class="hero-score">${m.home_score} <span class="vs">-</span> ${m.away_score}</div>`;
 
   slot.innerHTML = `
     <div class="hero-story">
@@ -368,11 +437,56 @@ function renderHeroStory(m){
       <div class="hero-meta">
         <span class="hero-tag">${m.league}</span>
         ${isLive ? '<span class="hero-live"><span class="live-dot"></span> مباشر</span>' : ''}
+        ${scheduled ? '<span class="hero-live" style="background:var(--ink-soft)">لم تبدأ بعد</span>' : ''}
       </div>
-      <div class="hero-score">${m.home_score} <span class="vs">-</span> ${m.away_score}</div>
-      <div class="hero-title">${m.home_team} ${isLive ? 'يواجه' : 'أمام'} ${m.away_team}</div>
-      <div class="article-preview">${m.content}</div>
+      ${centerHtml}
+      <div class="hero-title">${m.home_team} ${isLive || scheduled ? 'يواجه' : 'أمام'} ${m.away_team}</div>
+      ${m.content ? `<div class="article-preview">${m.content}</div>` : ''}
     </div>`;
+}
+
+let allTodayMatches = [];
+let activeMatchLeague = 'all';
+
+function renderMatchLeagueTabs(matches){
+  const wrap = document.getElementById('match-league-tabs');
+  const leagueIds = Object.keys(MATCH_TARGET_LEAGUES).map(Number);
+
+  const allCount = matches.length;
+  let html = `
+    <div class="match-league-tab ${activeMatchLeague === 'all' ? 'active' : ''}" data-league="all">
+      <span class="m-name" style="font-weight:800">الكل</span>
+      <span class="m-count">${allCount} مباراة</span>
+    </div>`;
+
+  html += leagueIds.map(id => {
+    const sample = matches.find(m => m.league_id === id);
+    const count = matches.filter(m => m.league_id === id).length;
+    const logo = sample ? sample.league_logo : '';
+    const name = MATCH_TARGET_LEAGUES[id];
+    return `
+    <div class="match-league-tab ${activeMatchLeague === id ? 'active' : ''}" data-league="${id}">
+      ${logo ? `<img class="m-logo" src="${logo}" alt="${name}">` : ''}
+      <span class="m-name">${name}</span>
+      <span class="m-count">${count} مباراة اليوم</span>
+    </div>`;
+  }).join('');
+
+  wrap.innerHTML = html;
+
+  wrap.querySelectorAll('.match-league-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const val = tab.dataset.league;
+      activeMatchLeague = (val === 'all') ? 'all' : Number(val);
+      renderMatchLeagueTabs(allTodayMatches);
+      renderMatches(filterByActiveLeague(allTodayMatches));
+    });
+  });
+}
+
+function filterByActiveLeague(matches){
+  if(activeMatchLeague === 'all') return matches;
+  return matches.filter(m => m.league_id === activeMatchLeague);
 }
 
 function renderMatches(matches){
@@ -382,14 +496,15 @@ function renderMatches(matches){
 
   if(matches.length === 0){
     renderHeroStory(null);
-    list.innerHTML = '<div class="empty-state">ما فيه مباريات مجهزة حالياً — شغّل السكربت وحدّث الصفحة</div>';
+    list.innerHTML = '<div class="empty-state">ما فيه مباريات بهالقسم حالياً</div>';
     return;
   }
 
-  renderHeroStory(matches[0]);
+  const hero = pickHeroMatch(matches);
+  renderHeroStory(hero);
 
-  list.innerHTML = matches.slice(1).map(m => {
-    const isLive = m.status === 'In Play' || m.status === 'Halftime';
+  list.innerHTML = matches.filter(m => m !== hero).map(m => {
+    const isLive = isLiveStatus(m.status);
     return `
     <div class="match-card ${isLive ? 'live' : ''}">
       <div class="league-tag">${m.league}</div>
@@ -397,25 +512,23 @@ function renderMatches(matches){
         <div class="crest">${crest(m.home_team, m.home_logo)}</div>
         <span>${m.home_team}</span>
       </div>
-      <div class="score-block">
-        <div class="num">${m.home_score} - ${m.away_score}</div>
-        <div class="status">${statusLabelFor(m)}</div>
-      </div>
+      <div class="score-block">${scoreBlockHtml(m)}</div>
       <div class="team away">
         <div class="crest">${crest(m.away_team, m.away_logo)}</div>
         <span>${m.away_team}</span>
       </div>
-      <div class="article-preview">${m.content}</div>
+      ${m.content ? `<div class="article-preview">${m.content}</div>` : ''}
     </div>`;
   }).join('');
 }
 
 function renderTicker(matches){
   const el = document.getElementById('ticker');
-  if(!matches || matches.length === 0){ el.innerHTML = ''; return; }
+  const playedOrLive = matches.filter(m => !isScheduled(m.status));
+  if(!playedOrLive || playedOrLive.length === 0){ el.innerHTML = ''; return; }
 
-  el.innerHTML = matches.map(m => {
-    const isLive = m.status === 'In Play' || m.status === 'Halftime';
+  el.innerHTML = playedOrLive.map(m => {
+    const isLive = isLiveStatus(m.status);
     return `
     <div class="ticker-item ${isLive ? 'live' : ''}">
       <span class="t-crest">${m.home_logo ? `<img src="${m.home_logo}">` : ''}</span>
@@ -490,10 +603,17 @@ renderDate();
 
 // نجيب المباريات، الترتيب، والأخبار الحقيقية — ولو أي ملف ما لقيناه (أول تشغيل)
 // نعرض بيانات تجريبية بدله بدل ما تطلع الصفحة فاضية
+function loadMatches(data){
+  allTodayMatches = data;
+  renderMatchLeagueTabs(allTodayMatches);
+  renderMatches(filterByActiveLeague(allTodayMatches));
+  renderTicker(allTodayMatches);
+}
+
 fetch('matches.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(data => { renderMatches(data); renderTicker(data); })
-  .catch(() => { renderMatches(sampleMatches); renderTicker(sampleMatches); });
+  .then(data => loadMatches(data))
+  .catch(() => loadMatches(sampleMatches));
 
 fetch('standings.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })

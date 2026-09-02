@@ -2565,6 +2565,21 @@
     "content": "تعادل JBK وHuima / Urho بنتيجة 1-1 ضمن Kakkonen - Lohko C."
   },
   {
+    "title": "Al Wehda Club 2 - 2 Damac",
+    "league_id": 308,
+    "league_logo": "https://media.api-sports.io/football/leagues/308.png",
+    "home_team": "Al Wehda Club",
+    "away_team": "Damac",
+    "home_logo": "https://media.api-sports.io/football/teams/2937.png",
+    "away_logo": "https://media.api-sports.io/football/teams/2956.png",
+    "home_score": 2,
+    "away_score": 2,
+    "status": "Match Finished",
+    "league": "Division 1",
+    "date": "2026-09-02T16:15:00+00:00",
+    "content": "تعادل Al Wehda Club وDamac بنتيجة 2-2 ضمن Division 1."
+  },
+  {
     "title": "TAFIC ضد Gaborone United",
     "league_id": 412,
     "league_logo": "https://media.api-sports.io/football/leagues/412.png",
@@ -2578,6 +2593,36 @@
     "league": "Premier League",
     "date": "2026-09-02T17:00:00+00:00",
     "content": ""
+  },
+  {
+    "title": "Dinamo Minsk 4 - 0 Naftan",
+    "league_id": 116,
+    "league_logo": "https://media.api-sports.io/football/leagues/116.png",
+    "home_team": "Dinamo Minsk",
+    "away_team": "Naftan",
+    "home_logo": "https://media.api-sports.io/football/teams/394.png",
+    "away_logo": "https://media.api-sports.io/football/teams/750.png",
+    "home_score": 4,
+    "away_score": 0,
+    "status": "Halftime",
+    "league": "Premier League",
+    "date": "2026-09-02T17:30:00+00:00",
+    "content": "فوز Dinamo Minsk على Naftan بنتيجة 4-0 ضمن Premier League."
+  },
+  {
+    "title": "HNK Cibalia 0 - 0 Orijent 1919",
+    "league_id": 211,
+    "league_logo": "https://media.api-sports.io/football/leagues/211.png",
+    "home_team": "HNK Cibalia",
+    "away_team": "Orijent 1919",
+    "home_logo": "https://media.api-sports.io/football/teams/1021.png",
+    "away_logo": "https://media.api-sports.io/football/teams/6256.png",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "Halftime",
+    "league": "First NL",
+    "date": "2026-09-02T17:30:00+00:00",
+    "content": "تعادل HNK Cibalia وOrijent 1919 بنتيجة 0-0 ضمن First NL."
   },
   {
     "title": "Athletico PR U17 ضد Corinthians U17",

@@ -6,7 +6,7 @@ on:
     - cron: "*/30 * * * *"
   workflow_dispatch:
 
-# صلاحية الكتابة لازمة عشان يقدر يحفظ matches.json بالمستودع
+# صلاحية الكتابة لازمة عشان يقدر يحفظ matches.json و standings.json و news.json بالمستودع
 permissions:
   contents: write
 
@@ -31,10 +31,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python football_agent_gemini.py
 
-      - name: حفظ ورفع matches.json الجديد
+      - name: حفظ ورفع matches.json و standings.json و news.json الجديدة
         run: |
           git config user.name "football-agent-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add matches.json
-          git diff --staged --quiet || git commit -m "تحديث تلقائي لنتائج المباريات"
+          git add matches.json standings.json news.json results_archive.json
+          git diff --staged --quiet || git commit -m "تحديث تلقائي لنتائج المباريات والترتيب والأخبار"
           git push

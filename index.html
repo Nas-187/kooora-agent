@@ -128,6 +128,15 @@
   }
   .news-item .title{ font-size:14.5px; font-weight:700; line-height:1.5; }
 
+  .league-tabs{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+  .league-tab{
+    font-size:11.5px; font-weight:700; padding:6px 10px; border-radius:20px;
+    border:1px solid var(--line); background:var(--cream); color:var(--ink-soft);
+    cursor:pointer; transition:.15s;
+  }
+  .league-tab:hover{ border-color:var(--gold); }
+  .league-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
+
   .standings-table{ width:100%; border-collapse:collapse; font-size:13.5px; }
   .standings-table th{
     text-align:right; font-weight:700; color:var(--ink-soft); font-size:11px;
@@ -182,9 +191,9 @@
     <section style="margin-top:0">
       <div class="section-head">
         <h2>جدول الترتيب</h2>
-        <span class="league-badge">روشن السعودي</span>
       </div>
       <div class="sidebar-card">
+        <div class="league-tabs" id="league-tabs"></div>
         <table class="standings-table">
           <thead><tr><th></th><th>الفريق</th><th>لعب</th><th>نقاط</th></tr></thead>
           <tbody id="standings-body">
@@ -311,6 +320,36 @@ function renderStandings(standings){
     </tr>`).join('');
 }
 
+let standingsByLeague = {};
+let activeLeagueId = null;
+
+function renderLeagueTabs(){
+  const wrap = document.getElementById('league-tabs');
+  const ids = Object.keys(standingsByLeague);
+  wrap.innerHTML = ids.map(id => `
+    <button type="button" class="league-tab ${id === activeLeagueId ? 'active' : ''}" data-league="${id}">
+      ${standingsByLeague[id].name}
+    </button>`).join('');
+
+  wrap.querySelectorAll('.league-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeLeagueId = btn.dataset.league;
+      renderLeagueTabs();
+      renderStandings(standingsByLeague[activeLeagueId].standings);
+    });
+  });
+}
+
+function renderStandingsData(data){
+  standingsByLeague = data || {};
+  const ids = Object.keys(standingsByLeague);
+  if(ids.length === 0) return;
+
+  activeLeagueId = ids.includes('307') ? '307' : ids[0];
+  renderLeagueTabs();
+  renderStandings(standingsByLeague[activeLeagueId].standings);
+}
+
 renderDate();
 
 // نجيب المباريات، الترتيب، والأخبار الحقيقية — ولو أي ملف ما لقيناه (أول تشغيل)
@@ -322,7 +361,7 @@ fetch('matches.json?t=' + Date.now())
 
 fetch('standings.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(data => renderStandings(data))
+  .then(data => renderStandingsData(data))
   .catch(() => {}); // الجدول الثابت بالـ HTML يبقى كما هو لو ما لقينا الملف
 
 fetch('news.json?t=' + Date.now())

@@ -27,6 +27,21 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 # غيّره لأي دوري ثاني لو تحب (39 = الإنجليزي، 140 = الإسباني ... إلخ)
 STANDINGS_LEAGUE_ID = 307
 
+# أرشيف نتائج محلي تراكمي - نبنيه يوم بيوم لأن الخطة المجانية بـ API-Football
+# ما تسمح بجلب مباريات الموسم الحالي (2026) دفعة وحدة، بس تسمح بنافذة تواريخ
+# قريبة من اليوم. لازم يُحفظ ويُرفع للمستودع بعد كل تشغيل عشان يتراكم.
+RESULTS_ARCHIVE_FILE = "results_archive.json"
+
+# الدوريات اللي نبني لها جدول ترتيب من الأرشيف المحلي
+TARGET_LEAGUES = {
+    307: "دوري روشن السعودي",
+    39: "الدوري الإنجليزي",
+    140: "الدوري الإسباني",
+    135: "الدوري الإيطالي",
+    78: "الدوري الألماني",
+    61: "الدوري الفرنسي",
+}
+
 if not API_FOOTBALL_KEY or not GEMINI_API_KEY:
     raise SystemExit(
         "لازم تحط المفاتيح كمتغيرات بيئة أول:\n"
@@ -145,87 +160,125 @@ def run_matches_pipeline(league_id: int = None):
 # 2) جدول الترتيب
 # ============================================================
 
-def resolve_saudi_league_id_and_season():
+def load_results_archive() -> list:
+    """يقرأ أرشيف النتائج المحلي المتراكم (لو موجود)."""
+    if os.path.exists(RESULTS_ARCHIVE_FILE):
+        with open(RESULTS_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+
+def save_results_archive(archive: list):
+    with open(RESULTS_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive, f, ensure_ascii=False, indent=2)
+
+
+def update_results_archive(league_ids) -> list:
     """
-    يبحث عن دوري روشن السعودي بالاسم، ويجيب رقمه + رقم الموسم الحالي
-    الصحيح (current:true) مباشرة من نفس بيانات الدوري - بدل تخمين السنة.
+    يجيب مباريات اليوم المنتهية (FT) لكل الدوريات المستهدفة (TARGET_LEAGUES)
+    ويضيف الجديد منها لأرشيف محلي دائم. نطلب بالتاريخ بس (بدون league/season)
+    لأن أي طلب فيه season=2026 مرفوض من الخطة المجانية حتى لو التاريخ ضمن
+    النافذة المسموحة - وطلب واحد بالتاريخ يرجع كل الدوريات دفعة وحدة.
     """
-    url = "https://v3.football.api-sports.io/leagues"
-    headers = {
-        "x-rapidapi-key": API_FOOTBALL_KEY,
-        "x-rapidapi-host": API_FOOTBALL_HOST,
-    }
-    params = {"country": "Saudi-Arabia"}
+    today = datetime.now().strftime("%Y-%m-%d")
+    fixtures = get_todays_fixtures(date=today)
 
-    response = requests.get(url, headers=headers, params=params, timeout=30)
-    response.raise_for_status()
-    leagues = response.json().get("response", [])
+    archive = load_results_archive()
+    existing_ids = {m["fixture_id"] for m in archive}
 
-    for entry in leagues:
-        name = entry["league"]["name"]
-        if entry["league"]["type"] == "League" and "Pro League" in name:
-            league_id = entry["league"]["id"]
-            season_year = datetime.now().year
-            for season in entry.get("seasons", []):
-                if season.get("current"):
-                    season_year = season["year"]
-                    break
-            print(f"لقيت الدوري: {name} (id={league_id}, season={season_year})")
-            return league_id, season_year
+    added = 0
+    for fx in fixtures:
+        league_id = fx["league"]["id"]
+        if league_id not in league_ids:
+            continue
+        if fx["fixture"]["status"]["short"] != "FT":
+            continue
 
-    print("ما لقيت دوري روشن السعودي بالبحث التلقائي.")
-    return None, None
+        fixture_id = fx["fixture"]["id"]
+        if fixture_id in existing_ids:
+            continue
 
+        home_goals = fx["goals"]["home"]
+        away_goals = fx["goals"]["away"]
+        if home_goals is None or away_goals is None:
+            continue
 
-def get_standings(league_id: int, season_year: int):
-    """يجيب جدول ترتيب دوري معين من API-Football"""
-    url = "https://v3.football.api-sports.io/standings"
-    headers = {
-        "x-rapidapi-key": API_FOOTBALL_KEY,
-        "x-rapidapi-host": API_FOOTBALL_HOST,
-    }
-    params = {"league": league_id, "season": season_year}
-
-    response = requests.get(url, headers=headers, params=params, timeout=30)
-    response.raise_for_status()
-    data = response.json().get("response", [])
-
-    if not data:
-        return []
-
-    # الشكل: response[0].league.standings[0] = قائمة الفرق بترتيبها
-    try:
-        table = data[0]["league"]["standings"][0]
-    except (KeyError, IndexError):
-        return []
-
-    standings = []
-    for team_row in table:
-        standings.append({
-            "rank": team_row["rank"],
-            "team": team_row["team"]["name"],
-            "played": team_row["all"]["played"],
-            "points": team_row["points"],
+        archive.append({
+            "fixture_id": fixture_id,
+            "league_id": league_id,
+            "date": fx["fixture"]["date"][:10],
+            "home_id": fx["teams"]["home"]["id"],
+            "home": fx["teams"]["home"]["name"],
+            "away_id": fx["teams"]["away"]["id"],
+            "away": fx["teams"]["away"]["name"],
+            "home_goals": home_goals,
+            "away_goals": away_goals,
         })
-    return standings
+        existing_ids.add(fixture_id)
+        added += 1
+
+    if added:
+        save_results_archive(archive)
+        print(f"أُضيفت {added} نتيجة جديدة للأرشيف المحلي (الإجمالي: {len(archive)}).")
+
+    return archive
+
+
+def calculate_standings_from_results(league_matches: list):
+    """يحسب جدول الترتيب من مباريات دوري واحد مأخوذة من الأرشيف المحلي."""
+    teams = {}
+    for m in league_matches:
+        for team_id, team_name, gf, ga in (
+            (m["home_id"], m["home"], m["home_goals"], m["away_goals"]),
+            (m["away_id"], m["away"], m["away_goals"], m["home_goals"]),
+        ):
+            stats = teams.setdefault(team_id, {
+                "team": team_name,
+                "played": 0, "wins": 0, "draws": 0, "losses": 0,
+                "gf": 0, "ga": 0, "points": 0,
+            })
+            stats["played"] += 1
+            stats["gf"] += gf
+            stats["ga"] += ga
+            if gf > ga:
+                stats["wins"] += 1
+                stats["points"] += 3
+            elif gf == ga:
+                stats["draws"] += 1
+                stats["points"] += 1
+            else:
+                stats["losses"] += 1
+
+    table = sorted(
+        teams.values(),
+        key=lambda t: (-t["points"], -(t["gf"] - t["ga"]), -t["gf"]),
+    )
+
+    return [
+        {"rank": i, "team": t["team"], "played": t["played"], "points": t["points"]}
+        for i, t in enumerate(table, start=1)
+    ]
 
 
 def run_standings_pipeline():
-    league_id, season_year = resolve_saudi_league_id_and_season()
-    if not league_id:
-        league_id, season_year = STANDINGS_LEAGUE_ID, datetime.now().year
+    print("جاري تحديث أرشيف نتائج الدوريات المحلي...")
+    archive = update_results_archive(set(TARGET_LEAGUES.keys()))
 
-    print(f"جاري جلب جدول الترتيب (دوري رقم {league_id}، موسم {season_year})...")
-    standings = get_standings(league_id, season_year)
-    print(f"تم جلب ترتيب {len(standings)} فريق." if standings else "ما قدر يجيب جدول الترتيب.")
-    return standings
+    all_standings = {}
+    for league_id, league_name in TARGET_LEAGUES.items():
+        league_matches = [m for m in archive if m["league_id"] == league_id]
+        standings = calculate_standings_from_results(league_matches)
+        all_standings[str(league_id)] = {"name": league_name, "standings": standings}
+        print(f"  {league_name}: ترتيب {len(standings)} فريق من {len(league_matches)} نتيجة مؤرشفة.")
+
+    return all_standings
 
 
 # ============================================================
 # 3) الأخبار (مولّدة من نفس بيانات اليوم)
 # ============================================================
 
-def generate_news(matches: list, standings: list) -> list:
+def generate_news(matches: list, standings: dict) -> list:
     """
     يستخدم Gemini يولّد 3 عناوين أخبار قصيرة مبنية على أبرز نتائج
     وترتيب اليوم، بصيغة JSON جاهزة للموقع: [{tag, title}, ...]
@@ -239,9 +292,10 @@ def generate_news(matches: list, standings: list) -> list:
     ) or "لا توجد مباريات اليوم."
 
     standings_brief = ""
-    if standings:
-        leader = standings[0]
-        standings_brief = f"\nصدارة الترتيب حالياً: {leader['team']} برصيد {leader['points']} نقطة."
+    saudi_table = standings.get(str(STANDINGS_LEAGUE_ID), {}).get("standings", [])
+    if saudi_table:
+        leader = saudi_table[0]
+        standings_brief = f"\nصدارة ترتيب دوري روشن السعودي حالياً: {leader['team']} برصيد {leader['points']} نقطة."
 
     prompt = f"""أنت محرر أخبار رياضية. بناءً على بيانات اليوم التالية، اكتب 3 عناوين
 أخبار رياضية قصيرة وجذابة بالعربية (كل عنوان تحت 12 كلمة)، كل واحد له تصنيف قصير (وسم).
@@ -291,4 +345,5 @@ if __name__ == "__main__":
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(news, f, ensure_ascii=False, indent=2)
 
-    print(f"\nتم حفظ: {len(matches)} مباراة، {len(standings)} فريق بالترتيب، {len(news)} خبر.")
+    total_teams = sum(len(l["standings"]) for l in standings.values())
+    print(f"\nتم حفظ: {len(matches)} مباراة، ترتيب {len(standings)} دوريات ({total_teams} فريق إجمالاً)، {len(news)} خبر.")

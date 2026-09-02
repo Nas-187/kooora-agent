@@ -1,0 +1,39 @@
+{
+  "307": {
+    "name": "دوري روشن السعودي",
+    "standings": [
+      {
+        "rank": 1,
+        "team": "Al-Hilal Saudi FC",
+        "played": 1,
+        "points": 3
+      },
+      {
+        "rank": 2,
+        "team": "Al-Ahli Jeddah",
+        "played": 1,
+        "points": 0
+      }
+    ]
+  },
+  "39": {
+    "name": "الدوري الإنجليزي",
+    "standings": []
+  },
+  "140": {
+    "name": "الدوري الإسباني",
+    "standings": []
+  },
+  "135": {
+    "name": "الدوري الإيطالي",
+    "standings": []
+  },
+  "78": {
+    "name": "الدوري الألماني",
+    "standings": []
+  },
+  "61": {
+    "name": "الدوري الفرنسي",
+    "standings": []
+  }
+}

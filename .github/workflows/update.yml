@@ -38,6 +38,7 @@ jobs:
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python football_agent_gemini.py
 
       - name: حفظ ورفع matches.json و standings.json و news.json الجديدة

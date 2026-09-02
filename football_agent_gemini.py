@@ -21,6 +21,7 @@ from google import genai
 API_FOOTBALL_KEY = os.environ.get("API_FOOTBALL_KEY")
 API_FOOTBALL_HOST = "v3.football.api-sports.io"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY")
 
 # دوري روشن السعودي - يُستخدم لجدول الترتيب تحديداً
 # غيّره لأي دوري ثاني لو تحب (39 = الإنجليزي، 140 = الإسباني ... إلخ)
@@ -141,6 +142,32 @@ def generate_article(match_summary: dict) -> str:
         return fallback_article_text(match_summary)
 
 
+def fetch_cover_image(query: str):
+    """
+    يجيب صورة ستوك زخرفية من Pexels (مجانية الترخيص) لتحسين شكل بطاقة
+    الخبر. هذي صورة توضيحية عامة (ملعب/أجواء رياضية) مو صورة حقيقية من
+    المباراة نفسها - الواجهة تعرض وسم "صورة توضيحية" فوقها عشان توضيح
+    كذا للقارئ. ترجع None لو ما فيه مفتاح API أو ما لقى نتيجة.
+    """
+    if not PEXELS_API_KEY:
+        return None
+
+    url = "https://api.pexels.com/v1/search"
+    headers = {"Authorization": PEXELS_API_KEY}
+    params = {"query": query, "per_page": 1, "orientation": "landscape"}
+
+    try:
+        response = requests.get(url, headers=headers, params=params, timeout=15)
+        response.raise_for_status()
+        photos = response.json().get("photos", [])
+        if not photos:
+            return None
+        return photos[0]["src"]["large2x"]
+    except Exception as e:
+        print(f"تعذّر جلب صورة من Pexels ({e}).")
+        return None
+
+
 def build_match_payload(match_summary: dict, article_text: str) -> dict:
     """
     يجهز بيانات المباراة بنفس التنسيق اللي يقرأه index.html مباشرة
@@ -167,6 +194,7 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
         "league": match_summary["league"],
         "date": match_summary["date"],
         "content": article_text,
+        "cover_image": fetch_cover_image(f"{match_summary['league']} football stadium"),
     }
 
 

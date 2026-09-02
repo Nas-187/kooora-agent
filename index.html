@@ -97,7 +97,9 @@
     background:var(--pitch); color:var(--cream);
     display:flex; align-items:center; justify-content:center;
     font-family:'Cairo'; font-weight:800; font-size:13px; flex-shrink:0;
+    overflow:hidden;
   }
+  .crest img{ width:100%; height:100%; object-fit:contain; padding:3px; }
   .score-block{ text-align:center; min-width:110px; }
   .score-block .num{ font-size:30px; font-weight:900; letter-spacing:2px; }
   .score-block .status{
@@ -259,6 +261,13 @@ function initials(name){
   return name.trim().split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();
 }
 
+function crest(name, logoUrl){
+  if(logoUrl){
+    return `<img src="${logoUrl}" alt="${name}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'), {textContent:'${initials(name)}'}))">`;
+  }
+  return initials(name);
+}
+
 function renderMatches(matches){
   const list = document.getElementById('matches-list');
   const count = document.getElementById('match-count');
@@ -275,7 +284,7 @@ function renderMatches(matches){
     return `
     <div class="match-card ${isLive ? 'live' : ''}">
       <div class="team home">
-        <div class="crest">${initials(m.home_team)}</div>
+        <div class="crest">${crest(m.home_team, m.home_logo)}</div>
         <span>${m.home_team}</span>
       </div>
       <div class="score-block">
@@ -283,7 +292,7 @@ function renderMatches(matches){
         <div class="status">${statusLabel}</div>
       </div>
       <div class="team away">
-        <div class="crest">${initials(m.away_team)}</div>
+        <div class="crest">${crest(m.away_team, m.away_logo)}</div>
         <span>${m.away_team}</span>
       </div>
       <div class="article-preview">${m.content}</div>

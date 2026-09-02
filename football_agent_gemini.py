@@ -87,6 +87,8 @@ def format_fixture_summary(fixture: dict) -> dict:
     return {
         "home_team": teams["home"]["name"],
         "away_team": teams["away"]["name"],
+        "home_logo": teams["home"]["logo"],
+        "away_logo": teams["away"]["logo"],
         "home_score": goals["home"],
         "away_score": goals["away"],
         "status": status,
@@ -115,7 +117,8 @@ def generate_article(match_summary: dict) -> str:
 def build_match_payload(match_summary: dict, article_text: str) -> dict:
     """
     يجهز بيانات المباراة بنفس التنسيق اللي يقرأه index.html مباشرة
-    (home_team, away_team, home_score, away_score, status, league, content)
+    (home_team, away_team, home_logo, away_logo, home_score, away_score,
+    status, league, content)
     """
     title = f"{match_summary['home_team']} {match_summary['home_score']} - " \
             f"{match_summary['away_score']} {match_summary['away_team']}"
@@ -124,6 +127,8 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
         "title": title,
         "home_team": match_summary["home_team"],
         "away_team": match_summary["away_team"],
+        "home_logo": match_summary["home_logo"],
+        "away_logo": match_summary["away_logo"],
         "home_score": match_summary["home_score"],
         "away_score": match_summary["away_score"],
         "status": match_summary["status"],

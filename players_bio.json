@@ -433,5 +433,50 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/659089"
     },
     "bio": "Ilya Zabarnyi يلعب في مركز Centre-Back مع Paris SG وهو لاعب Ukraine يبلغ من العمر 24 عاماً."
+  },
+  "34173109": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Essen, Germany",
+      "birth_date": "1996-10-13",
+      "age": 29,
+      "height": "1.90 m (6 ft 3 in)",
+      "weight": "168 lbs",
+      "position": "Defender",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/232320"
+    },
+    "bio": "Atakan Karazor يلعب في مركز مدافع مع Stuttgart وهو لاعب Germany يبلغ من العمر 29 عاماً."
+  },
+  "34163445": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Créteil, France",
+      "birth_date": "1999-06-03",
+      "age": 27,
+      "height": "1.96 m (6 ft 5 in)",
+      "weight": "196 lbs",
+      "position": "Centre-Back",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/344598"
+    },
+    "bio": "Dan-Axel Zagadou يلعب في مركز Centre-Back مع Stuttgart وهو لاعب France يبلغ من العمر 27 عاماً."
+  },
+  "34163452": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Montmeló, Spain",
+      "birth_date": "1987-04-22",
+      "age": 39,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "",
+      "position": "Defender",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "آرون مارتين (Aarón Martín) هو لاعب يحمل الجنسية الإسبانية، ولد في مونتميلو بإسبانيا بتاريخ 22 أبريل 1987 ويبلغ من العمر 39 عاماً. يلعب في مركز المدافع مع فريق جنوى، ويبلغ طوله 1.80 متراً (5 أقدام و11 بوصة)."
   }
 }

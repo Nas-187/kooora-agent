@@ -223,5 +223,50 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/353366"
     },
     "bio": "Benjamin Pavard يلعب في مركز Centre-Back مع Marseille وهو لاعب France يبلغ من العمر 30 عاماً."
+  },
+  "34161947": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": "Madrid, Spain",
+      "birth_date": "1998-11-04",
+      "age": 27,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "161 lbs",
+      "position": "Right-Back",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/398073"
+    },
+    "bio": "Achraf Hakimi يلعب في مركز Right-Back مع Paris SG وهو لاعب Morocco يبلغ من العمر 27 عاماً."
+  },
+  "34421277": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Albacete, Spain",
+      "birth_date": "1988-04-09",
+      "age": 38,
+      "height": "",
+      "weight": "",
+      "position": "Coach",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alberto Piernas يلعب في مركز Coach مع Paris SG وهو لاعب Spain يبلغ من العمر 38 عاماً."
+  },
+  "34163617": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Los Palacios y Villafranca, Spain",
+      "birth_date": "1996-04-03",
+      "age": 30,
+      "height": "1.89 m (6 ft 2 in)",
+      "weight": "78 Kg",
+      "position": "Central Midfield",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/350219"
+    },
+    "bio": "Fabián Ruiz يلعب في مركز Central Midfield مع Paris SG وهو لاعب Spain يبلغ من العمر 30 عاماً."
   }
 }

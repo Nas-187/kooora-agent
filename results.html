@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نتائج المباريات | كورة ايجنت</title>
+<meta name="description" content="نتائج مباريات دوري روشن السعودي والدوريات الأوروبية الخمس الكبرى، مبنية على بيانات حقيقية.">
+<meta property="og:title" content="نتائج المباريات | كورة ايجنت">
+<meta property="og:description" content="نتائج مباريات دوري روشن السعودي والدوريات الأوروبية الخمس الكبرى.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://charming-kringle-f53407.netlify.app/results.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch:#0F3D2E;
+    --pitch-dark:#0A2B20;
+    --cream:#F6F3EC;
+    --gold:#C9973F;
+    --ink:#1A1F1C;
+    --ink-soft:#565f59;
+    --line-red:#C0392B;
+    --card:#FFFFFF;
+    --line:#E4DFD2;
+  }
+  :root[data-theme="dark"]{
+    --cream:#121712;
+    --card:#1c241d;
+    --ink:#EFEFEA;
+    --ink-soft:#9AA39A;
+    --line:#2b352c;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; overflow-x:hidden; }
+  h1,h2,h3,.num,.brand{ font-family:'Cairo', sans-serif; }
+
+  header{
+    background:var(--pitch);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,0.04) 0, transparent 45%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 68px);
+    color:var(--cream); padding:22px 6vw 30px;
+  }
+  .topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; gap:14px; }
+  .brand{ font-size:26px; font-weight:900; color:var(--cream); display:flex; align-items:center; gap:10px; }
+  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
+  nav{ display:flex; align-items:center; gap:28px; font-size:15px; font-weight:700; flex-wrap:wrap; }
+  nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
+  nav a.active{ color:var(--gold); }
+  .theme-toggle{
+    width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.06); color:var(--cream); cursor:pointer; font-size:15px;
+    display:flex; align-items:center; justify-content:center; transition:.15s;
+  }
+  .theme-toggle:hover{ border-color:var(--gold); }
+  .hero-line{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  .hero-line h1{ font-size:clamp(28px, 4vw, 40px); font-weight:800; }
+
+  .headline-strip-wrap{ background:var(--pitch-dark); border-top:1px solid rgba(255,255,255,0.08); }
+  .headline-strip{ max-width:1180px; margin:0 auto; padding:14px 6vw; display:flex; gap:10px; overflow-x:auto; scrollbar-width:none; cursor:grab; }
+  .headline-strip::-webkit-scrollbar{ display:none; }
+  .headline-strip.dragging{ cursor:grabbing; user-select:none; }
+  .headline-chip{
+    flex-shrink:0; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+    border-radius:10px; padding:10px 16px; max-width:260px;
+  }
+  .headline-chip .tag{ font-size:10.5px; font-weight:800; color:var(--gold); display:block; margin-bottom:3px; }
+  .headline-chip .title{ font-size:13px; font-weight:700; color:var(--cream); line-height:1.5; }
+
+  main{ max-width:1180px; margin:0 auto; padding:36px 6vw 60px; }
+
+  .category-tabs{ display:flex; gap:8px; margin-bottom:24px; max-width:420px; }
+  .category-tab{
+    flex:1; text-align:center; font-size:14.5px; font-weight:800; padding:13px 10px;
+    border-radius:12px; border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
+    cursor:pointer; transition:.15s;
+  }
+  .category-tab:hover{ border-color:var(--gold); }
+  .category-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
+
+  .section-head{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:18px; padding-bottom:10px; border-bottom:2px solid var(--pitch);
+  }
+  .section-head h2{ font-size:20px; font-weight:800; }
+  .league-badge{
+    font-size:12px; font-weight:700; color:var(--pitch); background:rgba(15,61,46,0.08);
+    padding:5px 12px; border-radius:100px;
+  }
+
+  .empty-state{
+    padding:34px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
+    background:var(--card); border:1px dashed var(--line); border-radius:10px;
+  }
+
+  /* ===== نتائج المباريات - بطاقات أفقية مدمجة بشبكة ===== */
+  #articles-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:14px; }
+  .result-row{
+    display:flex; align-items:stretch; gap:12px; background:var(--card); border:1px solid var(--line);
+    border-radius:12px; padding:12px; position:relative; overflow:hidden;
+    box-shadow:0 1px 2px rgba(26,31,28,0.04);
+  }
+  .result-row::before{ content:''; position:absolute; top:0; right:0; bottom:0; width:4px; background:var(--pitch); }
+  .result-row.live::before{ background:var(--line-red); }
+  .rr-score-block{ flex:0 0 110px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; }
+  .rr-teams{ display:flex; align-items:center; gap:5px; }
+  .rr-crest{ width:24px; height:24px; border-radius:50%; overflow:hidden; background:var(--pitch); flex-shrink:0; }
+  .rr-crest img{ width:100%; height:100%; object-fit:contain; padding:2px; }
+  .rr-score{ font-family:'Cairo'; font-weight:900; font-size:14px; flex-shrink:0; min-width:34px; text-align:center; }
+  .rr-names{ font-size:9px; font-weight:700; color:var(--ink-soft); text-align:center; margin-top:5px; line-height:1.3; }
+  .rr-content{ flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:4px; }
+  .rr-league{ display:flex; align-items:center; gap:6px; font-size:10px; font-weight:800; color:var(--gold); }
+  .rr-league .live-pill{
+    font-size:9px; font-weight:800; color:#fff; background:var(--line-red);
+    padding:2px 7px; border-radius:100px; display:inline-flex; align-items:center; gap:4px;
+  }
+  .live-dot{ display:inline-block; width:5px; height:5px; border-radius:50%; background:currentColor; animation:pulse 1.4s infinite; }
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.3;} }
+  .rr-snippet{
+    font-size:12px; color:var(--ink-soft); line-height:1.6;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  }
+
+  footer{
+    background:var(--pitch-dark); color:rgba(246,243,236,0.55);
+    text-align:center; padding:26px; font-size:13px; margin-top:40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span> كورة ايجنت</div>
+    <nav>
+      <a href="index.html">مباريات اليوم</a>
+      <a href="results.html" class="active">النتائج</a>
+      <a href="news.html">الأخبار</a>
+      <a href="standings.html">الترتيب</a>
+      <a href="clubs.html">الأندية</a>
+      <a href="leagues.html">الدوريات</a>
+      <a href="future.html">قريباً</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع الليلي">🌙</button>
+    </nav>
+  </div>
+  <div class="hero-line"><h1>نتائج المباريات</h1></div>
+</header>
+
+<div class="headline-strip-wrap"><div class="headline-strip" id="headline-strip"></div></div>
+
+<main>
+  <div class="category-tabs">
+    <button type="button" class="category-tab active" data-cat="saudi">دوري روشن السعودي</button>
+    <button type="button" class="category-tab" data-cat="europe">الدوريات الأوروبية</button>
+  </div>
+
+  <div class="section-head">
+    <h2 id="section-title">نتائج دوري روشن السعودي</h2>
+    <span class="league-badge" id="article-count">0 نتيجة</span>
+  </div>
+  <div id="articles-list"></div>
+</main>
+
+<footer>&copy; كورة ايجنت 2026</footer>
+
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  try{ localStorage.setItem('theme', t); }catch(e){}
+  document.getElementById('theme-toggle').textContent = t === 'dark' ? '☀️' : '🌙';
+}
+document.getElementById('theme-toggle').textContent =
+  document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme') || 'light';
+  applyTheme(cur === 'dark' ? 'light' : 'dark');
+});
+
+function enableDragScroll(el){
+  let isDown = false, startX = 0, startScroll = 0;
+  el.addEventListener('mousedown', e => { isDown = true; startX = e.pageX; startScroll = el.scrollLeft; el.classList.add('dragging'); });
+  ['mouseleave', 'mouseup'].forEach(evt => el.addEventListener(evt, () => { isDown = false; el.classList.remove('dragging'); }));
+  el.addEventListener('mousemove', e => {
+    if(!isDown) return;
+    e.preventDefault();
+    el.scrollLeft = startScroll - (e.pageX - startX);
+  });
+}
+enableDragScroll(document.getElementById('headline-strip'));
+
+function initials(name){
+  return name.trim().split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();
+}
+function crest(name, logoUrl){
+  if(logoUrl){
+    return `<img src="${logoUrl}" alt="${name}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'), {textContent:'${initials(name)}'}))">`;
+  }
+  return initials(name);
+}
+
+const SAUDI_LEAGUE_ID = 4668;
+const EURO_LEAGUE_IDS = [4328, 4335, 4332, 4331, 4334];
+
+let allMatches = [];
+let allNews = { saudi: [], europe: [] };
+let activeCategory = 'saudi';
+
+function renderHeadlines(){
+  const el = document.getElementById('headline-strip');
+  const items = allNews[activeCategory] || [];
+  if(items.length === 0){ el.innerHTML = ''; return; }
+  el.innerHTML = items.map(n => `
+    <div class="headline-chip">
+      <span class="tag">${n.tag}</span>
+      <span class="title">${n.title}</span>
+    </div>`).join('');
+}
+
+const STATUS_AR = { 'In Play': 'مباشر الآن', 'Halftime': 'استراحة', 'Match Finished': 'انتهت المباراة' };
+
+function renderArticles(){
+  const list = document.getElementById('articles-list');
+  const count = document.getElementById('article-count');
+  const title = document.getElementById('section-title');
+
+  const ids = activeCategory === 'saudi' ? [SAUDI_LEAGUE_ID] : EURO_LEAGUE_IDS;
+  const matches = allMatches
+    .filter(m => ids.includes(m.league_id) && m.content && m.home_score !== null && m.away_score !== null)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  title.textContent = activeCategory === 'saudi' ? 'نتائج دوري روشن السعودي' : 'نتائج الدوريات الأوروبية';
+  count.textContent = matches.length + ' نتيجة';
+
+  if(matches.length === 0){
+    list.innerHTML = '<div class="empty-state" style="grid-column:1/-1">ما فيه نتائج مجهزة بهالقسم حالياً — راجع لاحقاً بعد تحديث البيانات</div>';
+    return;
+  }
+
+  list.innerHTML = matches.map(m => {
+    const isLive = m.status === 'In Play' || m.status === 'Halftime';
+    const statusLabel = STATUS_AR[m.status] || m.status;
+    return `
+    <article class="result-row ${isLive ? 'live' : ''}">
+      <div class="rr-score-block">
+        <div class="rr-teams">
+          <span class="rr-crest">${crest(m.home_team, m.home_logo)}</span>
+          <span class="rr-score">${m.home_score} - ${m.away_score}</span>
+          <span class="rr-crest">${crest(m.away_team, m.away_logo)}</span>
+        </div>
+        <div class="rr-names">${m.home_team} × ${m.away_team}</div>
+      </div>
+      <div class="rr-content">
+        <div class="rr-league">
+          ${m.league}
+          ${isLive ? `<span class="live-pill"><span class="live-dot"></span> ${statusLabel}</span>` : `<span style="color:var(--ink-soft)">· ${statusLabel}</span>`}
+        </div>
+        <div class="rr-snippet">${m.content}</div>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+document.querySelectorAll('.category-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activeCategory = btn.dataset.cat;
+    document.querySelectorAll('.category-tab').forEach(b => b.classList.toggle('active', b === btn));
+    renderHeadlines();
+    renderArticles();
+  });
+});
+
+fetch('matches.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => { allMatches = data; renderArticles(); })
+  .catch(() => { allMatches = []; renderArticles(); });
+
+fetch('news.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => { allNews = data; renderHeadlines(); })
+  .catch(() => {});
+</script>
+
+</body>
+</html>

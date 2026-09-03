@@ -13,5 +13,35 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/394327"
     },
     "bio": "Boubacar Kamara يلعب في مركز Defensive Midfield مع Aston Villa وهو لاعب France يبلغ من العمر 26 عاماً."
+  },
+  "34346311": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Apucarana, Brazil",
+      "birth_date": "2006-05-05",
+      "age": 20,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "77 kg",
+      "position": "Attacker",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alysson يلعب في مركز مهاجم مع Aston Villa وهو لاعب Brazil يبلغ من العمر 20 عاماً."
+  },
+  "34149475": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Mar del Plata, Argentina",
+      "birth_date": "1996-12-25",
+      "age": 29,
+      "height": "1.72 m (5 ft 8 in)",
+      "weight": "159 lbs",
+      "position": "Right Winger",
+      "team": "Aston Villa",
+      "joined": "2014-12-04",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/321247"
+    },
+    "bio": "Emi Buendía يلعب في مركز Right Winger مع Aston Villa وهو لاعب Argentina يبلغ من العمر 29 عاماً."
   }
 }

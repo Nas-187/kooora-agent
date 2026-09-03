@@ -355,6 +355,36 @@
     text-align:center; padding:26px; font-size:13px; margin-top:40px;
   }
   footer strong{ color:var(--gold); }
+
+  /* ===== أهم المسابقات ===== */
+  .comp-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(120px, 1fr)); gap:10px; }
+  .comp-card{
+    display:flex; flex-direction:column; align-items:center; gap:8px; padding:14px 8px;
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    text-decoration:none; color:inherit; transition:.15s;
+  }
+  .comp-card:hover{ border-color:var(--gold); transform:translateY(-2px); box-shadow:0 8px 16px rgba(26,31,28,0.08); }
+  .comp-card img{ width:36px; height:36px; object-fit:contain; }
+  .comp-card span{ font-size:11.5px; font-weight:700; text-align:center; line-height:1.4; }
+
+  /* ===== آخر الأخبار (تغذية كاملة) ===== */
+  .feed-card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:20px; margin-bottom:14px; position:relative; overflow:hidden;
+    box-shadow:0 1px 2px rgba(26,31,28,0.04);
+  }
+  .feed-card::before{ content:''; position:absolute; top:0; right:0; bottom:0; width:4px; background:var(--pitch); }
+  .feed-card.live::before{ background:var(--line-red); }
+  .feed-meta{ display:flex; align-items:center; gap:8px; margin-bottom:12px; }
+  .feed-meta .league-tag{
+    font-size:10.5px; font-weight:800; color:var(--gold); text-transform:uppercase; letter-spacing:.4px;
+  }
+  .feed-teams{ display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:14px; }
+  .feed-team{ display:flex; flex-direction:column; align-items:center; gap:6px; flex:1; }
+  .feed-team .crest{ width:38px; height:38px; }
+  .feed-team span{ font-weight:700; font-size:12.5px; text-align:center; }
+  .feed-score{ font-family:'Cairo'; font-size:22px; font-weight:900; flex-shrink:0; }
+  .feed-body{ font-size:13.5px; color:var(--ink-soft); line-height:1.85; border-top:1px dashed var(--line); padding-top:12px; }
 </style>
 </head>
 <body>
@@ -394,6 +424,21 @@
       </div>
       <div id="matches-list" class="ticker-row"></div>
     </section>
+
+    <section>
+      <div class="section-head">
+        <h2>أهم المسابقات</h2>
+      </div>
+      <div class="comp-grid" id="comp-grid"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>آخر الأخبار</h2>
+        <span class="league-badge" id="feed-count">0 خبر</span>
+      </div>
+      <div id="news-feed"></div>
+    </section>
   </div>
 
   <aside>
@@ -417,7 +462,7 @@
 
     <section>
       <div class="section-head">
-        <h2>آخر الأخبار</h2>
+        <h2>عناوين سريعة</h2>
       </div>
       <div id="news-list"></div>
     </section>
@@ -820,12 +865,70 @@ renderDate();
 
 // نجيب المباريات، الترتيب، والأخبار الحقيقية — ولو أي ملف ما لقيناه (أول تشغيل)
 // نعرض بيانات تجريبية بدله بدل ما تطلع الصفحة فاضية
+function renderCompGrid(matches){
+  const grid = document.getElementById('comp-grid');
+  const leagueIds = Object.keys(MATCH_TARGET_LEAGUES).map(Number);
+
+  grid.innerHTML = leagueIds.map(id => {
+    const sample = matches.find(m => m.league_id === id);
+    const logo = sample ? sample.league_logo : '';
+    const name = MATCH_TARGET_LEAGUES[id];
+    return `
+    <a class="comp-card" href="standings.html?league=${id}">
+      ${logo ? `<img src="${logo}" alt="${name}" loading="lazy">` : ''}
+      <span>${name}</span>
+    </a>`;
+  }).join('');
+}
+
+function renderNewsFeed(matches){
+  const list = document.getElementById('news-feed');
+  const count = document.getElementById('feed-count');
+
+  const withContent = matches
+    .filter(m => m.content && !isScheduled(m.status))
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 10);
+
+  count.textContent = withContent.length + ' خبر';
+
+  if(withContent.length === 0){
+    list.innerHTML = '<div class="empty-state">ما فيه أخبار مجهزة حالياً</div>';
+    return;
+  }
+
+  list.innerHTML = withContent.map(m => {
+    const isLive = isLiveStatus(m.status);
+    return `
+    <article class="feed-card ${isLive ? 'live' : ''}">
+      <div class="feed-meta">
+        <span class="league-tag">${m.league}</span>
+        ${isLive ? '<span class="hero-live" style="font-size:10px;padding:3px 10px"><span class="live-dot"></span> مباشر</span>' : ''}
+      </div>
+      <div class="feed-teams">
+        <div class="feed-team">
+          <div class="crest">${crest(m.home_team, m.home_logo)}</div>
+          <span>${m.home_team}</span>
+        </div>
+        <div class="feed-score">${m.home_score} - ${m.away_score}</div>
+        <div class="feed-team">
+          <div class="crest">${crest(m.away_team, m.away_logo)}</div>
+          <span>${m.away_team}</span>
+        </div>
+      </div>
+      <div class="feed-body">${m.content}</div>
+    </article>`;
+  }).join('');
+}
+
 function loadMatches(data){
   allTodayMatches = data;
   activeDay = dayKey(0);
   renderDayTabs();
   refreshMatchesView();
   renderTicker(allTodayMatches.filter(m => m.day === dayKey(0)));
+  renderCompGrid(allTodayMatches);
+  renderNewsFeed(allTodayMatches);
 }
 
 fetch('matches.json?t=' + Date.now())

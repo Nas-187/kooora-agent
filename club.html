@@ -9,9 +9,9 @@
 <meta property="og:title" content="النادي | كورة ايجنت">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27%230F3D2E%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27none%27%20stroke%3D%27%23C9973F%27%20stroke-width%3D%275%27/%3E%3Ctext%20x%3D%2750%27%20y%3D%2769%27%20font-family%3D%27Georgia%2C%20serif%27%20font-weight%3D%27700%27%20font-size%3D%2756%27%20fill%3D%27%23C9973F%27%20text-anchor%3D%27middle%27%3E%D9%83%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --pitch:#0F3D2E;
@@ -33,7 +33,7 @@
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; overflow-x:hidden; }
-  h1,h2,h3,.num,.brand{ font-family:'Cairo', sans-serif; }
+  h1,h2,h3,.num,.brand{ font-family:'Almarai', sans-serif; }
 
   header{
     background:var(--pitch);
@@ -68,7 +68,7 @@
     flex:1; min-width:100px; background:var(--card); border:1px solid var(--line); border-radius:12px;
     padding:16px; text-align:center;
   }
-  .stat-card .value{ font-family:'Cairo'; font-size:26px; font-weight:900; color:var(--pitch); }
+  .stat-card .value{ font-family:'Almarai'; font-size:26px; font-weight:900; color:var(--pitch); }
   .stat-card .label{ font-size:11.5px; font-weight:700; color:var(--ink-soft); margin-top:4px; }
 
   .section-head{
@@ -86,7 +86,7 @@
   .result-team.away{ flex-direction:row-reverse; text-align:left; }
   .result-crest{ width:30px; height:30px; border-radius:50%; overflow:hidden; background:var(--pitch); flex-shrink:0; }
   .result-crest img{ width:100%; height:100%; object-fit:contain; padding:3px; }
-  .result-score{ font-family:'Cairo'; font-size:22px; font-weight:900; text-align:center; min-width:70px; }
+  .result-score{ font-family:'Almarai'; font-size:22px; font-weight:900; text-align:center; min-width:70px; }
   .result-meta{ grid-column:1/-1; font-size:11px; color:var(--ink-soft); font-weight:700; text-align:center; margin-top:6px; }
   .result-card.win{ border-right:4px solid var(--pitch); }
   .result-card.loss{ border-right:4px solid var(--line-red); }
@@ -100,7 +100,7 @@
   }
   .player-card:hover{ transform:translateY(-4px) scale(1.02); box-shadow:0 12px 22px rgba(26,31,28,0.18); }
   .player-card .number{
-    position:absolute; top:8px; right:10px; font-family:'Cairo'; font-weight:900;
+    position:absolute; top:8px; right:10px; font-family:'Almarai'; font-weight:900;
     font-size:20px; color:var(--gold); opacity:.9;
   }
   .player-card .photo-wrap{ height:110px; display:flex; align-items:flex-end; justify-content:center; overflow:hidden; }
@@ -177,7 +177,7 @@
       <a href="clubs.html" class="active">الأندية</a>
       <a href="leagues.html">الدوريات</a>
       <a href="future.html">قريباً</a>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع الليلي">🌙</button>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع الليلي"></button>
     </nav>
   </div>
   <div class="club-header" id="club-header">
@@ -210,13 +210,15 @@
 </div>
 
 <script>
+const SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+const MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>';
 function applyTheme(t){
   document.documentElement.setAttribute('data-theme', t);
   try{ localStorage.setItem('theme', t); }catch(e){}
-  document.getElementById('theme-toggle').textContent = t === 'dark' ? '☀️' : '🌙';
+  document.getElementById('theme-toggle').innerHTML = t === 'dark' ? SUN_ICON : MOON_ICON;
 }
-document.getElementById('theme-toggle').textContent =
-  document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+document.getElementById('theme-toggle').innerHTML =
+  document.documentElement.getAttribute('data-theme') === 'dark' ? SUN_ICON : MOON_ICON;
 document.getElementById('theme-toggle').addEventListener('click', () => {
   const cur = document.documentElement.getAttribute('data-theme') || 'light';
   applyTheme(cur === 'dark' ? 'light' : 'dark');

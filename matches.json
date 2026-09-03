@@ -34,7 +34,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-03T15:55:00Z",
     "day": "2026-09-03",
-    "content": "حسم التعادل الإيجابي بهدفين لمثلهما مواجهة الفيحاء وضيفه الخلود، التي أقيمت لحساب منافسات دوري روشن السعودي للمحترفين. وشهد اللقاء تنافساً قوياً بين الفريقين طوال التسعين دقيقة في سعي كل منهما لخطف نقاط المباراة الثلاث، قبل أن تُطلق الصافرة المعلنة عن نهاية اللقاء. وبهذه النتيجة، تقاسم الفريقان نقاط المواجهة بواقع نقطة لكل منهما تضاف إلى رصيدهما في جدول ترتيب الدوري.",
+    "content": "تعادل Al-Fayha وAl-Kholood بنتيجة 2-2 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -87,7 +87,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
     "home_score": 0,
     "away_score": 0,
-    "status": "Halftime",
+    "status": "Match Finished",
     "league": "الدوري الإسباني",
     "date": "2026-09-03T19:00:00Z",
     "day": "2026-09-03",
@@ -96,7 +96,7 @@
   },
   {
     "event_id": "2489485",
-    "title": "Toulouse 0 - 0 Lille",
+    "title": "Toulouse 0 - 1 Lille",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "3",
@@ -105,12 +105,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/17eqox1688449282.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
     "home_score": 0,
-    "away_score": 0,
-    "status": "In Play",
+    "away_score": 1,
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-09-03T18:45:00Z",
     "day": "2026-09-03",
-    "content": "تعادل Toulouse وLille بنتيجة 0-0 ضمن الدوري الفرنسي.",
+    "content": "فوز Lille على Toulouse بنتيجة 0-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

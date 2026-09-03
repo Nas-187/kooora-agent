@@ -43,5 +43,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/321247"
     },
     "bio": "Emi Buendía يلعب في مركز Right Winger مع Aston Villa وهو لاعب Argentina يبلغ من العمر 29 عاماً."
+  },
+  "34198578": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Madrid, Spain",
+      "birth_date": "2004-07-01",
+      "age": 22,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "73 kg (161 lb)",
+      "position": "Left Wing",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/811779"
+    },
+    "bio": "Alejandro Garnacho يلعب في مركز Left Wing مع Aston Villa وهو لاعب Argentina يبلغ من العمر 22 عاماً."
+  },
+  "34174589": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Dakar, Senegal",
+      "birth_date": "2001-08-16",
+      "age": 25,
+      "height": "1.92 m (6 ft 3 in)",
+      "weight": "168 lbs",
+      "position": "Defensive Midfield",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/485706"
+    },
+    "bio": "Amadou Onana يلعب في مركز Defensive Midfield مع Aston Villa وهو لاعب Belgium يبلغ من العمر 25 عاماً."
+  },
+  "34433701": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Enfield, England",
+      "birth_date": "2009-01-12",
+      "age": 17,
+      "height": "1.93 m (6 ft 4 in)",
+      "weight": "75",
+      "position": "Attacker",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Brian Madjo يلعب في مركز مهاجم مع Aston Villa وهو لاعب England يبلغ من العمر 17 عاماً."
+  },
+  "34296398": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Derby, England",
+      "birth_date": "2007-03-04",
+      "age": 19,
+      "height": "",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "George Hemmings يلعب في مركز وسط مع Aston Villa وهو لاعب England يبلغ من العمر 19 عاماً."
+  },
+  "34177858": {
+    "facts": {
+      "nationality": "The Netherlands",
+      "birth_place": "Vlaardingen, Netherlands",
+      "birth_date": "2002-03-10",
+      "age": 24,
+      "height": "168cm / 5'6\"",
+      "weight": "126 lbs",
+      "position": "Left-Back",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/485585"
+    },
+    "bio": "Ian Maatsen يلعب في مركز Left-Back مع Aston Villa وهو لاعب The Netherlands يبلغ من العمر 24 عاماً."
+  },
+  "34433973": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Birmingham, England",
+      "birth_date": "2006-10-02",
+      "age": 19,
+      "height": "6 ft 1 in (1.85 m)",
+      "weight": "71kg",
+      "position": "Midfielder",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/954105"
+    },
+    "bio": "Jamaldeen Jimoh-Aloba يلعب في مركز وسط مع Aston Villa وهو لاعب England يبلغ من العمر 19 عاماً."
+  },
+  "34284206": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "",
+      "birth_date": "2004-12-02",
+      "age": 21,
+      "height": "1.88 m (6 ft 2 in)",
+      "weight": "",
+      "position": "Goalkeeper",
+      "team": "Aston Villa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "James Wright يلعب في مركز حارس مرمى مع Aston Villa وهو لاعب England يبلغ من العمر 21 عاماً."
+  },
+  "34421322": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Poissy",
+      "birth_date": "1987-03-31",
+      "age": 39,
+      "height": "",
+      "weight": "",
+      "position": "Goalkeeping Coach",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alexandre Salvat يلعب في مركز Goalkeeping Coach مع Marseille وهو لاعب France يبلغ من العمر 39 عاماً."
+  },
+  "34163672": {
+    "facts": {
+      "nationality": "Algeria",
+      "birth_place": "Bourgoin-Jallieu, France",
+      "birth_date": "2000-02-16",
+      "age": 26,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "159 lbs",
+      "position": "Centre-Forward",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/418659"
+    },
+    "bio": "Amine Gouiri يلعب في مركز Centre-Forward مع Marseille وهو لاعب Algeria يبلغ من العمر 26 عاماً."
+  },
+  "34421321": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Milano, Italy",
+      "birth_date": "1971-05-18",
+      "age": 55,
+      "height": "",
+      "weight": "",
+      "position": "Assistant Coach",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Andrea Maldera يلعب في مركز Assistant Coach مع Marseille وهو لاعب Italy يبلغ من العمر 55 عاماً."
+  },
+  "34218004": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Lier, Belgium",
+      "birth_date": "2005-02-07",
+      "age": 21,
+      "height": "1.80 m (5 ft 9 in)",
+      "weight": "168 lbs",
+      "position": "Central Midfield",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/926694"
+    },
+    "bio": "آرتور فيرميرين (Arthur Vermeeren) هو لاعب كرة قدم بلجيكي الجنسية، وُلِد في مدينة لير ببلجيكا بتاريخ 7 فبراير 2005 ويبلغ من العمر 21 عاماً. يلعب في مركز خط الوسط المركزي مع فريق مارسيليا، ويبلغ طوله 1.80 متراً (5 أقدام و9 بوصات) ووزنه 168 رطلاً. وتتوفر معلوماته على موقع ترانسفير ماركت عبر الرابط (https://www.transfermarkt.com/-/profil/spieler/926694)."
+  },
+  "34163434": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Maubeuge, France",
+      "birth_date": "1996-03-28",
+      "age": 30,
+      "height": "1.86 m (6 ft 1 in)",
+      "weight": "81 kg (179 lb)",
+      "position": "Centre-Back",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/353366"
+    },
+    "bio": "Benjamin Pavard يلعب في مركز Centre-Back مع Marseille وهو لاعب France يبلغ من العمر 30 عاماً."
   }
 }

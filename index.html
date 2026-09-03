@@ -277,6 +277,21 @@
   .sidebar-card{
     background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px;
   }
+  .see-all-link{ font-size:11.5px; font-weight:800; color:var(--gold); text-decoration:none; }
+  .mini-news-card{
+    display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);
+    text-decoration:none; color:inherit;
+  }
+  .mini-news-card:last-child{ border-bottom:none; padding-bottom:0; }
+  .mini-news-card:first-child{ padding-top:0; }
+  .mini-news-card .mn-image{ width:66px; height:66px; border-radius:10px; overflow:hidden; flex-shrink:0; background:var(--pitch); }
+  .mini-news-card .mn-image img{ width:100%; height:100%; object-fit:cover; }
+  .mini-news-card .mn-body{ min-width:0; display:flex; flex-direction:column; justify-content:center; gap:5px; }
+  .mini-news-card .mn-title{
+    font-size:12.5px; font-weight:800; line-height:1.5;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .mini-news-card .mn-meta{ font-size:10.5px; color:var(--gold); font-weight:700; }
   #news-list{
     display:flex; gap:12px; overflow-x:auto; padding:6px 2px; scrollbar-width:thin;
   }
@@ -489,6 +504,14 @@
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>آخر الانتقالات</h2>
+        <a class="see-all-link" href="news.html">الكل ›</a>
+      </div>
+      <div class="sidebar-card" id="mini-news-list"></div>
     </section>
 
     <section>
@@ -1072,6 +1095,30 @@ setInterval(() => {
     .then(applyLiveUpdates)
     .catch(() => {});
 }, 45000);
+
+function renderMiniNews(items){
+  const list = document.getElementById('mini-news-list');
+  const top3 = (items || []).slice(0, 3);
+
+  if(top3.length === 0){
+    list.innerHTML = '<div class="empty-state">ما فيه أخبار حالياً</div>';
+    return;
+  }
+
+  list.innerHTML = top3.map(n => `
+    <a class="mini-news-card" href="${n.link}" target="_blank" rel="noopener">
+      ${n.image ? `<div class="mn-image"><img src="${n.image}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
+      <div class="mn-body">
+        <div class="mn-title">${n.title}</div>
+        <div class="mn-meta">${n.source}</div>
+      </div>
+    </a>`).join('');
+}
+
+fetch('real_news.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => renderMiniNews(data))
+  .catch(() => renderMiniNews([]));
 </script>
 
 </body>

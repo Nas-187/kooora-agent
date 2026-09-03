@@ -448,12 +448,12 @@ function crest(name, logoUrl){
 }
 
 const MATCH_TARGET_LEAGUES = {
-  307: "دوري روشن السعودي",
-  39: "الدوري الإنجليزي",
-  140: "الدوري الإسباني",
-  135: "الدوري الإيطالي",
-  78: "الدوري الألماني",
-  61: "الدوري الفرنسي",
+  4668: "دوري روشن السعودي",
+  4328: "الدوري الإنجليزي",
+  4335: "الدوري الإسباني",
+  4332: "الدوري الإيطالي",
+  4331: "الدوري الألماني",
+  4334: "الدوري الفرنسي",
 };
 
 function isLiveStatus(status){ return status === 'In Play' || status === 'Halftime'; }
@@ -716,7 +716,7 @@ function renderStandingsData(data){
   const ids = Object.keys(standingsByLeague);
   if(ids.length === 0) return;
 
-  activeLeagueId = ids.includes('307') ? '307' : ids[0];
+  activeLeagueId = ids.includes('4668') ? '4668' : ids[0];
   renderLeagueTabs();
   renderStandings(standingsByLeague[activeLeagueId].standings);
 }

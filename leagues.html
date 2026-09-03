@@ -106,17 +106,18 @@
 
 <script>
 const TARGET_LEAGUES = {
-  307: "دوري روشن السعودي",
-  39: "الدوري الإنجليزي",
-  140: "الدوري الإسباني",
-  135: "الدوري الإيطالي",
-  78: "الدوري الألماني",
-  61: "الدوري الفرنسي",
+  4668: "دوري روشن السعودي",
+  4328: "الدوري الإنجليزي",
+  4335: "الدوري الإسباني",
+  4332: "الدوري الإيطالي",
+  4331: "الدوري الألماني",
+  4334: "الدوري الفرنسي",
 };
 
-document.getElementById('league-grid').innerHTML = Object.entries(TARGET_LEAGUES).map(([id, name]) => `
+const grid = document.getElementById('league-grid');
+grid.innerHTML = Object.entries(TARGET_LEAGUES).map(([id, name]) => `
   <div class="league-card">
-    <img class="l-logo" src="https://media.api-sports.io/football/leagues/${id}.png" alt="${name}" loading="lazy">
+    <img class="l-logo" id="logo-${id}" alt="${name}" loading="lazy">
     <div>
       <div class="l-name">${name}</div>
       <div class="l-actions">
@@ -125,6 +126,18 @@ document.getElementById('league-grid').innerHTML = Object.entries(TARGET_LEAGUES
       </div>
     </div>
   </div>`).join('');
+
+Object.keys(TARGET_LEAGUES).forEach(id => {
+  fetch(`https://www.thesportsdb.com/api/v1/json/3/lookupleague.php?id=${id}`)
+    .then(res => res.json())
+    .then(data => {
+      const league = (data.leagues || [])[0];
+      if(league && league.strBadge){
+        document.getElementById(`logo-${id}`).src = league.strBadge;
+      }
+    })
+    .catch(() => {});
+});
 
 function applyTheme(t){
   document.documentElement.setAttribute('data-theme', t);

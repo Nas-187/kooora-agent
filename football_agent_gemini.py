@@ -1,102 +1,133 @@
 """
 إيجنت كورة القدم - نتائج + ترتيب + أخبار، جاهزة للنشر على الموقع
 ====================================================
-النسخة المجانية بالكامل: API-Football + Google Gemini
+مصادر البيانات: TheSportsDB (بيانات المباريات - مجاني، يدعم الموسم
+الحالي كامل بدون قيد) + Google Gemini (المقالات) + Pexels (صور توضيحية)
+
+تحوّلنا من API-Football لـ TheSportsDB لأن API-Football (أ) يرفض أي
+طلب فيه season=2026 على الخطة المجانية، و(ب) الحساب صار معلّق فجأة.
+TheSportsDB يدعم الموسم الحالي وحتى الأرشيف التاريخي كامل بمفتاحه
+التجريبي المجاني العام "3" بدون أي قيد من هذا النوع.
 
 المتطلبات:
     pip install requests google-genai
 
 المفاتيح (كمتغيرات بيئة أو GitHub Secrets):
-    API_FOOTBALL_KEY -> مفتاح من https://www.api-football.com/
-    GEMINI_API_KEY    -> مفتاح من https://aistudio.google.com/
+    GEMINI_API_KEY       -> مفتاح من https://aistudio.google.com/
+    PEXELS_API_KEY       -> اختياري، من https://www.pexels.com/api/
+    THESPORTSDB_API_KEY  -> اختياري، الافتراضي "3" (مفتاح تجريبي عام مجاني)
 """
 
 import requests
 import json
 import os
-from datetime import datetime
+import time
+from datetime import datetime, timedelta
 from google import genai
 
 # ============ الإعدادات ============
-API_FOOTBALL_KEY = os.environ.get("API_FOOTBALL_KEY")
-API_FOOTBALL_HOST = "v3.football.api-sports.io"
+THESPORTSDB_API_KEY = os.environ.get("THESPORTSDB_API_KEY", "3")
+THESPORTSDB_BASE = f"https://www.thesportsdb.com/api/v1/json/{THESPORTSDB_API_KEY}"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY")
 
-# دوري روشن السعودي - يُستخدم لجدول الترتيب تحديداً
-# غيّره لأي دوري ثاني لو تحب (39 = الإنجليزي، 140 = الإسباني ... إلخ)
-STANDINGS_LEAGUE_ID = 307
+# دوري روشن السعودي - يُستخدم لجدول الترتيب تحديداً (معرّف TheSportsDB)
+STANDINGS_LEAGUE_ID = 4668
 
-# أرشيف نتائج محلي تراكمي - نبنيه يوم بيوم لأن الخطة المجانية بـ API-Football
-# ما تسمح بجلب مباريات الموسم الحالي (2026) دفعة وحدة، بس تسمح بنافذة تواريخ
-# قريبة من اليوم. لازم يُحفظ ويُرفع للمستودع بعد كل تشغيل عشان يتراكم.
+# أول تاريخ نبدأ منه أرشفة نتائج الموسم الحالي - يغطي بداية الدوريات الستة
+SEASON_START_DATE = "2026-08-01"
+
+# أرشيف نتائج محلي تراكمي، يتزامن مع TheSportsDB (يدعم الموسم الحالي
+# والتاريخ كامل - أول تشغيل يعبّي الموسم من بدايته، وبعدها يتحقق من
+# الأيام الجديدة بس عشان يوفر عدد الطلبات)
 RESULTS_ARCHIVE_FILE = "results_archive.json"
+SYNC_STATE_FILE = "sync_state.json"
 
-# الدوريات اللي نبني لها جدول ترتيب من الأرشيف المحلي
+# الدوريات اللي نتابعها (معرّفات TheSportsDB)
 TARGET_LEAGUES = {
-    307: "دوري روشن السعودي",
-    39: "الدوري الإنجليزي",
-    140: "الدوري الإسباني",
-    135: "الدوري الإيطالي",
-    78: "الدوري الألماني",
-    61: "الدوري الفرنسي",
+    4668: "دوري روشن السعودي",
+    4328: "الدوري الإنجليزي",
+    4335: "الدوري الإسباني",
+    4332: "الدوري الإيطالي",
+    4331: "الدوري الألماني",
+    4334: "الدوري الفرنسي",
 }
 
-if not API_FOOTBALL_KEY or not GEMINI_API_KEY:
+if not GEMINI_API_KEY:
     raise SystemExit(
-        "لازم تحط المفاتيح كمتغيرات بيئة أول:\n"
-        "  export API_FOOTBALL_KEY=مفتاحك\n"
+        "لازم تحط مفتاح Gemini كمتغير بيئة أول:\n"
         "  export GEMINI_API_KEY=مفتاحك\n"
     )
 
 GEMINI_MODEL = "gemini-3.6-flash"
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
+# تحويل رموز حالة المباراة من TheSportsDB لنفس الصيغة اللي يفهمها الموقع
+STATUS_MAP = {
+    "NS": "Not Started",
+    "FT": "Match Finished",
+    "AET": "Match Finished",
+    "PEN": "Match Finished",
+    "1H": "In Play",
+    "2H": "In Play",
+    "ET": "In Play",
+    "HT": "Halftime",
+}
+
 
 # ============================================================
 # 1) المباريات
 # ============================================================
 
-def get_todays_fixtures(league_id: int = None, date: str = None):
-    """يجيب مباريات اليوم (أو تاريخ محدد) من API-Football."""
-    if date is None:
-        date = datetime.now().strftime("%Y-%m-%d")
-
-    url = "https://v3.football.api-sports.io/fixtures"
-    headers = {
-        "x-rapidapi-key": API_FOOTBALL_KEY,
-        "x-rapidapi-host": API_FOOTBALL_HOST,
-    }
-    params = {"date": date}
-    if league_id:
-        params["league"] = league_id
-        params["season"] = datetime.now().year
-
-    response = requests.get(url, headers=headers, params=params, timeout=30)
+def fetch_league_day_events(league_id: int, date: str) -> list:
+    """يجيب مباريات دوري معيّن بتاريخ محدد من TheSportsDB."""
+    url = f"{THESPORTSDB_BASE}/eventsday.php"
+    response = requests.get(url, params={"d": date, "l": league_id}, timeout=20)
     response.raise_for_status()
-    return response.json().get("response", [])
+    return response.json().get("events") or []
 
 
-def format_fixture_summary(fixture: dict) -> dict:
-    """يستخرج المعلومات المهمة من بيانات المباراة الخام"""
-    teams = fixture["teams"]
-    goals = fixture["goals"]
-    status = fixture["fixture"]["status"]["long"]
-    league = fixture["league"]["name"]
+def format_event_summary(event: dict, league_id: int) -> dict:
+    """يستخرج المعلومات المهمة من بيانات مباراة خام من TheSportsDB."""
+    status = STATUS_MAP.get(event.get("strStatus"), event.get("strStatus") or "Not Started")
+    home_score = event.get("intHomeScore")
+    away_score = event.get("intAwayScore")
+
+    date_str = event.get("strTimestamp") or f"{event['dateEvent']}T{event.get('strTime', '00:00:00')}"
+    if "+" not in date_str and not date_str.endswith("Z"):
+        date_str += "Z"
 
     return {
-        "league_id": fixture["league"]["id"],
-        "league_logo": fixture["league"]["logo"],
-        "home_team": teams["home"]["name"],
-        "away_team": teams["away"]["name"],
-        "home_logo": teams["home"]["logo"],
-        "away_logo": teams["away"]["logo"],
-        "home_score": goals["home"],
-        "away_score": goals["away"],
+        "event_id": event["idEvent"],
+        "league_id": league_id,
+        "league_logo": event.get("strLeagueBadge"),
+        "home_team": event["strHomeTeam"],
+        "away_team": event["strAwayTeam"],
+        "home_id": event.get("idHomeTeam"),
+        "away_id": event.get("idAwayTeam"),
+        "home_logo": event.get("strHomeTeamBadge"),
+        "away_logo": event.get("strAwayTeamBadge"),
+        "home_score": int(home_score) if home_score not in (None, "") else None,
+        "away_score": int(away_score) if away_score not in (None, "") else None,
         "status": status,
-        "league": league,
-        "date": fixture["fixture"]["date"],
+        "league": TARGET_LEAGUES.get(league_id, event.get("strLeague")),
+        "date": date_str,
     }
+
+
+def get_todays_matches() -> list:
+    """يجيب مباريات اليوم لكل الدوريات الستة المستهدفة (لصفحة مباريات اليوم)."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    results = []
+    for league_id in TARGET_LEAGUES:
+        try:
+            events = fetch_league_day_events(league_id, today)
+        except Exception as e:
+            print(f"تعذّر جلب مباريات اليوم لدوري {league_id} ({e}).")
+            continue
+        results.extend(format_event_summary(ev, league_id) for ev in events)
+        time.sleep(0.15)
+    return results
 
 
 def fallback_article_text(match_summary: dict) -> str:
@@ -198,24 +229,17 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
     }
 
 
-def run_matches_pipeline(league_id: int = None):
+def run_matches_pipeline():
     """يشغّل دورة المباريات كاملة: جلب -> صياغة -> تجهيز"""
-    print("جاري جلب المباريات...")
-    fixtures = get_todays_fixtures(league_id=league_id)
+    print("جاري جلب مباريات اليوم...")
+    fixtures = get_todays_matches()
 
     if not fixtures:
-        print("ما فيه مباريات اليوم.")
+        print("ما فيه مباريات اليوم بالدوريات المتابعة.")
         return []
 
     results = []
-    for fixture in fixtures:
-        summary = format_fixture_summary(fixture)
-
-        # نعرض بس مباريات الدوريات الستة المتابعة - غير كذا الصفحة تطول
-        # بمئات المباريات من دوريات كل العالم بلا فايدة
-        if summary["league_id"] not in TARGET_LEAGUES:
-            continue
-
+    for summary in fixtures:
         # نتجاهل بس الحالات الملغاة/المؤجلة - نعرض المنتهية والجارية
         # والمجدولة لاحقاً اليوم (عشان صفحة "مباريات اليوم" تكون كاملة)
         if summary["status"] not in ("Match Finished", "Halftime", "In Play", "Not Started"):
@@ -227,7 +251,6 @@ def run_matches_pipeline(league_id: int = None):
             # ما بدأت بعد - ما فيه نتيجة نبني منها مقال، نكتفي بموعدها
             article = ""
         else:
-            # كلهم الآن ضمن الدوريات المستهدفة، فنستخدم Gemini للجميع
             article = generate_article(summary)
 
         results.append(build_match_payload(summary, article))
@@ -239,69 +262,93 @@ def run_matches_pipeline(league_id: int = None):
 # 2) جدول الترتيب
 # ============================================================
 
-def load_results_archive() -> list:
-    """يقرأ أرشيف النتائج المحلي المتراكم (لو موجود)."""
-    if os.path.exists(RESULTS_ARCHIVE_FILE):
-        with open(RESULTS_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+def load_json_file(path: str, default):
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    return []
+    return default
+
+
+def save_json_file(path: str, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def load_results_archive() -> list:
+    return load_json_file(RESULTS_ARCHIVE_FILE, [])
 
 
 def save_results_archive(archive: list):
-    with open(RESULTS_ARCHIVE_FILE, "w", encoding="utf-8") as f:
-        json.dump(archive, f, ensure_ascii=False, indent=2)
+    save_json_file(RESULTS_ARCHIVE_FILE, archive)
 
 
-def update_results_archive(league_ids) -> list:
+def daterange(start_str: str, end_str: str):
+    d = datetime.strptime(start_str, "%Y-%m-%d")
+    end = datetime.strptime(end_str, "%Y-%m-%d")
+    while d <= end:
+        yield d.strftime("%Y-%m-%d")
+        d += timedelta(days=1)
+
+
+def update_results_archive() -> list:
     """
-    يجيب مباريات اليوم المنتهية (FT) لكل الدوريات المستهدفة (TARGET_LEAGUES)
-    ويضيف الجديد منها لأرشيف محلي دائم. نطلب بالتاريخ بس (بدون league/season)
-    لأن أي طلب فيه season=2026 مرفوض من الخطة المجانية حتى لو التاريخ ضمن
-    النافذة المسموحة - وطلب واحد بالتاريخ يرجع كل الدوريات دفعة وحدة.
+    يزامن الأرشيف المحلي مع TheSportsDB. أول تشغيل يمسح الموسم كامل من
+    SEASON_START_DATE (TheSportsDB يدعم الموسم الحالي والتاريخ كامل بدون
+    قيد)، وبعدها كل تشغيل يتحقق بس من الأيام الجديدة اللي ما مسحناها بعد
+    (نتتبعها بـ sync_state.json) عشان نوفر عدد الطلبات.
     """
-    today = datetime.now().strftime("%Y-%m-%d")
-    fixtures = get_todays_fixtures(date=today)
-
     archive = load_results_archive()
-    existing_ids = {m["fixture_id"] for m in archive}
+    state = load_json_file(SYNC_STATE_FILE, {})
+    existing_ids = {m["event_id"] for m in archive}
+    today = datetime.now().strftime("%Y-%m-%d")
 
     added = 0
-    for fx in fixtures:
-        league_id = fx["league"]["id"]
-        if league_id not in league_ids:
-            continue
-        if fx["fixture"]["status"]["short"] != "FT":
-            continue
+    for league_id in TARGET_LEAGUES:
+        date_from = state.get(str(league_id), SEASON_START_DATE)
+        for day in daterange(date_from, today):
+            try:
+                events = fetch_league_day_events(league_id, day)
+            except Exception as e:
+                print(f"تعذّر جلب مباريات {day} لدوري {league_id} ({e}).")
+                continue
 
-        fixture_id = fx["fixture"]["id"]
-        if fixture_id in existing_ids:
-            continue
+            for ev in events:
+                if ev.get("strStatus") != "FT":
+                    continue
+                if ev["idEvent"] in existing_ids:
+                    continue
 
-        home_goals = fx["goals"]["home"]
-        away_goals = fx["goals"]["away"]
-        if home_goals is None or away_goals is None:
-            continue
+                summary = format_event_summary(ev, league_id)
+                if summary["home_score"] is None or summary["away_score"] is None:
+                    continue
 
-        archive.append({
-            "fixture_id": fixture_id,
-            "league_id": league_id,
-            "league_name": TARGET_LEAGUES.get(league_id, fx["league"]["name"]),
-            "date": fx["fixture"]["date"][:10],
-            "home_id": fx["teams"]["home"]["id"],
-            "home": fx["teams"]["home"]["name"],
-            "home_logo": fx["teams"]["home"]["logo"],
-            "away_id": fx["teams"]["away"]["id"],
-            "away": fx["teams"]["away"]["name"],
-            "away_logo": fx["teams"]["away"]["logo"],
-            "home_goals": home_goals,
-            "away_goals": away_goals,
-        })
-        existing_ids.add(fixture_id)
-        added += 1
+                archive.append({
+                    "event_id": summary["event_id"],
+                    "league_id": league_id,
+                    "league_name": TARGET_LEAGUES[league_id],
+                    "date": day,
+                    "home_id": summary["home_id"],
+                    "home": summary["home_team"],
+                    "home_logo": summary["home_logo"],
+                    "away_id": summary["away_id"],
+                    "away": summary["away_team"],
+                    "away_logo": summary["away_logo"],
+                    "home_goals": summary["home_score"],
+                    "away_goals": summary["away_score"],
+                })
+                existing_ids.add(summary["event_id"])
+                added += 1
 
+            time.sleep(0.12)
+
+        state[str(league_id)] = today
+
+    save_json_file(SYNC_STATE_FILE, state)
     if added:
         save_results_archive(archive)
         print(f"أُضيفت {added} نتيجة جديدة للأرشيف المحلي (الإجمالي: {len(archive)}).")
+    else:
+        print("ما فيه نتائج جديدة.")
 
     return archive
 
@@ -311,41 +358,39 @@ SQUADS_FILE = "squads.json"
 
 def load_squads() -> dict:
     """يقرأ تشكيلات الأندية المخزّنة محلياً (لو موجودة)."""
-    if os.path.exists(SQUADS_FILE):
-        with open(SQUADS_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {}
+    return load_json_file(SQUADS_FILE, {})
 
 
 def save_squads(squads: dict):
-    with open(SQUADS_FILE, "w", encoding="utf-8") as f:
-        json.dump(squads, f, ensure_ascii=False, indent=2)
+    save_json_file(SQUADS_FILE, squads)
 
 
-def fetch_team_squad(team_id: int):
-    """يجيب تشكيلة نادي واحد (لاعبين حقيقيين: اسم، صورة، مركز، رقم)."""
-    url = "https://v3.football.api-sports.io/players/squads"
-    headers = {
-        "x-rapidapi-key": API_FOOTBALL_KEY,
-        "x-rapidapi-host": API_FOOTBALL_HOST,
-    }
-    response = requests.get(url, headers=headers, params={"team": team_id}, timeout=30)
+def fetch_team_squad(team_id: str):
+    """يجيب تشكيلة نادي واحد من TheSportsDB (لاعبين حقيقيين: اسم، صورة، مركز، رقم)."""
+    url = f"{THESPORTSDB_BASE}/lookup_all_players.php"
+    response = requests.get(url, params={"id": team_id}, timeout=20)
     response.raise_for_status()
-    data = response.json().get("response", [])
-    if not data:
-        return []
+    players = response.json().get("player") or []
 
-    return [
-        {
-            "id": p["id"],
-            "name": p["name"],
-            "age": p["age"],
-            "number": p["number"],
-            "position": p["position"],
-            "photo": p["photo"],
-        }
-        for p in data[0].get("players", [])
-    ]
+    squad = []
+    for p in players:
+        age = None
+        if p.get("dateBorn"):
+            try:
+                born = datetime.strptime(p["dateBorn"], "%Y-%m-%d")
+                age = (datetime.now() - born).days // 365
+            except ValueError:
+                pass
+
+        squad.append({
+            "id": p.get("idPlayer"),
+            "name": p.get("strPlayer"),
+            "age": age,
+            "number": p.get("strNumber"),
+            "position": p.get("strPosition"),
+            "photo": p.get("strCutout") or p.get("strThumb"),
+        })
+    return squad
 
 
 def update_squads_cache(archive: list) -> dict:
@@ -410,7 +455,7 @@ def calculate_standings_from_results(league_matches: list):
 
 def run_standings_pipeline():
     print("جاري تحديث أرشيف نتائج الدوريات المحلي...")
-    archive = update_results_archive(set(TARGET_LEAGUES.keys()))
+    archive = update_results_archive()
     update_squads_cache(archive)
 
     all_standings = {}
@@ -475,7 +520,7 @@ def build_news_items(matches: list, standings: dict) -> dict:
 # ============================================================
 
 if __name__ == "__main__":
-    matches = run_matches_pipeline(league_id=None)
+    matches = run_matches_pipeline()
     standings = run_standings_pipeline()
     news = build_news_items(matches, standings)
 

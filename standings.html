@@ -243,7 +243,7 @@ function renderStandingsData(data){
     document.getElementById('standings-body').innerHTML = '<tr><td colspan="4"><div class="empty-state">جدول الترتيب غير متاح حالياً</div></td></tr>';
     return;
   }
-  activeLeagueId = (urlLeague && ids.includes(urlLeague)) ? urlLeague : (ids.includes('307') ? '307' : ids[0]);
+  activeLeagueId = (urlLeague && ids.includes(urlLeague)) ? urlLeague : (ids.includes('4668') ? '4668' : ids[0]);
   renderLeagueTabs();
   renderStandings(standingsByLeague[activeLeagueId].standings);
 }

@@ -177,7 +177,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 });
 
 const params = new URLSearchParams(location.search);
-const clubId = Number(params.get('id'));
+const clubId = params.get('id');
 
 function resultClass(m){
   const isHome = m.home_id === clubId;
@@ -265,7 +265,7 @@ fetch('squads.json?t=' + Date.now())
     grid.innerHTML = players.map(p => `
       <div class="player-card">
         <div class="number">${p.number ?? ''}</div>
-        <div class="photo-wrap"><img src="${p.photo}" alt="${p.name}" loading="lazy"></div>
+        <div class="photo-wrap">${p.photo ? `<img src="${p.photo}" alt="${p.name}" loading="lazy" onerror="this.remove()">` : ''}</div>
         <div class="info">
           <div class="p-name">${p.name}</div>
           <span class="p-position">${POSITION_AR[p.position] || p.position || ''}</span>

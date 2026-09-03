@@ -1,7 +1,0 @@
-{
-  "name": "kooora-agent",
-  "private": true,
-  "devDependencies": {
-    "netlify-cli": "27.4.2"
-  }
-}

@@ -17,15 +17,6 @@ jobs:
       - name: تنزيل نسخة من المستودع
         uses: actions/checkout@v4
 
-      - name: تجهيز Node.js (مع تخزين مؤقت لـ netlify-cli)
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-
-      - name: تثبيت netlify-cli من package-lock.json
-        run: npm ci
-
       - name: تجهيز بايثون
         uses: actions/setup-python@v5
         with:
@@ -47,9 +38,4 @@ jobs:
           git add matches.json standings.json news.json results_archive.json squads.json sync_state.json
           git diff --staged --quiet || git commit -m "تحديث تلقائي لنتائج المباريات والترتيب والأخبار"
           git push
-
-      - name: نشر الموقع على Netlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: npx netlify-cli deploy --prod --dir=.
+          # GitHub Pages ينشر تلقائياً مع كل push على main - ما نحتاج خطوة نشر منفصلة

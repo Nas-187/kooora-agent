@@ -25,6 +25,7 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+    --crest-bg:#F3F1EA;
     --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
     --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
     --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
@@ -102,7 +103,7 @@
   .standings-table td.rank{ color:var(--gold); font-weight:800; width:28px; font-family:'Changa'; }
   .standings-table td.pts{ font-weight:900; text-align:center; font-family:'Changa'; color:var(--pitch); }
   .standings-table .team-cell{ display:flex; align-items:center; gap:10px; }
-  .team-crest{ width:26px; height:26px; border-radius:50%; overflow:hidden; flex-shrink:0; background:var(--pitch); }
+  .team-crest{ width:26px; height:26px; border-radius:50%; overflow:hidden; flex-shrink:0; background:var(--crest-bg); }
   .team-crest img{ width:100%; height:100%; object-fit:contain; padding:2px; }
 
   .empty-state{
@@ -233,12 +234,14 @@ document.querySelectorAll('.standings-table th.sortable').forEach(th => {
   });
 });
 
+const LEAGUE_ORDER = ['4668', '4328', '4335', '4332', '4331', '4334'];
+
 let standingsByLeague = {};
 let activeLeagueId = null;
 
 function renderLeagueTabs(){
   const wrap = document.getElementById('league-tabs');
-  const ids = Object.keys(standingsByLeague);
+  const ids = LEAGUE_ORDER.filter(id => standingsByLeague[id]);
   wrap.innerHTML = ids.map(id => `
     <button type="button" class="league-tab ${id === activeLeagueId ? 'active' : ''}" data-league="${id}">
       ${standingsByLeague[id].name}
@@ -255,7 +258,7 @@ function renderLeagueTabs(){
 
 function renderStandingsData(data){
   standingsByLeague = data || {};
-  const ids = Object.keys(standingsByLeague);
+  const ids = LEAGUE_ORDER.filter(id => standingsByLeague[id]);
   if(ids.length === 0){
     document.getElementById('standings-body').innerHTML = '<tr><td colspan="4"><div class="empty-state">جدول الترتيب غير متاح حالياً</div></td></tr>';
     return;

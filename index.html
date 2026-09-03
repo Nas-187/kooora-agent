@@ -25,6 +25,7 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+    --crest-bg:#F3F1EA;
     --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
     --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
     --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
@@ -249,7 +250,7 @@
   .team.away{ flex-direction:row-reverse; text-align:left; justify-content:flex-start; }
   .crest{
     width:36px; height:36px; border-radius:50%;
-    background:var(--pitch); color:var(--cream);
+    background:var(--crest-bg); color:var(--pitch);
     display:flex; align-items:center; justify-content:center;
     font-family:'Changa'; font-weight:800; font-size:13px; flex-shrink:0;
     overflow:hidden; box-shadow:0 0 0 3px var(--cream), 0 0 0 4px var(--line);
@@ -596,6 +597,7 @@ const MATCH_TARGET_LEAGUES = {
   4331: "الدوري الألماني",
   4334: "الدوري الفرنسي",
 };
+const LEAGUE_ORDER = [4668, 4328, 4335, 4332, 4331, 4334];
 
 function isLiveStatus(status){ return status === 'In Play' || status === 'Halftime'; }
 function isScheduled(status){ return status === 'Not Started'; }
@@ -762,7 +764,7 @@ function refreshMatchesView(){
 
 function renderMatchLeagueTabs(matches){
   const wrap = document.getElementById('match-league-tabs');
-  const leagueIds = Object.keys(MATCH_TARGET_LEAGUES).map(Number);
+  const leagueIds = LEAGUE_ORDER;
 
   const allCount = matches.length;
   let html = `
@@ -930,7 +932,7 @@ let activeLeagueId = null;
 
 function renderLeagueTabs(){
   const wrap = document.getElementById('league-tabs');
-  const ids = Object.keys(standingsByLeague);
+  const ids = LEAGUE_ORDER.map(String).filter(id => standingsByLeague[id]);
   wrap.innerHTML = ids.map(id => `
     <button type="button" class="league-tab ${id === activeLeagueId ? 'active' : ''}" data-league="${id}">
       ${standingsByLeague[id].name}
@@ -947,7 +949,7 @@ function renderLeagueTabs(){
 
 function renderStandingsData(data){
   standingsByLeague = data || {};
-  const ids = Object.keys(standingsByLeague);
+  const ids = LEAGUE_ORDER.map(String).filter(id => standingsByLeague[id]);
   if(ids.length === 0) return;
 
   activeLeagueId = ids.includes('4668') ? '4668' : ids[0];
@@ -986,7 +988,7 @@ renderDate();
 // نعرض بيانات تجريبية بدله بدل ما تطلع الصفحة فاضية
 function renderCompGrid(matches){
   const grid = document.getElementById('comp-grid');
-  const leagueIds = Object.keys(MATCH_TARGET_LEAGUES).map(Number);
+  const leagueIds = LEAGUE_ORDER;
 
   grid.innerHTML = leagueIds.map(id => {
     const sample = matches.find(m => m.league_id === id);

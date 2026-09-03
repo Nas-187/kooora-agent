@@ -24,6 +24,7 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+    --crest-bg:#F3F1EA;
     --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
     --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
     --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
@@ -111,7 +112,7 @@
   .mr-team.home{ justify-content:flex-end; }
   .mr-team.away{ justify-content:flex-start; }
   .mr-team span{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .mr-crest{ width:26px; height:26px; border-radius:50%; overflow:hidden; background:var(--pitch); flex-shrink:0; }
+  .mr-crest{ width:26px; height:26px; border-radius:50%; overflow:hidden; background:var(--crest-bg); flex-shrink:0; }
   .mr-crest img{ width:100%; height:100%; object-fit:contain; padding:2px; }
   .mr-badge{
     font-family:'Changa'; font-weight:900; font-size:14px; text-align:center; min-width:64px;
@@ -199,6 +200,7 @@ const MATCH_TARGET_LEAGUES = {
   4331: "الدوري الألماني",
   4334: "الدوري الفرنسي",
 };
+const LEAGUE_ORDER = [4668, 4328, 4335, 4332, 4331, 4334];
 
 function isLiveStatus(status){ return status === 'In Play' || status === 'Halftime'; }
 function isScheduled(status){ return status === 'Not Started'; }
@@ -268,7 +270,7 @@ function renderLeagueGroups(){
   const wrap = document.getElementById('league-groups');
   const dayMatches = allMatches.filter(m => m.day === activeDay);
 
-  const groups = Object.keys(MATCH_TARGET_LEAGUES).map(Number).map(id => ({
+  const groups = LEAGUE_ORDER.map(id => ({
     id, name: MATCH_TARGET_LEAGUES[id],
     matches: dayMatches.filter(m => m.league_id === id),
   })).filter(g => g.matches.length > 0);

@@ -25,6 +25,7 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+    --crest-bg:#F3F1EA;
     --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
     --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
     --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
@@ -129,8 +130,10 @@ const TARGET_LEAGUES = {
   4334: "الدوري الفرنسي",
 };
 
+const LEAGUE_ORDER = [4668, 4328, 4335, 4332, 4331, 4334];
+
 const grid = document.getElementById('league-grid');
-grid.innerHTML = Object.entries(TARGET_LEAGUES).map(([id, name]) => `
+grid.innerHTML = LEAGUE_ORDER.map(id => { const name = TARGET_LEAGUES[id]; return `
   <div class="league-card">
     <img class="l-logo" id="logo-${id}" alt="${name}" loading="lazy">
     <div>
@@ -140,9 +143,9 @@ grid.innerHTML = Object.entries(TARGET_LEAGUES).map(([id, name]) => `
         <a href="clubs.html?league=${id}">الأندية</a>
       </div>
     </div>
-  </div>`).join('');
+  </div>`; }).join('');
 
-Object.keys(TARGET_LEAGUES).forEach(id => {
+LEAGUE_ORDER.forEach(id => {
   fetch(`https://www.thesportsdb.com/api/v1/json/3/lookupleague.php?id=${id}`)
     .then(res => res.json())
     .then(data => {

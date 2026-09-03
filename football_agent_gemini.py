@@ -101,6 +101,7 @@ def format_event_summary(event: dict, league_id: int) -> dict:
         "event_id": event["idEvent"],
         "league_id": league_id,
         "league_logo": event.get("strLeagueBadge"),
+        "round": event.get("intRound"),
         "home_team": event["strHomeTeam"],
         "away_team": event["strAwayTeam"],
         "home_id": event.get("idHomeTeam"),
@@ -112,21 +113,35 @@ def format_event_summary(event: dict, league_id: int) -> dict:
         "status": status,
         "league": TARGET_LEAGUES.get(league_id, event.get("strLeague")),
         "date": date_str,
+        "day": event["dateEvent"],
     }
 
 
-def get_todays_matches() -> list:
-    """يجيب مباريات اليوم لكل الدوريات الستة المستهدفة (لصفحة مباريات اليوم)."""
-    today = datetime.now().strftime("%Y-%m-%d")
+# نطاق الأيام اللي نجيب مبارياتها لشريط "مباريات اليوم" (يومين للخلف
+# وثلاثة أيام للقدام حول اليوم الحالي)، عشان المستخدم يقدر يتصفح
+# بالتاريخ زي المواقع الرياضية المعروفة
+DAYS_BEFORE = 2
+DAYS_AFTER = 3
+
+
+def get_matches_window() -> list:
+    """يجيب مباريات نافذة الأيام (أمس/اليوم/غداً وأبعد) لكل الدوريات الستة."""
+    today = datetime.now().date()
+    days = [
+        (today + timedelta(days=offset)).strftime("%Y-%m-%d")
+        for offset in range(-DAYS_BEFORE, DAYS_AFTER + 1)
+    ]
+
     results = []
-    for league_id in TARGET_LEAGUES:
-        try:
-            events = fetch_league_day_events(league_id, today)
-        except Exception as e:
-            print(f"تعذّر جلب مباريات اليوم لدوري {league_id} ({e}).")
-            continue
-        results.extend(format_event_summary(ev, league_id) for ev in events)
-        time.sleep(0.15)
+    for day in days:
+        for league_id in TARGET_LEAGUES:
+            try:
+                events = fetch_league_day_events(league_id, day)
+            except Exception as e:
+                print(f"تعذّر جلب مباريات {day} لدوري {league_id} ({e}).")
+                continue
+            results.extend(format_event_summary(ev, league_id) for ev in events)
+            time.sleep(0.1)
     return results
 
 
@@ -199,6 +214,27 @@ def fetch_cover_image(query: str):
         return None
 
 
+COVER_IMAGES_FILE = "cover_images.json"
+_cover_images_cache = None
+
+
+def get_cached_cover_image(league_name: str):
+    """
+    نجيب صورة توضيحية وحدة لكل دوري ونخزّنها بشكل دائم (بدل استدعاء
+    Pexels لكل مباراة على حدة) - عدد المباريات صار كبير بعد ما وسّعنا
+    نافذة الأيام، وهذا يحافظ على حصة Pexels المجانية.
+    """
+    global _cover_images_cache
+    if _cover_images_cache is None:
+        _cover_images_cache = load_json_file(COVER_IMAGES_FILE, {})
+
+    if league_name not in _cover_images_cache:
+        _cover_images_cache[league_name] = fetch_cover_image(f"{league_name} football stadium")
+        save_json_file(COVER_IMAGES_FILE, _cover_images_cache)
+
+    return _cover_images_cache[league_name]
+
+
 def build_match_payload(match_summary: dict, article_text: str) -> dict:
     """
     يجهز بيانات المباراة بنفس التنسيق اللي يقرأه index.html مباشرة
@@ -215,6 +251,7 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
         "title": title,
         "league_id": match_summary["league_id"],
         "league_logo": match_summary["league_logo"],
+        "round": match_summary.get("round"),
         "home_team": match_summary["home_team"],
         "away_team": match_summary["away_team"],
         "home_logo": match_summary["home_logo"],
@@ -224,34 +261,40 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
         "status": match_summary["status"],
         "league": match_summary["league"],
         "date": match_summary["date"],
+        "day": match_summary["day"],
         "content": article_text,
-        "cover_image": fetch_cover_image(f"{match_summary['league']} football stadium"),
+        "cover_image": get_cached_cover_image(match_summary["league"]),
     }
 
 
 def run_matches_pipeline():
     """يشغّل دورة المباريات كاملة: جلب -> صياغة -> تجهيز"""
-    print("جاري جلب مباريات اليوم...")
-    fixtures = get_todays_matches()
+    print("جاري جلب مباريات نافذة الأيام (أمس/اليوم/غداً وأبعد)...")
+    fixtures = get_matches_window()
+    today = datetime.now().strftime("%Y-%m-%d")
 
     if not fixtures:
-        print("ما فيه مباريات اليوم بالدوريات المتابعة.")
+        print("ما فيه مباريات بالدوريات المتابعة بهالنافذة الزمنية.")
         return []
 
     results = []
     for summary in fixtures:
         # نتجاهل بس الحالات الملغاة/المؤجلة - نعرض المنتهية والجارية
-        # والمجدولة لاحقاً اليوم (عشان صفحة "مباريات اليوم" تكون كاملة)
+        # والمجدولة (عشان شريط تصفح الأيام يكون كامل)
         if summary["status"] not in ("Match Finished", "Halftime", "In Play", "Not Started"):
             continue
 
-        print(f"معالجة: {summary['home_team']} vs {summary['away_team']} ({summary['status']})")
+        print(f"معالجة: {summary['home_team']} vs {summary['away_team']} ({summary['day']}, {summary['status']})")
 
         if summary["status"] == "Not Started":
             # ما بدأت بعد - ما فيه نتيجة نبني منها مقال، نكتفي بموعدها
             article = ""
-        else:
+        elif summary["day"] == today:
+            # نستخدم Gemini بس لمباريات اليوم عشان نحافظ على الحصة
+            # المجانية - باقي الأيام (أمس وقبلها) تاخذ نص واقعي بديل
             article = generate_article(summary)
+        else:
+            article = fallback_article_text(summary)
 
         results.append(build_match_payload(summary, article))
 

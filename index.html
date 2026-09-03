@@ -300,6 +300,42 @@
   .kickoff-time{ font-family:'Cairo'; font-size:19px; font-weight:900; color:var(--pitch); }
   .kickoff-label{ font-size:10.5px; font-weight:700; color:var(--ink-soft); margin-top:2px; }
 
+  /* ===== Day tabs ===== */
+  .day-tabs{
+    display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; margin-bottom:18px;
+    scrollbar-width:none;
+  }
+  .day-tabs::-webkit-scrollbar{ display:none; }
+  .day-tab{
+    flex-shrink:0; min-width:78px; text-align:center; font-size:12.5px; font-weight:700;
+    padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--card);
+    color:var(--ink-soft); cursor:pointer; transition:.15s;
+  }
+  .day-tab .d-sub{ display:block; font-size:10px; font-weight:600; opacity:.75; margin-top:2px; }
+  .day-tab:hover{ border-color:var(--gold); }
+  .day-tab.active{ background:var(--gold); color:var(--pitch-dark); border-color:var(--gold); }
+
+  /* ===== Ticker-style compact match cards ===== */
+  .ticker-row{ display:flex; gap:12px; overflow-x:auto; padding:4px 2px 16px; scrollbar-width:thin; }
+  .tmatch-card{
+    flex:0 0 190px; background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px 12px; text-align:center; position:relative;
+  }
+  .tmatch-card.live{ border-color:var(--line-red); }
+  .tmatch-card .tm-league{
+    font-size:10px; font-weight:800; color:var(--gold); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .tmatch-card .tm-round{ font-size:9.5px; color:var(--ink-soft); margin-bottom:8px; }
+  .tmatch-card .tm-time{ font-size:11px; font-weight:700; color:var(--ink-soft); margin-bottom:10px; }
+  .tmatch-card.live .tm-time{ color:var(--line-red); }
+  .tmatch-card .tm-teams{ display:flex; align-items:center; justify-content:space-between; gap:6px; }
+  .tmatch-card .tm-team{ display:flex; flex-direction:column; align-items:center; gap:5px; flex:1; min-width:0; }
+  .tmatch-card .tm-team .crest{ width:30px; height:30px; box-shadow:none; }
+  .tmatch-card .tm-team span{
+    font-size:10.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%;
+  }
+  .tmatch-card .tm-score{ font-family:'Cairo'; font-size:17px; font-weight:900; flex-shrink:0; padding:0 4px; }
+
   .standings-table{ width:100%; border-collapse:collapse; font-size:13.5px; }
   .standings-table th{
     text-align:right; font-weight:700; color:var(--ink-soft); font-size:11px;
@@ -347,15 +383,16 @@
 <main>
   <div>
     <section id="matches-section" style="margin-top:30px">
+      <div class="day-tabs" id="day-tabs"></div>
       <div class="match-league-tabs" id="match-league-tabs"></div>
 
       <div id="hero-story-slot"></div>
 
       <div class="section-head">
-        <h2>مباريات اليوم</h2>
+        <h2>المباريات</h2>
         <span class="league-badge" id="match-count">0 مباراة</span>
       </div>
-      <div id="matches-list" class="story-grid"></div>
+      <div id="matches-list" class="ticker-row"></div>
     </section>
   </div>
 
@@ -568,6 +605,58 @@ function renderHeroStory(matches){
 
 let allTodayMatches = [];
 let activeMatchLeague = 'all';
+let activeDay = null;
+
+function dayKey(offset){
+  const d = new Date();
+  d.setDate(d.getDate() + offset);
+  return d.toISOString().slice(0, 10);
+}
+
+function dayLabel(offset){
+  if(offset === -1) return { main: 'أمس', sub: '' };
+  if(offset === 0) return { main: 'اليوم', sub: '' };
+  if(offset === 1) return { main: 'غداً', sub: '' };
+
+  const d = new Date();
+  d.setDate(d.getDate() + offset);
+  const weekday = d.toLocaleDateString('ar', { weekday: 'long', calendar: 'gregory' });
+  const dayMonth = d.toLocaleDateString('ar', { day: '2-digit', month: 'long', calendar: 'gregory' });
+  return { main: weekday, sub: dayMonth };
+}
+
+const DAY_OFFSETS = [-2, -1, 0, 1, 2, 3];
+
+function renderDayTabs(){
+  const wrap = document.getElementById('day-tabs');
+  wrap.innerHTML = DAY_OFFSETS.map(offset => {
+    const key = dayKey(offset);
+    const label = dayLabel(offset);
+    return `
+    <div class="day-tab ${activeDay === key ? 'active' : ''}" data-day="${key}">
+      ${label.main}${label.sub ? `<span class="d-sub">${label.sub}</span>` : ''}
+    </div>`;
+  }).join('');
+
+  wrap.querySelectorAll('.day-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      activeDay = tab.dataset.day;
+      renderDayTabs();
+      refreshMatchesView();
+    });
+  });
+}
+
+function filterByActiveDay(matches){
+  if(!activeDay) return matches;
+  return matches.filter(m => m.day === activeDay);
+}
+
+function refreshMatchesView(){
+  const dayMatches = filterByActiveDay(allTodayMatches);
+  renderMatchLeagueTabs(dayMatches);
+  renderMatches(filterByActiveLeague(dayMatches));
+}
 
 function renderMatchLeagueTabs(matches){
   const wrap = document.getElementById('match-league-tabs');
@@ -589,7 +678,7 @@ function renderMatchLeagueTabs(matches){
     <div class="match-league-tab ${activeMatchLeague === id ? 'active' : ''}" data-league="${id}">
       ${logo ? `<img class="m-logo" src="${logo}" alt="${name}">` : ''}
       <span class="m-name">${name}</span>
-      <span class="m-count">${count} مباراة اليوم</span>
+      <span class="m-count">${count} مباراة</span>
     </div>`;
   }).join('');
 
@@ -599,8 +688,7 @@ function renderMatchLeagueTabs(matches){
     tab.addEventListener('click', () => {
       const val = tab.dataset.league;
       activeMatchLeague = (val === 'all') ? 'all' : Number(val);
-      renderMatchLeagueTabs(allTodayMatches);
-      renderMatches(filterByActiveLeague(allTodayMatches));
+      refreshMatchesView();
     });
   });
 }
@@ -625,24 +713,28 @@ function renderMatches(matches){
 
   list.innerHTML = matches.filter(m => !heroSlides.includes(m)).map(m => {
     const isLive = isLiveStatus(m.status);
+    const scheduled = isScheduled(m.status);
+    const timeOrStatus = scheduled ? formatKickoff(m.date) : statusLabelFor(m);
+    const scoreOrDash = scheduled
+      ? '<span class="tm-dash">-</span>'
+      : `${m.home_score} - ${m.away_score}`;
+
     return `
-    <div class="match-card ${isLive ? 'live' : ''}">
-      ${m.cover_image ? `
-      <div class="cover">
-        <img src="${m.cover_image}" alt="" loading="lazy">
-        <span class="illustrative-badge">صورة توضيحية</span>
-      </div>` : ''}
-      <div class="league-tag">${m.league}</div>
-      <div class="team home">
-        <div class="crest">${crest(m.home_team, m.home_logo)}</div>
-        <span>${m.home_team}</span>
+    <div class="tmatch-card ${isLive ? 'live' : ''}">
+      <div class="tm-league">${m.league}</div>
+      ${m.round ? `<div class="tm-round">الجولة ${m.round}</div>` : '<div class="tm-round">&nbsp;</div>'}
+      <div class="tm-time">${timeOrStatus}</div>
+      <div class="tm-teams">
+        <div class="tm-team">
+          <div class="crest">${crest(m.home_team, m.home_logo)}</div>
+          <span>${m.home_team}</span>
+        </div>
+        <div class="tm-score">${scoreOrDash}</div>
+        <div class="tm-team">
+          <div class="crest">${crest(m.away_team, m.away_logo)}</div>
+          <span>${m.away_team}</span>
+        </div>
       </div>
-      <div class="score-block">${scoreBlockHtml(m)}</div>
-      <div class="team away">
-        <div class="crest">${crest(m.away_team, m.away_logo)}</div>
-        <span>${m.away_team}</span>
-      </div>
-      ${m.content ? `<div class="article-preview">${m.content}</div>` : ''}
     </div>`;
   }).join('');
 }
@@ -730,9 +822,10 @@ renderDate();
 // نعرض بيانات تجريبية بدله بدل ما تطلع الصفحة فاضية
 function loadMatches(data){
   allTodayMatches = data;
-  renderMatchLeagueTabs(allTodayMatches);
-  renderMatches(filterByActiveLeague(allTodayMatches));
-  renderTicker(allTodayMatches);
+  activeDay = dayKey(0);
+  renderDayTabs();
+  refreshMatchesView();
+  renderTicker(allTodayMatches.filter(m => m.day === dayKey(0)));
 }
 
 fetch('matches.json?t=' + Date.now())

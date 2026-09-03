@@ -268,5 +268,170 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/350219"
     },
     "bio": "Fabián Ruiz يلعب في مركز Central Midfield مع Paris SG وهو لاعب Spain يبلغ من العمر 30 عاماً."
+  },
+  "34222026": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Nice, France",
+      "birth_date": "2003-11-28",
+      "age": 22,
+      "height": "172 cm",
+      "weight": "141 lbs",
+      "position": "Midfielder",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/659520"
+    },
+    "bio": "Bilal Nadir يلعب في مركز وسط مع Marseille وهو لاعب France يبلغ من العمر 22 عاماً."
+  },
+  "34196747": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Manchester, England",
+      "birth_date": "2003-01-02",
+      "age": 23,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "",
+      "position": "Right-Back",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Conrad Egan-Riley يلعب في مركز Right-Back مع Marseille وهو لاعب England يبلغ من العمر 23 عاماً."
+  },
+  "34200757": {
+    "facts": {
+      "nationality": "Canada",
+      "birth_place": "Ajax, Ontario, Canada",
+      "birth_date": "1997-11-25",
+      "age": 28,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "190 lbs",
+      "position": "Centre-Back",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/328609"
+    },
+    "bio": "Derek Cornelius يلعب في مركز Centre-Back مع Marseille وهو لاعب Canada يبلغ من العمر 28 عاماً."
+  },
+  "34162147": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Santos, Brazil",
+      "birth_date": "1994-08-03",
+      "age": 32,
+      "height": "1.76 m (5 ft 9 in)",
+      "weight": "",
+      "position": "Left-Back",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Emerson Palmieri يلعب في مركز Left-Back مع Marseille وهو لاعب Italy يبلغ من العمر 32 عاماً."
+  },
+  "34173402": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Buenos Aires, Argentina",
+      "birth_date": "1999-05-28",
+      "age": 27,
+      "height": "1.80 m (5 ft 9 in)",
+      "weight": "78 kg",
+      "position": "Centre-Back",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Facundo Medina يلعب في مركز Centre-Back مع Marseille وهو لاعب Argentina يبلغ من العمر 27 عاماً."
+  },
+  "34421268": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Lleida, Spain",
+      "birth_date": "1991-11-23",
+      "age": 34,
+      "height": "",
+      "weight": "",
+      "position": "Goalkeeping Coach",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Borja Álvarez يلعب في مركز Goalkeeping Coach مع Paris SG وهو لاعب Spain يبلغ من العمر 34 عاماً."
+  },
+  "34432252": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Nigrán, Spain",
+      "birth_date": "2008-01-12",
+      "age": 18,
+      "height": "1.78 m (5 ft 10 in)",
+      "weight": "",
+      "position": "Attacking Midfield",
+      "team": "Paris Saint-Germain",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Dro Fernández يلعب في مركز Attacking Midfield مع Paris Saint-Germain وهو لاعب Spain يبلغ من العمر 18 عاماً."
+  },
+  "34163478": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Foios, Spain",
+      "birth_date": "2000-02-29",
+      "age": 26,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "77 kg (170 lb)",
+      "position": "Centre-Forward",
+      "team": "Paris Saint-Germain",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/398184"
+    },
+    "bio": "Ferran Torres يلعب في مركز Centre-Forward مع Paris Saint-Germain وهو لاعب Spain يبلغ من العمر 26 عاماً."
+  },
+  "34421267": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "",
+      "birth_date": "1994-03-05",
+      "age": 32,
+      "height": "",
+      "weight": "",
+      "position": "Assistant Coach",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Guillem Hernández يلعب في مركز Assistant Coach مع Paris SG وهو لاعب Spain يبلغ من العمر 32 عاماً."
+  },
+  "34246715": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": "Trappes, France",
+      "birth_date": "2008-01-24",
+      "age": 18,
+      "height": "1.75 m (5 ft 9 in)",
+      "weight": "64 kg (141 lb)",
+      "position": "Right Winger",
+      "team": "Paris Saint-Germain",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1185888"
+    },
+    "bio": "Ibrahim Mbaye يلعب في مركز Right Winger مع Paris Saint-Germain وهو لاعب Senegal يبلغ من العمر 18 عاماً."
+  },
+  "34173148": {
+    "facts": {
+      "nationality": "Ukraine",
+      "birth_place": "Kyiv, Ukraine",
+      "birth_date": "2002-09-01",
+      "age": 24,
+      "height": "1.89 m (6 ft 2 1⁄2 in)",
+      "weight": "",
+      "position": "Centre-Back",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/659089"
+    },
+    "bio": "Ilya Zabarnyi يلعب في مركز Centre-Back مع Paris SG وهو لاعب Ukraine يبلغ من العمر 24 عاماً."
   }
 }

@@ -10,7 +10,7 @@
     },
     {
       "tag": "دوري روشن السعودي",
-      "title": "Al-Fayha يفوز على Al-Kholood 2-1 ضمن دوري روشن السعودي"
+      "title": "تعادل Al-Fayha وAl-Kholood 2-2 ضمن دوري روشن السعودي"
     },
     {
       "tag": "دوري روشن السعودي",
@@ -18,7 +18,7 @@
     },
     {
       "tag": "دوري روشن السعودي",
-      "title": "Al-Diriyah يواجه Al-Qadsiah ضمن دوري روشن السعودي"
+      "title": "تعادل Al-Diriyah وAl-Qadsiah 0-0 ضمن دوري روشن السعودي"
     },
     {
       "tag": "دوري روشن السعودي",
@@ -68,11 +68,11 @@
     },
     {
       "tag": "الدوري الإسباني",
-      "title": "Real Sociedad يواجه Celta Vigo ضمن الدوري الإسباني"
+      "title": "تعادل Real Sociedad وCelta Vigo 0-0 ضمن الدوري الإسباني"
     },
     {
       "tag": "الدوري الفرنسي",
-      "title": "Toulouse يواجه Lille ضمن الدوري الفرنسي"
+      "title": "تعادل Toulouse وLille 0-0 ضمن الدوري الفرنسي"
     },
     {
       "tag": "الدوري الإنجليزي",
@@ -157,6 +157,58 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Lens يواجه Lorient ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Arsenal يواجه Chelsea ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Everton يواجه Manchester United ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Valencia يواجه Barcelona ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Málaga يواجه Levante ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Espanyol يواجه Sevilla ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Juventus يواجه AC Milan ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Bologna يواجه Sassuolo ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Frosinone يواجه Venezia ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Eintracht Frankfurt يواجه Augsburg ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Hamburg يواجه Mainz ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Angers يواجه Rennes ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Marseille يواجه Paris FC ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Troyes يواجه Strasbourg ضمن الدوري الفرنسي"
     }
   ]
 }

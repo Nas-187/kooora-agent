@@ -396,6 +396,126 @@ def update_results_archive() -> list:
     return archive
 
 
+POSITION_AR = {
+    "Goalkeeper": "حارس مرمى",
+    "Defender": "مدافع",
+    "Midfielder": "وسط",
+    "Attacker": "مهاجم",
+}
+
+PLAYERS_BIO_FILE = "players_bio.json"
+# نحدّ عدد اللاعبين الجدد اللي نجيب تفاصيلهم/نولّد قصتهم كل تشغيل، عشان
+# ما نستهلك حصة TheSportsDB وGemini المجانية دفعة وحدة على آلاف اللاعبين -
+# القصة تُبنى تدريجياً وتُخزّن بشكل دائم لأنها ما تتغير غالباً
+MAX_NEW_PLAYER_BIOS_PER_RUN = 12
+
+
+def fetch_player_detail(player_id: str):
+    """يجيب التفاصيل الكاملة للاعب وحيد (جنسية، طول، وزن، تاريخ توقيعه...) من TheSportsDB."""
+    url = f"{THESPORTSDB_BASE}/lookupplayer.php"
+    response = requests.get(url, params={"id": player_id}, timeout=20)
+    response.raise_for_status()
+    players = response.json().get("players") or []
+    return players[0] if players else None
+
+
+def build_player_facts(detail: dict) -> dict:
+    """يستخرج الحقائق الرقمية فقط (بدون أي نص سيرة ذاتية منسوخ) من بيانات TheSportsDB."""
+    age = None
+    if detail.get("dateBorn"):
+        try:
+            born = datetime.strptime(detail["dateBorn"], "%Y-%m-%d")
+            age = (datetime.now() - born).days // 365
+        except ValueError:
+            pass
+
+    transfermarkt_id = detail.get("idTransferMkt")
+    return {
+        "nationality": detail.get("strNationality"),
+        "birth_place": detail.get("strBirthLocation"),
+        "birth_date": detail.get("dateBorn"),
+        "age": age,
+        "height": detail.get("strHeight"),
+        "weight": detail.get("strWeight"),
+        "position": detail.get("strPosition"),
+        "team": detail.get("strTeam"),
+        "joined": detail.get("dateSigned"),
+        "transfermarkt_url": (
+            f"https://www.transfermarkt.com/-/profil/spieler/{transfermarkt_id}"
+            if transfermarkt_id else None
+        ),
+    }
+
+
+def fallback_player_bio(name: str, facts: dict) -> str:
+    """جملة وصفية بسيطة بدون ذكاء اصطناعي - تُستخدم لو Gemini فشل أو تجاوزنا الحصة."""
+    parts = [name]
+    if facts.get("position"):
+        parts.append(f"يلعب في مركز {POSITION_AR.get(facts['position'], facts['position'])}")
+    if facts.get("team"):
+        parts.append(f"مع {facts['team']}")
+    if facts.get("nationality"):
+        parts.append(f"وهو لاعب {facts['nationality']}")
+    if facts.get("age"):
+        parts.append(f"يبلغ من العمر {facts['age']} عاماً")
+    return " ".join(parts) + "."
+
+
+def generate_player_bio(name: str, facts: dict) -> str:
+    """
+    يستخدم Gemini عشان يصيغ فقرة قصيرة أصلية عن اللاعب، معتمدة حصراً على
+    الحقائق الرقمية المُعطاة له (بدون نسخ أي نص سيرة ذاتية جاهز من مصدر
+    خارجي، وبدون اختلاق أي معلومة غير موجودة بالحقائق).
+    """
+    facts_lines = "\n".join(f"- {k}: {v}" for k, v in facts.items() if v)
+    prompt = f"""اكتب فقرة قصيرة (2-3 جمل) بالعربية الفصحى تعرّف بهذا اللاعب،
+معتمداً حصراً على الحقائق التالية بدون إضافة أي معلومة غير مذكورة هنا
+وبدون تخمين أي رقم أو حدث غير موجود:
+
+الاسم: {name}
+{facts_lines}
+
+اكتب الفقرة مباشرة بدون مقدمات أو عناوين."""
+
+    try:
+        response = gemini_client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
+        return response.text.strip()
+    except Exception as e:
+        print(f"تعذّر توليد قصة اللاعب {name} عبر Gemini ({e}) - استخدام نص بديل تلقائي.")
+        return fallback_player_bio(name, facts)
+
+
+def update_players_bio_cache(squads: dict) -> dict:
+    """
+    يجيب تفاصيل وقصة كل لاعب جديد ظهر بأي تشكيلة وما عندنا بياناته مخزّنة
+    بعد، بحد أقصى MAX_NEW_PLAYER_BIOS_PER_RUN لكل تشغيل عشان نحافظ على
+    حصص TheSportsDB وGemini المجانية - القصص تتراكم تدريجياً وتُخزّن بشكل
+    دائم لأنها ما تتغير كل يوم.
+    """
+    bios = load_json_file(PLAYERS_BIO_FILE, {})
+    all_player_ids = [p["id"] for players in squads.values() for p in players if p.get("id")]
+    new_ids = [pid for pid in all_player_ids if str(pid) not in bios][:MAX_NEW_PLAYER_BIOS_PER_RUN]
+
+    for player_id in new_ids:
+        print(f"جاري جلب تفاصيل وبناء قصة اللاعب رقم {player_id}...")
+        try:
+            detail = fetch_player_detail(player_id)
+            if not detail:
+                continue
+            facts = build_player_facts(detail)
+            bio_text = generate_player_bio(detail.get("strPlayer", ""), facts)
+            bios[str(player_id)] = {"facts": facts, "bio": bio_text}
+        except Exception as e:
+            print(f"تعذّر بناء قصة اللاعب {player_id} ({e}).")
+        time.sleep(0.15)
+
+    if new_ids:
+        save_json_file(PLAYERS_BIO_FILE, bios)
+        print(f"أُضيفت قصص {len(new_ids)} لاعب جديد (الإجمالي: {len(bios)}).")
+
+    return bios
+
+
 SQUADS_FILE = "squads.json"
 
 
@@ -499,7 +619,8 @@ def calculate_standings_from_results(league_matches: list):
 def run_standings_pipeline():
     print("جاري تحديث أرشيف نتائج الدوريات المحلي...")
     archive = update_results_archive()
-    update_squads_cache(archive)
+    squads = update_squads_cache(archive)
+    update_players_bio_cache(squads)
 
     all_standings = {}
     for league_id, league_name in TARGET_LEAGUES.items():

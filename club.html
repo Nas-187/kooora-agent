@@ -117,6 +117,46 @@
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
   }
 
+  .player-card{ cursor:pointer; }
+
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(10,15,12,0.55); display:none;
+    align-items:center; justify-content:center; padding:20px; z-index:50;
+  }
+  .modal-overlay.open{ display:flex; }
+  .modal-box{
+    background:var(--card); border-radius:16px; max-width:420px; width:100%;
+    max-height:88vh; overflow-y:auto; position:relative; box-shadow:0 20px 50px rgba(0,0,0,0.3);
+  }
+  .modal-close{
+    position:absolute; top:12px; left:12px; width:32px; height:32px; border-radius:50%;
+    border:none; background:rgba(0,0,0,0.35); color:#fff; font-size:16px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; z-index:2;
+  }
+  .modal-photo-wrap{
+    background:linear-gradient(160deg, var(--pitch) 0%, var(--pitch-dark) 100%);
+    height:180px; display:flex; align-items:flex-end; justify-content:center; overflow:hidden;
+  }
+  .modal-photo-wrap img{ height:190px; object-fit:cover; object-position:top; }
+  .modal-body{ padding:20px 22px 26px; }
+  .modal-name{ font-size:20px; font-weight:800; margin-bottom:2px; }
+  .modal-position{
+    display:inline-block; margin-bottom:14px; font-size:11px; font-weight:800; color:var(--pitch);
+    background:rgba(15,61,46,0.1); padding:3px 10px; border-radius:100px;
+  }
+  .modal-facts{
+    display:grid; grid-template-columns:1fr 1fr; gap:10px 14px; margin-bottom:16px;
+    padding-bottom:16px; border-bottom:1px solid var(--line);
+  }
+  .modal-fact .flabel{ font-size:10.5px; color:var(--ink-soft); font-weight:700; }
+  .modal-fact .fvalue{ font-size:13px; font-weight:800; }
+  .modal-bio{ font-size:13.5px; line-height:1.8; color:var(--ink); margin-bottom:16px; }
+  .modal-tm-link{
+    display:inline-block; font-size:12.5px; font-weight:800; color:var(--pitch);
+    text-decoration:none; border:1px solid var(--pitch); border-radius:8px; padding:8px 14px;
+  }
+  .modal-tm-link:hover{ background:var(--pitch); color:var(--cream); }
+
   footer{
     background:var(--pitch-dark); color:rgba(246,243,236,0.55);
     text-align:center; padding:26px; font-size:13px; margin-top:40px;
@@ -162,6 +202,10 @@
 </main>
 
 <footer>&copy; كورة ايجنت 2026</footer>
+
+<div class="modal-overlay" id="player-modal">
+  <div class="modal-box" id="player-modal-box"></div>
+</div>
 
 <script>
 function applyTheme(t){
@@ -251,9 +295,63 @@ const POSITION_AR = {
   'Attacker': 'مهاجم',
 };
 
-fetch('squads.json?t=' + Date.now())
-  .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(squads => {
+let playersBio = {};
+
+const FACT_LABELS = {
+  nationality: 'الجنسية',
+  birth_place: 'مكان الميلاد',
+  birth_date: 'تاريخ الميلاد',
+  age: 'العمر',
+  height: 'الطول',
+  weight: 'الوزن',
+  joined: 'تاريخ الانضمام',
+};
+
+function openPlayerModal(p){
+  const bioEntry = playersBio[String(p.id)];
+  const facts = bioEntry ? bioEntry.facts : {};
+  const bioText = bioEntry ? bioEntry.bio : 'قصة اللاعب غير متوفرة بعد.';
+
+  const factsHtml = Object.entries(FACT_LABELS)
+    .filter(([key]) => facts[key])
+    .map(([key, label]) => `
+      <div class="modal-fact">
+        <div class="flabel">${label}</div>
+        <div class="fvalue">${facts[key]}${key === 'age' && facts[key] ? ' عاماً' : ''}</div>
+      </div>`).join('');
+
+  document.getElementById('player-modal-box').innerHTML = `
+    <button type="button" class="modal-close" id="modal-close-btn">✕</button>
+    <div class="modal-photo-wrap">${p.photo ? `<img src="${p.photo}" alt="${p.name}" onerror="this.remove()">` : ''}</div>
+    <div class="modal-body">
+      <div class="modal-name">${p.name}</div>
+      <span class="modal-position">${POSITION_AR[p.position] || p.position || ''}</span>
+      ${factsHtml ? `<div class="modal-facts">${factsHtml}</div>` : ''}
+      <p class="modal-bio">${bioText}</p>
+      ${facts.transfermarkt_url ? `<a class="modal-tm-link" href="${facts.transfermarkt_url}" target="_blank" rel="noopener">القيمة السوقية على Transfermarkt ↗</a>` : ''}
+    </div>`;
+
+  document.getElementById('player-modal').classList.add('open');
+  document.getElementById('modal-close-btn').addEventListener('click', closePlayerModal);
+}
+
+function closePlayerModal(){
+  document.getElementById('player-modal').classList.remove('open');
+}
+
+document.getElementById('player-modal').addEventListener('click', (e) => {
+  if(e.target.id === 'player-modal') closePlayerModal();
+});
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape') closePlayerModal();
+});
+
+Promise.all([
+  fetch('squads.json?t=' + Date.now()).then(res => { if(!res.ok) throw 0; return res.json(); }),
+  fetch('players_bio.json?t=' + Date.now()).then(res => res.ok ? res.json() : {}).catch(() => ({})),
+])
+  .then(([squads, bios]) => {
+    playersBio = bios;
     const players = squads[String(clubId)] || [];
     const grid = document.getElementById('squad-grid');
 
@@ -262,8 +360,8 @@ fetch('squads.json?t=' + Date.now())
       return;
     }
 
-    grid.innerHTML = players.map(p => `
-      <div class="player-card">
+    grid.innerHTML = players.map((p, i) => `
+      <div class="player-card" data-index="${i}">
         <div class="number">${p.number ?? ''}</div>
         <div class="photo-wrap">${p.photo ? `<img src="${p.photo}" alt="${p.name}" loading="lazy" onerror="this.remove()">` : ''}</div>
         <div class="info">
@@ -271,6 +369,10 @@ fetch('squads.json?t=' + Date.now())
           <span class="p-position">${POSITION_AR[p.position] || p.position || ''}</span>
         </div>
       </div>`).join('');
+
+    grid.querySelectorAll('.player-card').forEach(card => {
+      card.addEventListener('click', () => openPlayerModal(players[Number(card.dataset.index)]));
+    });
   })
   .catch(() => {
     document.getElementById('squad-grid').innerHTML = '<div class="empty-state" style="grid-column:1/-1">تعذّر تحميل التشكيلة</div>';

@@ -110,6 +110,14 @@
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
   }
 
+  /* ===== مساحات إعلانية (Google AdSense لاحقاً) ===== */
+  .ad-slot{
+    background:var(--card); border:1px dashed var(--line); border-radius:12px;
+    min-height:100px; display:flex; align-items:center; justify-content:center;
+    color:var(--ink-soft); font-size:11px; font-weight:700; margin:24px 0; letter-spacing:.5px;
+  }
+
+
   /* ===== نتائج المباريات - بطاقات أفقية مدمجة بشبكة ===== */
   #articles-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(380px, 1fr)); gap:16px; }
   .result-row{
@@ -177,6 +185,7 @@
     <span class="league-badge" id="article-count">0 نتيجة</span>
   </div>
   <div id="articles-list"></div>
+  <!-- إعلان AdSense لاحقاً هنا --><div class="ad-slot">مساحة إعلانية</div>
 </main>
 
 <footer>&copy; كورة ايجنت 2026</footer>

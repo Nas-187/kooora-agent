@@ -90,6 +90,14 @@
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
   }
 
+  /* ===== مساحات إعلانية (Google AdSense لاحقاً) ===== */
+  .ad-slot{
+    background:var(--card); border:1px dashed var(--line); border-radius:12px;
+    min-height:100px; display:flex; align-items:center; justify-content:center;
+    color:var(--ink-soft); font-size:11px; font-weight:700; margin:24px 0; letter-spacing:.5px;
+  }
+
+
   /* ===== أخبار حقيقية (RSS) - بطاقات أفقية مدمجة بشبكة ===== */
   #real-news-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:16px; }
   .real-news-card{
@@ -140,6 +148,7 @@
     <span class="league-badge" id="real-news-count">0 خبر</span>
   </div>
   <div id="real-news-list"></div>
+  <!-- إعلان AdSense لاحقاً هنا --><div class="ad-slot">مساحة إعلانية</div>
 </main>
 
 <footer>&copy; كورة ايجنت 2026</footer>

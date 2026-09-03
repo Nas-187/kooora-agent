@@ -1636,5 +1636,47 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/mvf6ga1755192630.png",
     "home_goals": 3,
     "away_goals": 0
+  },
+  {
+    "event_id": "2573339",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-03",
+    "home_id": "152917",
+    "home": "Al-Diriyah",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/0m7ub31782452735.png",
+    "away_id": "136015",
+    "away": "Al-Qadsiah",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ok63wb1719134839.png",
+    "home_goals": 0,
+    "away_goals": 2
+  },
+  {
+    "event_id": "2506226",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-03",
+    "home_id": "133724",
+    "home": "Real Sociedad",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
+    "away_id": "133937",
+    "away": "Celta Vigo",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
+    "home_goals": 0,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2489485",
+    "league_id": 4334,
+    "league_name": "الدوري الفرنسي",
+    "date": "2026-09-03",
+    "home_id": "133703",
+    "home": "Toulouse",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/17eqox1688449282.png",
+    "away_id": "133711",
+    "away": "Lille",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
+    "home_goals": 0,
+    "away_goals": 1
   }
 ]

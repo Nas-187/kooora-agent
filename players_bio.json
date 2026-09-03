@@ -553,5 +553,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/818448"
     },
     "bio": "Alessandro Marcandalli يلعب في مركز مدافع مع Genoa وهو لاعب Italy يبلغ من العمر 23 عاماً."
+  },
+  "34200291": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Angers, France",
+      "birth_date": "2005-06-03",
+      "age": 21,
+      "height": "1.81 m (5 ft 11 in)",
+      "weight": "79 kg (174 lb)",
+      "position": "Left Midfield",
+      "team": "Paris SG",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/914562"
+    },
+    "bio": "Désiré Doué يلعب في مركز Left Midfield مع Paris SG وهو لاعب France يبلغ من العمر 21 عاماً."
+  },
+  "34194421": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Baghdad, Iraq",
+      "birth_date": "2002-03-06",
+      "age": 24,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "",
+      "position": "Centre-Back",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ameen Dakhil يلعب في مركز Centre-Back مع Stuttgart وهو لاعب Belgium يبلغ من العمر 24 عاماً."
+  },
+  "34247015": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Valencia, Spain",
+      "birth_date": "2005-04-25",
+      "age": 21,
+      "height": "1.90 m (6 ft 3 in)",
+      "weight": "181 lbs",
+      "position": "Central Midfield",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Chema Andrés يلعب في مركز Central Midfield مع Stuttgart وهو لاعب Spain يبلغ من العمر 21 عاماً."
+  },
+  "34174026": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Castrop-Rauxel, Germany",
+      "birth_date": "1998-01-09",
+      "age": 28,
+      "height": "1.78 m (5 ft 8 in)",
+      "weight": "152 lbs",
+      "position": "Midfielder",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/272278"
+    },
+    "bio": "Chris Führich يلعب في مركز وسط مع Stuttgart وهو لاعب Germany يبلغ من العمر 28 عاماً."
+  },
+  "34200113": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Varel, Germany",
+      "birth_date": "1996-07-19",
+      "age": 30,
+      "height": "179 cm",
+      "weight": "190 lbs",
+      "position": "Centre-Forward",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/339314"
+    },
+    "bio": "Deniz Undav يلعب في مركز Centre-Forward مع Stuttgart وهو لاعب Germany يبلغ من العمر 30 عاماً."
+  },
+  "34167607": {
+    "facts": {
+      "nationality": "Bosnia and Herzegovina",
+      "birth_place": "Hamburg, Germany",
+      "birth_date": "1998-03-25",
+      "age": 28,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "183 lbs",
+      "position": "Forward",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/335457"
+    },
+    "bio": "Ermedin Demirović يلعب في مركز Forward مع Stuttgart وهو لاعب Bosnia and Herzegovina يبلغ من العمر 28 عاماً."
+  },
+  "34145474": {
+    "facts": {
+      "nationality": "Switzerland",
+      "birth_place": "Therwil BL, Switzerland",
+      "birth_date": "1992-01-31",
+      "age": 34,
+      "height": "1.94 m (6 ft 4 in)",
+      "weight": "185 lbs",
+      "position": "Goalkeeper",
+      "team": "Genoa",
+      "joined": "2012-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/111426"
+    },
+    "bio": "Benjamin Siegrist يلعب في مركز حارس مرمى مع Genoa وهو لاعب Switzerland يبلغ من العمر 34 عاماً."
+  },
+  "34203485": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "London, England",
+      "birth_date": "2004-01-12",
+      "age": 22,
+      "height": "181 cm",
+      "weight": "152 lbs",
+      "position": "Defender",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/728733"
+    },
+    "bio": "Brooke Norton-Cuffy يلعب في مركز مدافع مع Genoa وهو لاعب England يبلغ من العمر 22 عاماً."
+  },
+  "34148287": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Villafranca di Verona, Italy",
+      "birth_date": "1994-03-23",
+      "age": 32,
+      "height": "1.82 m",
+      "weight": "174 lbs",
+      "position": "Forward",
+      "team": "Genoa",
+      "joined": "2013-01-25",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/199953"
+    },
+    "bio": "Caleb Ekuban يلعب في مركز Forward مع Genoa وهو لاعب Italy يبلغ من العمر 32 عاماً."
+  },
+  "34147217": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Roma, Italy",
+      "birth_date": "1983-07-24",
+      "age": 43,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "83 kg (183 lb)",
+      "position": "Manager",
+      "team": "Genoa",
+      "joined": "2001-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/5947"
+    },
+    "bio": "Daniele De Rossi يلعب في مركز Manager مع Genoa وهو لاعب Italy يبلغ من العمر 43 عاماً."
+  },
+  "34220155": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Genova, Italy",
+      "birth_date": "1997-07-18",
+      "age": 29,
+      "height": "6' 1\"",
+      "weight": "168 lbs",
+      "position": "Goalkeeper",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/312773"
+    },
+    "bio": "Daniele Sommariva يلعب في مركز حارس مرمى مع Genoa وهو لاعب Italy يبلغ من العمر 29 عاماً."
+  },
+  "34300520": {
+    "facts": {
+      "nationality": "Austria",
+      "birth_place": "",
+      "birth_date": "2005-01-26",
+      "age": 21,
+      "height": "183 cm",
+      "weight": "",
+      "position": "Left-Back",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "David Puczka يلعب في مركز Left-Back مع Genoa وهو لاعب Austria يبلغ من العمر 21 عاماً."
   }
 }

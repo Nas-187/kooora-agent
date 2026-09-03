@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27%230F3D2E%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27none%27%20stroke%3D%27%23C9973F%27%20stroke-width%3D%275%27/%3E%3Ctext%20x%3D%2750%27%20y%3D%2769%27%20font-family%3D%27Georgia%2C%20serif%27%20font-weight%3D%27700%27%20font-size%3D%2756%27%20fill%3D%27%23C9973F%27%20text-anchor%3D%27middle%27%3E%D9%83%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --pitch:#0F3D2E;
@@ -25,6 +25,9 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+    --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
+    --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
+    --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
   }
   :root[data-theme="dark"]{
     --cream:#121712;
@@ -32,10 +35,15 @@
     --ink:#EFEFEA;
     --ink-soft:#9AA39A;
     --line:#2b352c;
+    --shadow-sm:0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.22);
+    --shadow-md:0 6px 20px rgba(0,0,0,0.4);
+    --shadow-lg:0 16px 40px rgba(0,0,0,0.5);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; overflow-x:hidden; }
-  h1,h2,h3,.num,.brand{ font-family:'Almarai', sans-serif; }
+  h1,h2,h3,.num,.brand{ font-family:'Changa', sans-serif; }
+  .num, .score-block .num, .mr-badge, .rr-score, .tm-score, .article-score, .feed-score,
+  .result-score, .hero-score, .ticker-item .t-score{ font-variant-numeric:tabular-nums; letter-spacing:.3px; }
 
   header{
     background:var(--pitch);
@@ -46,7 +54,12 @@
   }
   .topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; gap:14px; }
   .brand{ font-size:26px; font-weight:900; color:var(--cream); display:flex; align-items:center; gap:10px; }
-  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
+  .brand .mark{
+    width:30px; height:30px; border-radius:50%; flex-shrink:0;
+    background:var(--pitch-dark); border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Changa'; font-weight:800; font-size:15px; color:var(--gold);
+  }
   nav{ display:flex; align-items:center; gap:28px; font-size:15px; font-weight:700; flex-wrap:wrap; }
   nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
   nav a.active{ color:var(--gold); }
@@ -101,7 +114,7 @@
   .result-row{
     display:flex; align-items:stretch; gap:16px; background:var(--card); border:1px solid var(--line);
     border-radius:14px; padding:16px; position:relative; overflow:hidden; min-height:120px;
-    box-shadow:0 1px 2px rgba(26,31,28,0.04);
+    box-shadow:var(--shadow-sm);
   }
   .result-row::before{ content:''; position:absolute; top:0; right:0; bottom:0; width:4px; background:var(--pitch); }
   .result-row.live::before{ background:var(--line-red); }
@@ -109,7 +122,7 @@
   .rr-teams{ display:flex; align-items:center; gap:7px; }
   .rr-crest{ width:30px; height:30px; border-radius:50%; overflow:hidden; background:var(--pitch); flex-shrink:0; }
   .rr-crest img{ width:100%; height:100%; object-fit:contain; padding:2px; }
-  .rr-score{ font-family:'Almarai'; font-weight:900; font-size:17px; flex-shrink:0; min-width:42px; text-align:center; }
+  .rr-score{ font-family:'Changa'; font-weight:900; font-size:17px; flex-shrink:0; min-width:42px; text-align:center; }
   .rr-names{ font-size:10.5px; font-weight:700; color:var(--ink-soft); text-align:center; margin-top:7px; line-height:1.4; }
   .rr-content{ flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:7px; }
   .rr-league{ display:flex; align-items:center; gap:6px; font-size:11.5px; font-weight:800; color:var(--gold); }
@@ -134,7 +147,7 @@
 
 <header>
   <div class="topbar">
-    <div class="brand"><span class="dot"></span> كورة ايجنت</div>
+    <div class="brand"><span class="mark">ك</span> كورة ايجنت</div>
     <nav>
       <a href="index.html">الرئيسية</a>
       <a href="matches.html">مباريات اليوم</a>

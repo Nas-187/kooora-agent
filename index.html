@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27%230F3D2E%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27none%27%20stroke%3D%27%23C9973F%27%20stroke-width%3D%275%27/%3E%3Ctext%20x%3D%2750%27%20y%3D%2769%27%20font-family%3D%27Georgia%2C%20serif%27%20font-weight%3D%27700%27%20font-size%3D%2756%27%20fill%3D%27%23C9973F%27%20text-anchor%3D%27middle%27%3E%D9%83%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --pitch:#0F3D2E;
@@ -25,6 +25,9 @@
     --line-red:#C0392B;
     --card:#FFFFFF;
     --line:#E4DFD2;
+    --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
+    --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
+    --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
   }
   :root[data-theme="dark"]{
     --cream:#121712;
@@ -32,6 +35,9 @@
     --ink:#EFEFEA;
     --ink-soft:#9AA39A;
     --line:#2b352c;
+    --shadow-sm:0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.22);
+    --shadow-md:0 6px 20px rgba(0,0,0,0.4);
+    --shadow-lg:0 16px 40px rgba(0,0,0,0.5);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{
@@ -41,16 +47,21 @@
     line-height:1.5;
     overflow-x:hidden;
   }
-  h1,h2,h3,.num,.brand{ font-family:'Almarai', sans-serif; }
+  h1,h2,h3,.num,.brand{ font-family:'Changa', sans-serif; }
+  .num, .score-block .num, .mr-badge, .rr-score, .tm-score, .article-score, .feed-score,
+  .result-score, .hero-score, .ticker-item .t-score{ font-variant-numeric:tabular-nums; letter-spacing:.3px; }
 
   /* ===== Header ===== */
   header{
-    background:var(--pitch);
+    background:linear-gradient(165deg, var(--pitch) 0%, var(--pitch-dark) 130%);
     background-image:
-      radial-gradient(circle at 15% 20%, rgba(255,255,255,0.04) 0, transparent 45%),
+      linear-gradient(165deg, var(--pitch) 0%, var(--pitch-dark) 130%),
+      radial-gradient(circle at 15% 15%, rgba(255,255,255,0.05) 0, transparent 45%),
       repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 68px);
     color:var(--cream);
     padding:22px 6vw 30px;
+    border-bottom:1px solid rgba(201,151,63,0.35);
+    box-shadow:0 18px 40px -24px rgba(0,0,0,0.55);
   }
   .topbar{
     display:flex; align-items:center; justify-content:space-between;
@@ -60,7 +71,12 @@
     font-size:26px; font-weight:900; color:var(--cream);
     display:flex; align-items:center; gap:10px;
   }
-  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--gold); }
+  .brand .mark{
+    width:30px; height:30px; border-radius:50%; flex-shrink:0;
+    background:var(--pitch-dark); border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Changa'; font-weight:800; font-size:15px; color:var(--gold);
+  }
   nav{ display:flex; align-items:center; gap:28px; font-size:15px; font-weight:700; flex-wrap:wrap; }
   nav a{ color:rgba(246,243,236,0.75); text-decoration:none; }
   nav a.active{ color:var(--gold); }
@@ -99,7 +115,7 @@
   }
   .ticker-item .t-crest{ width:18px; height:18px; border-radius:50%; overflow:hidden; flex-shrink:0; background:rgba(255,255,255,0.1); }
   .ticker-item .t-crest img{ width:100%; height:100%; object-fit:contain; }
-  .ticker-item .t-score{ color:var(--gold); font-family:'Almarai'; font-weight:900; }
+  .ticker-item .t-score{ color:var(--gold); font-family:'Changa'; font-weight:900; }
   .ticker-item.live .t-score{ color:#e8664f; }
 
   /* ===== Layout ===== */
@@ -156,7 +172,7 @@
     padding:5px 13px; border-radius:100px; display:flex; align-items:center; gap:5px;
   }
   .hero-score{
-    color:var(--cream); font-family:'Almarai'; font-weight:900;
+    color:var(--cream); font-family:'Changa'; font-weight:900;
     font-size:clamp(30px,4.4vw,46px); letter-spacing:1px; margin-bottom:6px;
   }
   .hero-score .vs{ font-size:.5em; color:var(--gold); font-weight:700; margin:0 10px; }
@@ -206,7 +222,7 @@
     padding:20px; margin-bottom:0;
     display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap:14px;
     position:relative; overflow:hidden;
-    box-shadow:0 1px 2px rgba(26,31,28,0.04);
+    box-shadow:var(--shadow-sm);
     transition:box-shadow .15s, transform .15s;
   }
   .match-card:hover{ box-shadow:0 10px 24px rgba(26,31,28,0.1); transform:translateY(-2px); }
@@ -235,12 +251,12 @@
     width:36px; height:36px; border-radius:50%;
     background:var(--pitch); color:var(--cream);
     display:flex; align-items:center; justify-content:center;
-    font-family:'Almarai'; font-weight:800; font-size:13px; flex-shrink:0;
+    font-family:'Changa'; font-weight:800; font-size:13px; flex-shrink:0;
     overflow:hidden; box-shadow:0 0 0 3px var(--cream), 0 0 0 4px var(--line);
   }
   .crest img{ width:100%; height:100%; object-fit:contain; padding:3px; }
   .score-block{ text-align:center; min-width:96px; }
-  .score-block .num{ font-family:'Almarai'; font-size:26px; font-weight:900; letter-spacing:2px; }
+  .score-block .num{ font-family:'Changa'; font-size:26px; font-weight:900; letter-spacing:2px; }
   .score-block .status{
     font-size:10.5px; font-weight:700; color:var(--ink-soft); margin-top:2px;
   }
@@ -301,7 +317,7 @@
   .match-league-tab.active .m-name{ color:rgba(246,243,236,0.8); }
   .match-league-tab.active .m-count{ color:var(--gold); }
 
-  .kickoff-time{ font-family:'Almarai'; font-size:19px; font-weight:900; color:var(--pitch); }
+  .kickoff-time{ font-family:'Changa'; font-size:19px; font-weight:900; color:var(--pitch); }
   .kickoff-label{ font-size:10.5px; font-weight:700; color:var(--ink-soft); margin-top:2px; }
 
   /* ===== Day tabs ===== */
@@ -342,7 +358,7 @@
   .tmatch-card .tm-team span{
     font-size:10.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%;
   }
-  .tmatch-card .tm-score{ font-family:'Almarai'; font-size:17px; font-weight:900; flex-shrink:0; padding:0 4px; }
+  .tmatch-card .tm-score{ font-family:'Changa'; font-size:17px; font-weight:900; flex-shrink:0; padding:0 4px; }
 
   .standings-table{ width:100%; border-collapse:collapse; font-size:13.5px; }
   .standings-table th{
@@ -379,7 +395,7 @@
   .feed-card{
     background:var(--card); border:1px solid var(--line); border-radius:14px;
     padding:20px; margin-bottom:14px; position:relative; overflow:hidden;
-    box-shadow:0 1px 2px rgba(26,31,28,0.04);
+    box-shadow:var(--shadow-sm);
   }
   .feed-card::before{ content:''; position:absolute; top:0; right:0; bottom:0; width:4px; background:var(--pitch); }
   .feed-card.live::before{ background:var(--line-red); }
@@ -391,7 +407,7 @@
   .feed-team{ display:flex; flex-direction:column; align-items:center; gap:6px; flex:1; }
   .feed-team .crest{ width:38px; height:38px; }
   .feed-team span{ font-weight:700; font-size:12.5px; text-align:center; }
-  .feed-score{ font-family:'Almarai'; font-size:22px; font-weight:900; flex-shrink:0; }
+  .feed-score{ font-family:'Changa'; font-size:22px; font-weight:900; flex-shrink:0; }
   .feed-body{ font-size:13.5px; color:var(--ink-soft); line-height:1.85; border-top:1px dashed var(--line); padding-top:12px; }
 </style>
 </head>
@@ -399,7 +415,7 @@
 
 <header>
   <div class="topbar">
-    <div class="brand"><span class="dot"></span> كورة ايجنت</div>
+    <div class="brand"><span class="mark">ك</span> كورة ايجنت</div>
     <nav>
       <a href="index.html" class="active">الرئيسية</a>
       <a href="matches.html">مباريات اليوم</a>

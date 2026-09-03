@@ -257,14 +257,17 @@
   .sidebar-card{
     background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px;
   }
-  .news-item{
-    display:block; padding:14px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit;
+  #news-list{
+    display:flex; gap:12px; overflow-x:auto; padding:6px 2px; scrollbar-width:thin;
   }
-  .news-item:last-child{ border-bottom:none; }
+  .news-item{
+    display:block; flex:0 0 210px; padding:14px; border:1px solid var(--line); border-radius:10px;
+    text-decoration:none; color:inherit; background:var(--cream);
+  }
   .news-item .tag{
     font-size:11px; font-weight:700; color:var(--gold); margin-bottom:4px; display:block;
   }
-  .news-item .title{ font-size:14.5px; font-weight:700; line-height:1.5; }
+  .news-item .title{ font-size:13.5px; font-weight:700; line-height:1.5; }
 
   .league-tabs{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
   .league-tab{
@@ -379,7 +382,7 @@
       <div class="section-head">
         <h2>آخر الأخبار</h2>
       </div>
-      <div class="sidebar-card" id="news-list" style="padding:6px 20px;"></div>
+      <div id="news-list"></div>
     </section>
   </aside>
 </main>

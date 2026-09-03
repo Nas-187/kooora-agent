@@ -876,11 +876,84 @@ def fetch_bbc_feed(feed_url: str, fixed_league_id=None) -> list:
     return items
 
 
+TRANSLATIONS_FILE = "news_translations.json"
+# نحدّ عدد الترجمات الجديدة كل تشغيل عشان نحافظ على حصة Gemini المجانية
+# (نفس أسلوب قصص اللاعبين بالضبط) - كل خبر يُترجم مرة وحدة بس ويُخزّن
+# بشكل دائم بربطه برابطه، فالمخزون يتراكم تدريجياً
+MAX_NEW_TRANSLATIONS_PER_RUN = 15
+
+
+def translate_to_arabic(title: str, excerpt: str):
+    """
+    يترجم عنوان ومقتطف خبر حقيقي من BBC Sport للعربية بالذكاء الاصطناعي -
+    ترجمة بس، بدون أي إضافة أو حذف أو تلخيص لمعلومة، عشان يضل الخبر نفسه
+    بالضبط بس بلغة عربية. لو فشلت الترجمة (تجاوز حصة مثلاً) نرجع None
+    ونستخدم النص الإنجليزي الأصلي مؤقتاً لين تنترجم بتشغيل لاحق.
+    """
+    prompt = f"""ترجم هذا العنوان والمقتطف الإخباريين من الإنجليزية للعربية
+الفصحى الإخبارية، ترجمة دقيقة وأمينة بدون أي إضافة أو حذف أو تلخيص لأي
+معلومة موجودة بالنص الأصلي:
+
+العنوان: {title}
+المقتطف: {excerpt}
+
+رجّع النتيجة بصيغة JSON بالضبط بدون أي نص إضافي حولها:
+{{"title": "الترجمة هنا", "excerpt": "الترجمة هنا"}}"""
+
+    try:
+        response = gemini_client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
+        raw = response.text.strip()
+        raw = re.sub(r"^```(json)?|```$", "", raw.strip(), flags=re.MULTILINE).strip()
+        data = json.loads(raw)
+        if data.get("title") and data.get("excerpt"):
+            return data["title"], data["excerpt"]
+    except Exception as e:
+        print(f"تعذّر ترجمة الخبر ({e}) - هيستخدم النص الأصلي مؤقتاً.")
+    return None
+
+
+def translate_bbc_items(items: list) -> list:
+    """يترجم عناصر BBC للعربية تدريجياً (بحد أقصى لكل تشغيل) مع تخزين دائم بالرابط."""
+    cache = load_json_file(TRANSLATIONS_FILE, {})
+    new_count = 0
+
+    for item in items:
+        if item["source"] != BBC_SOURCE_NAME:
+            continue
+
+        cached = cache.get(item["link"])
+        if cached:
+            item["title"] = cached["title"]
+            item["excerpt"] = cached["excerpt"]
+            continue
+
+        if new_count >= MAX_NEW_TRANSLATIONS_PER_RUN:
+            continue
+
+        translated = translate_to_arabic(item["title"], item["excerpt"])
+        if translated:
+            title_ar, excerpt_ar = translated
+            cache[item["link"]] = {"title": title_ar, "excerpt": excerpt_ar}
+            item["title"] = title_ar
+            item["excerpt"] = excerpt_ar
+            new_count += 1
+
+    if new_count:
+        save_json_file(TRANSLATIONS_FILE, cache)
+        print(f"تُرجمت {new_count} خبر جديد للعربية (الإجمالي المخزّن: {len(cache)}).")
+
+    return items
+
+
 def fetch_real_news_from_rss() -> list:
     """يجمع الأخبار الحقيقية من كل المصادر (الرياضية + BBC Sport) مع تصنيف كل خبر لدوريه."""
     items = fetch_arriyadiyah_news()
     items += fetch_bbc_feed(BBC_PL_FEED_URL, fixed_league_id=4328)
     items += fetch_bbc_feed(BBC_EURO_FEED_URL)
+    items = translate_bbc_items(items)
+    # لين تترجم كل الأخبار الإنجليزية تدريجياً، نستبعد اللي لسى ما تُرجمت
+    # عشان الموقع يعرض عربي بس دايماً بدون أي نص إنجليزي مؤقت
+    items = [it for it in items if it["source"] != BBC_SOURCE_NAME or it["link"] in load_json_file(TRANSLATIONS_FILE, {})]
     return items
 
 

@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "football-agent-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add matches.json standings.json news.json real_news.json results_archive.json squads.json sync_state.json cover_images.json players_bio.json
+          git add matches.json standings.json news.json real_news.json results_archive.json squads.json sync_state.json cover_images.json players_bio.json news_translations.json
           git diff --staged --quiet || git commit -m "تحديث تلقائي لنتائج المباريات والترتيب والأخبار"
           git pull --rebase origin main
           git push

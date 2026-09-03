@@ -140,6 +140,26 @@
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
   }
 
+  /* ===== أخبار حقيقية (RSS) ===== */
+  .real-news-card{
+    display:block; background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:0; margin-bottom:16px; overflow:hidden; text-decoration:none; color:inherit;
+    box-shadow:0 1px 2px rgba(26,31,28,0.04); transition:box-shadow .15s, transform .15s;
+  }
+  .real-news-card:hover{ box-shadow:0 10px 24px rgba(26,31,28,0.1); transform:translateY(-2px); }
+  .real-news-card .rn-image{ height:190px; background:var(--pitch); overflow:hidden; }
+  .real-news-card .rn-image img{ width:100%; height:100%; object-fit:cover; }
+  .real-news-card .rn-body{ padding:16px 18px 18px; }
+  .real-news-card .rn-title{ font-size:16px; font-weight:800; line-height:1.5; margin-bottom:8px; }
+  .real-news-card .rn-excerpt{ font-size:13px; color:var(--ink-soft); line-height:1.8; margin-bottom:12px; }
+  .real-news-card .rn-meta{
+    display:flex; align-items:center; justify-content:space-between; font-size:11px;
+    color:var(--ink-soft); font-weight:700; padding-top:10px; border-top:1px dashed var(--line);
+  }
+  .real-news-card .rn-source{ color:var(--gold); }
+  .real-news-card .rn-link{ color:var(--pitch); }
+  :root[data-theme="dark"] .real-news-card .rn-link{ color:var(--gold); }
+
   footer{
     background:var(--pitch-dark); color:rgba(246,243,236,0.55);
     text-align:center; padding:26px; font-size:13px; margin-top:40px;
@@ -167,6 +187,12 @@
 <div class="headline-strip-wrap"><div class="headline-strip" id="headline-strip"></div></div>
 
 <main>
+  <div class="section-head">
+    <h2>آخر الانتقالات والأخبار</h2>
+    <span class="league-badge" id="real-news-count">0 خبر</span>
+  </div>
+  <div id="real-news-list" style="margin-bottom:40px"></div>
+
   <div class="section-head" style="border-bottom-color:var(--gold); margin-bottom:22px">
     <h2>نتائج المباريات</h2>
   </div>
@@ -294,6 +320,43 @@ fetch('news.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
   .then(data => { allNews = data; renderHeadlines(); })
   .catch(() => {});
+
+function timeAgoAr(pubDate){
+  const diffMs = Date.now() - new Date(pubDate).getTime();
+  const hours = Math.floor(diffMs / 3600000);
+  if(hours < 1) return 'قبل دقائق';
+  if(hours < 24) return `قبل ${hours} ساعة`;
+  const days = Math.floor(hours / 24);
+  return `قبل ${days} يوم`;
+}
+
+function renderRealNews(items){
+  const list = document.getElementById('real-news-list');
+  document.getElementById('real-news-count').textContent = items.length + ' خبر';
+
+  if(items.length === 0){
+    list.innerHTML = '<div class="empty-state">ما فيه أخبار حقيقية مجهزة حالياً — راجع لاحقاً بعد تحديث البيانات</div>';
+    return;
+  }
+
+  list.innerHTML = items.map(n => `
+    <a class="real-news-card" href="${n.link}" target="_blank" rel="noopener">
+      ${n.image ? `<div class="rn-image"><img src="${n.image}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
+      <div class="rn-body">
+        <div class="rn-title">${n.title}</div>
+        <div class="rn-excerpt">${n.excerpt}</div>
+        <div class="rn-meta">
+          <span class="rn-source">المصدر: ${n.source}${n.author && n.author !== n.source ? ' · ' + n.author : ''}${n.published ? ' · ' + timeAgoAr(n.published) : ''}</span>
+          <span class="rn-link">قراءة الخبر كاملاً ↗</span>
+        </div>
+      </div>
+    </a>`).join('');
+}
+
+fetch('real_news.json?t=' + Date.now())
+  .then(res => { if(!res.ok) throw 0; return res.json(); })
+  .then(data => renderRealNews(data || []))
+  .catch(() => renderRealNews([]));
 </script>
 
 </body>

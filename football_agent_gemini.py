@@ -18,10 +18,12 @@ TheSportsDB يدعم الموسم الحالي وحتى الأرشيف التا�
     THESPORTSDB_API_KEY  -> اختياري، الافتراضي "3" (مفتاح تجريبي عام مجاني)
 """
 
+import re
 import requests
 import json
 import os
 import time
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from google import genai
 
@@ -680,6 +682,89 @@ def build_news_items(matches: list, standings: dict) -> dict:
 
 
 # ============================================================
+# 4) أخبار حقيقية (انتقالات، شائعات، تكتيك...) من مصدر صحفي فعلي عبر RSS
+#    - بدون أي ذكاء اصطناعي وبدون أي مفتاح API أو فوترة، العناوين
+#    والصور والنص كلها منشورة أصلاً من "الرياضية" وننسبها لهم بوضوح
+#    مع رابط مباشر للمقال الكامل عندهم، بدل ما ننسخ محتواهم كامل
+# ============================================================
+
+RSS_FEED_URL = "https://www.arriyadiyah.com/rss"
+RSS_SOURCE_NAME = "الرياضية"
+MAX_RSS_ITEMS = 20
+
+# كلمات مفتاحية عشان نفلتر بس الأخبار المتعلقة بكرة القدم من فيد رياضي
+# عام (فيه أخبار تنس ورياضات ثانية أحياناً) - فلترة على العناوين
+# الحقيقية نفسها، بدون أي تعديل أو توليد
+FOOTBALL_KEYWORDS = [
+    "كرة القدم", "الدوري", "نادي", "الاتحاد", "النصر", "الهلال", "الأهلي",
+    "الاتفاق", "الفتح", "التعاون", "الرائد", "الخلود", "الفيحاء", "ضمك",
+    "القادسية", "نيوم", "الدرعية", "الطائي", "الوحدة",
+    "ريال مدريد", "برشلونة", "أتلتيكو", "مانشستر", "ليفربول", "تشيلسي",
+    "أرسنال", "توتنهام", "بايرن", "دورتموند", "يوفنتوس", "ميلان",
+    "إنتر", "باريس سان جيرمان", "صفقة", "الدوري السعودي", "دوري روشن",
+    "كأس العالم", "كأس الأمم", "الفيفا", "دوري أبطال أوروبا",
+    "انتقال إلى", "المنتخب السعودي", "كرة قدم",
+]
+
+
+def strip_html(text: str) -> str:
+    """يشيل وسوم HTML من نص الوصف ويرجع مقتطف نصي نظيف."""
+    if not text:
+        return ""
+    clean = re.sub(r"<[^>]+>", " ", text)
+    clean = re.sub(r"\s+", " ", clean).strip()
+    return clean
+
+
+def is_football_related(title: str, description: str) -> bool:
+    text = f"{title} {description}"
+    return any(kw in text for kw in FOOTBALL_KEYWORDS)
+
+
+def fetch_real_news_from_rss() -> list:
+    """
+    يجيب آخر الأخبار الحقيقية (انتقالات/شائعات/تكتيك) من فيد RSS عام
+    ومجاني بالكامل لصحيفة "الرياضية" - بدون أي مفتاح API وبدون فوترة.
+    العنوان والصورة والمقتطف كلها منشورة فعلياً من المصدر نفسه، ونحتفظ
+    برابط المقال الأصلي عشان القارئ يقرأ الخبر كامل عند مصدره الحقيقي.
+    """
+    try:
+        response = requests.get(RSS_FEED_URL, timeout=20)
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+    except Exception as e:
+        print(f"تعذّر جلب فيد الأخبار الحقيقية ({e}).")
+        return []
+
+    items = []
+    for item in root.findall(".//item"):
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        description = strip_html(item.findtext("description") or "")
+        if not title or not link:
+            continue
+        if not is_football_related(title, description):
+            continue
+
+        excerpt = description[:220] + ("…" if len(description) > 220 else "")
+
+        items.append({
+            "title": title,
+            "link": link,
+            "image": item.findtext("main_image") or None,
+            "excerpt": excerpt,
+            "source": RSS_SOURCE_NAME,
+            "author": item.findtext("{http://purl.org/dc/elements/1.1/}creator") or RSS_SOURCE_NAME,
+            "published": item.findtext("pubDate") or "",
+        })
+
+        if len(items) >= MAX_RSS_ITEMS:
+            break
+
+    return items
+
+
+# ============================================================
 # التشغيل الرئيسي
 # ============================================================
 
@@ -687,6 +772,9 @@ if __name__ == "__main__":
     matches = run_matches_pipeline()
     standings = run_standings_pipeline()
     news = build_news_items(matches, standings)
+
+    print("جاري جلب الأخبار الحقيقية (انتقالات/شائعات) من الرياضية...")
+    real_news = fetch_real_news_from_rss()
 
     with open("matches.json", "w", encoding="utf-8") as f:
         json.dump(matches, f, ensure_ascii=False, indent=2)
@@ -697,6 +785,10 @@ if __name__ == "__main__":
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(news, f, ensure_ascii=False, indent=2)
 
+    with open("real_news.json", "w", encoding="utf-8") as f:
+        json.dump(real_news, f, ensure_ascii=False, indent=2)
+
     total_teams = sum(len(l["standings"]) for l in standings.values())
     total_news = len(news["saudi"]) + len(news["europe"])
-    print(f"\nتم حفظ: {len(matches)} مباراة، ترتيب {len(standings)} دوريات ({total_teams} فريق إجمالاً)، {total_news} خبر.")
+    print(f"\nتم حفظ: {len(matches)} مباراة، ترتيب {len(standings)} دوريات ({total_teams} فريق إجمالاً)، "
+          f"{total_news} خبر نتائج، {len(real_news)} خبر حقيقي من الرياضية.")

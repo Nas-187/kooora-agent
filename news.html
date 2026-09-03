@@ -77,21 +77,21 @@
   }
 
   /* ===== أخبار حقيقية (RSS) - بطاقات أفقية مدمجة بشبكة ===== */
-  #real-news-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:14px; }
+  #real-news-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:16px; }
   .real-news-card{
-    display:flex; background:var(--card); border:1px solid var(--line); border-radius:12px;
-    overflow:hidden; text-decoration:none; color:inherit; height:112px;
+    display:flex; background:var(--card); border:1px solid var(--line); border-radius:14px;
+    overflow:hidden; text-decoration:none; color:inherit; height:150px;
     box-shadow:0 1px 2px rgba(26,31,28,0.04); transition:box-shadow .15s, transform .15s;
   }
   .real-news-card:hover{ box-shadow:0 8px 18px rgba(26,31,28,0.1); transform:translateY(-2px); }
-  .real-news-card .rn-image{ width:112px; flex-shrink:0; background:var(--pitch); overflow:hidden; }
+  .real-news-card .rn-image{ width:150px; flex-shrink:0; background:var(--pitch); overflow:hidden; }
   .real-news-card .rn-image img{ width:100%; height:100%; object-fit:cover; }
-  .real-news-card .rn-body{ flex:1; min-width:0; padding:10px 14px; display:flex; flex-direction:column; justify-content:center; gap:6px; }
+  .real-news-card .rn-body{ flex:1; min-width:0; padding:14px 18px; display:flex; flex-direction:column; justify-content:center; gap:9px; }
   .real-news-card .rn-title{
-    font-size:13.5px; font-weight:800; line-height:1.45;
-    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    font-size:16px; font-weight:800; line-height:1.5;
+    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
   }
-  .real-news-card .rn-meta{ font-size:10.5px; color:var(--ink-soft); font-weight:700; }
+  .real-news-card .rn-meta{ font-size:11.5px; color:var(--ink-soft); font-weight:700; }
   .real-news-card .rn-meta .rn-source{ color:var(--gold); }
 
   footer{

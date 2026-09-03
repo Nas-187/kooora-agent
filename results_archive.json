@@ -1622,5 +1622,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vv44v01755192851.png",
     "home_goals": 2,
     "away_goals": 2
+  },
+  {
+    "event_id": "2573338",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-03",
+    "home_id": "150637",
+    "home": "Neom",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/4luwe11737685220.png",
+    "away_id": "139080",
+    "away": "Al-Khaleej",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/mvf6ga1755192630.png",
+    "home_goals": 3,
+    "away_goals": 0
   }
 ]

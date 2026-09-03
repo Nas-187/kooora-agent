@@ -478,5 +478,80 @@
       "transfermarkt_url": null
     },
     "bio": "آرون مارتين (Aarón Martín) هو لاعب يحمل الجنسية الإسبانية، ولد في مونتميلو بإسبانيا بتاريخ 22 أبريل 1987 ويبلغ من العمر 39 عاماً. يلعب في مركز المدافع مع فريق جنوى، ويبلغ طوله 1.80 متراً (5 أقدام و11 بوصة)."
+  },
+  "34178798": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "München, Germany",
+      "birth_date": "2001-04-04",
+      "age": 25,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "170 lbs",
+      "position": "Defensive Midfield",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/443710"
+    },
+    "bio": "Angelo Stiller يلعب في مركز Defensive Midfield مع Stuttgart وهو لاعب Germany يبلغ من العمر 25 عاماً."
+  },
+  "34203585": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Lille, France",
+      "birth_date": "2004-12-08",
+      "age": 21,
+      "height": "5' 10\"",
+      "weight": "150 lbs",
+      "position": "Midfielder",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/707242"
+    },
+    "bio": "Badredine Bouanani يلعب في مركز وسط مع Stuttgart وهو لاعب France يبلغ من العمر 21 عاماً."
+  },
+  "34202611": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": "Strombeek-Bever, Belgium",
+      "birth_date": "2004-05-10",
+      "age": 22,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Bilal El Khannouss يلعب في مركز وسط مع Stuttgart وهو لاعب Morocco يبلغ من العمر 22 عاماً."
+  },
+  "34221685": {
+    "facts": {
+      "nationality": "Uruguay",
+      "birth_place": "Montevideo, Uruguay",
+      "birth_date": "2004-10-11",
+      "age": 21,
+      "height": "189 cm",
+      "weight": "74 kg",
+      "position": "Defender",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/861981"
+    },
+    "bio": "Alan Matturro يلعب في مركز مدافع مع Genoa وهو لاعب Uruguay يبلغ من العمر 21 عاماً."
+  },
+  "34229890": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Bergamo, Italy",
+      "birth_date": "2002-10-25",
+      "age": 23,
+      "height": "1.95 m (6 ft 5 in)",
+      "weight": "174 lbs",
+      "position": "Defender",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/818448"
+    },
+    "bio": "Alessandro Marcandalli يلعب في مركز مدافع مع Genoa وهو لاعب Italy يبلغ من العمر 23 عاماً."
   }
 }

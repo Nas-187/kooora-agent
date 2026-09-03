@@ -28,15 +28,15 @@
       },
       {
         "rank": 5,
-        "team": "Al-Diriyah",
-        "played": 4,
-        "points": 7
+        "team": "Neom",
+        "played": 5,
+        "points": 9
       },
       {
         "rank": 6,
-        "team": "Neom",
+        "team": "Al-Diriyah",
         "played": 4,
-        "points": 6
+        "points": 7
       },
       {
         "rank": 7,
@@ -70,14 +70,14 @@
       },
       {
         "rank": 12,
-        "team": "Al-Khaleej",
-        "played": 4,
+        "team": "Al-Riyadh",
+        "played": 3,
         "points": 3
       },
       {
         "rank": 13,
-        "team": "Al-Riyadh",
-        "played": 3,
+        "team": "Al-Khaleej",
+        "played": 5,
         "points": 3
       },
       {

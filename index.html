@@ -313,6 +313,11 @@
   }
   .league-tab:hover{ border-color:var(--gold); }
   .league-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
+  .league-tab.view-all{
+    color:var(--gold); border-color:rgba(201,151,63,0.5); text-decoration:none;
+    display:inline-block;
+  }
+  .league-tab.view-all:hover{ background:var(--gold); color:var(--pitch-dark); }
 
   /* ===== Match league tabs (مباريات اليوم) ===== */
   .match-league-tabs{
@@ -484,6 +489,7 @@
         <h2>تفاصيل المباريات</h2>
         <span class="league-badge" id="feed-count">0 خبر</span>
       </div>
+      <div class="league-tabs" id="feed-league-tabs"></div>
       <div id="news-feed"></div>
     </section>
   </div>
@@ -1011,14 +1017,32 @@ function renderCompGrid(matches){
   }).join('');
 }
 
+let activeFeedLeague = LEAGUE_ORDER[0];
+
+function renderFeedLeagueTabs(){
+  const wrap = document.getElementById('feed-league-tabs');
+  wrap.innerHTML = LEAGUE_ORDER.map(id => `
+    <button type="button" class="league-tab ${activeFeedLeague === id ? 'active' : ''}" data-league="${id}">
+      ${MATCH_TARGET_LEAGUES[id]}
+    </button>`).join('') + `<a class="league-tab view-all" href="results.html">عرض الكل ›</a>`;
+
+  wrap.querySelectorAll('.league-tab[data-league]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeFeedLeague = Number(btn.dataset.league);
+      renderFeedLeagueTabs();
+      renderNewsFeed(allTodayMatches);
+    });
+  });
+}
+
 function renderNewsFeed(matches){
   const list = document.getElementById('news-feed');
   const count = document.getElementById('feed-count');
 
   const withContent = matches
-    .filter(m => m.content && !isScheduled(m.status))
+    .filter(m => m.league_id === activeFeedLeague && m.content && !isScheduled(m.status))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 10);
+    .slice(0, 3);
 
   count.textContent = withContent.length + ' خبر';
 
@@ -1058,6 +1082,7 @@ function loadMatches(data){
   refreshMatchesView();
   renderTicker(allTodayMatches.filter(m => m.day === dayKey(0)));
   renderCompGrid(allTodayMatches);
+  renderFeedLeagueTabs();
   renderNewsFeed(allTodayMatches);
 }
 
@@ -1097,6 +1122,7 @@ function applyLiveUpdates(liveList){
   if(changed){
     refreshMatchesView();
     renderTicker(allTodayMatches.filter(m => m.day === dayKey(0)));
+    renderNewsFeed(allTodayMatches);
   }
 }
 

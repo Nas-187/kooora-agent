@@ -599,6 +599,17 @@ const MATCH_TARGET_LEAGUES = {
 };
 const LEAGUE_ORDER = [4668, 4328, 4335, 4332, 4331, 4334];
 
+// شعارات ثابتة لكل دوري (مو معتمدة على وجود مباراة اليوم)، عشان الشعار
+// يبين دايماً بتبويبات الدوريات حتى لو دوري معين ما عنده مباريات اليوم
+const LEAGUE_LOGOS = {
+  4668: "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
+  4328: "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
+  4335: "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
+  4332: "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
+  4331: "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
+  4334: "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
+};
+
 function isLiveStatus(status){ return status === 'In Play' || status === 'Halftime'; }
 function isScheduled(status){ return status === 'Not Started'; }
 
@@ -774,9 +785,8 @@ function renderMatchLeagueTabs(matches){
     </div>`;
 
   html += leagueIds.map(id => {
-    const sample = matches.find(m => m.league_id === id);
     const count = matches.filter(m => m.league_id === id).length;
-    const logo = sample ? sample.league_logo : '';
+    const logo = LEAGUE_LOGOS[id] || '';
     const name = MATCH_TARGET_LEAGUES[id];
     return `
     <div class="match-league-tab ${activeMatchLeague === id ? 'active' : ''}" data-league="${id}">
@@ -991,8 +1001,7 @@ function renderCompGrid(matches){
   const leagueIds = LEAGUE_ORDER;
 
   grid.innerHTML = leagueIds.map(id => {
-    const sample = matches.find(m => m.league_id === id);
-    const logo = sample ? sample.league_logo : '';
+    const logo = LEAGUE_LOGOS[id] || '';
     const name = MATCH_TARGET_LEAGUES[id];
     return `
     <a class="comp-card" href="standings.html?league=${id}">

@@ -167,6 +167,10 @@
 <div class="headline-strip-wrap"><div class="headline-strip" id="headline-strip"></div></div>
 
 <main>
+  <div class="section-head" style="border-bottom-color:var(--gold); margin-bottom:22px">
+    <h2>نتائج المباريات</h2>
+  </div>
+
   <div class="category-tabs">
     <button type="button" class="category-tab active" data-cat="saudi">دوري روشن السعودي</button>
     <button type="button" class="category-tab" data-cat="europe">الدوريات الأوروبية</button>
@@ -228,7 +232,9 @@ function renderArticles(){
   const title = document.getElementById('section-title');
 
   const ids = activeCategory === 'saudi' ? [SAUDI_LEAGUE_ID] : EURO_LEAGUE_IDS;
-  const matches = allMatches.filter(m => ids.includes(m.league_id));
+  const matches = allMatches
+    .filter(m => ids.includes(m.league_id) && m.content && m.home_score !== null && m.away_score !== null)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 
   title.textContent = activeCategory === 'saudi' ? 'أخبار دوري روشن السعودي' : 'أخبار الدوريات الأوروبية';
   count.textContent = matches.length + ' خبر';
@@ -238,9 +244,11 @@ function renderArticles(){
     return;
   }
 
+  const STATUS_AR = { 'In Play': 'مباشر الآن', 'Halftime': 'استراحة', 'Match Finished': 'انتهت المباراة' };
+
   list.innerHTML = matches.map(m => {
     const isLive = m.status === 'In Play' || m.status === 'Halftime';
-    const statusLabel = isLive ? 'مباشر الآن' : (m.status === 'Match Finished' ? 'انتهت المباراة' : m.status);
+    const statusLabel = STATUS_AR[m.status] || m.status;
     return `
     <article class="article-card ${isLive ? 'live' : ''}">
       ${m.cover_image ? `

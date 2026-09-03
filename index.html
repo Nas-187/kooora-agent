@@ -107,6 +107,10 @@
     max-width:1180px; margin:0 auto; padding:0 6vw 60px;
     display:grid; grid-template-columns: 1fr 340px; gap:40px;
   }
+  /* بدون min-width:0 هذي، أي صف أفقي مزدحم (زي يوم فيه مباريات كثيرة)
+     يقدر يوسّع عمود الجدول (grid track) نفسه بدل ما ينسحب داخل حدوده،
+     وهذا اللي كان يخلي الصفحة كلها تنزاح يسار بدل ما تضل متوسطة */
+  main > div, main > aside{ min-width:0; }
   @media (max-width:900px){ main{ grid-template-columns:1fr; } }
 
   section{ margin-top:44px; }
@@ -315,6 +319,10 @@
   .day-tab:hover{ border-color:var(--gold); }
   .day-tab.active{ background:var(--gold); color:var(--pitch-dark); border-color:var(--gold); }
 
+  /* ===== صفوف قابلة للسحب أفقياً بالماوس ===== */
+  .drag-scroll{ cursor:grab; }
+  .drag-scroll.dragging{ cursor:grabbing; user-select:none; scroll-behavior:auto; }
+
   /* ===== Ticker-style compact match cards ===== */
   .ticker-row{ display:flex; gap:12px; overflow-x:auto; padding:4px 2px 16px; scrollbar-width:thin; }
   .tmatch-card{
@@ -413,16 +421,21 @@
 <main>
   <div>
     <section id="matches-section" style="margin-top:30px">
-      <div class="day-tabs" id="day-tabs"></div>
-      <div class="match-league-tabs" id="match-league-tabs"></div>
+      <div class="day-tabs drag-scroll" id="day-tabs"></div>
+      <div class="match-league-tabs drag-scroll" id="match-league-tabs"></div>
 
       <div id="hero-story-slot"></div>
+
+      <div class="section-head" id="featured-head" style="display:none">
+        <h2>أهم المباريات</h2>
+      </div>
+      <div id="featured-matches" class="ticker-row drag-scroll" style="display:none"></div>
 
       <div class="section-head">
         <h2>المباريات</h2>
         <span class="league-badge" id="match-count">0 مباراة</span>
       </div>
-      <div id="matches-list" class="ticker-row"></div>
+      <div id="matches-list" class="ticker-row drag-scroll"></div>
     </section>
 
     <section>
@@ -464,7 +477,7 @@
       <div class="section-head">
         <h2>عناوين سريعة</h2>
       </div>
-      <div id="news-list"></div>
+      <div id="news-list" class="drag-scroll"></div>
     </section>
   </aside>
 </main>
@@ -701,6 +714,7 @@ function refreshMatchesView(){
   const dayMatches = filterByActiveDay(allTodayMatches);
   renderMatchLeagueTabs(dayMatches);
   renderMatches(filterByActiveLeague(dayMatches));
+  renderFeaturedMatches();
 }
 
 function renderMatchLeagueTabs(matches){
@@ -743,28 +757,15 @@ function filterByActiveLeague(matches){
   return matches.filter(m => m.league_id === activeMatchLeague);
 }
 
-function renderMatches(matches){
-  const list = document.getElementById('matches-list');
-  const count = document.getElementById('match-count');
-  count.textContent = matches.length + ' مباراة';
+function matchCardHtml(m){
+  const isLive = isLiveStatus(m.status);
+  const scheduled = isScheduled(m.status);
+  const timeOrStatus = scheduled ? formatKickoff(m.date) : statusLabelFor(m);
+  const scoreOrDash = scheduled
+    ? '<span class="tm-dash">-</span>'
+    : `${m.home_score} - ${m.away_score}`;
 
-  if(matches.length === 0){
-    renderHeroStory(null);
-    list.innerHTML = '<div class="empty-state">ما فيه مباريات بهالقسم حالياً</div>';
-    return;
-  }
-
-  const heroSlides = renderHeroStory(matches);
-
-  list.innerHTML = matches.filter(m => !heroSlides.includes(m)).map(m => {
-    const isLive = isLiveStatus(m.status);
-    const scheduled = isScheduled(m.status);
-    const timeOrStatus = scheduled ? formatKickoff(m.date) : statusLabelFor(m);
-    const scoreOrDash = scheduled
-      ? '<span class="tm-dash">-</span>'
-      : `${m.home_score} - ${m.away_score}`;
-
-    return `
+  return `
     <div class="tmatch-card ${isLive ? 'live' : ''}">
       <div class="tm-league">${m.league}</div>
       ${m.round ? `<div class="tm-round">الجولة ${m.round}</div>` : '<div class="tm-round">&nbsp;</div>'}
@@ -781,7 +782,57 @@ function renderMatches(matches){
         </div>
       </div>
     </div>`;
-  }).join('');
+}
+
+function renderMatches(matches){
+  const list = document.getElementById('matches-list');
+  const count = document.getElementById('match-count');
+  count.textContent = matches.length + ' مباراة';
+
+  if(matches.length === 0){
+    renderHeroStory(null);
+    list.innerHTML = '<div class="empty-state">ما فيه مباريات بهالقسم حالياً</div>';
+    return;
+  }
+
+  const heroSlides = renderHeroStory(matches);
+  list.innerHTML = matches.filter(m => !heroSlides.includes(m)).map(matchCardHtml).join('');
+}
+
+/* "أهم المباريات" = مباريات فيها فريق (مضيف أو ضيف) من أعلى 3 مراكز
+   بجدول ترتيب دوريه الحالي - معيار حقيقي مبني على بيانات الترتيب
+   الفعلية، بدون أي تقييم أو رأي بشري/ذكاء اصطناعي */
+function topRankedTeamNames(){
+  const names = new Set();
+  Object.values(standingsByLeague).forEach(league => {
+    (league.standings || []).slice(0, 3).forEach(s => names.add(s.team));
+  });
+  return names;
+}
+
+function renderFeaturedMatches(){
+  const head = document.getElementById('featured-head');
+  const row = document.getElementById('featured-matches');
+  const topTeams = topRankedTeamNames();
+
+  if(topTeams.size === 0){
+    head.style.display = 'none';
+    row.style.display = 'none';
+    return;
+  }
+
+  const dayMatches = filterByActiveDay(allTodayMatches);
+  const featured = dayMatches.filter(m => topTeams.has(m.home_team) || topTeams.has(m.away_team));
+
+  if(featured.length === 0){
+    head.style.display = 'none';
+    row.style.display = 'none';
+    return;
+  }
+
+  head.style.display = '';
+  row.style.display = '';
+  row.innerHTML = featured.map(matchCardHtml).join('');
 }
 
 function renderTicker(matches){
@@ -859,7 +910,32 @@ function renderStandingsData(data){
   activeLeagueId = ids.includes('4668') ? '4668' : ids[0];
   renderLeagueTabs();
   renderStandings(standingsByLeague[activeLeagueId].standings);
+  renderFeaturedMatches();
 }
+
+function enableDragScroll(el){
+  let isDown = false, startX = 0, startScroll = 0, moved = false;
+
+  el.addEventListener('mousedown', e => {
+    isDown = true; moved = false;
+    startX = e.pageX; startScroll = el.scrollLeft;
+    el.classList.add('dragging');
+  });
+  ['mouseleave', 'mouseup'].forEach(evt => el.addEventListener(evt, () => {
+    isDown = false; el.classList.remove('dragging');
+  }));
+  el.addEventListener('mousemove', e => {
+    if(!isDown) return;
+    e.preventDefault();
+    const dx = e.pageX - startX;
+    if(Math.abs(dx) > 3) moved = true;
+    el.scrollLeft = startScroll - dx;
+  });
+  // نمنع كليك بطاقة كانت بالأصل سحب، عشان ما نفتح رابط بالغلط
+  el.addEventListener('click', e => { if(moved) e.stopPropagation(); }, true);
+}
+
+document.querySelectorAll('.drag-scroll').forEach(enableDragScroll);
 
 renderDate();
 

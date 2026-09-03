@@ -1,5 +1,6 @@
 [
   {
+    "event_id": "2573336",
     "title": "Al-Hilal 3 - 0 Al-Ahli",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -18,7 +19,8 @@
     "cover_image": null
   },
   {
-    "title": "Al-Fayha ضد Al-Kholood",
+    "event_id": "2573337",
+    "title": "Al-Fayha 1 - 1 Al-Kholood",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "5",
@@ -26,16 +28,17 @@
     "away_team": "Al-Kholood",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/jl3spp1677530565.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vv44v01755192851.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 1,
+    "status": "In Play",
     "league": "دوري روشن السعودي",
     "date": "2026-09-03T15:55:00Z",
     "day": "2026-09-03",
-    "content": "",
+    "content": "تعادل Al-Fayha وAl-Kholood بنتيجة 1-1 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
+    "event_id": "2573338",
     "title": "Neom ضد Al-Khaleej",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -54,6 +57,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573339",
     "title": "Al-Diriyah ضد Al-Qadsiah",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -72,6 +76,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2506226",
     "title": "Real Sociedad ضد Celta Vigo",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
@@ -90,6 +95,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2489485",
     "title": "Toulouse ضد Lille",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
@@ -108,6 +114,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573340",
     "title": "Abha ضد Al-Ettifaq",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -126,6 +133,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573341",
     "title": "Al-Ahli ضد Al-Riyadh",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -144,6 +152,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573342",
     "title": "Al-Shabab ضد Al-Hilal",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -162,6 +171,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2494027",
     "title": "Ipswich Town ضد Liverpool",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
@@ -180,6 +190,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2506205",
     "title": "Real Betis ضد Real Madrid",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
@@ -198,6 +209,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2482160",
     "title": "Genoa ضد Como",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
@@ -216,6 +228,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2508347",
     "title": "Stuttgart ضد Köln",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
@@ -234,6 +247,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2489481",
     "title": "Lyon ضد Auxerre",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
@@ -252,6 +266,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2489484",
     "title": "Paris Saint-Germain ضد Monaco",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
@@ -270,6 +285,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573343",
     "title": "Al-Faisaly ضد Al-Hazem",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -288,6 +304,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573344",
     "title": "Al-Taawoun ضد Al-Fateh",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -306,6 +323,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2573345",
     "title": "Al-Ittihad ضد Al-Nassr",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
@@ -324,6 +342,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2494020",
     "title": "Newcastle United ضد Bournemouth",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
@@ -342,6 +361,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2494021",
     "title": "Fulham ضد Crystal Palace",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
@@ -360,6 +380,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2494024",
     "title": "Manchester City ضد Coventry City",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
@@ -378,6 +399,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2506199",
     "title": "Athletic Bilbao ضد Atlético Madrid",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
@@ -396,6 +418,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2506201",
     "title": "Villarreal ضد Deportivo de A Coruña",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
@@ -414,6 +437,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2506207",
     "title": "Rayo Vallecano ضد Racing de Santander",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
@@ -432,6 +456,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2482162",
     "title": "Roma ضد Atalanta",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
@@ -450,6 +475,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2482164",
     "title": "Fiorentina ضد Torino",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
@@ -468,6 +494,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2482165",
     "title": "Inter Milan ضد Napoli",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
@@ -486,6 +513,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2508342",
     "title": "Werder Bremen ضد RB Leipzig",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
@@ -504,6 +532,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2508343",
     "title": "Borussia Mönchengladbach ضد Elversberg",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
@@ -522,6 +551,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2508344",
     "title": "Hoffenheim ضد Borussia Dortmund",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
@@ -540,6 +570,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2489483",
     "title": "Nice ضد Le Mans",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
@@ -558,6 +589,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2489487",
     "title": "Le Havre ضد Brest",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
@@ -576,6 +608,7 @@
     "cover_image": null
   },
   {
+    "event_id": "2489488",
     "title": "Lens ضد Lorient",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
@@ -590,240 +623,6 @@
     "league": "الدوري الفرنسي",
     "date": "2026-09-05T15:15:00Z",
     "day": "2026-09-05",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Arsenal ضد Chelsea",
-    "league_id": 4328,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
-    "round": "3",
-    "home_team": "Arsenal",
-    "away_team": "Chelsea",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإنجليزي",
-    "date": "2026-09-06T15:30:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Everton ضد Manchester United",
-    "league_id": 4328,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
-    "round": "3",
-    "home_team": "Everton",
-    "away_team": "Manchester United",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإنجليزي",
-    "date": "2026-09-06T13:00:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Valencia ضد Barcelona",
-    "league_id": 4335,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
-    "round": "4",
-    "home_team": "Valencia",
-    "away_team": "Barcelona",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإسباني",
-    "date": "2026-09-06T14:15:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Málaga ضد Levante",
-    "league_id": 4335,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
-    "round": "4",
-    "home_team": "Málaga",
-    "away_team": "Levante",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/upqyvr1473502952.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xwtxsx1473503739.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإسباني",
-    "date": "2026-09-06T16:30:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Espanyol ضد Sevilla",
-    "league_id": 4335,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
-    "round": "4",
-    "home_team": "Espanyol",
-    "away_team": "Sevilla",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإسباني",
-    "date": "2026-09-06T19:00:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Juventus ضد AC Milan",
-    "league_id": 4332,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
-    "round": "3",
-    "home_team": "Juventus",
-    "away_team": "AC Milan",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإيطالي",
-    "date": "2026-09-06T18:45:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Bologna ضد Sassuolo",
-    "league_id": 4332,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
-    "round": "3",
-    "home_team": "Bologna",
-    "away_team": "Sassuolo",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإيطالي",
-    "date": "2026-09-06T16:00:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Frosinone ضد Venezia",
-    "league_id": 4332,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
-    "round": "3",
-    "home_team": "Frosinone",
-    "away_team": "Venezia",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/a7xa151603170120.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vbiget1781026964.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الإيطالي",
-    "date": "2026-09-06T13:00:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Eintracht Frankfurt ضد Augsburg",
-    "league_id": 4331,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
-    "round": "2",
-    "home_team": "Eintracht Frankfurt",
-    "away_team": "Augsburg",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xqyyvq1473453233.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الألماني",
-    "date": "2026-09-06T15:30:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Hamburg ضد Mainz",
-    "league_id": 4331,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
-    "round": "2",
-    "home_team": "Hamburg",
-    "away_team": "Mainz",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/tvtppt1473453296.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/fhm9v51552134916.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الألماني",
-    "date": "2026-09-06T13:30:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Angers ضد Rennes",
-    "league_id": 4334,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
-    "round": "3",
-    "home_team": "Angers",
-    "away_team": "Rennes",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ix6q4w1678808069.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الفرنسي",
-    "date": "2026-09-06T15:15:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Marseille ضد Paris FC",
-    "league_id": 4334,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
-    "round": "3",
-    "home_team": "Marseille",
-    "away_team": "Paris FC",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/yuvtsy1447594254.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الفرنسي",
-    "date": "2026-09-06T18:45:00Z",
-    "day": "2026-09-06",
-    "content": "",
-    "cover_image": null
-  },
-  {
-    "title": "Troyes ضد Strasbourg",
-    "league_id": 4334,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
-    "round": "3",
-    "home_team": "Troyes",
-    "away_team": "Strasbourg",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/sl5kzg1766617559.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الفرنسي",
-    "date": "2026-09-06T13:00:00Z",
-    "day": "2026-09-06",
     "content": "",
     "cover_image": null
   }

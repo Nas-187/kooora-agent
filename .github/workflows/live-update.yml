@@ -1,0 +1,38 @@
+name: تحديث السكور المباشر
+
+# يشتغل يدوياً بس عن طريق استدعاء REST خارجي من cron-job.org كل دقيقة
+# أو دقيقتين (بدون schedule داخلي بجيت هب لأنه غير موثوق بهالتكرار
+# السريع، نفس السبب اللي خلانا نعتمد على cron-job.org كخط احتياط
+# للتحديث الرئيسي كل نص ساعة)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  live-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: تنزيل نسخة من المستودع
+        uses: actions/checkout@v4
+
+      - name: تجهيز بايثون
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: تثبيت المكتبات المطلوبة
+        run: pip install requests
+
+      - name: تشغيل سكربت السكور المباشر
+        run: python live_scores.py
+
+      - name: حفظ ورفع live_scores.json
+        run: |
+          git config user.name "football-agent-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add live_scores.json
+          git diff --staged --quiet || git commit -m "تحديث السكور المباشر"
+          git pull --rebase origin main
+          git push

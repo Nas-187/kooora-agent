@@ -286,6 +286,32 @@ fetch('matches.json?t=' + Date.now())
   .catch(() => {
     document.getElementById('league-groups').innerHTML = '<div class="empty-state">تعذّر تحميل المباريات</div>';
   });
+
+/* سكور شبه مباشر: نجيب live_scores.json كل 45 ثانية (يتحدّث هو نفسه كل
+   دقيقة أو دقيقتين من سكربت خفيف مستقل) ونحدّث نتيجة/حالة أي مباراة
+   جارية بدون ما يحتاج الزائر يعيد تحميل الصفحة */
+function applyLiveUpdates(liveList){
+  if(!liveList || liveList.length === 0) return;
+  const byId = new Map(liveList.map(l => [String(l.event_id), l]));
+  let changed = false;
+  allMatches.forEach(m => {
+    const live = byId.get(String(m.event_id));
+    if(live && (m.home_score !== live.home_score || m.away_score !== live.away_score || m.status !== live.status)){
+      m.home_score = live.home_score;
+      m.away_score = live.away_score;
+      m.status = live.status;
+      changed = true;
+    }
+  });
+  if(changed) renderLeagueGroups();
+}
+
+setInterval(() => {
+  fetch('live_scores.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : [])
+    .then(applyLiveUpdates)
+    .catch(() => {});
+}, 45000);
 </script>
 
 </body>

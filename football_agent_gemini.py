@@ -250,6 +250,7 @@ def build_match_payload(match_summary: dict, article_text: str) -> dict:
                 f"{match_summary['away_score']} {match_summary['away_team']}"
 
     return {
+        "event_id": match_summary["event_id"],
         "title": title,
         "league_id": match_summary["league_id"],
         "league_logo": match_summary["league_logo"],

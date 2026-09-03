@@ -1026,6 +1026,34 @@ fetch('news.json?t=' + Date.now())
     renderNews(combined.length ? combined : sampleNews);
   })
   .catch(() => renderNews(sampleNews));
+
+/* سكور شبه مباشر: نفس آلية صفحة مباريات اليوم - نجيب live_scores.json
+   كل 45 ثانية ونحدّث نتيجة/حالة أي مباراة جارية بكل أقسام الصفحة */
+function applyLiveUpdates(liveList){
+  if(!liveList || liveList.length === 0) return;
+  const byId = new Map(liveList.map(l => [String(l.event_id), l]));
+  let changed = false;
+  allTodayMatches.forEach(m => {
+    const live = byId.get(String(m.event_id));
+    if(live && (m.home_score !== live.home_score || m.away_score !== live.away_score || m.status !== live.status)){
+      m.home_score = live.home_score;
+      m.away_score = live.away_score;
+      m.status = live.status;
+      changed = true;
+    }
+  });
+  if(changed){
+    refreshMatchesView();
+    renderTicker(allTodayMatches.filter(m => m.day === dayKey(0)));
+  }
+}
+
+setInterval(() => {
+  fetch('live_scores.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : [])
+    .then(applyLiveUpdates)
+    .catch(() => {});
+}, 45000);
 </script>
 
 </body>

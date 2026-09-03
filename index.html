@@ -487,9 +487,10 @@
     <section>
       <div class="section-head">
         <h2>تفاصيل المباريات</h2>
-        <span class="league-badge" id="feed-count">0 خبر</span>
+        <a class="see-all-link" href="results.html">عرض الكل ›</a>
       </div>
       <div class="league-tabs" id="feed-league-tabs"></div>
+      <div style="margin-bottom:14px"><span class="league-badge" id="feed-count">0 خبر</span></div>
       <div id="news-feed"></div>
     </section>
   </div>
@@ -1024,7 +1025,7 @@ function renderFeedLeagueTabs(){
   wrap.innerHTML = LEAGUE_ORDER.map(id => `
     <button type="button" class="league-tab ${activeFeedLeague === id ? 'active' : ''}" data-league="${id}">
       ${MATCH_TARGET_LEAGUES[id]}
-    </button>`).join('') + `<a class="league-tab view-all" href="results.html">عرض الكل ›</a>`;
+    </button>`).join('');
 
   wrap.querySelectorAll('.league-tab[data-league]').forEach(btn => {
     btn.addEventListener('click', () => {

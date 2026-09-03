@@ -82,7 +82,7 @@
   .league-card:hover{ border-color:var(--gold); box-shadow:0 10px 22px rgba(26,31,28,0.08); transform:translateY(-2px); }
   .league-card .l-logo{ width:56px; height:56px; object-fit:contain; flex-shrink:0; }
   .league-card .l-name{ font-size:16px; font-weight:800; margin-bottom:10px; }
-  .league-card .l-actions{ display:flex; gap:8px; }
+  .league-card .l-actions{ display:flex; flex-wrap:wrap; gap:8px; }
   .league-card .l-actions a{
     font-size:12px; font-weight:700; padding:6px 12px; border-radius:100px;
     text-decoration:none; border:1px solid var(--line); color:var(--ink-soft); transition:.15s;
@@ -150,6 +150,7 @@ grid.innerHTML = LEAGUE_ORDER.map(id => { const name = TARGET_LEAGUES[id]; retur
       <div class="l-actions">
         <a href="standings.html?league=${id}">الترتيب</a>
         <a href="clubs.html?league=${id}">الأندية</a>
+        <a href="news.html?league=${id}">الأخبار</a>
       </div>
     </div>
   </div>`; }).join('');

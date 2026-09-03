@@ -85,6 +85,15 @@
     padding:5px 12px; border-radius:100px;
   }
 
+  .league-tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+  .league-tab{
+    font-size:13px; font-weight:700; padding:9px 16px; border-radius:20px;
+    border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
+    cursor:pointer; transition:.15s; text-decoration:none; display:inline-block;
+  }
+  .league-tab:hover{ border-color:var(--gold); }
+  .league-tab.active{ background:var(--pitch); color:#fff; border-color:var(--pitch); }
+
   .empty-state{
     padding:34px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
@@ -144,9 +153,10 @@
 
 <main>
   <div class="section-head">
-    <h2>آخر الانتقالات والأخبار</h2>
+    <h2 id="page-title">آخر الانتقالات والأخبار</h2>
     <span class="league-badge" id="real-news-count">0 خبر</span>
   </div>
+  <div class="league-tabs" id="league-tabs"></div>
   <div id="real-news-list"></div>
   <!-- إعلان AdSense لاحقاً هنا --><div class="ad-slot">مساحة إعلانية</div>
 </main>
@@ -177,12 +187,55 @@ function timeAgoAr(pubDate){
   return `قبل ${days} يوم`;
 }
 
-function renderRealNews(items){
+const LEAGUE_NAMES = {
+  4668: "دوري روشن السعودي",
+  4328: "الدوري الإنجليزي",
+  4335: "الدوري الإسباني",
+  4332: "الدوري الإيطالي",
+  4331: "الدوري الألماني",
+  4334: "الدوري الفرنسي",
+};
+const LEAGUE_ORDER = [4668, 4328, 4335, 4332, 4331, 4334];
+
+const urlLeague = new URLSearchParams(location.search).get('league');
+let activeLeague = urlLeague ? Number(urlLeague) : 'all';
+let allNewsItems = [];
+
+function renderLeagueTabs(){
+  const wrap = document.getElementById('league-tabs');
+  let html = `<button type="button" class="league-tab ${activeLeague === 'all' ? 'active' : ''}" data-league="all">الكل</button>`;
+  html += LEAGUE_ORDER.map(id => `
+    <button type="button" class="league-tab ${activeLeague === id ? 'active' : ''}" data-league="${id}">
+      ${LEAGUE_NAMES[id]}
+    </button>`).join('');
+  wrap.innerHTML = html;
+
+  wrap.querySelectorAll('.league-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const val = btn.dataset.league;
+      activeLeague = val === 'all' ? 'all' : Number(val);
+      const url = new URL(location.href);
+      if(activeLeague === 'all') url.searchParams.delete('league');
+      else url.searchParams.set('league', activeLeague);
+      history.replaceState(null, '', url);
+      renderLeagueTabs();
+      renderRealNews();
+      document.getElementById('page-title').textContent =
+        activeLeague === 'all' ? 'آخر الانتقالات والأخبار' : `أخبار ${LEAGUE_NAMES[activeLeague]}`;
+    });
+  });
+}
+
+function renderRealNews(){
   const list = document.getElementById('real-news-list');
+  const items = activeLeague === 'all'
+    ? allNewsItems
+    : allNewsItems.filter(n => n.league_id === activeLeague);
+
   document.getElementById('real-news-count').textContent = items.length + ' خبر';
 
   if(items.length === 0){
-    list.innerHTML = '<div class="empty-state" style="grid-column:1/-1">ما فيه أخبار حقيقية مجهزة حالياً — راجع لاحقاً بعد تحديث البيانات</div>';
+    list.innerHTML = '<div class="empty-state" style="grid-column:1/-1">ما فيه أخبار حقيقية مجهزة حالياً لهذا الدوري — راجع لاحقاً بعد تحديث البيانات</div>';
     return;
   }
 
@@ -196,10 +249,15 @@ function renderRealNews(items){
     </a>`).join('');
 }
 
+if(activeLeague !== 'all'){
+  document.getElementById('page-title').textContent = `أخبار ${LEAGUE_NAMES[activeLeague] || ''}`;
+}
+renderLeagueTabs();
+
 fetch('real_news.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(data => renderRealNews(data || []))
-  .catch(() => renderRealNews([]));
+  .then(data => { allNewsItems = data || []; renderRealNews(); })
+  .catch(() => { allNewsItems = []; renderRealNews(); });
 </script>
 
 </body>

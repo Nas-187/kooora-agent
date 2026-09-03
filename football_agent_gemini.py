@@ -693,6 +693,11 @@ RSS_FEED_URL = "https://www.arriyadiyah.com/rss"
 RSS_SOURCE_NAME = "الرياضية"
 MAX_RSS_ITEMS = 20
 
+BBC_PL_FEED_URL = "https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml"
+BBC_EURO_FEED_URL = "https://feeds.bbci.co.uk/sport/football/european/rss.xml"
+BBC_SOURCE_NAME = "BBC Sport"
+MAX_BBC_ITEMS_PER_FEED = 20
+
 # كلمات مفتاحية عشان نفلتر بس الأخبار المتعلقة بكرة القدم من فيد رياضي
 # عام (فيه أخبار تنس ورياضات ثانية أحياناً) - فلترة على العناوين
 # الحقيقية نفسها، بدون أي تعديل أو توليد
@@ -706,6 +711,44 @@ FOOTBALL_KEYWORDS = [
     "كأس العالم", "كأس الأمم", "الفيفا", "دوري أبطال أوروبا",
     "انتقال إلى", "المنتخب السعودي", "كرة قدم",
 ]
+
+# أسماء أندية كل دوري أوروبي (بالإنجليزية، زي ما تُذكر بمصادر BBC)، تُستخدم
+# بس لتصنيف كل خبر لدوريه الصحيح - مطابقة نصية على العنوان والوصف الحقيقيين
+# بدون أي توليد أو تخمين
+LEAGUE_CLUB_KEYWORDS = {
+    4328: [  # الدوري الإنجليزي
+        "Arsenal", "Man City", "Manchester City", "Man Utd", "Manchester United",
+        "Liverpool", "Chelsea", "Tottenham", "Newcastle", "Aston Villa", "West Ham",
+        "Everton", "Brighton", "Wolves", "Fulham", "Crystal Palace", "Brentford",
+        "Nottingham Forest", "Bournemouth", "Burnley", "Sunderland", "Leeds",
+        "Premier League",
+    ],
+    4335: [  # الدوري الإسباني
+        "Real Madrid", "Barcelona", "Atletico Madrid", "Atletico", "Sevilla",
+        "Valencia", "Villarreal", "Real Sociedad", "Athletic Bilbao", "Real Betis",
+        "Girona", "Celta Vigo", "Osasuna", "Getafe", "Rayo Vallecano", "Alaves",
+        "Mallorca", "Espanyol", "Levante", "Elche", "Oviedo", "La Liga",
+    ],
+    4332: [  # الدوري الإيطالي
+        "Juventus", "Inter Milan", "Inter Milan", "AC Milan", "Napoli", "Roma",
+        "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Udinese",
+        "Genoa", "Cagliari", "Sassuolo", "Parma", "Como", "Verona", "Cremonese",
+        "Lecce", "Pisa", "Serie A",
+    ],
+    4331: [  # الدوري الألماني
+        "Bayern Munich", "Bayern", "Borussia Dortmund", "Dortmund", "RB Leipzig",
+        "Bayer Leverkusen", "Leverkusen", "Eintracht Frankfurt", "Wolfsburg",
+        "Union Berlin", "Freiburg", "Mainz", "Borussia Monchengladbach",
+        "Hoffenheim", "Werder Bremen", "Augsburg", "Stuttgart", "Heidenheim",
+        "St Pauli", "Hamburg", "Schalke", "Bundesliga",
+    ],
+    4334: [  # الدوري الفرنسي
+        "PSG", "Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille",
+        "Nice", "Rennes", "Lens", "Strasbourg", "Toulouse", "Nantes",
+        "Montpellier", "Reims", "Le Havre", "Brest", "Angers", "Auxerre",
+        "Metz", "Paris FC", "Lorient", "Ligue 1",
+    ],
+}
 
 
 def strip_html(text: str) -> str:
@@ -722,7 +765,25 @@ def is_football_related(title: str, description: str) -> bool:
     return any(kw in text for kw in FOOTBALL_KEYWORDS)
 
 
-def fetch_real_news_from_rss() -> list:
+def classify_european_league(title: str, description: str):
+    """
+    يحدد أقرب دوري أوروبي (غير الإنجليزي) للخبر بمطابقة أسماء الأندية
+    الحقيقية بعنوانه ووصفه. نستبعد الدوري الإنجليزي من هذا التصنيف عمداً
+    لأن عنده فيد BBC مخصص له لحاله فيه تغطية ممتازة أصلاً، وهدف هذا
+    التصنيف تحديداً تغطية الدوريات الأربعة الباقية اللي تغطيتها أضعف.
+    """
+    text = f"{title} {description}"
+    best_id, best_hits = None, 0
+    for league_id, keywords in LEAGUE_CLUB_KEYWORDS.items():
+        if league_id == 4328:
+            continue
+        hits = sum(1 for kw in keywords if kw in text)
+        if hits > best_hits:
+            best_id, best_hits = league_id, hits
+    return best_id
+
+
+def fetch_arriyadiyah_news() -> list:
     """
     يجيب آخر الأخبار الحقيقية (انتقالات/شائعات/تكتيك) من فيد RSS عام
     ومجاني بالكامل لصحيفة "الرياضية" - بدون أي مفتاح API وبدون فوترة.
@@ -757,11 +818,69 @@ def fetch_real_news_from_rss() -> list:
             "source": RSS_SOURCE_NAME,
             "author": item.findtext("{http://purl.org/dc/elements/1.1/}creator") or RSS_SOURCE_NAME,
             "published": item.findtext("pubDate") or "",
+            "league_id": STANDINGS_LEAGUE_ID,
         })
 
         if len(items) >= MAX_RSS_ITEMS:
             break
 
+    return items
+
+
+def fetch_bbc_feed(feed_url: str, fixed_league_id=None) -> list:
+    """
+    يجيب أخبار حقيقية من فيد BBC Sport الرسمي المجاني (بدون مفتاح API وبدون
+    فوترة). نستخدمه للدوريات الأوروبية لأن مصدرنا العربي (الرياضية) تغطيته
+    لها ضعيفة جداً مقارنة بدوري روشن السعودي. لو fixed_league_id محدد
+    (فيد الدوري الإنجليزي مثلاً) نستخدمه مباشرة، وإلا نصنّف كل خبر لدوريه
+    بمطابقة أسماء الأندية الحقيقية بعنوانه.
+    """
+    try:
+        response = requests.get(feed_url, timeout=20)
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+    except Exception as e:
+        print(f"تعذّر جلب فيد BBC ({feed_url}): {e}.")
+        return []
+
+    ns = {"media": "http://search.yahoo.com/mrss/"}
+    items = []
+    for item in root.findall(".//item"):
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        description = strip_html(item.findtext("description") or "")
+        if not title or not link:
+            continue
+
+        league_id = fixed_league_id or classify_european_league(title, description)
+        if not league_id:
+            continue
+
+        thumb = item.find("media:thumbnail", ns)
+        image = thumb.get("url") if thumb is not None else None
+
+        items.append({
+            "title": title,
+            "link": link,
+            "image": image,
+            "excerpt": description,
+            "source": BBC_SOURCE_NAME,
+            "author": BBC_SOURCE_NAME,
+            "published": item.findtext("pubDate") or "",
+            "league_id": league_id,
+        })
+
+        if len(items) >= MAX_BBC_ITEMS_PER_FEED:
+            break
+
+    return items
+
+
+def fetch_real_news_from_rss() -> list:
+    """يجمع الأخبار الحقيقية من كل المصادر (الرياضية + BBC Sport) مع تصنيف كل خبر لدوريه."""
+    items = fetch_arriyadiyah_news()
+    items += fetch_bbc_feed(BBC_PL_FEED_URL, fixed_league_id=4328)
+    items += fetch_bbc_feed(BBC_EURO_FEED_URL)
     return items
 
 

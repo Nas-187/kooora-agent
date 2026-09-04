@@ -107,22 +107,26 @@
   }
 
 
-  /* ===== أخبار حقيقية (RSS) - بطاقات أفقية مدمجة بشبكة ===== */
-  #real-news-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:16px; }
+  /* ===== أخبار حقيقية (RSS) - بطاقات بشبكة فيها ملخص وافي ===== */
+  #real-news-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:18px; }
   .real-news-card{
-    display:flex; background:var(--card); border:1px solid var(--line); border-radius:14px;
-    overflow:hidden; text-decoration:none; color:inherit; height:150px;
+    display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line);
+    border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;
     box-shadow:var(--shadow-sm); transition:box-shadow .15s, transform .15s;
   }
   .real-news-card:hover{ box-shadow:0 8px 18px rgba(26,31,28,0.1); transform:translateY(-2px); }
-  .real-news-card .rn-image{ width:150px; flex-shrink:0; background:var(--pitch); overflow:hidden; }
+  .real-news-card .rn-image{ width:100%; height:160px; flex-shrink:0; background:var(--pitch); overflow:hidden; }
   .real-news-card .rn-image img{ width:100%; height:100%; object-fit:cover; }
-  .real-news-card .rn-body{ flex:1; min-width:0; padding:14px 18px; display:flex; flex-direction:column; justify-content:center; gap:9px; }
+  .real-news-card .rn-body{ flex:1; min-width:0; padding:16px 18px; display:flex; flex-direction:column; gap:8px; }
   .real-news-card .rn-title{
-    font-size:16px; font-weight:800; line-height:1.5;
-    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+    font-size:15.5px; font-weight:800; line-height:1.5;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
   }
-  .real-news-card .rn-meta{ font-size:11.5px; color:var(--ink-soft); font-weight:700; }
+  .real-news-card .rn-excerpt{
+    font-size:13px; color:var(--ink-soft); line-height:1.75;
+    display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .real-news-card .rn-meta{ font-size:11.5px; color:var(--ink-soft); font-weight:700; margin-top:auto; padding-top:6px; }
   .real-news-card .rn-meta .rn-source{ color:var(--gold); }
 
   footer{
@@ -244,6 +248,7 @@ function renderRealNews(){
       ${n.image ? `<div class="rn-image"><img src="${n.image}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
       <div class="rn-body">
         <div class="rn-title">${n.title}</div>
+        ${n.excerpt ? `<div class="rn-excerpt">${n.excerpt}</div>` : ''}
         <div class="rn-meta"><span class="rn-source">${n.source}</span>${n.published ? ' · ' + timeAgoAr(n.published) : ''}</div>
       </div>
     </a>`).join('');

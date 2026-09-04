@@ -1157,7 +1157,7 @@ function renderMiniNews(items){
   }
 
   list.innerHTML = top3.map(n => `
-    <a class="mini-news-card" href="${n.link}" target="_blank" rel="noopener">
+    <a class="mini-news-card" href="article.html?link=${encodeURIComponent(n.link)}">
       ${n.image ? `<div class="mn-image"><img src="${n.image}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
       <div class="mn-body">
         <div class="mn-title">${n.title}</div>

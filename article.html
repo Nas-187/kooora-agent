@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خبر | كورة ايجنت</title>
+<meta name="description" content="خبر رياضي من كورة ايجنت.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27%230F3D2E%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2750%27%20r%3D%2747%27%20fill%3D%27none%27%20stroke%3D%27%23C9973F%27%20stroke-width%3D%275%27/%3E%3Ctext%20x%3D%2750%27%20y%3D%2769%27%20font-family%3D%27Georgia%2C%20serif%27%20font-weight%3D%27700%27%20font-size%3D%2756%27%20fill%3D%27%23C9973F%27%20text-anchor%3D%27middle%27%3E%D9%83%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch:#0F3D2E;
+    --pitch-dark:#0A2B20;
+    --cream:#F6F3EC;
+    --gold:#C9973F;
+    --ink:#1A1F1C;
+    --ink-soft:#565f59;
+    --line-red:#C0392B;
+    --card:#FFFFFF;
+    --line:#E4DFD2;
+    --crest-bg:#F3F1EA;
+    --shadow-sm:0 1px 3px rgba(10,20,15,0.07), 0 1px 2px rgba(10,20,15,0.05);
+    --shadow-md:0 6px 20px rgba(10,20,15,0.10), 0 2px 6px rgba(10,20,15,0.06);
+    --shadow-lg:0 16px 40px rgba(10,20,15,0.16);
+  }
+  :root[data-theme="dark"]{
+    --cream:#121712;
+    --card:#1c241d;
+    --ink:#EFEFEA;
+    --ink-soft:#9AA39A;
+    --line:#2b352c;
+    --shadow-sm:0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.22);
+    --shadow-md:0 6px 20px rgba(0,0,0,0.4);
+    --shadow-lg:0 16px 40px rgba(0,0,0,0.5);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--cream); color:var(--ink); font-family:'Tajawal', sans-serif; line-height:1.5; overflow-x:hidden; }
+  h1,h2,h3,.num,.brand{ font-family:'Changa', sans-serif; }
+
+  header{
+    background:linear-gradient(165deg, var(--pitch) 0%, var(--pitch-dark) 130%);
+    background-image:
+      linear-gradient(165deg, var(--pitch) 0%, var(--pitch-dark) 130%),
+      radial-gradient(circle at 15% 15%, rgba(255,255,255,0.05) 0, transparent 45%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 68px);
+    color:var(--cream); padding:22px 6vw 30px;
+    border-bottom:1px solid rgba(201,151,63,0.35);
+    box-shadow:0 18px 40px -24px rgba(0,0,0,0.55);
+  }
+  .topbar{ display:flex; align-items:center; justify-content:space-between; gap:14px; }
+  .brand{ font-size:26px; font-weight:900; color:var(--cream); display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .brand .mark{
+    width:30px; height:30px; border-radius:50%; flex-shrink:0;
+    background:var(--pitch-dark); border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Changa'; font-weight:800; font-size:15px; color:var(--gold);
+  }
+  .theme-toggle{
+    width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.06); color:var(--cream); cursor:pointer; font-size:15px;
+    display:flex; align-items:center; justify-content:center; transition:.15s;
+  }
+  .theme-toggle:hover{ border-color:var(--gold); }
+
+  main{ max-width:720px; margin:0 auto; padding:36px 6vw 60px; }
+
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700;
+    color:var(--ink-soft); text-decoration:none; margin-bottom:22px;
+  }
+  .back-link:hover{ color:var(--gold); }
+
+  .article-league-tag{
+    display:inline-block; font-size:11.5px; font-weight:800; color:var(--gold);
+    background:rgba(201,151,63,0.1); padding:5px 14px; border-radius:100px; margin-bottom:14px;
+  }
+  .article-title{ font-size:clamp(22px, 3.4vw, 30px); font-weight:800; line-height:1.5; margin-bottom:14px; }
+  .article-meta{ font-size:12.5px; color:var(--ink-soft); font-weight:700; margin-bottom:22px; }
+  .article-meta .m-source{ color:var(--pitch); }
+  :root[data-theme="dark"] .article-meta .m-source{ color:var(--gold); }
+
+  .article-image{
+    width:100%; border-radius:16px; overflow:hidden; margin-bottom:24px;
+    background:var(--pitch); box-shadow:var(--shadow-md);
+  }
+  .article-image img{ width:100%; display:block; object-fit:cover; }
+
+  .article-body{ font-size:16px; line-height:2; color:var(--ink); margin-bottom:32px; }
+
+  .source-box{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:20px 22px; box-shadow:var(--shadow-sm);
+  }
+  .source-box .s-label{ font-size:11.5px; font-weight:700; color:var(--ink-soft); margin-bottom:6px; }
+  .source-box .s-name{ font-size:16px; font-weight:800; margin-bottom:12px; }
+  .source-box a.s-link{
+    display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:800;
+    color:#fff; background:var(--pitch); padding:10px 18px; border-radius:100px; text-decoration:none;
+    transition:.15s;
+  }
+  .source-box a.s-link:hover{ background:var(--pitch-dark); }
+
+  .empty-state{
+    padding:60px 20px; text-align:center; color:var(--ink-soft); font-size:14px;
+    background:var(--card); border:1px dashed var(--line); border-radius:10px;
+  }
+  .empty-state a{ color:var(--gold); font-weight:700; }
+
+  footer{
+    background:var(--pitch-dark); color:rgba(246,243,236,0.55);
+    text-align:center; padding:26px; font-size:13px; margin-top:40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <a class="brand" href="index.html"><span class="mark">ك</span> كورة ايجنت</a>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع الليلي"></button>
+  </div>
+</header>
+
+<main id="main-content">
+  <a class="back-link" href="news.html">← رجوع لكل الأخبار</a>
+  <div id="article-slot">
+    <div class="empty-state">جاري تحميل الخبر...</div>
+  </div>
+</main>
+
+<footer>&copy; كورة ايجنت 2026</footer>
+
+<script>
+const SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+const MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>';
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  try{ localStorage.setItem('theme', t); }catch(e){}
+  document.getElementById('theme-toggle').innerHTML = t === 'dark' ? SUN_ICON : MOON_ICON;
+}
+document.getElementById('theme-toggle').innerHTML =
+  document.documentElement.getAttribute('data-theme') === 'dark' ? SUN_ICON : MOON_ICON;
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme') || 'light';
+  applyTheme(cur === 'dark' ? 'light' : 'dark');
+});
+
+const LEAGUE_NAMES = {
+  4668: "دوري روشن السعودي",
+  4328: "الدوري الإنجليزي",
+  4335: "الدوري الإسباني",
+  4332: "الدوري الإيطالي",
+  4331: "الدوري الألماني",
+  4334: "الدوري الفرنسي",
+};
+
+function timeAgoAr(pubDate){
+  const diffMs = Date.now() - new Date(pubDate).getTime();
+  const hours = Math.floor(diffMs / 3600000);
+  if(hours < 1) return 'قبل دقائق';
+  if(hours < 24) return `قبل ${hours} ساعة`;
+  const days = Math.floor(hours / 24);
+  return `قبل ${days} يوم`;
+}
+
+const targetLink = new URLSearchParams(location.search).get('link');
+const slot = document.getElementById('article-slot');
+
+if(!targetLink){
+  slot.innerHTML = '<div class="empty-state">ما فيه خبر محدد لعرضه. <a href="news.html">رجوع للأخبار</a></div>';
+} else {
+  fetch('real_news.json?t=' + Date.now())
+    .then(res => { if(!res.ok) throw 0; return res.json(); })
+    .then(items => {
+      const n = (items || []).find(it => it.link === targetLink);
+      if(!n){
+        slot.innerHTML = '<div class="empty-state">تعذّر إيجاد هذا الخبر، ممكن يكون قديم وانحذف من الأرشيف. <a href="news.html">تصفح آخر الأخبار</a></div>';
+        return;
+      }
+
+      document.title = n.title + ' | كورة ايجنت';
+      const leagueTag = LEAGUE_NAMES[n.league_id] || '';
+
+      slot.innerHTML = `
+        <span class="article-league-tag">${leagueTag}</span>
+        <h1 class="article-title">${n.title}</h1>
+        <div class="article-meta">${n.source}${n.published ? ' · ' + timeAgoAr(n.published) : ''}</div>
+        ${n.image ? `<div class="article-image"><img src="${n.image}" alt=""></div>` : ''}
+        <p class="article-body">${n.excerpt}</p>
+        <div class="source-box">
+          <div class="s-label">مصدر الخبر</div>
+          <div class="s-name">${n.source}</div>
+          <a class="s-link" href="${n.link}" target="_blank" rel="noopener">قراءة الخبر الأصلي كاملاً ↗</a>
+        </div>`;
+    })
+    .catch(() => {
+      slot.innerHTML = '<div class="empty-state">تعذّر تحميل الخبر. <a href="news.html">رجوع للأخبار</a></div>';
+    });
+}
+</script>
+
+</body>
+</html>

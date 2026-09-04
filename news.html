@@ -244,7 +244,7 @@ function renderRealNews(){
   }
 
   list.innerHTML = items.map(n => `
-    <a class="real-news-card" href="${n.link}" target="_blank" rel="noopener">
+    <a class="real-news-card" href="article.html?link=${encodeURIComponent(n.link)}">
       ${n.image ? `<div class="rn-image"><img src="${n.image}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
       <div class="rn-body">
         <div class="rn-title">${n.title}</div>

@@ -853,5 +853,43 @@
     "day": "2026-09-06",
     "content": "",
     "cover_image": null
+  },
+  {
+    "event_id": "2573346",
+    "title": "Al-Khaleej ضد Al-Riyadh",
+    "league_id": 4668,
+    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
+    "round": "6",
+    "home_team": "Al-Khaleej",
+    "away_team": "Al-Riyadh",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/mvf6ga1755192630.png",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/i4o0zy1755193321.png",
+    "home_score": null,
+    "away_score": null,
+    "status": "Not Started",
+    "league": "دوري روشن السعودي",
+    "date": "2026-09-07T15:30:00Z",
+    "day": "2026-09-07",
+    "content": "",
+    "cover_image": null
+  },
+  {
+    "event_id": "2573347",
+    "title": "Al-Hilal ضد Neom",
+    "league_id": 4668,
+    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
+    "round": "6",
+    "home_team": "Al-Hilal",
+    "away_team": "Neom",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/w0b80d1661656916.png",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/4luwe11737685220.png",
+    "home_score": null,
+    "away_score": null,
+    "status": "Not Started",
+    "league": "دوري روشن السعودي",
+    "date": "2026-09-07T18:00:00Z",
+    "day": "2026-09-07",
+    "content": "",
+    "cover_image": null
   }
 ]

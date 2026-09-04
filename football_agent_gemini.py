@@ -696,7 +696,7 @@ def fetch_team_squad(team_id: str):
 
 SQUADS_SYNC_FILE = "squads_sync.json"
 SQUAD_REFRESH_DAYS = 7
-MAX_SQUAD_REFRESH_PER_RUN = 6
+MAX_SQUAD_REFRESH_PER_RUN = 30
 
 
 def update_squads_cache(archive: list) -> dict:

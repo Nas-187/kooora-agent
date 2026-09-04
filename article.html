@@ -65,7 +65,26 @@
   }
   .theme-toggle:hover{ border-color:var(--gold); }
 
-  main{ max-width:720px; margin:0 auto; padding:36px 6vw 60px; }
+  main{
+    max-width:1040px; margin:0 auto; padding:36px 6vw 60px;
+    display:grid; grid-template-columns:1fr 260px; gap:40px; align-items:start;
+  }
+  main > div, main > aside{ min-width:0; }
+  @media (max-width:800px){ main{ grid-template-columns:1fr; } }
+
+  .quick-links{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px; box-shadow:var(--shadow-sm); position:sticky; top:20px;
+  }
+  .quick-links h3{ font-size:13px; font-weight:800; color:var(--ink-soft); margin-bottom:12px; }
+  .quick-links a{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:11px 12px; border-radius:10px; font-size:13.5px; font-weight:700;
+    color:var(--ink); text-decoration:none; transition:.15s;
+  }
+  .quick-links a:hover{ background:rgba(15,61,46,0.07); color:var(--pitch); }
+  :root[data-theme="dark"] .quick-links a:hover{ background:rgba(255,255,255,0.06); color:var(--gold); }
+  .quick-links a span.arrow{ opacity:.5; }
 
   .back-link{
     display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700;
@@ -125,10 +144,25 @@
 </header>
 
 <main id="main-content">
-  <a class="back-link" href="news.html">← رجوع لكل الأخبار</a>
-  <div id="article-slot">
-    <div class="empty-state">جاري تحميل الخبر...</div>
+  <div>
+    <a class="back-link" href="news.html">← رجوع لكل الأخبار</a>
+    <div id="article-slot">
+      <div class="empty-state">جاري تحميل الخبر...</div>
+    </div>
   </div>
+
+  <aside>
+    <div class="quick-links">
+      <h3>تصفح سريع</h3>
+      <a href="index.html">الرئيسية <span class="arrow">‹</span></a>
+      <a href="matches.html">مباريات اليوم <span class="arrow">‹</span></a>
+      <a href="results.html">النتائج <span class="arrow">‹</span></a>
+      <a href="news.html">الأخبار <span class="arrow">‹</span></a>
+      <a href="standings.html">الترتيب <span class="arrow">‹</span></a>
+      <a href="clubs.html">الأندية <span class="arrow">‹</span></a>
+      <a href="leagues.html">الدوريات <span class="arrow">‹</span></a>
+    </div>
+  </aside>
 </main>
 
 <footer>&copy; كورة ايجنت 2026</footer>

@@ -532,6 +532,140 @@ def save_squads(squads: dict):
     save_json_file(SQUADS_FILE, squads)
 
 
+# ===== تشكيلة كاملة وحقيقية من ويكيبيديا (TheSportsDB المجاني يعطي 10
+# لاعبين بس مو التشكيلة الكاملة) - نص القالب {{Fs player|...}} اللي تستخدمه
+# مقالات الأندية بويكيبيديا الإنجليزية مبني ومحدّث من موقع النادي الرسمي
+# نفسه، ونستبعد قسم "معارين" (Out on loan) لأنهم مو بالتشكيلة الحالية فعلياً
+WIKI_API = "https://en.wikipedia.org/w/api.php"
+WIKI_HEADERS = {"User-Agent": "KooraAgentBot/1.0 (https://nas-187.github.io/kooora-agent/)"}
+TEAM_WIKI_TITLE_FILE = "team_wiki_titles.json"
+WIKI_PLAYER_ID_FILE = "wiki_player_ids.json"
+SQUAD_SECTION_NAMES = ("Players", "First-team squad", "Current squad")
+POSITION_CODE_MAP = {"GK": "Goalkeeper", "DF": "Defender", "MF": "Midfielder", "FW": "Attacker"}
+
+
+def find_wikipedia_title(team_name: str, cache: dict):
+    if team_name in cache:
+        return cache[team_name]
+    title = None
+    try:
+        resp = requests.get(WIKI_API, headers=WIKI_HEADERS, timeout=15, params={
+            "action": "query", "list": "search", "srsearch": team_name,
+            "format": "json", "srlimit": 3,
+        })
+        resp.raise_for_status()
+        results = resp.json().get("query", {}).get("search", [])
+        if results:
+            title = results[0]["title"]
+    except Exception as e:
+        print(f"تعذّر البحث بويكيبيديا عن {team_name} ({e}).")
+    cache[team_name] = title
+    return title
+
+
+def fetch_wikipedia_squad_wikitext(title: str):
+    try:
+        resp = requests.get(WIKI_API, headers=WIKI_HEADERS, timeout=15, params={
+            "action": "parse", "page": title, "prop": "sections", "format": "json",
+        })
+        resp.raise_for_status()
+        sections = resp.json().get("parse", {}).get("sections", [])
+    except Exception as e:
+        print(f"تعذّر جلب أقسام صفحة {title} ({e}).")
+        return None
+
+    target_idx = next((s["index"] for s in sections if s.get("line") in SQUAD_SECTION_NAMES), None)
+    if target_idx is None:
+        return None
+
+    try:
+        resp = requests.get(WIKI_API, headers=WIKI_HEADERS, timeout=15, params={
+            "action": "parse", "page": title, "prop": "wikitext",
+            "section": target_idx, "format": "json",
+        })
+        resp.raise_for_status()
+        return resp.json().get("parse", {}).get("wikitext", {}).get("*", "")
+    except Exception as e:
+        print(f"تعذّر جلب نص تشكيلة {title} ({e}).")
+        return None
+
+
+def parse_wikipedia_squad(wikitext: str) -> list:
+    if not wikitext:
+        return []
+
+    loan_idx = wikitext.find("Out on loan")
+    main_text = wikitext[:loan_idx] if loan_idx != -1 else wikitext
+
+    players = []
+    for m in re.finditer(r"\{\{\s*Fs\s*player\|([^}]*)\}\}", main_text, re.I):
+        fields = {}
+        for part in m.group(1).split("|"):
+            if "=" in part:
+                k, v = part.split("=", 1)
+                fields[k.strip().lower()] = v.strip()
+
+        name = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]+)\]\]", r"\1", fields.get("name", "")).strip()
+        if not name:
+            continue
+
+        players.append({
+            "wiki_name": name,
+            "number": fields.get("no") or None,
+            "position": POSITION_CODE_MAP.get(fields.get("pos", "").upper(), fields.get("pos")),
+        })
+
+    return players
+
+
+def find_thesportsdb_player_by_name(name: str, cache: dict):
+    """نبحث بالاسم بس عشان نجيب صورة اللاعب ومعرّفه (لربط نبذته وقيمته السوقية)."""
+    if name in cache:
+        return cache[name]
+    result = None
+    try:
+        resp = requests.get(f"{THESPORTSDB_BASE}/searchplayers.php", params={"p": name}, timeout=15)
+        resp.raise_for_status()
+        found = resp.json().get("player") or []
+        if found:
+            p = found[0]
+            result = {"id": p.get("idPlayer"), "photo": p.get("strCutout") or p.get("strThumb")}
+    except Exception as e:
+        print(f"تعذّر البحث عن {name} بـ TheSportsDB ({e}).")
+    cache[name] = result
+    return result
+
+
+def fetch_team_squad_wikipedia(team_name: str, wiki_title_cache: dict, wiki_player_cache: dict):
+    """
+    يجيب التشكيلة الكاملة الحقيقية لنادي من ويكيبيديا (بدل الـ10 لاعبين
+    بس اللي يعطيهم TheSportsDB مجاناً)، ويثري كل لاعب بصورته ومعرّفه من
+    TheSportsDB لو انطابق اسمه، عشان ميزتي نبذة اللاعب والقيمة السوقية
+    يضلوا يشتغلوا بدون أي تغيير.
+    """
+    title = find_wikipedia_title(team_name, wiki_title_cache)
+    if not title:
+        return None
+
+    wikitext = fetch_wikipedia_squad_wikitext(title)
+    wiki_players = parse_wikipedia_squad(wikitext)
+    if not wiki_players:
+        return None
+
+    squad = []
+    for wp in wiki_players:
+        sdb = find_thesportsdb_player_by_name(wp["wiki_name"], wiki_player_cache)
+        squad.append({
+            "id": sdb["id"] if sdb else None,
+            "name": wp["wiki_name"],
+            "age": None,
+            "number": wp["number"],
+            "position": wp["position"],
+            "photo": sdb["photo"] if sdb else None,
+        })
+    return squad
+
+
 def fetch_team_squad(team_id: str):
     """يجيب تشكيلة نادي واحد من TheSportsDB (لاعبين حقيقيين: اسم، صورة، مركز، رقم)."""
     url = f"{THESPORTSDB_BASE}/lookup_all_players.php"
@@ -574,8 +708,15 @@ def update_squads_cache(archive: list) -> dict:
     """
     squads = load_squads()
     sync_state = load_json_file(SQUADS_SYNC_FILE, {})
+    wiki_title_cache = load_json_file(TEAM_WIKI_TITLE_FILE, {})
+    wiki_player_cache = load_json_file(WIKI_PLAYER_ID_FILE, {})
     team_ids = {m["home_id"] for m in archive} | {m["away_id"] for m in archive}
     today = datetime.now()
+
+    name_by_id = {}
+    for m in archive:
+        name_by_id[m["home_id"]] = m["home"]
+        name_by_id[m["away_id"]] = m["away"]
 
     def is_stale(tid):
         if str(tid) not in squads:
@@ -595,9 +736,16 @@ def update_squads_cache(archive: list) -> dict:
     to_refresh = stale_ids[:MAX_SQUAD_REFRESH_PER_RUN]
 
     for team_id in to_refresh:
-        print(f"جاري تحديث تشكيلة النادي رقم {team_id}...")
+        team_name = name_by_id.get(team_id)
+        print(f"جاري تحديث تشكيلة {team_name or team_id}...")
+        squad = None
         try:
-            squads[str(team_id)] = fetch_team_squad(team_id)
+            if team_name:
+                squad = fetch_team_squad_wikipedia(team_name, wiki_title_cache, wiki_player_cache)
+            if not squad:
+                print(f"تعذّر جلب تشكيلة {team_name} كاملة من ويكيبيديا، استخدام TheSportsDB بدلاً (تشكيلة جزئية).")
+                squad = fetch_team_squad(team_id)
+            squads[str(team_id)] = squad
             sync_state[str(team_id)] = today.strftime("%Y-%m-%d")
         except Exception as e:
             print(f"تعذّر تحديث تشكيلة النادي {team_id} ({e}).")
@@ -605,6 +753,8 @@ def update_squads_cache(archive: list) -> dict:
     if to_refresh:
         save_squads(squads)
         save_json_file(SQUADS_SYNC_FILE, sync_state)
+        save_json_file(TEAM_WIKI_TITLE_FILE, wiki_title_cache)
+        save_json_file(WIKI_PLAYER_ID_FILE, wiki_player_cache)
         print(f"حُدّثت تشكيلات {len(to_refresh)} نادي (الإجمالي المخزّن: {len(squads)}).")
 
     return squads

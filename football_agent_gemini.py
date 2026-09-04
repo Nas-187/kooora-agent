@@ -23,6 +23,7 @@ import requests
 import json
 import os
 import time
+import html as html_module
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from google import genai
@@ -883,22 +884,56 @@ TRANSLATIONS_FILE = "news_translations.json"
 MAX_NEW_TRANSLATIONS_PER_RUN = 15
 
 
-def translate_to_arabic(title: str, excerpt: str):
+def fetch_bbc_article_text(url: str) -> str:
     """
-    يترجم عنوان ومقتطف خبر حقيقي من BBC Sport للعربية بالذكاء الاصطناعي -
-    ترجمة بس، بدون أي إضافة أو حذف أو تلخيص لمعلومة، عشان يضل الخبر نفسه
-    بالضبط بس بلغة عربية. لو فشلت الترجمة (تجاوز حصة مثلاً) نرجع None
-    ونستخدم النص الإنجليزي الأصلي مؤقتاً لين تنترجم بتشغيل لاحق.
+    يجيب نص المقال الحقيقي كامل (أول فقرات جوهرية) من صفحة BBC نفسها،
+    عشان نقدر نترجم محتوى أوفر من مجرد جملة الملخص المختصرة بالـ RSS.
+    لا نأخذ المقال كامل، بس أول فقرات كافية تعطي صورة وافية للقارئ.
     """
-    prompt = f"""ترجم هذا العنوان والمقتطف الإخباريين من الإنجليزية للعربية
-الفصحى الإخبارية، ترجمة دقيقة وأمينة بدون أي إضافة أو حذف أو تلخيص لأي
-معلومة موجودة بالنص الأصلي:
+    try:
+        response = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        response.raise_for_status()
+        html = response.text
+    except Exception as e:
+        print(f"تعذّر جلب صفحة المقال ({e}).")
+        return ""
+
+    paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", html, re.S)
+    clean_paragraphs = []
+    for p in paragraphs:
+        text = re.sub(r"<[^>]+>", "", p)
+        text = html_module.unescape(text).strip()
+        # نتجاهل فقرات قائمة التنقّل (تظهر أحياناً داخل وسم <p> بالصفحة)
+        if "Skip to content" in text or "BBC Homepage" in text:
+            continue
+        if len(text) > 40:
+            clean_paragraphs.append(text)
+        if len(clean_paragraphs) >= 8:
+            break
+
+    return " ".join(clean_paragraphs)[:1800]
+
+
+def translate_to_arabic(title: str, excerpt: str, article_text: str = ""):
+    """
+    يترجم/يلخّص خبر حقيقي من BBC Sport للعربية بالذكاء الاصطناعي، معتمداً
+    حصراً على النص الحقيقي المُعطى (مقتطف RSS أو فقرات المقال الفعلية لو
+    توفرت)، بدون أي إضافة لمعلومة غير موجودة بالمصدر. لو فشلت الترجمة
+    (تجاوز حصة مثلاً) نرجع None ونستخدم النص الإنجليزي الأصلي مؤقتاً لين
+    تنترجم بتشغيل لاحق.
+    """
+    source_text = article_text or excerpt
+
+    prompt = f"""ترجم ولخّص هذا الخبر الرياضي من الإنجليزية للعربية الفصحى
+الإخبارية، بفقرة وافية (4-6 جمل) تغطي التفاصيل المهمة المذكورة فعلاً
+بالنص، بدون أي إضافة لأي معلومة أو رقم أو حدث غير موجود بالنص الأصلي
+أدناه، وبدون حذف تفاصيل جوهرية موجودة فيه:
 
 العنوان: {title}
-المقتطف: {excerpt}
+النص: {source_text}
 
 رجّع النتيجة بصيغة JSON بالضبط بدون أي نص إضافي حولها:
-{{"title": "الترجمة هنا", "excerpt": "الترجمة هنا"}}"""
+{{"title": "ترجمة العنوان هنا", "excerpt": "الفقرة الملخّصة المترجمة هنا"}}"""
 
     try:
         response = gemini_client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
@@ -930,7 +965,8 @@ def translate_bbc_items(items: list) -> list:
         if new_count >= MAX_NEW_TRANSLATIONS_PER_RUN:
             continue
 
-        translated = translate_to_arabic(item["title"], item["excerpt"])
+        article_text = fetch_bbc_article_text(item["link"])
+        translated = translate_to_arabic(item["title"], item["excerpt"], article_text)
         if translated:
             title_ar, excerpt_ar = translated
             cache[item["link"]] = {"title": title_ar, "excerpt": excerpt_ar}

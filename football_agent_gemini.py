@@ -619,21 +619,27 @@ def parse_wikipedia_squad(wikitext: str) -> list:
 
 
 def find_thesportsdb_player_by_name(name: str, cache: dict):
-    """نبحث بالاسم بس عشان نجيب صورة اللاعب ومعرّفه (لربط نبذته وقيمته السوقية)."""
+    """
+    نبحث بالاسم بس عشان نجيب صورة اللاعب ومعرّفه (لربط نبذته وقيمته السوقية).
+    لو الطلب فشل (تحميل زائد على TheSportsDB مثلاً) ما نخزّن "فشل" بشكل
+    دائم بالكاش، عشان نعيد المحاولة بتشغيل لاحق بدل ما يضل اللاعب بدون
+    صورة للأبد بسبب فشل مؤقت.
+    """
     if name in cache:
         return cache[name]
-    result = None
     try:
         resp = requests.get(f"{THESPORTSDB_BASE}/searchplayers.php", params={"p": name}, timeout=15)
         resp.raise_for_status()
         found = resp.json().get("player") or []
+        result = None
         if found:
             p = found[0]
             result = {"id": p.get("idPlayer"), "photo": p.get("strCutout") or p.get("strThumb")}
+        cache[name] = result
+        return result
     except Exception as e:
-        print(f"تعذّر البحث عن {name} بـ TheSportsDB ({e}).")
-    cache[name] = result
-    return result
+        print(f"تعذّر البحث عن {name} بـ TheSportsDB ({e}) - بنعيد المحاولة لاحقاً.")
+        return None
 
 
 def fetch_team_squad_wikipedia(team_name: str, wiki_title_cache: dict, wiki_player_cache: dict):
@@ -655,6 +661,7 @@ def fetch_team_squad_wikipedia(team_name: str, wiki_title_cache: dict, wiki_play
     squad = []
     for wp in wiki_players:
         sdb = find_thesportsdb_player_by_name(wp["wiki_name"], wiki_player_cache)
+        time.sleep(0.12)
         squad.append({
             "id": sdb["id"] if sdb else None,
             "name": wp["wiki_name"],

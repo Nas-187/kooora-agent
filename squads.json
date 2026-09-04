@@ -3583,84 +3583,228 @@
   ],
   "133681": [
     {
-      "id": "34169455",
-      "name": "Alessandro Bastoni",
-      "age": 27,
-      "number": "95",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hwixpa1759408795.png"
+      "id": null,
+      "name": "Josep Martínez",
+      "age": null,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": null
     },
     {
-      "id": "34196442",
+      "id": null,
+      "name": "[[Aleksandar Stanković (footballer, born 2005)",
+      "age": null,
+      "number": "5",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "John Stones",
+      "age": null,
+      "number": "6",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Piotr Zieliński",
+      "age": null,
+      "number": "7",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Petar Sučić",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Marcus Thuram",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Lautaro Martínez",
+      "age": null,
+      "number": "10",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Luis Henrique (footballer, born 2001)",
+      "age": null,
+      "number": "11",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Raffaele Di Gennaro",
+      "age": null,
+      "number": "12",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ange-Yoan Bonny",
+      "age": null,
+      "number": "14",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Andy Diouf",
-      "age": 23,
+      "age": null,
       "number": "17",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/38x9vh1759408128.png"
+      "photo": null
     },
     {
-      "id": "34229850",
-      "name": "Ange-Yoan Bonny",
-      "age": 22,
-      "number": "14",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/d7uly91759408116.png"
-    },
-    {
-      "id": "34174575",
-      "name": "Carlos Neves",
-      "age": 27,
-      "number": "30",
+      "id": null,
+      "name": "Hakan Çalhanoğlu",
+      "age": null,
+      "number": "20",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a92ocl1759408951.png"
+      "photo": null
     },
     {
-      "id": "34147068",
-      "name": "Cristian Chivu",
-      "age": 45,
-      "number": "",
-      "position": "Manager",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7200103.png"
+      "id": null,
+      "name": "[[Curtis Jones (footballer, born 2001)",
+      "age": null,
+      "number": "21",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34173595",
-      "name": "Djed Spence",
-      "age": 26,
-      "number": "24",
-      "position": "Right-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/erd1vi1757875565.png"
+      "id": null,
+      "name": "Henrikh Mkhitaryan",
+      "age": null,
+      "number": "22",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34147121",
+      "id": null,
+      "name": "Nicolò Barella",
+      "age": null,
+      "number": "23",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Manuel Akanji",
+      "age": null,
+      "number": "25",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Benjamin Pavard",
+      "age": null,
+      "number": "28",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Carlos Augusto (footballer)",
+      "age": null,
+      "number": "30",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yann Bisseck",
+      "age": null,
+      "number": "31",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Federico Dimarco",
-      "age": 28,
+      "age": null,
       "number": "32",
-      "position": "Left-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0rhwx41759408849.png"
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34164282",
-      "name": "Francesco Acerbi",
-      "age": 38,
-      "number": "15",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7ewuqw1759408766.png"
+      "id": null,
+      "name": "Ivan Provedel",
+      "age": null,
+      "number": "49",
+      "position": "Goalkeeper",
+      "photo": null
     },
     {
-      "id": "34236474",
-      "name": "Francesco Esposito",
-      "age": 21,
+      "id": null,
+      "name": "Pio Esposito",
+      "age": null,
       "number": "94",
       "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/22mew91759408142.png"
+      "photo": null
     },
     {
-      "id": "34155404",
-      "name": "Hakan Çalhanoğlu",
-      "age": 32,
-      "number": "20",
-      "position": "Defensive Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png"
+      "id": null,
+      "name": "Alessandro Bastoni",
+      "age": null,
+      "number": "95",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Djed Spence",
+      "age": null,
+      "number": "99",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Leonardo Bovio",
+      "age": null,
+      "number": "46",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mattia Mosconi",
+      "age": null,
+      "number": "48",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jamal Iddrissou",
+      "age": null,
+      "number": "52",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mattia Marello",
+      "age": null,
+      "number": "54",
+      "position": "Defender",
+      "photo": null
     }
   ],
   "133724": [

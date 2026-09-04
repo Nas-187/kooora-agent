@@ -96,7 +96,7 @@
   },
   {
     "event_id": "2573340",
-    "title": "Abha 0 - 0 Al-Ettifaq",
+    "title": "Abha 0 - 1 Al-Ettifaq",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "5",
@@ -105,12 +105,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/e00pwe1677530619.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/m272h51694761970.png",
     "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
+    "away_score": 1,
+    "status": "Match Finished",
     "league": "دوري روشن السعودي",
     "date": "2026-09-04T16:00:00Z",
     "day": "2026-09-04",
-    "content": "تعادل Abha وAl-Ettifaq بنتيجة 0-0 ضمن دوري روشن السعودي.",
+    "content": "فوز Al-Ettifaq على Abha بنتيجة 0-1 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {

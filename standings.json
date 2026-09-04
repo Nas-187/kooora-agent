@@ -5,8 +5,8 @@
       {
         "rank": 1,
         "team": "Al-Hilal",
-        "played": 4,
-        "points": 12
+        "played": 5,
+        "points": 15
       },
       {
         "rank": 2,
@@ -46,38 +46,38 @@
       },
       {
         "rank": 8,
+        "team": "Al-Ahli",
+        "played": 4,
+        "points": 6
+      },
+      {
+        "rank": 9,
         "team": "Al-Ittihad",
         "played": 3,
         "points": 5
       },
       {
-        "rank": 9,
+        "rank": 10,
         "team": "Al-Fayha",
         "played": 5,
         "points": 5
       },
       {
-        "rank": 10,
+        "rank": 11,
         "team": "Al-Hazem",
         "played": 4,
         "points": 4
       },
       {
-        "rank": 11,
-        "team": "Al-Ahli",
-        "played": 3,
-        "points": 3
-      },
-      {
         "rank": 12,
-        "team": "Al-Riyadh",
-        "played": 3,
+        "team": "Al-Khaleej",
+        "played": 5,
         "points": 3
       },
       {
         "rank": 13,
-        "team": "Al-Khaleej",
-        "played": 5,
+        "team": "Al-Riyadh",
+        "played": 4,
         "points": 3
       },
       {
@@ -89,7 +89,7 @@
       {
         "rank": 15,
         "team": "Al-Shabab",
-        "played": 3,
+        "played": 4,
         "points": 2
       },
       {
@@ -135,45 +135,45 @@
       },
       {
         "rank": 4,
+        "team": "Liverpool",
+        "played": 3,
+        "points": 5
+      },
+      {
+        "rank": 5,
         "team": "Newcastle United",
         "played": 2,
         "points": 4
       },
       {
-        "rank": 5,
+        "rank": 6,
         "team": "Everton",
         "played": 2,
         "points": 4
       },
       {
-        "rank": 6,
+        "rank": 7,
         "team": "Brighton and Hove Albion",
         "played": 2,
         "points": 3
       },
       {
-        "rank": 7,
+        "rank": 8,
         "team": "Hull City",
         "played": 1,
         "points": 3
       },
       {
-        "rank": 8,
+        "rank": 9,
         "team": "Manchester United",
         "played": 2,
         "points": 3
       },
       {
-        "rank": 9,
-        "team": "Ipswich Town",
-        "played": 2,
-        "points": 3
-      },
-      {
         "rank": 10,
-        "team": "Liverpool",
-        "played": 2,
-        "points": 2
+        "team": "Ipswich Town",
+        "played": 3,
+        "points": 3
       },
       {
         "rank": 11,
@@ -522,43 +522,49 @@
       },
       {
         "rank": 6,
+        "team": "Stuttgart",
+        "played": 2,
+        "points": 3
+      },
+      {
+        "rank": 7,
         "team": "Mainz",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 7,
+        "rank": 8,
         "team": "Paderborn",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 8,
+        "rank": 9,
         "team": "Hamburg",
         "played": 1,
         "points": 0
       },
       {
-        "rank": 9,
+        "rank": 10,
         "team": "Werder Bremen",
         "played": 1,
         "points": 0
       },
       {
-        "rank": 10,
-        "team": "Borussia Mönchengladbach",
-        "played": 1,
-        "points": 0
-      },
-      {
         "rank": 11,
-        "team": "Schalke 04",
+        "team": "Köln",
         "played": 1,
         "points": 0
       },
       {
         "rank": 12,
-        "team": "Stuttgart",
+        "team": "Borussia Mönchengladbach",
+        "played": 1,
+        "points": 0
+      },
+      {
+        "rank": 13,
+        "team": "Schalke 04",
         "played": 1,
         "points": 0
       }
@@ -569,21 +575,21 @@
     "standings": [
       {
         "rank": 1,
+        "team": "Monaco",
+        "played": 3,
+        "points": 9
+      },
+      {
+        "rank": 2,
         "team": "Lyon",
         "played": 3,
         "points": 7
       },
       {
-        "rank": 2,
+        "rank": 3,
         "team": "Lille",
         "played": 3,
         "points": 7
-      },
-      {
-        "rank": 3,
-        "team": "Monaco",
-        "played": 2,
-        "points": 6
       },
       {
         "rank": 4,
@@ -618,7 +624,7 @@
       {
         "rank": 9,
         "team": "Paris Saint-Germain",
-        "played": 2,
+        "played": 3,
         "points": 2
       },
       {

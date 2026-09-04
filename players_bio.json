@@ -763,5 +763,125 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/238266"
     },
     "bio": "Duje Ćaleta-Car يلعب في مركز Centre-Back مع Lyon وهو لاعب Croatia يبلغ من العمر 29 عاماً."
+  },
+  "34233821": {
+    "facts": {
+      "nationality": "Austria",
+      "birth_place": "Vienna",
+      "birth_date": "2003-04-16",
+      "age": 23,
+      "height": "184 cm",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Elias Havel يلعب في مركز مهاجم مع Genoa وهو لاعب Austria يبلغ من العمر 23 عاماً."
+  },
+  "34203401": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Presidente Prudente, Brazil",
+      "birth_date": "2000-05-27",
+      "age": 26,
+      "height": "1.81 m (5 ft 11 in)",
+      "weight": "163 lbs",
+      "position": "Left-Back",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/646402"
+    },
+    "bio": "Abner يلعب في مركز Left-Back مع Lyon وهو لاعب Brazil يبلغ من العمر 26 عاماً."
+  },
+  "34196353": {
+    "facts": {
+      "nationality": "Czechia",
+      "birth_place": ", Czech Republic",
+      "birth_date": "2003-07-02",
+      "age": 23,
+      "height": "6' 1\"",
+      "weight": "161 lbs",
+      "position": "Midfielder",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Adam Karabec يلعب في مركز وسط مع Lyon وهو لاعب Czechia يبلغ من العمر 23 عاماً."
+  },
+  "34222507": {
+    "facts": {
+      "nationality": "Portugal",
+      "birth_place": "Lamego, Portugal",
+      "birth_date": "2005-03-19",
+      "age": 21,
+      "height": "175 cm",
+      "weight": "150 lbs",
+      "position": "Attacker",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Afonso Bastardo Moreira يلعب في مركز مهاجم مع Lyon وهو لاعب Portugal يبلغ من العمر 21 عاماً."
+  },
+  "34163947": {
+    "facts": {
+      "nationality": "Angola",
+      "birth_place": "Verviers, Belgium",
+      "birth_date": "1992-11-07",
+      "age": 33,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "159 lbs",
+      "position": "Right-Back",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/187718"
+    },
+    "bio": "Clinton Mata يلعب في مركز Right-Back مع Lyon وهو لاعب Angola يبلغ من العمر 33 عاماً."
+  },
+  "34193683": {
+    "facts": {
+      "nationality": "Slovakia",
+      "birth_place": "Bratislava, Slovakia",
+      "birth_date": "1997-04-06",
+      "age": 29,
+      "height": "1.97 m (6 ft 6 in)",
+      "weight": "181 lbs",
+      "position": "Goalkeeper",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/316884"
+    },
+    "bio": "Dominik Greif يلعب في مركز حارس مرمى مع Lyon وهو لاعب Slovakia يبلغ من العمر 29 عاماً."
+  },
+  "34419757": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Décines-Charpieu, France",
+      "birth_date": "2007-09-18",
+      "age": 18,
+      "height": "5 ft 10 in",
+      "weight": "62",
+      "position": "Attacker",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Enzo Honoré Molébé يلعب في مركز مهاجم مع Lyon وهو لاعب France يبلغ من العمر 18 عاماً."
+  },
+  "34202601": {
+    "facts": {
+      "nationality": "Ghana",
+      "birth_place": "Kumasi, Ghana",
+      "birth_date": "2003-11-01",
+      "age": 22,
+      "height": "178 cm",
+      "weight": "157 lbs",
+      "position": "Left Wing",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/955070"
+    },
+    "bio": "Ernest Nuamah يلعب في مركز Left Wing مع Lyon وهو لاعب Ghana يبلغ من العمر 22 عاماً."
   }
 }

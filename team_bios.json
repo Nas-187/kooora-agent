@@ -42,5 +42,27 @@
       "league": "Italian Serie A"
     },
     "bio": "Napoli تأسس عام 1926 ويلعب مبارياته على ملعب Stadio Diego Armando Maradona بمدينة Napoli, Italy."
+  },
+  "133665": {
+    "facts": {
+      "founded": "1905",
+      "stadium": "MEWA ARENA",
+      "stadium_capacity": "34000",
+      "city": "Mainz, Rhineland-Palatinate, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Mainz تأسس عام 1905 ويلعب مبارياته على ملعب MEWA ARENA بمدينة Mainz, Rhineland-Palatinate, Germany."
+  },
+  "133714": {
+    "facts": {
+      "founded": "1970",
+      "stadium": "Parc des Princes",
+      "stadium_capacity": "47929",
+      "city": "Paris, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Paris Saint-Germain تأسس عام 1970 ويلعب مبارياته على ملعب Parc des Princes بمدينة Paris, France."
   }
 }

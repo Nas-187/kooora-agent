@@ -112,7 +112,7 @@
   }
 
   .match-row{
-    display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:12px;
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:12px; direction:ltr;
     padding:14px 18px; border-bottom:1px solid var(--line);
   }
   .match-row:last-child{ border-bottom:none; }
@@ -269,7 +269,7 @@ function matchRowHtml(m){
 
   return `
   <div class="match-row">
-    <div class="mr-team home"><span>${m.home_team}</span><span class="mr-crest">${crest(m.home_team, m.home_logo)}</span></div>
+    <div class="mr-team home"><span class="mr-crest">${crest(m.home_team, m.home_logo)}</span><span>${m.home_team}</span></div>
     ${badge}
     <div class="mr-team away"><span class="mr-crest">${crest(m.away_team, m.away_logo)}</span><span>${m.away_team}</span></div>
   </div>`;

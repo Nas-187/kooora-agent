@@ -110,7 +110,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-04T16:00:00Z",
     "day": "2026-09-04",
-    "content": "حقق فريق الاتفاق فوزاً ثميناً خارج أرضه على مضيفه أبها بنتيجة (1-0)، في المباراة التي جمعت بينهما ضمن منافسات دوري روشن السعودي. وشهد اللقاء تنافساً قوياً بين الفريقين، قبل أن ينجح الاتفاق في خطف هدف المباراة الوحيد والحفاظ على تقدمه حتى صافرة النهاية. وبهذه النتيجة، انتزع الاتفاق نقاط المباراة الثلاث ليعزز موقعه في جدول الترتيب، بينما خرج أبها من المواجهة دون أي نقاط.",
+    "content": "فوز Al-Ettifaq على Abha بنتيجة 0-1 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -182,7 +182,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
     "home_score": 0,
     "away_score": 0,
-    "status": "In Play",
+    "status": "Halftime",
     "league": "الدوري الإسباني",
     "date": "2026-09-04T19:00:00Z",
     "day": "2026-09-04",
@@ -210,7 +210,7 @@
   },
   {
     "event_id": "2508347",
-    "title": "Stuttgart 1 - 0 Köln",
+    "title": "Stuttgart 3 - 0 Köln",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
     "round": "2",
@@ -218,13 +218,13 @@
     "away_team": "Köln",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/yppyux1473454085.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/2j1sc91566049407.png",
-    "home_score": 1,
+    "home_score": 3,
     "away_score": 0,
     "status": "In Play",
     "league": "الدوري الألماني",
     "date": "2026-09-04T18:30:00Z",
     "day": "2026-09-04",
-    "content": "فوز Stuttgart على Köln بنتيجة 1-0 ضمن الدوري الألماني.",
+    "content": "فوز Stuttgart على Köln بنتيجة 3-0 ضمن الدوري الألماني.",
     "cover_image": null
   },
   {
@@ -248,7 +248,7 @@
   },
   {
     "event_id": "2489484",
-    "title": "Paris Saint-Germain 0 - 0 Monaco",
+    "title": "Paris Saint-Germain 1 - 0 Monaco",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "3",
@@ -256,13 +256,13 @@
     "away_team": "Monaco",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "status": "In Play",
+    "status": "Halftime",
     "league": "الدوري الفرنسي",
     "date": "2026-09-04T19:05:00Z",
     "day": "2026-09-04",
-    "content": "تعادل Paris Saint-Germain وMonaco بنتيجة 0-0 ضمن الدوري الفرنسي.",
+    "content": "فوز Paris Saint-Germain على Monaco بنتيجة 1-0 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

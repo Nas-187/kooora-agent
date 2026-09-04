@@ -733,5 +733,35 @@
       "transfermarkt_url": null
     },
     "bio": "David Puczka يلعب في مركز Left-Back مع Genoa وهو لاعب Austria يبلغ من العمر 21 عاماً."
+  },
+  "34149045": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Tarare, France",
+      "birth_date": "1994-08-03",
+      "age": 32,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "179 lbs",
+      "position": "Central Midfield",
+      "team": "Lyon",
+      "joined": "2013-08-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/190393"
+    },
+    "bio": "Corentin Tolisso يلعب في مركز Central Midfield مع Lyon وهو لاعب France يبلغ من العمر 32 عاماً."
+  },
+  "34172218": {
+    "facts": {
+      "nationality": "Croatia",
+      "birth_place": "Šibenik, Croatia",
+      "birth_date": "1996-09-17",
+      "age": 29,
+      "height": "1.92 m (6 ft 4 in)",
+      "weight": "194 lbs",
+      "position": "Centre-Back",
+      "team": "Lyon",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/238266"
+    },
+    "bio": "Duje Ćaleta-Car يلعب في مركز Centre-Back مع Lyon وهو لاعب Croatia يبلغ من العمر 29 عاماً."
   }
 }

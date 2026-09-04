@@ -9,5 +9,27 @@
       "league": "Spanish La Liga"
     },
     "bio": "Espanyol تأسس عام 1900 ويلعب مبارياته على ملعب RCDE Stadium بمدينة Cornellà y El Prat, Barcelona."
+  },
+  "133739": {
+    "facts": {
+      "founded": "1899",
+      "stadium": "Spotify Camp Nou",
+      "stadium_capacity": "99354",
+      "city": "Barcelona",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Barcelona تأسس عام 1899 ويلعب مبارياته على ملعب Spotify Camp Nou بمدينة Barcelona."
+  },
+  "133937": {
+    "facts": {
+      "founded": "1923",
+      "stadium": "Estadio Abanca-Balaídos",
+      "stadium_capacity": "29000",
+      "city": "Vigo, Galicia, Spain",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Celta Vigo تأسس عام 1923 ويلعب مبارياته على ملعب Estadio Abanca-Balaídos بمدينة Vigo, Galicia, Spain."
   }
 }

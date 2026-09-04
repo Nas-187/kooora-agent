@@ -1678,5 +1678,33 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
     "home_goals": 0,
     "away_goals": 1
+  },
+  {
+    "event_id": "2573340",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-04",
+    "home_id": "137855",
+    "home": "Abha",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/e00pwe1677530619.png",
+    "away_id": "136017",
+    "away": "Al-Ettifaq",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/m272h51694761970.png",
+    "home_goals": 0,
+    "away_goals": 1
+  },
+  {
+    "event_id": "2489481",
+    "league_id": 4334,
+    "league_name": "الدوري الفرنسي",
+    "date": "2026-09-04",
+    "home_id": "133713",
+    "home": "Lyon",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/blk9771656932845.png",
+    "away_id": "134788",
+    "away": "Auxerre",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
+    "home_goals": 3,
+    "away_goals": 1
   }
 ]

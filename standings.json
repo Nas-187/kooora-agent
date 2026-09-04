@@ -34,15 +34,15 @@
       },
       {
         "rank": 6,
-        "team": "Al-Diriyah",
+        "team": "Al-Ettifaq",
         "played": 5,
-        "points": 7
+        "points": 9
       },
       {
         "rank": 7,
-        "team": "Al-Ettifaq",
-        "played": 4,
-        "points": 6
+        "team": "Al-Diriyah",
+        "played": 5,
+        "points": 7
       },
       {
         "rank": 8,
@@ -101,7 +101,7 @@
       {
         "rank": 17,
         "team": "Abha",
-        "played": 3,
+        "played": 4,
         "points": 1
       },
       {
@@ -569,25 +569,25 @@
     "standings": [
       {
         "rank": 1,
-        "team": "Lille",
+        "team": "Lyon",
         "played": 3,
         "points": 7
       },
       {
         "rank": 2,
+        "team": "Lille",
+        "played": 3,
+        "points": 7
+      },
+      {
+        "rank": 3,
         "team": "Monaco",
         "played": 2,
         "points": 6
       },
       {
-        "rank": 3,
-        "team": "Paris FC",
-        "played": 2,
-        "points": 4
-      },
-      {
         "rank": 4,
-        "team": "Lyon",
+        "team": "Paris FC",
         "played": 2,
         "points": 4
       },
@@ -653,12 +653,18 @@
       },
       {
         "rank": 15,
-        "team": "Angers",
+        "team": "Auxerre",
         "played": 1,
         "points": 0
       },
       {
         "rank": 16,
+        "team": "Angers",
+        "played": 1,
+        "points": 0
+      },
+      {
+        "rank": 17,
         "team": "Toulouse",
         "played": 2,
         "points": 0

@@ -3673,6 +3673,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qrv2dy1765966992.png"
     },
     {
+      "id": "34300069",
+      "name": "Christ Tapé",
+      "age": 20,
+      "number": "12",
+      "position": "Defender",
+      "photo": null
+    },
+    {
       "id": "34180841",
       "name": "Cristian Cásseres Jr.",
       "age": 26,
@@ -3695,14 +3703,6 @@
       "number": "19",
       "position": "Right-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3e8r121765967510.png"
-    },
-    {
-      "id": "34419661",
-      "name": "Enzo Faty",
-      "age": 19,
-      "number": "41",
-      "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kqfje51766406434.png"
     }
   ],
   "133679": [
@@ -17017,6 +17017,88 @@
       "number": "34",
       "position": "Defender",
       "photo": null
+    }
+  ],
+  "134788": [
+    {
+      "id": "34302291",
+      "name": "Aristide Zossou",
+      "age": 21,
+      "number": "77",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": "34226025",
+      "name": "Arthur Piedfort",
+      "age": 21,
+      "number": "46",
+      "position": "Defender",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ys7yeh1767097727.png"
+    },
+    {
+      "id": "34148084",
+      "name": "Assane Diousse",
+      "age": 28,
+      "number": "18",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/59dd7q1765920416.png"
+    },
+    {
+      "id": "34160942",
+      "name": "Axel Tuanzebe",
+      "age": 28,
+      "number": "4",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4u651u1765971647.png"
+    },
+    {
+      "id": "34193627",
+      "name": "Cameron Archer",
+      "age": 24,
+      "number": "",
+      "position": "Centre-Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c1m33b1761322321.png"
+    },
+    {
+      "id": "34230043",
+      "name": "Christ Makosso",
+      "age": 22,
+      "number": "28",
+      "position": "Defender",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wza3yh1766071197.png"
+    },
+    {
+      "id": "34165623",
+      "name": "Christophe Pélissier",
+      "age": 60,
+      "number": "",
+      "position": "Manager",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/c64nts1549714324.jpg"
+    },
+    {
+      "id": "34231249",
+      "name": "Clément Akpa",
+      "age": 24,
+      "number": "92",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwlxdt1765920817.png"
+    },
+    {
+      "id": "34201830",
+      "name": "Danny Namaso",
+      "age": 26,
+      "number": "19",
+      "position": "Left Wing",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/y87bpz1765920491.png"
+    },
+    {
+      "id": "34174815",
+      "name": "Donovan Léon",
+      "age": 33,
+      "number": "16",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qmtrr41765920430.png"
     }
   ]
 }

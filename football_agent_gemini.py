@@ -560,26 +560,52 @@ def fetch_team_squad(team_id: str):
     return squad
 
 
+SQUADS_SYNC_FILE = "squads_sync.json"
+SQUAD_REFRESH_DAYS = 7
+MAX_SQUAD_REFRESH_PER_RUN = 6
+
+
 def update_squads_cache(archive: list) -> dict:
     """
-    يجيب تشكيلة أي نادي ظهر بالأرشيف وما عندنا تشكيلته مخزّنة بعد.
-    نخزّن كل تشكيلة مرة وحدة بس (ما تتغير كل يوم) عشان نوفر حصة الـ API -
-    فقط الأندية الجديدة تُضاف تدريجياً كل ما تلعب مباراتها الأولى بأرشيفنا.
+    يجيب تشكيلة أي نادي ظهر بالأرشيف، ويحدّثها دورياً (كل SQUAD_REFRESH_DAYS
+    يوم) بدل ما يخزّنها مرة وحدة للأبد - عشان لاعب انتقل لنادي ثاني ما يضل
+    يبين بتشكيلة ناديه القديم. الأندية الجديدة كلها أولوية، وبعدها الأقدم
+    تحديثاً، بحد أقصى MAX_SQUAD_REFRESH_PER_RUN كل تشغيل.
     """
     squads = load_squads()
+    sync_state = load_json_file(SQUADS_SYNC_FILE, {})
     team_ids = {m["home_id"] for m in archive} | {m["away_id"] for m in archive}
-    new_ids = [tid for tid in team_ids if str(tid) not in squads]
+    today = datetime.now()
 
-    for team_id in new_ids:
-        print(f"جاري جلب تشكيلة النادي رقم {team_id}...")
+    def is_stale(tid):
+        if str(tid) not in squads:
+            return True
+        last = sync_state.get(str(tid))
+        if not last:
+            return True
+        try:
+            return (today - datetime.strptime(last, "%Y-%m-%d")).days >= SQUAD_REFRESH_DAYS
+        except ValueError:
+            return True
+
+    stale_ids = sorted(
+        (tid for tid in team_ids if is_stale(tid)),
+        key=lambda t: sync_state.get(str(t), ""),
+    )
+    to_refresh = stale_ids[:MAX_SQUAD_REFRESH_PER_RUN]
+
+    for team_id in to_refresh:
+        print(f"جاري تحديث تشكيلة النادي رقم {team_id}...")
         try:
             squads[str(team_id)] = fetch_team_squad(team_id)
+            sync_state[str(team_id)] = today.strftime("%Y-%m-%d")
         except Exception as e:
-            print(f"تعذّر جلب تشكيلة النادي {team_id} ({e}).")
+            print(f"تعذّر تحديث تشكيلة النادي {team_id} ({e}).")
 
-    if new_ids:
+    if to_refresh:
         save_squads(squads)
-        print(f"أُضيفت تشكيلات {len(new_ids)} نادي جديد (الإجمالي: {len(squads)}).")
+        save_json_file(SQUADS_SYNC_FILE, sync_state)
+        print(f"حُدّثت تشكيلات {len(to_refresh)} نادي (الإجمالي المخزّن: {len(squads)}).")
 
     return squads
 

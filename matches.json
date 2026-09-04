@@ -153,7 +153,7 @@
   },
   {
     "event_id": "2494027",
-    "title": "Ipswich Town ضد Liverpool",
+    "title": "Ipswich Town 0 - 2 Liverpool",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "3",
@@ -161,13 +161,13 @@
     "away_team": "Liverpool",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/mdj1ey1634670785.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 2,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-04T19:00:00Z",
     "day": "2026-09-04",
-    "content": "",
+    "content": "فوز Liverpool على Ipswich Town بنتيجة 0-2 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -191,7 +191,7 @@
   },
   {
     "event_id": "2482160",
-    "title": "Genoa ضد Como",
+    "title": "Genoa 1 - 3 Como",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -199,13 +199,13 @@
     "away_team": "Como",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/52s8dn1655553600.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/02x81t1627405841.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 3,
+    "status": "Halftime",
     "league": "الدوري الإيطالي",
     "date": "2026-09-04T18:45:00Z",
     "day": "2026-09-04",
-    "content": "",
+    "content": "فوز Como على Genoa بنتيجة 1-3 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

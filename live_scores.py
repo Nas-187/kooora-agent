@@ -37,6 +37,18 @@ def fetch_league_day_events(league_id: int, date: str) -> list:
     return response.json().get("events") or []
 
 
+def fetch_event_detail(event_id: str) -> dict | None:
+    # eventsday.php يرجع سكور متأخر/مخزّن مؤقتاً عند TheSportsDB، بينما
+    # lookupevent.php لمباراة واحدة يرجع السكور والحالة اللحظية الصحيحة.
+    # نستخدم eventsday.php بس لمعرفة أي المباريات جارية، وبعدين نسحب
+    # التفاصيل الدقيقة لكل مباراة جارية عبر هذا الاندبوينت.
+    url = f"{THESPORTSDB_BASE}/lookupevent.php"
+    response = requests.get(url, params={"id": event_id}, timeout=15)
+    response.raise_for_status()
+    events = response.json().get("events") or []
+    return events[0] if events else None
+
+
 def fetch_live_scores() -> list:
     today = datetime.now().strftime("%Y-%m-%d")
     live = []
@@ -53,14 +65,28 @@ def fetch_live_scores() -> list:
             if not status:
                 continue
 
-            home_score = ev.get("intHomeScore")
-            away_score = ev.get("intAwayScore")
+            event_id = ev["idEvent"]
+            try:
+                detail = fetch_event_detail(event_id)
+            except Exception as e:
+                print(f"تعذّر جلب تفاصيل المباراة {event_id} ({e}).")
+                detail = None
+
+            if detail:
+                status = STATUS_MAP.get(detail.get("strStatus"), status)
+                home_score = detail.get("intHomeScore")
+                away_score = detail.get("intAwayScore")
+            else:
+                home_score = ev.get("intHomeScore")
+                away_score = ev.get("intAwayScore")
+
             live.append({
-                "event_id": ev["idEvent"],
+                "event_id": event_id,
                 "home_score": int(home_score) if home_score not in (None, "") else None,
                 "away_score": int(away_score) if away_score not in (None, "") else None,
                 "status": status,
             })
+            time.sleep(0.1)
 
         time.sleep(0.1)
 

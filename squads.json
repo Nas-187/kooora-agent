@@ -5201,6 +5201,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pvga461766077371.png"
     },
     {
+      "id": "34194485",
+      "name": "Berke Özer",
+      "age": 26,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/23zoe31766077654.png"
+    },
+    {
       "id": "34191798",
       "name": "Calvin Verdonk",
       "age": 29,
@@ -5239,14 +5247,6 @@
       "number": "8",
       "position": "Central Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5z7mrb1766077589.png"
-    },
-    {
-      "id": "34222461",
-      "name": "Félix Andrade Sanches Correia",
-      "age": 25,
-      "number": "27",
-      "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lpkgpm1766077457.png"
     }
   ],
   "133610": [

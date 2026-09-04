@@ -31,5 +31,16 @@
       "league": "Spanish La Liga"
     },
     "bio": "Celta Vigo تأسس عام 1923 ويلعب مبارياته على ملعب Estadio Abanca-Balaídos بمدينة Vigo, Galicia, Spain."
+  },
+  "133670": {
+    "facts": {
+      "founded": "1926",
+      "stadium": "Stadio Diego Armando Maradona",
+      "stadium_capacity": "60240",
+      "city": "Napoli, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Napoli تأسس عام 1926 ويلعب مبارياته على ملعب Stadio Diego Armando Maradona بمدينة Napoli, Italy."
   }
 }

@@ -2135,84 +2135,252 @@
   ],
   "136013": [
     {
-      "id": "34179301",
-      "name": "Abderrazak Hamdallah",
-      "age": 35,
-      "number": "9",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1o1nwe1668953791.png"
-    },
-    {
-      "id": "34202792",
-      "name": "Abdulellah Al-Malki",
-      "age": 31,
-      "number": "88",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lfxn2a1668800879.png"
-    },
-    {
-      "id": "34296998",
-      "name": "Abdulilah Al Ghamdi",
-      "age": 20,
-      "number": "50",
-      "position": "Goalkeeper",
+      "id": null,
+      "name": "Mohammed Mahzari",
+      "age": null,
+      "number": "2",
+      "position": "Defender",
       "photo": null
     },
     {
-      "id": "34247674",
-      "name": "Abdulkarim Darisi",
-      "age": 23,
-      "number": "45",
+      "id": null,
+      "name": "Kalidou Koulibaly",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yusuf Akçiçek",
+      "age": null,
+      "number": "4",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nasser Al-Dawsari",
+      "age": null,
+      "number": "6",
       "position": "Midfielder",
       "photo": null
     },
     {
-      "id": "34295111",
-      "name": "Ahmad Abu Rasen",
-      "age": 22,
-      "number": "40",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ombarh1750763576.png"
-    },
-    {
-      "id": "34202801",
-      "name": "Ali Al-Bulaihi",
-      "age": 36,
-      "number": "5",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6nnm1f1750680017.png"
-    },
-    {
-      "id": "34420176",
-      "name": "Ali Khairallah Al Mahdawi",
-      "age": 21,
-      "number": null,
+      "id": null,
+      "name": "Gabriel Martinelli",
+      "age": null,
+      "number": "7",
       "position": "Attacker",
       "photo": null
     },
     {
-      "id": "34225726",
-      "name": "Ali Lajami",
-      "age": 30,
-      "number": "78",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/poon8z1750763841.png"
+      "id": null,
+      "name": "Rúben Neves",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34170299",
-      "name": "Bono",
-      "age": 35,
+      "id": null,
+      "name": "Ollie Watkins",
+      "age": null,
+      "number": "11",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mohammed Al-Rubaie",
+      "age": null,
+      "number": "17",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Murad Hawsawi",
+      "age": null,
+      "number": "18",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Théo Hernandez",
+      "age": null,
+      "number": "19",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sergej Milinković-Savić",
+      "age": null,
+      "number": "22",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Moteb Al-Harbi",
+      "age": null,
+      "number": "24",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sultan Mandash",
+      "age": null,
+      "number": "27",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mohamed Kanno",
+      "age": null,
+      "number": "28",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Salem Al-Dawsari",
+      "age": null,
+      "number": "29",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Rayan Al-Ghamdi",
+      "age": null,
+      "number": "31",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mohammed Al-Owais",
+      "age": null,
+      "number": "33",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Rayan Al-Dossary",
+      "age": null,
+      "number": "35",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yassine Bounou",
+      "age": null,
       "number": "37",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u0pjgc1658436080.png"
+      "photo": null
     },
     {
-      "id": "34172395",
-      "name": "Darwin Núñez",
-      "age": 27,
-      "number": "7",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/i78juc1693941560.png"
+      "id": null,
+      "name": "Crysencio Summerville",
+      "age": null,
+      "number": "38",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Saad Al-Mutairi",
+      "age": null,
+      "number": "44",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mishal Al-Dawood",
+      "age": null,
+      "number": "55",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Saïmon Bouabré",
+      "age": null,
+      "number": "70",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sabri Dahal",
+      "age": null,
+      "number": "72",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mohammed Al-Sarnoukh",
+      "age": null,
+      "number": "73",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mohamed Kader Meïté",
+      "age": null,
+      "number": "75",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nawaf Al-Habashi",
+      "age": null,
+      "number": "77",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ali Lajami",
+      "age": null,
+      "number": "78",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Hassan Al-Tambakti",
+      "age": null,
+      "number": "87",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Hamad Al-Yami",
+      "age": null,
+      "number": "88",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Abdullah Al-Anazi",
+      "age": null,
+      "number": "93",
+      "position": "Midfielder",
+      "photo": null
     }
   ],
   "133722": [
@@ -2509,84 +2677,244 @@
   ],
   "133674": [
     {
-      "id": "34170382",
-      "name": "Albert Guðmundsson",
-      "age": 29,
-      "number": "10",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/02k9mg1758891762.png"
-    },
-    {
-      "id": "34227000",
-      "name": "Álex Jiménez",
-      "age": 21,
-      "number": "",
-      "position": "Left-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/es940n1757018254.png"
-    },
-    {
-      "id": "34220033",
-      "name": "Amir Richardson",
-      "age": 24,
-      "number": "24",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g2qmky1758892125.png"
-    },
-    {
-      "id": "34222391",
-      "name": "Cher Ndour",
-      "age": 22,
-      "number": "27",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a0qnrm1758892064.png"
-    },
-    {
-      "id": "34164241",
-      "name": "Christian Kouamé",
-      "age": 28,
-      "number": "99",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sjz7nd1697894438.png"
-    },
-    {
-      "id": "34148059",
-      "name": "Daniele Rugani",
-      "age": 32,
-      "number": "3",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p9ftr21776937845.png"
-    },
-    {
-      "id": "34145637",
-      "name": "David de Gea",
-      "age": 35,
-      "number": "43",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w3p74l1758891733.png"
-    },
-    {
-      "id": "34172095",
-      "name": "Dodô",
-      "age": 27,
+      "id": null,
+      "name": "[[Dodô (footballer, born 1998)",
+      "age": null,
       "number": "2",
       "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xzprcz1758891614.png"
+      "photo": null
     },
     {
-      "id": "34301989",
-      "name": "Eddy Kouadio",
-      "age": 20,
-      "number": "60",
+      "id": null,
+      "name": "Radu Drăgușin",
+      "age": null,
+      "number": "3",
       "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/014q0z1758891804.png"
+      "photo": null
     },
     {
-      "id": "34419869",
-      "name": "Eman Kospo",
-      "age": 19,
+      "id": null,
+      "name": "Marco Brescianini",
+      "age": null,
+      "number": "4",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Marin Pongračić",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Luca Ranieri",
+      "age": null,
+      "number": "6",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Arthur Atta",
+      "age": null,
+      "number": "14",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[João Mário (footballer, born 2000)",
+      "age": null,
+      "number": "17",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Luca Lezzerini",
+      "age": null,
+      "number": "19",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Álex Jiménez (footballer, born 2005)",
+      "age": null,
+      "number": "20",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Víctor Valdepeñas",
+      "age": null,
+      "number": "21",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Beto (footballer, born 1998)",
+      "age": null,
       "number": "23",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ltp5tx1758891792.png"
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Alieu Njie (footballer, born 2005)",
+      "age": null,
+      "number": "25",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Cher Ndour",
+      "age": null,
+      "number": "27",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Pedro Gonçalves",
+      "age": null,
+      "number": "28",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Wilfried Gnonto",
+      "age": null,
+      "number": "29",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Franco Mastantuono",
+      "age": null,
+      "number": "30",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mateo Pellegrino",
+      "age": null,
+      "number": "32",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Viery",
+      "age": null,
+      "number": "33",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Christ Inao Oulaï",
+      "age": null,
+      "number": "42",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "David de Gea",
+      "age": null,
+      "number": "43",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nicolò Fagioli",
+      "age": null,
+      "number": "44",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Oliver Christensen",
+      "age": null,
+      "number": "53",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Fabiano Parisi",
+      "age": null,
+      "number": "65",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Federico Croci",
+      "age": null,
+      "number": "70",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sulayman Jallow",
+      "age": null,
+      "number": "71",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Brando Mazzeo",
+      "age": null,
+      "number": "72",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Antonio Pirrò",
+      "age": null,
+      "number": "73",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Antonín Barák",
+      "age": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Riccardo Sottil",
+      "age": null,
+      "number": null,
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jacopo Tarantino",
+      "age": null,
+      "number": null,
+      "position": "Attacker",
+      "photo": null
     }
   ],
   "147445": [
@@ -3121,84 +3449,212 @@
   ],
   "135465": [
     {
-      "id": "34231233",
-      "name": "Adama Camara",
-      "age": 29,
-      "number": "17",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5oyhj71766328998.png"
-    },
-    {
-      "id": "34174999",
-      "name": "Alimami Gory",
-      "age": 30,
-      "number": "7",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qlb1jf1766329096.png"
-    },
-    {
-      "id": "34196538",
-      "name": "Diego Coppola",
-      "age": 22,
-      "number": "",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kv3c0i1756993911.png"
-    },
-    {
-      "id": "34290980",
-      "name": "El Hadary Raheriniaina",
-      "age": 20,
-      "number": "14",
-      "position": "Attacking Midfield",
+      "id": null,
+      "name": "Kevin Trapp",
+      "age": null,
+      "number": "1",
+      "position": "Goalkeeper",
       "photo": null
     },
     {
-      "id": "34167000",
-      "name": "Hamari Traoré",
-      "age": 34,
-      "number": "14",
-      "position": "Right-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gcz4lt1766329450.png"
+      "id": null,
+      "name": "Emmanuel Mbemba",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34174977",
+      "id": null,
+      "name": "Vincent Marchetti",
+      "age": null,
+      "number": "4",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Moustapha Mbow",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Otávio (footballer, born 2002)",
+      "age": null,
+      "number": "6",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Pablo Pagis",
+      "age": null,
+      "number": "7",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Patrick Zabi",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Lassine Sinayoko",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Ilan Kebbal",
-      "age": 28,
+      "age": null,
       "number": "10",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2mv4f11766329171.png"
+      "photo": null
     },
     {
-      "id": "34173453",
+      "id": null,
       "name": "Jean-Philippe Krasso",
-      "age": 29,
+      "age": null,
       "number": "11",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kvb4j71766329205.png"
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34165651",
-      "name": "Jonathan Ikoné",
-      "age": 28,
-      "number": "93",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qyhkai1766329153.png"
+      "id": null,
+      "name": "Hamari Traoré",
+      "age": null,
+      "number": "14",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34174800",
-      "name": "Julien López",
-      "age": 34,
-      "number": "20",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u4zjb61766329240.png"
+      "id": null,
+      "name": "Luca Koleosho",
+      "age": null,
+      "number": "15",
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34155416",
-      "name": "Kevin Trapp",
-      "age": 36,
-      "number": "35",
+      "id": null,
+      "name": "Obed Nkambadio",
+      "age": null,
+      "number": "16",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ylsd641766329468.png"
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Adama Camara",
+      "age": null,
+      "number": "17",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Omar Sissoko",
+      "age": null,
+      "number": "18",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nhoa Sangui",
+      "age": null,
+      "number": "19",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Maxime Lopez",
+      "age": null,
+      "number": "21",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Rudy Matondo",
+      "age": null,
+      "number": "23",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yoan Koré",
+      "age": null,
+      "number": "25",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Moses Simon",
+      "age": null,
+      "number": "27",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Thibault De Smet",
+      "age": null,
+      "number": "28",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Samir Chergui",
+      "age": null,
+      "number": "31",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Pierre Lees-Melou",
+      "age": null,
+      "number": "33",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Diego Coppola",
+      "age": null,
+      "number": "42",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jonathan Ikoné",
+      "age": null,
+      "number": "93",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Andria Kvirikadze",
+      "age": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": null
     }
   ],
   "133651": [
@@ -4923,84 +5379,244 @@
   ],
   "133727": [
     {
-      "id": "34193011",
+      "id": null,
+      "name": "Unai Simón",
+      "age": null,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Daniel Vivian",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Aitor Paredes",
-      "age": 26,
+      "age": null,
       "number": "4",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l4n9kz1678568943.png"
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34251164",
-      "name": "Alejandro Rego",
-      "age": 23,
-      "number": "30",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1ev66t1762357089.png"
+      "id": null,
+      "name": "Yeray Álvarez",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34164381",
+      "id": null,
+      "name": "Beñat Prados",
+      "age": null,
+      "number": "6",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Álex Berenguer",
-      "age": 31,
+      "age": null,
       "number": "7",
-      "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2zraeh1603578286.png"
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34246494",
-      "name": "Álex Padilla",
-      "age": 23,
+      "id": null,
+      "name": "Oihan Sancet",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Iñaki Williams",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nico Williams",
+      "age": null,
+      "number": "10",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Gorka Guruzeta",
+      "age": null,
+      "number": "11",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jesús Areso",
+      "age": null,
+      "number": "12",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Alex Padilla (footballer)",
+      "age": null,
+      "number": "13",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Aymeric Laporte",
+      "age": null,
+      "number": "14",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Hugo Rincón",
+      "age": null,
+      "number": "15",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Iñigo Ruiz de Galarreta",
+      "age": null,
+      "number": "16",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yuri Berchiche",
+      "age": null,
+      "number": "17",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mikel Jauregizar",
+      "age": null,
+      "number": "18",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Alejandro Rego",
+      "age": null,
+      "number": "20",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Maroan Sannadi",
+      "age": null,
+      "number": "21",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nico Serrano",
+      "age": null,
+      "number": "22",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Robert Navarro (footballer)",
+      "age": null,
+      "number": "23",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Beñat Gerenabarrena",
+      "age": null,
+      "number": "24",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Álvaro Djaló",
+      "age": null,
+      "number": "25",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Peio Canales",
+      "age": null,
+      "number": "28",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Johaneko Louis-Jean",
+      "age": null,
+      "number": "31",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Unai Egiluz",
+      "age": null,
+      "number": null,
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Mikel Santos Linares",
+      "age": null,
       "number": "26",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/06ea2y1723745178.png"
-    },
-    {
-      "id": "34200579",
-      "name": "Álvaro Djaló",
-      "age": 27,
-      "number": "14",
-      "position": "Left Wing",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cj4xx31735982702.png"
-    },
-    {
-      "id": "34251159",
-      "name": "Ander Izagirre",
-      "age": 23,
-      "number": "14",
-      "position": "Centre-Back",
       "photo": null
     },
     {
-      "id": "34170307",
-      "name": "Andoni Gorosabel",
-      "age": 30,
-      "number": "2",
-      "position": "Right-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vyxfgp1762285880.png"
-    },
-    {
-      "id": "34149296",
-      "name": "Aymeric Laporte",
-      "age": 32,
-      "number": "14",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q4eqw31762285953.png"
-    },
-    {
-      "id": "34248608",
-      "name": "Beñat Gerenabarrena",
-      "age": 23,
-      "number": "8",
-      "position": "Central Midfield",
+      "id": null,
+      "name": "Asier Hierro",
+      "age": null,
+      "number": "29",
+      "position": "Attacker",
       "photo": null
     },
     {
-      "id": "34216907",
-      "name": "Beñat Prados",
-      "age": 25,
-      "number": "24",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/d9sf4b1712481765.png"
+      "id": null,
+      "name": "Iker Monreal",
+      "age": null,
+      "number": "30",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Selton Sánchez",
+      "age": null,
+      "number": "44",
+      "position": "Midfielder",
+      "photo": null
     }
   ],
   "134789": [
@@ -5087,84 +5703,332 @@
   ],
   "133625": [
     {
-      "id": "34218989",
-      "name": "Aurèle Amenda",
-      "age": 23,
-      "number": "24",
-      "position": "Centre-Back",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/xe3hcc1787490788.png"
+      "id": null,
+      "name": "Ethan Pinnock",
+      "age": null,
+      "number": "2",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34145379",
-      "name": "Ben Wilson",
-      "age": 34,
+      "id": null,
+      "name": "Jay Dasilva",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Bobby Thomas (footballer)",
+      "age": null,
+      "number": "4",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jack Rudoni",
+      "age": null,
+      "number": "5",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Matt Grimes",
+      "age": null,
+      "number": "6",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Tatsuhiro Sakamoto",
+      "age": null,
+      "number": "7",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Caleb Yirenkyi",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ellis Simms",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ephron Mason-Clark",
+      "age": null,
+      "number": "10",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Haji Wright",
+      "age": null,
+      "number": "11",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Ben Wilson (footballer, born 1992)",
+      "age": null,
       "number": "13",
       "position": "Goalkeeper",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ahgvpm1787490465.png"
+      "photo": null
     },
     {
-      "id": "34217618",
-      "name": "Bobby Thomas",
-      "age": 25,
-      "number": "4",
-      "position": "Centre-Back",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/acvorl1787490261.png"
+      "id": null,
+      "name": "Taiwo Awoniyi",
+      "age": null,
+      "number": "14",
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34216160",
-      "name": "Brandon Thomas-Asante",
-      "age": 27,
-      "number": "23",
-      "position": "Centre-Forward",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/9lecxm1787490760.png"
+      "id": null,
+      "name": "Frank Onyeka",
+      "age": null,
+      "number": "16",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34335705",
-      "name": "Caleb Yirenkyi",
-      "age": 20,
-      "number": "8",
-      "position": "Central Midfield",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/m15fmt1787491287.png"
+      "id": null,
+      "name": "Loum Tchaouna",
+      "age": null,
+      "number": "18",
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34217615",
+      "id": null,
       "name": "Carl Rushworth",
-      "age": 25,
+      "age": null,
       "number": "19",
       "position": "Goalkeeper",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/gifv6h1787490668.png"
+      "photo": null
     },
     {
-      "id": "34157261",
-      "name": "Daniel Bentley",
-      "age": 33,
+      "id": null,
+      "name": "Kaine Kesler-Hayden",
+      "age": null,
+      "number": "20",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jake Bidwell",
+      "age": null,
+      "number": "21",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Joel Latibeaudiere",
+      "age": null,
+      "number": "22",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Brandon Thomas-Asante",
+      "age": null,
+      "number": "23",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Aurèle Amenda",
+      "age": null,
+      "number": "24",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Dan Bentley (footballer)",
+      "age": null,
       "number": "25",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xt66781756975715.png"
+      "photo": null
     },
     {
-      "id": "34178276",
-      "name": "Ellis Simms",
-      "age": 25,
-      "number": "9",
-      "position": "Centre-Forward",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/uc73d21787490371.png"
+      "id": null,
+      "name": "Luke Woolfenden",
+      "age": null,
+      "number": "26",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34215798",
-      "name": "Ephron Mason-Clark",
-      "age": 27,
-      "number": "10",
-      "position": "Winger",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/q9tgsp1787490397.png"
+      "id": null,
+      "name": "Milan van Ewijk",
+      "age": null,
+      "number": "27",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34161460",
-      "name": "Ethan Pinnock",
-      "age": 33,
-      "number": "",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/36c65g1765972433.png"
+      "id": null,
+      "name": "Josh Eccles",
+      "age": null,
+      "number": "28",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Victor Torp",
+      "age": null,
+      "number": "29",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Stephen Mfuni",
+      "age": null,
+      "number": "30",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Gustavo Hamer",
+      "age": null,
+      "number": "38",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sidiki Cherif",
+      "age": null,
+      "number": "49",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Tristen Batanwi",
+      "age": null,
+      "number": "43",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Riccardo Di Trolio",
+      "age": null,
+      "number": "44",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Elliot Betjemann",
+      "age": null,
+      "number": "47",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Luke Bell",
+      "age": null,
+      "number": "48",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Joseph McCallum",
+      "age": null,
+      "number": "50",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Oscar Varney",
+      "age": null,
+      "number": "51",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "David Mantle",
+      "age": null,
+      "number": "52",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mackenzie Stretton",
+      "age": null,
+      "number": "55",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Aidan Dausch",
+      "age": null,
+      "number": "59",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Eliot Meredith",
+      "age": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Tionne Critchlow-Woyo",
+      "age": null,
+      "number": null,
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Shay Dunn",
+      "age": null,
+      "number": null,
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "George Shepherd",
+      "age": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": null
     }
   ],
   "133667": [
@@ -5831,84 +6695,188 @@
   ],
   "133604": [
     {
-      "id": "34433685",
-      "name": "Albert Stuivenberg",
-      "age": 56,
-      "number": "",
-      "position": "Assistant Coach",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1aq3m51767708263.png"
-    },
-    {
-      "id": "34163698",
-      "name": "Ben White",
-      "age": 28,
-      "number": "4",
-      "position": "Right-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/78nyo71769331924.png"
-    },
-    {
-      "id": "34172187",
-      "name": "Bruno Guimarães",
-      "age": 28,
-      "number": "39",
-      "position": "Defensive Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/trty041786916932.png"
-    },
-    {
-      "id": "34169884",
-      "name": "Bukayo Saka",
-      "age": 25,
-      "number": "7",
-      "position": "Right Winger",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xfwok41769331816.png"
-    },
-    {
-      "id": "34193337",
-      "name": "Christos Tzolis",
-      "age": 24,
-      "number": "17",
-      "position": "Left Wing",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sbnywa1786916893.png"
-    },
-    {
-      "id": "34194118",
-      "name": "Cristhian Mosquera",
-      "age": 22,
-      "number": "3",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mzik4g1769331540.png"
-    },
-    {
-      "id": "34148681",
+      "id": null,
       "name": "David Raya",
-      "age": 30,
+      "age": null,
       "number": "1",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/21rp2q1769331784.png"
+      "photo": null
     },
     {
-      "id": "34161584",
-      "name": "Declan Rice",
-      "age": 27,
-      "number": "41",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/do2pew1694204464.png"
+      "id": null,
+      "name": "William Saliba",
+      "age": null,
+      "number": "2",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34172278",
+      "id": null,
+      "name": "Cristhian Mosquera",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Ben White (footballer)",
+      "age": null,
+      "number": "4",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Piero Hincapié",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Gabriel Magalhães",
+      "age": null,
+      "number": "6",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Bukayo Saka",
+      "age": null,
+      "number": "7",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Martin Ødegaard",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Eberechi Eze",
-      "age": 28,
+      "age": null,
       "number": "10",
-      "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jcabmd1769330240.png"
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34200626",
-      "name": "Ethan Nwaneri",
-      "age": 19,
-      "number": "22",
-      "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/duej621756983689.png"
+      "id": null,
+      "name": "Jurriën Timber",
+      "age": null,
+      "number": "12",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kepa Arrizabalaga",
+      "age": null,
+      "number": "13",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Viktor Gyökeres",
+      "age": null,
+      "number": "14",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ezri Konsa",
+      "age": null,
+      "number": "15",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Christos Tzolis",
+      "age": null,
+      "number": "17",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Noni Madueke",
+      "age": null,
+      "number": "20",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mikel Merino",
+      "age": null,
+      "number": "23",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kai Havertz",
+      "age": null,
+      "number": "29",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Illan Meslier",
+      "age": null,
+      "number": "30",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Riccardo Calafiori",
+      "age": null,
+      "number": "33",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Martín Zubimendi",
+      "age": null,
+      "number": "36",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Bruno Guimarães",
+      "age": null,
+      "number": "39",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Declan Rice",
+      "age": null,
+      "number": "41",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Myles Lewis-Skelly",
+      "age": null,
+      "number": "49",
+      "position": "Defender",
+      "photo": null
     }
   ],
   "133732": [
@@ -9989,84 +10957,236 @@
   ],
   "133676": [
     {
-      "id": "34174382",
-      "name": "Andrea Cambiaso",
-      "age": 26,
-      "number": "27",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6r741t1759225481.png"
-    },
-    {
-      "id": "34155400",
-      "name": "Arkadiusz Milik",
-      "age": 32,
-      "number": "14",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3wwsgd1759225651.png"
-    },
-    {
-      "id": "34164383",
-      "name": "Bremer",
-      "age": 29,
-      "number": "3",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3qx4p71759224866.png"
-    },
-    {
-      "id": "34162104",
-      "name": "Carlo Pinsoglio",
-      "age": 36,
-      "number": "23",
+      "id": null,
+      "name": "Kamil Grabara",
+      "age": null,
+      "number": "1",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8s18041759222421.png"
+      "photo": null
     },
     {
-      "id": "34161348",
-      "name": "Douglas Luiz",
-      "age": 28,
-      "number": "",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wiqihs1757163098.png"
+      "id": null,
+      "name": "Zeki Çelik",
+      "age": null,
+      "number": "2",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34196464",
-      "name": "Edon Zhegrova",
-      "age": 27,
-      "number": "11",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0cl9vy1759225607.png"
+      "id": null,
+      "name": "[[Gleison Bremer",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34194579",
+      "id": null,
       "name": "Federico Gatti",
-      "age": 28,
+      "age": null,
       "number": "4",
       "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z1jv3i1759224911.png"
+      "photo": null
     },
     {
-      "id": "34155244",
-      "name": "Filip Kostic",
-      "age": 33,
-      "number": "18",
-      "position": "Left Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1kqxaz1759225234.png"
+      "id": null,
+      "name": "Manuel Locatelli",
+      "age": null,
+      "number": "5",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34178806",
+      "id": null,
+      "name": "Lloyd Kelly",
+      "age": null,
+      "number": "6",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Francisco Conceição",
-      "age": 23,
+      "age": null,
       "number": "7",
-      "position": "Right Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ekqivz1759225498.png"
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34172566",
+      "id": null,
+      "name": "Teun Koopmeiners",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Randal Kolo Muani",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kenan Yıldız",
+      "age": null,
+      "number": "10",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Edon Zhegrova",
+      "age": null,
+      "number": "11",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Douglas Luiz",
+      "age": null,
+      "number": "12",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jérémie Boga",
+      "age": null,
+      "number": "13",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Arkadiusz Milik",
+      "age": null,
+      "number": "14",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Pierre Kalulu",
+      "age": null,
+      "number": "15",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kerim Alajbegović",
+      "age": null,
+      "number": "17",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jeff Ekhator",
+      "age": null,
+      "number": "18",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Khéphren Thuram",
+      "age": null,
+      "number": "19",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Andrea Cambiaso",
+      "age": null,
+      "number": "20",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Weston McKennie",
+      "age": null,
+      "number": "22",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Carlo Pinsoglio",
+      "age": null,
+      "number": "23",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Daniele Rugani",
+      "age": null,
+      "number": "24",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Guglielmo Vicario",
-      "age": 29,
+      "age": null,
       "number": "25",
       "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5xu8ds1757015525.png"
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jhon Lucumí",
+      "age": null,
+      "number": "26",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nick Woltemade",
+      "age": null,
+      "number": "27",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Pape Matar Sarr",
+      "age": null,
+      "number": "29",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Nicolás González (footballer, born 1998)",
+      "age": null,
+      "number": "31",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Juan Cabal",
+      "age": null,
+      "number": "32",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Riccardo Radu",
+      "age": null,
+      "number": "40",
+      "position": "Goalkeeper",
+      "photo": null
     }
   ],
   "134783": [
@@ -11021,84 +12141,172 @@
   ],
   "133615": [
     {
-      "id": "34252662",
-      "name": "Adam Aznou",
-      "age": 20,
-      "number": "39",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4ydqac1756976572.png"
+      "id": null,
+      "name": "Jordan Pickford",
+      "age": null,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": null
     },
     {
-      "id": "34145444",
+      "id": null,
       "name": "Ainsley Maitland-Niles",
-      "age": 29,
-      "number": "",
+      "age": null,
+      "number": "2",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jarrad Branthwaite",
+      "age": null,
+      "number": "4",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Michael Keane (footballer, born 1993)",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "James Tarkowski",
+      "age": null,
+      "number": "6",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kiernan Dewsbury-Hall",
+      "age": null,
+      "number": "8",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wevb6y1766146418.png"
+      "photo": null
     },
     {
-      "id": "34177246",
+      "id": null,
+      "name": "Jack Grealish",
+      "age": null,
+      "number": "10",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Thierno Barry (footballer, born 2002)",
+      "age": null,
+      "number": "11",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mark Travers",
+      "age": null,
+      "number": "12",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Jake O'Brien (footballer)",
+      "age": null,
+      "number": "15",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Vitaliy Mykolenko",
+      "age": null,
+      "number": "16",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Tyrique George",
+      "age": null,
+      "number": "19",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Tyler Dibling",
+      "age": null,
+      "number": "20",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Brennan Johnson",
-      "age": 25,
+      "age": null,
       "number": "22",
-      "position": "Right Winger",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fykhpn1772140729.png"
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34203476",
-      "name": "Carlos Alcaraz",
-      "age": 23,
-      "number": "24",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/78jq5c1756976805.png"
-    },
-    {
-      "id": "34145962",
-      "name": "Charlie Adam",
-      "age": 40,
-      "number": "",
-      "position": "Coach",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kbm4hb1580902204.png"
-    },
-    {
-      "id": "34164499",
+      "id": null,
       "name": "Christian Nørgaard",
-      "age": 32,
+      "age": null,
       "number": "23",
-      "position": "Defensive Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ia9o8w1769331494.png"
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34169127",
-      "name": "David Moyes",
-      "age": 63,
-      "number": "",
-      "position": "Manager",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7q13qi1586772868.png"
+      "id": null,
+      "name": "Charly Alcaraz",
+      "age": null,
+      "number": "24",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34247302",
-      "name": "Harrison Armstrong",
-      "age": 19,
+      "id": null,
+      "name": "Hayden Hackney",
+      "age": null,
+      "number": "30",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Tom King (footballer, born 1995)",
+      "age": null,
+      "number": "31",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Merlin Röhl",
+      "age": null,
+      "number": "34",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[James Garner (footballer, born 2001)",
+      "age": null,
+      "number": "37",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Harrison Armstrong (footballer)",
+      "age": null,
       "number": "45",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a9vh831771940165.png"
-    },
-    {
-      "id": "34203491",
-      "name": "Hayden Hackney",
-      "age": 24,
-      "number": "30",
-      "position": "Defensive Midfield",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ordgfa1787493497.png"
-    },
-    {
-      "id": "34145477",
-      "name": "Jack Grealish",
-      "age": 31,
-      "number": "",
-      "position": "Left Wing",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7ckk5a1756976762.png"
+      "photo": null
     }
   ],
   "136200": [
@@ -11267,84 +12475,236 @@
   ],
   "134355": [
     {
-      "id": "34172526",
-      "name": "Aaron Hickey",
-      "age": 24,
-      "number": "2",
-      "position": "Right-Back",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/a0w7r51788292786.png"
-    },
-    {
-      "id": "34225262",
-      "name": "Antoni Milambo",
-      "age": 21,
-      "number": "17",
-      "position": "Midfielder",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/9n4zve1788293286.png"
-    },
-    {
-      "id": "34348947",
-      "name": "Benjamin Fredrick",
-      "age": 21,
-      "number": "48",
-      "position": "Defender",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/3vcmeq1788291628.png"
-    },
-    {
-      "id": "34160895",
-      "name": "Callum Wilson",
-      "age": 34,
-      "number": "13",
-      "position": "Centre-Forward",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/04syqv1788291402.png"
-    },
-    {
-      "id": "34170146",
+      "id": null,
       "name": "Caoimhín Kelleher",
-      "age": 27,
+      "age": null,
       "number": "1",
       "position": "Goalkeeper",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/xq4xtc1788292152.png"
+      "photo": null
     },
     {
-      "id": "34196432",
+      "id": null,
+      "name": "Aaron Hickey",
+      "age": null,
+      "number": "2",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Rico Henry",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sepp van den Berg",
+      "age": null,
+      "number": "4",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yehor Yarmolyuk",
+      "age": null,
+      "number": "6",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kevin Schade",
+      "age": null,
+      "number": "7",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mathias Jensen",
+      "age": null,
+      "number": "8",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Igor Thiago",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Josh Dasilva",
+      "age": null,
+      "number": "10",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Dango Ouattara",
-      "age": 24,
+      "age": null,
       "number": "11",
-      "position": "Right Winger",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/mcj8qr1788292915.png"
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34229663",
+      "id": null,
+      "name": "Hákon Valdimarsson",
+      "age": null,
+      "number": "12",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Callum Wilson",
+      "age": null,
+      "number": "13",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Fábio Carvalho (footballer, born 2002)",
+      "age": null,
+      "number": "14",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Antoni Milambo",
+      "age": null,
+      "number": "17",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mamadou Sangaré",
+      "age": null,
+      "number": "18",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jaidon Anthony",
+      "age": null,
+      "number": "19",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kristoffer Ajer",
+      "age": null,
+      "number": "20",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nathan Collins",
+      "age": null,
+      "number": "22",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Keane Lewis-Potter",
+      "age": null,
+      "number": "23",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Mikkel Damsgaard",
+      "age": null,
+      "number": "24",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "El Hadji Malick Diouf",
-      "age": 21,
-      "number": "",
-      "position": "Left-Back",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/egjbao1788291988.png"
+      "age": null,
+      "number": "25",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34176383",
+      "id": null,
+      "name": "Vitaly Janelt",
+      "age": null,
+      "number": "27",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Ellery Balcombe",
-      "age": 26,
+      "age": null,
       "number": "31",
       "position": "Goalkeeper",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ujd3iu1788292098.png"
+      "photo": null
     },
     {
-      "id": "34179828",
-      "name": "Fabio Carvalho",
-      "age": 24,
-      "number": "14",
-      "position": "Attacking Midfield",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/n4t6u51788293384.png"
+      "id": null,
+      "name": "Michael Kayode",
+      "age": null,
+      "number": "33",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34232927",
+      "id": null,
+      "name": "[[Kim Ji-soo (footballer)",
+      "age": null,
+      "number": "36",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Gustavo Nunes",
-      "age": 20,
+      "age": null,
       "number": "39",
       "position": "Attacker",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/qjyuqa1788293222.png"
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jannik Schuster",
+      "age": null,
+      "number": "44",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Kaye Furo",
+      "age": null,
+      "number": "47",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Benjamin Fredrick",
+      "age": null,
+      "number": "48",
+      "position": "Defender",
+      "photo": null
     }
   ],
   "133701": [
@@ -11647,84 +13007,228 @@
   ],
   "133726": [
     {
-      "id": "34258877",
+      "id": null,
+      "name": "[[Simon Eriksson (footballer)",
+      "age": null,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Álvaro Mantilla",
-      "age": 26,
+      "age": null,
       "number": "2",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xopx0t1784896533.png"
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34175167",
-      "name": "Andrés Martín",
-      "age": 27,
-      "number": "11",
-      "position": "Right Winger",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hr1kp1784900495.png"
+      "id": null,
+      "name": "[[Aarón Martín (footballer, born 1997)",
+      "age": null,
+      "number": "3",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34169620",
-      "name": "Asier Villalibre",
-      "age": 28,
-      "number": "12",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/66n46g1784897287.png"
+      "id": null,
+      "name": "Manu Hernando",
+      "age": null,
+      "number": "4",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34216872",
-      "name": "Ekain Zenitagoia",
-      "age": 32,
-      "number": "14",
-      "position": "Second Striker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cnate61784897136.png"
+      "id": null,
+      "name": "Pablo Ramón",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
     },
     {
-      "id": "34229841",
-      "name": "Facundo González",
-      "age": 23,
-      "number": "16",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6lmmic1777216128.png"
+      "id": null,
+      "name": "Íñigo Sainz-Maza",
+      "age": null,
+      "number": "6",
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34239011",
+      "id": null,
       "name": "Giorgi Guliashvili",
-      "age": 25,
+      "age": null,
       "number": "7",
       "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p34m9o1784896341.png"
+      "photo": null
     },
     {
-      "id": "34222028",
-      "name": "Gustavo Puerta",
-      "age": 23,
+      "id": null,
+      "name": "[[André Almeida (footballer, born 2000)",
+      "age": null,
       "number": "8",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/o2v48u1779828408.png"
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34216933",
-      "name": "Íñigo Sainz-Maza",
-      "age": 28,
-      "number": "6",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eni2cu1784896838.png"
+      "id": null,
+      "name": "Juan Carlos Arana",
+      "age": null,
+      "number": "9",
+      "position": "Attacker",
+      "photo": null
     },
     {
-      "id": "34180804",
+      "id": null,
       "name": "Iñigo Vicente",
-      "age": 28,
+      "age": null,
       "number": "10",
-      "position": "Left Wing",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p8na9v1784897499.png"
+      "position": "Midfielder",
+      "photo": null
     },
     {
-      "id": "34175196",
-      "name": "Iván Martín",
-      "age": 27,
+      "id": null,
+      "name": "[[Andrés Martín (footballer)",
+      "age": null,
+      "number": "11",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Asier Villalibre",
+      "age": null,
+      "number": "12",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Julen Agirrezabala",
+      "age": null,
+      "number": "13",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Maguette Gueye",
+      "age": null,
+      "number": "14",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Pablo García (footballer, born 2006)",
+      "age": null,
+      "number": "15",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Facundo González",
+      "age": null,
+      "number": "16",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Jorge Salinas (Spanish footballer)",
+      "age": null,
+      "number": "17",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Matteo Prati",
+      "age": null,
+      "number": "18",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Iker Luque",
+      "age": null,
+      "number": "19",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sergio Canales",
+      "age": null,
+      "number": "20",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yassir Zabiri",
+      "age": null,
+      "number": "21",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Pedro Felipe (footballer, born 2004)",
+      "age": null,
+      "number": "22",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Iván Martín (footballer, born 1999)",
+      "age": null,
       "number": "23",
-      "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2j1ov11762457230.png"
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jeanuël Belocian",
+      "age": null,
+      "number": "24",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Andrés Vallecillo Arce",
+      "age": null,
+      "number": "29",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Carlos Sánchez Martos",
+      "age": null,
+      "number": "30",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Jorge Castellanos del Olmo",
+      "age": null,
+      "number": "33",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Hugo Pérez Sañudo",
+      "age": null,
+      "number": "38",
+      "position": "Attacker",
+      "photo": null
     }
   ],
   "133602": [

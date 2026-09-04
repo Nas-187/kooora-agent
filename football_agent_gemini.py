@@ -927,10 +927,10 @@ def fetch_bbc_article_text(url: str) -> str:
             continue
         if len(text) > 40:
             clean_paragraphs.append(text)
-        if len(clean_paragraphs) >= 16:
+        if len(clean_paragraphs) >= 40:
             break
 
-    return " ".join(clean_paragraphs)[:3200]
+    return " ".join(clean_paragraphs)[:7000]
 
 
 def translate_to_arabic(title: str, excerpt: str, article_text: str = ""):

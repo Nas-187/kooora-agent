@@ -713,6 +713,25 @@ FOOTBALL_KEYWORDS = [
     "انتقال إلى", "المنتخب السعودي", "كرة قدم",
 ]
 
+# كلمات مفتاحية خاصة بدوري روشن السعودي تحديداً (أندية + مصطلحات الدوري
+# نفسه)، تُستخدم عشان نميّز أخبار الدوري السعودي فعلياً عن أي خبر رياضي
+# عام ثاني يجي بنفس فيد الرياضية (زي أخبار منتخبات أو رياضات ثانية) -
+# لو الخبر ما طابق أي كلمة هنا نسيبه بدون تصنيف دوري، يظهر بس بتبويب
+# "جميع الأخبار" مو بتبويب الدوري السعودي
+SAUDI_LEAGUE_KEYWORDS = [
+    "دوري روشن", "الدوري السعودي", "الاتحاد", "النصر", "الهلال", "الأهلي",
+    "الاتفاق", "الفتح", "التعاون", "الرائد", "الخلود", "الفيحاء", "ضمك",
+    "القادسية", "نيوم", "الدرعية", "الطائي", "الوحدة", "الحزم", "الأخدود",
+    "الفيصلي", "الزراعي", "الرياض",
+]
+
+
+def classify_saudi_news(title: str, description: str):
+    text = f"{title} {description}"
+    if any(kw in text for kw in SAUDI_LEAGUE_KEYWORDS):
+        return STANDINGS_LEAGUE_ID
+    return None
+
 # أسماء أندية كل دوري أوروبي (بالإنجليزية، زي ما تُذكر بمصادر BBC)، تُستخدم
 # بس لتصنيف كل خبر لدوريه الصحيح - مطابقة نصية على العنوان والوصف الحقيقيين
 # بدون أي توليد أو تخمين
@@ -819,7 +838,7 @@ def fetch_arriyadiyah_news() -> list:
             "source": RSS_SOURCE_NAME,
             "author": item.findtext("{http://purl.org/dc/elements/1.1/}creator") or RSS_SOURCE_NAME,
             "published": item.findtext("pubDate") or "",
-            "league_id": STANDINGS_LEAGUE_ID,
+            "league_id": classify_saudi_news(title, description),
         })
 
         if len(items) >= MAX_RSS_ITEMS:
@@ -908,10 +927,10 @@ def fetch_bbc_article_text(url: str) -> str:
             continue
         if len(text) > 40:
             clean_paragraphs.append(text)
-        if len(clean_paragraphs) >= 8:
+        if len(clean_paragraphs) >= 16:
             break
 
-    return " ".join(clean_paragraphs)[:1800]
+    return " ".join(clean_paragraphs)[:3200]
 
 
 def translate_to_arabic(title: str, excerpt: str, article_text: str = ""):
@@ -924,16 +943,18 @@ def translate_to_arabic(title: str, excerpt: str, article_text: str = ""):
     """
     source_text = article_text or excerpt
 
-    prompt = f"""ترجم ولخّص هذا الخبر الرياضي من الإنجليزية للعربية الفصحى
-الإخبارية، بفقرة وافية (4-6 جمل) تغطي التفاصيل المهمة المذكورة فعلاً
-بالنص، بدون أي إضافة لأي معلومة أو رقم أو حدث غير موجود بالنص الأصلي
-أدناه، وبدون حذف تفاصيل جوهرية موجودة فيه:
+    prompt = f"""ترجم هذا الخبر الرياضي من الإنجليزية للعربية الفصحى
+الإخبارية ترجمة كاملة وافية (مو ملخّص قصير)، تغطي كل التفاصيل والحقائق
+والأرقام والتصريحات المذكورة فعلاً بالنص أدناه بدون حذف أي جزئية
+جوهرية منه، وبدون أي إضافة لأي معلومة أو رقم أو حدث غير موجود بالنص
+الأصلي إطلاقاً. اكتبها بصياغة عربية طبيعية مترابطة (مو ترجمة حرفية
+جامدة)، بعدة فقرات لو احتاج النص لذلك:
 
 العنوان: {title}
 النص: {source_text}
 
 رجّع النتيجة بصيغة JSON بالضبط بدون أي نص إضافي حولها:
-{{"title": "ترجمة العنوان هنا", "excerpt": "الفقرة الملخّصة المترجمة هنا"}}"""
+{{"title": "ترجمة العنوان هنا", "excerpt": "الترجمة الكاملة هنا"}}"""
 
     try:
         response = gemini_client.models.generate_content(model=GEMINI_MODEL, contents=prompt)

@@ -207,7 +207,7 @@ let allNewsItems = [];
 
 function renderLeagueTabs(){
   const wrap = document.getElementById('league-tabs');
-  let html = `<button type="button" class="league-tab ${activeLeague === 'all' ? 'active' : ''}" data-league="all">الكل</button>`;
+  let html = `<button type="button" class="league-tab ${activeLeague === 'all' ? 'active' : ''}" data-league="all">جميع الأخبار</button>`;
   html += LEAGUE_ORDER.map(id => `
     <button type="button" class="league-tab ${activeLeague === id ? 'active' : ''}" data-league="${id}">
       ${LEAGUE_NAMES[id]}

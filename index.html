@@ -1129,6 +1129,7 @@ function loadMatches(data){
   renderCompGrid(allTodayMatches);
   renderFeedLeagueTabs();
   renderNewsFeed(allTodayMatches);
+  fetchLiveNow();
 }
 
 fetch('matches.json?t=' + Date.now())
@@ -1171,12 +1172,14 @@ function applyLiveUpdates(liveList){
   }
 }
 
-setInterval(() => {
+function fetchLiveNow(){
   fetch('live_scores.json?t=' + Date.now())
     .then(res => res.ok ? res.json() : [])
     .then(applyLiveUpdates)
     .catch(() => {});
-}, 45000);
+}
+
+setInterval(fetchLiveNow, 45000);
 
 function renderMiniNews(items){
   const list = document.getElementById('mini-news-list');

@@ -308,6 +308,7 @@ fetch('matches.json?t=' + Date.now())
     renderDayTabs();
     renderLeagueGroups();
     enableDragScroll(document.getElementById('day-tabs'));
+    fetchLiveNow();
   })
   .catch(() => {
     document.getElementById('league-groups').innerHTML = '<div class="empty-state">تعذّر تحميل المباريات</div>';
@@ -332,12 +333,14 @@ function applyLiveUpdates(liveList){
   if(changed) renderLeagueGroups();
 }
 
-setInterval(() => {
+function fetchLiveNow(){
   fetch('live_scores.json?t=' + Date.now())
     .then(res => res.ok ? res.json() : [])
     .then(applyLiveUpdates)
     .catch(() => {});
-}, 45000);
+}
+
+setInterval(fetchLiveNow, 45000);
 </script>
 
 </body>

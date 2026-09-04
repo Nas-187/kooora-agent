@@ -300,13 +300,40 @@ document.querySelectorAll('.category-tab').forEach(btn => {
 
 fetch('matches.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
-  .then(data => { allMatches = data; renderArticles(); })
+  .then(data => { allMatches = data; renderArticles(); fetchLiveNow(); })
   .catch(() => { allMatches = []; renderArticles(); });
 
 fetch('news.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
   .then(data => { allNews = data; renderHeadlines(); })
   .catch(() => {});
+
+/* سكور شبه مباشر: نفس آلية صفحتي الرئيسية ومباريات اليوم - نجيب
+   live_scores.json فور تحميل النتائج وبعدها كل 45 ثانية */
+function applyLiveUpdates(liveList){
+  if(!liveList || liveList.length === 0) return;
+  const byId = new Map(liveList.map(l => [String(l.event_id), l]));
+  let changed = false;
+  allMatches.forEach(m => {
+    const live = byId.get(String(m.event_id));
+    if(live && (m.home_score !== live.home_score || m.away_score !== live.away_score || m.status !== live.status)){
+      m.home_score = live.home_score;
+      m.away_score = live.away_score;
+      m.status = live.status;
+      changed = true;
+    }
+  });
+  if(changed) renderArticles();
+}
+
+function fetchLiveNow(){
+  fetch('live_scores.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : [])
+    .then(applyLiveUpdates)
+    .catch(() => {});
+}
+
+setInterval(fetchLiveNow, 45000);
 </script>
 
 </body>

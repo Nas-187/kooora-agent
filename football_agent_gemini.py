@@ -584,6 +584,92 @@ def update_squads_cache(archive: list) -> dict:
     return squads
 
 
+TEAM_BIOS_FILE = "team_bios.json"
+MAX_NEW_TEAM_BIOS_PER_RUN = 8
+
+
+def fetch_team_detail(team_id: str):
+    """يجيب تفاصيل نادي وحيد (سنة التأسيس، الملعب، المدينة...) من TheSportsDB."""
+    url = f"{THESPORTSDB_BASE}/lookupteam.php"
+    response = requests.get(url, params={"id": team_id}, timeout=20)
+    response.raise_for_status()
+    teams = response.json().get("teams") or []
+    return teams[0] if teams else None
+
+
+def build_team_facts(detail: dict) -> dict:
+    """يستخرج الحقائق الرقمية فقط (بدون أي نص سيرة منسوخ) من بيانات TheSportsDB."""
+    return {
+        "founded": detail.get("intFormedYear"),
+        "stadium": detail.get("strStadium"),
+        "stadium_capacity": detail.get("intStadiumCapacity"),
+        "city": detail.get("strLocation"),
+        "country": detail.get("strCountry"),
+        "league": detail.get("strLeague"),
+    }
+
+
+def fallback_team_bio(name: str, facts: dict) -> str:
+    parts = [name]
+    if facts.get("founded"):
+        parts.append(f"تأسس عام {facts['founded']}")
+    if facts.get("stadium"):
+        parts.append(f"ويلعب مبارياته على ملعب {facts['stadium']}")
+    if facts.get("city"):
+        parts.append(f"بمدينة {facts['city']}")
+    return " ".join(parts) + "."
+
+
+def generate_team_bio(name: str, facts: dict) -> str:
+    """يستخدم Gemini عشان يصيغ فقرة قصيرة أصلية عن النادي، معتمدة حصراً على الحقائق المُعطاة."""
+    facts_lines = "\n".join(f"- {k}: {v}" for k, v in facts.items() if v)
+    prompt = f"""اكتب فقرة قصيرة (2-3 جمل) بالعربية الفصحى تعرّف بهذا النادي،
+معتمداً حصراً على الحقائق التالية بدون إضافة أي معلومة غير مذكورة هنا
+وبدون تخمين أي رقم أو إنجاز أو بطولة غير موجودة بالحقائق:
+
+اسم النادي: {name}
+{facts_lines}
+
+اكتب الفقرة مباشرة بدون مقدمات أو عناوين."""
+
+    try:
+        response = gemini_client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
+        return response.text.strip()
+    except Exception as e:
+        print(f"تعذّر توليد نبذة النادي {name} عبر Gemini ({e}) - استخدام نص بديل تلقائي.")
+        return fallback_team_bio(name, facts)
+
+
+def update_team_bios_cache(archive: list) -> dict:
+    """
+    يجيب تفاصيل ونبذة كل نادي جديد ظهر بالأرشيف وما عندنا بياناته مخزّنة
+    بعد، بحد أقصى MAX_NEW_TEAM_BIOS_PER_RUN لكل تشغيل عشان نحافظ على
+    الحصص المجانية - النبذ تتراكم تدريجياً وتُخزّن بشكل دائم.
+    """
+    bios = load_json_file(TEAM_BIOS_FILE, {})
+    team_ids = {m["home_id"] for m in archive} | {m["away_id"] for m in archive}
+    new_ids = [tid for tid in team_ids if str(tid) not in bios][:MAX_NEW_TEAM_BIOS_PER_RUN]
+
+    for team_id in new_ids:
+        print(f"جاري جلب تفاصيل وبناء نبذة النادي رقم {team_id}...")
+        try:
+            detail = fetch_team_detail(team_id)
+            if not detail:
+                continue
+            facts = build_team_facts(detail)
+            bio_text = generate_team_bio(detail.get("strTeam", ""), facts)
+            bios[str(team_id)] = {"facts": facts, "bio": bio_text}
+        except Exception as e:
+            print(f"تعذّر بناء نبذة النادي {team_id} ({e}).")
+        time.sleep(0.15)
+
+    if new_ids:
+        save_json_file(TEAM_BIOS_FILE, bios)
+        print(f"أُضيفت نبذ {len(new_ids)} نادي جديد (الإجمالي: {len(bios)}).")
+
+    return bios
+
+
 def calculate_standings_from_results(league_matches: list):
     """يحسب جدول الترتيب من مباريات دوري واحد مأخوذة من الأرشيف المحلي."""
     teams = {}
@@ -625,6 +711,7 @@ def run_standings_pipeline():
     archive = update_results_archive()
     squads = update_squads_cache(archive)
     update_players_bio_cache(squads)
+    update_team_bios_cache(archive)
 
     all_standings = {}
     for league_id, league_name in TARGET_LEAGUES.items():
@@ -771,6 +858,58 @@ LEAGUE_CLUB_KEYWORDS = {
 }
 
 
+# مطابقة الاسم العربي للنادي بالاسم الإنجليزي المستخدم بأرشيفنا (results_archive)
+# عشان نقدر نربط الخبر بمعرّف النادي الحقيقي ونوديه لصفحته
+SAUDI_CLUB_NAME_MAP = {
+    "الاتحاد": "Al-Ittihad",
+    "النصر": "Al-Nassr",
+    "الهلال": "Al-Hilal",
+    "الأهلي": "Al-Ahli",
+    "الاتفاق": "Al-Ettifaq",
+    "الفتح": "Al-Fateh",
+    "التعاون": "Al-Taawoun",
+    "الفيصلي": "Al-Faisaly",
+    "الخلود": "Al-Kholood",
+    "الخليج": "Al-Khaleej",
+    "الفيحاء": "Al-Fayha",
+    "القادسية": "Al-Qadsiah",
+    "نيوم": "Neom",
+    "الدرعية": "Al-Diriyah",
+    "الحزم": "Al-Hazem",
+    "الشباب": "Al-Shabab",
+    "أبها": "Abha",
+}
+
+
+def build_team_id_map() -> dict:
+    """
+    يبني خريطة {اسم_النادي: معرّفه_الحقيقي} من أرشيف النتائج المحلي، عشان
+    نقدر نربط أي خبر بصفحة النادي الحقيقية على موقعنا (club.html?id=...).
+    """
+    archive = load_results_archive()
+    team_map = {}
+    for m in archive:
+        team_map[m["home"]] = m["home_id"]
+        team_map[m["away"]] = m["away_id"]
+    return team_map
+
+
+def find_saudi_club_id(text: str, team_map: dict):
+    for ar_name, en_name in SAUDI_CLUB_NAME_MAP.items():
+        if ar_name in text and en_name in team_map:
+            return team_map[en_name], en_name
+    return None, None
+
+
+def find_european_club_id(text: str, league_id, team_map: dict):
+    if not league_id or league_id not in LEAGUE_CLUB_KEYWORDS:
+        return None, None
+    for name, tid in team_map.items():
+        if name and name in text:
+            return tid, name
+    return None, None
+
+
 def strip_html(text: str) -> str:
     """يشيل وسوم HTML من نص الوصف ويرجع مقتطف نصي نظيف."""
     if not text:
@@ -803,12 +942,16 @@ def classify_european_league(title: str, description: str):
     return best_id
 
 
-def fetch_arriyadiyah_news() -> list:
+def fetch_arriyadiyah_news(team_map: dict) -> list:
     """
     يجيب آخر الأخبار الحقيقية (انتقالات/شائعات/تكتيك) من فيد RSS عام
     ومجاني بالكامل لصحيفة "الرياضية" - بدون أي مفتاح API وبدون فوترة.
     العنوان والصورة والمقتطف كلها منشورة فعلياً من المصدر نفسه، ونحتفظ
     برابط المقال الأصلي عشان القارئ يقرأ الخبر كامل عند مصدره الحقيقي.
+
+    ملاحظة: نستخدم وصف الخبر الكامل من الـ RSS نفسه (بدون تقصير) لأن صفحة
+    المقال على arriyadiyah.com تُعرض بجافاسكريبت من جهة المتصفح، فما نقدر
+    نجيب نصها الكامل بطلب HTTP بسيط زي ما نسوي مع BBC.
     """
     try:
         response = requests.get(RSS_FEED_URL, timeout=20)
@@ -828,17 +971,19 @@ def fetch_arriyadiyah_news() -> list:
         if not is_football_related(title, description):
             continue
 
-        excerpt = description[:220] + ("…" if len(description) > 220 else "")
-
+        text = f"{title} {description}"
+        club_id, club_name = find_saudi_club_id(text, team_map)
         items.append({
             "title": title,
             "link": link,
             "image": item.findtext("main_image") or None,
-            "excerpt": excerpt,
+            "excerpt": description,
             "source": RSS_SOURCE_NAME,
             "author": item.findtext("{http://purl.org/dc/elements/1.1/}creator") or RSS_SOURCE_NAME,
             "published": item.findtext("pubDate") or "",
             "league_id": classify_saudi_news(title, description),
+            "club_id": club_id,
+            "club_name": club_name,
         })
 
         if len(items) >= MAX_RSS_ITEMS:
@@ -847,7 +992,7 @@ def fetch_arriyadiyah_news() -> list:
     return items
 
 
-def fetch_bbc_feed(feed_url: str, fixed_league_id=None) -> list:
+def fetch_bbc_feed(feed_url: str, team_map: dict, fixed_league_id=None) -> list:
     """
     يجيب أخبار حقيقية من فيد BBC Sport الرسمي المجاني (بدون مفتاح API وبدون
     فوترة). نستخدمه للدوريات الأوروبية لأن مصدرنا العربي (الرياضية) تغطيته
@@ -878,6 +1023,7 @@ def fetch_bbc_feed(feed_url: str, fixed_league_id=None) -> list:
 
         thumb = item.find("media:thumbnail", ns)
         image = thumb.get("url") if thumb is not None else None
+        club_id, club_name = find_european_club_id(f"{title} {description}", league_id, team_map)
 
         items.append({
             "title": title,
@@ -888,6 +1034,8 @@ def fetch_bbc_feed(feed_url: str, fixed_league_id=None) -> list:
             "author": BBC_SOURCE_NAME,
             "published": item.findtext("pubDate") or "",
             "league_id": league_id,
+            "club_id": club_id,
+            "club_name": club_name,
         })
 
         if len(items) >= MAX_BBC_ITEMS_PER_FEED:
@@ -1003,10 +1151,11 @@ def translate_bbc_items(items: list) -> list:
 
 
 def fetch_real_news_from_rss() -> list:
-    """يجمع الأخبار الحقيقية من كل المصادر (الرياضية + BBC Sport) مع تصنيف كل خبر لدوريه."""
-    items = fetch_arriyadiyah_news()
-    items += fetch_bbc_feed(BBC_PL_FEED_URL, fixed_league_id=4328)
-    items += fetch_bbc_feed(BBC_EURO_FEED_URL)
+    """يجمع الأخبار الحقيقية من كل المصادر (الرياضية + BBC Sport) مع تصنيف كل خبر لدوريه ونادي."""
+    team_map = build_team_id_map()
+    items = fetch_arriyadiyah_news(team_map)
+    items += fetch_bbc_feed(BBC_PL_FEED_URL, team_map, fixed_league_id=4328)
+    items += fetch_bbc_feed(BBC_EURO_FEED_URL, team_map)
     items = translate_bbc_items(items)
     # لين تترجم كل الأخبار الإنجليزية تدريجياً، نستبعد اللي لسى ما تُرجمت
     # عشان الموقع يعرض عربي بس دايماً بدون أي نص إنجليزي مؤقت

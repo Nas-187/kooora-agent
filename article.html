@@ -92,10 +92,19 @@
   }
   .back-link:hover{ color:var(--gold); }
 
+  .article-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+  .article-tags a{ text-decoration:none; transition:.15s; }
   .article-league-tag{
     display:inline-block; font-size:11.5px; font-weight:800; color:var(--gold);
-    background:rgba(201,151,63,0.1); padding:5px 14px; border-radius:100px; margin-bottom:14px;
+    background:rgba(201,151,63,0.1); padding:5px 14px; border-radius:100px;
   }
+  .article-club-tag{
+    display:inline-block; font-size:11.5px; font-weight:800; color:var(--pitch);
+    background:rgba(15,61,46,0.08); padding:5px 14px; border-radius:100px;
+  }
+  :root[data-theme="dark"] .article-club-tag{ color:#9edcb8; background:rgba(158,220,184,0.1); }
+  .article-tags a:hover .article-league-tag{ background:var(--gold); color:var(--pitch-dark); }
+  .article-tags a:hover .article-club-tag{ background:var(--pitch); color:#fff; }
   .article-title{ font-size:clamp(22px, 3.4vw, 30px); font-weight:800; line-height:1.5; margin-bottom:14px; }
   .article-meta{ font-size:12.5px; color:var(--ink-soft); font-weight:700; margin-bottom:22px; }
   .article-meta .m-source{ color:var(--pitch); }
@@ -226,7 +235,10 @@ if(!targetLink){
       const leagueTag = LEAGUE_NAMES[n.league_id] || '';
 
       slot.innerHTML = `
-        <span class="article-league-tag">${leagueTag}</span>
+        <div class="article-tags">
+          ${leagueTag ? `<a href="news.html?league=${n.league_id}"><span class="article-league-tag">${leagueTag}</span></a>` : ''}
+          ${n.club_id ? `<a href="club.html?id=${n.club_id}"><span class="article-club-tag">${n.club_name || 'صفحة النادي'}</span></a>` : ''}
+        </div>
         <h1 class="article-title">${n.title}</h1>
         <div class="article-meta">${n.source}${n.published ? ' · ' + timeAgoAr(n.published) : ''}</div>
         ${n.image ? `<div class="article-image"><img src="${n.image}" alt=""></div>` : ''}

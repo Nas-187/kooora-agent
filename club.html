@@ -131,6 +131,55 @@
     background:var(--card); border:1px dashed var(--line); border-radius:10px;
   }
 
+  /* ===== نبذة عن النادي ===== */
+  .about-card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:20px 22px; margin-bottom:28px; box-shadow:var(--shadow-sm);
+  }
+  .about-card p{ font-size:14.5px; line-height:1.9; color:var(--ink); margin-bottom:14px; }
+  .about-facts{ display:flex; flex-wrap:wrap; gap:10px 22px; padding-top:14px; border-top:1px dashed var(--line); }
+  .about-fact{ font-size:12.5px; }
+  .about-fact .af-label{ color:var(--ink-soft); font-weight:700; }
+  .about-fact .af-value{ font-weight:800; }
+
+  /* ===== جدول ترتيب النادي ===== */
+  .table-card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:8px 20px; box-shadow:var(--shadow-sm); margin-bottom:28px;
+  }
+  .standings-table{ width:100%; border-collapse:collapse; font-size:13.5px; }
+  .standings-table th{
+    text-align:right; font-weight:700; color:var(--ink-soft); font-size:11px;
+    padding:14px 6px 10px; border-bottom:2px solid var(--pitch);
+  }
+  .standings-table th.center, .standings-table td.center{ text-align:center; }
+  .standings-table td{ padding:12px 6px; border-bottom:1px solid var(--line); font-weight:600; }
+  .standings-table tr:last-child td{ border-bottom:none; }
+  .standings-table td.rank{ color:var(--gold); font-weight:800; width:24px; font-family:'Changa'; }
+  .standings-table td.pts{ font-weight:900; text-align:center; font-family:'Changa'; color:var(--pitch); }
+  .standings-table tr.me{ background:rgba(201,151,63,0.1); }
+  .standings-table .team-cell{ display:flex; align-items:center; gap:8px; }
+  .standings-table .team-cell img{ width:20px; height:20px; object-fit:contain; }
+
+  /* ===== مباريات قادمة / أخبار النادي ===== */
+  .upcoming-card{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin-bottom:10px; display:grid;
+    grid-template-columns:1fr auto 1fr; align-items:center; gap:12px;
+  }
+  .upcoming-time{
+    font-family:'Changa'; font-weight:800; font-size:13px; text-align:center;
+    background:var(--cream); border:1px solid var(--line); border-radius:8px; padding:5px 10px; min-width:60px;
+  }
+  .club-news-card{
+    display:flex; gap:14px; background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; margin-bottom:12px; text-decoration:none; color:inherit; transition:.15s;
+  }
+  .club-news-card:hover{ box-shadow:var(--shadow-md); transform:translateY(-1px); }
+  .club-news-card img{ width:80px; height:80px; border-radius:8px; object-fit:cover; flex-shrink:0; }
+  .club-news-card .cn-title{ font-size:13.5px; font-weight:800; line-height:1.5; margin-bottom:5px; }
+  .club-news-card .cn-meta{ font-size:11px; color:var(--gold); font-weight:700; }
+
   /* ===== مساحات إعلانية (Google AdSense لاحقاً) ===== */
   .ad-slot{
     background:var(--card); border:1px dashed var(--line); border-radius:12px;
@@ -214,11 +263,36 @@
 <main>
   <div class="stats-row" id="stats-row"></div>
 
+  <div class="section-head" id="about-head" style="display:none">
+    <h2>نبذة عن النادي</h2>
+  </div>
+  <div id="about-slot"></div>
+
+  <div class="section-head" id="standings-head" style="display:none">
+    <h2>جدول الترتيب</h2>
+  </div>
+  <div class="table-card" id="standings-slot" style="display:none">
+    <table class="standings-table">
+      <thead><tr><th></th><th>الفريق</th><th class="center">لعب</th><th class="center">نقاط</th></tr></thead>
+      <tbody id="standings-body"></tbody>
+    </table>
+  </div>
+
+  <div class="section-head" id="upcoming-head" style="display:none">
+    <h2>مباريات قادمة</h2>
+  </div>
+  <div id="upcoming-list"></div>
+
   <div class="section-head">
     <h2>التشكيلة</h2>
   </div>
   <div class="squad-grid" id="squad-grid"></div>
   <!-- إعلان AdSense لاحقاً هنا --><div class="ad-slot">مساحة إعلانية</div>
+
+  <div class="section-head" id="club-news-head" style="display:none">
+    <h2>آخر أخبار النادي</h2>
+  </div>
+  <div id="club-news-list"></div>
 
   <div class="section-head">
     <h2>آخر النتائج</h2>
@@ -259,6 +333,108 @@ function resultClass(m){
   return 'draw';
 }
 
+const TEAM_FACT_LABELS = {
+  founded: 'سنة التأسيس',
+  stadium: 'الملعب',
+  stadium_capacity: 'سعة الملعب',
+  city: 'المدينة',
+};
+
+function renderAbout(name){
+  fetch('team_bios.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : {})
+    .then(bios => {
+      const entry = bios[String(clubId)];
+      if(!entry) return;
+      const facts = entry.facts || {};
+      const factsHtml = Object.entries(TEAM_FACT_LABELS)
+        .filter(([key]) => facts[key])
+        .map(([key, label]) => `
+          <div class="about-fact"><span class="af-label">${label}:</span> <span class="af-value">${facts[key]}</span></div>`)
+        .join('');
+
+      document.getElementById('about-head').style.display = '';
+      document.getElementById('about-slot').innerHTML = `
+        <div class="about-card">
+          <p>${entry.bio}</p>
+          ${factsHtml ? `<div class="about-facts">${factsHtml}</div>` : ''}
+        </div>`;
+    })
+    .catch(() => {});
+}
+
+function renderClubStandings(leagueId){
+  if(!leagueId) return;
+  fetch('standings.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : {})
+    .then(data => {
+      const league = data[String(leagueId)];
+      if(!league || !league.standings || league.standings.length === 0) return;
+
+      document.getElementById('standings-head').style.display = '';
+      document.getElementById('standings-slot').style.display = '';
+      document.getElementById('standings-body').innerHTML = league.standings.map(s => `
+        <tr class="${s.team === document.getElementById('club-name').textContent ? 'me' : ''}">
+          <td class="rank">${s.rank}</td>
+          <td>${s.team}</td>
+          <td class="center">${s.played}</td>
+          <td class="pts">${s.points}</td>
+        </tr>`).join('');
+    })
+    .catch(() => {});
+}
+
+function renderUpcoming(name){
+  fetch('matches.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : [])
+    .then(matches => {
+      const upcoming = matches
+        .filter(m => m.status === 'Not Started' && (m.home_team === name || m.away_team === name))
+        .sort((a, b) => new Date(a.date) - new Date(b.date))
+        .slice(0, 5);
+
+      if(upcoming.length === 0) return;
+
+      document.getElementById('upcoming-head').style.display = '';
+      document.getElementById('upcoming-list').innerHTML = upcoming.map(m => {
+        const time = new Date(m.date).toLocaleString('ar', { weekday:'short', day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' });
+        return `
+        <div class="upcoming-card">
+          <div class="result-team home">
+            <span class="result-crest">${m.home_logo ? `<img src="${m.home_logo}">` : ''}</span>
+            <span>${m.home_team}</span>
+          </div>
+          <div class="upcoming-time">${time}</div>
+          <div class="result-team away">
+            <span class="result-crest">${m.away_logo ? `<img src="${m.away_logo}">` : ''}</span>
+            <span>${m.away_team}</span>
+          </div>
+        </div>`;
+      }).join('');
+    })
+    .catch(() => {});
+}
+
+function renderClubNews(){
+  fetch('real_news.json?t=' + Date.now())
+    .then(res => res.ok ? res.json() : [])
+    .then(items => {
+      const news = (items || []).filter(n => String(n.club_id) === String(clubId)).slice(0, 6);
+      if(news.length === 0) return;
+
+      document.getElementById('club-news-head').style.display = '';
+      document.getElementById('club-news-list').innerHTML = news.map(n => `
+        <a class="club-news-card" href="article.html?link=${encodeURIComponent(n.link)}">
+          ${n.image ? `<img src="${n.image}" alt="" loading="lazy" onerror="this.remove()">` : ''}
+          <div>
+            <div class="cn-title">${n.title}</div>
+            <div class="cn-meta">${n.source}</div>
+          </div>
+        </a>`).join('');
+    })
+    .catch(() => {});
+}
+
 fetch('results_archive.json?t=' + Date.now())
   .then(res => { if(!res.ok) throw 0; return res.json(); })
   .then(archive => {
@@ -296,6 +472,11 @@ fetch('results_archive.json?t=' + Date.now())
       <div class="stat-card"><div class="value">${draws}</div><div class="label">تعادل</div></div>
       <div class="stat-card"><div class="value">${losses}</div><div class="label">خسارة</div></div>
       <div class="stat-card"><div class="value">${gf}-${ga}</div><div class="label">الأهداف له/عليه</div></div>`;
+
+    renderAbout(name);
+    renderClubStandings(first.league_id);
+    renderUpcoming(name);
+    renderClubNews();
 
     document.getElementById('results-list').innerHTML = matches.map(m => `
       <div class="result-card ${resultClass(m)}">

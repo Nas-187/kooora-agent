@@ -324,7 +324,7 @@
   },
   {
     "event_id": "2494020",
-    "title": "Newcastle United ضد Bournemouth",
+    "title": "Newcastle United 1 - 2 Bournemouth",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "3",
@@ -332,13 +332,13 @@
     "away_team": "Bournemouth",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "Halftime",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-05T11:30:00Z",
     "day": "2026-09-05",
-    "content": "",
+    "content": "أنهى فريق بورنموث الشوط الأول متقدماً على مضيفه نيوكاسل يونايتد بهدفين مقابل هدف، في المباراة الجارية بينهما لحساب الدوري الإنجليزي الممتاز. ونجح الضيوف في استغلال الفرص المتاحة للتقدم بهدفين، قبل أن يتمكن صاحب الأرض من تقليص الفارق وإعادة الأمل لجماهيره قبل الذهاب إلى الاستراحة. وتتجه الأنظار الآن إلى الشوط الثاني لمعرفة ما إذا كان نيوكاسل سيتمكن من العودة في النتيجة، أم سيحافظ بورنموث على تقدمه ويخطف نقاط اللقاء.",
     "cover_image": null
   },
   {

@@ -174,5 +174,60 @@
       "league": "English Premier League"
     },
     "bio": "Aston Villa تأسس عام 1874 ويلعب مبارياته على ملعب Villa Park بمدينة Aston, Birmingham."
+  },
+  "133674": {
+    "facts": {
+      "founded": "1926",
+      "stadium": "Stadio Artemio Franchi",
+      "stadium_capacity": "43147",
+      "city": "Florence, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Fiorentina تأسس عام 1926 ويلعب مبارياته على ملعب Stadio Artemio Franchi بمدينة Florence, Italy."
+  },
+  "136022": {
+    "facts": {
+      "founded": "1955",
+      "stadium": "King Saud University Stadium",
+      "stadium_capacity": "62685",
+      "city": "Riyadh, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Nassr تأسس عام 1955 ويلعب مبارياته على ملعب King Saud University Stadium بمدينة Riyadh, Saudi Arabia."
+  },
+  "133862": {
+    "facts": {
+      "founded": "1872",
+      "stadium": "Stade Océane",
+      "stadium_capacity": "25178",
+      "city": "Le Havre",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Le Havre تأسس عام 1872 ويلعب مبارياته على ملعب Stade Océane بمدينة Le Havre."
+  },
+  "134221": {
+    "facts": {
+      "founded": "1921",
+      "stadium": "Estadio de Mendizorroza",
+      "stadium_capacity": "19840",
+      "city": "Vitoria",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Deportivo Alavés تأسس عام 1921 ويلعب مبارياته على ملعب Estadio de Mendizorroza بمدينة Vitoria."
+  },
+  "133724": {
+    "facts": {
+      "founded": "1909",
+      "stadium": "Reale Arena",
+      "stadium_capacity": "39500",
+      "city": "San Sebastián, Guipúzcoa",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Real Sociedad تأسس عام 1909 ويلعب مبارياته على ملعب Reale Arena بمدينة San Sebastián, Guipúzcoa."
   }
 }

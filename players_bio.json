@@ -2548,5 +2548,95 @@
       "transfermarkt_url": null
     },
     "bio": "Aarón Anselmino يلعب في مركز Centre-Back مع Chelsea وهو لاعب Argentina يبلغ من العمر 21 عاماً."
+  },
+  "34348311": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Parma, Italy",
+      "birth_date": "1989-07-22",
+      "age": 37,
+      "height": "",
+      "weight": "",
+      "position": "Manager",
+      "team": "Lille",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Davide Ancelotti يلعب في مركز Manager مع Lille وهو لاعب Italy يبلغ من العمر 37 عاماً."
+  },
+  "34229444": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Montreuil, France",
+      "birth_date": "2006-12-29",
+      "age": 19,
+      "height": "1.76 m (5 ft 9 in)",
+      "weight": "152 lbs",
+      "position": "Central Midfield",
+      "team": "Lille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/903666"
+    },
+    "bio": "Ethan Mbappé يلعب في مركز Central Midfield مع Lille وهو لاعب France يبلغ من العمر 19 عاماً."
+  },
+  "34192430": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Manchester, England",
+      "birth_date": "2002-05-06",
+      "age": 24,
+      "height": "189cm / 6'2\"",
+      "weight": "168 lbs",
+      "position": "Attacking Midfield",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/568177"
+    },
+    "bio": "Cole Palmer يلعب في مركز Attacking Midfield مع Chelsea وهو لاعب England يبلغ من العمر 24 عاماً."
+  },
+  "34145423": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Mar del Plata, Argentina",
+      "birth_date": "1992-09-02",
+      "age": 34,
+      "height": "195 cm",
+      "weight": "192 lbs",
+      "position": "Goalkeeper",
+      "team": "Chelsea",
+      "joined": "2011-08-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/111873"
+    },
+    "bio": "Emiliano Martinez يلعب في مركز حارس مرمى مع Chelsea وهو لاعب Argentina يبلغ من العمر 34 عاماً."
+  },
+  "34198448": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "San Martín, Argentina",
+      "birth_date": "2001-01-17",
+      "age": 25,
+      "height": "1.78 m (5 ft 10 in)",
+      "weight": "168 lbs",
+      "position": "Central Midfield",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/106825"
+    },
+    "bio": "Enzo Fernández يلعب في مركز Central Midfield مع Chelsea وهو لاعب Argentina يبلغ من العمر 25 عاماً."
+  },
+  "34169326": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Ribeirão Preto, Brazil",
+      "birth_date": "2001-09-26",
+      "age": 24,
+      "height": "182 cm",
+      "weight": "152 lbs",
+      "position": "Centre-Forward",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/626724"
+    },
+    "bio": "João Pedro يلعب في مركز Centre-Forward مع Chelsea وهو لاعب Brazil يبلغ من العمر 24 عاماً."
   }
 }

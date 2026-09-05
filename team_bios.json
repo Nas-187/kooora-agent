@@ -658,5 +658,49 @@
       "league": "German Bundesliga"
     },
     "bio": "Augsburg تأسس عام 1907 ويلعب مبارياته على ملعب WWK Arena بمدينة Augsburg, Germany."
+  },
+  "136017": {
+    "facts": {
+      "founded": "1944",
+      "stadium": "Al-Ettifaq Club Stadium",
+      "stadium_capacity": "0",
+      "city": "Dammam, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Ettifaq تأسس عام 1944 ويلعب مبارياته على ملعب Al-Ettifaq Club Stadium بمدينة Dammam, Saudi Arabia."
+  },
+  "134788": {
+    "facts": {
+      "founded": "1905",
+      "stadium": "Stade de l'Abbé Deschamps",
+      "stadium_capacity": "21379",
+      "city": "Auxerre",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Auxerre تأسس عام 1905 ويلعب مبارياته على ملعب Stade de l'Abbé Deschamps بمدينة Auxerre."
+  },
+  "152917": {
+    "facts": {
+      "founded": "1976",
+      "stadium": "Prince Turki bin Abdul Aziz Stadium",
+      "stadium_capacity": null,
+      "city": "Diriyah, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Diriyah تأسس عام 1976 ويلعب مبارياته على ملعب Prince Turki bin Abdul Aziz Stadium بمدينة Diriyah, Saudi Arabia."
+  },
+  "133722": {
+    "facts": {
+      "founded": "1907",
+      "stadium": "Estadio de La Cartuja",
+      "stadium_capacity": "60720",
+      "city": "Seville",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Real Betis تأسس عام 1907 ويلعب مبارياته على ملعب Estadio de La Cartuja بمدينة Seville."
   }
 }

@@ -324,7 +324,7 @@
   },
   {
     "event_id": "2494020",
-    "title": "Newcastle United 1 - 2 Bournemouth",
+    "title": "Newcastle United 2 - 2 Bournemouth",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "3",
@@ -332,13 +332,13 @@
     "away_team": "Bournemouth",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
-    "home_score": 1,
+    "home_score": 2,
     "away_score": 2,
-    "status": "Halftime",
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-05T11:30:00Z",
     "day": "2026-09-05",
-    "content": "فوز Bournemouth على Newcastle United بنتيجة 1-2 ضمن الدوري الإنجليزي.",
+    "content": "تعادل Newcastle United وBournemouth بنتيجة 2-2 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {

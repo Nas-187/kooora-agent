@@ -2818,5 +2818,80 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/493003"
     },
     "bio": "Daniel Muñoz يلعب في مركز Right-Back مع Nottingham Forest وهو لاعب Colombia يبلغ من العمر 30 عاماً."
+  },
+  "34246211": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Hamburg, Germany",
+      "birth_date": "2006-05-03",
+      "age": 20,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "181 lbs",
+      "position": "Attacker",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/897481"
+    },
+    "bio": "Eric da Silva Moreira يلعب في مركز مهاجم مع Nottingham Forest وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34437005": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Heswall, England",
+      "birth_date": "1967-12-14",
+      "age": 58,
+      "height": "",
+      "weight": "",
+      "position": "Assistant Coach",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ian Woan يلعب في مركز Assistant Coach مع Nottingham Forest وهو لاعب England يبلغ من العمر 58 عاماً."
+  },
+  "34236581": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Cuiabá, Brazil",
+      "birth_date": "2001-02-25",
+      "age": 25,
+      "height": "1.79 m (5 ft 10 in)",
+      "weight": "161 lbs",
+      "position": "Centre-Forward",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/432164"
+    },
+    "bio": "Igor Jesus يلعب في مركز Centre-Forward مع Nottingham Forest وهو لاعب Brazil يبلغ من العمر 25 عاماً."
+  },
+  "34169245": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Saarlouis, Germany",
+      "birth_date": "1997-11-13",
+      "age": 28,
+      "height": "1.92 m (6 ft 4 in)",
+      "weight": "192 lbs",
+      "position": "Goalkeeper",
+      "team": "Freiburg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/284769"
+    },
+    "bio": "Florian Müller يلعب في مركز حارس مرمى مع Freiburg وهو لاعب Germany يبلغ من العمر 28 عاماً."
+  },
+  "34177548": {
+    "facts": {
+      "nationality": "Croatia",
+      "birth_place": "Hamburg, Germany",
+      "birth_date": "2003-03-31",
+      "age": 23,
+      "height": "1.94 m",
+      "weight": "196 lbs",
+      "position": "Centre-Forward",
+      "team": "Freiburg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/605268"
+    },
+    "bio": "Igor Matanović يلعب في مركز Centre-Forward مع Freiburg وهو لاعب Croatia يبلغ من العمر 23 عاماً."
   }
 }

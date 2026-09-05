@@ -724,5 +724,49 @@
       "league": "French Ligue 1"
     },
     "bio": "Le Mans تأسس عام 1985 ويلعب مبارياته على ملعب Stade Marie-Marvingt بمدينة Le Mans."
+  },
+  "133822": {
+    "facts": {
+      "founded": "1906",
+      "stadium": "Stade Bollaert-Delelis",
+      "stadium_capacity": "41229",
+      "city": "Lens, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Lens تأسس عام 1906 ويلعب مبارياته على ملعب Stade Bollaert-Delelis بمدينة Lens, France."
+  },
+  "134709": {
+    "facts": {
+      "founded": "1919",
+      "stadium": "Stade Raymond Kopa",
+      "stadium_capacity": "18752",
+      "city": "Angers",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Angers تأسس عام 1919 ويلعب مبارياته على ملعب Stade Raymond Kopa بمدينة Angers."
+  },
+  "139080": {
+    "facts": {
+      "founded": "1945",
+      "stadium": "Prince Mohamed bin Fahd Stadium",
+      "stadium_capacity": "10000",
+      "city": "Saihat, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Khaleej تأسس عام 1945 ويلعب مبارياته على ملعب Prince Mohamed bin Fahd Stadium بمدينة Saihat, Saudi Arabia."
+  },
+  "134781": {
+    "facts": {
+      "founded": "1909",
+      "stadium": "Stadio Renato Dall'Ara",
+      "stadium_capacity": "38279",
+      "city": "Bologna, Emilia-Romagna",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Bologna تأسس عام 1909 ويلعب مبارياته على ملعب Stadio Renato Dall'Ara بمدينة Bologna, Emilia-Romagna."
   }
 }

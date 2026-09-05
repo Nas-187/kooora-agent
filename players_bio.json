@@ -3328,5 +3328,35 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/775403"
     },
     "bio": "Hugo Gambor يلعب في مركز Centre-Back مع Troyes وهو لاعب Central African Republic يبلغ من العمر 23 عاماً."
+  },
+  "34163061": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Le Havre, France",
+      "birth_date": "1990-02-04",
+      "age": 36,
+      "height": "1.77 m (5 ft 10 in)",
+      "weight": "161 lbs",
+      "position": "Defender",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/111811"
+    },
+    "bio": "Florent Hanin يلعب في مركز مدافع مع Angers وهو لاعب France يبلغ من العمر 36 عاماً."
+  },
+  "34174949": {
+    "facts": {
+      "nationality": "Algeria",
+      "birth_place": "Montivilliers, France",
+      "birth_date": "1999-11-17",
+      "age": 26,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "179 lbs",
+      "position": "Midfielder",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/592979"
+    },
+    "bio": "Himad Abdelli يلعب في مركز وسط مع Angers وهو لاعب Algeria يبلغ من العمر 26 عاماً."
   }
 }

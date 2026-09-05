@@ -58,15 +58,15 @@
       },
       {
         "rank": 10,
-        "team": "Al-Fayha",
+        "team": "Al-Hazem",
         "played": 5,
         "points": 5
       },
       {
         "rank": 11,
-        "team": "Al-Hazem",
-        "played": 4,
-        "points": 4
+        "team": "Al-Fayha",
+        "played": 5,
+        "points": 5
       },
       {
         "rank": 12,
@@ -100,13 +100,13 @@
       },
       {
         "rank": 17,
-        "team": "Abha",
-        "played": 4,
-        "points": 1
+        "team": "Al-Faisaly",
+        "played": 5,
+        "points": 2
       },
       {
         "rank": 18,
-        "team": "Al-Faisaly",
+        "team": "Abha",
         "played": 4,
         "points": 1
       }
@@ -492,19 +492,19 @@
     "standings": [
       {
         "rank": 1,
+        "team": "Borussia Dortmund",
+        "played": 2,
+        "points": 6
+      },
+      {
+        "rank": 2,
         "team": "Bayern Munich",
         "played": 1,
         "points": 3
       },
       {
-        "rank": 2,
-        "team": "Freiburg",
-        "played": 1,
-        "points": 3
-      },
-      {
         "rank": 3,
-        "team": "RB Leipzig",
+        "team": "Freiburg",
         "played": 1,
         "points": 3
       },
@@ -516,56 +516,68 @@
       },
       {
         "rank": 5,
-        "team": "Borussia Dortmund",
-        "played": 1,
+        "team": "RB Leipzig",
+        "played": 2,
         "points": 3
       },
       {
         "rank": 6,
+        "team": "Elversberg",
+        "played": 1,
+        "points": 3
+      },
+      {
+        "rank": 7,
         "team": "Stuttgart",
         "played": 2,
         "points": 3
       },
       {
-        "rank": 7,
+        "rank": 8,
+        "team": "Werder Bremen",
+        "played": 2,
+        "points": 3
+      },
+      {
+        "rank": 9,
         "team": "Mainz",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 8,
+        "rank": 10,
         "team": "Paderborn",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 9,
-        "team": "Hamburg",
-        "played": 1,
-        "points": 0
-      },
-      {
-        "rank": 10,
-        "team": "Werder Bremen",
-        "played": 1,
-        "points": 0
-      },
-      {
         "rank": 11,
-        "team": "Köln",
+        "team": "Hoffenheim",
         "played": 1,
         "points": 0
       },
       {
         "rank": 12,
-        "team": "Borussia Mönchengladbach",
+        "team": "Hamburg",
         "played": 1,
         "points": 0
       },
       {
         "rank": 13,
+        "team": "Köln",
+        "played": 1,
+        "points": 0
+      },
+      {
+        "rank": 14,
         "team": "Schalke 04",
         "played": 1,
+        "points": 0
+      },
+      {
+        "rank": 15,
+        "team": "Borussia Mönchengladbach",
+        "played": 2,
         "points": 0
       }
     ]
@@ -611,27 +623,27 @@
       },
       {
         "rank": 7,
+        "team": "Lorient",
+        "played": 3,
+        "points": 4
+      },
+      {
+        "rank": 8,
         "team": "Marseille",
         "played": 2,
         "points": 3
       },
       {
-        "rank": 8,
+        "rank": 9,
         "team": "Strasbourg",
         "played": 2,
         "points": 3
       },
       {
-        "rank": 9,
+        "rank": 10,
         "team": "Paris Saint-Germain",
         "played": 3,
         "points": 2
-      },
-      {
-        "rank": 10,
-        "team": "Lorient",
-        "played": 2,
-        "points": 1
       },
       {
         "rank": 11,
@@ -654,7 +666,7 @@
       {
         "rank": 14,
         "team": "Lens",
-        "played": 1,
+        "played": 2,
         "points": 0
       },
       {

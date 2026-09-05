@@ -922,5 +922,27 @@
       "league": "English Premier League"
     },
     "bio": "Chelsea تأسس عام 1905 ويلعب مبارياته على ملعب Stamford Bridge بمدينة Fulham, London."
+  },
+  "147445": {
+    "facts": {
+      "founded": "1953",
+      "stadium": "Prince Turki bin Abdul Aziz Stadium",
+      "stadium_capacity": "15000",
+      "city": "Riyadh, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Riyadh تأسس عام 1953 ويلعب مبارياته على ملعب Prince Turki bin Abdul Aziz Stadium بمدينة Riyadh, Saudi Arabia."
+  },
+  "133612": {
+    "facts": {
+      "founded": "1878",
+      "stadium": "Old Trafford",
+      "stadium_capacity": "76962",
+      "city": "Trafford, Greater Manchester",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Manchester United تأسس عام 1878 ويلعب مبارياته على ملعب Old Trafford بمدينة Trafford, Greater Manchester."
   }
 }

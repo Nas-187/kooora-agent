@@ -883,5 +883,170 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/955070"
     },
     "bio": "Ernest Nuamah يلعب في مركز Left Wing مع Lyon وهو لاعب Ghana يبلغ من العمر 22 عاماً."
+  },
+  "34155648": {
+    "facts": {
+      "nationality": "The Netherlands",
+      "birth_place": "Beerta, Netherlands",
+      "birth_date": "1994-01-09",
+      "age": 32,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "159 lbs",
+      "position": "Defender",
+      "team": "Lyon",
+      "joined": "2013-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/275303"
+    },
+    "bio": "Hans Hateboer يلعب في مركز مدافع مع Lyon وهو لاعب The Netherlands يبلغ من العمر 32 عاماً."
+  },
+  "34160896": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "London, England",
+      "birth_date": "1991-04-29",
+      "age": 35,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "172 lbs",
+      "position": "Right-Back",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/61841"
+    },
+    "bio": "Adam Smith يلعب في مركز Right-Back مع Bournemouth وهو لاعب England يبلغ من العمر 35 عاماً."
+  },
+  "34173134": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Liège, Belgium",
+      "birth_date": "2001-11-20",
+      "age": 24,
+      "height": "1.75 m (5 ft 9 in)",
+      "weight": "159 lbs",
+      "position": "Left-Back",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/654539"
+    },
+    "bio": "Adrien Truffert يلعب في مركز Left-Back مع Bournemouth وهو لاعب France يبلغ من العمر 24 عاماً."
+  },
+  "34192695": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Guernsey, Guernsey",
+      "birth_date": "2003-08-21",
+      "age": 23,
+      "height": "5' 10\"",
+      "weight": "150 lbs",
+      "position": "Central Midfield",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/855256"
+    },
+    "bio": "Alex Scott يلعب في مركز Central Midfield مع Bournemouth وهو لاعب England يبلغ من العمر 23 عاماً."
+  },
+  "34215924": {
+    "facts": {
+      "nationality": "Uruguay",
+      "birth_place": "Palamós, Spain",
+      "birth_date": "2004-07-14",
+      "age": 22,
+      "height": "1.92 m (6 ft 3+1⁄2 in)",
+      "weight": "179 lbs",
+      "position": "Centre-Forward",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/948275"
+    },
+    "bio": "Álvaro Rodríguez يلعب في مركز Centre-Forward مع Bournemouth وهو لاعب Uruguay يبلغ من العمر 22 عاماً."
+  },
+  "34174780": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": "Béziers, France",
+      "birth_date": "2000-05-10",
+      "age": 26,
+      "height": "1.74 m (5 ft 7 in)",
+      "weight": "159 lbs",
+      "position": "Midfielder",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/532776"
+    },
+    "bio": "Amine Adli يلعب في مركز وسط مع Bournemouth وهو لاعب Morocco يبلغ من العمر 26 عاماً."
+  },
+  "34200488": {
+    "facts": {
+      "nationality": "Portugal",
+      "birth_place": "Viseu, Portugal",
+      "birth_date": "2003-10-31",
+      "age": 22,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "",
+      "position": "Centre-Back",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "António Silva يلعب في مركز Centre-Back مع Bournemouth وهو لاعب Portugal يبلغ من العمر 22 عاماً."
+  },
+  "34174778": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Toulouse, France",
+      "birth_date": "2001-01-06",
+      "age": 25,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "161 lbs",
+      "position": "Defender",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/463605"
+    },
+    "bio": "Bafodé Diakité يلعب في مركز مدافع مع Bournemouth وهو لاعب France يبلغ من العمر 25 عاماً."
+  },
+  "34203074": {
+    "facts": {
+      "nationality": "Scotland",
+      "birth_place": "Dalry, Scotland",
+      "birth_date": "2005-11-11",
+      "age": 20,
+      "height": "5' 9\"",
+      "weight": "141 lbs",
+      "position": "Right Winger",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/719673"
+    },
+    "bio": "Ben Gannon-Doak يلعب في مركز Right Winger مع Bournemouth وهو لاعب Scotland يبلغ من العمر 20 عاماً."
+  },
+  "34180111": {
+    "facts": {
+      "nationality": "Canada",
+      "birth_place": "Oakville, Ontario, Canada",
+      "birth_date": "2003-07-11",
+      "age": 23,
+      "height": "1.90 m (6 ft 3 in)",
+      "weight": "150 lbs",
+      "position": "Centre-Forward",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/746740"
+    },
+    "bio": "Daniel Jebbison يلعب في مركز Centre-Forward مع Bournemouth وهو لاعب Canada يبلغ من العمر 23 عاماً."
+  },
+  "34161564": {
+    "facts": {
+      "nationality": "Wales",
+      "birth_place": "Warrington, England",
+      "birth_date": "1997-07-08",
+      "age": 29,
+      "height": "5 ft 8 in (1.73 m)",
+      "weight": "137 lbs",
+      "position": "Right Winger",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/277033"
+    },
+    "bio": "David Brooks يلعب في مركز Right Winger مع Bournemouth وهو لاعب Wales يبلغ من العمر 29 عاماً."
   }
 }

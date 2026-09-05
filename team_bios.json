@@ -64,5 +64,49 @@
       "league": "French Ligue 1"
     },
     "bio": "Paris Saint-Germain تأسس عام 1970 ويلعب مبارياته على ملعب Parc des Princes بمدينة Paris, France."
+  },
+  "136014": {
+    "facts": {
+      "founded": "1954",
+      "stadium": "Al-Majma'ah Sports City Stadium",
+      "stadium_capacity": "7000",
+      "city": "Jeddah, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Fayha تأسس عام 1954 ويلعب مبارياته على ملعب Al-Majma'ah Sports City Stadium بمدينة Jeddah, Saudi Arabia."
+  },
+  "133668": {
+    "facts": {
+      "founded": "1900",
+      "stadium": "Stadio Olimpico",
+      "stadium_capacity": "70634",
+      "city": "Rome, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Lazio تأسس عام 1900 ويلعب مبارياته على ملعب Stadio Olimpico بمدينة Rome, Italy."
+  },
+  "133729": {
+    "facts": {
+      "founded": "1903",
+      "stadium": "Riyadh Air Metropolitano",
+      "stadium_capacity": "67703",
+      "city": "Madrid",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Atlético Madrid تأسس عام 1903 ويلعب مبارياته على ملعب Riyadh Air Metropolitano بمدينة Madrid."
+  },
+  "136200": {
+    "facts": {
+      "founded": "1957",
+      "stadium": "Al-Hazem Club Stadium",
+      "stadium_capacity": "3000",
+      "city": "Al-Rass, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Hazem تأسس عام 1957 ويلعب مبارياته على ملعب Al-Hazem Club Stadium بمدينة Al-Rass, Saudi Arabia."
   }
 }

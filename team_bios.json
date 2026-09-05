@@ -108,5 +108,16 @@
       "league": "Saudi-Arabian Pro League"
     },
     "bio": "Al-Hazem تأسس عام 1957 ويلعب مبارياته على ملعب Al-Hazem Club Stadium بمدينة Al-Rass, Saudi Arabia."
+  },
+  "133736": {
+    "facts": {
+      "founded": "1904",
+      "stadium": "Estadio La Rosaleda",
+      "stadium_capacity": "30044",
+      "city": "Málaga",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Málaga تأسس عام 1904 ويلعب مبارياته على ملعب Estadio La Rosaleda بمدينة Málaga."
   }
 }

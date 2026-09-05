@@ -317,5 +317,93 @@
       "league": "Saudi-Arabian Pro League"
     },
     "bio": "تأسس نادي الاتحاد (Al-Ittihad) عام 1927، ويقع في مدينة جدة بالمملكة العربية السعودية. ينافس النادي في الدوري السعودي للمحترفين، ويخوض مبارياته في ملعب مدينة الملك عبد الله الرياضية الذي يتسع لـ 62,000 متفرج."
+  },
+  "134234": {
+    "facts": {
+      "founded": "1907",
+      "stadium": "Stadio Pierluigi Penzo",
+      "stadium_capacity": "7450",
+      "city": "Fondamenta Sant’Elena",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Venezia تأسس عام 1907 ويلعب مبارياته على ملعب Stadio Pierluigi Penzo بمدينة Fondamenta Sant’Elena."
+  },
+  "133701": {
+    "facts": {
+      "founded": "1922",
+      "stadium": "Mapei Stadium – Città del Tricolore",
+      "stadium_capacity": "21525",
+      "city": "Reggio Emilia, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Sassuolo تأسس عام 1922 ويلعب مبارياته على ملعب Mapei Stadium – Città del Tricolore بمدينة Reggio Emilia, Italy."
+  },
+  "133602": {
+    "facts": {
+      "founded": "1892",
+      "stadium": "Anfield",
+      "stadium_capacity": "55000",
+      "city": "Anfield, Liverpool",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Liverpool تأسس عام 1892 ويلعب مبارياته على ملعب Anfield بمدينة Anfield, Liverpool."
+  },
+  "134777": {
+    "facts": {
+      "founded": "1892",
+      "stadium": "St James Park",
+      "stadium_capacity": "52305",
+      "city": "Newcastle upon Tyne",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Newcastle United تأسس عام 1892 ويلعب مبارياته على ملعب St James Park بمدينة Newcastle upon Tyne."
+  },
+  "133712": {
+    "facts": {
+      "founded": "1904",
+      "stadium": "Allianz Riviera",
+      "stadium_capacity": "35624",
+      "city": "Nice, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Nice تأسس عام 1904 ويلعب مبارياته على ملعب Allianz Riviera بمدينة Nice, France."
+  },
+  "133679": {
+    "facts": {
+      "founded": "1896",
+      "stadium": "Bluenergy Stadium",
+      "stadium_capacity": "25144",
+      "city": "Udine, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Udinese تأسس عام 1896 ويلعب مبارياته على ملعب Bluenergy Stadium بمدينة Udine, Italy."
+  },
+  "133720": {
+    "facts": {
+      "founded": "1865",
+      "stadium": "City Ground",
+      "stadium_capacity": "30445",
+      "city": "City Ground, Nottingham",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Nottingham Forest تأسس عام 1865 ويلعب مبارياته على ملعب City Ground بمدينة City Ground, Nottingham."
+  },
+  "133675": {
+    "facts": {
+      "founded": "1823",
+      "stadium": "Stadio Luigi Ferraris",
+      "stadium_capacity": "36599",
+      "city": "Genoa, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Genoa تأسس عام 1823 ويلعب مبارياته على ملعب Stadio Luigi Ferraris بمدينة Genoa, Italy."
   }
 }

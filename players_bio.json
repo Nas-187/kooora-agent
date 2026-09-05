@@ -1183,5 +1183,125 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/805886"
     },
     "bio": "Gaby Jean يلعب في مركز مدافع مع Lecce وهو لاعب France يبلغ من العمر 26 عاماً."
+  },
+  "34244846": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Milano, Italy",
+      "birth_date": "2008-03-10",
+      "age": 18,
+      "height": "184 cm",
+      "weight": "170 lbs",
+      "position": "Centre-Forward",
+      "team": "Lecce",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1058368"
+    },
+    "bio": "فرانشيسكو كاماردا (Francesco Camarda) هو لاعب إيطالي الجنسية ولد في ميلانو، إيطاليا بتاريخ 10 مارس 2008، ويلعب في مركز المهاجم (Centre-Forward) لصالح فريق ليتشي (Lecce). يبلغ من العمر 18 عاماً، ويصل طوله إلى 184 سم ووزنه إلى 170 رطلاً. يتوفر ملفه على موقع ترانسفير ماركت عبر الرابط التالي: https://www.transfermarkt.com/-/profil/spieler/1058368."
+  },
+  "34225791": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Harmah, Saudi Arabia",
+      "birth_date": "1994-06-15",
+      "age": 32,
+      "height": "170 cm",
+      "weight": "157 lbs",
+      "position": "Defender",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdullah Al Fahad يلعب في مركز مدافع مع Al-Khaleej وهو لاعب Saudi Arabia يبلغ من العمر 32 عاماً."
+  },
+  "34225831": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Dammam, Saudi Arabia",
+      "birth_date": "1992-12-25",
+      "age": 33,
+      "height": "187 cm",
+      "weight": "181 lbs",
+      "position": "Defender",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdullah Al Hafith يلعب في مركز مدافع مع Al-Khaleej وهو لاعب Saudi Arabia يبلغ من العمر 33 عاماً."
+  },
+  "34225758": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Jeddah, Saudi Arabia",
+      "birth_date": "1991-11-14",
+      "age": 34,
+      "height": "179 cm",
+      "weight": "148 lbs",
+      "position": "Defender",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ahmad Asiri يلعب في مركز مدافع مع Al-Khaleej وهو لاعب Saudi Arabia يبلغ من العمر 34 عاماً."
+  },
+  "34252063": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1998-08-14",
+      "age": 28,
+      "height": "181 cm",
+      "weight": "79 kg",
+      "position": "Defender",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ali Al Ali Al Salem يلعب في مركز مدافع مع Al-Khaleej وهو لاعب Saudi Arabia يبلغ من العمر 28 عاماً."
+  },
+  "34296606": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "",
+      "birth_date": "2002-01-12",
+      "age": 24,
+      "height": "None",
+      "weight": "",
+      "position": "Defender",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ali Al Shaafi يلعب في مركز مدافع مع Al-Khaleej وهو لاعب Saudi Arabia يبلغ من العمر 24 عاماً."
+  },
+  "34200046": {
+    "facts": {
+      "nationality": "Luxembourg",
+      "birth_place": "Arlon, Belgium",
+      "birth_date": "1990-04-29",
+      "age": 36,
+      "height": "1.86 m (6 ft 1 in)",
+      "weight": "75 kg",
+      "position": "Goalkeeper",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Anthony Christian Moris يلعب في مركز حارس مرمى مع Al-Khaleej وهو لاعب Luxembourg يبلغ من العمر 36 عاماً."
+  },
+  "34173520": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Mont-de-Marsan, France",
+      "birth_date": "1994-05-03",
+      "age": 32,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "172 lbs",
+      "position": "Forward",
+      "team": "Al-Diriyah",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/181378"
+    },
+    "bio": "Gaëtan Laborde يلعب في مركز Forward مع Al-Diriyah وهو لاعب France يبلغ من العمر 32 عاماً."
   }
 }

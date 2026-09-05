@@ -119,5 +119,60 @@
       "league": "Spanish La Liga"
     },
     "bio": "Málaga تأسس عام 1904 ويلعب مبارياته على ملعب Estadio La Rosaleda بمدينة Málaga."
+  },
+  "133660": {
+    "facts": {
+      "founded": "1893",
+      "stadium": "MHP Arena",
+      "stadium_capacity": "60469",
+      "city": "Stuttgart, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Stuttgart تأسس عام 1893 ويلعب مبارياته على ملعب MHP Arena بمدينة Stuttgart, Germany."
+  },
+  "133653": {
+    "facts": {
+      "founded": "1904",
+      "stadium": "Europa-Park Stadion",
+      "stadium_capacity": "24000",
+      "city": "Freiburg im Breisgau, Baden-Württemberg",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Freiburg تأسس عام 1904 ويلعب مبارياته على ملعب Europa-Park Stadion بمدينة Freiburg im Breisgau, Baden-Württemberg."
+  },
+  "133818": {
+    "facts": {
+      "founded": "1912",
+      "stadium": "Stadio Benito Stirpe",
+      "stadium_capacity": "10000",
+      "city": "Frosione, Lazio",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Frosinone تأسس عام 1912 ويلعب مبارياته على ملعب Stadio Benito Stirpe بمدينة Frosione, Lazio."
+  },
+  "133727": {
+    "facts": {
+      "founded": "1898",
+      "stadium": "San Mamés Barria",
+      "stadium_capacity": "53289",
+      "city": "Bilbao, Vizcaya",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Athletic Bilbao تأسس عام 1898 ويلعب مبارياته على ملعب San Mamés Barria بمدينة Bilbao, Vizcaya."
+  },
+  "133601": {
+    "facts": {
+      "founded": "1874",
+      "stadium": "Villa Park",
+      "stadium_capacity": "42785",
+      "city": "Aston, Birmingham",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Aston Villa تأسس عام 1874 ويلعب مبارياته على ملعب Villa Park بمدينة Aston, Birmingham."
   }
 }

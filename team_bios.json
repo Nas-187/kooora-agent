@@ -625,5 +625,38 @@
       "league": "French Ligue 1"
     },
     "bio": "Strasbourg تأسس عام 1906 ويلعب مبارياته على ملعب Stade de la Meinau بمدينة Strasbourg, France."
+  },
+  "133725": {
+    "facts": {
+      "founded": "1919",
+      "stadium": "Estadio de Mestalla",
+      "stadium_capacity": "55000",
+      "city": "Valencia, Spain",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Valencia تأسس عام 1919 ويلعب مبارياته على ملعب Estadio de Mestalla بمدينة Valencia, Spain."
+  },
+  "133615": {
+    "facts": {
+      "founded": "1878",
+      "stadium": "Hill Dickinson Stadium",
+      "stadium_capacity": "40157",
+      "city": "Walton, Liverpool",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Everton تأسس عام 1878 ويلعب مبارياته على ملعب Hill Dickinson Stadium بمدينة Walton, Liverpool."
+  },
+  "133652": {
+    "facts": {
+      "founded": "1907",
+      "stadium": "WWK Arena",
+      "stadium_capacity": "30660",
+      "city": "Augsburg, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Augsburg تأسس عام 1907 ويلعب مبارياته على ملعب WWK Arena بمدينة Augsburg, Germany."
   }
 }

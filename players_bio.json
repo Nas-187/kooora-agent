@@ -2488,5 +2488,65 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/84301"
     },
     "bio": "Benjamin André يلعب في مركز Centre Midfielder مع Lille وهو لاعب France يبلغ من العمر 36 عاماً."
+  },
+  "34194485": {
+    "facts": {
+      "nationality": "Turkey",
+      "birth_place": "Izmir, Türkiye",
+      "birth_date": "2000-05-25",
+      "age": 26,
+      "height": "190 cm",
+      "weight": "161 lbs",
+      "position": "Goalkeeper",
+      "team": "Lille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/361256"
+    },
+    "bio": "Berke Özer يلعب في مركز حارس مرمى مع Lille وهو لاعب Turkey يبلغ من العمر 26 عاماً."
+  },
+  "34191798": {
+    "facts": {
+      "nationality": "Indonesia",
+      "birth_place": "Dordrecht, Netherlands",
+      "birth_date": "1997-04-26",
+      "age": 29,
+      "height": "174 cm",
+      "weight": "150 lbs",
+      "position": "Left-Back",
+      "team": "Lille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/258364"
+    },
+    "bio": "Calvin Verdonk يلعب في مركز Left-Back مع Lille وهو لاعب Indonesia يبلغ من العمر 29 عاماً."
+  },
+  "34153479": {
+    "facts": {
+      "nationality": "DR Congo",
+      "birth_place": "Kinshasa, Zaire",
+      "birth_date": "1994-08-08",
+      "age": 32,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "80 kg (176 lb)",
+      "position": "Centre-Back",
+      "team": "Lille",
+      "joined": "2012-07-01",
+      "transfermarkt_url": null
+    },
+    "bio": "Chancel Mbemba يلعب في مركز Centre-Back مع Lille وهو لاعب DR Congo يبلغ من العمر 32 عاماً."
+  },
+  "34237873": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Bernardo Larroudé, Argentina",
+      "birth_date": "2005-04-29",
+      "age": 21,
+      "height": "186 cm",
+      "weight": "78 kg",
+      "position": "Centre-Back",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Aarón Anselmino يلعب في مركز Centre-Back مع Chelsea وهو لاعب Argentina يبلغ من العمر 21 عاماً."
   }
 }

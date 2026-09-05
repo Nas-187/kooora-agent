@@ -471,5 +471,71 @@
       "league": "German Bundesliga"
     },
     "bio": "Köln تأسس عام 1948 ويلعب مبارياته على ملعب RheinEnergieStadion بمدينة Aachener Straße 999 50933 Cologne, Germany."
+  },
+  "137855": {
+    "facts": {
+      "founded": "1966",
+      "stadium": "Prince Sultan bin Abdulaziz Sports City Stadium",
+      "stadium_capacity": "25000",
+      "city": "Abha, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Abha تأسس عام 1966 ويلعب مبارياته على ملعب Prince Sultan bin Abdulaziz Sports City Stadium بمدينة Abha, Saudi Arabia."
+  },
+  "133667": {
+    "facts": {
+      "founded": "1899",
+      "stadium": "Stadio Giuseppe Meazza",
+      "stadium_capacity": "80018",
+      "city": "San Siro, Milan",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "AC Milan تأسس عام 1899 ويلعب مبارياته على ملعب Stadio Giuseppe Meazza بمدينة San Siro, Milan."
+  },
+  "133719": {
+    "facts": {
+      "founded": "1901",
+      "stadium": "Roazhon Park",
+      "stadium_capacity": "29778",
+      "city": "111 Rue de Lorient, 35000 Rennes",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Rennes تأسس عام 1901 ويلعب مبارياته على ملعب Roazhon Park بمدينة 111 Rue de Lorient, 35000 Rennes."
+  },
+  "133622": {
+    "facts": {
+      "founded": "1878",
+      "stadium": "Portman Road",
+      "stadium_capacity": "29673",
+      "city": "Ipswich, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Ipswich Town تأسس عام 1878 ويلعب مبارياته على ملعب Portman Road بمدينة Ipswich, England."
+  },
+  "133604": {
+    "facts": {
+      "founded": "1892",
+      "stadium": "Emirates Stadium",
+      "stadium_capacity": "60338",
+      "city": "Holloway, London, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Arsenal تأسس عام 1892 ويلعب مبارياته على ملعب Emirates Stadium بمدينة Holloway, London, England."
+  },
+  "133823": {
+    "facts": {
+      "founded": "1924",
+      "stadium": "Stade Louis II",
+      "stadium_capacity": "18523",
+      "city": "Fontvieille, Monaco",
+      "country": "Monaco",
+      "league": "French Ligue 1"
+    },
+    "bio": "Monaco تأسس عام 1924 ويلعب مبارياته على ملعب Stade Louis II بمدينة Fontvieille, Monaco."
   }
 }

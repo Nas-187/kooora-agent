@@ -944,5 +944,93 @@
       "league": "English Premier League"
     },
     "bio": "Manchester United تأسس عام 1878 ويلعب مبارياته على ملعب Old Trafford بمدينة Trafford, Greater Manchester."
+  },
+  "133664": {
+    "facts": {
+      "founded": "1900",
+      "stadium": "Allianz Arena",
+      "stadium_capacity": "75024",
+      "city": "Munich, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Bayern Munich تأسس عام 1900 ويلعب مبارياته على ملعب Allianz Arena بمدينة Munich, Germany."
+  },
+  "133715": {
+    "facts": {
+      "founded": "1926",
+      "stadium": "Stade du Moustoir",
+      "stadium_capacity": "18500",
+      "city": "Lorient",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Lorient تأسس عام 1926 ويلعب مبارياته على ملعب Stade du Moustoir بمدينة Lorient."
+  },
+  "138411": {
+    "facts": {
+      "founded": "1907",
+      "stadium": "Waldstadion Kaiserlinde",
+      "stadium_capacity": "10000",
+      "city": "Spiesen-Elversberg, Saarland",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Elversberg تأسس عام 1907 ويلعب مبارياته على ملعب Waldstadion Kaiserlinde بمدينة Spiesen-Elversberg, Saarland."
+  },
+  "133728": {
+    "facts": {
+      "founded": "1924",
+      "stadium": "Estadio de Vallecas",
+      "stadium_capacity": "14708",
+      "city": "Madrid, Spain",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Rayo Vallecano تأسس عام 1924 ويلعب مبارياته على ملعب Estadio de Vallecas بمدينة Madrid, Spain."
+  },
+  "133735": {
+    "facts": {
+      "founded": "1905",
+      "stadium": "Estadio Ramón Sánchez Pizjuán",
+      "stadium_capacity": "42500",
+      "city": "Sevilla",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Sevilla تأسس عام 1905 ويلعب مبارياته على ملعب Estadio Ramón Sánchez Pizjuán بمدينة Sevilla."
+  },
+  "133732": {
+    "facts": {
+      "founded": "1909",
+      "stadium": "Estadio Ciudad de Valencia",
+      "stadium_capacity": "26354",
+      "city": "Valencia",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Levante تأسس عام 1909 ويلعب مبارياته على ملعب Estadio Ciudad de Valencia بمدينة Valencia."
+  },
+  "133657": {
+    "facts": {
+      "founded": "1899",
+      "stadium": "PreZero Arena",
+      "stadium_capacity": "30150",
+      "city": "Sinsheim, Baden-Württemberg, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Hoffenheim تأسس عام 1899 ويلعب مبارياته على ملعب PreZero Arena بمدينة Sinsheim, Baden-Württemberg, Germany."
+  },
+  "133738": {
+    "facts": {
+      "founded": "1902",
+      "stadium": "Estadio Santiago Bernabéu",
+      "stadium_capacity": "81000",
+      "city": "Madrid",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Real Madrid تأسس عام 1902 ويلعب مبارياته على ملعب Estadio Santiago Bernabéu بمدينة Madrid."
   }
 }

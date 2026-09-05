@@ -1916,5 +1916,47 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/sxsttw1473504748.png",
     "home_goals": 0,
     "away_goals": 1
+  },
+  {
+    "event_id": "2573344",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-05",
+    "home_id": "136012",
+    "home": "Al-Taawoun",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rlsmp91646835052.png",
+    "away_id": "136011",
+    "away": "Al-Fateh",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/a5cjf41662659789.png",
+    "home_goals": 0,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2506207",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-05",
+    "home_id": "133728",
+    "home": "Rayo Vallecano",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
+    "away_id": "133726",
+    "away": "Racing de Santander",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/97kkiq1536575158.png",
+    "home_goals": 3,
+    "away_goals": 2
+  },
+  {
+    "event_id": "2482165",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-09-05",
+    "home_id": "133681",
+    "home": "Inter Milan",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+    "away_id": "133670",
+    "away": "Napoli",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
+    "home_goals": 3,
+    "away_goals": 2
   }
 ]

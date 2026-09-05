@@ -47,6 +47,18 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Hilal يواجه Neom ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Ettifaq يواجه Al-Faisaly ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Hazem يواجه Al-Taawoun ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Qadsiah يواجه Al-Ahli ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -108,11 +120,11 @@
     },
     {
       "tag": "الدوري الإنجليزي",
-      "title": "Fulham يواجه Crystal Palace ضمن الدوري الإنجليزي"
+      "title": "Fulham يفوز على Crystal Palace 1-0 ضمن الدوري الإنجليزي"
     },
     {
       "tag": "الدوري الإنجليزي",
-      "title": "Manchester City يواجه Coventry City ضمن الدوري الإنجليزي"
+      "title": "Manchester City يفوز على Coventry City 1-0 ضمن الدوري الإنجليزي"
     },
     {
       "tag": "الدوري الإسباني",

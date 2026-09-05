@@ -768,5 +768,38 @@
       "league": "Italian Serie A"
     },
     "bio": "Bologna تأسس عام 1909 ويلعب مبارياته على ملعب Stadio Renato Dall'Ara بمدينة Bologna, Emilia-Romagna."
+  },
+  "136020": {
+    "facts": {
+      "founded": "1947",
+      "stadium": "Al-Shabab Club Stadium",
+      "stadium_capacity": "62685",
+      "city": "Riyadh, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Shabab تأسس عام 1947 ويلعب مبارياته على ملعب Al-Shabab Club Stadium بمدينة Riyadh, Saudi Arabia."
+  },
+  "133616": {
+    "facts": {
+      "founded": "1882",
+      "stadium": "Tottenham Hotspur Stadium",
+      "stadium_capacity": "36284",
+      "city": "Bill Nicholson Way, Tottenham, London",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Tottenham Hotspur تأسس عام 1882 ويلعب مبارياته على ملعب Tottenham Hotspur Stadium بمدينة Bill Nicholson Way, Tottenham, London."
+  },
+  "134355": {
+    "facts": {
+      "founded": "1889",
+      "stadium": "Brentford Community Stadium",
+      "stadium_capacity": "17250",
+      "city": "Brentford, London, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Brentford تأسس عام 1889 ويلعب مبارياته على ملعب Brentford Community Stadium بمدينة Brentford, London, England."
   }
 }

@@ -1776,5 +1776,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
     "home_goals": 1,
     "away_goals": 2
+  },
+  {
+    "event_id": "2494020",
+    "league_id": 4328,
+    "league_name": "الدوري الإنجليزي",
+    "date": "2026-09-05",
+    "home_id": "134777",
+    "home": "Newcastle United",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+    "away_id": "134301",
+    "away": "Bournemouth",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
+    "home_goals": 2,
+    "away_goals": 2
   }
 ]

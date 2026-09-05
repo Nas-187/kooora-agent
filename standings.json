@@ -135,15 +135,15 @@
       },
       {
         "rank": 4,
-        "team": "Liverpool",
+        "team": "Newcastle United",
         "played": 3,
         "points": 5
       },
       {
         "rank": 5,
-        "team": "Newcastle United",
-        "played": 2,
-        "points": 4
+        "team": "Liverpool",
+        "played": 3,
+        "points": 5
       },
       {
         "rank": 6,
@@ -177,26 +177,26 @@
       },
       {
         "rank": 11,
+        "team": "Bournemouth",
+        "played": 3,
+        "points": 2
+      },
+      {
+        "rank": 12,
         "team": "Nottingham Forest",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 12,
+        "rank": 13,
         "team": "Leeds United",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 13,
+        "rank": 14,
         "team": "Brentford",
         "played": 1,
-        "points": 1
-      },
-      {
-        "rank": 14,
-        "team": "Bournemouth",
-        "played": 2,
         "points": 1
       },
       {

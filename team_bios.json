@@ -229,5 +229,93 @@
       "league": "Spanish La Liga"
     },
     "bio": "Real Sociedad تأسس عام 1909 ويلعب مبارياته على ملعب Reale Arena بمدينة San Sebastián, Guipúzcoa."
+  },
+  "134384": {
+    "facts": {
+      "founded": "1923",
+      "stadium": "Estadio Martínez Valero",
+      "stadium_capacity": "36017",
+      "city": "Elche, Alicante",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Elche تأسس عام 1923 ويلعب مبارياته على ملعب Estadio Martínez Valero بمدينة Elche, Alicante."
+  },
+  "133707": {
+    "facts": {
+      "founded": "1899",
+      "stadium": "Orange Vélodrome",
+      "stadium_capacity": "67394",
+      "city": "Marseille, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Marseille تأسس عام 1899 ويلعب مبارياته على ملعب Orange Vélodrome بمدينة Marseille, France."
+  },
+  "134301": {
+    "facts": {
+      "founded": "1890",
+      "stadium": "Vitality Stadium",
+      "stadium_capacity": "11464",
+      "city": "AFCB, Bournemouth, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "تأسس نادي بورنموث (Bournemouth) عام 1890، ويقع في مدينة بورنموث (AFCB) بإنجلترا، ويشارك في الدوري الإنجليزي الممتاز (English Premier League). ويلعب النادي مبارياته في ملعب فيتاليتي (Vitality Stadium) الذي تبلغ سعته الاستيعابية 11,464 متفرجاً."
+  },
+  "136011": {
+    "facts": {
+      "founded": "1958",
+      "stadium": "Al-Fateh Stadium",
+      "stadium_capacity": "19096",
+      "city": "Al Mubarraz",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "تأسس نادي الفتح (Al-Fateh) في عام 1958، ويقع مقرّه في مدينة المبرز بالمملكة العربية السعودية. ينافس النادي في دوري المحترفين السعودي، ويخوض مبارياته على أرضية ملعب الفتح الذي يتسع لـ 19096 متفرجاً."
+  },
+  "133661": {
+    "facts": {
+      "founded": "1904",
+      "stadium": "VELTINS-Arena",
+      "stadium_capacity": "62271",
+      "city": "Gelsenkirchen, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "نادي شالكه 04 (Schalke 04) هو نادي ألماني تأسس في عام 1904 ويقع في مدينة جيلسنكيرشن في ألمانيا. يلعب النادي في الدوري الألماني (German Bundesliga)، ويتخذ من ملعب \"فيلتينس أرينا\" (VELTINS-Arena) مقراً له بسعة استيعابية تبلغ 62271 متفرجاً."
+  },
+  "133816": {
+    "facts": {
+      "founded": "1906",
+      "stadium": "Estadio Abanca-Riazor",
+      "stadium_capacity": "32660",
+      "city": "A Coruña, Galicia, Spain",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "تأسس نادي ديبورتيفو لاكورونيا (Deportivo de A Coruña) في عام 1906، وهو نادٍ إسباني ينافس في الدوري الإسباني (Spanish La Liga) ويقع في مدينة آ كورونيا بمنطقة غاليسيا في إسبانيا. يخوض النادي مبارياته على أرضية ملعب إستاديو أبانكا-ريازور (Estadio Abanca-Riazor)، والذي تبلغ سعته الاستيعابية 32660 متفرجاً."
+  },
+  "133619": {
+    "facts": {
+      "founded": "1901",
+      "stadium": "American Express Stadium",
+      "stadium_capacity": "30750",
+      "city": "Falmer, Brighton, East Sussex, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "تأسس نادي برايتون أند هوف ألبين (Brighton and Hove Albion) في عام 1901، وينافس في الدوري الإنجليزي الممتاز (English Premier League) في إنجلترا. يقع النادي في فالمر، برايتون، إيست ساسكس، ويلعب مبارياته في ملعب أمريكان إكسبريس (American Express Stadium) الذي يتسع لـ 30,750 متفرجاً."
+  },
+  "136018": {
+    "facts": {
+      "founded": "1927",
+      "stadium": "King Abdullah Sports City",
+      "stadium_capacity": "62000",
+      "city": "Jeddah, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "تأسس نادي الاتحاد (Al-Ittihad) عام 1927، ويقع في مدينة جدة بالمملكة العربية السعودية. ينافس النادي في الدوري السعودي للمحترفين، ويخوض مبارياته في ملعب مدينة الملك عبد الله الرياضية الذي يتسع لـ 62,000 متفرج."
   }
 }

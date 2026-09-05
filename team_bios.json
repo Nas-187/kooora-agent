@@ -900,5 +900,27 @@
       "league": "Saudi-Arabian Pro League"
     },
     "bio": "Al-Faisaly تأسس عام 1954 ويلعب مبارياته على ملعب Al-Majma'ah Sports City Stadium بمدينة Harmah, Saudi Arabia."
+  },
+  "133625": {
+    "facts": {
+      "founded": "1883",
+      "stadium": "The Coventry Building Society Arena",
+      "stadium_capacity": "32609",
+      "city": "Coventry, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Coventry City تأسس عام 1883 ويلعب مبارياته على ملعب The Coventry Building Society Arena بمدينة Coventry, England."
+  },
+  "133610": {
+    "facts": {
+      "founded": "1905",
+      "stadium": "Stamford Bridge",
+      "stadium_capacity": "41798",
+      "city": "Fulham, London",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Chelsea تأسس عام 1905 ويلعب مبارياته على ملعب Stamford Bridge بمدينة Fulham, London."
   }
 }

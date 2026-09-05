@@ -3283,5 +3283,50 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1071956"
     },
     "bio": "Emmanuel Biumla يلعب في مركز وسط مع Angers وهو لاعب Ivory Coast يبلغ من العمر 21 عاماً."
+  },
+  "34349063": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": ", France",
+      "birth_date": "2005-05-31",
+      "age": 21,
+      "height": "",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Troyes",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Amadou Diakité يلعب في مركز مهاجم مع Troyes وهو لاعب France يبلغ من العمر 21 عاماً."
+  },
+  "34286232": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "",
+      "birth_date": "1997-08-14",
+      "age": 29,
+      "height": "5' 11\"",
+      "weight": "157 lbs",
+      "position": "Midfielder",
+      "team": "Troyes",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Antoine Mille يلعب في مركز وسط مع Troyes وهو لاعب France يبلغ من العمر 29 عاماً."
+  },
+  "34231282": {
+    "facts": {
+      "nationality": "Central African Republic",
+      "birth_place": "Blois, France",
+      "birth_date": "2002-12-30",
+      "age": 23,
+      "height": "186 cm",
+      "weight": "170 lbs",
+      "position": "Centre-Back",
+      "team": "Troyes",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/775403"
+    },
+    "bio": "Hugo Gambor يلعب في مركز Centre-Back مع Troyes وهو لاعب Central African Republic يبلغ من العمر 23 عاماً."
   }
 }

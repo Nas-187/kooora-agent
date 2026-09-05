@@ -438,5 +438,38 @@
       "league": "Italian Serie A"
     },
     "bio": "Como تأسس عام 1907 ويلعب مبارياته على ملعب Stadio Giuseppe Sinigaglia بمدينة Como, Italy."
+  },
+  "133713": {
+    "facts": {
+      "founded": "1950",
+      "stadium": "Groupama Stadium",
+      "stadium_capacity": "59186",
+      "city": "Lyon",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Lyon تأسس عام 1950 ويلعب مبارياته على ملعب Groupama Stadium بمدينة Lyon."
+  },
+  "135465": {
+    "facts": {
+      "founded": "1969",
+      "stadium": "Stade Jean-Bouin",
+      "stadium_capacity": "20000",
+      "city": "Paris",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Paris FC تأسس عام 1969 ويلعب مبارياته على ملعب Stade Jean-Bouin بمدينة Paris."
+  },
+  "133654": {
+    "facts": {
+      "founded": "1948",
+      "stadium": "RheinEnergieStadion",
+      "stadium_capacity": "49698",
+      "city": "Aachener Straße 999 50933 Cologne, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Köln تأسس عام 1948 ويلعب مبارياته على ملعب RheinEnergieStadion بمدينة Aachener Straße 999 50933 Cologne, Germany."
   }
 }

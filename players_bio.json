@@ -1978,5 +1978,155 @@
       "transfermarkt_url": null
     },
     "bio": "Ahmed Khatir يلعب في مركز مدافع مع Al-Riyadh وهو لاعب Morocco يبلغ من العمر 21 عاماً."
+  },
+  "34149628": {
+    "facts": {
+      "nationality": "Poland",
+      "birth_place": "Gryfice, Poland",
+      "birth_date": "1990-01-29",
+      "age": 36,
+      "height": "186 cm",
+      "weight": "83 kg",
+      "position": "Defensive Midfield",
+      "team": "Abha",
+      "joined": "2014-08-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/45184"
+    },
+    "bio": "Grzegorz Krychowiak يلعب في مركز Defensive Midfield مع Abha وهو لاعب Poland يبلغ من العمر 36 عاماً."
+  },
+  "34241634": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1989-10-06",
+      "age": 36,
+      "height": "172 cm",
+      "weight": "70 kg",
+      "position": "Defender",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ibrahim Al Barakati Al Zubaidi يلعب في مركز مدافع مع Abha وهو لاعب Saudi Arabia يبلغ من العمر 36 عاماً."
+  },
+  "34155593": {
+    "facts": {
+      "nationality": "Suriname",
+      "birth_place": "Amstelveen, Netherlands",
+      "birth_date": "1991-08-07",
+      "age": 35,
+      "height": "1.91 m (6 ft 3 in)",
+      "weight": "84 kg (185 lb)",
+      "position": "Forward",
+      "team": "Abha",
+      "joined": "2012-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/79127"
+    },
+    "bio": "Mitchell Te Vrede يلعب في مركز Forward مع Abha وهو لاعب Suriname يبلغ من العمر 35 عاماً."
+  },
+  "34225836": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1993-10-30",
+      "age": 32,
+      "height": "176 cm",
+      "weight": "75 kg",
+      "position": "Defender",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Mohammed Abu Ayed يلعب في مركز مدافع مع Abha وهو لاعب Saudi Arabia يبلغ من العمر 32 عاماً."
+  },
+  "34435311": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Saudi Arabia",
+      "birth_date": "2001-03-25",
+      "age": 25,
+      "height": "175 cm",
+      "weight": "",
+      "position": "Defender",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ammar Al Harfi يلعب في مركز مدافع مع Al-Riyadh وهو لاعب Saudi Arabia يبلغ من العمر 25 عاماً."
+  },
+  "34225753": {
+    "facts": {
+      "nationality": "Portugal",
+      "birth_place": "Esposende, Portugal",
+      "birth_date": "1993-01-14",
+      "age": 33,
+      "height": "166 cm",
+      "weight": "66 kg",
+      "position": "Midfielder",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "António Pinheiro de Carvalho يلعب في مركز وسط مع Al-Riyadh وهو لاعب Portugal يبلغ من العمر 33 عاماً."
+  },
+  "34178343": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Nivelles, Belgium",
+      "birth_date": "1993-04-24",
+      "age": 33,
+      "height": "1.90 m (6 ft 2 in)",
+      "weight": "190 lbs",
+      "position": "Defender",
+      "team": "Al Riyadh SC",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/110660"
+    },
+    "bio": "Dino Arslanagić يلعب في مركز مدافع مع Al Riyadh SC وهو لاعب Belgium يبلغ من العمر 33 عاماً."
+  },
+  "34291408": {
+    "facts": {
+      "nationality": "Romania",
+      "birth_place": "Toronto, Ontario,",
+      "birth_date": "2006-02-23",
+      "age": 20,
+      "height": "5' 6\"",
+      "weight": "130 lbs",
+      "position": "Forward",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Enes Sali يلعب في مركز Forward مع Al-Riyadh وهو لاعب Romania يبلغ من العمر 20 عاماً."
+  },
+  "34175871": {
+    "facts": {
+      "nationality": "Ghana",
+      "birth_place": "Accra, Ghana",
+      "birth_date": "2001-04-27",
+      "age": 25,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "141 lbs",
+      "position": "Midfielder",
+      "team": "Toulouse",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/658533"
+    },
+    "bio": "Abu Francis يلعب في مركز وسط مع Toulouse وهو لاعب Ghana يبلغ من العمر 25 عاماً."
+  },
+  "34419662": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Granollers, Spain",
+      "birth_date": "1998-07-30",
+      "age": 28,
+      "height": "187 cm",
+      "weight": "80 kg",
+      "position": "Goalkeeper",
+      "team": "Toulouse",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Álex Domínguez يلعب في مركز حارس مرمى مع Toulouse وهو لاعب Spain يبلغ من العمر 28 عاماً."
   }
 }

@@ -405,5 +405,38 @@
       "league": "Italian Serie A"
     },
     "bio": "Genoa تأسس عام 1823 ويلعب مبارياته على ملعب Stadio Luigi Ferraris بمدينة Genoa, Italy."
+  },
+  "134789": {
+    "facts": {
+      "founded": "1986",
+      "stadium": "Stade de l'Aube",
+      "stadium_capacity": "20877",
+      "city": "Troyes, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Troyes تأسس عام 1986 ويلعب مبارياته على ملعب Stade de l'Aube بمدينة Troyes, France."
+  },
+  "134779": {
+    "facts": {
+      "founded": "1900",
+      "stadium": "Stadion im Borussia-Park",
+      "stadium_capacity": "54057",
+      "city": "Mönchengladbach, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Borussia Mönchengladbach تأسس عام 1900 ويلعب مبارياته على ملعب Stadion im Borussia-Park بمدينة Mönchengladbach, Germany."
+  },
+  "134243": {
+    "facts": {
+      "founded": "1907",
+      "stadium": "Stadio Giuseppe Sinigaglia",
+      "stadium_capacity": "15000",
+      "city": "Como, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Como تأسس عام 1907 ويلعب مبارياته على ملعب Stadio Giuseppe Sinigaglia بمدينة Como, Italy."
   }
 }

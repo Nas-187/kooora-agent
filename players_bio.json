@@ -1858,5 +1858,125 @@
       "transfermarkt_url": null
     },
     "bio": "Ahmad Al Habib يلعب في مركز مدافع مع Abha وهو لاعب Saudi Arabia يبلغ من العمر 33 عاماً."
+  },
+  "34148484": {
+    "facts": {
+      "nationality": "Romania",
+      "birth_place": "Bukarest, Romania",
+      "birth_date": "1986-02-09",
+      "age": 40,
+      "height": "198 cm",
+      "weight": "90 kg",
+      "position": "Goalkeeper",
+      "team": "Abha",
+      "joined": "2014-06-10",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/55282"
+    },
+    "bio": "سبريان تاتاروشانو (Ciprian Tatarusanu) هو حارس مرمى روماني الجنسية، ولد في مدينة بوخارست برومانيا بتاريخ 9 فبراير 1986 ويبلغ من العمر 40 عاماً. يبلغ طوله 198 سم ووزنه 90 كجم، ويلعب حالياً لصالح فريق أبها الذي انضم إليه بتاريخ 10 يونيو 2014."
+  },
+  "34193199": {
+    "facts": {
+      "nationality": "Cameroon",
+      "birth_place": "Soisy-sous-Montmorency, France",
+      "birth_date": "1993-02-02",
+      "age": 33,
+      "height": "1.89 m (6 ft 2 in)",
+      "weight": "80 kg (176 lb)",
+      "position": "Goalkeeper",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/170471"
+    },
+    "bio": "Devis Epassy يلعب في مركز حارس مرمى مع Abha وهو لاعب Cameroon يبلغ من العمر 33 عاماً."
+  },
+  "34218477": {
+    "facts": {
+      "nationality": "Curacao",
+      "birth_place": "Kerkrade, Netherlands",
+      "birth_date": "1993-12-23",
+      "age": 32,
+      "height": "181 cm",
+      "weight": "73 kg",
+      "position": "Centre-Back",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "يورين غاري (Juriën Gaari) هو لاعب من جنسية كوراساو، ولد في مدينة كيركراده بهولندا بتاريخ 23 ديسمبر 1993 ويبلغ من العمر 32 عاماً. يلعب في مركز قلب الدفاع مع فريق أبها، ويبلغ طوله 181 سم ووزنه 73 كجم."
+  },
+  "34241636": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1999-03-25",
+      "age": 27,
+      "height": "170 cm",
+      "weight": "70 kg",
+      "position": "Midfielder",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Meshal Al Mutairi يلعب في مركز وسط مع Abha وهو لاعب Saudi Arabia يبلغ من العمر 27 عاماً."
+  },
+  "34225761": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1998-08-14",
+      "age": 28,
+      "height": "",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Al Riyadh SC",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdullah Al Omar Al Dossari يلعب في مركز وسط مع Al Riyadh SC وهو لاعب Saudi Arabia يبلغ من العمر 28 عاماً."
+  },
+  "34435320": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Saudi Arabia",
+      "birth_date": "1997-03-19",
+      "age": 29,
+      "height": "176",
+      "weight": "70",
+      "position": "Defender",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdullah Tarmin يلعب في مركز مدافع مع Al-Riyadh وهو لاعب Saudi Arabia يبلغ من العمر 29 عاماً."
+  },
+  "34241659": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1999-08-07",
+      "age": 27,
+      "height": "",
+      "weight": "",
+      "position": "Goalkeeper",
+      "team": "Al Riyadh SC",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulrahman Al Shammari يلعب في مركز حارس مرمى مع Al Riyadh SC وهو لاعب Saudi Arabia يبلغ من العمر 27 عاماً."
+  },
+  "34421330": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": ", Morocco",
+      "birth_date": "2005-03-14",
+      "age": 21,
+      "height": "",
+      "weight": "",
+      "position": "Defender",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ahmed Khatir يلعب في مركز مدافع مع Al-Riyadh وهو لاعب Morocco يبلغ من العمر 21 عاماً."
   }
 }

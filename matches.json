@@ -281,7 +281,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-05T15:50:00Z",
     "day": "2026-09-05",
-    "content": "تعادل Al-Faisaly وAl-Hazem بنتيجة 0-0 ضمن دوري روشن السعودي.",
+    "content": "خيم التعادل السلبي دون أهداف على مواجهة الفيصلي وضيفه الحزم، التي أقيمت اليوم لحساب منافسات دوري روشن السعودي. وشهد اللقاء محاولات متكافئة من الطرفين لهز الشباك، إلا أن غياب الفاعلية الهجومية والتنظيم الدفاعي المحكم حال دون تسجيل أي هدف. وبهذه النتيجة، اكتفى الفريقان بحصد نقطة واحدة أضيفت إلى رصيدهما في جدول ترتيب البطولة.",
     "cover_image": null
   },
   {
@@ -419,7 +419,7 @@
   },
   {
     "event_id": "2506207",
-    "title": "Rayo Vallecano 2 - 2 Racing de Santander",
+    "title": "Rayo Vallecano 3 - 2 Racing de Santander",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "4",
@@ -427,13 +427,13 @@
     "away_team": "Racing de Santander",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/97kkiq1536575158.png",
-    "home_score": 2,
+    "home_score": 3,
     "away_score": 2,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإسباني",
     "date": "2026-09-05T16:30:00Z",
     "day": "2026-09-05",
-    "content": "تعادل Rayo Vallecano وRacing de Santander بنتيجة 2-2 ضمن الدوري الإسباني.",
+    "content": "فوز Rayo Vallecano على Racing de Santander بنتيجة 3-2 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {

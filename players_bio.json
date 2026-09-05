@@ -2638,5 +2638,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/626724"
     },
     "bio": "João Pedro يلعب في مركز Centre-Forward مع Chelsea وهو لاعب Brazil يبلغ من العمر 24 عاماً."
+  },
+  "34175413": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Créteil, France",
+      "birth_date": "2002-08-26",
+      "age": 24,
+      "height": "1.79 m (5 ft 9 in)",
+      "weight": "163 lbs",
+      "position": "Forward",
+      "team": "Lille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/540664"
+    },
+    "bio": "Dilane Bakwa يلعب في مركز Forward مع Lille وهو لاعب France يبلغ من العمر 24 عاماً."
+  },
+  "34145395": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Manchester, England",
+      "birth_date": "1990-11-26",
+      "age": 35,
+      "height": "6 ft 1 in (1.85 m)",
+      "weight": "161 lbs",
+      "position": "Centre-Forward",
+      "team": "Chelsea",
+      "joined": "2014-09-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/67063"
+    },
+    "bio": "Danny Welbeck يلعب في مركز Centre-Forward مع Chelsea وهو لاعب England يبلغ من العمر 35 عاماً."
+  },
+  "34232908": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Franca, Brazil",
+      "birth_date": "2007-04-24",
+      "age": 19,
+      "height": "176 cm",
+      "weight": "62 kg",
+      "position": "Right Winger",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1056993"
+    },
+    "bio": "Estêvão يلعب في مركز Right Winger مع Chelsea وهو لاعب Brazil يبلغ من العمر 19 عاماً."
+  },
+  "34184096": {
+    "facts": {
+      "nationality": "United States",
+      "birth_place": "Addison, Illinois, United States",
+      "birth_date": "2004-05-15",
+      "age": 22,
+      "height": "193 cm",
+      "weight": "195 lb (88 kg)",
+      "position": "Goalkeeper",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/656316"
+    },
+    "bio": "غابرييل سلونينا (Gabriel Slonina) هو حارس مرمى أمريكي يلعب لنادي تشيلسي، وقد ولد في أديسون ببيلاية إلينوي في الولايات المتحدة بتاريخ 15 مايو 2004 ويبلغ من العمر 22 عاماً. يبلغ طول اللاعب 193 سم ووزنه 88 كغم (195 رطلاً). يتوفر ملفه الشخصي على موقع ترانسفير ماركت عبر الرابط التالي: https://www.transfermarkt.com/-/profil/spieler/656316"
+  },
+  "34246273": {
+    "facts": {
+      "nationality": "Portugal",
+      "birth_place": "Bissau, Guinea-Bissau",
+      "birth_date": "2007-04-30",
+      "age": 19,
+      "height": "172 cm",
+      "weight": "150 lbs",
+      "position": "Attacker",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Geovany Quenda يلعب في مركز مهاجم مع Chelsea وهو لاعب Portugal يبلغ من العمر 19 عاماً."
+  },
+  "34197264": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "London, England",
+      "birth_date": "2004-08-08",
+      "age": 22,
+      "height": "1.75 m (5 ft 9 in)",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Chelsea",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/670882"
+    },
+    "bio": "Jamie Gittens يلعب في مركز وسط مع Chelsea وهو لاعب England يبلغ من العمر 22 عاماً."
+  },
+  "34148791": {
+    "facts": {
+      "nationality": "Ireland",
+      "birth_place": "Dublin, Ireland",
+      "birth_date": "1982-07-29",
+      "age": 44,
+      "height": "1.70 m (5 ft 7 in)",
+      "weight": "70 kg",
+      "position": "Academy Coach",
+      "team": "Nottingham Forest",
+      "joined": "2011-07-01",
+      "transfermarkt_url": null
+    },
+    "bio": "Andy Reid يلعب في مركز Academy Coach مع Nottingham Forest وهو لاعب Ireland يبلغ من العمر 44 عاماً."
+  },
+  "34173416": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Suresnes, France",
+      "birth_date": "2002-01-20",
+      "age": 24,
+      "height": "1.75 m (5 ft 7 in)",
+      "weight": "172 lbs",
+      "position": "Forward",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/585959"
+    },
+    "bio": "Arnaud Kalimuendo يلعب في مركز Forward مع Nottingham Forest وهو لاعب France يبلغ من العمر 24 عاماً."
+  },
+  "34170137": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "London, England",
+      "birth_date": "2000-11-07",
+      "age": 25,
+      "height": "6 ft 0 in (1.82 m)",
+      "weight": "168 lbs",
+      "position": "Left Wing",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/392768"
+    },
+    "bio": "Callum Hudson-Odoi يلعب في مركز Left Wing مع Nottingham Forest وهو لاعب England يبلغ من العمر 25 عاماً."
+  },
+  "34145711": {
+    "facts": {
+      "nationality": "New Zealand",
+      "birth_place": "Auckland, New Zealand",
+      "birth_date": "1991-12-07",
+      "age": 34,
+      "height": "1.88 m (6 ft 2 in)",
+      "weight": "179 lbs",
+      "position": "Centre-Forward",
+      "team": "Nottingham Forest",
+      "joined": "2013-01-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/108725"
+    },
+    "bio": "Chris Wood يلعب في مركز Centre-Forward مع Nottingham Forest وهو لاعب New Zealand يبلغ من العمر 34 عاماً."
+  },
+  "34175837": {
+    "facts": {
+      "nationality": "Switzerland",
+      "birth_place": "Nyon, Switzerland",
+      "birth_date": "2000-10-25",
+      "age": 25,
+      "height": "1.81 m (5 ft 11 in)",
+      "weight": "172 lbs",
+      "position": "Right Winger",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/365108"
+    },
+    "bio": "Dan Ndoye يلعب في مركز Right Winger مع Nottingham Forest وهو لاعب Switzerland يبلغ من العمر 25 عاماً."
+  },
+  "34175627": {
+    "facts": {
+      "nationality": "Colombia",
+      "birth_place": "Amalfi, Colombia",
+      "birth_date": "1996-05-25",
+      "age": 30,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "70 kg",
+      "position": "Right-Back",
+      "team": "Nottingham Forest",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/493003"
+    },
+    "bio": "Daniel Muñoz يلعب في مركز Right-Back مع Nottingham Forest وهو لاعب Colombia يبلغ من العمر 30 عاماً."
   }
 }

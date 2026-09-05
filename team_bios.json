@@ -702,5 +702,27 @@
       "league": "Spanish La Liga"
     },
     "bio": "Real Betis تأسس عام 1907 ويلعب مبارياته على ملعب Estadio de La Cartuja بمدينة Seville."
+  },
+  "150637": {
+    "facts": {
+      "founded": "2023",
+      "stadium": "King Khalid Sport City Stadium",
+      "stadium_capacity": null,
+      "city": "Tabuk, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Neom تأسس عام 2023 ويلعب مبارياته على ملعب King Khalid Sport City Stadium بمدينة Tabuk, Saudi Arabia."
+  },
+  "133848": {
+    "facts": {
+      "founded": "1985",
+      "stadium": "Stade Marie-Marvingt",
+      "stadium_capacity": "25000",
+      "city": "Le Mans",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Le Mans تأسس عام 1985 ويلعب مبارياته على ملعب Stade Marie-Marvingt بمدينة Le Mans."
   }
 }

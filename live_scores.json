@@ -1,8 +1,14 @@
 [
   {
-    "event_id": "2494020",
-    "home_score": 2,
-    "away_score": 2,
+    "event_id": "2494021",
+    "home_score": 1,
+    "away_score": 0,
+    "status": "In Play"
+  },
+  {
+    "event_id": "2494024",
+    "home_score": 1,
+    "away_score": 0,
     "status": "In Play"
   },
   {

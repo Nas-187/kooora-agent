@@ -537,5 +537,93 @@
       "league": "French Ligue 1"
     },
     "bio": "Monaco تأسس عام 1924 ويلعب مبارياته على ملعب Stade Louis II بمدينة Fontvieille, Monaco."
+  },
+  "133711": {
+    "facts": {
+      "founded": "1944",
+      "stadium": "Decathlon Arena - Stade Pierre-Mauroy",
+      "stadium_capacity": "50157",
+      "city": "Villeneuve-d'Ascq, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Lille تأسس عام 1944 ويلعب مبارياته على ملعب Decathlon Arena - Stade Pierre-Mauroy بمدينة Villeneuve-d'Ascq, France."
+  },
+  "149112": {
+    "facts": {
+      "founded": "1970",
+      "stadium": "Al-Hazem Club Stadium",
+      "stadium_capacity": null,
+      "city": "Al-Rass, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Kholood تأسس عام 1970 ويلعب مبارياته على ملعب Al-Hazem Club Stadium بمدينة Al-Rass, Saudi Arabia."
+  },
+  "133662": {
+    "facts": {
+      "founded": "1899",
+      "stadium": "Weserstadion",
+      "stadium_capacity": "42500",
+      "city": "Bremen, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Werder Bremen تأسس عام 1899 ويلعب مبارياته على ملعب Weserstadion بمدينة Bremen, Germany."
+  },
+  "133617": {
+    "facts": {
+      "founded": "1904",
+      "stadium": "The MKM Stadium",
+      "stadium_capacity": "32000",
+      "city": "Kingston upon Hull, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Hull City تأسس عام 1904 ويلعب مبارياته على ملعب The MKM Stadium بمدينة Kingston upon Hull, England."
+  },
+  "133681": {
+    "facts": {
+      "founded": "1908",
+      "stadium": "Stadio Giuseppe Meazza",
+      "stadium_capacity": "80018",
+      "city": "Milan, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Inter Milan تأسس عام 1908 ويلعب مبارياته على ملعب Stadio Giuseppe Meazza بمدينة Milan, Italy."
+  },
+  "133600": {
+    "facts": {
+      "founded": "1879",
+      "stadium": "Craven Cottage",
+      "stadium_capacity": "25700",
+      "city": "Fulham, London, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Fulham تأسس عام 1879 ويلعب مبارياته على ملعب Craven Cottage بمدينة Fulham, London, England."
+  },
+  "133730": {
+    "facts": {
+      "founded": "1920",
+      "stadium": "Estadio El Sadar",
+      "stadium_capacity": "18761",
+      "city": "Pamplona",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Osasuna تأسس عام 1920 ويلعب مبارياته على ملعب Estadio El Sadar بمدينة Pamplona."
+  },
+  "133882": {
+    "facts": {
+      "founded": "1906",
+      "stadium": "Stade de la Meinau",
+      "stadium_capacity": "29230",
+      "city": "Strasbourg, France",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Strasbourg تأسس عام 1906 ويلعب مبارياته على ملعب Stade de la Meinau بمدينة Strasbourg, France."
   }
 }

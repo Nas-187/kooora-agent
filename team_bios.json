@@ -801,5 +801,49 @@
       "league": "English Premier League"
     },
     "bio": "Brentford تأسس عام 1889 ويلعب مبارياته على ملعب Brentford Community Stadium بمدينة Brentford, London, England."
+  },
+  "137721": {
+    "facts": {
+      "founded": "1937",
+      "stadium": "King Abdullah Sports City",
+      "stadium_capacity": "62345",
+      "city": "Jeddah, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Ahli تأسس عام 1937 ويلعب مبارياته على ملعب King Abdullah Sports City بمدينة Jeddah, Saudi Arabia."
+  },
+  "136015": {
+    "facts": {
+      "founded": "1967",
+      "stadium": "Prince Mohamed bin Fahd Stadium",
+      "stadium_capacity": "15000",
+      "city": "Khobar, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Qadsiah تأسس عام 1967 ويلعب مبارياته على ملعب Prince Mohamed bin Fahd Stadium بمدينة Khobar, Saudi Arabia."
+  },
+  "136012": {
+    "facts": {
+      "founded": "1956",
+      "stadium": "King Abdullah Sports City Stadium",
+      "stadium_capacity": "23600",
+      "city": "Buraidah, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Taawoun تأسس عام 1956 ويلعب مبارياته على ملعب King Abdullah Sports City Stadium بمدينة Buraidah, Saudi Arabia."
+  },
+  "133603": {
+    "facts": {
+      "founded": "1879",
+      "stadium": "Stadium of Light",
+      "stadium_capacity": "49000",
+      "city": "Sunderland, Tyne and Wear",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Sunderland تأسس عام 1879 ويلعب مبارياته على ملعب Stadium of Light بمدينة Sunderland, Tyne and Wear."
   }
 }

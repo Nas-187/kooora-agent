@@ -1032,5 +1032,93 @@
       "league": "Spanish La Liga"
     },
     "bio": "Real Madrid تأسس عام 1902 ويلعب مبارياته على ملعب Estadio Santiago Bernabéu بمدينة Madrid."
+  },
+  "133682": {
+    "facts": {
+      "founded": "1927",
+      "stadium": "Stadio Olimpico",
+      "stadium_capacity": "70634",
+      "city": "Rome, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Roma تأسس عام 1927 ويلعب مبارياته على ملعب Stadio Olimpico بمدينة Rome, Italy."
+  },
+  "133703": {
+    "facts": {
+      "founded": "1970",
+      "stadium": "Stadium de Toulouse",
+      "stadium_capacity": "33150",
+      "city": "Toulouse",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Toulouse تأسس عام 1970 ويلعب مبارياته على ملعب Stadium de Toulouse بمدينة Toulouse."
+  },
+  "133635": {
+    "facts": {
+      "founded": "1919",
+      "stadium": "Elland Road",
+      "stadium_capacity": "37890",
+      "city": "Beeston, Leeds, England",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Leeds United تأسس عام 1919 ويلعب مبارياته على ملعب Elland Road بمدينة Beeston, Leeds, England."
+  },
+  "134783": {
+    "facts": {
+      "founded": "1920",
+      "stadium": "Unipol Domus",
+      "stadium_capacity": "16233",
+      "city": "Cagliari, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Cagliari تأسس عام 1920 ويلعب مبارياته على ملعب Unipol Domus بمدينة Cagliari, Italy."
+  },
+  "133731": {
+    "facts": {
+      "founded": "1946",
+      "stadium": "Estadio Coliseum",
+      "stadium_capacity": "17393",
+      "city": "Getafe, Spain",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Getafe تأسس عام 1946 ويلعب مبارياته على ملعب Estadio Coliseum بمدينة Getafe, Spain."
+  },
+  "133678": {
+    "facts": {
+      "founded": "1908",
+      "stadium": "Stadio Via del mare",
+      "stadium_capacity": "31533",
+      "city": "Lecce, Apulia, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Lecce تأسس عام 1908 ويلعب مبارياته على ملعب Stadio Via del mare بمدينة Lecce, Apulia, Italy."
+  },
+  "133651": {
+    "facts": {
+      "founded": "1887",
+      "stadium": "Volksparkstadion",
+      "stadium_capacity": "57000",
+      "city": "Hamburg, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Hamburg تأسس عام 1887 ويلعب مبارياته على ملعب Volksparkstadion بمدينة Hamburg, Germany."
+  },
+  "133676": {
+    "facts": {
+      "founded": "1897",
+      "stadium": "Allianz Stadium Turin",
+      "stadium_capacity": "41507",
+      "city": "Turin, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Juventus تأسس عام 1897 ويلعب مبارياته على ملعب Allianz Stadium Turin بمدينة Turin, Italy."
   }
 }

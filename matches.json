@@ -457,7 +457,7 @@
   },
   {
     "event_id": "2482164",
-    "title": "Fiorentina 0 - 0 Torino",
+    "title": "Fiorentina 1 - 2 Torino",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -465,13 +465,13 @@
     "away_team": "Torino",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-05T13:00:00Z",
     "day": "2026-09-05",
-    "content": "تعادل Fiorentina وTorino بنتيجة 0-0 ضمن الدوري الإيطالي.",
+    "content": "فوز Torino على Fiorentina بنتيجة 1-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

@@ -1790,5 +1790,61 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
     "home_goals": 2,
     "away_goals": 2
+  },
+  {
+    "event_id": "2494021",
+    "league_id": 4328,
+    "league_name": "الدوري الإنجليزي",
+    "date": "2026-09-05",
+    "home_id": "133600",
+    "home": "Fulham",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xwwvyt1448811086.png",
+    "away_id": "133632",
+    "away": "Crystal Palace",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png",
+    "home_goals": 2,
+    "away_goals": 3
+  },
+  {
+    "event_id": "2494024",
+    "league_id": 4328,
+    "league_name": "الدوري الإنجليزي",
+    "date": "2026-09-05",
+    "home_id": "133613",
+    "home": "Manchester City",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+    "away_id": "133625",
+    "away": "Coventry City",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/uxyqys1424033798.png",
+    "home_goals": 1,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2506199",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-05",
+    "home_id": "133727",
+    "home": "Athletic Bilbao",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+    "away_id": "133729",
+    "away": "Atlético Madrid",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+    "home_goals": 3,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2482164",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-09-05",
+    "home_id": "133674",
+    "home": "Fiorentina",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
+    "away_id": "133687",
+    "away": "Torino",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+    "home_goals": 1,
+    "away_goals": 2
   }
 ]

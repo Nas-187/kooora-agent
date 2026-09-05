@@ -845,5 +845,60 @@
       "league": "English Premier League"
     },
     "bio": "Sunderland تأسس عام 1879 ويلعب مبارياته على ملعب Stadium of Light بمدينة Sunderland, Tyne and Wear."
+  },
+  "136013": {
+    "facts": {
+      "founded": "1957",
+      "stadium": "Kingdom Arena",
+      "stadium_capacity": "25000",
+      "city": "Riyadh, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Hilal تأسس عام 1957 ويلعب مبارياته على ملعب Kingdom Arena بمدينة Riyadh, Saudi Arabia."
+  },
+  "134551": {
+    "facts": {
+      "founded": "1985",
+      "stadium": "Home Deluxe Arena",
+      "stadium_capacity": "15300",
+      "city": "Paderborn, North Rhine-Westphalia",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Paderborn تأسس عام 1985 ويلعب مبارياته على ملعب Home Deluxe Arena بمدينة Paderborn, North Rhine-Westphalia."
+  },
+  "133613": {
+    "facts": {
+      "founded": "1880",
+      "stadium": "Etihad Stadium",
+      "stadium_capacity": "62000",
+      "city": "Etihad Campus, Manchester",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Manchester City تأسس عام 1880 ويلعب مبارياته على ملعب Etihad Stadium بمدينة Etihad Campus, Manchester."
+  },
+  "133687": {
+    "facts": {
+      "founded": "1906",
+      "stadium": "Stadio Olimpico Grande Torino",
+      "stadium_capacity": "27958",
+      "city": "Turin, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Torino تأسس عام 1906 ويلعب مبارياته على ملعب Stadio Olimpico Grande Torino بمدينة Turin, Italy."
+  },
+  "136021": {
+    "facts": {
+      "founded": "1954",
+      "stadium": "Al-Majma'ah Sports City Stadium",
+      "stadium_capacity": "0",
+      "city": "Harmah, Saudi Arabia",
+      "country": "Saudi Arabia",
+      "league": "Saudi-Arabian Pro League"
+    },
+    "bio": "Al-Faisaly تأسس عام 1954 ويلعب مبارياته على ملعب Al-Majma'ah Sports City Stadium بمدينة Harmah, Saudi Arabia."
   }
 }

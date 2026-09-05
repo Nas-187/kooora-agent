@@ -3208,5 +3208,80 @@
       "transfermarkt_url": null
     },
     "bio": "Adrien-Mehdi Monfray يلعب في مركز مدافع مع Troyes وهو لاعب France يبلغ من العمر 35 عاماً."
+  },
+  "34231181": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Marseille, France",
+      "birth_date": "2000-01-26",
+      "age": 26,
+      "height": "180 cm",
+      "weight": "65 kg",
+      "position": "Midfielder",
+      "team": "Troyes",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/585951"
+    },
+    "bio": "Alexandre Phliponeau يلعب في مركز وسط مع Troyes وهو لاعب France يبلغ من العمر 26 عاماً."
+  },
+  "34152466": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Valence, France",
+      "birth_date": "1986-01-13",
+      "age": 40,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "80 kg",
+      "position": "Goalkeeper",
+      "team": "Troyes",
+      "joined": "2010-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/33925"
+    },
+    "bio": "Jessy Moulin يلعب في مركز حارس مرمى مع Troyes وهو لاعب France يبلغ من العمر 40 عاماً."
+  },
+  "34217108": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "",
+      "birth_date": "1976-01-08",
+      "age": 50,
+      "height": "",
+      "weight": "",
+      "position": "Manager",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alexandre Dujeux يلعب في مركز Manager مع Angers وهو لاعب France يبلغ من العمر 50 عاماً."
+  },
+  "34175033": {
+    "facts": {
+      "nationality": "Haiti",
+      "birth_place": "Port-au-Prince, Haiti",
+      "birth_date": "1996-06-28",
+      "age": 30,
+      "height": "1.76 m (5 ft 8 in)",
+      "weight": "161 lbs",
+      "position": "Right-Back",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/371686"
+    },
+    "bio": "Carlens Arcus يلعب في مركز Right-Back مع Angers وهو لاعب Haiti يبلغ من العمر 30 عاماً."
+  },
+  "34250711": {
+    "facts": {
+      "nationality": "Ivory Coast",
+      "birth_place": "Yopougon, Cote d'Ivoire",
+      "birth_date": "2005-05-08",
+      "age": 21,
+      "height": "185 cm",
+      "weight": "163 lbs",
+      "position": "Midfielder",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1071956"
+    },
+    "bio": "Emmanuel Biumla يلعب في مركز وسط مع Angers وهو لاعب Ivory Coast يبلغ من العمر 21 عاماً."
   }
 }

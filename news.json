@@ -47,12 +47,24 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Hilal يواجه Neom ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Ettifaq يواجه Al-Faisaly ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Hazem يواجه Al-Taawoun ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Qadsiah يواجه Al-Ahli ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
     {
       "tag": "الدوري الإنجليزي",
-      "title": "Manchester City يتصدر ترتيب الدوري الإنجليزي برصيد 6 نقطة"
+      "title": "Manchester City يتصدر ترتيب الدوري الإنجليزي برصيد 9 نقطة"
     },
     {
       "tag": "الدوري الإسباني",
@@ -116,7 +128,7 @@
     },
     {
       "tag": "الدوري الإسباني",
-      "title": "Athletic Bilbao يفوز على Atlético Madrid 2-0 ضمن الدوري الإسباني"
+      "title": "Athletic Bilbao يفوز على Atlético Madrid 3-0 ضمن الدوري الإسباني"
     },
     {
       "tag": "الدوري الإسباني",
@@ -124,7 +136,7 @@
     },
     {
       "tag": "الدوري الإسباني",
-      "title": "Rayo Vallecano يواجه Racing de Santander ضمن الدوري الإسباني"
+      "title": "Racing de Santander يفوز على Rayo Vallecano 1-0 ضمن الدوري الإسباني"
     },
     {
       "tag": "الدوري الإيطالي",

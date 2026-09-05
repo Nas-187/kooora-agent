@@ -118,8 +118,8 @@
       {
         "rank": 1,
         "team": "Manchester City",
-        "played": 2,
-        "points": 6
+        "played": 3,
+        "points": 9
       },
       {
         "rank": 2,
@@ -171,39 +171,39 @@
       },
       {
         "rank": 10,
-        "team": "Ipswich Town",
+        "team": "Crystal Palace",
         "played": 3,
         "points": 3
       },
       {
         "rank": 11,
+        "team": "Ipswich Town",
+        "played": 3,
+        "points": 3
+      },
+      {
+        "rank": 12,
         "team": "Bournemouth",
         "played": 3,
         "points": 2
       },
       {
-        "rank": 12,
+        "rank": 13,
         "team": "Nottingham Forest",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 13,
+        "rank": 14,
         "team": "Leeds United",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 14,
+        "rank": 15,
         "team": "Brentford",
         "played": 1,
         "points": 1
-      },
-      {
-        "rank": 15,
-        "team": "Fulham",
-        "played": 1,
-        "points": 0
       },
       {
         "rank": 16,
@@ -213,19 +213,19 @@
       },
       {
         "rank": 17,
+        "team": "Fulham",
+        "played": 2,
+        "points": 0
+      },
+      {
+        "rank": 18,
         "team": "Tottenham Hotspur",
         "played": 1,
         "points": 0
       },
       {
-        "rank": 18,
-        "team": "Coventry City",
-        "played": 1,
-        "points": 0
-      },
-      {
         "rank": 19,
-        "team": "Crystal Palace",
+        "team": "Coventry City",
         "played": 2,
         "points": 0
       },
@@ -254,20 +254,20 @@
       },
       {
         "rank": 3,
-        "team": "Atlético Madrid",
-        "played": 3,
-        "points": 7
-      },
-      {
-        "rank": 4,
         "team": "Deportivo Alavés",
         "played": 3,
         "points": 7
       },
       {
-        "rank": 5,
+        "rank": 4,
         "team": "Osasuna",
         "played": 3,
+        "points": 7
+      },
+      {
+        "rank": 5,
+        "team": "Atlético Madrid",
+        "played": 4,
         "points": 7
       },
       {
@@ -278,43 +278,43 @@
       },
       {
         "rank": 7,
+        "team": "Athletic Bilbao",
+        "played": 4,
+        "points": 6
+      },
+      {
+        "rank": 8,
         "team": "Real Betis",
         "played": 3,
         "points": 6
       },
       {
-        "rank": 8,
+        "rank": 9,
         "team": "Deportivo de A Coruña",
         "played": 3,
         "points": 5
       },
       {
-        "rank": 9,
+        "rank": 10,
         "team": "Levante",
         "played": 3,
         "points": 4
       },
       {
-        "rank": 10,
+        "rank": 11,
         "team": "Racing de Santander",
         "played": 3,
         "points": 4
       },
       {
-        "rank": 11,
+        "rank": 12,
         "team": "Real Sociedad",
         "played": 4,
         "points": 4
       },
       {
-        "rank": 12,
-        "team": "Espanyol",
-        "played": 3,
-        "points": 3
-      },
-      {
         "rank": 13,
-        "team": "Athletic Bilbao",
+        "team": "Espanyol",
         "played": 3,
         "points": 3
       },
@@ -427,20 +427,20 @@
       },
       {
         "rank": 11,
+        "team": "Torino",
+        "played": 3,
+        "points": 3
+      },
+      {
+        "rank": 12,
         "team": "Udinese",
         "played": 1,
         "points": 1
       },
       {
-        "rank": 12,
+        "rank": 13,
         "team": "Cagliari",
         "played": 1,
-        "points": 0
-      },
-      {
-        "rank": 13,
-        "team": "Torino",
-        "played": 2,
         "points": 0
       },
       {
@@ -482,7 +482,7 @@
       {
         "rank": 20,
         "team": "Fiorentina",
-        "played": 2,
+        "played": 3,
         "points": 0
       }
     ]

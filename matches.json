@@ -528,7 +528,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T15:30:00Z",
     "day": "2026-09-06",
-    "content": "فوز Arsenal على Chelsea بنتيجة 2-1 ضمن الدوري الإنجليزي.",
+    "content": "حسم نادي آرسنال ديربي لندن لصالحه عقب فوزه المثير على ضيفه تشيلسي بنتيجة (2-1)، في المباراة التي جمعتهما ضمن منافسات الدوري الإنجليزي الممتاز. وشهد اللقاء أداءً قوياً من الجانبين، حيث تمكن أصحاب الأرض من فرض أسلوب لعبهم واقتناص نقاط المباراة الثلاث. ورغم المحاولات المكثفة من تشيلسي للعودة في النتيجة خلال الدقائق الأخيرة، نجح دفاع آرسنال في الحفاظ على التقدم حتى صافرة النهاية. وبهذا الفوز الثمين، يعزز آرسنال موقعه في جدول الترتيب، بينما تجرع تشيلسي خسارة جديدة في مشواره بالبطولة.",
     "cover_image": null
   },
   {
@@ -609,7 +609,7 @@
   },
   {
     "event_id": "2482161",
-    "title": "Juventus 0 - 1 AC Milan",
+    "title": "Juventus 1 - 1 AC Milan",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -617,13 +617,13 @@
     "away_team": "AC Milan",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-06T18:45:00Z",
     "day": "2026-09-06",
-    "content": "فوز AC Milan على Juventus بنتيجة 0-1 ضمن الدوري الإيطالي.",
+    "content": "تعادل Juventus وAC Milan بنتيجة 1-1 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

@@ -628,7 +628,7 @@
   },
   {
     "event_id": "2482163",
-    "title": "Bologna 1 - 2 Sassuolo",
+    "title": "Bologna 2 - 2 Sassuolo",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -636,13 +636,13 @@
     "away_team": "Sassuolo",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
-    "home_score": 1,
+    "home_score": 2,
     "away_score": 2,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-06T16:00:00Z",
     "day": "2026-09-06",
-    "content": "فوز Sassuolo على Bologna بنتيجة 1-2 ضمن الدوري الإيطالي.",
+    "content": "تعادل Bologna وSassuolo بنتيجة 2-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

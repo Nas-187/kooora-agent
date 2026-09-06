@@ -533,7 +533,7 @@
   },
   {
     "event_id": "2494023",
-    "title": "Everton 0 - 1 Manchester United",
+    "title": "Everton 2 - 2 Manchester United",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "3",
@@ -541,13 +541,13 @@
     "away_team": "Manchester United",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
-    "home_score": 0,
-    "away_score": 1,
-    "status": "In Play",
+    "home_score": 2,
+    "away_score": 2,
+    "status": "Match Finished",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "يتقدم مانشستر يونايتد على مضيفه إيفرتون بهدف دون رد، في المباراة الجارية بينهما حالياً لحساب منافسات الدوري الإنجليزي الممتاز. ويسعى \"الشياطين الحمر\" للحفاظ على هذا التقدم الثمين حتى الصافرة النهائية لخطف نقاط اللقاء الثلاث. في المقابل، يكثف أصحاب الأرض من ضغطهم الهجومي أملًا في إدراك هدف التعادل والعودة في النتيجة قبل فوات الأوان. وتشهد المواجهة إثارة متزايدة وتبادلاً للهجمات بين الفريقين مع دخولها في الدقائق الحاسمة.",
+    "content": "تعادل Everton وManchester United بنتيجة 2-2 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -742,7 +742,7 @@
   },
   {
     "event_id": "2489486",
-    "title": "Troyes 1 - 2 Strasbourg",
+    "title": "Troyes 2 - 6 Strasbourg",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "3",
@@ -750,13 +750,13 @@
     "away_team": "Strasbourg",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/sl5kzg1766617559.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
-    "home_score": 1,
-    "away_score": 2,
-    "status": "In Play",
+    "home_score": 2,
+    "away_score": 6,
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "فوز Strasbourg على Troyes بنتيجة 1-2 ضمن الدوري الفرنسي.",
+    "content": "فوز Strasbourg على Troyes بنتيجة 2-6 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

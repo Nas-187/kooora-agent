@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2482166",
-    "title": "Frosinone 2 - 0 Venezia",
+    "title": "Frosinone 3 - 2 Venezia",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -655,13 +655,13 @@
     "away_team": "Venezia",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/a7xa151603170120.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vbiget1781026964.png",
-    "home_score": 2,
-    "away_score": 0,
-    "status": "In Play",
+    "home_score": 3,
+    "away_score": 2,
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "فوز Frosinone على Venezia بنتيجة 2-0 ضمن الدوري الإيطالي.",
+    "content": "فوز Frosinone على Venezia بنتيجة 3-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

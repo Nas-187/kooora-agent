@@ -723,7 +723,7 @@
   },
   {
     "event_id": "2489482",
-    "title": "Marseille 2 - 2 Paris FC",
+    "title": "Marseille 2 - 3 Paris FC",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "3",
@@ -732,12 +732,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/yuvtsy1447594254.png",
     "home_score": 2,
-    "away_score": 2,
-    "status": "In Play",
+    "away_score": 3,
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-09-06T18:45:00Z",
     "day": "2026-09-06",
-    "content": "تعادل Marseille وParis FC بنتيجة 2-2 ضمن الدوري الفرنسي.",
+    "content": "فوز Paris FC على Marseille بنتيجة 2-3 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

@@ -1153,5 +1153,71 @@
       "league": "German Bundesliga"
     },
     "bio": "RB Leipzig تأسس عام 2009 ويلعب مبارياته على ملعب Red Bull Arena Leipzig بمدينة Am Sportforum 3, Leipzig, Germany."
+  },
+  "133740": {
+    "facts": {
+      "founded": "1923",
+      "stadium": "Estadio de la Cerámica",
+      "stadium_capacity": "24890",
+      "city": "Villareal, Castellón",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Villarreal تأسس عام 1923 ويلعب مبارياته على ملعب Estadio de la Cerámica بمدينة Villareal, Castellón."
+  },
+  "134270": {
+    "facts": {
+      "founded": "1912",
+      "stadium": "U-Power Stadium",
+      "stadium_capacity": "18568",
+      "city": "Monza, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Monza تأسس عام 1912 ويلعب مبارياته على ملعب U-Power Stadium بمدينة Monza, Italy."
+  },
+  "134782": {
+    "facts": {
+      "founded": "1907",
+      "stadium": "New Balance Arena",
+      "stadium_capacity": "21300",
+      "city": "Bergamo, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Atalanta تأسس عام 1907 ويلعب مبارياته على ملعب New Balance Arena بمدينة Bergamo, Italy."
+  },
+  "133650": {
+    "facts": {
+      "founded": "1909",
+      "stadium": "Signal Iduna Park",
+      "stadium_capacity": "80720",
+      "city": "Dortmund, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "Borussia Dortmund تأسس عام 1909 ويلعب مبارياته على ملعب Signal Iduna Park بمدينة Dortmund, Germany."
+  },
+  "133704": {
+    "facts": {
+      "founded": "1903",
+      "stadium": "Stade Francis-Le Blé",
+      "stadium_capacity": "15097",
+      "city": "Brest",
+      "country": "France",
+      "league": "French Ligue 1"
+    },
+    "bio": "Brest تأسس عام 1903 ويلعب مبارياته على ملعب Stade Francis-Le Blé بمدينة Brest."
+  },
+  "133632": {
+    "facts": {
+      "founded": "1905",
+      "stadium": "Selhurst Park",
+      "stadium_capacity": "26255",
+      "city": "South Norwood, London",
+      "country": "England",
+      "league": "English Premier League"
+    },
+    "bio": "Crystal Palace تأسس عام 1905 ويلعب مبارياته على ملعب Selhurst Park بمدينة South Norwood, London."
   }
 }

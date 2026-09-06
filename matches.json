@@ -547,7 +547,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "خيّم التعادل الإيجابي بهدفين لمثلهما على المواجهة القوية التي جمعت بين إيفرتون وضيفه مانشستر يونايتد، لحساب منافسات الدوري الإنجليزي الممتاز. وشهدت المباراة إثارة كبيرة وسجالاً هجومياً بين الفريقين طوال التسعين دقيقة، لينتهي اللقاء بتقاسم النقاط بعد أداء متكافئ من الجانبين. وبهذه النتيجة، أضاف كل فريق نقطة واحدة إلى رصيده في جدول ترتيب المسابقة مع نهاية هذه الجولة.",
+    "content": "تعادل Everton وManchester United بنتيجة 2-2 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -704,7 +704,7 @@
   },
   {
     "event_id": "2489480",
-    "title": "Angers ضد Rennes",
+    "title": "Angers 1 - 2 Rennes",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "3",
@@ -712,13 +712,13 @@
     "away_team": "Rennes",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ix6q4w1678808069.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "Halftime",
     "league": "الدوري الفرنسي",
     "date": "2026-09-06T15:15:00Z",
     "day": "2026-09-06",
-    "content": "",
+    "content": "فوز Rennes على Angers بنتيجة 1-2 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

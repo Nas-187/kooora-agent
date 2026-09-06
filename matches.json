@@ -524,11 +524,11 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png",
     "home_score": 2,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T15:30:00Z",
     "day": "2026-09-06",
-    "content": "يتقدم نادي أرسنال على ضيفه تشيلسي بنتيجة (2-1) في اللقاء الذي يجمعهما حالياً ضمن منافسات الدوري الإنجليزي الممتاز. ونجح أصحاب الأرض في فرض أسلوبهم وتسجيل هدفين لتأكيد تقدمهم، وسط محاولات مستمرة من جانب \"البلوز\" للعودة في النتيجة وتعديل الكفة. وتشهد الدقائق الحالية إثارة كبيرة ورتمًا سريعاً بين الفريقين، حيث يطمح أرسنال للحفاظ على تقدمه واقتناص النقاط الثلاث مع اقتراب المباراة من لحظاتها الحاسمة.",
+    "content": "فوز Arsenal على Chelsea بنتيجة 2-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "event_id": "2508346",
-    "title": "Eintracht Frankfurt 1 - 3 Augsburg",
+    "title": "Eintracht Frankfurt 1 - 4 Augsburg",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
     "round": "2",
@@ -675,12 +675,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xqyyvq1473453233.png",
     "home_score": 1,
-    "away_score": 3,
-    "status": "In Play",
+    "away_score": 4,
+    "status": "Match Finished",
     "league": "الدوري الألماني",
     "date": "2026-09-06T15:30:00Z",
     "day": "2026-09-06",
-    "content": "فوز Augsburg على Eintracht Frankfurt بنتيجة 1-3 ضمن الدوري الألماني.",
+    "content": "فوز Augsburg على Eintracht Frankfurt بنتيجة 1-4 ضمن الدوري الألماني.",
     "cover_image": null
   },
   {

@@ -533,7 +533,7 @@
   },
   {
     "event_id": "2494023",
-    "title": "Everton ضد Manchester United",
+    "title": "Everton 0 - 0 Manchester United",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "3",
@@ -541,13 +541,13 @@
     "away_team": "Manchester United",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "",
+    "content": "تعادل Everton وManchester United بنتيجة 0-0 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2482166",
-    "title": "Frosinone ضد Venezia",
+    "title": "Frosinone 1 - 0 Venezia",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -655,13 +655,13 @@
     "away_team": "Venezia",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/a7xa151603170120.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vbiget1781026964.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "",
+    "content": "فوز Frosinone على Venezia بنتيجة 1-0 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {
@@ -756,7 +756,7 @@
     "league": "الدوري الفرنسي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "يتقدم فريق تروا على ضيفه ستراسبورغ بهدف نظيف، في اللقاء الذي يجمع بينهما حالياً لحساب منافسات الدوري الفرنسي لكرة القدم. ونجح أصحاب الأرض في اقتناص تقدم ثمين، فرض واقعاً جديداً على مجريات المواجهة التي ما زالت أحداثها جارية حتى اللحظة. في المقابل، يكثف فريق ستراسبورغ من محاولاته الهجومية بغية إدراك هدف التعادل والعودة في النتيجة قبل إطلاق صافرة النهاية. وتتواصل الإثارة على أرضية الملعب وسط رغبة كلي الطرفين في الخروج بالنقاط الثلاث.",
+    "content": "فوز Troyes على Strasbourg بنتيجة 1-0 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

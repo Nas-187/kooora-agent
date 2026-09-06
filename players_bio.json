@@ -3988,5 +3988,95 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/435493"
     },
     "bio": "Bambo Diaby يلعب في مركز Centre-Back مع Elche وهو لاعب Spain يبلغ من العمر 28 عاماً."
+  },
+  "34258387": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Elche, Spain",
+      "birth_date": "2007-08-06",
+      "age": 19,
+      "height": "183 cm",
+      "weight": "163 lbs",
+      "position": "Right-Back",
+      "team": "Elche",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/962125"
+    },
+    "bio": "Buba Sangaré يلعب في مركز Right-Back مع Elche وهو لاعب Spain يبلغ من العمر 19 عاماً."
+  },
+  "34195110": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "",
+      "birth_date": "1980-09-27",
+      "age": 45,
+      "height": "5 ft 10 in",
+      "weight": "",
+      "position": "Manager",
+      "team": "Elche",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Eder Sarabia Armesto يلعب في مركز Manager مع Elche وهو لاعب Spain يبلغ من العمر 45 عاماً."
+  },
+  "34178172": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Rosario, Argentina",
+      "birth_date": "1997-03-29",
+      "age": 29,
+      "height": "181 cm",
+      "weight": "174 lbs",
+      "position": "Centre-Forward",
+      "team": "Elche",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/296783"
+    },
+    "bio": "Ezequiel Ponce يلعب في مركز Centre-Forward مع Elche وهو لاعب Argentina يبلغ من العمر 29 عاماً."
+  },
+  "34215642": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Pérez, Argentina",
+      "birth_date": "2004-12-23",
+      "age": 21,
+      "height": "1.74 m (5 ft 9 in)",
+      "weight": "146 lbs",
+      "position": "Attacking Midfield",
+      "team": "Elche",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/983989"
+    },
+    "bio": "Facundo Buonanotte يلعب في مركز Attacking Midfield مع Elche وهو لاعب Argentina يبلغ من العمر 21 عاماً."
+  },
+  "34437731": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Le Blanc-Mesnil, France",
+      "birth_date": "2006-11-25",
+      "age": 19,
+      "height": "1.88 m (6 ft 2 in)",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdou-Salam Konate يلعب في مركز وسط مع Parma وهو لاعب France يبلغ من العمر 19 عاماً."
+  },
+  "34229856": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Barcelona, Spain",
+      "birth_date": "2001-05-26",
+      "age": 25,
+      "height": "1.70 m (5 ft 7 in)",
+      "weight": "146 lbs",
+      "position": "Central Midfield",
+      "team": "Parma Calcio 1913",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/466802"
+    },
+    "bio": "Adrián Bernabé يلعب في مركز Central Midfield مع Parma Calcio 1913 وهو لاعب Spain يبلغ من العمر 25 عاماً."
   }
 }

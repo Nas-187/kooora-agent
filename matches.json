@@ -528,7 +528,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T15:30:00Z",
     "day": "2026-09-06",
-    "content": "تعادل Arsenal وChelsea بنتيجة 1-1 ضمن الدوري الإنجليزي.",
+    "content": "خيم التعادل الإيجابي بهدف لمثله على نتيجة الشوط الأول من مواجهة القمة التي تجمع أرسنال وضيفه تشيلسي، في إطار منافسات الدوري الإنجليزي الممتاز. وشهدت الدقائق الـ45 الأولى إثارة كبيرة وتبادلاً للهجمات بين الفريقين بحثاً عن التقدم وحسم السيطرة على مجريات اللقاء. وتترقب الجماهير شوطاً ثانياً حاسماً لفض الشراكة والظفر بنقاط هذا الديربي اللندني المرتقب.",
     "cover_image": null
   },
   {
@@ -562,7 +562,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
     "home_score": 0,
     "away_score": 5,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإسباني",
     "date": "2026-09-06T14:15:00Z",
     "day": "2026-09-06",
@@ -571,7 +571,7 @@
   },
   {
     "event_id": "2506202",
-    "title": "Málaga ضد Levante",
+    "title": "Málaga 0 - 0 Levante",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "4",
@@ -579,13 +579,13 @@
     "away_team": "Levante",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/upqyvr1473502952.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xwtxsx1473503739.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-06T16:30:00Z",
     "day": "2026-09-06",
-    "content": "",
+    "content": "تعادل Málaga وLevante بنتيجة 0-0 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "event_id": "2508346",
-    "title": "Eintracht Frankfurt 1 - 0 Augsburg",
+    "title": "Eintracht Frankfurt 1 - 3 Augsburg",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
     "round": "2",
@@ -675,12 +675,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xqyyvq1473453233.png",
     "home_score": 1,
-    "away_score": 0,
+    "away_score": 3,
     "status": "In Play",
     "league": "الدوري الألماني",
     "date": "2026-09-06T15:30:00Z",
     "day": "2026-09-06",
-    "content": "فوز Eintracht Frankfurt على Augsburg بنتيجة 1-0 ضمن الدوري الألماني.",
+    "content": "فوز Augsburg على Eintracht Frankfurt بنتيجة 1-3 ضمن الدوري الألماني.",
     "cover_image": null
   },
   {

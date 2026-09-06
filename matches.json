@@ -528,7 +528,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-06T15:30:00Z",
     "day": "2026-09-06",
-    "content": "حقق نادي أرسنال فوزاً ثميناً على ضيفه تشيلسي بنتيجة هدفين مقابل هدف، في اللقاء الذي جمعهما لحساب منافسات الدوري الإنجليزي الممتاز. وشهدت المباراة إثارة كبيرة بين الفريقين، قبل أن ينجح \"المدفعجية\" في حسم المواجهة لصالحهم واقتناص ثلاث نقاط غالية أمام جماهيرهم. بهذا الفوز، يعزز أرسنال موقعه في جدول الترتيب، بينما تجمد رصيد تشيلسي عقب هذه الخسارة في انتظار استعادة توازنه في الجولات القادمة.",
+    "content": "فوز Arsenal على Chelsea بنتيجة 2-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -723,7 +723,7 @@
   },
   {
     "event_id": "2489482",
-    "title": "Marseille 1 - 2 Paris FC",
+    "title": "Marseille 2 - 2 Paris FC",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "3",
@@ -731,13 +731,13 @@
     "away_team": "Paris FC",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/yuvtsy1447594254.png",
-    "home_score": 1,
+    "home_score": 2,
     "away_score": 2,
     "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-09-06T18:45:00Z",
     "day": "2026-09-06",
-    "content": "فوز Paris FC على Marseille بنتيجة 1-2 ضمن الدوري الفرنسي.",
+    "content": "تعادل Marseille وParis FC بنتيجة 2-2 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

@@ -1120,5 +1120,38 @@
       "league": "Italian Serie A"
     },
     "bio": "Juventus تأسس عام 1897 ويلعب مبارياته على ملعب Allianz Stadium Turin بمدينة Turin, Italy."
+  },
+  "133726": {
+    "facts": {
+      "founded": "1913",
+      "stadium": "Campos de Sport de El Sardinero",
+      "stadium_capacity": "22222",
+      "city": "Santander, Cantabria, Spain",
+      "country": "Spain",
+      "league": "Spanish La Liga"
+    },
+    "bio": "Racing de Santander تأسس عام 1913 ويلعب مبارياته على ملعب Campos de Sport de El Sardinero بمدينة Santander, Cantabria, Spain."
+  },
+  "135728": {
+    "facts": {
+      "founded": "1913",
+      "stadium": "Stadio Ennio Tardini",
+      "stadium_capacity": "22359",
+      "city": "Parma, Italy",
+      "country": "Italy",
+      "league": "Italian Serie A"
+    },
+    "bio": "Parma تأسس عام 1913 ويلعب مبارياته على ملعب Stadio Ennio Tardini بمدينة Parma, Italy."
+  },
+  "134695": {
+    "facts": {
+      "founded": "2009",
+      "stadium": "Red Bull Arena Leipzig",
+      "stadium_capacity": "42959",
+      "city": "Am Sportforum 3, Leipzig, Germany",
+      "country": "Germany",
+      "league": "German Bundesliga"
+    },
+    "bio": "RB Leipzig تأسس عام 2009 ويلعب مبارياته على ملعب Red Bull Arena Leipzig بمدينة Am Sportforum 3, Leipzig, Germany."
   }
 }

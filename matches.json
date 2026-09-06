@@ -661,7 +661,7 @@
     "league": "الدوري الإيطالي",
     "date": "2026-09-06T13:00:00Z",
     "day": "2026-09-06",
-    "content": "يتقدم نادي فروزينوني على ضيفه فينيتسيا بهدف دون رد، في المباراة الجارية بينهما حالياً لحساب منافسات الدوري الإيطالي. ويفرض أصحاب الأرض أفضليتهم على مجريات اللقاء من خلال الضغط الهجومي المحكم لتأمين هذا التقدم الثمين. في المقابل، يحاول فريق فينيتسيا تدارك الموقف والبحث عن ثغرة لتعديل النتيجة قبل صافرة النهاية. وتستمر الإثارة في الدقائق المتبقية من المواجهة وسط تطلع فروزينوني لحسم النقاط الثلاث ورغبة الضيوف في العودة بالنتيجة.",
+    "content": "فوز Frosinone على Venezia بنتيجة 1-0 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {
@@ -685,7 +685,7 @@
   },
   {
     "event_id": "2508349",
-    "title": "Hamburg ضد Mainz",
+    "title": "Hamburg 0 - 2 Mainz",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
     "round": "2",
@@ -693,13 +693,13 @@
     "away_team": "Mainz",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/tvtppt1473453296.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/fhm9v51552134916.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 2,
+    "status": "In Play",
     "league": "الدوري الألماني",
     "date": "2026-09-06T13:30:00Z",
     "day": "2026-09-06",
-    "content": "",
+    "content": "فوز Mainz على Hamburg بنتيجة 0-2 ضمن الدوري الألماني.",
     "cover_image": null
   },
   {

@@ -4078,5 +4078,125 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/466802"
     },
     "bio": "Adrián Bernabé يلعب في مركز Central Midfield مع Parma Calcio 1913 وهو لاعب Spain يبلغ من العمر 25 عاماً."
+  },
+  "34218758": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Madrid, Spain",
+      "birth_date": "2003-01-18",
+      "age": 23,
+      "height": "188 cm",
+      "weight": "172 lbs",
+      "position": "Defensive Midfield",
+      "team": "Elche",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/909758"
+    },
+    "bio": "Federico Redondo يلعب في مركز Defensive Midfield مع Elche وهو لاعب Argentina يبلغ من العمر 23 عاماً."
+  },
+  "34173906": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Rota, Spain",
+      "birth_date": "2000-10-24",
+      "age": 25,
+      "height": "1.90 m (6 ft 3 in)",
+      "weight": "",
+      "position": "Centre-Forward",
+      "team": "Elche",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Fer Niño يلعب في مركز Centre-Forward مع Elche وهو لاعب Spain يبلغ من العمر 25 عاماً."
+  },
+  "34231253": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": "Boune, Senegal",
+      "birth_date": "2002-04-10",
+      "age": 24,
+      "height": "185 cm",
+      "weight": "163 lbs",
+      "position": "Defender",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/673514"
+    },
+    "bio": "Abdoulaye Ndiaye يلعب في مركز مدافع مع Parma وهو لاعب Senegal يبلغ من العمر 24 عاماً."
+  },
+  "34229943": {
+    "facts": {
+      "nationality": "Australia",
+      "birth_place": "Fidenza, Italy",
+      "birth_date": "2003-10-10",
+      "age": 22,
+      "height": "190 cm",
+      "weight": "172 lbs",
+      "position": "Centre-Back",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/867137"
+    },
+    "bio": "Alessandro Circati يلعب في مركز Centre-Back مع Parma وهو لاعب Australia يبلغ من العمر 22 عاماً."
+  },
+  "34217577": {
+    "facts": {
+      "nationality": "United States",
+      "birth_place": "Miami, Florida, United States",
+      "birth_date": "2005-03-02",
+      "age": 21,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "159 lbs",
+      "position": "Central Midfield",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Benjamin Cremaschi يلعب في مركز Central Midfield مع Parma وهو لاعب United States يبلغ من العمر 21 عاماً."
+  },
+  "34348162": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": null,
+      "birth_date": "1995-07-29",
+      "age": 31,
+      "height": null,
+      "weight": null,
+      "position": "Manager",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Carlos Cuesta يلعب في مركز Manager مع Parma وهو لاعب Spain يبلغ من العمر 31 عاماً."
+  },
+  "34218588": {
+    "facts": {
+      "nationality": "Argentina",
+      "birth_place": "Moreno, Argentina",
+      "birth_date": "2004-07-24",
+      "age": 22,
+      "height": "177 cm",
+      "weight": "141 lbs",
+      "position": "Midfielder",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Christian Ordoñez يلعب في مركز وسط مع Parma وهو لاعب Argentina يبلغ من العمر 22 عاماً."
+  },
+  "34303827": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "",
+      "birth_date": "2007-02-01",
+      "age": 19,
+      "height": "5' 6\"",
+      "weight": "126 lbs",
+      "position": "Midfielder",
+      "team": "Parma",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Elia Plicco يلعب في مركز وسط مع Parma وهو لاعب Italy يبلغ من العمر 19 عاماً."
   }
 }

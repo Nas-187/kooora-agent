@@ -666,7 +666,7 @@
   },
   {
     "event_id": "2482158",
-    "title": "Cagliari ضد Lecce",
+    "title": "Cagliari 0 - 0 Lecce",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -674,13 +674,13 @@
     "away_team": "Lecce",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/j4vznr1567365249.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-07T16:30:00Z",
     "day": "2026-09-07",
-    "content": "",
+    "content": "تعادل Cagliari وLecce بنتيجة 0-0 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

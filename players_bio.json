@@ -5458,5 +5458,140 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/666744"
     },
     "bio": "Alexandre Lauray يلعب في مركز مدافع مع Le Mans وهو لاعب France يبلغ من العمر 29 عاماً."
+  },
+  "34245364": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Grenoble, France",
+      "birth_date": "1994-04-25",
+      "age": 32,
+      "height": "173 cm",
+      "weight": "65 kg",
+      "position": "Midfielder",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alexandre Vincent يلعب في مركز وسط مع Le Mans وهو لاعب France يبلغ من العمر 32 عاماً."
+  },
+  "34245367": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Nîmes, France",
+      "birth_date": "1996-04-08",
+      "age": 30,
+      "height": "177 cm",
+      "weight": "73 kg",
+      "position": "Midfielder",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/334006"
+    },
+    "bio": "Anthony Ribelin يلعب في مركز وسط مع Le Mans وهو لاعب France يبلغ من العمر 30 عاماً."
+  },
+  "34245360": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Rodez, France",
+      "birth_date": "1995-09-22",
+      "age": 30,
+      "height": "175 cm",
+      "weight": "70 kg",
+      "position": "Attacker",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/146373"
+    },
+    "bio": "Antoine Rabillard يلعب في مركز مهاجم مع Le Mans وهو لاعب France يبلغ من العمر 30 عاماً."
+  },
+  "34158653": {
+    "facts": {
+      "nationality": "Ivory Coast",
+      "birth_place": "Angers, France",
+      "birth_date": "1992-02-13",
+      "age": 34,
+      "height": "1.93 m (6 ft 4 in)",
+      "weight": "192 lbs",
+      "position": "Forward",
+      "team": "Le Mans",
+      "joined": "2013-01-25",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/194533"
+    },
+    "bio": "Armand Gnanduillet يلعب في مركز Forward مع Le Mans وهو لاعب Ivory Coast يبلغ من العمر 34 عاماً."
+  },
+  "34245359": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": ", France",
+      "birth_date": "1999-03-26",
+      "age": 27,
+      "height": "",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Arnold Vula يلعب في مركز مهاجم مع Le Mans وهو لاعب France يبلغ من العمر 27 عاماً."
+  },
+  "34245382": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Tourcoing, France",
+      "birth_date": "2002-02-03",
+      "age": 24,
+      "height": "",
+      "weight": "",
+      "position": "Goalkeeper",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Augustin Delbecque يلعب في مركز حارس مرمى مع Le Mans وهو لاعب France يبلغ من العمر 24 عاماً."
+  },
+  "34245361": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": ", Senegal",
+      "birth_date": "1995-08-12",
+      "age": 31,
+      "height": "",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Dame Guèye يلعب في مركز مهاجم مع Le Mans وهو لاعب Senegal يبلغ من العمر 31 عاماً."
+  },
+  "34225846": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1995-03-02",
+      "age": 31,
+      "height": "167 cm",
+      "weight": "66 kg",
+      "position": "Midfielder",
+      "team": "Al-Fayha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdullah Al Joui يلعب في مركز وسط مع Al-Fayha وهو لاعب Saudi Arabia يبلغ من العمر 31 عاماً."
+  },
+  "34252061": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1995-08-04",
+      "age": 31,
+      "height": "180 cm",
+      "weight": "78 kg",
+      "position": "Goalkeeper",
+      "team": "Al Feiha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulraouf Al Duqayl يلعب في مركز حارس مرمى مع Al Feiha وهو لاعب Saudi Arabia يبلغ من العمر 31 عاماً."
   }
 }

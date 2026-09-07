@@ -4843,5 +4843,50 @@
       "transfermarkt_url": null
     },
     "bio": "Abdulaziz Al Elewai يلعب في مركز وسط مع Al-Kholood وهو لاعب Saudi Arabia يبلغ من العمر 22 عاماً."
+  },
+  "34297250": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "",
+      "birth_date": "2005-10-06",
+      "age": 20,
+      "height": "None",
+      "weight": "",
+      "position": "Forward",
+      "team": "Al-Kholood",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulmalik Al Harbi يلعب في مركز Forward مع Al-Kholood وهو لاعب Saudi Arabia يبلغ من العمر 20 عاماً."
+  },
+  "34258326": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Oiartzun, Spain",
+      "birth_date": "2000-06-21",
+      "age": 26,
+      "height": "182 cm",
+      "weight": "161 lbs",
+      "position": "Central Midfield",
+      "team": "Al-Kholood",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Iker Kortajarena يلعب في مركز Central Midfield مع Al-Kholood وهو لاعب Spain يبلغ من العمر 26 عاماً."
+  },
+  "34200497": {
+    "facts": {
+      "nationality": "Ivory Coast",
+      "birth_place": "Yamoussoukro, Cote d'Ivoire",
+      "birth_date": "2002-12-25",
+      "age": 23,
+      "height": "6' 2\"",
+      "weight": "172 lbs",
+      "position": "Centre-Back",
+      "team": "Strasbourg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/962555"
+    },
+    "bio": "Abakar Sylla يلعب في مركز Centre-Back مع Strasbourg وهو لاعب Ivory Coast يبلغ من العمر 23 عاماً."
   }
 }

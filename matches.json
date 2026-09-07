@@ -604,7 +604,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-07T15:30:00Z",
     "day": "2026-09-07",
-    "content": "تعادل Al-Khaleej وAl-Riyadh بنتيجة 0-0 ضمن دوري روشن السعودي.",
+    "content": "خيّم التعادل السلبي على مواجهة فريق الخليج وضيفه الرياض، التي أقيمت ضمن منافسات دوري روشن السعودي للمحترفين. وشهدت المباراة محاولات هجومية متكافئة من الطرفين لكسر جمود النتيجة، إلا أن غياب الفاعلية الهجومية وتألق الدفاع حال دون تسجيل أي أهداف. وبهذه النتيجة، اكتفى كل فريق بحصد نقطة واحدة لتضاف إلى رصيده في جدول ترتيب المسابقة.",
     "cover_image": null
   },
   {
@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2506208",
-    "title": "Elche 1 - 2 Real Sociedad",
+    "title": "Elche 2 - 3 Real Sociedad",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "4",
@@ -655,13 +655,13 @@
     "away_team": "Real Sociedad",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
-    "home_score": 1,
-    "away_score": 2,
-    "status": "In Play",
+    "home_score": 2,
+    "away_score": 3,
+    "status": "Match Finished",
     "league": "الدوري الإسباني",
     "date": "2026-09-07T19:30:00Z",
     "day": "2026-09-07",
-    "content": "فوز Real Sociedad على Elche بنتيجة 1-2 ضمن الدوري الإسباني.",
+    "content": "فوز Real Sociedad على Elche بنتيجة 2-3 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {

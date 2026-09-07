@@ -5023,5 +5023,80 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/670717"
     },
     "bio": "Dário Essugo يلعب في مركز Defensive Midfield مع Strasbourg وهو لاعب Portugal يبلغ من العمر 21 عاماً."
+  },
+  "34178575": {
+    "facts": {
+      "nationality": "Ireland",
+      "birth_place": "Leixlip, Ireland",
+      "birth_date": "2002-06-23",
+      "age": 24,
+      "height": "1.88 m (6 ft 2 in)",
+      "weight": "172 lbs",
+      "position": "Centre-Back",
+      "team": "Strasbourg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/621993"
+    },
+    "bio": "Andrew Omobamidele يلعب في مركز Centre-Back مع Strasbourg وهو لاعب Ireland يبلغ من العمر 24 عاماً."
+  },
+  "34219194": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Itumbiara, Brazil",
+      "birth_date": "2005-06-05",
+      "age": 21,
+      "height": "187 cm",
+      "weight": "73 kg",
+      "position": "Centre-Forward",
+      "team": "Strasbourg",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Deivid Washington يلعب في مركز Centre-Forward مع Strasbourg وهو لاعب Brazil يبلغ من العمر 21 عاماً."
+  },
+  "34171310": {
+    "facts": {
+      "nationality": "Ukraine",
+      "birth_place": "Vilnyansk, Zaporizhya Oblast, Ukraine",
+      "birth_date": "1995-04-20",
+      "age": 31,
+      "height": "1.86 m (6 ft 1 in)",
+      "weight": "172 lbs",
+      "position": "Left-Back",
+      "team": "Strasbourg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/206717"
+    },
+    "bio": "Eduard Sobol يلعب في مركز Left-Back مع Strasbourg وهو لاعب Ukraine يبلغ من العمر 31 عاماً."
+  },
+  "34193527": {
+    "facts": {
+      "nationality": "The Netherlands",
+      "birth_place": "Den Haag, Netherlands",
+      "birth_date": "2003-02-03",
+      "age": 23,
+      "height": "195 cm",
+      "weight": "181 lbs",
+      "position": "Forward",
+      "team": "Strasbourg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/559328"
+    },
+    "bio": "Emanuel Emegha يلعب في مركز Forward مع Strasbourg وهو لاعب The Netherlands يبلغ من العمر 23 عاماً."
+  },
+  "34173538": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Colombes, France",
+      "birth_date": "2002-05-15",
+      "age": 24,
+      "height": "1.93 m (6 ft 4 in)",
+      "weight": "179 lbs",
+      "position": "Defender",
+      "team": "FC Augsburg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/569383"
+    },
+    "bio": "Chrislain Matsima يلعب في مركز مدافع مع FC Augsburg وهو لاعب France يبلغ من العمر 24 عاماً."
   }
 }

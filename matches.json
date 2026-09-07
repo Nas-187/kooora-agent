@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2506208",
-    "title": "Elche 0 - 1 Real Sociedad",
+    "title": "Elche 1 - 2 Real Sociedad",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "4",
@@ -655,13 +655,13 @@
     "away_team": "Real Sociedad",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
-    "home_score": 0,
-    "away_score": 1,
+    "home_score": 1,
+    "away_score": 2,
     "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-07T19:30:00Z",
     "day": "2026-09-07",
-    "content": "فوز Real Sociedad على Elche بنتيجة 0-1 ضمن الدوري الإسباني.",
+    "content": "فوز Real Sociedad على Elche بنتيجة 1-2 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {
@@ -685,7 +685,7 @@
   },
   {
     "event_id": "2482159",
-    "title": "Udinese 0 - 0 Lazio",
+    "title": "Udinese 1 - 2 Lazio",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "3",
@@ -693,13 +693,13 @@
     "away_team": "Lazio",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "In Play",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-07T18:45:00Z",
     "day": "2026-09-07",
-    "content": "تعادل Udinese وLazio بنتيجة 0-0 ضمن الدوري الإيطالي.",
+    "content": "فوز Lazio على Udinese بنتيجة 1-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

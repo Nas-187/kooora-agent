@@ -5278,5 +5278,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/106405"
     },
     "bio": "Jeffrey Gouweleeuw يلعب في مركز مدافع مع FC Augsburg وهو لاعب The Netherlands يبلغ من العمر 35 عاماً."
+  },
+  "34202538": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Lüneburg, Germany",
+      "birth_date": "1999-08-22",
+      "age": 27,
+      "height": "196 cm",
+      "weight": "190 lbs",
+      "position": "Centre-Back",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "كالفين براكيلمان (Calvin Brackelmann) هو لاعب ألماني الجنسية ولد في لونبورغ بألمانيا بتاريخ 22 أغسطس 1999 ويبلغ من العمر 27 عاماً. يلعب في مركز قلب الدفاع مع فريق بادربورن. يبلغ طوله 196 سم ووزنه 190 رطلاً."
+  },
+  "34155450": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Rüdesheim am Rhein, Germany",
+      "birth_date": "1995-12-12",
+      "age": 30,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "161 lbs",
+      "position": "Defender",
+      "team": "Paderborn",
+      "joined": "2014-09-19",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/196834"
+    },
+    "bio": "David Kinsombi يلعب في مركز مدافع مع Paderborn وهو لاعب Germany يبلغ من العمر 30 عاماً."
+  },
+  "34278925": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Heilbronn, Germany",
+      "birth_date": "2005-12-01",
+      "age": 20,
+      "height": "192cm",
+      "weight": "194 lbs",
+      "position": "Goalkeeper",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/800946"
+    },
+    "bio": "Dennis Seimen يلعب في مركز حارس مرمى مع Paderborn وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34169118": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Dortmund, Germany",
+      "birth_date": "1998-02-11",
+      "age": 28,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "174 lbs",
+      "position": "Defender",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Felix Götze يلعب في مركز مدافع مع Paderborn وهو لاعب Germany يبلغ من العمر 28 عاماً."
+  },
+  "34434001": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Paderborn, Germany",
+      "birth_date": "2006-02-06",
+      "age": 20,
+      "height": "190",
+      "weight": "85",
+      "position": "Goalkeeper",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Florian Pruhs يلعب في مركز حارس مرمى مع Paderborn وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34434003": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "",
+      "birth_date": "2004-05-08",
+      "age": 22,
+      "height": "180",
+      "weight": "",
+      "position": "Defender",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Jonah Sticker يلعب في مركز مدافع مع Paderborn وهو لاعب Germany يبلغ من العمر 22 عاماً."
+  },
+  "34434009": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "",
+      "birth_date": "2004-12-17",
+      "age": 21,
+      "height": "185",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Kennedy Okpala يلعب في مركز مهاجم مع Paderborn وهو لاعب Germany يبلغ من العمر 21 عاماً."
+  },
+  "34225698": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Ludwigsburg, Germany",
+      "birth_date": "2001-10-30",
+      "age": 24,
+      "height": "185 cm",
+      "weight": "183 lbs",
+      "position": "Defender",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Laurin Curda يلعب في مركز مدافع مع Paderborn وهو لاعب Germany يبلغ من العمر 24 عاماً."
+  },
+  "34237853": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "München, Germany",
+      "birth_date": "2004-01-10",
+      "age": 22,
+      "height": "181 cm",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Lucas Copado يلعب في مركز مهاجم مع Paderborn وهو لاعب Germany يبلغ من العمر 22 عاماً."
+  },
+  "34215611": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Geseke, Germany",
+      "birth_date": "1999-07-15",
+      "age": 27,
+      "height": "180 cm",
+      "weight": "172 lbs",
+      "position": "Defender",
+      "team": "Paderborn",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Marcel Hoffmeier يلعب في مركز مدافع مع Paderborn وهو لاعب Germany يبلغ من العمر 27 عاماً."
+  },
+  "34245363": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": ", France",
+      "birth_date": "2003-02-19",
+      "age": 23,
+      "height": "",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Adam Hammoudi يلعب في مركز مهاجم مع Le Mans وهو لاعب France يبلغ من العمر 23 عاماً."
+  },
+  "34245377": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Les Sables-d'Olonne, France",
+      "birth_date": "1997-03-18",
+      "age": 29,
+      "height": "175 cm",
+      "weight": "64 kg",
+      "position": "Defender",
+      "team": "Le Mans",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/666744"
+    },
+    "bio": "Alexandre Lauray يلعب في مركز مدافع مع Le Mans وهو لاعب France يبلغ من العمر 29 عاماً."
   }
 }

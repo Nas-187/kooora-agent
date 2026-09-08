@@ -5713,5 +5713,125 @@
       "transfermarkt_url": null
     },
     "bio": "Alessandro Romano يلعب في مركز وسط مع Cagliari وهو لاعب Switzerland يبلغ من العمر 20 عاماً."
+  },
+  "34241629": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Turaif, Saudi Arabia",
+      "birth_date": "1998-06-14",
+      "age": 28,
+      "height": "170 cm",
+      "weight": "70 kg",
+      "position": "Midfielder",
+      "team": "Al Feiha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulrahman Al Anazi يلعب في مركز وسط مع Al Feiha وهو لاعب Saudi Arabia يبلغ من العمر 28 عاماً."
+  },
+  "34301855": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "",
+      "birth_date": "2005-06-04",
+      "age": 21,
+      "height": "None",
+      "weight": "",
+      "position": "Forward",
+      "team": "Al-Fayha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ali Al Hussain يلعب في مركز Forward مع Al-Fayha وهو لاعب Saudi Arabia يبلغ من العمر 21 عاماً."
+  },
+  "34435391": {
+    "facts": {
+      "nationality": "Poland",
+      "birth_place": "Katowice, Poland",
+      "birth_date": "2006-09-30",
+      "age": 19,
+      "height": "\n    ",
+      "weight": "\n    ",
+      "position": "Defender",
+      "team": "Cagliari",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Antoni Franke يلعب في مركز مدافع مع Cagliari وهو لاعب Poland يبلغ من العمر 19 عاماً."
+  },
+  "34169571": {
+    "facts": {
+      "nationality": "Serbia",
+      "birth_place": "Belgrade, Yugoslavia (Republic)",
+      "birth_date": "1996-05-26",
+      "age": 30,
+      "height": "1.94 m (6 ft 4 in)",
+      "weight": "183 lbs",
+      "position": "Goalkeeper",
+      "team": "Cagliari",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/258482"
+    },
+    "bio": "Boris Radunović يلعب في مركز حارس مرمى مع Cagliari وهو لاعب Serbia يبلغ من العمر 30 عاماً."
+  },
+  "34220115": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Verona, Italy",
+      "birth_date": "2001-08-25",
+      "age": 25,
+      "height": "191 cm",
+      "weight": "161 lbs",
+      "position": "Goalkeeper",
+      "team": "Cagliari",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/421873"
+    },
+    "bio": "Elia Caprile يلعب في مركز حارس مرمى مع Cagliari وهو لاعب Italy يبلغ من العمر 25 عاماً."
+  },
+  "34164531": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Napoli, Italy",
+      "birth_date": "1986-01-28",
+      "age": 40,
+      "height": "1.78 m (5 ft 10 in)",
+      "weight": "",
+      "position": "Manager",
+      "team": "Cagliari",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/101922"
+    },
+    "bio": "Fabio Pisacane يلعب في مركز Manager مع Cagliari وهو لاعب Italy يبلغ من العمر 40 عاماً."
+  },
+  "34172556": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Monza, Italy",
+      "birth_date": "1999-12-22",
+      "age": 26,
+      "height": "5' 11\"",
+      "weight": "172 lbs",
+      "position": "Defender",
+      "team": "Cagliari",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/392569"
+    },
+    "bio": "Gabriele Zappa يلعب في مركز مدافع مع Cagliari وهو لاعب Italy يبلغ من العمر 26 عاماً."
+  },
+  "34164230": {
+    "facts": {
+      "nationality": "Albania",
+      "birth_place": "Zürich, Switzerland",
+      "birth_date": "1993-02-19",
+      "age": 33,
+      "height": "1.91 m (6 ft 3 in)",
+      "weight": "183 lbs",
+      "position": "Centre-Back",
+      "team": "Atalanta",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/165513"
+    },
+    "bio": "Berat Djimsiti يلعب في مركز Centre-Back مع Atalanta وهو لاعب Albania يبلغ من العمر 33 عاماً."
   }
 }

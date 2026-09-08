@@ -6778,5 +6778,65 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/626913"
     },
     "bio": "Boulaye Dia يلعب في مركز Forward مع Lazio وهو لاعب Senegal يبلغ من العمر 29 عاماً."
+  },
+  "34193286": {
+    "facts": {
+      "nationality": "Northern Ireland",
+      "birth_place": "Castlederg, Northern Ireland",
+      "birth_date": "2003-07-09",
+      "age": 23,
+      "height": "181cm / 5'11\"",
+      "weight": "139 lbs",
+      "position": "Right-Back",
+      "team": "Liverpool",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/624258"
+    },
+    "bio": "كونور برادلي (Conor Bradley) هو لاعب من أيرلندا الشمالية، وُلِد في كاستليديرغ بأيرلندا الشمالية بتاريخ 9 يوليو 2003 ويبلغ من العمر 23 عاماً. يلعب برادلي في مركز الظهير الأيمن مع فريق ليفربول، ويبلغ طوله 181 سم (5 أقدام و11 بوصة) ووزنه 139 رطلاً. ويتوفر ملفه الرياضي على موقع ترانسفير ماركت عبر الرابط: https://www.transfermarkt.com/-/profil/spieler/624258."
+  },
+  "34148089": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Anzio, Italy",
+      "birth_date": "1995-01-12",
+      "age": 31,
+      "height": "1.88 m (6 ft 2 in)",
+      "weight": "163 lbs",
+      "position": "Defender",
+      "team": "Lazio",
+      "joined": "2014-09-13",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/197747"
+    },
+    "bio": "Alessio Romagnoli يلعب في مركز مدافع مع Lazio وهو لاعب Italy يبلغ من العمر 31 عاماً."
+  },
+  "34222413": {
+    "facts": {
+      "nationality": "Greece",
+      "birth_place": "Piräus, Greece",
+      "birth_date": "2001-09-17",
+      "age": 24,
+      "height": "6' 2\"",
+      "weight": "183 lbs",
+      "position": "Goalkeeper",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/481675"
+    },
+    "bio": "Christos Mandas يلعب في مركز حارس مرمى مع Lazio وهو لاعب Greece يبلغ من العمر 24 عاماً."
+  },
+  "34296552": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Biella, Italy",
+      "birth_date": "2005-01-13",
+      "age": 21,
+      "height": "1.94 m (6 ft 4 in)",
+      "weight": "192 lbs",
+      "position": "Goalkeeper",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Edoardo Motta يلعب في مركز حارس مرمى مع Lazio وهو لاعب Italy يبلغ من العمر 21 عاماً."
   }
 }

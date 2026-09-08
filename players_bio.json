@@ -6718,5 +6718,65 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/434675"
     },
     "bio": "Cody Gakpo يلعب في مركز Left Wing مع Liverpool وهو لاعب The Netherlands يبلغ من العمر 27 عاماً."
+  },
+  "34168991": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Liverpool, England",
+      "birth_date": "2001-01-30",
+      "age": 25,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "172 lbs",
+      "position": "Central Midfield",
+      "team": "Liverpool",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/433188"
+    },
+    "bio": "Curtis Jones يلعب في مركز Central Midfield مع Liverpool وهو لاعب England يبلغ من العمر 25 عاماً."
+  },
+  "34276887": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Motta di Livenza, Italy",
+      "birth_date": "2002-02-07",
+      "age": 24,
+      "height": "191cm",
+      "weight": "183 lbs",
+      "position": "Goalkeeper",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/538079"
+    },
+    "bio": "أليسيو فورلانيتو (Alessio Furlanetto) هو حارس مرمى إيطالي الجنسية يلعب في فريق لاتسيو، ووُلد في موتا دي ليفينزا بإيطاليا بتاريخ 7 فبراير 2002 ويبلغ من العمر 24 عاماً. يبلغ طوله 191 سم ووزنه 183 رطلاً. ويتوفر ملفه الشخصي على موقع ترانسفير ماركت عبر الرابط (https://www.transfermarkt.com/-/profil/spieler/538079)."
+  },
+  "34164522": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "San Sebastián de los Ballesteros, Spain",
+      "birth_date": "1996-04-09",
+      "age": 30,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "75 kg (165 lb)",
+      "position": "Left Wing",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/356197"
+    },
+    "bio": "Alfonso Pedraza يلعب في مركز Left Wing مع Lazio وهو لاعب Spain يبلغ من العمر 30 عاماً."
+  },
+  "34173339": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": "Oyonnax, France",
+      "birth_date": "1996-11-16",
+      "age": 29,
+      "height": "1.80 m (5 ft 9 in)",
+      "weight": "163 lbs",
+      "position": "Forward",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/626913"
+    },
+    "bio": "Boulaye Dia يلعب في مركز Forward مع Lazio وهو لاعب Senegal يبلغ من العمر 29 عاماً."
   }
 }

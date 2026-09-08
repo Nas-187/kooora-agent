@@ -8173,5 +8173,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/806793"
     },
     "bio": "Clément Akpa يلعب في مركز Centre-Back مع Auxerre وهو لاعب Ivory Coast يبلغ من العمر 24 عاماً."
+  },
+  "34245215": {
+    "facts": {
+      "nationality": "Canada",
+      "birth_place": "Ottawa, Canada",
+      "birth_date": "2005-01-28",
+      "age": 21,
+      "height": "183 cm",
+      "weight": "148 lbs",
+      "position": "Centre-Forward",
+      "team": "Neom",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Amadou Koné يلعب في مركز Centre-Forward مع Neom وهو لاعب Canada يبلغ من العمر 21 عاماً."
+  },
+  "34302291": {
+    "facts": {
+      "nationality": "United Kingdom",
+      "birth_place": "",
+      "birth_date": "2005-06-14",
+      "age": 21,
+      "height": "5' 10\"",
+      "weight": "152 lbs",
+      "position": "Midfielder",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Aristide Zossou يلعب في مركز وسط مع Auxerre وهو لاعب United Kingdom يبلغ من العمر 21 عاماً."
+  },
+  "34148084": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": "Dakar, Senegal",
+      "birth_date": "1997-09-20",
+      "age": 28,
+      "height": "1.75 m (5 ft 9 in)",
+      "weight": "150 lbs",
+      "position": "Midfielder",
+      "team": "Auxerre",
+      "joined": "2014-12-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/287635"
+    },
+    "bio": "Assane Diousse يلعب في مركز وسط مع Auxerre وهو لاعب Senegal يبلغ من العمر 28 عاماً."
+  },
+  "34160942": {
+    "facts": {
+      "nationality": "DR Congo",
+      "birth_place": "Bunia, DR Congo",
+      "birth_date": "1997-11-14",
+      "age": 28,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "163 lbs",
+      "position": "Centre-Back",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/342046"
+    },
+    "bio": "Axel Tuanzebe يلعب في مركز Centre-Back مع Auxerre وهو لاعب DR Congo يبلغ من العمر 28 عاماً."
+  },
+  "34165623": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Revel, France",
+      "birth_date": "1965-10-05",
+      "age": 60,
+      "height": "",
+      "weight": "",
+      "position": "Manager",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Christophe Pélissier يلعب في مركز Manager مع Auxerre وهو لاعب France يبلغ من العمر 60 عاماً."
+  },
+  "34201830": {
+    "facts": {
+      "nationality": "Cameroon",
+      "birth_place": "Reading, England",
+      "birth_date": "2000-08-28",
+      "age": 26,
+      "height": "182 cm",
+      "weight": "170 lbs",
+      "position": "Left Wing",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/392767"
+    },
+    "bio": "Danny Namaso يلعب في مركز Left Wing مع Auxerre وهو لاعب Cameroon يبلغ من العمر 26 عاماً."
+  },
+  "34174815": {
+    "facts": {
+      "nationality": "French Guiana",
+      "birth_place": "Cayenne, French Guiana",
+      "birth_date": "1992-11-03",
+      "age": 33,
+      "height": "1.86 m (6 ft 1 in)",
+      "weight": "205 lbs",
+      "position": "Goalkeeper",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/170911"
+    },
+    "bio": "Donovan Léon يلعب في مركز حارس مرمى مع Auxerre وهو لاعب French Guiana يبلغ من العمر 33 عاماً."
+  },
+  "34175608": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Sint-Truiden, Belgium",
+      "birth_date": "1997-05-17",
+      "age": 29,
+      "height": "1.74 m (5 ft 7 in)",
+      "weight": "148 lbs",
+      "position": "Defender",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/340166"
+    },
+    "bio": "Alessio Castro-Montes يلعب في مركز مدافع مع FC Köln وهو لاعب Belgium يبلغ من العمر 29 عاماً."
+  },
+  "34173113": {
+    "facts": {
+      "nationality": "Croatia",
+      "birth_place": "Zagreb, Croatia",
+      "birth_date": "1998-01-21",
+      "age": 28,
+      "height": "187 cm",
+      "weight": "172 lbs",
+      "position": "Left-Back",
+      "team": "Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/293194"
+    },
+    "bio": "Borna Sosa يلعب في مركز Left-Back مع Köln وهو لاعب Croatia يبلغ من العمر 28 عاماً."
+  },
+  "34435126": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "",
+      "birth_date": "2007-01-12",
+      "age": 19,
+      "height": "",
+      "weight": "",
+      "position": "Right-Back",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Cenny Neumann يلعب في مركز Right-Back مع FC Köln وهو لاعب Germany يبلغ من العمر 19 عاماً."
+  },
+  "34169177": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Neustadt an der Weinstraße, Germany",
+      "birth_date": "1993-08-15",
+      "age": 33,
+      "height": "188 cm",
+      "weight": "194 lbs",
+      "position": "Centre-Back",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/110036"
+    },
+    "bio": "Dominique Heintz يلعب في مركز Centre-Back مع FC Köln وهو لاعب Germany يبلغ من العمر 33 عاماً."
+  },
+  "34192464": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Straubing, Germany",
+      "birth_date": "2002-04-29",
+      "age": 24,
+      "height": "188 cm",
+      "weight": "179 lbs",
+      "position": "Defensive Midfield",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/597000"
+    },
+    "bio": "Eric Martel يلعب في مركز Defensive Midfield مع FC Köln وهو لاعب Germany يبلغ من العمر 24 عاماً."
   }
 }

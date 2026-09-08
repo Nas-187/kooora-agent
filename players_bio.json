@@ -8743,5 +8743,80 @@
       "transfermarkt_url": null
     },
     "bio": "Albian Hajdari يلعب في مركز مدافع مع Hoffenheim وهو لاعب Kosovo يبلغ من العمر 23 عاماً."
+  },
+  "34180355": {
+    "facts": {
+      "nationality": "Japan",
+      "birth_place": "Ibaraki, Japan",
+      "birth_date": "1997-08-25",
+      "age": 29,
+      "height": "190 cm",
+      "weight": "183 lbs",
+      "position": "Centre-Back",
+      "team": "Hoffenheim",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/415035"
+    },
+    "bio": "Koki Machida يلعب في مركز Centre-Back مع Hoffenheim وهو لاعب Japan يبلغ من العمر 29 عاماً."
+  },
+  "34434481": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Bochum, Germany",
+      "birth_date": "2006-06-16",
+      "age": 20,
+      "height": "190",
+      "weight": "80",
+      "position": "Midfielder",
+      "team": "Bochum",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Cajetan Lenz يلعب في مركز وسط مع Bochum وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34300514": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Ingolstadt, Germany",
+      "birth_date": "2006-12-13",
+      "age": 19,
+      "height": "None",
+      "weight": "",
+      "position": "Forward",
+      "team": "Hoffenheim",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Deniz Zeitler يلعب في مركز Forward مع Hoffenheim وهو لاعب Germany يبلغ من العمر 19 عاماً."
+  },
+  "34217135": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Nice, France",
+      "birth_date": "1967-09-26",
+      "age": 58,
+      "height": "",
+      "weight": "",
+      "position": "Manager",
+      "team": "Brest",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Eric Roy يلعب في مركز Manager مع Brest وهو لاعب France يبلغ من العمر 58 عاماً."
+  },
+  "34419666": {
+    "facts": {
+      "nationality": "Mali",
+      "birth_place": "Bamako, Mali",
+      "birth_date": "2006-07-15",
+      "age": 20,
+      "height": "164 cm",
+      "weight": "58 kg",
+      "position": "Midfielder",
+      "team": "Brest",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Hamidou Makalou يلعب في مركز وسط مع Brest وهو لاعب Mali يبلغ من العمر 20 عاماً."
   }
 }

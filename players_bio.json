@@ -8383,5 +8383,185 @@
       "transfermarkt_url": null
     },
     "bio": "Luis Seifert يلعب في مركز مدافع مع Elversberg وهو لاعب Germany يبلغ من العمر 22 عاماً."
+  },
+  "34250249": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Bergheim, Germany",
+      "birth_date": "2006-01-15",
+      "age": 20,
+      "height": "175 cm",
+      "weight": "",
+      "position": "Defensive Midfield",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Fayssal Harchaoui يلعب في مركز Defensive Midfield مع FC Köln وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34164119": {
+    "facts": {
+      "nationality": "Austria",
+      "birth_place": "Graz, Austria",
+      "birth_date": "1992-10-24",
+      "age": 33,
+      "height": "176 cm",
+      "weight": "157 lbs",
+      "position": "Attacking Midfield",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/106270"
+    },
+    "bio": "Florian Kainz يلعب في مركز Attacking Midfield مع FC Köln وهو لاعب Austria يبلغ من العمر 33 عاماً."
+  },
+  "34191744": {
+    "facts": {
+      "nationality": "Ghana",
+      "birth_place": "Accra, Ghana",
+      "birth_date": "1998-07-18",
+      "age": 28,
+      "height": "178 cm",
+      "weight": "152 lbs",
+      "position": "Defender",
+      "team": "Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/397171"
+    },
+    "bio": "Gideon Mensah يلعب في مركز مدافع مع Köln وهو لاعب Ghana يبلغ من العمر 28 عاماً."
+  },
+  "34193289": {
+    "facts": {
+      "nationality": "Iceland",
+      "birth_place": "Sutton Coldfield, England",
+      "birth_date": "2003-03-23",
+      "age": 23,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "159 lbs",
+      "position": "Midfielder",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ísak Bergmann Jóhannesson يلعب في مركز وسط مع FC Köln وهو لاعب Iceland يبلغ من العمر 23 عاماً."
+  },
+  "34244584": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Manchester, England",
+      "birth_date": "2005-11-04",
+      "age": 20,
+      "height": "6' 2\"",
+      "weight": "172 lbs",
+      "position": "Centre-Back",
+      "team": "FC Köln",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/942497"
+    },
+    "bio": "Jahmai Simpson-Pusey يلعب في مركز Centre-Back مع FC Köln وهو لاعب England يبلغ من العمر 20 عاماً."
+  },
+  "34199185": {
+    "facts": {
+      "nationality": "Thailand",
+      "birth_place": "Skien, Norway",
+      "birth_date": "1999-07-24",
+      "age": 27,
+      "height": "179 cm",
+      "weight": "152 lbs",
+      "position": "Right-Back",
+      "team": "Elversberg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/430034"
+    },
+    "bio": "Nicholas Mickelson يلعب في مركز Right-Back مع Elversberg وهو لاعب Thailand يبلغ من العمر 27 عاماً."
+  },
+  "34220621": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Quimper, France",
+      "birth_date": "1995-02-03",
+      "age": 31,
+      "height": "192 cm",
+      "weight": "183 lbs",
+      "position": "Defender",
+      "team": "Elversberg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/352332"
+    },
+    "bio": "Florian Le Joncour يلعب في مركز مدافع مع Elversberg وهو لاعب France يبلغ من العمر 31 عاماً."
+  },
+  "34202556": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Freiberg, Germany",
+      "birth_date": "1997-01-06",
+      "age": 29,
+      "height": "173 cm",
+      "weight": "148 lbs",
+      "position": "Central Midfield",
+      "team": "Elversberg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/207580"
+    },
+    "bio": "Amara Condé يلعب في مركز Central Midfield مع Elversberg وهو لاعب Germany يبلغ من العمر 29 عاماً."
+  },
+  "34295110": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "",
+      "birth_date": "2005-08-11",
+      "age": 21,
+      "height": "5' 11\"",
+      "weight": "163 lbs",
+      "position": "Midfielder",
+      "team": "Hertha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Maurice Krattenmacher يلعب في مركز وسط مع Hertha وهو لاعب Germany يبلغ من العمر 21 عاماً."
+  },
+  "34200417": {
+    "facts": {
+      "nationality": "Poland",
+      "birth_place": "Legnica, Poland",
+      "birth_date": "2000-03-13",
+      "age": 26,
+      "height": "1.79 m (5 ft 10 in)",
+      "weight": "168 lbs",
+      "position": "Midfielder",
+      "team": "Elversberg",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/532169"
+    },
+    "bio": "Łukasz Poręba يلعب في مركز وسط مع Elversberg وهو لاعب Poland يبلغ من العمر 26 عاماً."
+  },
+  "34278221": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Essen, Germany",
+      "birth_date": "2002-12-06",
+      "age": 23,
+      "height": "183cm",
+      "weight": "168 lbs",
+      "position": "Centre-Forward",
+      "team": "Greuther Fürth",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/675535"
+    },
+    "bio": "Noel Futkeu يلعب في مركز Centre-Forward مع Greuther Fürth وهو لاعب Germany يبلغ من العمر 23 عاماً."
+  },
+  "34219941": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Freiburg im Breisgau, Germany",
+      "birth_date": "2006-09-25",
+      "age": 19,
+      "height": "185cm / 6'1\"",
+      "weight": "161 lbs",
+      "position": "Attacking Midfield",
+      "team": "Stuttgart",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Noah Darvich يلعب في مركز Attacking Midfield مع Stuttgart وهو لاعب Germany يبلغ من العمر 19 عاماً."
   }
 }

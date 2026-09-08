@@ -2112,5 +2112,47 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
     "home_goals": 1,
     "away_goals": 2
+  },
+  {
+    "event_id": "2573348",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-08",
+    "home_id": "136017",
+    "home": "Al-Ettifaq",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/m272h51694761970.png",
+    "away_id": "136021",
+    "away": "Al-Faisaly",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/a81pz21646835057.png",
+    "home_goals": 0,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2573349",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-08",
+    "home_id": "136200",
+    "home": "Al-Hazem",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/3uy27p1635871755.png",
+    "away_id": "136012",
+    "away": "Al-Taawoun",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rlsmp91646835052.png",
+    "home_goals": 1,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2573350",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-08",
+    "home_id": "136015",
+    "home": "Al-Qadsiah",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ok63wb1719134839.png",
+    "away_id": "137721",
+    "away": "Al-Ahli",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/1bbtgb1755192301.png",
+    "home_goals": 3,
+    "away_goals": 2
   }
 ]

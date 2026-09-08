@@ -8353,5 +8353,35 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/597000"
     },
     "bio": "Eric Martel يلعب في مركز Defensive Midfield مع FC Köln وهو لاعب Germany يبلغ من العمر 24 عاماً."
+  },
+  "34280902": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Balingen, West Germany",
+      "birth_date": "1989-04-29",
+      "age": 37,
+      "height": "6' 4\"",
+      "weight": "172 lbs",
+      "position": "Goalkeeper",
+      "team": "Elversberg",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Frank Lehmann يلعب في مركز حارس مرمى مع Elversberg وهو لاعب Germany يبلغ من العمر 37 عاماً."
+  },
+  "34432555": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": ", Germany",
+      "birth_date": "2004-01-26",
+      "age": 22,
+      "height": "187",
+      "weight": "79",
+      "position": "Defender",
+      "team": "Elversberg",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Luis Seifert يلعب في مركز مدافع مع Elversberg وهو لاعب Germany يبلغ من العمر 22 عاماً."
   }
 }

@@ -7738,5 +7738,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/129478"
     },
     "bio": "Alfonso Herrero يلعب في مركز حارس مرمى مع Malaga وهو لاعب Spain يبلغ من العمر 32 عاماً."
+  },
+  "34258796": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Fuengirola, Spain",
+      "birth_date": "2003-01-05",
+      "age": 23,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "",
+      "position": "Centre-Back",
+      "team": "Málaga",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ángel Recio يلعب في مركز Centre-Back مع Málaga وهو لاعب Spain يبلغ من العمر 23 عاماً."
+  },
+  "34219495": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Madrid, Spain",
+      "birth_date": "2001-03-15",
+      "age": 25,
+      "height": "1.80 m (5 ft 9 in)",
+      "weight": "150 lbs",
+      "position": "Central Midfield",
+      "team": "Málaga",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/623524"
+    },
+    "bio": "Carlos Dotor يلعب في مركز Central Midfield مع Málaga وهو لاعب Spain يبلغ من العمر 25 عاماً."
+  },
+  "34236849": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Málaga, Spain",
+      "birth_date": "2004-11-13",
+      "age": 21,
+      "height": "184 cm",
+      "weight": "",
+      "position": "Goalkeeper",
+      "team": "Malaga",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Carlos López يلعب في مركز حارس مرمى مع Malaga وهو لاعب Spain يبلغ من العمر 21 عاماً."
+  },
+  "34258789": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Albuñol, Spain",
+      "birth_date": "2000-11-26",
+      "age": 25,
+      "height": "175 cm",
+      "weight": "152 lbs",
+      "position": "Right-Back",
+      "team": "Malaga",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Carlos Puga يلعب في مركز Right-Back مع Malaga وهو لاعب Spain يبلغ من العمر 25 عاماً."
+  },
+  "34258795": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Córdoba, Spain",
+      "birth_date": "2004-08-24",
+      "age": 22,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "",
+      "position": "Centre-Forward",
+      "team": "Málaga",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/780817"
+    },
+    "bio": "Chupe يلعب في مركز Centre-Forward مع Málaga وهو لاعب Spain يبلغ من العمر 22 عاماً."
+  },
+  "34258790": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Málaga, Spain",
+      "birth_date": "2003-04-05",
+      "age": 23,
+      "height": "176 cm",
+      "weight": "68 kg",
+      "position": "Central Midfield",
+      "team": "Malaga",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/960562"
+    },
+    "bio": "Dani Lorenzo يلعب في مركز Central Midfield مع Malaga وهو لاعب Spain يبلغ من العمر 23 عاماً."
+  },
+  "34197615": {
+    "facts": {
+      "nationality": "Benin",
+      "birth_place": "Lagos, Nigeria",
+      "birth_date": "1998-06-28",
+      "age": 28,
+      "height": "179 cm",
+      "weight": "",
+      "position": "Centre-Forward",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Aiyegun Tosin يلعب في مركز Centre-Forward مع Lorient وهو لاعب Benin يبلغ من العمر 28 عاماً."
+  },
+  "34299090": {
+    "facts": {
+      "nationality": "Burkina Faso",
+      "birth_place": "Cocody, Ivory Coast",
+      "birth_date": "2004-09-11",
+      "age": 22,
+      "height": "178 cm",
+      "weight": "",
+      "position": "Left-Back",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Arsène Kouassi يلعب في مركز Left-Back مع Lorient وهو لاعب Burkina Faso يبلغ من العمر 22 عاماً."
+  },
+  "34250687": {
+    "facts": {
+      "nationality": "Cameroon",
+      "birth_place": "Yaounde, Cameroon",
+      "birth_date": "2004-12-15",
+      "age": 21,
+      "height": "185 cm",
+      "weight": "",
+      "position": "Attacking Midfield",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1074628"
+    },
+    "bio": "Arthur Avom يلعب في مركز Attacking Midfield مع Lorient وهو لاعب Cameroon يبلغ من العمر 21 عاماً."
+  },
+  "34193383": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": "Pikine, Senegal",
+      "birth_date": "2000-03-23",
+      "age": 26,
+      "height": "1.78 m (5 ft 10 in)",
+      "weight": "159 lbs",
+      "position": "Centre-Forward",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/822458"
+    },
+    "bio": "Bamba Dieng يلعب في مركز Centre-Forward مع Lorient وهو لاعب Senegal يبلغ من العمر 26 عاماً."
+  },
+  "34203287": {
+    "facts": {
+      "nationality": "Ivory Coast",
+      "birth_place": "Kani, Ivory Coast",
+      "birth_date": "2001-06-20",
+      "age": 25,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "",
+      "position": "Defensive Midfield",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Bamo Meïté يلعب في مركز Defensive Midfield مع Lorient وهو لاعب Ivory Coast يبلغ من العمر 25 عاماً."
+  },
+  "34174047": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Paris, France",
+      "birth_date": "2001-01-15",
+      "age": 25,
+      "height": "178 cm",
+      "weight": "163 lbs",
+      "position": "Attacking Midfield",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/590914"
+    },
+    "bio": "Bandiougou Fadiga يلعب في مركز Attacking Midfield مع Lorient وهو لاعب France يبلغ من العمر 25 عاماً."
   }
 }

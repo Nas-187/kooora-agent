@@ -8098,5 +8098,80 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/93720"
     },
     "bio": "Alexandre Lacazette يلعب في مركز Centre-Forward مع Neom وهو لاعب France يبلغ من العمر 35 عاماً."
+  },
+  "34228483": {
+    "facts": {
+      "nationality": "Mali",
+      "birth_place": "Bamako, Mali",
+      "birth_date": "2005-05-14",
+      "age": 21,
+      "height": "",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Neom",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1178474"
+    },
+    "bio": "Amadou Koné يلعب في مركز وسط مع Neom وهو لاعب Mali يبلغ من العمر 21 عاماً."
+  },
+  "34226025": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Herentals, Belgium",
+      "birth_date": "2005-02-01",
+      "age": 21,
+      "height": "180 cm",
+      "weight": "152 lbs",
+      "position": "Defender",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/775981"
+    },
+    "bio": "Arthur Piedfort يلعب في مركز مدافع مع Auxerre وهو لاعب Belgium يبلغ من العمر 21 عاماً."
+  },
+  "34193627": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Walsall, England",
+      "birth_date": "2001-12-09",
+      "age": 24,
+      "height": "175 cm",
+      "weight": "159 lbs",
+      "position": "Centre-Forward",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/533662"
+    },
+    "bio": "Cameron Archer يلعب في مركز Centre-Forward مع Auxerre وهو لاعب England يبلغ من العمر 24 عاماً."
+  },
+  "34230043": {
+    "facts": {
+      "nationality": "Congo",
+      "birth_place": "Brazzaville, Congo",
+      "birth_date": "2004-05-09",
+      "age": 22,
+      "height": "192 cm",
+      "weight": "185 lbs",
+      "position": "Defender",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1113528"
+    },
+    "bio": "Christ Makosso يلعب في مركز مدافع مع Auxerre وهو لاعب Congo يبلغ من العمر 22 عاماً."
+  },
+  "34231249": {
+    "facts": {
+      "nationality": "Ivory Coast",
+      "birth_place": "Meudon, France",
+      "birth_date": "2001-11-24",
+      "age": 24,
+      "height": "181 cm",
+      "weight": "150 lbs",
+      "position": "Centre-Back",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/806793"
+    },
+    "bio": "Clément Akpa يلعب في مركز Centre-Back مع Auxerre وهو لاعب Ivory Coast يبلغ من العمر 24 عاماً."
   }
 }

@@ -5983,5 +5983,140 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/358008"
     },
     "bio": "Gianluca Gaetano يلعب في مركز وسط مع Atalanta وهو لاعب Italy يبلغ من العمر 26 عاماً."
+  },
+  "34172633": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Roma, Italy",
+      "birth_date": "1999-01-01",
+      "age": 27,
+      "height": "1.95 m (6 ft 5 in)",
+      "weight": "185 lbs",
+      "position": "Centre-Forward",
+      "team": "Atalanta",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/315867"
+    },
+    "bio": "Gianluca Scamacca يلعب في مركز Centre-Forward مع Atalanta وهو لاعب Italy يبلغ من العمر 27 عاماً."
+  },
+  "34196044": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Chiari, Italy",
+      "birth_date": "2003-12-11",
+      "age": 22,
+      "height": "194cm / 6'4\"",
+      "weight": "168 lbs",
+      "position": "Centre-Back",
+      "team": "Atalanta",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/571604"
+    },
+    "bio": "Giorgio Scalvini يلعب في مركز Centre-Back مع Atalanta وهو لاعب Italy يبلغ من العمر 22 عاماً."
+  },
+  "34252536": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Aversa, Italy",
+      "birth_date": "2008-02-23",
+      "age": 18,
+      "height": "6' 0\"",
+      "weight": "172 lbs",
+      "position": "Defender",
+      "team": "Atalanta",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1077175"
+    },
+    "bio": "Honest Ahanor يلعب في مركز مدافع مع Atalanta وهو لاعب Italy يبلغ من العمر 18 عاماً."
+  },
+  "34298843": {
+    "facts": {
+      "nationality": "Sweden",
+      "birth_place": "",
+      "birth_date": "2007-12-26",
+      "age": 18,
+      "height": "None",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Como",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Adrian Lahdo يلعب في مركز وسط مع Como وهو لاعب Sweden يبلغ من العمر 18 عاماً."
+  },
+  "34220163": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Brescia, Italy",
+      "birth_date": "1998-10-13",
+      "age": 27,
+      "height": "1.95 m (6 ft 5 in)",
+      "weight": "185 lbs",
+      "position": "Defender",
+      "team": "Como",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/385394"
+    },
+    "bio": "Alberto Dossena يلعب في مركز مدافع مع Como وهو لاعب Italy يبلغ من العمر 27 عاماً."
+  },
+  "34145939": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Seville, Spain",
+      "birth_date": "1992-07-05",
+      "age": 34,
+      "height": "171 cm",
+      "weight": "65 kg",
+      "position": "Left-Back",
+      "team": "Como",
+      "joined": "2014-08-16",
+      "transfermarkt_url": null
+    },
+    "bio": "Alberto Moreno يلعب في مركز Left-Back مع Como وهو لاعب Spain يبلغ من العمر 34 عاماً."
+  },
+  "34219810": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Badalona, Spain",
+      "birth_date": "2004-04-25",
+      "age": 22,
+      "height": "1.78 m (5 ft 10 in)",
+      "weight": "159 lbs",
+      "position": "Left-Back",
+      "team": "Como",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/709957"
+    },
+    "bio": "Álex Valle يلعب في مركز Left-Back مع Como وهو لاعب Spain يبلغ من العمر 22 عاماً."
+  },
+  "34145531": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Arenys de Mar, Spain",
+      "birth_date": "1987-05-04",
+      "age": 39,
+      "height": "1.78 m (5 ft 10 in)",
+      "weight": "73 kg (161 lb)",
+      "position": "Manager",
+      "team": "Como",
+      "joined": "2014-06-12",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/8806"
+    },
+    "bio": "Cesc Fabregas يلعب في مركز Manager مع Como وهو لاعب Spain يبلغ من العمر 39 عاماً."
+  },
+  "34177880": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Antwerpen, Belgium",
+      "birth_date": "2002-04-01",
+      "age": 24,
+      "height": "1.87 m (6 ft 1 in)",
+      "weight": "168 lbs",
+      "position": "Right-Back",
+      "team": "Como",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/490423"
+    },
+    "bio": "Ignace Van der Brempt يلعب في مركز Right-Back مع Como وهو لاعب Belgium يبلغ من العمر 24 عاماً."
   }
 }

@@ -6463,5 +6463,80 @@
       "transfermarkt_url": null
     },
     "bio": "Abdurahman Al Dakheel يلعب في مركز مدافع مع Al Hazm وهو لاعب Saudi Arabia يبلغ من العمر 30 عاماً."
+  },
+  "34434404": {
+    "facts": {
+      "nationality": "Guinea",
+      "birth_place": "Conakry, Guinea",
+      "birth_date": "2005-09-30",
+      "age": 20,
+      "height": "",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Al-Hazem",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "أبوبكر باه (Aboubacar Bah) هو لاعب كرة قدم يحمل الجنسية الغينية، ويلعب في مركز لاعب الوسط مع فريق الحزم. وُلد في مدينة كوناكري بغينيا بتاريخ 30 سبتمبر 2005، ويبلغ من العمر 20 عاماً."
+  },
+  "34174962": {
+    "facts": {
+      "nationality": "Ghana",
+      "birth_place": "Accra, Ghana",
+      "birth_date": "2000-06-04",
+      "age": 26,
+      "height": "1.73 m (5 ft 7 in)",
+      "weight": "150 lbs",
+      "position": "Defender",
+      "team": "Rennes",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/798404"
+    },
+    "bio": "أديدو سيدو (Alidu Seidu) هو لاعب غاني يلعب في مركز المدافع مع فريق رين. ولد في أكرا بغانا بتاريخ 4 يونيو 2000 ويبلغ من العمر 26 عاماً. يبلغ طوله 1.73 متراً ووزنه 150 رطلاً، ويتوفر ملفه على موقع ترانسفير ماركت عبر الرابط (https://www.transfermarkt.com/-/profil/spieler/798404)."
+  },
+  "34163490": {
+    "facts": {
+      "nationality": "Switzerland",
+      "birth_place": "Yaoundé, Cameroon",
+      "birth_date": "1997-02-14",
+      "age": 29,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "183 lbs",
+      "position": "Centre-Forward",
+      "team": "Rennes",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/237662"
+    },
+    "bio": "Breel Embolo يلعب في مركز Centre-Forward مع Rennes وهو لاعب Switzerland يبلغ من العمر 29 عاماً."
+  },
+  "34148020": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Linzolo, Congo",
+      "birth_date": "1994-04-25",
+      "age": 32,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "196 lbs",
+      "position": "Goalkeeper",
+      "team": "Rennes",
+      "joined": "2013-01-12",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/191056"
+    },
+    "bio": "Brice Samba يلعب في مركز حارس مرمى مع Rennes وهو لاعب France يبلغ من العمر 32 عاماً."
+  },
+  "34314215": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Juvisy-sur-Orge, France",
+      "birth_date": "2004-01-31",
+      "age": 22,
+      "height": "188 cm",
+      "weight": "73 kg",
+      "position": "Midfielder",
+      "team": "Rennes",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Djaoui Cissé يلعب في مركز وسط مع Rennes وهو لاعب France يبلغ من العمر 22 عاماً."
   }
 }

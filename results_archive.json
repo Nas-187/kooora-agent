@@ -2168,5 +2168,33 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/zbums21755192520.png",
     "home_goals": 2,
     "away_goals": 1
+  },
+  {
+    "event_id": "2573353",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-09",
+    "home_id": "136011",
+    "home": "Al-Fateh",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/a5cjf41662659789.png",
+    "away_id": "152917",
+    "away": "Al-Diriyah",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/0m7ub31782452735.png",
+    "home_goals": 1,
+    "away_goals": 2
+  },
+  {
+    "event_id": "2573354",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-09-09",
+    "home_id": "136022",
+    "home": "Al-Nassr",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/84yvqi1748524565.png",
+    "away_id": "137855",
+    "away": "Abha",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/e00pwe1677530619.png",
+    "home_goals": 2,
+    "away_goals": 1
   }
 ]

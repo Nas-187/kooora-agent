@@ -47,6 +47,18 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Qadsiah يواجه Al-Ettifaq ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Khaleej يواجه Al-Nassr ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Taawoun يواجه Al-Hilal ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Shabab يواجه Al-Fayha ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -101,6 +113,30 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Rennes يواجه Marseille ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Bournemouth يواجه Brentford ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Liverpool يواجه Fulham ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Tottenham Hotspur يواجه Everton ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Athletic Bilbao يواجه Elche ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Real Madrid يواجه Rayo Vallecano ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Osasuna يواجه Espanyol ضمن الدوري الإسباني"
     }
   ]
 }

@@ -4,14 +4,14 @@
     "standings": [
       {
         "rank": 1,
-        "team": "Al-Hilal",
+        "team": "Al-Qadsiah",
         "played": 6,
-        "points": 15
+        "points": 16
       },
       {
         "rank": 2,
-        "team": "Al-Qadsiah",
-        "played": 5,
+        "team": "Al-Hilal",
+        "played": 6,
         "points": 15
       },
       {
@@ -34,21 +34,21 @@
       },
       {
         "rank": 6,
-        "team": "Al-Diriyah",
-        "played": 6,
-        "points": 10
+        "team": "Al-Ittihad",
+        "played": 5,
+        "points": 11
       },
       {
         "rank": 7,
         "team": "Al-Ettifaq",
-        "played": 6,
-        "points": 10
+        "played": 7,
+        "points": 11
       },
       {
         "rank": 8,
-        "team": "Al-Ittihad",
-        "played": 4,
-        "points": 8
+        "team": "Al-Diriyah",
+        "played": 6,
+        "points": 10
       },
       {
         "rank": 9,
@@ -95,7 +95,7 @@
       {
         "rank": 16,
         "team": "Al-Faisaly",
-        "played": 6,
+        "played": 7,
         "points": 3
       },
       {

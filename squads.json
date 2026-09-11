@@ -3590,14 +3590,6 @@
     },
     {
       "id": null,
-      "name": "Antonín Barák",
-      "age": null,
-      "number": null,
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Riccardo Sottil",
       "age": null,
       "number": null,
@@ -4240,14 +4232,6 @@
     },
     {
       "id": null,
-      "name": "Ilias Koutsoupias",
-      "age": null,
-      "number": "8",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Antonio Raimondo",
       "age": null,
       "number": "9",
@@ -4344,14 +4328,6 @@
     },
     {
       "id": null,
-      "name": "[[Alejandro Cichero (footballer, born 2006)",
-      "age": null,
-      "number": "29",
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Ilario Monterisi",
       "age": null,
       "number": "30",
@@ -4424,18 +4400,18 @@
     },
     {
       "id": null,
-      "name": "Sebastiano Desplanches",
-      "age": null,
-      "number": "91",
-      "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Enzo Tchato",
       "age": null,
       "number": "90",
       "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Sebastiano Desplanches",
+      "age": null,
+      "number": "91",
+      "position": "Goalkeeper",
       "photo": null
     },
     {

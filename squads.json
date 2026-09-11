@@ -2330,6 +2330,14 @@
     },
     {
       "id": null,
+      "name": "[[Carlos Ángel Ramón Serrano Mañolás",
+      "age": null,
+      "number": "12",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Marko Dmitrović",
       "age": null,
       "number": "13",
@@ -2426,6 +2434,14 @@
     },
     {
       "id": null,
+      "name": "[[Marcelo Esteban Standardo Fraulo",
+      "age": null,
+      "number": "25",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Rafel Bauzà",
       "age": null,
       "number": "26",
@@ -2434,10 +2450,58 @@
     },
     {
       "id": null,
+      "name": "Adama Timera",
+      "age": null,
+      "number": "27",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "[[Javi Hernández (footballer, born 2004)",
       "age": null,
       "number": "28",
       "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Patricio Nicolás Quentarós Medusa",
+      "age": null,
+      "number": "29",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Cristián Sebastián Mantorrás Pulído",
+      "age": null,
+      "number": "30",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Llorenç Serred Martínez",
+      "age": null,
+      "number": "31",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[José Ángel López Gálvez",
+      "age": null,
+      "number": "32",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[András Camerón Álvarez Martínez Núñez",
+      "age": null,
+      "number": "33",
+      "position": "Defender",
       "photo": null
     },
     {
@@ -7165,7 +7229,7 @@
       "name": "Omari Hutchinson",
       "age": null,
       "number": "20",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -7173,7 +7237,7 @@
       "name": "Samuel Chukwueze",
       "age": null,
       "number": "21",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -7181,7 +7245,7 @@
       "name": "Diego Moreira",
       "age": null,
       "number": "22",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -7229,6 +7293,14 @@
       "name": "Mario Gila",
       "age": null,
       "number": "34",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Valeri Vladimirov",
+      "age": null,
+      "number": "35",
       "position": "Defender",
       "photo": null
     },
@@ -7286,14 +7358,6 @@
       "age": null,
       "number": "96",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Valeri Vladimirov",
-      "age": null,
-      "number": "35",
-      "position": "Defender",
       "photo": null
     },
     {
@@ -10572,6 +10636,14 @@
     },
     {
       "id": null,
+      "name": "Romain Del Castillo",
+      "age": null,
+      "number": "20",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Jonathan Dubasin",
       "age": null,
       "number": "21",
@@ -10632,14 +10704,6 @@
       "age": null,
       "number": "48",
       "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Romain Del Castillo",
-      "age": null,
-      "number": null,
-      "position": "Attacker",
       "photo": null
     },
     {
@@ -10932,7 +10996,7 @@
     },
     {
       "id": null,
-      "name": "Lewie Coyle {{small",
+      "name": "Lewie Coyle",
       "age": null,
       "number": "2",
       "position": "Defender",
@@ -11044,6 +11108,14 @@
     },
     {
       "id": null,
+      "name": "Brooke Norton-Cuffy",
+      "age": null,
+      "number": "18",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Konstantinos Tzolakis",
       "age": null,
       "number": "19",
@@ -11116,18 +11188,18 @@
     },
     {
       "id": null,
-      "name": "Lucas Gourna-Douath",
+      "name": "Ilyas Ansah",
       "age": null,
-      "number": "29",
-      "position": "Midfielder",
+      "number": "28",
+      "position": "Attacker",
       "photo": null
     },
     {
       "id": null,
-      "name": "David Akintola",
+      "name": "Lucas Gourna-Douath",
       "age": null,
-      "number": "30",
-      "position": "Attacker",
+      "number": "29",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -11148,6 +11220,14 @@
     },
     {
       "id": null,
+      "name": "Christos Mouzakitis",
+      "age": null,
+      "number": "36",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Tim Iroegbunam",
       "age": null,
       "number": "42",
@@ -11156,41 +11236,17 @@
     },
     {
       "id": null,
+      "name": "Robinio Vaz",
+      "age": null,
+      "number": "47",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Mohamed-Ali Cho",
       "age": null,
       "number": "50",
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Ilyas Ansah",
-      "age": null,
-      "number": null,
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Christos Mouzakitis",
-      "age": null,
-      "number": null,
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Brooke Norton-Cuffy",
-      "age": null,
-      "number": null,
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Robinio Vaz {{small",
-      "age": null,
-      "number": null,
       "position": "Attacker",
       "photo": null
     }
@@ -11472,6 +11528,14 @@
     },
     {
       "id": null,
+      "name": "Ali Al-Hassan",
+      "age": null,
+      "number": "6",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Fahad Al-Zubaidi",
       "age": null,
       "number": "7",
@@ -11512,14 +11576,6 @@
     },
     {
       "id": null,
-      "name": "Saeed Baattiah",
-      "age": null,
-      "number": "15",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Abdulelah Al-Khaibari",
       "age": null,
       "number": "16",
@@ -11548,6 +11604,14 @@
       "age": null,
       "number": "19",
       "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Houssam Essadak",
+      "age": null,
+      "number": "20",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -13412,18 +13476,18 @@
     },
     {
       "id": null,
-      "name": "Stephane Keller",
+      "name": "Jan-Carlo Simić",
       "age": null,
-      "number": "3",
+      "number": "4",
       "position": "Defender",
       "photo": null
     },
     {
       "id": null,
-      "name": "Jan-Carlo Simić",
+      "name": "Richard Ríos",
       "age": null,
-      "number": "4",
-      "position": "Defender",
+      "number": "5",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -13580,14 +13644,6 @@
     },
     {
       "id": null,
-      "name": "Fawaz Al-Sqoor",
-      "age": null,
-      "number": "37",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Muath Faqeehi",
       "age": null,
       "number": "42",
@@ -13604,30 +13660,6 @@
     },
     {
       "id": null,
-      "name": "Mateo Borrell",
-      "age": null,
-      "number": "51",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Kassoum Koné",
-      "age": null,
-      "number": "54",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Bryant Ortega",
-      "age": null,
-      "number": "55",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Rakan Kaabi",
       "age": null,
       "number": "60",
@@ -13640,14 +13672,6 @@
       "age": null,
       "number": "66",
       "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Abdulelah Hawsawi",
-      "age": null,
-      "number": "77",
-      "position": "Midfielder",
       "photo": null
     },
     {
@@ -13684,7 +13708,7 @@
     },
     {
       "id": null,
-      "name": "Richard Ríos",
+      "name": "Georginio Wijnaldum",
       "age": null,
       "number": null,
       "position": "Midfielder",
@@ -14830,7 +14854,7 @@
     },
     {
       "id": null,
-      "name": "Edoardo Pieragnolo",
+      "name": "Duje Ćaleta-Car",
       "age": null,
       "number": "15",
       "position": "Defender",
@@ -14862,6 +14886,22 @@
     },
     {
       "id": null,
+      "name": "Laurs Skjellerup",
+      "age": null,
+      "number": "19",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ignace Van Der Brempt",
+      "age": null,
+      "number": "20",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Jay Idzes",
       "age": null,
       "number": "21",
@@ -14874,14 +14914,6 @@
       "age": null,
       "number": "22",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Alessandro Di Bitonto",
-      "age": null,
-      "number": "23",
-      "position": "Defender",
       "photo": null
     },
     {
@@ -14974,6 +15006,14 @@
     },
     {
       "id": null,
+      "name": "[[Ibrahim Sulemana (footballer, born 2003)",
+      "age": null,
+      "number": "55",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Nicholas Pierini",
       "age": null,
       "number": "77",
@@ -14998,34 +15038,18 @@
     },
     {
       "id": null,
-      "name": "Duje Ćaleta-Car",
-      "age": null,
-      "number": null,
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Ignace Van Der Brempt",
-      "age": null,
-      "number": null,
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[Ibrahim Sulemana (footballer, born 2003)",
-      "age": null,
-      "number": null,
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Sebastiano Esposito",
       "age": null,
-      "number": null,
+      "number": "94",
       "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Edoardo Pieragnolo",
+      "age": null,
+      "number": null,
+      "position": "Defender",
       "photo": null
     },
     {
@@ -15042,14 +15066,6 @@
       "age": null,
       "number": null,
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Laurs Skjellerup",
-      "age": null,
-      "number": null,
-      "position": "Attacker",
       "photo": null
     }
   ],

@@ -3287,6 +3287,14 @@
       "number": "31",
       "position": "Goalkeeper",
       "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Álvaro de Pablo Casado",
+      "age": null,
+      "number": "40",
+      "position": "Goalkeeper",
+      "photo": null
     }
   ],
   "137855": [
@@ -9362,7 +9370,7 @@
     },
     {
       "id": null,
-      "name": "[[Xanet Oláiz Ibarzábal",
+      "name": "[[Xanet Olaiz Ibarzabal",
       "age": null,
       "number": "27",
       "position": "Defender",

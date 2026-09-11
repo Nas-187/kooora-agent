@@ -96,7 +96,7 @@
   },
   {
     "event_id": "2573358",
-    "title": "Al-Qadsiah ضد Al-Ettifaq",
+    "title": "Al-Qadsiah 0 - 0 Al-Ettifaq",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "7",
@@ -104,13 +104,13 @@
     "away_team": "Al-Ettifaq",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ok63wb1719134839.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/m272h51694761970.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "دوري روشن السعودي",
     "date": "2026-09-11T15:25:00Z",
     "day": "2026-09-11",
-    "content": "",
+    "content": "خيّم التعادل السلبي على المواجهة المرتقبة التي تجمع فريق القادسية بضيفه الاتفاق، في المباراة الجارية حالياً ضمن منافسات دوري روشن السعودي للمحترفين. وتشهد المباراة صراعاً تكتيكياً كبيراً بين الفريقين، وسط محاولات هجومية متبادلة للوصول إلى الشباك دون تشكيل خطورة محققة حتى اللحظة. وفرض الحذر الدفاعي نفسه على مجريات اللقاء، حيث يتطلع كلا الطرفين لخطف هدف حاسم واقتناص نقاط المباراة الثلاث قبل صافرة النهاية.",
     "cover_image": null
   },
   {

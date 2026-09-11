@@ -551,14 +551,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ii2jau1763586312.png"
     },
     {
-      "id": "34247015",
-      "name": "Chema Andrés",
-      "age": 21,
-      "number": "30",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ecbqj31763586030.png"
-    },
-    {
       "id": "34174026",
       "name": "Chris Führich",
       "age": 28,
@@ -581,6 +573,14 @@
       "number": "26",
       "position": "Centre-Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hcxx8s1763586492.png"
+    },
+    {
+      "id": "34216800",
+      "name": "Dženan Pejčinović",
+      "age": 21,
+      "number": "17",
+      "position": "Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5nzpym1763669520.png"
     },
     {
       "id": "34167607",
@@ -665,12 +665,12 @@
       "photo": null
     },
     {
-      "id": "34233821",
-      "name": "Elias Havel",
-      "age": 23,
-      "number": "",
-      "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/20akh81770324107.png"
+      "id": "34169134",
+      "name": "Djibril Sow",
+      "age": 29,
+      "number": "97",
+      "position": "Central Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b5k7ty1762860513.png"
     }
   ],
   "136017": [
@@ -1281,7 +1281,7 @@
     {
       "id": "34172218",
       "name": "Duje Ćaleta-Car",
-      "age": 29,
+      "age": 30,
       "number": "16",
       "position": "Centre-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/625eso1762709855.png"
@@ -1303,12 +1303,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p4wa4o1766146544.png"
     },
     {
-      "id": "34155648",
-      "name": "Hans Hateboer",
-      "age": 32,
-      "number": "33",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jsrw8a1766147138.png"
+      "id": "34216061",
+      "name": "Felix Bacher",
+      "age": 25,
+      "number": "25",
+      "position": "Centre-Back",
+      "photo": null
     }
   ],
   "134301": [
@@ -5209,6 +5209,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tr7ftn1762287457.png"
     },
     {
+      "id": "34180376",
+      "name": "Ayase Ueda",
+      "age": 28,
+      "number": "18",
+      "position": "Centre-Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png"
+    },
+    {
       "id": "34166997",
       "name": "Benjamin André",
       "age": 36,
@@ -5255,14 +5263,6 @@
       "number": "",
       "position": "Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b5kuwi1757164573.png"
-    },
-    {
-      "id": "34229444",
-      "name": "Ethan Mbappé",
-      "age": 19,
-      "number": "8",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5z7mrb1766077589.png"
     }
   ],
   "133610": [
@@ -5392,7 +5392,7 @@
       "id": "34175627",
       "name": "Daniel Muñoz",
       "age": 30,
-      "number": "",
+      "number": "27",
       "position": "Right-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qoxqre1761492462.png"
     },

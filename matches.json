@@ -72,7 +72,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-11T18:00:00Z",
     "day": "2026-09-11",
-    "content": "تتواصل حالياً أحداث المواجهة المرتقبة التي تجمع بين فريقي الأهلي والحزم، ضمن منافسات الجولة الحالية من دوري روشن السعودي للمحترفين. ويفرض صاحب الأرض، فريق الأهلي، تقدمه في النتيجة بهدفين مقابل هدف واحد حتى اللحظة وسط محاولات هجومية مكثفة من الطرفين. ويسعى \"الراقي\" لتأمين تقدمه وحصد النقاط الثلاث كاملة لتعزيز موقعه في جدول الترتيب، في حين يقاتل الحزم للعودة في النتيجة وتعديل الكفة قبل انطلاق صافرة النهاية.",
+    "content": "فوز Al-Ahli على Al-Hazem بنتيجة 2-1 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -115,7 +115,7 @@
   },
   {
     "event_id": "2506211",
-    "title": "Sevilla ضد Valencia",
+    "title": "Sevilla 0 - 0 Valencia",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "5",
@@ -123,13 +123,13 @@
     "away_team": "Valencia",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-11T19:00:00Z",
     "day": "2026-09-11",
-    "content": "",
+    "content": "تعادل Sevilla وValencia بنتيجة 0-0 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {

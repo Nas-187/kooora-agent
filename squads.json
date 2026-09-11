@@ -2647,7 +2647,7 @@
       "name": "Matheus Nunes",
       "age": null,
       "number": "27",
-      "position": "Defender",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -2712,14 +2712,6 @@
       "age": null,
       "number": "56",
       "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Josh Wilson-Esbrand",
-      "age": null,
-      "number": "59",
-      "position": "Defender",
       "photo": null
     },
     {
@@ -7028,6 +7020,14 @@
       "age": null,
       "number": "30",
       "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Yann Gboho",
+      "age": null,
+      "number": "34",
+      "position": "Attacker",
       "photo": null
     },
     {

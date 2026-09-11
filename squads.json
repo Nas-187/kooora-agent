@@ -5642,6 +5642,14 @@
     },
     {
       "id": null,
+      "name": "Michael Zetterer",
+      "age": null,
+      "number": "16",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Anton Stach",
       "age": null,
       "number": "18",
@@ -5710,14 +5718,6 @@
       "age": null,
       "number": "44",
       "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Michael Zetterer",
-      "age": null,
-      "number": null,
-      "position": "Goalkeeper",
       "photo": null
     },
     {
@@ -11313,7 +11313,7 @@
       "name": "Maximilian Beier",
       "age": null,
       "number": "14",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -13001,7 +13001,7 @@
       "name": "Jérémie Boga",
       "age": null,
       "number": "13",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -13025,7 +13025,7 @@
       "name": "Kerim Alajbegović",
       "age": null,
       "number": "17",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -13113,7 +13113,7 @@
       "name": "[[Nicolás González (footballer, born 1998)",
       "age": null,
       "number": "31",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -13130,6 +13130,22 @@
       "age": null,
       "number": "40",
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Augusto Owusu",
+      "age": null,
+      "number": "41",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Filippo Pagnucco",
+      "age": null,
+      "number": "43",
+      "position": "Midfielder",
       "photo": null
     }
   ],
@@ -15812,6 +15828,14 @@
     },
     {
       "id": null,
+      "name": "Mujaid Sadick",
+      "age": null,
+      "number": "15",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Adrià Pedrosa",
       "age": null,
       "number": "17",
@@ -15876,6 +15900,14 @@
     },
     {
       "id": null,
+      "name": "Emil Audero",
+      "age": null,
+      "number": "25",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Jozhua Vertrouwd",
       "age": null,
       "number": "33",
@@ -15892,25 +15924,9 @@
     },
     {
       "id": null,
-      "name": "Emil Audero",
-      "age": null,
-      "number": null,
-      "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Mujaid Sadick",
-      "age": null,
-      "number": null,
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Rayane Belaid",
       "age": null,
-      "number": null,
+      "number": "37",
       "position": "Midfielder",
       "photo": null
     },
@@ -15952,14 +15968,6 @@
       "age": null,
       "number": "34",
       "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[Miguel Morro",
-      "age": null,
-      "number": null,
-      "position": "Goalkeeper",
       "photo": null
     },
     {
@@ -17016,6 +17024,14 @@
       "age": null,
       "number": "99",
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Antonio Arena",
+      "age": null,
+      "number": "68",
+      "position": "Attacker",
       "photo": null
     },
     {

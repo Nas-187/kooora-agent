@@ -153,7 +153,7 @@
   },
   {
     "event_id": "2573359",
-    "title": "Al-Taawoun ضد Al-Hilal",
+    "title": "Al-Taawoun 0 - 2 Al-Hilal",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "7",
@@ -161,13 +161,13 @@
     "away_team": "Al-Hilal",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rlsmp91646835052.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/w0b80d1661656916.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 2,
+    "status": "In Play",
     "league": "دوري روشن السعودي",
     "date": "2026-09-12T15:50:00Z",
     "day": "2026-09-12",
-    "content": "",
+    "content": "يتقدم نادي الهلال على مضيفه التعاون بنتيجة (2-0)، في المباراة الجارية بينهما حالياً ضمن منافسات دوري روشن السعودي. ونجح الفريق الضيف في فرض سيطرته ميدانياً وترجمة أفضليته إلى هدفين قرّباه من حسم نقاط المواجهة. في المقابل، يحاول التعاون العودة إلى الأجواء وتكثيف محاولاته الهجومية لتقليص الفارق قبل صافرة النهاية.",
     "cover_image": null
   },
   {

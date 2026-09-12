@@ -248,7 +248,7 @@
   },
   {
     "event_id": "2506209",
-    "title": "Athletic Bilbao 0 - 0 Elche",
+    "title": "Athletic Bilbao 0 - 1 Elche",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "5",
@@ -257,12 +257,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-12T16:30:00Z",
     "day": "2026-09-12",
-    "content": "تعادل Athletic Bilbao وElche بنتيجة 0-0 ضمن الدوري الإسباني.",
+    "content": "فوز Elche على Athletic Bilbao بنتيجة 0-1 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {
@@ -419,7 +419,7 @@
   },
   {
     "event_id": "2489491",
-    "title": "Strasbourg 1 - 0 Monaco",
+    "title": "Strasbourg 1 - 1 Monaco",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "4",
@@ -428,12 +428,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
     "home_score": 1,
-    "away_score": 0,
-    "status": "In Play",
+    "away_score": 1,
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-09-12T15:15:00Z",
     "day": "2026-09-12",
-    "content": "فوز Strasbourg على Monaco بنتيجة 1-0 ضمن الدوري الفرنسي.",
+    "content": "تعادل Strasbourg وMonaco بنتيجة 1-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

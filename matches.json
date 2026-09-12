@@ -167,7 +167,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-12T15:50:00Z",
     "day": "2026-09-12",
-    "content": "يتقدم نادي الهلال على مضيفه التعاون بنتيجة (2-0)، في المباراة الجارية بينهما حالياً ضمن منافسات دوري روشن السعودي. ونجح الفريق الضيف في فرض سيطرته ميدانياً وترجمة أفضليته إلى هدفين قرّباه من حسم نقاط المواجهة. في المقابل، يحاول التعاون العودة إلى الأجواء وتكثيف محاولاته الهجومية لتقليص الفارق قبل صافرة النهاية.",
+    "content": "فوز Al-Hilal على Al-Taawoun بنتيجة 0-2 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -248,7 +248,7 @@
   },
   {
     "event_id": "2506209",
-    "title": "Athletic Bilbao ضد Elche",
+    "title": "Athletic Bilbao 0 - 0 Elche",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "5",
@@ -256,13 +256,13 @@
     "away_team": "Elche",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-12T16:30:00Z",
     "day": "2026-09-12",
-    "content": "",
+    "content": "تعادل Athletic Bilbao وElche بنتيجة 0-0 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {
@@ -296,7 +296,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
     "home_score": 0,
     "away_score": 2,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإسباني",
     "date": "2026-09-12T14:15:00Z",
     "day": "2026-09-12",
@@ -419,7 +419,7 @@
   },
   {
     "event_id": "2489491",
-    "title": "Strasbourg 0 - 0 Monaco",
+    "title": "Strasbourg 1 - 0 Monaco",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "4",
@@ -427,13 +427,13 @@
     "away_team": "Monaco",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
     "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-09-12T15:15:00Z",
     "day": "2026-09-12",
-    "content": "تعادل Strasbourg وMonaco بنتيجة 0-0 ضمن الدوري الفرنسي.",
+    "content": "فوز Strasbourg على Monaco بنتيجة 1-0 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

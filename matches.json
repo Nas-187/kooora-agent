@@ -324,7 +324,7 @@
   },
   {
     "event_id": "2482171",
-    "title": "Genoa ضد Frosinone",
+    "title": "Genoa 0 - 0 Frosinone",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "4",
@@ -332,13 +332,13 @@
     "away_team": "Frosinone",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/52s8dn1655553600.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/a7xa151603170120.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-12T13:00:00Z",
     "day": "2026-09-12",
-    "content": "",
+    "content": "خَيَّم التعادل السلبي من دون أهداف على مجريات المباراة الجارية حالياً بين جنوى وضيفه فروسينوني، ضمن منافسات الجولة الحالية من الدوري الإيطالي لكرة القدم. وتشهد المواجهة حذراً تكتيكياً كبيراً من الجانبين، مع انحصار اللعب في وسط الملعب وتبادل المحاولات الخجولة لهز الشباك. ويسعى أصحاب الأرض لفرض سيطرتهم واقتناص نقاط المباراة الثلاث، بينما يستميت الضيوف للخروج بنتيجة إيجابية تعزز موقفهم في جدول الترتيب.",
     "cover_image": null
   },
   {

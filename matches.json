@@ -167,7 +167,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-12T15:50:00Z",
     "day": "2026-09-12",
-    "content": "فوز Al-Hilal على Al-Taawoun بنتيجة 0-5 ضمن دوري روشن السعودي.",
+    "content": "يفرض نادي الهلال سيطرة مطلقة على مواجهته الجارية حالياً أمام مضيفه التعاون، ضمن منافسات دوري روشن السعودي للمحترفين. وتشير النتيجة حتى اللحظة إلى تقدم \"الزعيم\" بخماسية نظيفة، بعد أداء هجومي كاسح أربك حسابات أصحاب الأرض بشكل كامل. ويواصل الهلال فرضه للنسق الهجومي العالي لتعزيز النتيجة، وسط محاولات عاجزة من فريق التعاون للحد من خطورة الضيوف قبل صافرة النهاية.",
     "cover_image": null
   },
   {
@@ -305,7 +305,7 @@
   },
   {
     "event_id": "2482168",
-    "title": "Lazio 2 - 0 AC Milan",
+    "title": "Lazio 2 - 2 AC Milan",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "4",
@@ -314,12 +314,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
     "home_score": 2,
-    "away_score": 0,
-    "status": "In Play",
+    "away_score": 2,
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-12T16:00:00Z",
     "day": "2026-09-12",
-    "content": "فوز Lazio على AC Milan بنتيجة 2-0 ضمن الدوري الإيطالي.",
+    "content": "تعادل Lazio وAC Milan بنتيجة 2-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

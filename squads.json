@@ -17749,6 +17749,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1kboi41765982561.png"
     },
     {
+      "id": "34218150",
+      "name": "Egil Selvik",
+      "age": 29,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ozeg7h1761216738.png"
+    },
+    {
       "id": "34173302",
       "name": "Eric Junior Dina Ebimbe",
       "age": 25,
@@ -17759,7 +17767,7 @@
     {
       "id": "34217135",
       "name": "Eric Roy",
-      "age": 58,
+      "age": 59,
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/euz8ef1680975172.jpg"
@@ -17803,14 +17811,6 @@
       "number": "4",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xz2th31767870777.png"
-    },
-    {
-      "id": "34234945",
-      "name": "Justin Bourgault",
-      "age": 20,
-      "number": "18",
-      "position": "Left-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dbfvkf1765982515.png"
     }
   ]
 }

@@ -148,7 +148,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-09-12T18:00:00Z",
     "day": "2026-09-12",
-    "content": "فوز Al-Khaleej على Al-Nassr بنتيجة 1-0 ضمن دوري روشن السعودي.",
+    "content": "يتقدم فريق الخليج على ضيفه النصر بهدف دون رد، في المباراة الجارية بينهما حالياً ضمن منافسات دوري روشن السعودي. ونجح أصحاب الأرض في فرض تقدمهم، مما وضع النصر تحت ضغط كبير للبحث عن حلول هجومية تُعيده إلى أجواء اللقاء. وتشهد المواجهة في دقائقها الحالية إثارة بالغة وتنافساً محتدماً، حيث يكثف النصر محاولاته لإدراك التعادل، بينما يستبسل الخليج للحفاظ على أسبقيته الثمينة.",
     "cover_image": null
   },
   {
@@ -343,7 +343,7 @@
   },
   {
     "event_id": "2482172",
-    "title": "Atalanta 0 - 1 Cagliari",
+    "title": "Atalanta 1 - 2 Cagliari",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "4",
@@ -351,13 +351,13 @@
     "away_team": "Cagliari",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/qix5ku1780561327.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
-    "home_score": 0,
-    "away_score": 1,
+    "home_score": 1,
+    "away_score": 2,
     "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-12T18:45:00Z",
     "day": "2026-09-12",
-    "content": "فوز Cagliari على Atalanta بنتيجة 0-1 ضمن الدوري الإيطالي.",
+    "content": "فوز Cagliari على Atalanta بنتيجة 1-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

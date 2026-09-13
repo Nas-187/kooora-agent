@@ -533,7 +533,7 @@
   },
   {
     "event_id": "2494030",
-    "title": "Manchester United ضد Manchester City",
+    "title": "Manchester United 0 - 0 Manchester City",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "4",
@@ -541,13 +541,13 @@
     "away_team": "Manchester City",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-13T15:30:00Z",
     "day": "2026-09-13",
-    "content": "",
+    "content": "يخيم التعادل السلبي من دون أهداف على ديربي مدينة مانشستر بين مانشستر يونايتد وضيفه مانشستر سيتي، في اللقاء الجاري بينهما حالياً ضمن منافسات الدوري الإنجليزي الممتاز. وتشهد المواجهة صراعاً تكتيكياً محتدماً بين الفريقين، مع تبادل للمحاولات الهجومية بغية إحراز هدف التقدم واقتناص نقاط المباراة الثلاث. وتترقب الجماهير ما ستسفر عنه الدقائق المتبقية من عمر اللقاء لحسم هوية الفائز في هذا الديربي المرتقب.",
     "cover_image": null
   },
   {

@@ -533,7 +533,7 @@
   },
   {
     "event_id": "2494030",
-    "title": "Manchester United 0 - 0 Manchester City",
+    "title": "Manchester United 0 - 1 Manchester City",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "4",
@@ -542,12 +542,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-13T15:30:00Z",
     "day": "2026-09-13",
-    "content": "تعادل Manchester United وManchester City بنتيجة 0-0 ضمن الدوري الإنجليزي.",
+    "content": "فوز Manchester City على Manchester United بنتيجة 0-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {

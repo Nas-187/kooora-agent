@@ -164,7 +164,7 @@
     },
     {
       "tag": "الدوري الإنجليزي",
-      "title": "Leeds United يواجه Newcastle United ضمن الدوري الإنجليزي"
+      "title": "تعادل Leeds United وNewcastle United 0-0 ضمن الدوري الإنجليزي"
     },
     {
       "tag": "الدوري الإسباني",
@@ -205,6 +205,14 @@
     {
       "tag": "الدوري الإسباني",
       "title": "Levante يواجه Athletic Bilbao ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Málaga يواجه Villarreal ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Real Betis يواجه Getafe ضمن الدوري الإسباني"
     }
   ]
 }

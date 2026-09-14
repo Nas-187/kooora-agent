@@ -2224,5 +2224,33 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/m272h51694761970.png",
     "home_goals": 3,
     "away_goals": 3
+  },
+  {
+    "event_id": "2482173",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-09-14",
+    "home_id": "133687",
+    "home": "Torino",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+    "away_id": "133682",
+    "away": "Roma",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/jwro2s1760820674.png",
+    "home_goals": 0,
+    "away_goals": 2
+  },
+  {
+    "event_id": "2482177",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-09-14",
+    "home_id": "134243",
+    "home": "Como",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/02x81t1627405841.png",
+    "away_id": "135728",
+    "away": "Parma",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
+    "home_goals": 2,
+    "away_goals": 1
   }
 ]

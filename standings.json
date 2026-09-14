@@ -368,8 +368,8 @@
       {
         "rank": 1,
         "team": "Roma",
-        "played": 3,
-        "points": 9
+        "played": 4,
+        "points": 12
       },
       {
         "rank": 2,
@@ -385,27 +385,27 @@
       },
       {
         "rank": 4,
+        "team": "Como",
+        "played": 3,
+        "points": 7
+      },
+      {
+        "rank": 5,
         "team": "AC Milan",
         "played": 2,
         "points": 6
       },
       {
-        "rank": 5,
+        "rank": 6,
         "team": "Juventus",
         "played": 2,
         "points": 6
       },
       {
-        "rank": 6,
+        "rank": 7,
         "team": "Atalanta",
         "played": 3,
         "points": 6
-      },
-      {
-        "rank": 7,
-        "team": "Como",
-        "played": 2,
-        "points": 4
       },
       {
         "rank": 8,
@@ -434,7 +434,7 @@
       {
         "rank": 12,
         "team": "Torino",
-        "played": 3,
+        "played": 4,
         "points": 3
       },
       {
@@ -457,14 +457,14 @@
       },
       {
         "rank": 16,
-        "team": "Parma",
+        "team": "Monza",
         "played": 1,
         "points": 0
       },
       {
         "rank": 17,
-        "team": "Monza",
-        "played": 1,
+        "team": "Parma",
+        "played": 2,
         "points": 0
       },
       {

@@ -2252,5 +2252,47 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
     "home_goals": 2,
     "away_goals": 1
+  },
+  {
+    "event_id": "2494036",
+    "league_id": 4328,
+    "league_name": "الدوري الإنجليزي",
+    "date": "2026-09-14",
+    "home_id": "133635",
+    "home": "Leeds United",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png",
+    "away_id": "134777",
+    "away": "Newcastle United",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+    "home_goals": 4,
+    "away_goals": 1
+  },
+  {
+    "event_id": "2506210",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-14",
+    "home_id": "133740",
+    "home": "Villarreal",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png",
+    "away_id": "133722",
+    "away": "Real Betis",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+    "home_goals": 1,
+    "away_goals": 2
+  },
+  {
+    "event_id": "2482174",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-09-14",
+    "home_id": "133681",
+    "home": "Inter Milan",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+    "away_id": "133679",
+    "away": "Udinese",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
+    "home_goals": 5,
+    "away_goals": 3
   }
 ]

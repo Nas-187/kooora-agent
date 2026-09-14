@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2494036",
-    "title": "Leeds United 4 - 0 Newcastle United",
+    "title": "Leeds United 4 - 1 Newcastle United",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "4",
@@ -656,12 +656,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
     "home_score": 4,
-    "away_score": 0,
-    "status": "In Play",
+    "away_score": 1,
+    "status": "Match Finished",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-14T19:00:00Z",
     "day": "2026-09-14",
-    "content": "فوز Leeds United على Newcastle United بنتيجة 4-0 ضمن الدوري الإنجليزي.",
+    "content": "حقق نادي ليدز يونايتد فوزاً عريضاً على ضيفه نيوكاسل يونايتد بأربعة أهداف مقابل هدف واحد، في المباراة التي جمعتهما ضمن منافسات الدوري الإنجليزي الممتاز. وفرض أصحاب الأرض سيطرتهم على مجريات اللقاء بفضل أداء هجومي مميز، ليترجموا أفضليتهم إلى أهداف حسمت المواجهة لصالحهم بأريحية. ورغم محاولات نيوكاسل لتقليص الفارق، إلا أنها لم تكن كافية لتفادي هذه الهزيمة الثقيلة. وبهذا الفوز الثمين، يحصد ليدز يونايتد ثلاث نقاط هامة في مشواره بالبطولة، بينما يتطلع نيوكاسل لتدارك الموقف في الجولات القادمة.",
     "cover_image": null
   },
   {

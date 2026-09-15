@@ -2308,5 +2308,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
     "home_goals": 2,
     "away_goals": 1
+  },
+  {
+    "event_id": "2506223",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-15",
+    "home_id": "134221",
+    "home": "Deportivo Alavés",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/mfn99h1734673842.png",
+    "away_id": "133725",
+    "away": "Valencia",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
+    "home_goals": 0,
+    "away_goals": 1
   }
 ]

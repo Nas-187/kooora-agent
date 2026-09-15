@@ -267,7 +267,7 @@
       {
         "rank": 5,
         "team": "Deportivo Alavés",
-        "played": 3,
+        "played": 4,
         "points": 7
       },
       {
@@ -320,33 +320,33 @@
       },
       {
         "rank": 14,
-        "team": "Getafe",
+        "team": "Valencia",
         "played": 4,
         "points": 4
       },
       {
         "rank": 15,
+        "team": "Getafe",
+        "played": 4,
+        "points": 4
+      },
+      {
+        "rank": 16,
         "team": "Espanyol",
         "played": 4,
         "points": 3
       },
       {
-        "rank": 16,
+        "rank": 17,
         "team": "Celta Vigo",
         "played": 5,
         "points": 3
       },
       {
-        "rank": 17,
+        "rank": 18,
         "team": "Villarreal",
         "played": 5,
         "points": 2
-      },
-      {
-        "rank": 18,
-        "team": "Valencia",
-        "played": 3,
-        "points": 1
       },
       {
         "rank": 19,

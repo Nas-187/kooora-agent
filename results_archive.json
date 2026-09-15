@@ -2294,5 +2294,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
     "home_goals": 5,
     "away_goals": 3
+  },
+  {
+    "event_id": "2506227",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-15",
+    "home_id": "133728",
+    "home": "Rayo Vallecano",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
+    "away_id": "133734",
+    "away": "Espanyol",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
+    "home_goals": 2,
+    "away_goals": 1
   }
 ]

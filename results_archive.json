@@ -2322,5 +2322,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
     "home_goals": 0,
     "away_goals": 1
+  },
+  {
+    "event_id": "2506220",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-16",
+    "home_id": "133729",
+    "home": "Atlético Madrid",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+    "away_id": "133730",
+    "away": "Osasuna",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
+    "home_goals": 4,
+    "away_goals": 0
   }
 ]

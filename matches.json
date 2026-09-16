@@ -153,7 +153,7 @@
   },
   {
     "event_id": "2506219",
-    "title": "Barcelona 4 - 1 Racing de Santander",
+    "title": "Barcelona 4 - 2 Racing de Santander",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "6",
@@ -162,12 +162,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/97kkiq1536575158.png",
     "home_score": 4,
-    "away_score": 1,
+    "away_score": 2,
     "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-16T19:30:00Z",
     "day": "2026-09-16",
-    "content": "فوز Barcelona على Racing de Santander بنتيجة 4-1 ضمن الدوري الإسباني.",
+    "content": "فوز Barcelona على Racing de Santander بنتيجة 4-2 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {

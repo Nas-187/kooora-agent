@@ -48,7 +48,7 @@
     },
     {
       "tag": "الدوري الإسباني",
-      "title": "Málaga يفوز على Villarreal 1-0 ضمن الدوري الإسباني"
+      "title": "Villarreal يفوز على Málaga 2-1 ضمن الدوري الإسباني"
     },
     {
       "tag": "الدوري الإسباني",
@@ -133,6 +133,66 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Toulouse يواجه Le Havre ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Bournemouth يواجه Liverpool ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Fulham يواجه Manchester United ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Manchester City يواجه Sunderland ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Atlético Madrid يواجه Real Madrid ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Valencia يواجه Real Sociedad ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Villarreal يواجه Levante ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "AC Milan يواجه Lecce ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Juventus يواجه Atalanta ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Fiorentina يواجه Napoli ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Bayer Leverkusen يواجه RB Leipzig ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Schalke 04 يواجه Elversberg ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Paderborn يواجه Hoffenheim ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Nice يواجه Lille ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Auxerre يواجه Brest ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Marseille يواجه Paris Saint-Germain ضمن الدوري الفرنسي"
     }
   ]
 }

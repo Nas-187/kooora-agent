@@ -2336,5 +2336,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
     "home_goals": 4,
     "away_goals": 0
+  },
+  {
+    "event_id": "2506224",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-09-17",
+    "home_id": "133722",
+    "home": "Real Betis",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+    "away_id": "133731",
+    "away": "Getafe",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/eyh2891655594452.png",
+    "home_goals": 1,
+    "away_goals": 0
   }
 ]

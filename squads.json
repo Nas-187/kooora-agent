@@ -2647,7 +2647,7 @@
       "name": "Matheus Nunes",
       "age": null,
       "number": "27",
-      "position": "Midfielder",
+      "position": "Defender",
       "photo": null
     },
     {
@@ -5791,7 +5791,7 @@
       "name": "Ademola Lookman",
       "age": null,
       "number": "11",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -5855,7 +5855,7 @@
       "name": "Giuliano Simeone",
       "age": null,
       "number": "20",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -5920,6 +5920,14 @@
       "age": null,
       "number": "29",
       "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Javier Gil (footballer)",
+      "age": null,
+      "number": "45",
+      "position": "Defender",
       "photo": null
     },
     {
@@ -16637,14 +16645,6 @@
       "name": "Nedim Bajrami",
       "age": null,
       "number": "10",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[Fahad Al-Rashidi (footballer, born 1997)",
-      "age": null,
-      "number": "11",
       "position": "Midfielder",
       "photo": null
     },

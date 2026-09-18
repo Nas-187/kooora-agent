@@ -91,7 +91,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-18T19:00:00Z",
     "day": "2026-09-18",
-    "content": "فوز Brentford على Chelsea بنتيجة 1-0 ضمن الدوري الإنجليزي.",
+    "content": "يتقدم فريق برينتفورد حالياً على ضيفه تشيلسي بهدف دون رد، في المواجهة التي تجمع بينهما لحساب منافسات الدوري الإنجليزي الممتاز. ونجح أصحاب الأرض في استغلال عامل الجمهور لاقتناص تقدم ثمين، في حين يكثف تشيلسي محاولاته الهجومية لإدراك هدف التعادل والعودة في النتيجة. وتستمر أطوار المباراة وسط إثارة كبيرة ورغبة متواصلة من الفريقين لتغيير واقع النتيجة قبل نهاية اللقاء.",
     "cover_image": null
   },
   {
@@ -153,7 +153,7 @@
   },
   {
     "event_id": "2489501",
-    "title": "Monaco 1 - 1 Lens",
+    "title": "Monaco 2 - 1 Lens",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "5",
@@ -161,13 +161,13 @@
     "away_team": "Lens",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/3pxoum1598797195.png",
-    "home_score": 1,
+    "home_score": 2,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-09-18T18:45:00Z",
     "day": "2026-09-18",
-    "content": "تعادل Monaco وLens بنتيجة 1-1 ضمن الدوري الفرنسي.",
+    "content": "فوز Monaco على Lens بنتيجة 2-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

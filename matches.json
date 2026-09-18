@@ -77,7 +77,7 @@
   },
   {
     "event_id": "2494047",
-    "title": "Brentford 1 - 0 Chelsea",
+    "title": "Brentford 3 - 0 Chelsea",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "5",
@@ -85,13 +85,13 @@
     "away_team": "Chelsea",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png",
-    "home_score": 1,
+    "home_score": 3,
     "away_score": 0,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-18T19:00:00Z",
     "day": "2026-09-18",
-    "content": "فوز Brentford على Chelsea بنتيجة 1-0 ضمن الدوري الإنجليزي.",
+    "content": "فوز Brentford على Chelsea بنتيجة 3-0 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {

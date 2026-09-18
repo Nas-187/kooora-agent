@@ -8235,14 +8235,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bedkjv1762288303.png"
     },
     {
-      "id": "34170768",
-      "name": "Antonio Conte",
-      "age": 57,
-      "number": "",
-      "position": "Manager",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2nxa881679997177.png"
-    },
-    {
       "id": "34236505",
       "name": "Antonio Vergara",
       "age": 23,
@@ -8273,6 +8265,14 @@
       "number": "7",
       "position": "Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8i5j8e1762288449.png"
+    },
+    {
+      "id": "34169492",
+      "name": "Eljif Elmas",
+      "age": 27,
+      "number": "20",
+      "position": "Attacking Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/38hezl1762288414.png"
     }
   ],
   "133632": [
@@ -8733,7 +8733,7 @@
     {
       "id": "34195110",
       "name": "Eder Sarabia Armesto",
-      "age": 45,
+      "age": 46,
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/rmat0t1762357639.jpg"
@@ -9373,7 +9373,7 @@
     {
       "id": "34218908",
       "name": "Benjamín Domínguez",
-      "age": 22,
+      "age": 23,
       "number": "30",
       "position": "Attacker",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bpq7be1758897020.png"
@@ -13871,12 +13871,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/se3w5j1764278124.png"
     },
     {
-      "id": "34258974",
-      "name": "Iván Azón",
-      "age": 23,
-      "number": "90",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/76r0dj1761908792.png"
+      "id": "34236428",
+      "name": "Ivan Smolčić",
+      "age": 26,
+      "number": "28",
+      "position": "Defender",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/t70jei1764278503.png"
     }
   ],
   "133687": [
@@ -16445,14 +16445,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/91xazv1765969083.png"
     },
     {
-      "id": "34193383",
-      "name": "Bamba Dieng",
-      "age": 26,
-      "number": "12",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gom3v11765969346.png"
-    },
-    {
       "id": "34203287",
       "name": "Bamo Meïté",
       "age": 25,
@@ -16499,6 +16491,14 @@
       "number": "",
       "position": "Centre-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/60m9vj1761216653.png"
+    },
+    {
+      "id": "34192511",
+      "name": "Igor Silva",
+      "age": 30,
+      "number": "2",
+      "position": "Right-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xnmxq71765969809.png"
     }
   ],
   "150637": [

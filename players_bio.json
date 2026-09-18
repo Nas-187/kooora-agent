@@ -9163,5 +9163,95 @@
       "transfermarkt_url": null
     },
     "bio": "إيغيل سيلفيك (Egil Selvik) هو حارس مرمى نرويجي الجنسية يلعب لفريق بريست. ولد في النرويج بتاريخ 30 يوليو 1997، ويبلغ من العمر 29 عاماً. يصل طوله إلى 187 سم ووزنه 163 رطلاً."
+  },
+  "34167118": {
+    "facts": {
+      "nationality": "The Netherlands",
+      "birth_place": "Leiderdorp, Netherlands",
+      "birth_date": "1999-08-12",
+      "age": 27,
+      "height": "1.89 m (6 ft 2 in)",
+      "weight": "194 lbs",
+      "position": "Centre-Back",
+      "team": "Manchester United",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/326031"
+    },
+    "bio": "Matthijs de Ligt يلعب في مركز Centre-Back مع Manchester United وهو لاعب The Netherlands يبلغ من العمر 27 عاماً."
+  },
+  "34145892": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Sheffield, England",
+      "birth_date": "1993-03-05",
+      "age": 33,
+      "height": "6 ft 4 in (1.94 m)",
+      "weight": "196 lbs",
+      "position": "Centre-Back",
+      "team": "Manchester United",
+      "joined": "2014-07-29",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/177907"
+    },
+    "bio": "Harry Maguire يلعب في مركز Centre-Back مع Manchester United وهو لاعب England يبلغ من العمر 33 عاماً."
+  },
+  "34169290": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "João Pessoa, Brazil",
+      "birth_date": "1999-05-27",
+      "age": 27,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "168 lb (76 kg)",
+      "position": "Centre-Forward",
+      "team": "Manchester United",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/517894"
+    },
+    "bio": "Matheus Cunha يلعب في مركز Centre-Forward مع Manchester United وهو لاعب Brazil يبلغ من العمر 27 عاماً."
+  },
+  "34220127": {
+    "facts": {
+      "nationality": "Denmark",
+      "birth_place": "Copenhagen, Denmark",
+      "birth_date": "2004-10-26",
+      "age": 21,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "68 kg (150 lb)",
+      "position": "Left-Back",
+      "team": "Manchester United",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/926952"
+    },
+    "bio": "Patrick Dorgu يلعب في مركز Left-Back مع Manchester United وهو لاعب Denmark يبلغ من العمر 21 عاماً."
+  },
+  "34221702": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "Stockport, England",
+      "birth_date": "2005-04-19",
+      "age": 21,
+      "height": "181cm / 5'11\"",
+      "weight": "159 lbs",
+      "position": "Defensive Midfield",
+      "team": "Manchester United",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/820374"
+    },
+    "bio": "Kobbie Mainoo يلعب في مركز Defensive Midfield مع Manchester United وهو لاعب England يبلغ من العمر 21 عاماً."
+  },
+  "34436060": {
+    "facts": {
+      "nationality": "Scotland",
+      "birth_place": "Manchester, England",
+      "birth_date": "2007-03-19",
+      "age": 19,
+      "height": "183 cm",
+      "weight": "",
+      "position": "Central Midfield",
+      "team": "Manchester United",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Tyler Fletcher يلعب في مركز Central Midfield مع Manchester United وهو لاعب Scotland يبلغ من العمر 19 عاماً."
   }
 }

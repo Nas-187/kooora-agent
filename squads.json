@@ -414,7 +414,7 @@
     },
     {
       "id": null,
-      "name": "[[Vitinha (footballer, born February 2000)",
+      "name": "Vitinha",
       "age": null,
       "number": "17",
       "position": "Midfielder",
@@ -6872,6 +6872,14 @@
     },
     {
       "id": null,
+      "name": "Stephen Mfuni",
+      "age": null,
+      "number": "12",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "[[Ben Wilson (footballer, born 1992)",
       "age": null,
       "number": "13",
@@ -6898,7 +6906,7 @@
       "id": null,
       "name": "Loum Tchaouna",
       "age": null,
-      "number": "18",
+      "number": "17",
       "position": "Attacker",
       "photo": null
     },
@@ -6992,14 +7000,6 @@
     },
     {
       "id": null,
-      "name": "Stephen Mfuni",
-      "age": null,
-      "number": "30",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Yann Gboho",
       "age": null,
       "number": "34",
@@ -7068,14 +7068,6 @@
       "age": null,
       "number": "51",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "David Mantle",
-      "age": null,
-      "number": "52",
-      "position": "Defender",
       "photo": null
     },
     {
@@ -7835,7 +7827,7 @@
       "name": "Bukayo Saka",
       "age": null,
       "number": "7",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -8544,14 +8536,6 @@
     },
     {
       "id": null,
-      "name": "Nico Guillén",
-      "age": null,
-      "number": "27",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "[[Miguel Sierra (footballer)",
       "age": null,
       "number": "30",
@@ -8560,18 +8544,26 @@
     },
     {
       "id": null,
-      "name": "[[Rafael Romero Morilla",
-      "age": null,
-      "number": "33",
-      "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "[[Manuel Ángel Castillo",
       "age": null,
       "number": "26",
       "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Nico Guillén",
+      "age": null,
+      "number": "27",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Rafael Romero Morilla",
+      "age": null,
+      "number": "33",
+      "position": "Goalkeeper",
       "photo": null
     },
     {
@@ -11688,14 +11680,6 @@
     },
     {
       "id": null,
-      "name": "Fawaz Al-Hamad",
-      "age": null,
-      "number": "55",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Montadhar Al-Shaqaq",
       "age": null,
       "number": "63",
@@ -11740,6 +11724,14 @@
       "age": null,
       "number": "94",
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Ali Alamine",
+      "age": null,
+      "number": null,
+      "position": "Defender",
       "photo": null
     }
   ],
@@ -16964,6 +16956,14 @@
     },
     {
       "id": null,
+      "name": "Antonio Arena",
+      "age": null,
+      "number": "68",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Giorgio De Marzi",
       "age": null,
       "number": "70",
@@ -17012,26 +17012,10 @@
     },
     {
       "id": null,
-      "name": "Antonio Arena",
-      "age": null,
-      "number": "68",
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Devis Vásquez",
       "age": null,
       "number": "32",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Anass Salah-Eddine",
-      "age": null,
-      "number": "34",
-      "position": "Defender",
       "photo": null
     }
   ],

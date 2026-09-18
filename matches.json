@@ -77,7 +77,7 @@
   },
   {
     "event_id": "2494047",
-    "title": "Brentford 0 - 0 Chelsea",
+    "title": "Brentford 1 - 0 Chelsea",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "5",
@@ -85,13 +85,13 @@
     "away_team": "Chelsea",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png",
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
     "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-18T19:00:00Z",
     "day": "2026-09-18",
-    "content": "تعادل Brentford وChelsea بنتيجة 0-0 ضمن الدوري الإنجليزي.",
+    "content": "فوز Brentford على Chelsea بنتيجة 1-0 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -110,7 +110,7 @@
     "league": "الدوري الإسباني",
     "date": "2026-09-18T19:00:00Z",
     "day": "2026-09-18",
-    "content": "يتأخر فريق إسبانيول بهدفين دون رد أمام ضيفه إلتشي، في اللقاء الذي يجمعهما حالياً ضمن منافسات الدوري الإسباني لكرة القدم. ونجح الضيوف في فرض سيطرتهم واستغلال الفرص المتاحة للتقدم بالنتيجة، وسط محاولات متواصلة من صاحب الأرض للعودة في المباراة. ويسعى إسبانيول خلال الدقائق المتبقية لتكثيف ضغطه الهجومي لتذليل الفارق، بينما يطمح إلتشي للحفاظ على تقدمه وحسم النقاط الثلاث مع استمرار أطوار اللقاء.",
+    "content": "فوز Elche على Espanyol بنتيجة 0-2 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {

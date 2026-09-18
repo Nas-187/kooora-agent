@@ -3069,6 +3069,14 @@
       "number": "93",
       "position": "Midfielder",
       "photo": null
+    },
+    {
+      "id": null,
+      "name": "Suhayb Al-Zaid",
+      "age": null,
+      "number": "96",
+      "position": "Midfielder",
+      "photo": null
     }
   ],
   "133722": [
@@ -7576,14 +7584,6 @@
       "age": null,
       "number": "80",
       "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Wilfried Eza",
-      "age": null,
-      "number": "88",
-      "position": "Attacker",
       "photo": null
     },
     {
@@ -13115,6 +13115,14 @@
       "number": "43",
       "position": "Midfielder",
       "photo": null
+    },
+    {
+      "id": null,
+      "name": "Justin Oboavwoduo",
+      "age": null,
+      "number": "45",
+      "position": "Midfielder",
+      "photo": null
     }
   ],
   "134783": [
@@ -15912,6 +15920,14 @@
       "age": null,
       "number": "27",
       "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Samu Becerra",
+      "age": null,
+      "number": "28",
+      "position": "Midfielder",
       "photo": null
     },
     {

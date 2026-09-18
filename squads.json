@@ -15646,7 +15646,7 @@
       "age": 25,
       "number": "42",
       "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/zkxnqs1781291875.jpg"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/itlefh1789382368.png"
     },
     {
       "id": "34158758",
@@ -15654,7 +15654,7 @@
       "age": 31,
       "number": "8",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6z0mmq1761829931.png"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/3zdpum1789394815.png"
     },
     {
       "id": "34173230",
@@ -15662,7 +15662,7 @@
       "age": 24,
       "number": "9",
       "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q3qz441762198721.png"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/pr0xmj1789395133.png"
     },
     {
       "id": "34252091",
@@ -15670,7 +15670,7 @@
       "age": 21,
       "number": "7",
       "position": "Right Winger",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j2sw9j1772021582.png"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/zah9rs1789395120.png"
     },
     {
       "id": "34215704",
@@ -15678,15 +15678,23 @@
       "age": 19,
       "number": "11",
       "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e1v5xd1757073210.png"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/axcuy51789394858.png"
     },
     {
       "id": "34178275",
-      "name": "Daniel Ballard",
-      "age": 26,
+      "name": "Dan Ballard",
+      "age": 27,
       "number": "5",
       "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/542r9u1757072659.png"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/t6fui21789395616.png"
+    },
+    {
+      "id": "34301274",
+      "name": "Dayann Methalie",
+      "age": 20,
+      "number": "24",
+      "position": "Defender",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/jw2v641789382830.png"
     },
     {
       "id": "34173355",
@@ -15694,15 +15702,7 @@
       "age": 26,
       "number": "28",
       "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3bpjrq1756903751.png"
-    },
-    {
-      "id": "34160884",
-      "name": "Granit Xhaka",
-      "age": 33,
-      "number": "34",
-      "position": "Defensive Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2xa5dp1756903726.png"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/g1grth1789394962.png"
     }
   ],
   "133728": [

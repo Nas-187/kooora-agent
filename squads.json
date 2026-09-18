@@ -9736,14 +9736,6 @@
     },
     {
       "id": null,
-      "name": "Teun Gijselhart",
-      "age": null,
-      "number": "34",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Kevin Sánchez",
       "age": null,
       "number": "33",
@@ -13917,7 +13909,7 @@
       "name": "Rolando Mandragora",
       "age": null,
       "number": "8",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {

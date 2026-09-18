@@ -96,7 +96,7 @@
   },
   {
     "event_id": "2506235",
-    "title": "Espanyol ضد Elche",
+    "title": "Espanyol 0 - 0 Elche",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "7",
@@ -104,13 +104,13 @@
     "away_team": "Elche",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-18T19:00:00Z",
     "day": "2026-09-18",
-    "content": "",
+    "content": "يخيم التعادل السلبي دون أهداف على مواجهة إسبانيول وضيفه إلتشي، الجارية حالياً ضمن منافسات الدوري الإسباني لكرة القدم. وتشهد المباراة محاولات هجومية متكافئة من الجانبين لكسر حالة الجمود واقتناص أسبقية التقدم. ورغم الفرص التي أتيحت للطرفين، فإن الشباك لا تزال عذراء حتى اللحظة وسط حذر دفاعي متبادل. ويترقب المتابعون ما ستسفر عنه أحداث الشوط الثاني لحسم هوية الفائز بالنقاط الثلاث.",
     "cover_image": null
   },
   {

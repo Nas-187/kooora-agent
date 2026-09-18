@@ -91,7 +91,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-18T19:00:00Z",
     "day": "2026-09-18",
-    "content": "يتقدم فريق برينتفورد حالياً على ضيفه تشيلسي بهدف دون رد، في المواجهة التي تجمع بينهما لحساب منافسات الدوري الإنجليزي الممتاز. ونجح أصحاب الأرض في استغلال عامل الجمهور لاقتناص تقدم ثمين، في حين يكثف تشيلسي محاولاته الهجومية لإدراك هدف التعادل والعودة في النتيجة. وتستمر أطوار المباراة وسط إثارة كبيرة ورغبة متواصلة من الفريقين لتغيير واقع النتيجة قبل نهاية اللقاء.",
+    "content": "فوز Brentford على Chelsea بنتيجة 1-0 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -115,7 +115,7 @@
   },
   {
     "event_id": "2482187",
-    "title": "Monza 2 - 0 Sassuolo",
+    "title": "Monza 2 - 1 Sassuolo",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "5",
@@ -124,12 +124,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/bxearg1603170113.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
     "home_score": 2,
-    "away_score": 0,
-    "status": "In Play",
+    "away_score": 1,
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-18T18:45:00Z",
     "day": "2026-09-18",
-    "content": "فوز Monza على Sassuolo بنتيجة 2-0 ضمن الدوري الإيطالي.",
+    "content": "فوز Monza على Sassuolo بنتيجة 2-1 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {
@@ -144,7 +144,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/q0o5001599679795.png",
     "home_score": 7,
     "away_score": 0,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الألماني",
     "date": "2026-09-18T18:30:00Z",
     "day": "2026-09-18",

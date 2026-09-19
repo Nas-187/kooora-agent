@@ -148,7 +148,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-19T14:00:00Z",
     "day": "2026-09-19",
-    "content": "حقق نادي نيوكاسل يونايتد فوزاً ثميناً على ضيفه هال سيتي بنتيجة (2-1)، في المباراة التي جمعتهما ضمن منافسات الدوري الإنجليزي الممتاز. وشهد اللقاء إثارة كبيرة نجح خلالها أصحاب الأرض في فرض سيطرتهم وحسم النقاط الثلاث لصالحهم. ورغم محاولات هال سيتي للعودة في النتيجة وتعديل الكفة خلال شوط المباراة الثاني، إلا أن دفاع نيوكاسل حافظ على تقدمه حتى أطلق الحكم صافرة النهاية. وبهذا الفوز، يضيف نيوكاسل يونايتد ثلاث نقاط مهمة إلى رصيده في مشوار البطولة، بينما تعثر هال سيتي خارج ملعبه بخسارة جديدة.",
+    "content": "فوز Newcastle United على Hull City بنتيجة 2-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -229,7 +229,7 @@
   },
   {
     "event_id": "2506234",
-    "title": "Celta Vigo 2 - 0 Racing de Santander",
+    "title": "Celta Vigo 4 - 0 Racing de Santander",
     "league_id": 4335,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
     "round": "7",
@@ -237,13 +237,13 @@
     "away_team": "Racing de Santander",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/97kkiq1536575158.png",
-    "home_score": 2,
+    "home_score": 4,
     "away_score": 0,
     "status": "In Play",
     "league": "الدوري الإسباني",
     "date": "2026-09-19T16:30:00Z",
     "day": "2026-09-19",
-    "content": "فوز Celta Vigo على Racing de Santander بنتيجة 2-0 ضمن الدوري الإسباني.",
+    "content": "فوز Celta Vigo على Racing de Santander بنتيجة 4-0 ضمن الدوري الإسباني.",
     "cover_image": null
   },
   {

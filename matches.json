@@ -134,7 +134,7 @@
   },
   {
     "event_id": "2494040",
-    "title": "Newcastle United 2 - 0 Hull City",
+    "title": "Newcastle United 2 - 1 Hull City",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "5",
@@ -143,12 +143,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/fbqqda1601726113.png",
     "home_score": 2,
-    "away_score": 0,
-    "status": "Halftime",
+    "away_score": 1,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-19T14:00:00Z",
     "day": "2026-09-19",
-    "content": "أنهى فريق نيوكاسل يونايتد الشوط الأول متقدمًا على ضيفه هول سيتي بهدفين دون رد، في المباراة التي تجمعهما ضمن منافسات الدوري الإنجليزي الممتاز. وفرض أصحاب الأرض سيطرتهم الميدانية منذ البداية، حيث نجحوا في ترجمة أفضليتهم الهجومية إلى هدفين منحاهما أسبقية مريحة قبل الذهاب إلى استراحة منتصف المباراة. في المقابل، عانى هول سيتي من صعوبة اختراق الدفاعات وصنع الفارق، لتصبح مهمته معقدة في الشوط الثاني إذا ما أراد العودة في النتيجة.",
+    "content": "فوز Newcastle United على Hull City بنتيجة 2-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -163,7 +163,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/mdj1ey1634670785.png",
     "home_score": 1,
     "away_score": 0,
-    "status": "Halftime",
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-19T14:00:00Z",
     "day": "2026-09-19",

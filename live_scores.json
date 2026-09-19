@@ -3,13 +3,13 @@
     "event_id": "2482179",
     "home_score": 0,
     "away_score": 0,
-    "status": "Halftime"
+    "status": "In Play"
   },
   {
     "event_id": "2482182",
     "home_score": 1,
     "away_score": 0,
-    "status": "Halftime"
+    "status": "In Play"
   },
   {
     "event_id": "2508361",
@@ -25,7 +25,7 @@
   },
   {
     "event_id": "2508364",
-    "home_score": 1,
+    "home_score": 2,
     "away_score": 1,
     "status": "In Play"
   }

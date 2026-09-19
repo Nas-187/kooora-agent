@@ -148,7 +148,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-19T14:00:00Z",
     "day": "2026-09-19",
-    "content": "فوز Newcastle United على Hull City بنتيجة 2-1 ضمن الدوري الإنجليزي.",
+    "content": "حقق نادي نيوكاسل يونايتد فوزاً ثميناً على ضيفه هال سيتي بنتيجة (2-1)، في المباراة التي جمعتهما ضمن منافسات الدوري الإنجليزي الممتاز. وشهد اللقاء إثارة كبيرة نجح خلالها أصحاب الأرض في فرض سيطرتهم وحسم النقاط الثلاث لصالحهم. ورغم محاولات هال سيتي للعودة في النتيجة وتعديل الكفة خلال شوط المباراة الثاني، إلا أن دفاع نيوكاسل حافظ على تقدمه حتى أطلق الحكم صافرة النهاية. وبهذا الفوز، يضيف نيوكاسل يونايتد ثلاث نقاط مهمة إلى رصيده في مشوار البطولة، بينما تعثر هال سيتي خارج ملعبه بخسارة جديدة.",
     "cover_image": null
   },
   {
@@ -267,7 +267,7 @@
   },
   {
     "event_id": "2482181",
-    "title": "Roma 2 - 0 Inter Milan",
+    "title": "Roma 2 - 2 Inter Milan",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "5",
@@ -276,12 +276,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/jwro2s1760820674.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
     "home_score": 2,
-    "away_score": 0,
-    "status": "Halftime",
+    "away_score": 2,
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-09-19T16:00:00Z",
     "day": "2026-09-19",
-    "content": "فوز Roma على Inter Milan بنتيجة 2-0 ضمن الدوري الإيطالي.",
+    "content": "تعادل Roma وInter Milan بنتيجة 2-2 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

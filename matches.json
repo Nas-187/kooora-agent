@@ -172,7 +172,7 @@
   },
   {
     "event_id": "2494044",
-    "title": "Tottenham Hotspur ضد Aston Villa",
+    "title": "Tottenham Hotspur 0 - 0 Aston Villa",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "5",
@@ -180,13 +180,13 @@
     "away_team": "Aston Villa",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/uwzw561787679026.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-19T11:30:00Z",
     "day": "2026-09-19",
-    "content": "",
+    "content": "تسيطر حالة من التعادل السلبي (0-0) على المواجهة المقامة حالياً بين توتنهام هوتسبير وضيفه أستون فيلا، ضمن منافسات الدوري الإنجليزي الممتاز. ويتبادل الفريقان الهجمات في محاولة لكسر التكتلات الدفاعية وافتتاح التسجيل، وسط حذر تكتيكي واضح من كلا الطرفين. وشهدت الدقائق الماضية عدداً من الفرص الضائعة التي تألق الحارسان في إبعادها، لتبقى النتيجة على حالها مع استمرار مجريات اللقاء. ويسعى كلا الفريقين لاقتناص النقاط الثلاث لتعزيز موقعهما في جدول ترتيب \"البريميرليغ\".",
     "cover_image": null
   },
   {

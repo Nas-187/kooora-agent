@@ -1,5 +1,11 @@
 [
   {
+    "event_id": "2506230",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play"
+  },
+  {
     "event_id": "2482179",
     "home_score": 0,
     "away_score": 1,
@@ -15,7 +21,7 @@
     "event_id": "2508361",
     "home_score": 0,
     "away_score": 1,
-    "status": "In Play"
+    "status": "Halftime"
   },
   {
     "event_id": "2508362",
@@ -27,6 +33,6 @@
     "event_id": "2508364",
     "home_score": 2,
     "away_score": 1,
-    "status": "In Play"
+    "status": "Halftime"
   }
 ]

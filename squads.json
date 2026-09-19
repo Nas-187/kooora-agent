@@ -14465,6 +14465,22 @@
   ],
   "133719": [
     {
+      "id": "34336025",
+      "name": "Abdelhamid Aït Boudlal",
+      "age": 20,
+      "number": "48",
+      "position": "Defender",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/76uh8s1766136261.png"
+    },
+    {
+      "id": "34173374",
+      "name": "Adrien Thomasson",
+      "age": 32,
+      "number": "28",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qit97c1766006297.png"
+    },
+    {
       "id": "34174962",
       "name": "Alidu Seidu",
       "age": 26,
@@ -14489,6 +14505,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/svindz1779276269.png"
     },
     {
+      "id": "34173339",
+      "name": "Boulaye Dia",
+      "age": 29,
+      "number": "19",
+      "position": "Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h2sjet1759646431.png"
+    },
+    {
       "id": "34163490",
       "name": "Breel Embolo",
       "age": 29,
@@ -14505,44 +14529,20 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nkfugp1766137864.png"
     },
     {
-      "id": "34314215",
-      "name": "Djaoui Cissé",
-      "age": 22,
-      "number": "6",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zs7u3n1766136399.png"
-    },
-    {
-      "id": "34222435",
-      "name": "Eliezer Mayenda",
-      "age": 21,
-      "number": "",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g5icfr1756904169.png"
-    },
-    {
-      "id": "34231188",
-      "name": "Esteban Lepaul",
-      "age": 26,
-      "number": "9",
-      "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/peqob21766136131.png"
-    },
-    {
-      "id": "34175826",
-      "name": "Franck Haise",
-      "age": 55,
-      "number": "",
-      "position": "Manager",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/fojol91610377576.jpg"
-    },
-    {
-      "id": "34173542",
-      "name": "Lilian Brassier",
-      "age": 26,
-      "number": "3",
+      "id": "34177017",
+      "name": "Bryan Reynolds",
+      "age": 25,
+      "number": "22",
       "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ln63ex1766136158.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ehalxm1767097744.png"
+    },
+    {
+      "id": "34194268",
+      "name": "Charlie Cresswell",
+      "age": 24,
+      "number": "4",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qrv2dy1765966992.png"
     }
   ],
   "134355": [
@@ -17725,6 +17725,14 @@
   ],
   "133704": [
     {
+      "id": "34202061",
+      "name": "Axel Camblan",
+      "age": 23,
+      "number": "7",
+      "position": "Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0iw3ic1674732630.png"
+    },
+    {
       "id": "34192550",
       "name": "Bradley Locko",
       "age": 24,
@@ -17741,6 +17749,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1kboi41765982561.png"
     },
     {
+      "id": "34303864",
+      "name": "Djylian N'Guessan",
+      "age": 18,
+      "number": "63",
+      "position": "Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yczqu01748684871.png"
+    },
+    {
       "id": "34218150",
       "name": "Egil Selvik",
       "age": 29,
@@ -17749,20 +17765,28 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ozeg7h1761216738.png"
     },
     {
-      "id": "34173302",
-      "name": "Eric Junior Dina Ebimbe",
-      "age": 25,
-      "number": "7",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wdzq561765982672.png"
-    },
-    {
       "id": "34217135",
       "name": "Eric Roy",
       "age": 59,
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/euz8ef1680975172.jpg"
+    },
+    {
+      "id": "34152829",
+      "name": "Gautier Lloris",
+      "age": 31,
+      "number": "4",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pv9q1i1765990546.png"
+    },
+    {
+      "id": "34240890",
+      "name": "Giovani Versini",
+      "age": 22,
+      "number": "",
+      "position": "Attacker",
+      "photo": null
     },
     {
       "id": "34419666",
@@ -17779,30 +17803,6 @@
       "number": "8",
       "position": "Midfielder",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yeam2j1765982779.png"
-    },
-    {
-      "id": "34173515",
-      "name": "Joris Chotard",
-      "age": 24,
-      "number": "13",
-      "position": "Defensive Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bi32d91765982575.png"
-    },
-    {
-      "id": "34203520",
-      "name": "Julien Cardinal",
-      "age": 29,
-      "number": "25",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eizvrk1765982529.png"
-    },
-    {
-      "id": "34231164",
-      "name": "Junior Diaz",
-      "age": 23,
-      "number": "4",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xz2th31767870777.png"
     }
   ]
 }

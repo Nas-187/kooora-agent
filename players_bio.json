@@ -9688,5 +9688,95 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/226049"
     },
     "bio": "Freddie Woodman يلعب في مركز حارس مرمى مع Liverpool وهو لاعب England يبلغ من العمر 29 عاماً."
+  },
+  "34336025": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": "Marrakesh, Morocco",
+      "birth_date": "2006-04-16",
+      "age": 20,
+      "height": "190 cm",
+      "weight": "78 kg",
+      "position": "Defender",
+      "team": "Rennes",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "عبد الحميد أيت بودلال (Abdelhamid Aït Boudlal) هو لاعب يحمل الجنسية المغربية، ولد في مدينة مراكش بالمغرب بتاريخ 16 أبريل 2006 ويبلغ من العمر 20 عاماً. يلعب في مركز المدافع مع فريق رين (Rennes)، ويبلغ طوله 190 سم ووزنه 78 كغم."
+  },
+  "34177017": {
+    "facts": {
+      "nationality": "United States",
+      "birth_place": "Fort Worth, Texas, United States",
+      "birth_date": "2001-06-28",
+      "age": 25,
+      "height": "6' 1\"",
+      "weight": "170 lbs",
+      "position": "Defender",
+      "team": "Rennes",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/475208"
+    },
+    "bio": "Bryan Reynolds يلعب في مركز مدافع مع Rennes وهو لاعب United States يبلغ من العمر 25 عاماً."
+  },
+  "34202061": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Brest, France",
+      "birth_date": "2003-04-23",
+      "age": 23,
+      "height": "1.68 m (5 ft 6 in)",
+      "weight": "",
+      "position": "Forward",
+      "team": "Brest",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Axel Camblan يلعب في مركز Forward مع Brest وهو لاعب France يبلغ من العمر 23 عاماً."
+  },
+  "34303864": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Saint-Nazaire, France",
+      "birth_date": "2008-08-30",
+      "age": 18,
+      "height": "None",
+      "weight": "",
+      "position": "Forward",
+      "team": "Brest",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Djylian N'Guessan يلعب في مركز Forward مع Brest وهو لاعب France يبلغ من العمر 18 عاماً."
+  },
+  "34152829": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Nice, France",
+      "birth_date": "1995-07-18",
+      "age": 31,
+      "height": "1.85 m (6 ft 1 in)",
+      "weight": "192 lbs",
+      "position": "Midfielder",
+      "team": "Brest",
+      "joined": "2013-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/249636"
+    },
+    "bio": "Gautier Lloris يلعب في مركز وسط مع Brest وهو لاعب France يبلغ من العمر 31 عاماً."
+  },
+  "34240890": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": ", France",
+      "birth_date": "2004-03-18",
+      "age": 22,
+      "height": "",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Brest",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Giovani Versini يلعب في مركز مهاجم مع Brest وهو لاعب France يبلغ من العمر 22 عاماً."
   }
 }

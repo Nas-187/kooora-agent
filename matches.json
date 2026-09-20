@@ -533,7 +533,7 @@
   },
   {
     "event_id": "2482183",
-    "title": "Fiorentina 0 - 1 Napoli",
+    "title": "Fiorentina 1 - 1 Napoli",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "5",
@@ -541,13 +541,13 @@
     "away_team": "Napoli",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 1,
     "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-20T10:30:00Z",
     "day": "2026-09-20",
-    "content": "فوز Napoli على Fiorentina بنتيجة 0-1 ضمن الدوري الإيطالي.",
+    "content": "تعادل Fiorentina وNapoli بنتيجة 1-1 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

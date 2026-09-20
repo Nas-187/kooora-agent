@@ -628,7 +628,7 @@
   },
   {
     "event_id": "2489503",
-    "title": "Auxerre 0 - 1 Brest",
+    "title": "Auxerre 1 - 1 Brest",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "5",
@@ -636,13 +636,13 @@
     "away_team": "Brest",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/z69be41598797026.png",
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 1,
     "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-09-20T13:00:00Z",
     "day": "2026-09-20",
-    "content": "فوز Brest على Auxerre بنتيجة 0-1 ضمن الدوري الفرنسي.",
+    "content": "تعادل Auxerre وBrest بنتيجة 1-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

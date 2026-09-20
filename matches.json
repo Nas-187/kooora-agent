@@ -381,7 +381,7 @@
   },
   {
     "event_id": "2494041",
-    "title": "Bournemouth ضد Liverpool",
+    "title": "Bournemouth 0 - 0 Liverpool",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "5",
@@ -389,13 +389,13 @@
     "away_team": "Liverpool",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-20T13:00:00Z",
     "day": "2026-09-20",
-    "content": "",
+    "content": "تعادل Bournemouth وLiverpool بنتيجة 0-0 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -419,7 +419,7 @@
   },
   {
     "event_id": "2494045",
-    "title": "Manchester City ضد Sunderland",
+    "title": "Manchester City 1 - 1 Sunderland",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "5",
@@ -427,13 +427,13 @@
     "away_team": "Sunderland",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/tprtus1448813498.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 1,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-09-20T13:00:00Z",
     "day": "2026-09-20",
-    "content": "",
+    "content": "تعادل Manchester City وSunderland بنتيجة 1-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -547,7 +547,7 @@
     "league": "الدوري الإيطالي",
     "date": "2026-09-20T10:30:00Z",
     "day": "2026-09-20",
-    "content": "حسم التعادل الإيجابي بهدف لمثله مواجهة فيورنتينا وضيفه نابولي، التي أقيمت بينهما لحساب منافسات الدوري الإيطالي لكرة القدم. وشهد اللقاء إثارة كبيرة وتبادلاً للسيطرة بين الفريقين، حيث سعى كل منهما لانتزاع نقاط المباراة الثلاث وتعزيز موقعه في جدول الترتيب. ورغم المحاولات الهجومية المكثفة من الجانبين في الدقائق الأخيرة، نجح الدفاعان في إحباط كافة الفرص حتى أطلق الحكم صافرة النهاية. وبهذه النتيجة، تقاسم الفريقان نقاط المواجهة ليضيف كل منهما نقطة واحدة إلى رصيده في مشوار \"الكالتشيو\".",
+    "content": "تعادل Fiorentina وNapoli بنتيجة 1-1 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

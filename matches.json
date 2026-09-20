@@ -395,7 +395,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-20T13:00:00Z",
     "day": "2026-09-20",
-    "content": "حقق نادي ليفربول فوزًا ثمينًا خارج أرضه على حساب مضيفه بورنموث بنتيجة (1-0)، في المباراة التي جمعتهما ضمن منافسات الدوري الإنجليزي الممتاز. وشهد اللقاء تنافسًا محتدمًا بين الفريقين، قبل أن ينجح \"الريدز\" في حسم المواجهة لصالحهم واقتناص نقاط المباراة الثلاث. وحاول أصحاب الأرض إدراك التعادل خلال الشوط الثاني عبر عدة محاولات هجومية، إلا أن دفاع ليفربول صمد بنجاح حتى أطلق الحكم صفارة النهاية. وبهذا الفوز، واصل ليفربول تعزيز موقعه في جدول الترتيب، بينما تجرّع بورنموث مرارة الخسارة على ملعبه وبين جماهيره.",
+    "content": "فوز Liverpool على Bournemouth بنتيجة 0-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {
@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2489506",
-    "title": "Marseille 0 - 0 Paris Saint-Germain",
+    "title": "Marseille 1 - 2 Paris Saint-Germain",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "5",
@@ -655,13 +655,13 @@
     "away_team": "Paris Saint-Germain",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "Halftime",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-09-20T18:45:00Z",
     "day": "2026-09-20",
-    "content": "تعادل Marseille وParis Saint-Germain بنتيجة 0-0 ضمن الدوري الفرنسي.",
+    "content": "فوز Paris Saint-Germain على Marseille بنتيجة 1-2 ضمن الدوري الفرنسي.",
     "cover_image": null
   }
 ]

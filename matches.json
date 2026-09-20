@@ -533,7 +533,7 @@
   },
   {
     "event_id": "2482183",
-    "title": "Fiorentina ضد Napoli",
+    "title": "Fiorentina 0 - 1 Napoli",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "5",
@@ -541,13 +541,13 @@
     "away_team": "Napoli",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 1,
+    "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-20T10:30:00Z",
     "day": "2026-09-20",
-    "content": "",
+    "content": "يتقدم فريق نابولي على مضيفه فيورنتينا بهدف دون رد، في المباراة الجارية بينهما حالياً لحساب منافسات الدوري الإيطالي لكرة القدم. ونجح الضيوف في اقتناص هدف التقدم الثمين، ليضعوا أصحاب الأرض تحت ضغط متزايد للبحث عن حلول هجومية لتدارك الموقف. وتستمر المواجهة وسط محاولات مكثفة من فيورنتينا للعودة في النتيجة، مقابل سعي نابولي للحفاظ على تقدمه وحسم نقاط المباراة الثلاث.",
     "cover_image": null
   },
   {

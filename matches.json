@@ -395,7 +395,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-20T13:00:00Z",
     "day": "2026-09-20",
-    "content": "فوز Liverpool على Bournemouth بنتيجة 0-1 ضمن الدوري الإنجليزي.",
+    "content": "حسم فريق ليفربول مواجهته أمام مضيفه بورنموث بفوز ثمين بهدف دون رد، في المباراة التي جمعتهما لحساب منافسات الدوري الإنجليزي الممتاز. وشهد اللقاء ندية كبيرة بين الطرفين، قبل أن ينجح \"الريدز\" في استغلال إحدى الفرص لتسجيل هدف المباراة الوحيد والحفاظ عليه حتى صافرة النهاية. وبهذا الفوز، انتزع ليفربول ثلاث نقاط غالية عزز بها موقعه في جدول الترتيب، في حين تعرض بورنموث لخسارة جديدة على أرضه وبين جماهيره.",
     "cover_image": null
   },
   {
@@ -414,7 +414,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-09-20T15:30:00Z",
     "day": "2026-09-20",
-    "content": "تعادل Fulham وManchester United بنتيجة 1-1 ضمن الدوري الإنجليزي.",
+    "content": "فرض فولهام التعادل الإيجابي بهدف لمثله على ضيفه مانشستر يونايتد، في اللقاء الذي جمعهما لحساب منافسات الدوري الإنجليزي الممتاز. وشهدت المباراة صراعاً محتدماً وفرصاً متكافئة بين الطرفين، حيث حاول مانشستر يونايتد خطف نقاط المباراة الثلاث، بينما قدم صاحب الأرض أداءً صلباً مكنه من الخروج بنتيجة إيجابية. وبهذا التعادل، تقاسم الفريقان نقاط المواجهة ليضيف كل منهما نقطة جديدة إلى رصيده في جدول ترتيب المسابقة.",
     "cover_image": null
   },
   {
@@ -495,7 +495,7 @@
   },
   {
     "event_id": "2482178",
-    "title": "AC Milan ضد Lecce",
+    "title": "AC Milan 1 - 0 Lecce",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "5",
@@ -503,13 +503,13 @@
     "away_team": "Lecce",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/j4vznr1567365249.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-09-20T18:45:00Z",
     "day": "2026-09-20",
-    "content": "",
+    "content": "فوز AC Milan على Lecce بنتيجة 1-0 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {
@@ -590,7 +590,7 @@
   },
   {
     "event_id": "2508368",
-    "title": "Paderborn 1 - 0 Hoffenheim",
+    "title": "Paderborn 3 - 1 Hoffenheim",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
     "round": "4",
@@ -598,13 +598,13 @@
     "away_team": "Hoffenheim",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/kddvva1566048058.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/9hwvb21621593919.png",
-    "home_score": 1,
-    "away_score": 0,
+    "home_score": 3,
+    "away_score": 1,
     "status": "In Play",
     "league": "الدوري الألماني",
     "date": "2026-09-20T17:30:00Z",
     "day": "2026-09-20",
-    "content": "فوز Paderborn على Hoffenheim بنتيجة 1-0 ضمن الدوري الألماني.",
+    "content": "فوز Paderborn على Hoffenheim بنتيجة 3-1 ضمن الدوري الألماني.",
     "cover_image": null
   },
   {

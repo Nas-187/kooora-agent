@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2489506",
-    "title": "Marseille ضد Paris Saint-Germain",
+    "title": "Marseille 0 - 0 Paris Saint-Germain",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "5",
@@ -655,13 +655,13 @@
     "away_team": "Paris Saint-Germain",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "Halftime",
     "league": "الدوري الفرنسي",
     "date": "2026-09-20T18:45:00Z",
     "day": "2026-09-20",
-    "content": "",
+    "content": "تعادل Marseille وParis Saint-Germain بنتيجة 0-0 ضمن الدوري الفرنسي.",
     "cover_image": null
   }
 ]

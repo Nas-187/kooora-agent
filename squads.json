@@ -8181,7 +8181,7 @@
     {
       "id": "34434509",
       "name": "Alisson de Almeida Santos",
-      "age": 23,
+      "age": 24,
       "number": null,
       "position": "Attacker",
       "photo": null
@@ -8227,20 +8227,20 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/axk63s1764089469.png"
     },
     {
+      "id": "34236490",
+      "name": "Costantino Favasuli",
+      "age": 22,
+      "number": "27",
+      "position": "Midfielder",
+      "photo": null
+    },
+    {
       "id": "34167119",
       "name": "David Neres",
       "age": 29,
       "number": "7",
       "position": "Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8i5j8e1762288449.png"
-    },
-    {
-      "id": "34169492",
-      "name": "Eljif Elmas",
-      "age": 27,
-      "number": "20",
-      "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/38hezl1762288414.png"
     }
   ],
   "133632": [
@@ -13799,6 +13799,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gnd3cd1764279909.png"
     },
     {
+      "id": "34160535",
+      "name": "Álvaro Morata",
+      "age": 33,
+      "number": "21",
+      "position": "Centre-Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5cci4b1764278358.png"
+    },
+    {
       "id": "34221683",
       "name": "Assane Diao",
       "age": 21,
@@ -13829,14 +13837,6 @@
       "number": "12",
       "position": "Goalkeeper",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/14mxq31764278341.png"
-    },
-    {
-      "id": "34177880",
-      "name": "Ignace Van der Brempt",
-      "age": 24,
-      "number": "77",
-      "position": "Right-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/se3w5j1764278124.png"
     },
     {
       "id": "34236428",
@@ -17111,6 +17111,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rgwd1q1763242502.png"
     },
     {
+      "id": "34146678",
+      "name": "Ellyes Skhiri",
+      "age": 31,
+      "number": "15",
+      "position": "Defensive Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zhs8151762287564.png"
+    },
+    {
       "id": "34192464",
       "name": "Eric Martel",
       "age": 24,
@@ -17143,20 +17151,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gvciqz1765920565.png"
     },
     {
-      "id": "34193289",
-      "name": "Ísak Bergmann Jóhannesson",
-      "age": 23,
-      "number": "18",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cpi2ls1763242547.png"
-    },
-    {
-      "id": "34244584",
-      "name": "Jahmai Simpson-Pusey",
-      "age": 20,
-      "number": "22",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jc77kv1773672990.png"
+      "id": "34221889",
+      "name": "Imad Rondić",
+      "age": 27,
+      "number": "29",
+      "position": "Attacker",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5swhxl1773436955.png"
     }
   ],
   "138411": [

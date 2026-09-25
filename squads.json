@@ -1263,12 +1263,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ezzn6e1766146390.png"
     },
     {
-      "id": "34222507",
-      "name": "Afonso Bastardo Moreira",
-      "age": 21,
-      "number": "17",
-      "position": "Attacker",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tosz7u1766146497.png"
+      "id": "34145444",
+      "name": "Ainsley Maitland-Niles",
+      "age": 29,
+      "number": "2",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w0q0b11788879182.png"
     },
     {
       "id": "34163947",
@@ -1295,14 +1295,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/frejk91766146269.png"
     },
     {
-      "id": "34172218",
-      "name": "Duje Ćaleta-Car",
-      "age": 30,
-      "number": "16",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/625eso1762709855.png"
-    },
-    {
       "id": "34419757",
       "name": "Enzo Honoré Molébé",
       "age": 19,
@@ -1325,6 +1317,14 @@
       "number": "25",
       "position": "Centre-Back",
       "photo": null
+    },
+    {
+      "id": "34155648",
+      "name": "Hans Hateboer",
+      "age": 32,
+      "number": "33",
+      "position": "Defender",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jsrw8a1766147138.png"
     }
   ],
   "134301": [
@@ -1369,14 +1369,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ntqrjo1771750633.png"
     },
     {
-      "id": "34200488",
-      "name": "António Silva",
-      "age": 22,
-      "number": "14",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wvpclc1788608564.png"
-    },
-    {
       "id": "34174778",
       "name": "Bafodé Diakité",
       "age": 25,
@@ -1407,6 +1399,14 @@
       "number": "7",
       "position": "Right Winger",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v819cx1788607741.png"
+    },
+    {
+      "id": "34199497",
+      "name": "Đorđe Petrović",
+      "age": 26,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/roy7ie1788291041.png"
     }
   ],
   "133678": [
@@ -2175,12 +2175,12 @@
   ],
   "134270": [
     {
-      "id": "34200396",
-      "name": "Agustín Álvarez",
-      "age": 25,
-      "number": "9",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p092741679482175.png"
+      "id": "34244625",
+      "name": "Adam Bakoune",
+      "age": 20,
+      "number": "2",
+      "position": "Defender",
+      "photo": null
     },
     {
       "id": "34161133",
@@ -2197,6 +2197,14 @@
       "number": "13",
       "position": "Goalkeeper",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cbzedl1718361455.png"
+    },
+    {
+      "id": "34346107",
+      "name": "Aljaž Strajnar",
+      "age": 19,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": null
     },
     {
       "id": "34172569",
@@ -2237,14 +2245,6 @@
       "number": "4",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lim84c1679579567.png"
-    },
-    {
-      "id": "34226796",
-      "name": "Arvid Brorsson",
-      "age": 27,
-      "number": "2",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v6epon1718821202.png"
     },
     {
       "id": "34174530",
@@ -5330,7 +5330,7 @@
       "age": 24,
       "number": "15",
       "position": "Forward",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/x7949j1789381155.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x7949j1789381155.png"
     },
     {
       "id": "34170137",
@@ -5338,7 +5338,7 @@
       "age": 25,
       "number": "7",
       "position": "Left Wing",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/132av21789381005.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/132av21789381005.png"
     },
     {
       "id": "34145711",
@@ -5346,7 +5346,7 @@
       "age": 34,
       "number": "9",
       "position": "Centre-Forward",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/vrqzzo1789381039.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vrqzzo1789381039.png"
     },
     {
       "id": "34175837",
@@ -5354,7 +5354,7 @@
       "age": 25,
       "number": "14",
       "position": "Right Winger",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/3dyj4o1789381129.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3dyj4o1789381129.png"
     },
     {
       "id": "34175627",
@@ -5362,7 +5362,7 @@
       "age": 30,
       "number": "27",
       "position": "Right-Back",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/pxxe581789381306.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pxxe581789381306.png"
     },
     {
       "id": "34437005",
@@ -5370,7 +5370,7 @@
       "age": 58,
       "number": "",
       "position": "Assistant Coach",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/xxckwv1789382027.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xxckwv1789382027.png"
     },
     {
       "id": "34172570",
@@ -5378,7 +5378,7 @@
       "age": 28,
       "number": "6",
       "position": "Defensive Midfield",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/sz148h1789380982.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sz148h1789380982.png"
     },
     {
       "id": "34236581",
@@ -5386,7 +5386,7 @@
       "age": 25,
       "number": "11",
       "position": "Centre-Forward",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/bg37a11789381075.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bg37a11789381075.png"
     },
     {
       "id": "34346281",
@@ -5394,7 +5394,7 @@
       "age": 21,
       "number": "23",
       "position": "Defender",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/6tm7pa1789381238.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6tm7pa1789381238.png"
     }
   ],
   "133653": [
@@ -13119,6 +13119,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6kky8y1764336387.png"
     },
     {
+      "id": "34219551",
+      "name": "Alen Sherri",
+      "age": 28,
+      "number": "71",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2g36le1721292730.png"
+    },
+    {
       "id": "34169422",
       "name": "Alessandro Deiola",
       "age": 31,
@@ -13133,6 +13141,22 @@
       "number": "60",
       "position": "Midfielder",
       "photo": null
+    },
+    {
+      "id": "34301170",
+      "name": "Alessandro Sugamele",
+      "age": 19,
+      "number": "-1",
+      "position": "Forward",
+      "photo": null
+    },
+    {
+      "id": "34218045",
+      "name": "Alieu Fadera",
+      "age": 24,
+      "number": "20",
+      "position": "Left Wing",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mybs2a1764106004.png"
     },
     {
       "id": "34435394",
@@ -13153,7 +13177,7 @@
     {
       "id": "34435391",
       "name": "Antoni Franke",
-      "age": 19,
+      "age": 20,
       "number": null,
       "position": "Defender",
       "photo": null
@@ -13165,30 +13189,6 @@
       "number": "31",
       "position": "Goalkeeper",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/903bc01764336486.png"
-    },
-    {
-      "id": "34220115",
-      "name": "Elia Caprile",
-      "age": 25,
-      "number": "1",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q7wom71764336142.png"
-    },
-    {
-      "id": "34164531",
-      "name": "Fabio Pisacane",
-      "age": 40,
-      "number": "",
-      "position": "Manager",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3214dp1607074127.png"
-    },
-    {
-      "id": "34172556",
-      "name": "Gabriele Zappa",
-      "age": 26,
-      "number": "28",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zpmc0g1764336529.png"
     }
   ],
   "134695": [
@@ -14425,7 +14425,7 @@
     {
       "id": "34434404",
       "name": "Aboubacar Bah",
-      "age": 20,
+      "age": 21,
       "number": null,
       "position": "Midfielder",
       "photo": null
@@ -15283,7 +15283,7 @@
     {
       "id": "34163551",
       "name": "Alisson Becker",
-      "age": 33,
+      "age": 34,
       "number": "1",
       "position": "Goalkeeper",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xj6j4o1788592263.png"
@@ -15295,6 +15295,14 @@
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5dfc3n1780603232.png"
+    },
+    {
+      "id": "34197250",
+      "name": "Bradley Barcola",
+      "age": 24,
+      "number": "",
+      "position": "Left Wing",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bvm4vi1788550565.png"
     },
     {
       "id": "34164182",
@@ -15335,14 +15343,6 @@
       "number": "7",
       "position": "Attacking Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/njg95e1788551216.png"
-    },
-    {
-      "id": "34146104",
-      "name": "Freddie Woodman",
-      "age": 29,
-      "number": "28",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yxvjpo1768228542.png"
     }
   ],
   "133668": [
@@ -15429,14 +15429,6 @@
   ],
   "137721": [
     {
-      "id": "34225759",
-      "name": "Abdulelah Al Khaibari",
-      "age": 29,
-      "number": "8",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
       "id": "34296643",
       "name": "Abdullah Abdo",
       "age": 24,
@@ -15451,6 +15443,14 @@
       "number": null,
       "position": "Defender",
       "photo": null
+    },
+    {
+      "id": "34197095",
+      "name": "Abdullah Hadi Radif",
+      "age": 23,
+      "number": "",
+      "position": "Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/iw0ed61701773219.png"
     },
     {
       "id": "34202794",
@@ -15471,18 +15471,18 @@
     {
       "id": "34241669",
       "name": "Ali Majrashi",
-      "age": 26,
+      "age": 27,
       "number": "27",
       "position": "Right-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/556p0u1771664260.png"
     },
     {
-      "id": "34252057",
-      "name": "Ayman Fallatah",
-      "age": 22,
-      "number": "95",
-      "position": "Defender",
-      "photo": null
+      "id": "34196398",
+      "name": "Artem Bondarenko",
+      "age": 26,
+      "number": "21",
+      "position": "Attacking Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oailig1719684690.png"
     },
     {
       "id": "34172525",
@@ -15493,20 +15493,20 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eoy47r1771663768.png"
     },
     {
-      "id": "34225694",
-      "name": "Eid Al Muwallad",
-      "age": 24,
-      "number": null,
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": "34200360",
-      "name": "Enzo Millot",
-      "age": 24,
+      "id": "34181118",
+      "name": "Eduard Spertsyan",
+      "age": 26,
       "number": "10",
       "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1h12c21777238191.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0aw7q41691161054.png"
+    },
+    {
+      "id": "34202795",
+      "name": "Firas Al-Buraikan",
+      "age": 26,
+      "number": "9",
+      "position": "Centre-Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/16sp4v1777237767.png"
     }
   ],
   "133822": [
@@ -16071,6 +16071,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xh4nwr1766238364.png"
     },
     {
+      "id": "34217043",
+      "name": "Edan Diop",
+      "age": 22,
+      "number": "37",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0jqkc01767799815.png"
+    },
+    {
       "id": "34146235",
       "name": "Eric Dier",
       "age": 32,
@@ -16093,14 +16101,6 @@
       "number": "20",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jqwk631767799910.png"
-    },
-    {
-      "id": "34172986",
-      "name": "Folarin Balogun",
-      "age": 25,
-      "number": "9",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ic7kq51781348516.png"
     }
   ],
   "134777": [
@@ -17047,7 +17047,7 @@
     {
       "id": "34165623",
       "name": "Christophe Pélissier",
-      "age": 60,
+      "age": 61,
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/c64nts1549714324.jpg"
@@ -17069,12 +17069,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/y87bpz1765920491.png"
     },
     {
-      "id": "34174815",
-      "name": "Donovan Léon",
-      "age": 33,
-      "number": "16",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qmtrr41765920430.png"
+      "id": "34438334",
+      "name": "Elikya Legros",
+      "age": 18,
+      "number": null,
+      "position": "Defender",
+      "photo": null
     }
   ],
   "133654": [

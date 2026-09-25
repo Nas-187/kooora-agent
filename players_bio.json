@@ -10738,5 +10738,185 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/749552"
     },
     "bio": "Alieu Fadera يلعب في مركز Left Wing مع Cagliari وهو لاعب Gambia يبلغ من العمر 24 عاماً."
+  },
+  "34253295": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "",
+      "birth_date": "2006-02-01",
+      "age": 20,
+      "height": "175cm / 5'9\"",
+      "weight": "75kg / 165lbs",
+      "position": "Central Midfield",
+      "team": "Atalanta",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Federico Cassa يلعب في مركز Central Midfield مع Atalanta وهو لاعب Italy يبلغ من العمر 20 عاماً."
+  },
+  "34162310": {
+    "facts": {
+      "nationality": "Ivory Coast",
+      "birth_place": "Ouragahio, Cote d'Ivoire",
+      "birth_date": "1996-12-19",
+      "age": 29,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "161 lbs",
+      "position": "Central Midfield",
+      "team": "Atalanta",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/294808"
+    },
+    "bio": "Franck Kessié يلعب في مركز Central Midfield مع Atalanta وهو لاعب Ivory Coast يبلغ من العمر 29 عاماً."
+  },
+  "34160535": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Madrid, Spain",
+      "birth_date": "1992-10-23",
+      "age": 33,
+      "height": "1.90 m (6 ft 3 in)",
+      "weight": "183 lbs",
+      "position": "Centre-Forward",
+      "team": "Como",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/128223"
+    },
+    "bio": "Álvaro Morata يلعب في مركز Centre-Forward مع Como وهو لاعب Spain يبلغ من العمر 33 عاماً."
+  },
+  "34234193": {
+    "facts": {
+      "nationality": "Poland",
+      "birth_place": "Koszalin, Poland",
+      "birth_date": "2007-01-01",
+      "age": 19,
+      "height": "184 cm",
+      "weight": "72 kg",
+      "position": "Midfielder",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Adrian Przyborek يلعب في مركز وسط مع Lazio وهو لاعب Poland يبلغ من العمر 19 عاماً."
+  },
+  "34170382": {
+    "facts": {
+      "nationality": "Iceland",
+      "birth_place": "Reykjavík, Iceland",
+      "birth_date": "1997-06-15",
+      "age": 29,
+      "height": "1.77 m (5 ft 10 in)",
+      "weight": "174 lbs",
+      "position": "Forward",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/305947"
+    },
+    "bio": "Albert Guðmundsson يلعب في مركز Forward مع Lazio وهو لاعب Iceland يبلغ من العمر 29 عاماً."
+  },
+  "34169451": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": "Cles, Italy",
+      "birth_date": "1999-05-19",
+      "age": 27,
+      "height": "1.88 m (6 ft 2 in)",
+      "weight": "159 lbs",
+      "position": "Forward",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/315865"
+    },
+    "bio": "Andrea Pinamonti يلعب في مركز Forward مع Lazio وهو لاعب Italy يبلغ من العمر 27 عاماً."
+  },
+  "34164951": {
+    "facts": {
+      "nationality": "The Netherlands",
+      "birth_place": "Rotterdam, Netherlands",
+      "birth_date": "1998-06-30",
+      "age": 28,
+      "height": "1.90 m (6 ft 3 in)",
+      "weight": "183 lbs",
+      "position": "Defender",
+      "team": "Lazio",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/387047"
+    },
+    "bio": "Danilho Doekhi يلعب في مركز مدافع مع Lazio وهو لاعب The Netherlands يبلغ من العمر 28 عاماً."
+  },
+  "34196398": {
+    "facts": {
+      "nationality": "Ukraine",
+      "birth_place": "Cherkasy, Ukraine",
+      "birth_date": "2000-08-21",
+      "age": 26,
+      "height": "182 cm",
+      "weight": "161 lbs",
+      "position": "Attacking Midfield",
+      "team": "Al-Ahli",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/537854"
+    },
+    "bio": "Artem Bondarenko يلعب في مركز Attacking Midfield مع Al-Ahli وهو لاعب Ukraine يبلغ من العمر 26 عاماً."
+  },
+  "34181118": {
+    "facts": {
+      "nationality": "Armenia",
+      "birth_place": "Stavropol, Russia",
+      "birth_date": "2000-06-07",
+      "age": 26,
+      "height": "172 cm",
+      "weight": "148 lbs",
+      "position": "Attacking Midfield",
+      "team": "Al-Ahli",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/515744"
+    },
+    "bio": "Eduard Spertsyan يلعب في مركز Attacking Midfield مع Al-Ahli وهو لاعب Armenia يبلغ من العمر 26 عاماً."
+  },
+  "34202795": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Riyadh, Saudi Arabia",
+      "birth_date": "2000-05-14",
+      "age": 26,
+      "height": "1.81 m (5 ft 11 in)",
+      "weight": "",
+      "position": "Centre-Forward",
+      "team": "Al-Ahli",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Firas Al-Buraikan يلعب في مركز Centre-Forward مع Al-Ahli وهو لاعب Saudi Arabia يبلغ من العمر 26 عاماً."
+  },
+  "34165400": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Cayenne, French Guiana",
+      "birth_date": "1999-12-30",
+      "age": 26,
+      "height": "1.89 m (6 ft 2 in)",
+      "weight": "192 lbs",
+      "position": "Centre-Back",
+      "team": "Lens",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/605184"
+    },
+    "bio": "Jean-Clair Todibo يلعب في مركز Centre-Back مع Lens وهو لاعب France يبلغ من العمر 26 عاماً."
+  },
+  "34219649": {
+    "facts": {
+      "nationality": "Ecuador",
+      "birth_place": "Francisco de Orellana, Ecuador",
+      "birth_date": "2002-04-25",
+      "age": 24,
+      "height": "182 cm",
+      "weight": "170 lbs",
+      "position": "Defender",
+      "team": "Lens",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/713787"
+    },
+    "bio": "Jhoanner Chávez يلعب في مركز مدافع مع Lens وهو لاعب Ecuador يبلغ من العمر 24 عاماً."
   }
 }

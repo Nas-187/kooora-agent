@@ -10213,5 +10213,170 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/324321"
     },
     "bio": "Bernard Mensah يلعب في مركز وسط مع Al-Riyadh وهو لاعب Ghana يبلغ من العمر 31 عاماً."
+  },
+  "34282387": {
+    "facts": {
+      "nationality": "Senegal",
+      "birth_place": "",
+      "birth_date": "2004-02-25",
+      "age": 22,
+      "height": "5' 10\"",
+      "weight": "152 lbs",
+      "position": "Midfielder",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "شيخ فال (Cheikh Fall) هو لاعب يحمل الجنسية السنغالية ويلعب في مركز خط الوسط مع فريق الرياض. ولد في 25 فبراير 2004 ويبلغ من العمر 22 عاماً. يبلغ طوله 5 أقدام و10 بوصات، ويصل وزنه إلى 152 رطلاً."
+  },
+  "34173733": {
+    "facts": {
+      "nationality": "Denmark",
+      "birth_place": "Herning, Denmark",
+      "birth_date": "2000-06-01",
+      "age": 26,
+      "height": "6' 0\"",
+      "weight": "172 lbs",
+      "position": "Winger",
+      "team": "Toulouse",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/464598"
+    },
+    "bio": "Casper Tengstedt يلعب في مركز Winger مع Toulouse وهو لاعب Denmark يبلغ من العمر 26 عاماً."
+  },
+  "34279437": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Berlin, Germany",
+      "birth_date": "2006-06-03",
+      "age": 20,
+      "height": "1.91 m (6 ft 3 in)",
+      "weight": "183 lbs",
+      "position": "Centre-Back",
+      "team": "Toulouse",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/897423"
+    },
+    "bio": "David Odogu يلعب في مركز Centre-Back مع Toulouse وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34433319": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Singen (Hohentwiel), Germany",
+      "birth_date": "2005-02-25",
+      "age": 21,
+      "height": "178",
+      "weight": "69",
+      "position": "Midfielder",
+      "team": "Freiburg",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Berkay Yilmaz يلعب في مركز وسط مع Freiburg وهو لاعب Germany يبلغ من العمر 21 عاماً."
+  },
+  "34223775": {
+    "facts": {
+      "nationality": "Kosovo",
+      "birth_place": ", Kosovo",
+      "birth_date": "2000-08-31",
+      "age": 26,
+      "height": "187 cm",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Venezia",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Albion Rrahmani يلعب في مركز مهاجم مع Venezia وهو لاعب Kosovo يبلغ من العمر 26 عاماً."
+  },
+  "34174733": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "Paris, France",
+      "birth_date": "2001-12-11",
+      "age": 24,
+      "height": "190 cm",
+      "weight": "192 lbs",
+      "position": "Centre-Back",
+      "team": "Venezia",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/467563"
+    },
+    "bio": "Armel Bella-Kotchap يلعب في مركز Centre-Back مع Venezia وهو لاعب Germany يبلغ من العمر 24 عاماً."
+  },
+  "34231226": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Cholet, France",
+      "birth_date": "2003-05-09",
+      "age": 23,
+      "height": "168 cm",
+      "weight": "150 lbs",
+      "position": "Midfielder",
+      "team": "Troyes",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/944181"
+    },
+    "bio": "Hugo Picard يلعب في مركز وسط مع Troyes وهو لاعب France يبلغ من العمر 23 عاماً."
+  },
+  "34174837": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Marseillle, France",
+      "birth_date": "1999-11-08",
+      "age": 26,
+      "height": "",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Troyes",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Iron Gomis يلعب في مركز وسط مع Troyes وهو لاعب France يبلغ من العمر 26 عاماً."
+  },
+  "34231227": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Grenoble, France",
+      "birth_date": "2001-07-15",
+      "age": 25,
+      "height": "188 cm",
+      "weight": "139 lbs",
+      "position": "Attacker",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/735051"
+    },
+    "bio": "Amine El Ouazzani يلعب في مركز مهاجم مع Angers وهو لاعب France يبلغ من العمر 25 عاماً."
+  },
+  "34216216": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Sidi Kacem, Morocco",
+      "birth_date": "2000-11-05",
+      "age": 25,
+      "height": "1.75 m (5 ft 9 in)",
+      "weight": "",
+      "position": "Attacker",
+      "team": "Angers",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Amine Sbaï يلعب في مركز مهاجم مع Angers وهو لاعب France يبلغ من العمر 25 عاماً."
+  },
+  "34149020": {
+    "facts": {
+      "nationality": "Portugal",
+      "birth_place": "Givors, France",
+      "birth_date": "1990-10-01",
+      "age": 36,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "179 lbs",
+      "position": "Goalkeeper",
+      "team": "Angers",
+      "joined": "2011-09-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/60561"
+    },
+    "bio": "Anthony Lopes يلعب في مركز حارس مرمى مع Angers وهو لاعب Portugal يبلغ من العمر 36 عاماً."
   }
 }

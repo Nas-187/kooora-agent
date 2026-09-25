@@ -10918,5 +10918,140 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/713787"
     },
     "bio": "Jhoanner Chávez يلعب في مركز مدافع مع Lens وهو لاعب Ecuador يبلغ من العمر 24 عاماً."
+  },
+  "34173404": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Talence, France",
+      "birth_date": "1992-11-24",
+      "age": 33,
+      "height": "1.80 m (5 ft 9 in)",
+      "weight": "75 kg",
+      "position": "Defender",
+      "team": "Lens",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Jonathan Gradit يلعب في مركز مدافع مع Lens وهو لاعب France يبلغ من العمر 33 عاماً."
+  },
+  "34225813": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1996-02-01",
+      "age": 30,
+      "height": "177 cm",
+      "weight": "150 lbs",
+      "position": "Defender",
+      "team": "Al-Shabab",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdullah Al Hawsawi يلعب في مركز مدافع مع Al-Shabab وهو لاعب Saudi Arabia يبلغ من العمر 30 عاماً."
+  },
+  "34202805": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Dammam, Saudi Arabia",
+      "birth_date": "1995-06-01",
+      "age": 31,
+      "height": "1.74 m (5 ft 9 in)",
+      "weight": "",
+      "position": "Winger",
+      "team": "Al-Shabab",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulrahman Al-Aboud يلعب في مركز Winger مع Al-Shabab وهو لاعب Saudi Arabia يبلغ من العمر 31 عاماً."
+  },
+  "34202801": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Najran, Saudi Arabia",
+      "birth_date": "1989-11-21",
+      "age": 36,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "80 kg (176 lb)",
+      "position": "Centre-Back",
+      "team": "Al-Shabab",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Ali Al-Bulaihi يلعب في مركز Centre-Back مع Al-Shabab وهو لاعب Saudi Arabia يبلغ من العمر 36 عاماً."
+  },
+  "34217043": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Tours, France",
+      "birth_date": "2004-08-28",
+      "age": 22,
+      "height": "1.73 m (5 ft 8 in)",
+      "weight": "148 lbs",
+      "position": "Midfielder",
+      "team": "Monaco",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/745178"
+    },
+    "bio": "Edan Diop يلعب في مركز وسط مع Monaco وهو لاعب France يبلغ من العمر 22 عاماً."
+  },
+  "34162099": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Clamart, France",
+      "birth_date": "1998-09-17",
+      "age": 28,
+      "height": "1.72",
+      "weight": "150 lbs",
+      "position": "Right-Back",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/324800"
+    },
+    "bio": "Alec Georgen يلعب في مركز Right-Back مع Lorient وهو لاعب France يبلغ من العمر 28 عاماً."
+  },
+  "34220319": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Laval, France",
+      "birth_date": "2002-11-10",
+      "age": 23,
+      "height": "1.75 m (5 ft 9 in)",
+      "weight": "159 lbs",
+      "position": "Defender",
+      "team": "Lorient",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/1049151"
+    },
+    "bio": "Dembo Sylla يلعب في مركز مدافع مع Lorient وهو لاعب France يبلغ من العمر 23 عاماً."
+  },
+  "34438334": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Rouen, France",
+      "birth_date": "2008-06-06",
+      "age": 18,
+      "height": "",
+      "weight": "",
+      "position": "Defender",
+      "team": "Auxerre",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Elikya Legros يلعب في مركز مدافع مع Auxerre وهو لاعب France يبلغ من العمر 18 عاماً."
+  },
+  "34221889": {
+    "facts": {
+      "nationality": "Bosnia and Herzegovina",
+      "birth_place": "Sarajevo, Bosnia and Herzegovina",
+      "birth_date": "1999-02-16",
+      "age": 27,
+      "height": "188 cm",
+      "weight": "183 lbs",
+      "position": "Attacker",
+      "team": "Köln",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Imad Rondić يلعب في مركز مهاجم مع Köln وهو لاعب Bosnia and Herzegovina يبلغ من العمر 27 عاماً."
   }
 }

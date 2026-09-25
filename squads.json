@@ -2330,14 +2330,6 @@
     },
     {
       "id": null,
-      "name": "[[Carlos Ángel Ramón Serrano Mañolás",
-      "age": null,
-      "number": "12",
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Marko Dmitrović",
       "age": null,
       "number": "13",
@@ -2434,26 +2426,10 @@
     },
     {
       "id": null,
-      "name": "[[Marcelo Esteban Standardo Fraulo",
-      "age": null,
-      "number": "25",
-      "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Rafel Bauzà",
       "age": null,
       "number": "26",
       "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Adama Timera",
-      "age": null,
-      "number": "27",
-      "position": "Defender",
       "photo": null
     },
     {
@@ -2466,50 +2442,18 @@
     },
     {
       "id": null,
-      "name": "[[Patricio Nicolás Quentarós Medusa",
-      "age": null,
-      "number": "29",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[Cristián Sebastián Mantorrás Pulído",
-      "age": null,
-      "number": "30",
-      "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[Llorenç Serred Martínez",
-      "age": null,
-      "number": "31",
-      "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[José Ángel López Gálvez",
-      "age": null,
-      "number": "32",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "[[András Camerón Álvarez Martínez Núñez",
-      "age": null,
-      "number": "33",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Adama Timera",
       "age": null,
       "number": "27",
       "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Victor Mullerat Tomas",
+      "age": null,
+      "number": "29",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -3992,6 +3936,14 @@
       "age": null,
       "number": "93",
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "David Alaba",
+      "age": null,
+      "number": null,
+      "position": "Defender",
       "photo": null
     }
   ],
@@ -13704,14 +13656,6 @@
       "age": null,
       "number": "88",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Talal Haji",
-      "age": null,
-      "number": "90",
-      "position": "Attacker",
       "photo": null
     }
   ],

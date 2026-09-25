@@ -5735,7 +5735,7 @@
       "name": "Ademola Lookman",
       "age": null,
       "number": "11",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -5799,7 +5799,7 @@
       "name": "Giuliano Simeone",
       "age": null,
       "number": "20",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -6136,7 +6136,7 @@
     },
     {
       "id": null,
-      "name": "Pio Esposito",
+      "name": "Francesco Pio Esposito",
       "age": null,
       "number": "94",
       "position": "Attacker",

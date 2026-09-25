@@ -9823,5 +9823,95 @@
       "transfermarkt_url": null
     },
     "bio": "أليساندرو سوغاميل (Alessandro Sugamele) هو لاعب كرة قدم إيطالي الجنسية يلعب في مركز المهاجم مع فريق كالياري. ولد اللاعب في 22 فبراير 2007، ويبلغ من العمر 19 عاماً."
+  },
+  "34163487": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": "Pontoise, France",
+      "birth_date": "1997-06-18",
+      "age": 29,
+      "height": "1.79 m (5 ft 10 1⁄2 in)",
+      "weight": "148 lbs",
+      "position": "Attacking Midfield",
+      "team": "Marseille",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/372711"
+    },
+    "bio": "أمين حارث (Amine Harit) هو لاعب يحمل الجنسية المغربية، ولد في مدينة بونتواز بفرنسا بتاريخ 18 يونيو 1997 ويبلغ من العمر 29 عاماً. يلعب في مركز الوسط الهجومي مع فريق مارسيليا، ويبلغ طوله 1.79 متراً ووزنه 148 رطلاً. يتوفر ملفه الشخصي على موقع ترانسفير ماركت عبر الرابط (https://www.transfermarkt.com/-/profil/spieler/372711)."
+  },
+  "34145444": {
+    "facts": {
+      "nationality": "England",
+      "birth_place": "London, England",
+      "birth_date": "1997-08-29",
+      "age": 29,
+      "height": "5 ft 10 in (1.77 m)",
+      "weight": "157 lbs",
+      "position": "Midfielder",
+      "team": "Lyon",
+      "joined": "2014-07-01",
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/285845"
+    },
+    "bio": "Ainsley Maitland-Niles يلعب في مركز وسط مع Lyon وهو لاعب England يبلغ من العمر 29 عاماً."
+  },
+  "34222416": {
+    "facts": {
+      "nationality": "Romania",
+      "birth_place": "Petrila, Romania",
+      "birth_date": "2003-06-27",
+      "age": 23,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "152 lbs",
+      "position": "Goalkeeper",
+      "team": "Lecce",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/667640"
+    },
+    "bio": "Alexandru Borbei يلعب في مركز حارس مرمى مع Lecce وهو لاعب Romania يبلغ من العمر 23 عاماً."
+  },
+  "34304057": {
+    "facts": {
+      "nationality": "Germany",
+      "birth_place": "",
+      "birth_date": "2006-02-03",
+      "age": 20,
+      "height": "5' 10\"",
+      "weight": "183 lbs",
+      "position": "Defender",
+      "team": "Lecce",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Elijah Scott يلعب في مركز مدافع مع Lecce وهو لاعب Germany يبلغ من العمر 20 عاماً."
+  },
+  "34174159": {
+    "facts": {
+      "nationality": "Belgium",
+      "birth_place": "Roubaix, France",
+      "birth_date": "1998-03-13",
+      "age": 28,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "179 lbs",
+      "position": "Defender",
+      "team": "Le Havre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/325924"
+    },
+    "bio": "Ahmed Touba يلعب في مركز مدافع مع Le Havre وهو لاعب Belgium يبلغ من العمر 28 عاماً."
+  },
+  "34220033": {
+    "facts": {
+      "nationality": "Morocco",
+      "birth_place": "Nice, France",
+      "birth_date": "2002-01-24",
+      "age": 24,
+      "height": "1.97 m (6 ft 6 in)",
+      "weight": "172 lbs",
+      "position": "Midfielder",
+      "team": "Le Havre",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/893675"
+    },
+    "bio": "Amir Richardson يلعب في مركز وسط مع Le Havre وهو لاعب Morocco يبلغ من العمر 24 عاماً."
   }
 }

@@ -3753,12 +3753,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/8yg9d21717010629.jpg"
     },
     {
-      "id": "34194268",
-      "name": "Charlie Cresswell",
-      "age": 24,
-      "number": "4",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qrv2dy1765966992.png"
+      "id": "34173733",
+      "name": "Casper Tengstedt",
+      "age": 26,
+      "number": "17",
+      "position": "Winger",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nlsq5n1764436787.png"
     },
     {
       "id": "34300069",
@@ -3777,12 +3777,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tyvgck1765967018.png"
     },
     {
-      "id": "34147344",
-      "name": "Djibril Sidibé",
-      "age": 34,
-      "number": "19",
-      "position": "Right-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3e8r121765967510.png"
+      "id": "34279437",
+      "name": "David Odogu",
+      "age": 20,
+      "number": "27",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ld3b8q1758893781.png"
     },
     {
       "id": "34419661",
@@ -8723,6 +8723,14 @@
   ],
   "134384": [
     {
+      "id": "34218591",
+      "name": "Abiel Osorio",
+      "age": 24,
+      "number": "7",
+      "position": "Centre-Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nkqd201763477779.png"
+    },
+    {
       "id": "34258255",
       "name": "Adam Boayar",
       "age": 20,
@@ -8769,14 +8777,6 @@
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/rmat0t1762357639.jpg"
-    },
-    {
-      "id": "34178172",
-      "name": "Ezequiel Ponce",
-      "age": 29,
-      "number": "10",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lm9jn71778098434.png"
     },
     {
       "id": "34215642",
@@ -10847,6 +10847,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kiwd2t1763034081.png"
     },
     {
+      "id": "34196452",
+      "name": "Anton Kade",
+      "age": 22,
+      "number": "30",
+      "position": "Winger",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wjh7sz1763034202.png"
+    },
+    {
       "id": "34169186",
       "name": "Arne Maier",
       "age": 27,
@@ -10855,12 +10863,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c08hvw1763034341.png"
     },
     {
-      "id": "34242532",
-      "name": "Arthur Chaves",
-      "age": 25,
-      "number": "35",
+      "id": "34202538",
+      "name": "Calvin Brackelmann",
+      "age": 27,
+      "number": "4",
       "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yyonsi1773671706.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g7wgt31773411629.png"
     },
     {
       "id": "34173538",
@@ -10903,20 +10911,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/np61v61763034358.png"
     },
     {
-      "id": "34155689",
-      "name": "Jeffrey Gouweleeuw",
-      "age": 35,
-      "number": "6",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/54jbzk1763034173.png"
-    },
-    {
-      "id": "34250444",
-      "name": "Juma Bah",
-      "age": 20,
-      "number": "",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eqh8nl1766319554.png"
+      "id": "34303984",
+      "name": "Hennes Behrens",
+      "age": 21,
+      "number": "26",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w8we541773671995.png"
     }
   ],
   "134551": [
@@ -13749,14 +13749,6 @@
   ],
   "134782": [
     {
-      "id": "34164230",
-      "name": "Berat Djimsiti",
-      "age": 33,
-      "number": "19",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a1u2x81695157220.png"
-    },
-    {
       "id": "34171323",
       "name": "Charles De Ketelaere",
       "age": 25,
@@ -13781,12 +13773,36 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/aqjjx81695157153.png"
     },
     {
+      "id": "34169492",
+      "name": "Eljif Elmas",
+      "age": 27,
+      "number": "20",
+      "position": "Attacking Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/38hezl1762288414.png"
+    },
+    {
+      "id": "34253295",
+      "name": "Federico Cassa",
+      "age": 20,
+      "number": "25",
+      "position": "Central Midfield",
+      "photo": null
+    },
+    {
       "id": "34148385",
       "name": "Francesco Rossi",
       "age": 35,
       "number": "31",
       "position": "Goalkeeper",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/plx6ss1695157462.png"
+    },
+    {
+      "id": "34162310",
+      "name": "Franck Kessié",
+      "age": 29,
+      "number": "79",
+      "position": "Central Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wcmpma1771663848.png"
     },
     {
       "id": "34169528",
@@ -13811,22 +13827,6 @@
       "number": "9",
       "position": "Centre-Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xp4bqm1695157525.png"
-    },
-    {
-      "id": "34196044",
-      "name": "Giorgio Scalvini",
-      "age": 22,
-      "number": "42",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g116sb1695157494.png"
-    },
-    {
-      "id": "34252536",
-      "name": "Honest Ahanor",
-      "age": 18,
-      "number": "69",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uahuuj1764331567.png"
     }
   ],
   "134243": [
@@ -16013,6 +16013,14 @@
       "photo": null
     },
     {
+      "id": "34225813",
+      "name": "Abdullah Al Hawsawi",
+      "age": 30,
+      "number": "24",
+      "position": "Defender",
+      "photo": null
+    },
+    {
       "id": "34215767",
       "name": "Abdullah Al-Mayouf",
       "age": 39,
@@ -16027,6 +16035,14 @@
       "number": "77",
       "position": "Forward",
       "photo": null
+    },
+    {
+      "id": "34202805",
+      "name": "Abdulrahman Al-Aboud",
+      "age": 31,
+      "number": "24",
+      "position": "Winger",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rx33cj1668854600.png"
     },
     {
       "id": "34303976",
@@ -16053,36 +16069,20 @@
       "photo": null
     },
     {
+      "id": "34202801",
+      "name": "Ali Al-Bulaihi",
+      "age": 36,
+      "number": "5",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6nnm1f1750680017.png"
+    },
+    {
       "id": "34432662",
       "name": "Ali Azaizeh",
       "age": 22,
       "number": "99",
       "position": "Right Winger",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cluxfa1781097078.png"
-    },
-    {
-      "id": "34241665",
-      "name": "Ali Makki",
-      "age": 27,
-      "number": "22",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": "34303123",
-      "name": "Amjad Haraj",
-      "age": 19,
-      "number": "45",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": "34191627",
-      "name": "Carlos Júnior",
-      "age": 31,
-      "number": "17",
-      "position": "Right Winger",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/efteb31701773307.jpg"
     }
   ],
   "133823": [

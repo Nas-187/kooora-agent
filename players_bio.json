@@ -10033,5 +10033,185 @@
       "transfermarkt_url": null
     },
     "bio": "Georges-Kevin Nkoudou Mbida يلعب في مركز وسط مع Al-Diriyah وهو لاعب Cameroon يبلغ من العمر 31 عاماً."
+  },
+  "34348920": {
+    "facts": {
+      "nationality": "Brazil",
+      "birth_place": "Fortaleza, Brazil",
+      "birth_date": "2005-05-18",
+      "age": 21,
+      "height": "177 cm",
+      "weight": "70 kg",
+      "position": "Midfielder",
+      "team": "Genoa",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alexsandro Amorim de Freitas Filho يلعب في مركز وسط مع Genoa وهو لاعب Brazil يبلغ من العمر 21 عاماً."
+  },
+  "34199497": {
+    "facts": {
+      "nationality": "Serbia",
+      "birth_place": "Požarevac, Serbia",
+      "birth_date": "1999-10-08",
+      "age": 26,
+      "height": "194 cm",
+      "weight": "89 kg",
+      "position": "Goalkeeper",
+      "team": "Bournemouth",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Đorđe Petrović يلعب في مركز حارس مرمى مع Bournemouth وهو لاعب Serbia يبلغ من العمر 26 عاماً."
+  },
+  "34165617": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Abidjan, Cote d'Ivoire",
+      "birth_date": "1996-08-20",
+      "age": 30,
+      "height": "1.83 m (6 ft 0 in)",
+      "weight": "157 lbs",
+      "position": "Midfielder",
+      "team": "Al-Khaleej",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/250013"
+    },
+    "bio": "Angelo Fulgini يلعب في مركز وسط مع Al-Khaleej وهو لاعب France يبلغ من العمر 30 عاماً."
+  },
+  "34202792": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": "Ta´if, Saudi Arabia",
+      "birth_date": "1994-10-11",
+      "age": 31,
+      "height": "1.76 m (5 ft 9 in)",
+      "weight": "",
+      "position": "Central Midfield",
+      "team": "Al-Diriyah",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulellah Al-Malki يلعب في مركز Central Midfield مع Al-Diriyah وهو لاعب Saudi Arabia يبلغ من العمر 31 عاماً."
+  },
+  "34432381": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "1997-05-02",
+      "age": 29,
+      "height": "190",
+      "weight": "75",
+      "position": "Goalkeeper",
+      "team": "Al-Diriyah",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Amin Jan Al Bukhari يلعب في مركز حارس مرمى مع Al-Diriyah وهو لاعب Saudi Arabia يبلغ من العمر 29 عاماً."
+  },
+  "34172395": {
+    "facts": {
+      "nationality": "Uruguay",
+      "birth_place": "Artigas, Uruguay",
+      "birth_date": "1999-06-24",
+      "age": 27,
+      "height": "1.87 m (6 ft 2 in)",
+      "weight": "179 lbs",
+      "position": "Centre-Forward",
+      "team": "Al-Diriyah",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/546543"
+    },
+    "bio": "Darwin Núñez يلعب في مركز Centre-Forward مع Al-Diriyah وهو لاعب Uruguay يبلغ من العمر 27 عاماً."
+  },
+  "34244625": {
+    "facts": {
+      "nationality": "Italy",
+      "birth_place": ", Italy",
+      "birth_date": "2006-02-06",
+      "age": 20,
+      "height": "",
+      "weight": "",
+      "position": "Defender",
+      "team": "Monza",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Adam Bakoune يلعب في مركز مدافع مع Monza وهو لاعب Italy يبلغ من العمر 20 عاماً."
+  },
+  "34346107": {
+    "facts": {
+      "nationality": "Slovenia",
+      "birth_place": ", Slovenia",
+      "birth_date": "2007-08-16",
+      "age": 19,
+      "height": "",
+      "weight": "",
+      "position": "Goalkeeper",
+      "team": "Monza",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Aljaž Strajnar يلعب في مركز حارس مرمى مع Monza وهو لاعب Slovenia يبلغ من العمر 19 عاماً."
+  },
+  "34247674": {
+    "facts": {
+      "nationality": "Saudi Arabia",
+      "birth_place": ", Saudi Arabia",
+      "birth_date": "2003-04-18",
+      "age": 23,
+      "height": "184 cm",
+      "weight": "159 lbs",
+      "position": "Midfielder",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdulkarim Darisi يلعب في مركز وسط مع Abha وهو لاعب Saudi Arabia يبلغ من العمر 23 عاماً."
+  },
+  "34174999": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": "Le Havre, France",
+      "birth_date": "1996-08-30",
+      "age": 30,
+      "height": "1.82 m (6 ft 0 in)",
+      "weight": "72 kg",
+      "position": "Forward",
+      "team": "Abha",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/435492"
+    },
+    "bio": "Alimami Gory يلعب في مركز Forward مع Abha وهو لاعب France يبلغ من العمر 30 عاماً."
+  },
+  "34241430": {
+    "facts": {
+      "nationality": "France",
+      "birth_place": ", France",
+      "birth_date": "2000-11-06",
+      "age": 25,
+      "height": "177 cm",
+      "weight": "",
+      "position": "Midfielder",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Abdul Keita يلعب في مركز وسط مع Al-Riyadh وهو لاعب France يبلغ من العمر 25 عاماً."
+  },
+  "34177662": {
+    "facts": {
+      "nationality": "Ghana",
+      "birth_place": "Accra, Ghana",
+      "birth_date": "1994-10-17",
+      "age": 31,
+      "height": "1.81 m (5 ft 11 in)",
+      "weight": "161 lbs",
+      "position": "Midfielder",
+      "team": "Al-Riyadh",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/324321"
+    },
+    "bio": "Bernard Mensah يلعب في مركز وسط مع Al-Riyadh وهو لاعب Ghana يبلغ من العمر 31 عاماً."
   }
 }

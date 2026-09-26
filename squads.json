@@ -17644,14 +17644,6 @@
     },
     {
       "id": null,
-      "name": "Arthur Chaves",
-      "age": null,
-      "number": "35",
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Lúkas Petersson",
       "age": null,
       "number": "36",
@@ -17680,6 +17672,14 @@
       "age": null,
       "number": null,
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Arthur Chaves",
+      "age": null,
+      "number": null,
+      "position": "Defender",
       "photo": null
     },
     {

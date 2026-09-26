@@ -17757,14 +17757,6 @@
   ],
   "133704": [
     {
-      "id": "34202061",
-      "name": "Axel Camblan",
-      "age": 23,
-      "number": "7",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0iw3ic1674732630.png"
-    },
-    {
       "id": "34192550",
       "name": "Bradley Locko",
       "age": 24,
@@ -17835,6 +17827,14 @@
       "number": "8",
       "position": "Midfielder",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yeam2j1765982779.png"
+    },
+    {
+      "id": "34173515",
+      "name": "Joris Chotard",
+      "age": 25,
+      "number": "13",
+      "position": "Defensive Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bi32d91765982575.png"
     }
   ]
 }

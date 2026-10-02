@@ -10270,6 +10270,14 @@
     },
     {
       "id": null,
+      "name": "Raghed Al-Najjar",
+      "age": null,
+      "number": "36",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Youssef Al-Tahan",
       "age": null,
       "number": "40",
@@ -10362,6 +10370,14 @@
       "age": null,
       "number": "94",
       "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Abdulhadi Al-Alwan",
+      "age": null,
+      "number": null,
+      "position": "Goalkeeper",
       "photo": null
     }
   ],
@@ -13121,7 +13137,7 @@
       "name": "[[Nicolás González (footballer, born 1998)",
       "age": null,
       "number": "31",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -13134,10 +13150,10 @@
     },
     {
       "id": null,
-      "name": "Augusto Owusu",
+      "name": "[[Neto (footballer, born 1989)",
       "age": null,
-      "number": "41",
-      "position": "Midfielder",
+      "number": "33",
+      "position": "Goalkeeper",
       "photo": null
     },
     {
@@ -13146,6 +13162,14 @@
       "age": null,
       "number": "40",
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Augusto Owusu",
+      "age": null,
+      "number": "41",
+      "position": "Midfielder",
       "photo": null
     },
     {

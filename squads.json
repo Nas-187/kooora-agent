@@ -575,12 +575,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hcxx8s1763586492.png"
     },
     {
-      "id": "34216800",
-      "name": "Dženan Pejčinović",
-      "age": 21,
-      "number": "17",
+      "id": "34167607",
+      "name": "Ermedin Demirović",
+      "age": 28,
+      "number": "9",
       "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5nzpym1763669520.png"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hvuj8v1763586169.png"
     }
   ],
   "133675": [
@@ -1395,7 +1395,7 @@
     {
       "id": "34199497",
       "name": "Đorđe Petrović",
-      "age": 26,
+      "age": 27,
       "number": "1",
       "position": "Goalkeeper",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/roy7ie1788291041.png"
@@ -2749,6 +2749,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/t5jg971788528301.png"
     },
     {
+      "id": "34259437",
+      "name": "Álvaro Cortés",
+      "age": 21,
+      "number": "",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9h1wsr1787516206.png"
+    },
+    {
       "id": "34145493",
       "name": "Andreas Christensen",
       "age": 30,
@@ -2811,14 +2819,6 @@
       "number": "21",
       "position": "Central Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b8k6611726510284.png"
-    },
-    {
-      "id": "34160962",
-      "name": "Gabriel Jesus",
-      "age": 29,
-      "number": "9",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jcifyz1789725894.png"
     }
   ],
   "136013": [
@@ -5201,22 +5201,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7ldspy1766077352.png"
     },
     {
-      "id": "34175578",
-      "name": "Arnaud Bodart",
-      "age": 28,
-      "number": "16",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lyge411766077401.png"
-    },
-    {
-      "id": "34180376",
-      "name": "Ayase Ueda",
-      "age": 28,
-      "number": "18",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png"
-    },
-    {
       "id": "34245707",
       "name": "Başar Önal",
       "age": 22,
@@ -5271,6 +5255,22 @@
       "number": "8",
       "position": "Central Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5z7mrb1766077589.png"
+    },
+    {
+      "id": "34200206",
+      "name": "Gaëtan Perrin",
+      "age": 30,
+      "number": "28",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/s7vogj1674744902.png"
+    },
+    {
+      "id": "34200560",
+      "name": "Hákon Arnar Haraldsson",
+      "age": 23,
+      "number": "10",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vul2om1766077518.png"
     }
   ],
   "133610": [
@@ -10459,7 +10459,7 @@
     {
       "id": "34302434",
       "name": "Abdullah Al Ajyan",
-      "age": 21,
+      "age": 22,
       "number": "27",
       "position": "Forward",
       "photo": null
@@ -10467,7 +10467,7 @@
     {
       "id": "34297250",
       "name": "Abdulmalik Al Harbi",
-      "age": 20,
+      "age": 21,
       "number": "47",
       "position": "Forward",
       "photo": null

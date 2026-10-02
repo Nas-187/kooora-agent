@@ -101,7 +101,7 @@
       "name": "Alejandro Garnacho",
       "age": null,
       "number": "17",
-      "position": "Attacker",
+      "position": "Midfielder",
       "photo": null
     },
     {
@@ -118,14 +118,6 @@
       "age": null,
       "number": "19",
       "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Jamaldeen Jimoh-Aloba",
-      "age": null,
-      "number": "20",
-      "position": "Midfielder",
       "photo": null
     },
     {
@@ -1634,22 +1626,6 @@
       "age": null,
       "number": "20",
       "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Dawid Kownacki",
-      "age": null,
-      "number": "21",
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Julián Malatini",
-      "age": null,
-      "number": "22",
-      "position": "Defender",
       "photo": null
     },
     {
@@ -6329,39 +6305,39 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34195020",
       "name": "Beñat Turrientes",
       "age": null,
       "number": "8",
       "position": "Midfielder",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/54xib71762709335.png"
     },
     {
-      "id": null,
+      "id": "34202437",
       "name": "Orri Óskarsson",
       "age": null,
       "number": "9",
       "position": "Attacker",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1bre3j1762709225.png"
     },
     {
-      "id": null,
+      "id": "34161387",
       "name": "Mikel Oyarzabal",
       "age": null,
       "number": "10",
       "position": "Attacker",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9apeaz1762709253.png"
     },
     {
-      "id": null,
+      "id": "34146537",
       "name": "Gonçalo Guedes",
       "age": null,
       "number": "11",
       "position": "Attacker",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/75dldp1762709030.png"
     },
     {
-      "id": null,
+      "id": "34420763",
       "name": "Job Ochieng",
       "age": null,
       "number": "12",
@@ -6369,20 +6345,20 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34227634",
       "name": "Unai Marrero",
       "age": null,
       "number": "13",
       "position": "Goalkeeper",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r93iwc1762709126.png"
     },
     {
-      "id": null,
+      "id": "34170278",
       "name": "Takefusa Kubo",
       "age": null,
       "number": "14",
       "position": "Midfielder",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bb8sw01762709094.png"
     },
     {
       "id": null,
@@ -6393,12 +6369,12 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34179994",
       "name": "Jon Pacheco",
       "age": null,
       "number": "16",
       "position": "Defender",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5mdt631762353203.png"
     },
     {
       "id": null,
@@ -6409,63 +6385,63 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34163475",
       "name": "Carlos Soler",
       "age": null,
       "number": "18",
       "position": "Midfielder",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7odch01762709303.png"
     },
     {
-      "id": null,
+      "id": "34219253",
       "name": "Mamadou Sarr",
       "age": null,
       "number": "19",
       "position": "Defender",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8x52af1787690718.png"
     },
     {
-      "id": null,
+      "id": "34161388",
       "name": "Álvaro Odriozola",
       "age": null,
       "number": "20",
       "position": "Defender",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/44p8ev1762709209.png"
     },
     {
-      "id": null,
+      "id": "34170240",
       "name": "Yangel Herrera",
       "age": null,
       "number": "21",
       "position": "Midfielder",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1nsply1762709046.png"
     },
     {
-      "id": null,
+      "id": "34226122",
       "name": "Héctor Fort",
       "age": null,
       "number": "22",
       "position": "Defender",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x1ag1j1762371932.png"
     },
     {
-      "id": null,
+      "id": "34178143",
       "name": "Arsen Zakharyan",
       "age": null,
       "number": "23",
       "position": "Midfielder",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xcm9ol1762709350.png"
     },
     {
-      "id": null,
+      "id": "34176818",
       "name": "Luka Sučić",
       "age": null,
       "number": "24",
       "position": "Midfielder",
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pmp5rt1762709318.png"
     },
     {
-      "id": null,
+      "id": "34420756",
       "name": "Gorka Carrera",
       "age": null,
       "number": "27",
@@ -6473,7 +6449,7 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34420766",
       "name": "Alex Lebarbier",
       "age": null,
       "number": "28",
@@ -6481,7 +6457,7 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34420776",
       "name": "Alex Marchal",
       "age": null,
       "number": "29",
@@ -6489,7 +6465,7 @@
       "photo": null
     },
     {
-      "id": null,
+      "id": "34303429",
       "name": "Luken Beitia",
       "age": null,
       "number": "34",
@@ -6830,6 +6806,14 @@
     }
   ],
   "133625": [
+    {
+      "id": null,
+      "name": "Oliver Dovin",
+      "age": null,
+      "number": "1",
+      "position": "Goalkeeper",
+      "photo": null
+    },
     {
       "id": null,
       "name": "Ethan Pinnock",
@@ -16349,6 +16333,14 @@
       "name": "[[Mark Gillespie (footballer)",
       "age": null,
       "number": "29",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Aidan Harris",
+      "age": null,
+      "number": "31",
       "position": "Goalkeeper",
       "photo": null
     },

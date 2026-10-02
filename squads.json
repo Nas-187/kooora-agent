@@ -3590,7 +3590,7 @@
     },
     {
       "id": null,
-      "name": "Sulayman Jallow",
+      "name": "[[Sulayman Jallow (footballer, born 2007)",
       "age": null,
       "number": "71",
       "position": "Attacker",
@@ -3804,6 +3804,14 @@
     },
     {
       "id": null,
+      "name": "David Alaba",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Oier Zarraga",
       "age": null,
       "number": "6",
@@ -3839,7 +3847,7 @@
       "name": "Nicolò Zaniolo",
       "age": null,
       "number": "10",
-      "position": "Midfielder",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -4008,14 +4016,6 @@
       "age": null,
       "number": "93",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "David Alaba",
-      "age": null,
-      "number": null,
-      "position": "Defender",
       "photo": null
     }
   ],
@@ -12670,14 +12670,6 @@
       "age": null,
       "number": "60",
       "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Vinícius Júnior",
-      "age": null,
-      "number": null,
-      "position": "Attacker",
       "photo": null
     },
     {

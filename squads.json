@@ -8325,6 +8325,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xj7xt81788796411.png"
     },
     {
+      "id": "34173113",
+      "name": "Borna Sosa",
+      "age": 28,
+      "number": "",
+      "position": "Left-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4lylop1766828487.png"
+    },
+    {
       "id": "34199716",
       "name": "Chadi Riad",
       "age": 23,
@@ -8357,20 +8365,12 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fzunq81788796788.png"
     },
     {
-      "id": "34220284",
-      "name": "Darío Osorio",
-      "age": 22,
-      "number": "11",
-      "position": "Right Winger",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uai6fh1788797221.png"
-    },
-    {
-      "id": "34160940",
-      "name": "Dean Henderson",
-      "age": 29,
-      "number": "1",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5g2so61788796455.png"
+      "id": "34175627",
+      "name": "Daniel Muñoz",
+      "age": 30,
+      "number": "27",
+      "position": "Right-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pxxe581789381306.png"
     }
   ],
   "133735": [
@@ -9161,7 +9161,7 @@
     {
       "id": "34173340",
       "name": "El Bilal Toure",
-      "age": 24,
+      "age": 25,
       "number": "19",
       "position": "Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yd9uz31769170246.png"
@@ -9395,14 +9395,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ef1yx51758815098.png"
     },
     {
-      "id": "34175702",
-      "name": "Arthur Theate",
-      "age": 26,
-      "number": "3",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tr7ftn1762287457.png"
-    },
-    {
       "id": "34169420",
       "name": "Charalambos Lykogiannis",
       "age": 32,
@@ -9435,14 +9427,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fwmcl01758896784.png"
     },
     {
-      "id": "34434494",
-      "name": "Jay Enem",
-      "age": 23,
-      "number": null,
-      "position": "Attacker",
-      "photo": null
-    },
-    {
       "id": "34216573",
       "name": "Jens Odgaard",
       "age": 27,
@@ -9465,6 +9449,22 @@
       "number": "11",
       "position": "Left Wing",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4m6nhs1758897233.png"
+    },
+    {
+      "id": "34300257",
+      "name": "Jordi Jaku",
+      "age": 20,
+      "number": "38",
+      "position": "Central Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gc0glu1758897684.png"
+    },
+    {
+      "id": "34169295",
+      "name": "Juan Miranda",
+      "age": 26,
+      "number": "33",
+      "position": "Left-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/myhl881731100920.png"
     }
   ],
   "133600": [
@@ -9525,14 +9525,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/60z3hv1788881726.png"
     },
     {
-      "id": "34192203",
-      "name": "David Affengruber",
-      "age": 25,
-      "number": "22",
-      "position": "Centre-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5p7x1f1788880410.png"
-    },
-    {
       "id": "34173038",
       "name": "Emile Smith-Rowe",
       "age": 26,
@@ -9547,6 +9539,14 @@
       "number": "7",
       "position": "Centre-Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pctdwi1788881400.png"
+    },
+    {
+      "id": "34145745",
+      "name": "Harrison Reed",
+      "age": 31,
+      "number": "6",
+      "position": "Central Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xyd7691788881770.png"
     }
   ],
   "133816": [

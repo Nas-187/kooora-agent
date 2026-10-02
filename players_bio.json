@@ -11233,5 +11233,65 @@
       "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/280730"
     },
     "bio": "Álvaro Odriozola يلعب في مركز Right-Back مع Real Sociedad وهو لاعب Spain يبلغ من العمر 30 عاماً."
+  },
+  "34170240": {
+    "facts": {
+      "nationality": "Venezuela",
+      "birth_place": "La Guaira, Vargas, Venezuela",
+      "birth_date": "1998-01-07",
+      "age": 28,
+      "height": "1.84 m (6 ft 0 in)",
+      "weight": "78 kg (172 lb)",
+      "position": "Central Midfield",
+      "team": "Real Sociedad",
+      "joined": null,
+      "transfermarkt_url": "https://www.transfermarkt.com/-/profil/spieler/378293"
+    },
+    "bio": "يانغل هيريرا (Yangel Herrera) هو لاعب كرة قدم فنزويلي الجنسية من مواليد لاغوايرا بولاية فارغاس في فنزويلا بتاريخ 7 يناير 1998، ويبلغ من العمر 28 عاماً. يلعب في مركز خط الوسط المركزي مع فريق ريال سوسيداد، ويصل طوله إلى 1.84 متراً ووزنه إلى 78 كيلوغراماً. ويمكن الاطلاع على ملفه الشخصي عبر موقع ترانسفير ماركت من خلال الرابط (https://www.transfermarkt.com/-/profil/spieler/378293)."
+  },
+  "34420776": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "Ansoáin, Spain",
+      "birth_date": "2007-09-17",
+      "age": 19,
+      "height": "1.80 m (5 ft 11 in)",
+      "weight": "70 kg (154 lb)",
+      "position": "Left Wing",
+      "team": "Real Sociedad B",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Alex Marchal يلعب في مركز Left Wing مع Real Sociedad B وهو لاعب Spain يبلغ من العمر 19 عاماً."
+  },
+  "34303429": {
+    "facts": {
+      "nationality": "Spain",
+      "birth_place": "",
+      "birth_date": "2004-06-30",
+      "age": 22,
+      "height": "6' 3\"",
+      "weight": "170 lbs",
+      "position": "Defender",
+      "team": "_Retired-Soccer",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Luken Beitia يلعب في مركز مدافع مع _Retired-Soccer وهو لاعب Spain يبلغ من العمر 22 عاماً."
+  },
+  "34300257": {
+    "facts": {
+      "nationality": "Albania",
+      "birth_place": "Rrëshen, Albania",
+      "birth_date": "2006-03-27",
+      "age": 20,
+      "height": "179 cm",
+      "weight": "",
+      "position": "Central Midfield",
+      "team": "Bologna",
+      "joined": null,
+      "transfermarkt_url": null
+    },
+    "bio": "Jordi Jaku يلعب في مركز Central Midfield مع Bologna وهو لاعب Albania يبلغ من العمر 20 عاماً."
   }
 }

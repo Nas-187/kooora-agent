@@ -2181,6 +2181,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/iww84s1765990563.png"
     },
     {
+      "id": "34175578",
+      "name": "Arnaud Bodart",
+      "age": 28,
+      "number": "16",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lyge411766077401.png"
+    },
+    {
       "id": "34184967",
       "name": "Ayumu Seko",
       "age": 26,
@@ -2203,14 +2211,6 @@
       "number": "",
       "position": "Manager",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/917372.png"
-    },
-    {
-      "id": "34169134",
-      "name": "Djibril Sow",
-      "age": 29,
-      "number": "97",
-      "position": "Central Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b5k7ty1762860513.png"
     }
   ],
   "134270": [
@@ -17159,14 +17159,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lob0kr1763242417.png"
     },
     {
-      "id": "34173113",
-      "name": "Borna Sosa",
-      "age": 28,
-      "number": "",
-      "position": "Left-Back",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4lylop1766828487.png"
-    },
-    {
       "id": "34435126",
       "name": "Cenny Neumann",
       "age": 19,
@@ -17229,6 +17221,14 @@
       "number": "29",
       "position": "Attacker",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5swhxl1773436955.png"
+    },
+    {
+      "id": "34193289",
+      "name": "Ísak Bergmann Jóhannesson",
+      "age": 23,
+      "number": "18",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cpi2ls1763242547.png"
     }
   ],
   "138411": [

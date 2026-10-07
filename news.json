@@ -15,6 +15,18 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Kholood يواجه Al-Qadsiah ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Hilal يواجه Al-Ittihad ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Ettifaq يواجه Al-Khaleej ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Hazem يواجه Neom ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -49,6 +61,18 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Lens يواجه Lyon ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Manchester United يواجه Tottenham Hotspur ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Arsenal يواجه Leeds United ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Chelsea يواجه Bournemouth ضمن الدوري الإنجليزي"
     }
   ]
 }

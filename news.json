@@ -15,18 +15,6 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Kholood يواجه Al-Qadsiah ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Hilal يواجه Al-Ittihad ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Ettifaq يواجه Al-Khaleej ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Hazem يواجه Neom ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -61,66 +49,6 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Lens يواجه Lyon ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Manchester United يواجه Tottenham Hotspur ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Arsenal يواجه Leeds United ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Chelsea يواجه Bournemouth ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Barcelona يواجه Getafe ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Real Madrid يواجه Villarreal ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Deportivo Alavés يواجه Atlético Madrid ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Napoli يواجه Frosinone ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Genoa يواجه Fiorentina ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Inter Milan يواجه Parma ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Mainz يواجه Bayer Leverkusen ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Hoffenheim يواجه Hamburg ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Augsburg يواجه Bayern Munich ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Lille يواجه Le Havre ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Paris Saint-Germain يواجه Le Mans ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Monaco يواجه Toulouse ضمن الدوري الفرنسي"
     }
   ]
 }

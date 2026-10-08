@@ -27,6 +27,18 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Hazem يواجه Neom ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Shabab يواجه Al-Taawoun ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Fayha يواجه Al-Riyadh ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Abha يواجه Al-Faisaly ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -121,6 +133,18 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Monaco يواجه Toulouse ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Liverpool يواجه Manchester City ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Crystal Palace يواجه Nottingham Forest ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Hull City يواجه Everton ضمن الدوري الإنجليزي"
     }
   ]
 }

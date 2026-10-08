@@ -27,6 +27,18 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Hazem يواجه Neom ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Shabab يواجه Al-Taawoun ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Fayha يواجه Al-Riyadh ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Abha يواجه Al-Faisaly ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -121,6 +133,62 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Monaco يواجه Toulouse ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Liverpool يواجه Manchester City ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Crystal Palace يواجه Nottingham Forest ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Hull City يواجه Everton ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Real Betis يواجه Osasuna ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Real Sociedad يواجه Deportivo de A Coruña ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Elche يواجه Celta Vigo ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Lazio يواجه Monza ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Sassuolo يواجه AC Milan ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Cagliari يواجه Juventus ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Freiburg يواجه Schalke 04 ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Köln يواجه Borussia Mönchengladbach ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Nice يواجه Strasbourg ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Rennes يواجه Auxerre ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Troyes يواجه Marseille ضمن الدوري الفرنسي"
     }
   ]
 }

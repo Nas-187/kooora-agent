@@ -1,7 +1,7 @@
 [
   {
     "event_id": "2573364",
-    "title": "Al-Fateh 0 - 0 Al-Ahli",
+    "title": "Al-Fateh 0 - 3 Al-Ahli",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "8",
@@ -10,12 +10,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/a5cjf41662659789.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/1bbtgb1755192301.png",
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "status": "In Play",
     "league": "دوري روشن السعودي",
     "date": "2026-10-09T14:55:00Z",
     "day": "2026-10-09",
-    "content": "يخيم التعادل السلبي على مواجهة فريق الفتح وضيفه الأهلي، المقامة حالياً ضمن منافسات دوري روشن السعودي للمحترفين. وتشهد المباراة محاولات هجومية متكافئة من الجانبين لكسر جمود النتيجة واقتناص نقاط اللقاء الثلاث. ويسعى الأهلي لتعزيز موقعه في جدول الترتيب، بينما يطمح الفتح لاستغلال عاملي الأرض والجمهور لتحقيق الفوز. وما زالت المواجهة جارية مع تكثيف الفريقين لضغطهم الهجومي بحثاً عن هدف التقدم قبل صافرة النهاية.",
+    "content": "فوز Al-Ahli على Al-Fateh بنتيجة 0-3 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -39,7 +39,7 @@
   },
   {
     "event_id": "2573372",
-    "title": "Al-Kholood 0 - 4 Al-Qadsiah",
+    "title": "Al-Kholood 0 - 5 Al-Qadsiah",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "8",
@@ -48,12 +48,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vv44v01755192851.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ok63wb1719134839.png",
     "home_score": 0,
-    "away_score": 4,
-    "status": "In Play",
+    "away_score": 5,
+    "status": "Match Finished",
     "league": "دوري روشن السعودي",
     "date": "2026-10-09T13:50:00Z",
     "day": "2026-10-09",
-    "content": "فوز Al-Qadsiah على Al-Kholood بنتيجة 0-4 ضمن دوري روشن السعودي.",
+    "content": "فوز Al-Qadsiah على Al-Kholood بنتيجة 0-5 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {

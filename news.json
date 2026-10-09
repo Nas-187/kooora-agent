@@ -189,6 +189,22 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Troyes يواجه Marseille ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Coventry City يواجه Newcastle United ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Levante يواجه Sevilla ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Atalanta يواجه Venezia ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Torino يواجه Udinese ضمن الدوري الإيطالي"
     }
   ]
 }

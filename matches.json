@@ -777,5 +777,24 @@
     "day": "2026-10-11",
     "content": "",
     "cover_image": null
+  },
+  {
+    "event_id": "2494059",
+    "title": "Coventry City ضد Newcastle United",
+    "league_id": 4328,
+    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
+    "round": "6",
+    "home_team": "Coventry City",
+    "away_team": "Newcastle United",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/uxyqys1424033798.png",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+    "home_score": null,
+    "away_score": null,
+    "status": "Not Started",
+    "league": "الدوري الإنجليزي",
+    "date": "2026-10-12T19:00:00Z",
+    "day": "2026-10-12",
+    "content": "",
+    "cover_image": null
   }
 ]

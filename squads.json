@@ -3665,7 +3665,7 @@
     {
       "id": "34177662",
       "name": "Bernard Mensah",
-      "age": 31,
+      "age": 32,
       "number": "43",
       "position": "Midfielder",
       "photo": null
@@ -8697,6 +8697,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l4f6561763554075.png"
     },
     {
+      "id": "34192464",
+      "name": "Eric Martel",
+      "age": 24,
+      "number": "6",
+      "position": "Defensive Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zqns361763242734.png"
+    },
+    {
       "id": "34304068",
       "name": "Fabio Gruber",
       "age": 24,
@@ -8711,29 +8719,13 @@
       "number": "26",
       "position": "Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b2x5xn1767883295.png"
-    },
-    {
-      "id": "34174700",
-      "name": "Jae-sung Lee",
-      "age": 34,
-      "number": "7",
-      "position": "Attacking Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p0i9wg1763554091.png"
     }
   ],
   "134384": [
     {
-      "id": "34218591",
-      "name": "Abiel Osorio",
-      "age": 24,
-      "number": "7",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nkqd201763477779.png"
-    },
-    {
       "id": "34258255",
       "name": "Adam Boayar",
-      "age": 20,
+      "age": 21,
       "number": "32",
       "position": "Second Striker",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h3s9u01762372390.png"
@@ -8801,6 +8793,14 @@
       "number": "",
       "position": "Attacking Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tuuba61787515987.png"
+    },
+    {
+      "id": "34218758",
+      "name": "Federico Redondo",
+      "age": 23,
+      "number": "5",
+      "position": "Defensive Midfield",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/txrpr21762372139.png"
     }
   ],
   "133738": [
@@ -14173,18 +14173,10 @@
     {
       "id": "34177384",
       "name": "Aliou Dieng",
-      "age": 28,
+      "age": 29,
       "number": "23",
       "position": "Defensive Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zu4qfs1750398145.png"
-    },
-    {
-      "id": "34200393",
-      "name": "André Almeida",
-      "age": 26,
-      "number": "10",
-      "position": "Midfielder",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vms6e31762864070.png"
     },
     {
       "id": "34199704",
@@ -14249,6 +14241,14 @@
       "number": "16",
       "position": "Left Wing",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/k5m9jv1762864271.png"
+    },
+    {
+      "id": "34149478",
+      "name": "Dimitri Foulquier",
+      "age": 33,
+      "number": "20",
+      "position": "Right-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nw6sp91762864222.png"
     }
   ],
   "133615": [
@@ -15639,6 +15639,14 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r41pzd1766006261.png"
     },
     {
+      "id": "34236388",
+      "name": "Franjo Ivanović",
+      "age": 23,
+      "number": "9",
+      "position": "Attacker",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pn9ked1758216686.png"
+    },
+    {
       "id": "34165400",
       "name": "Jean-Clair Todibo",
       "age": 26,
@@ -15653,14 +15661,6 @@
       "number": "13",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lysb751766005516.png"
-    },
-    {
-      "id": "34173404",
-      "name": "Jonathan Gradit",
-      "age": 33,
-      "number": "24",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/052ozy1766005892.png"
     }
   ],
   "133603": [
@@ -17120,8 +17120,8 @@
       "id": "34230043",
       "name": "Christ Makosso",
       "age": 22,
-      "number": "28",
-      "position": "Defender",
+      "number": "15",
+      "position": "Centre-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wza3yh1766071197.png"
     },
     {

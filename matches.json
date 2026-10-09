@@ -39,7 +39,7 @@
   },
   {
     "event_id": "2573372",
-    "title": "Al-Kholood ضد Al-Qadsiah",
+    "title": "Al-Kholood 0 - 2 Al-Qadsiah",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "8",
@@ -47,13 +47,13 @@
     "away_team": "Al-Qadsiah",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/vv44v01755192851.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/ok63wb1719134839.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 2,
+    "status": "In Play",
     "league": "دوري روشن السعودي",
     "date": "2026-10-09T13:50:00Z",
     "day": "2026-10-09",
-    "content": "",
+    "content": "يتقدم فريق القادسية على مضيفه الخلود بنتيجة هدفين دون رد، في المباراة الجارية بينهما حالياً ضمن منافسات دوري روشن السعودي للمحترفين. وفرض القادسية أفضليته الميدانية من خلال نجاحه في استغلال الفرص وتسجيل هدفين منحاه أسبقية مريحة. في المقابل، مكث الخلود في مناطقه الدفاعية مع محاولات لشن هجمات مرتدة أملًا في تقليص الفارق والعودة في أجواء اللقاء. وتكتسي هذه المواجهة أهمية كبيرة لكلا الفريقين في مشوارهما لتحسين موقعيهما في جدول ترتيب البطولة.",
     "cover_image": null
   },
   {

@@ -77,7 +77,7 @@
   },
   {
     "event_id": "2508371",
-    "title": "Borussia Dortmund ضد Werder Bremen",
+    "title": "Borussia Dortmund 0 - 0 Werder Bremen",
     "league_id": 4331,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
     "round": "5",
@@ -85,13 +85,13 @@
     "away_team": "Werder Bremen",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/tqo8ge1716960353.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/tkvqan1716960454.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الألماني",
     "date": "2026-10-09T18:30:00Z",
     "day": "2026-10-09",
-    "content": "",
+    "content": "تعادل Borussia Dortmund وWerder Bremen بنتيجة 0-0 ضمن الدوري الألماني.",
     "cover_image": null
   },
   {

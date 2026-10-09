@@ -5,8 +5,8 @@
       {
         "rank": 1,
         "team": "Al-Qadsiah",
-        "played": 6,
-        "points": 16
+        "played": 7,
+        "points": 19
       },
       {
         "rank": 2,
@@ -29,7 +29,7 @@
       {
         "rank": 5,
         "team": "Al-Kholood",
-        "played": 6,
+        "played": 7,
         "points": 12
       },
       {
@@ -52,15 +52,15 @@
       },
       {
         "rank": 9,
-        "team": "Al-Hazem",
+        "team": "Al-Ahli",
         "played": 6,
-        "points": 8
+        "points": 9
       },
       {
         "rank": 10,
-        "team": "Al-Ahli",
-        "played": 5,
-        "points": 6
+        "team": "Al-Hazem",
+        "played": 6,
+        "points": 8
       },
       {
         "rank": 11,
@@ -88,13 +88,13 @@
       },
       {
         "rank": 15,
-        "team": "Al-Fateh",
-        "played": 6,
+        "team": "Al-Faisaly",
+        "played": 7,
         "points": 3
       },
       {
         "rank": 16,
-        "team": "Al-Faisaly",
+        "team": "Al-Fateh",
         "played": 7,
         "points": 3
       },

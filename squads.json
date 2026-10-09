@@ -13849,7 +13849,7 @@
     {
       "id": "34220163",
       "name": "Alberto Dossena",
-      "age": 27,
+      "age": 28,
       "number": "4",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4si8zb1764280841.png"
@@ -13869,14 +13869,6 @@
       "number": "3",
       "position": "Left-Back",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gnd3cd1764279909.png"
-    },
-    {
-      "id": "34160535",
-      "name": "Álvaro Morata",
-      "age": 33,
-      "number": "21",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5cci4b1764278358.png"
     },
     {
       "id": "34221683",
@@ -13917,6 +13909,14 @@
       "number": "28",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/t70jei1764278503.png"
+    },
+    {
+      "id": "34259849",
+      "name": "Jacobo Ramón",
+      "age": 21,
+      "number": "14",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/utzu6f1764278437.png"
     }
   ],
   "133687": [
@@ -17191,14 +17191,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zhs8151762287564.png"
     },
     {
-      "id": "34192464",
-      "name": "Eric Martel",
-      "age": 24,
-      "number": "6",
-      "position": "Defensive Midfield",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zqns361763242734.png"
-    },
-    {
       "id": "34250249",
       "name": "Fayssal Harchaoui",
       "age": 20,
@@ -17237,6 +17229,14 @@
       "number": "18",
       "position": "Midfielder",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cpi2ls1763242547.png"
+    },
+    {
+      "id": "34244584",
+      "name": "Jahmai Simpson-Pusey",
+      "age": 20,
+      "number": "22",
+      "position": "Centre-Back",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jc77kv1773672990.png"
     }
   ],
   "138411": [

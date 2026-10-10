@@ -148,7 +148,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-10T14:55:00Z",
     "day": "2026-10-10",
-    "content": "تعادل Al-Ettifaq وAl-Khaleej بنتيجة 1-1 ضمن دوري روشن السعودي.",
+    "content": "خيّم التعادل الإيجابي بهدف لمثله على مواجهة فريق الاتفاق وضيفه الخليج، التي أقيمت ضمن منافسات دوري روشن السعودي للمحترفين. وشهد اللقاء تنافساً قوياً بين الطرفين، حيث تبادلا السيطرة والهجمات على مدار الشوطين بحثاً عن حسم نقاط المباراة الثلاث. وبهذه النتيجة، تقاسم الفريقان نقاط المواجهة ليضيف كل منهما نقطة واحدة إلى رصيده في جدول ترتيب الدوري.",
     "cover_image": null
   },
   {
@@ -429,7 +429,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wjhziv1700145026.png",
     "home_score": 3,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-10-10T18:45:00Z",
     "day": "2026-10-10",
@@ -448,7 +448,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/17eqox1688449282.png",
     "home_score": 2,
     "away_score": 2,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-10-10T18:45:00Z",
     "day": "2026-10-10",

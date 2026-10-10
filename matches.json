@@ -324,7 +324,7 @@
   },
   {
     "event_id": "2482195",
-    "title": "Inter Milan ضد Parma",
+    "title": "Inter Milan 3 - 0 Parma",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "6",
@@ -332,13 +332,13 @@
     "away_team": "Parma",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 3,
+    "away_score": 0,
+    "status": "Halftime",
     "league": "الدوري الإيطالي",
     "date": "2026-10-10T16:00:00Z",
     "day": "2026-10-10",
-    "content": "",
+    "content": "فوز Inter Milan على Parma بنتيجة 3-0 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

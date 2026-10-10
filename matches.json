@@ -286,7 +286,7 @@
   },
   {
     "event_id": "2482191",
-    "title": "Napoli 0 - 0 Frosinone",
+    "title": "Napoli 2 - 0 Frosinone",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "6",
@@ -294,13 +294,13 @@
     "away_team": "Frosinone",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/a7xa151603170120.png",
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
     "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-10-10T18:45:00Z",
     "day": "2026-10-10",
-    "content": "تعادل Napoli وFrosinone بنتيجة 0-0 ضمن الدوري الإيطالي.",
+    "content": "فوز Napoli على Frosinone بنتيجة 2-0 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

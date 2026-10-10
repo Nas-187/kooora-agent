@@ -9,6 +9,24 @@
     "event_id": "2482192",
     "home_score": 2,
     "away_score": 0,
-    "status": "Halftime"
+    "status": "In Play"
+  },
+  {
+    "event_id": "2508370",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "In Play"
+  },
+  {
+    "event_id": "2508372",
+    "home_score": 0,
+    "away_score": 1,
+    "status": "In Play"
+  },
+  {
+    "event_id": "2508373",
+    "home_score": 1,
+    "away_score": 0,
+    "status": "In Play"
   }
 ]

@@ -191,7 +191,7 @@
   },
   {
     "event_id": "2494052",
-    "title": "Arsenal ضد Leeds United",
+    "title": "Arsenal 0 - 0 Leeds United",
     "league_id": 4328,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
     "round": "6",
@@ -199,13 +199,13 @@
     "away_team": "Leeds United",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "الدوري الإنجليزي",
     "date": "2026-10-10T11:30:00Z",
     "day": "2026-10-10",
-    "content": "",
+    "content": "يخيم التعادل السلبي دون أهداف على مواجهة أرسنال وضيفه ليدز يونايتد، المقامة حالياً ضمن منافسات الدوري الإنجليزي الممتاز. وتستمر أحداث اللقاء وسط محاولات هجومية متواصلة من أصحاب الأرض لكسر التكتل الدفاعي للضيوف وافتتاح التسجيل. ورغم الفرص التي أتيحت للطرفين حتى الآن، إلا أن الحذر التكتيكي يسيطر على مجريات المباراة، لتبقى النتيجة على حالها ببياض الشباك.",
     "cover_image": null
   },
   {

@@ -742,7 +742,7 @@
   },
   {
     "event_id": "2489511",
-    "title": "Rennes 1 - 1 Auxerre",
+    "title": "Rennes 3 - 1 Auxerre",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "6",
@@ -750,13 +750,13 @@
     "away_team": "Auxerre",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
-    "home_score": 1,
+    "home_score": 3,
     "away_score": 1,
-    "status": "Halftime",
+    "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-10-11T15:15:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Rennes وAuxerre بنتيجة 1-1 ضمن الدوري الفرنسي.",
+    "content": "فوز Rennes على Auxerre بنتيجة 3-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

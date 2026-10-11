@@ -490,7 +490,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T13:40:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Al-Fayha وAl-Riyadh بنتيجة 0-0 ضمن دوري روشن السعودي.",
+    "content": "تسيطر نتيجة التعادل السلبي (0-0) على مواجهة الفيحاء وضيفه الرياض، الجارية حالياً لحساب منافسات دوري روشن السعودي. وتبادل الفريقان المحاولات الهجومية بحثاً عن هز الشباك واقتناص نقاط المباراة الثلاث، إلا أن الصلابة الدفاعية حالت دون تسجيل أي هدف حتى اللحظة. ولا تزال أطوار اللقاء مستمرة وسط صراع تكتيكي مكثف في منتصف الملعب لفك شفرة الدفاعات، في حين تترقب الجماهير الحاضرة حدوث أي تغيير في لوحة النتيجة قبل إطلاق صافرة النهاية.",
     "cover_image": null
   },
   {
@@ -723,7 +723,7 @@
   },
   {
     "event_id": "2489508",
-    "title": "Nice 0 - 0 Strasbourg",
+    "title": "Nice 1 - 1 Strasbourg",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "6",
@@ -731,13 +731,13 @@
     "away_team": "Strasbourg",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
-    "home_score": 0,
-    "away_score": 0,
+    "home_score": 1,
+    "away_score": 1,
     "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-10-11T13:00:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Nice وStrasbourg بنتيجة 0-0 ضمن الدوري الفرنسي.",
+    "content": "تعادل Nice وStrasbourg بنتيجة 1-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

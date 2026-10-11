@@ -471,7 +471,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T18:00:00Z",
     "day": "2026-10-11",
-    "content": "يفرض فريق الشباب سيطرته المطلقة على مواجهته الجارية حالياً أمام ضيفه التعاون، حيث يتقدم بنتيجة ثلاثة أهداف دون رد ضمن منافسات دوري روشن السعودي. ونجح أصحاب الأرض في تقديم أداء هجومي قوي أحكموا به قبضتهم على مجريات اللقاء، مما وضع الضيوف تحت ضغط كبير. في المقابل، يحاول فريق التعاون العودة إلى أجواء المباراة وتدارك الموقف وسط صعوبة بالغة في اختراق دفاعات المنافس. وتستمر المواجهة حالياً وسط تطلع الشباب لتأكيد تفوقه واقتناص نقاط المباراة الثلاث كاملة.",
+    "content": "فوز Al-Shabab على Al-Taawoun بنتيجة 3-0 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "event_id": "2482190",
-    "title": "Cagliari 1 - 0 Juventus",
+    "title": "Cagliari 1 - 1 Juventus",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "6",
@@ -675,12 +675,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
     "home_score": 1,
-    "away_score": 0,
+    "away_score": 1,
     "status": "In Play",
     "league": "الدوري الإيطالي",
     "date": "2026-10-11T18:45:00Z",
     "day": "2026-10-11",
-    "content": "فوز Cagliari على Juventus بنتيجة 1-0 ضمن الدوري الإيطالي.",
+    "content": "تعادل Cagliari وJuventus بنتيجة 1-1 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {

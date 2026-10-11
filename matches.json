@@ -723,7 +723,7 @@
   },
   {
     "event_id": "2489508",
-    "title": "Nice 1 - 1 Strasbourg",
+    "title": "Nice 2 - 1 Strasbourg",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "6",
@@ -731,13 +731,13 @@
     "away_team": "Strasbourg",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
-    "home_score": 1,
+    "home_score": 2,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-10-11T13:00:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Nice وStrasbourg بنتيجة 1-1 ضمن الدوري الفرنسي.",
+    "content": "فوز Nice على Strasbourg بنتيجة 2-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

@@ -2560,5 +2560,33 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/hnci291621593978.png",
     "home_goals": 2,
     "away_goals": 1
+  },
+  {
+    "event_id": "2573368",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-10-11",
+    "home_id": "136020",
+    "home": "Al-Shabab",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/zbums21755192520.png",
+    "away_id": "136012",
+    "away": "Al-Taawoun",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rlsmp91646835052.png",
+    "home_goals": 3,
+    "away_goals": 0
+  },
+  {
+    "event_id": "2506244",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-10-11",
+    "home_id": "133722",
+    "home": "Real Betis",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+    "away_id": "133730",
+    "away": "Osasuna",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
+    "home_goals": 5,
+    "away_goals": 2
   }
 ]

@@ -471,7 +471,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T18:00:00Z",
     "day": "2026-10-11",
-    "content": "فوز Al-Shabab على Al-Taawoun بنتيجة 3-0 ضمن دوري روشن السعودي.",
+    "content": "يفرض فريق الشباب سيطرته المطلقة على مواجهته الجارية حالياً أمام ضيفه التعاون، حيث يتقدم بنتيجة ثلاثة أهداف دون رد ضمن منافسات دوري روشن السعودي. ونجح أصحاب الأرض في تقديم أداء هجومي قوي أحكموا به قبضتهم على مجريات اللقاء، مما وضع الضيوف تحت ضغط كبير. في المقابل، يحاول فريق التعاون العودة إلى أجواء المباراة وتدارك الموقف وسط صعوبة بالغة في اختراق دفاعات المنافس. وتستمر المواجهة حالياً وسط تطلع الشباب لتأكيد تفوقه واقتناص نقاط المباراة الثلاث كاملة.",
     "cover_image": null
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "event_id": "2489514",
-    "title": "Troyes 0 - 0 Marseille",
+    "title": "Troyes 0 - 1 Marseille",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "6",
@@ -770,12 +770,12 @@
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/sl5kzg1766617559.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "status": "In Play",
     "league": "الدوري الفرنسي",
     "date": "2026-10-11T18:45:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Troyes وMarseille بنتيجة 0-0 ضمن الدوري الفرنسي.",
+    "content": "فوز Marseille على Troyes بنتيجة 0-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

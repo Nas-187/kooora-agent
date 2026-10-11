@@ -476,7 +476,7 @@
   },
   {
     "event_id": "2573369",
-    "title": "Al-Fayha ضد Al-Riyadh",
+    "title": "Al-Fayha 0 - 0 Al-Riyadh",
     "league_id": 4668,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/w67i621701772123.png",
     "round": "8",
@@ -484,13 +484,13 @@
     "away_team": "Al-Riyadh",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/jl3spp1677530565.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/i4o0zy1755193321.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 0,
+    "away_score": 0,
+    "status": "In Play",
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T13:40:00Z",
     "day": "2026-10-11",
-    "content": "",
+    "content": "تعادل Al-Fayha وAl-Riyadh بنتيجة 0-0 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -547,7 +547,7 @@
     "league": "الدوري الإنجليزي",
     "date": "2026-10-11T13:00:00Z",
     "day": "2026-10-11",
-    "content": "يتأخر فريق كريستال بالاس أمام ضيفه نوتينغهام فورست بهدف دون رد، في المباراة الجارية بينهما حالياً لحساب منافسات الدوري الإنجليزي الممتاز. ونجح الفريق الضيف في التقدم بالنتيجة ليضع صاحب الأرض تحت ضغط هائل وسط أجواء حماسية في اللقاء. من جانبه، يكثف كريستال بالاس محاولاته الهجومية بحثاً عن العودة في النتيجة وتعديل الكفة قبل صافرة النهاية. ويسعى نوتينغهام فورست للحفاظ على تقدمه واقتناص ثلاث نقاط ثمينة خارج قواعده لتعزيز موقعه في جدول ترتيب \"البريميرليغ\".",
+    "content": "فوز Nottingham Forest على Crystal Palace بنتيجة 0-1 ضمن الدوري الإنجليزي.",
     "cover_image": null
   },
   {

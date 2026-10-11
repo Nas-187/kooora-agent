@@ -2518,5 +2518,47 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
     "home_goals": 4,
     "away_goals": 1
+  },
+  {
+    "event_id": "2494051",
+    "league_id": 4328,
+    "league_name": "الدوري الإنجليزي",
+    "date": "2026-10-11",
+    "home_id": "133602",
+    "home": "Liverpool",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+    "away_id": "133613",
+    "away": "Manchester City",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+    "home_goals": 0,
+    "away_goals": 3
+  },
+  {
+    "event_id": "2482189",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-10-11",
+    "home_id": "133701",
+    "home": "Sassuolo",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
+    "away_id": "133667",
+    "away": "AC Milan",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+    "home_goals": 1,
+    "away_goals": 1
+  },
+  {
+    "event_id": "2508369",
+    "league_id": 4331,
+    "league_name": "الدوري الألماني",
+    "date": "2026-10-11",
+    "home_id": "133653",
+    "home": "Freiburg",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/urwtup1473453288.png",
+    "away_id": "133661",
+    "away": "Schalke 04",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/hnci291621593978.png",
+    "home_goals": 2,
+    "away_goals": 1
   }
 ]

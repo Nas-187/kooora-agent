@@ -490,7 +490,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T13:40:00Z",
     "day": "2026-10-11",
-    "content": "حسم التعادل الإيجابي بهدف لمثله مواجهة الفيحاء وضيفه الرياض، التي أقيمت اليوم ضمن منافسات دوري روشن السعودي للمحترفين. وشهد اللقاء إثارة وتبادلاً للهجمات بين الفريقين على مدار الشوطين في محاولة لحسم النقاط الثلاث، قبل أن ينتهي بالتعادل. وبهذه النتيجة، تقاسم الفريقان نقاط المباراة ليضيف كل منهما نقطة جديدة إلى رصيده في جدول ترتيب الدوري.",
+    "content": "حسم التعادل الإيجابي بهدف لمثله مواجهة الفيحاء وضيفه الرياض، التي أقيمت بينهما اليوم لحساب منافسات دوري روشن السعودي للمحترفين. وشهدت المباراة إثارة وتبادلاً للمحاولات الهجومية بين الطرفين بغية اقتناص نقاط الفوز، قبل أن تُحسم المواجهة باقتسام النقاط. وبهذه النتيجة، اكتفى كل فريق بالحصول على نقطة واحدة تُضاف إلى رصيده في جدول ترتيب الدوري.",
     "cover_image": null
   },
   {
@@ -524,7 +524,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
     "home_score": 0,
     "away_score": 3,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الإنجليزي",
     "date": "2026-10-11T15:30:00Z",
     "day": "2026-10-11",
@@ -647,7 +647,7 @@
   },
   {
     "event_id": "2482189",
-    "title": "Sassuolo 0 - 0 AC Milan",
+    "title": "Sassuolo 1 - 1 AC Milan",
     "league_id": 4332,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
     "round": "6",
@@ -655,13 +655,13 @@
     "away_team": "AC Milan",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
-    "home_score": 0,
-    "away_score": 0,
-    "status": "In Play",
+    "home_score": 1,
+    "away_score": 1,
+    "status": "Match Finished",
     "league": "الدوري الإيطالي",
     "date": "2026-10-11T16:00:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Sassuolo وAC Milan بنتيجة 0-0 ضمن الدوري الإيطالي.",
+    "content": "تعادل Sassuolo وAC Milan بنتيجة 1-1 ضمن الدوري الإيطالي.",
     "cover_image": null
   },
   {
@@ -695,7 +695,7 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/hnci291621593978.png",
     "home_score": 2,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الألماني",
     "date": "2026-10-11T15:30:00Z",
     "day": "2026-10-11",

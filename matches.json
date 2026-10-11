@@ -490,7 +490,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T13:40:00Z",
     "day": "2026-10-11",
-    "content": "تعادل Al-Fayha وAl-Riyadh بنتيجة 1-1 ضمن دوري روشن السعودي.",
+    "content": "حسم التعادل الإيجابي بهدف لمثله مواجهة الفيحاء وضيفه الرياض، التي أقيمت اليوم ضمن منافسات دوري روشن السعودي للمحترفين. وشهد اللقاء إثارة وتبادلاً للهجمات بين الفريقين على مدار الشوطين في محاولة لحسم النقاط الثلاث، قبل أن ينتهي بالتعادل. وبهذه النتيجة، تقاسم الفريقان نقاط المباراة ليضيف كل منهما نقطة جديدة إلى رصيده في جدول ترتيب الدوري.",
     "cover_image": null
   },
   {
@@ -742,7 +742,7 @@
   },
   {
     "event_id": "2489511",
-    "title": "Rennes 3 - 1 Auxerre",
+    "title": "Rennes 4 - 1 Auxerre",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "6",
@@ -750,13 +750,13 @@
     "away_team": "Auxerre",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
-    "home_score": 3,
+    "home_score": 4,
     "away_score": 1,
-    "status": "In Play",
+    "status": "Match Finished",
     "league": "الدوري الفرنسي",
     "date": "2026-10-11T15:15:00Z",
     "day": "2026-10-11",
-    "content": "فوز Rennes على Auxerre بنتيجة 3-1 ضمن الدوري الفرنسي.",
+    "content": "فوز Rennes على Auxerre بنتيجة 4-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

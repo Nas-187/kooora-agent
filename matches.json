@@ -490,7 +490,7 @@
     "league": "دوري روشن السعودي",
     "date": "2026-10-11T13:40:00Z",
     "day": "2026-10-11",
-    "content": "حسم التعادل الإيجابي بهدف لمثله مواجهة الفيحاء وضيفه الرياض، في اللقاء الذي جمعهما لحساب منافسات دوري روشن السعودي للمحترفين. وشهدت المباراة تكافؤاً في الأداء ورغبة متبادلة من الطرفين للظفر بنقاط المواجهة كاملة طوال شوطي اللقاء. وبهذه النتيجة، تقاسم الفريقان نقاط المباراة، ليرفع كل منهما رصيده بنقطة واحدة في جدول ترتيب الدوري.",
+    "content": "تعادل Al-Fayha وAl-Riyadh بنتيجة 1-1 ضمن دوري روشن السعودي.",
     "cover_image": null
   },
   {
@@ -742,7 +742,7 @@
   },
   {
     "event_id": "2489511",
-    "title": "Rennes ضد Auxerre",
+    "title": "Rennes 1 - 1 Auxerre",
     "league_id": 4334,
     "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
     "round": "6",
@@ -750,13 +750,13 @@
     "away_team": "Auxerre",
     "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
+    "home_score": 1,
+    "away_score": 1,
+    "status": "Halftime",
     "league": "الدوري الفرنسي",
     "date": "2026-10-11T15:15:00Z",
     "day": "2026-10-11",
-    "content": "",
+    "content": "تعادل Rennes وAuxerre بنتيجة 1-1 ضمن الدوري الفرنسي.",
     "cover_image": null
   },
   {

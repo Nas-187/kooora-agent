@@ -2602,5 +2602,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vbiget1781026964.png",
     "home_goals": 3,
     "away_goals": 1
+  },
+  {
+    "event_id": "2494059",
+    "league_id": 4328,
+    "league_name": "الدوري الإنجليزي",
+    "date": "2026-10-12",
+    "home_id": "133625",
+    "home": "Coventry City",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/uxyqys1424033798.png",
+    "away_id": "134777",
+    "away": "Newcastle United",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+    "home_goals": 4,
+    "away_goals": 1
   }
 ]

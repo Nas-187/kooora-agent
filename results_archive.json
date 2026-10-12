@@ -2616,5 +2616,33 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
     "home_goals": 4,
     "away_goals": 1
+  },
+  {
+    "event_id": "2506241",
+    "league_id": 4335,
+    "league_name": "الدوري الإسباني",
+    "date": "2026-10-12",
+    "home_id": "133732",
+    "home": "Levante",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xwtxsx1473503739.png",
+    "away_id": "133735",
+    "away": "Sevilla",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
+    "home_goals": 3,
+    "away_goals": 3
+  },
+  {
+    "event_id": "2482194",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-10-12",
+    "home_id": "133687",
+    "home": "Torino",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+    "away_id": "133679",
+    "away": "Udinese",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
+    "home_goals": 2,
+    "away_goals": 1
   }
 ]

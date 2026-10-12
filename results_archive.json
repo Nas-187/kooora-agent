@@ -2588,5 +2588,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
     "home_goals": 5,
     "away_goals": 2
+  },
+  {
+    "event_id": "2482193",
+    "league_id": 4332,
+    "league_name": "الدوري الإيطالي",
+    "date": "2026-10-12",
+    "home_id": "134782",
+    "home": "Atalanta",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/qix5ku1780561327.png",
+    "away_id": "134234",
+    "away": "Venezia",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vbiget1781026964.png",
+    "home_goals": 3,
+    "away_goals": 1
   }
 ]

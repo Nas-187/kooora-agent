@@ -532,25 +532,6 @@
     "cover_image": null
   },
   {
-    "event_id": "2508382",
-    "title": "Eintracht Frankfurt ضد Köln",
-    "league_id": 4331,
-    "league_logo": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
-    "round": "6",
-    "home_team": "Eintracht Frankfurt",
-    "away_team": "Köln",
-    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
-    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/2j1sc91566049407.png",
-    "home_score": null,
-    "away_score": null,
-    "status": "Not Started",
-    "league": "الدوري الألماني",
-    "date": "2026-10-16T18:30:00Z",
-    "day": "2026-10-16",
-    "content": "",
-    "cover_image": null
-  },
-  {
     "event_id": "2489524",
     "title": "Le Mans ضد Toulouse",
     "league_id": 4334,

@@ -101,6 +101,54 @@
     {
       "tag": "الدوري الإنجليزي",
       "title": "Everton يواجه Chelsea ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Valencia يواجه Athletic Bilbao ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Villarreal يواجه Elche ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإسباني",
+      "title": "Espanyol يواجه Atlético Madrid ضمن الدوري الإسباني"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Roma يواجه Genoa ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Bologna يواجه Inter Milan ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الإيطالي",
+      "title": "Venezia يواجه Napoli ضمن الدوري الإيطالي"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Bayern Munich يواجه RB Leipzig ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Werder Bremen يواجه Paderborn ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الألماني",
+      "title": "Schalke 04 يواجه Mainz ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Lille يواجه Brest ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Strasbourg يواجه Paris Saint-Germain ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Troyes يواجه Lens ضمن الدوري الفرنسي"
     }
   ]
 }

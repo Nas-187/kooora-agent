@@ -14,7 +14,7 @@
     },
     {
       "tag": "دوري روشن السعودي",
-      "title": "Al-Faisaly يواجه Al-Kholood ضمن دوري روشن السعودي"
+      "title": "Al-Faisaly يفوز على Al-Kholood 1-0 ضمن دوري روشن السعودي"
     },
     {
       "tag": "دوري روشن السعودي",
@@ -35,10 +35,6 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Diriyah يواجه Al-Taawoun ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Fateh يواجه Al-Khaleej ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -137,6 +133,18 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Troyes يواجه Lens ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Bournemouth يواجه Sunderland ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Brighton and Hove Albion يواجه Crystal Palace ضمن الدوري الإنجليزي"
+    },
+    {
+      "tag": "الدوري الإنجليزي",
+      "title": "Leeds United يواجه Manchester United ضمن الدوري الإنجليزي"
     }
   ]
 }

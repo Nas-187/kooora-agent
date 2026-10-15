@@ -2658,5 +2658,19 @@
     "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/vv44v01755192851.png",
     "home_goals": 3,
     "away_goals": 2
+  },
+  {
+    "event_id": "2573373",
+    "league_id": 4668,
+    "league_name": "دوري روشن السعودي",
+    "date": "2026-10-15",
+    "home_id": "139080",
+    "home": "Al-Khaleej",
+    "home_logo": "https://r2.thesportsdb.com/images/media/team/badge/mvf6ga1755192630.png",
+    "away_id": "136014",
+    "away": "Al-Fayha",
+    "away_logo": "https://r2.thesportsdb.com/images/media/team/badge/jl3spp1677530565.png",
+    "home_goals": 2,
+    "away_goals": 0
   }
 ]

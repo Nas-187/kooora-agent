@@ -64,33 +64,33 @@
       },
       {
         "rank": 11,
-        "team": "Al-Fayha",
-        "played": 6,
-        "points": 6
+        "team": "Al-Khaleej",
+        "played": 7,
+        "points": 7
       },
       {
         "rank": 12,
+        "team": "Al-Fayha",
+        "played": 7,
+        "points": 6
+      },
+      {
+        "rank": 13,
         "team": "Al-Faisaly",
         "played": 8,
         "points": 6
       },
       {
-        "rank": 13,
+        "rank": 14,
         "team": "Al-Shabab",
         "played": 6,
         "points": 5
       },
       {
-        "rank": 14,
+        "rank": 15,
         "team": "Al-Riyadh",
         "played": 6,
         "points": 5
-      },
-      {
-        "rank": 15,
-        "team": "Al-Khaleej",
-        "played": 6,
-        "points": 4
       },
       {
         "rank": 16,

@@ -75,18 +75,6 @@
       "title": "Le Mans يواجه Toulouse ضمن الدوري الفرنسي"
     },
     {
-      "tag": "الدوري الإنجليزي",
-      "title": "Newcastle United يواجه Aston Villa ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Fulham يواجه Hull City ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Everton يواجه Chelsea ضمن الدوري الإنجليزي"
-    },
-    {
       "tag": "الدوري الإسباني",
       "title": "Valencia يواجه Athletic Bilbao ضمن الدوري الإسباني"
     },
@@ -177,6 +165,18 @@
     {
       "tag": "الدوري الألماني",
       "title": "Bayer Leverkusen يواجه Freiburg ضمن الدوري الألماني"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Angers يواجه Marseille ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Lyon يواجه Nice ضمن الدوري الفرنسي"
+    },
+    {
+      "tag": "الدوري الفرنسي",
+      "title": "Lorient يواجه Monaco ضمن الدوري الفرنسي"
     }
   ]
 }

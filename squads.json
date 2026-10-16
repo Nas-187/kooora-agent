@@ -8552,6 +8552,14 @@
     },
     {
       "id": null,
+      "name": "Fábio Cardoso",
+      "age": null,
+      "number": "15",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Isaac Romero",
       "age": null,
       "number": "16",
@@ -8676,14 +8684,6 @@
       "age": null,
       "number": "39",
       "position": "Midfielder",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Fábio Cardoso",
-      "age": null,
-      "number": "15",
-      "position": "Defender",
       "photo": null
     }
   ],
@@ -9824,10 +9824,26 @@
     },
     {
       "id": null,
+      "name": "Martín Ochoa",
+      "age": null,
+      "number": "31",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Kevin Sánchez",
       "age": null,
       "number": "33",
       "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Noé Carrillo",
+      "age": null,
+      "number": "37",
+      "position": "Midfielder",
       "photo": null
     }
   ],

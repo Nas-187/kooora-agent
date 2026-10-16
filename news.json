@@ -11,22 +11,6 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Faisaly يفوز على Al-Kholood 3-2 ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Qadsiah يفوز على Abha 2-1 ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Ittihad يواجه Al-Shabab ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Neom يواجه Al-Ettifaq ضمن دوري روشن السعودي"
-    },
-    {
-      "tag": "دوري روشن السعودي",
-      "title": "Al-Diriyah يواجه Al-Taawoun ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -49,106 +33,6 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Monaco يتصدر ترتيب الدوري الفرنسي برصيد 9 نقطة"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Deportivo de A Coruña يواجه Levante ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Frosinone يواجه Sassuolo ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Eintracht Frankfurt يواجه Köln ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Le Mans يواجه Toulouse ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Newcastle United يواجه Aston Villa ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Fulham يواجه Hull City ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Everton يواجه Chelsea ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Valencia يواجه Athletic Bilbao ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Villarreal يواجه Elche ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Espanyol يواجه Atlético Madrid ضمن الدوري الإسباني"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Roma يواجه Genoa ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Bologna يواجه Inter Milan ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Venezia يواجه Napoli ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Bayern Munich يواجه RB Leipzig ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Werder Bremen يواجه Paderborn ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الألماني",
-      "title": "Schalke 04 يواجه Mainz ضمن الدوري الألماني"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Lille يواجه Brest ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Strasbourg يواجه Paris Saint-Germain ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الفرنسي",
-      "title": "Troyes يواجه Lens ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Bournemouth يواجه Sunderland ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Brighton and Hove Albion يواجه Crystal Palace ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Leeds United يواجه Manchester United ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "AC Milan يواجه Atalanta ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Udinese يواجه Lecce ضمن الدوري الإيطالي"
-    },
-    {
-      "tag": "الدوري الإيطالي",
-      "title": "Juventus يواجه Lazio ضمن الدوري الإيطالي"
     }
   ]
 }

@@ -15,6 +15,14 @@
     {
       "tag": "دوري روشن السعودي",
       "title": "Al-Riyadh يواجه Al-Hilal ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Neom يواجه Al-Ettifaq ضمن دوري روشن السعودي"
+    },
+    {
+      "tag": "دوري روشن السعودي",
+      "title": "Al-Diriyah يواجه Al-Taawoun ضمن دوري روشن السعودي"
     }
   ],
   "europe": [
@@ -157,14 +165,6 @@
     {
       "tag": "الدوري الفرنسي",
       "title": "Lorient يواجه Monaco ضمن الدوري الفرنسي"
-    },
-    {
-      "tag": "الدوري الإنجليزي",
-      "title": "Tottenham Hotspur يواجه Coventry City ضمن الدوري الإنجليزي"
-    },
-    {
-      "tag": "الدوري الإسباني",
-      "title": "Getafe يواجه Rayo Vallecano ضمن الدوري الإسباني"
     }
   ]
 }

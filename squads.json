@@ -2797,14 +2797,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/s9hzoh1725611346.png"
     },
     {
-      "id": "34172215",
-      "name": "Dominik Livaković",
-      "age": 31,
-      "number": "25",
-      "position": "Goalkeeper",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pp3yab1762457197.png"
-    },
-    {
       "id": "34172241",
       "name": "Eric García",
       "age": 25,
@@ -2827,6 +2819,14 @@
       "number": "21",
       "position": "Central Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b8k6611726510284.png"
+    },
+    {
+      "id": "34160962",
+      "name": "Gabriel Jesus",
+      "age": 29,
+      "number": "9",
+      "position": "Centre-Forward",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jcifyz1789725894.png"
     }
   ],
   "136013": [
@@ -4701,7 +4701,7 @@
     {
       "id": "34175641",
       "name": "Albert Sambi Lokonga",
-      "age": 26,
+      "age": 27,
       "number": "6",
       "position": "Central Midfield",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3wanq81763416915.png"
@@ -9899,7 +9899,7 @@
     {
       "id": "34434407",
       "name": "Davinchi",
-      "age": 18,
+      "age": 19,
       "number": "26",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/k2xpzy1775286249.png"

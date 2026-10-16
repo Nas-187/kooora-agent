@@ -15352,6 +15352,14 @@
     },
     {
       "id": null,
+      "name": "Laro Gómez",
+      "age": null,
+      "number": "31",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "[[Jorge Castellanos del Olmo",
       "age": null,
       "number": "33",
@@ -15363,7 +15371,7 @@
       "name": "[[Hugo Pérez Sañudo",
       "age": null,
       "number": "38",
-      "position": "Attacker",
+      "position": "Defender",
       "photo": null
     }
   ],
@@ -17028,6 +17036,14 @@
     },
     {
       "id": null,
+      "name": "Devis Vásquez",
+      "age": null,
+      "number": "32",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "[[Wesley França",
       "age": null,
       "number": "43",
@@ -17095,14 +17111,6 @@
       "name": "Mile Svilar",
       "age": null,
       "number": "99",
-      "position": "Goalkeeper",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Devis Vásquez",
-      "age": null,
-      "number": "32",
       "position": "Goalkeeper",
       "photo": null
     }

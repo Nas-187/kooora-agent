@@ -3274,6 +3274,14 @@
     },
     {
       "id": null,
+      "name": "[[José Antonio Morante (footballer, born 2007)",
+      "age": null,
+      "number": "27",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "[[Manuel González Pallarés",
       "age": null,
       "number": "31",
@@ -4186,6 +4194,22 @@
       "age": null,
       "number": "25",
       "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[Nizar El Jmili Ben Hamou",
+      "age": null,
+      "number": "27",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "[[José Ángel Gaitán Diaz",
+      "age": null,
+      "number": "28",
+      "position": "Attacker",
       "photo": null
     },
     {
@@ -6455,6 +6479,14 @@
       "number": "24",
       "position": "Midfielder",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pmp5rt1762709318.png"
+    },
+    {
+      "id": null,
+      "name": "Ibai Aguirre",
+      "age": null,
+      "number": "26",
+      "position": "Midfielder",
+      "photo": null
     },
     {
       "id": "34420756",

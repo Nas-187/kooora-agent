@@ -5551,20 +5551,20 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/08fe2m1763329037.png"
     },
     {
-      "id": "34177548",
-      "name": "Igor Matanović",
-      "age": 23,
-      "number": "31",
-      "position": "Centre-Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lm6j0a1763329018.png"
-    },
-    {
       "id": "34174745",
       "name": "Jan-Niklas Beste",
       "age": 27,
       "number": "19",
       "position": "Defender",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zl9dp11763328766.png"
+    },
+    {
+      "id": "34169274",
+      "name": "Jannik Huth",
+      "age": 32,
+      "number": "24",
+      "position": "Goalkeeper",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ae6a0v1763328891.png"
     }
   ],
   "133635": [

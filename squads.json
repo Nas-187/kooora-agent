@@ -692,6 +692,14 @@
     },
     {
       "id": null,
+      "name": "[[Pedro Henrique (footballer, born 1995)",
+      "age": null,
+      "number": "5",
+      "position": "Defender",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Khalid Al-Ghannam",
       "age": null,
       "number": "7",
@@ -916,6 +924,14 @@
     },
     {
       "id": null,
+      "name": "Talal Haji",
+      "age": null,
+      "number": "90",
+      "position": "Attacker",
+      "photo": null
+    },
+    {
+      "id": null,
       "name": "Turki Ba Al-Jawsh",
       "age": null,
       "number": "92",
@@ -924,25 +940,9 @@
     },
     {
       "id": null,
-      "name": "[[Pedro Henrique (footballer, born 1995)",
-      "age": null,
-      "number": null,
-      "position": "Defender",
-      "photo": null
-    },
-    {
-      "id": null,
-      "name": "Talal Haji",
-      "age": null,
-      "number": null,
-      "position": "Attacker",
-      "photo": null
-    },
-    {
-      "id": null,
       "name": "Sultan Harun",
       "age": null,
-      "number": null,
+      "number": "99",
       "position": "Attacker",
       "photo": null
     }
@@ -1153,6 +1153,14 @@
       "name": "Jannis Bärtl",
       "age": null,
       "number": "35",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "David Podar-Știube",
+      "age": null,
+      "number": "38",
       "position": "Goalkeeper",
       "photo": null
     },
@@ -5742,6 +5750,14 @@
       "age": null,
       "number": "44",
       "position": "Midfielder",
+      "photo": null
+    },
+    {
+      "id": null,
+      "name": "Jayden Lienou",
+      "age": null,
+      "number": "65",
+      "position": "Defender",
       "photo": null
     },
     {
@@ -12716,7 +12732,7 @@
       "id": null,
       "name": "Suleman Sani",
       "age": null,
-      "number": null,
+      "number": "70",
       "position": "Attacker",
       "photo": null
     }

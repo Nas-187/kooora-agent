@@ -2279,28 +2279,28 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b8on6z1718361620.png"
     },
     {
-      "id": "34148426",
-      "name": "Andrea Petagna",
-      "age": 31,
-      "number": "32",
-      "position": "Forward",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1piq141697923897.png"
-    },
-    {
-      "id": "34147172",
-      "name": "Armando Izzo",
-      "age": 34,
-      "number": "4",
-      "position": "Defender",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lim84c1679579567.png"
-    },
-    {
       "id": "34174530",
       "name": "Dany Carvalho",
       "age": 28,
       "number": "",
       "position": "Forward",
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/08euxj1679663820.png"
+    },
+    {
+      "id": "34169540",
+      "name": "Demba Thiam",
+      "age": 28,
+      "number": "22",
+      "position": "Goalkeeper",
+      "photo": null
+    },
+    {
+      "id": "34247805",
+      "name": "Ebenezer Ajodun Akinsanmiro",
+      "age": 21,
+      "number": "14",
+      "position": "Midfielder",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2y7e811764188572.png"
     }
   ],
   "133734": [
